@@ -1,0 +1,16 @@
+government = republic
+
+government_rank = 1
+add_government_reform = feudalism_reform
+capital = 5033
+primary_culture = tibetan
+religion = secularism
+technology_group = chinese 
+2019.5.30 = {
+	monarch = {
+		name = "Thubten Gyatso"
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+}

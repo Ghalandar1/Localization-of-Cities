@@ -1,0 +1,534 @@
+namespace = zi
+
+#country_event = {
+#	id = zi.18
+#	title = "zi_18EVTNAME"
+#	desc = "zi_18EVTDESC"
+#	picture = MILITARY_CAMP_eventPicture
+#	mean_time_to_happen = { months = 30 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_18EVTOPTION"
+#		random_owned_province = {
+#			infantry = PREV
+#			infantry = PREV
+#			infantry = PREV
+#			infantry = PREV
+#			infantry = PREV
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = zi.19
+#	title = "zi_19EVTNAME"
+#	desc = "zi_19EVTDESC"
+#	picture = ANGRY_MOB_eventPicture
+#	mean_time_to_happen = { months = 30 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#		NOT = { has_country_flag = event19 }
+#	}
+#	option = {
+#		name = "zi_19EVTOPTIONA"
+#		set_country_flag = event19
+#		add_adm_power = -50
+#		
+#	}
+#	
+#	option = {
+#		name = "zi_19EVTOPTIONB"
+#		random_owned_province = {
+#			add_province_modifier = {
+#			
+#				name = disbelievers
+#				duration = 3650
+#			}
+#		}
+#		}
+#	}
+#
+#
+#country_event = {
+#		id = zi.20
+#	title = "zi_20EVTNAME"
+#	desc = "zi_20EVTDESC"
+#	picture = ANGRY_MOB_eventPicture
+#	mean_time_to_happen = { months = 30 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_20EVTOPTION"
+#		add_country_modifier = {
+#			name = unity
+#			duration = 3650
+#		}
+#	}
+#}
+
+province_event = {
+	id = zi.21
+	title = "zi_21EVTNAME"
+	desc = "zi_21EVTDESC"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	mean_time_to_happen = { months = 7200 }
+	trigger = {
+		is_colony = yes
+		controller = {
+			has_country_modifier = survived_apocalypse
+		}
+	}
+	option = {
+		name = "zi_21EVTOPTION"
+		controller = {
+			add_legitimacy = 15
+		}
+	}
+}
+
+#country_event = {
+#	id = zi.35
+#	title = "zi_35EVTNAME"
+#	desc = "zi_35EVTDESC"
+#	picture = RELIGIOUS_TURMOIL_eventPicture
+#	mean_time_to_happen = { months = 70 }
+#	trigger = {
+#		NOT = { has_country_modifier = jews_expelled }
+#		NOT = { has_country_flag = had_event35 }
+#		has_country_modifier = unity_against_zombies
+#		capital_scope = {
+#			continent = europe
+#		}
+#	}
+#	option = {
+#		ai_chance = { factor = 50 }
+#		name = "zi_35EVTOPTIONA"
+#		add_stability = -1
+#		set_country_flag = had_event35
+#	}
+#	
+#	option = {
+#		ai_chance = { factor = 50 }
+#		name = "zi_35EVTOPTIONB"
+#		add_country_modifier = {
+#			name = jews_expelled
+#			duration = 3650
+#		}
+#		add_treasury = 200
+#		set_country_flag = had_event35
+#	}
+#}
+#	
+#country_event = {
+#	id = zi.36
+#	title = "zi_36EVTNAME"
+#	desc = "zi_36EVTDESC"
+#	picture = SIEGE_eventPicture
+#	major = yes
+#	fire_only_once = yes
+#	trigger = {
+#		tag = PAP
+#		capital_scope = {
+#			controlled_by = ZOM
+#		}
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_36EVTOPTION"
+#		add_prestige = 15
+#	}
+#	
+#}
+#
+#country_event = {
+#	id = zi.37
+#	title = "zi_37EVTNAME"
+#	desc = "zi_37EVTDESC"
+#	picture = HRE_eventPicture
+#	fire_only_once = yes
+#	trigger = {
+#		is_emperor = yes
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		ai_chance = { factor = 50 }
+#		name = "zi_37EVTOPTION"
+#		add_prestige = 15
+#		add_treasury = 500
+#		add_manpower = 30
+#		add_adm_power = 100
+#		add_dip_power = 100
+#		add_mil_power = 100
+#	}
+#	
+#}
+#
+#country_event = {
+#	id = zi.38
+#	title = "zi_38EVTNAME"
+#	desc = "zi_38EVTDESC"
+#	picture = BIG_BOOK_eventPicture
+#	fire_only_once = yes
+#	major = yes
+#	trigger = {
+#		tag = MAM
+#		361 = { controlled_by = ZOM }
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_38EVTOPTION"
+#	}
+#	
+#}
+#
+#country_event = {
+#	id = zi.39
+#	title = "zi_39EVTNAME"
+#	desc = "zi_39EVTDESC"
+#	picture = RELIGIOUS_TURMOIL_eventPicture
+#	
+#	mean_time_to_happen = { months = 36 }
+#	trigger = {
+#		religion = catholic
+#		has_country_modifier = unity_against_zombies
+#		NOT = { has_country_modifier = witch_hunting }
+#	}
+#	option = {
+#		name = "zi_39EVTOPTION"
+#		add_country_modifier = {
+#			name = witch_hunting
+#			duration = 3650
+#		}
+#	}
+#	
+#}
+#
+#country_event = {
+#	id = zi.41
+#	title = "zi_41EVTNAME"
+#	desc = "zi_41EVTDESC"
+#	picture = RELIGIOUS_TURMOIL_eventPicture
+#	
+#	mean_time_to_happen = { months = 180 }
+#	trigger = {
+#		NOT = { has_country_flag = spill_blood_on_fire }
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_41EVTOPTION"
+#		add_stability = 1
+#		set_country_flag = spill_blood_on_fire
+#	}
+#	
+#}
+
+country_event = {
+	id = zi.44
+	title = "zi_44EVTNAME"
+	desc = "zi_44EVTDESC"
+	picture = BATTLE_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+	controls = 1938	
+	1938 = {
+			is_colony = yes
+		}
+	
+	}
+	option = {
+		name = "zi_44EVTOPTION"
+		add_prestige = 10
+	}
+	
+}
+
+province_event = {
+	id = zi.45
+	title = "zi_45EVTNAME"
+	desc = "zi_45EVTDESC"
+	picture = CITY_VIEW_eventPicture
+	mean_time_to_happen = { months = 1200 }
+	trigger = {
+		is_colony = yes
+		is_city = no
+		controller = { has_country_modifier = survived_apocalypse }
+	}
+	
+	option = {
+		name = "zi_45EVTOPTION"
+		add_country_modifier = {
+			name = knowledge_recovered
+			duration = 3650
+		}
+		add_prestige = 5
+	}
+}
+
+province_event = {
+	id = zi.23
+	title = "zi_23EVTNAME"
+	desc = "zi_23EVTDESC"
+	picture = CITY_VIEW_eventPicture
+	mean_time_to_happen = { months = 1 }
+	trigger = {
+		is_colony = yes
+		is_city = no
+		controller = { has_country_modifier = survived_apocalypse }
+		NOT = { has_country_flag = old_cities }
+	}
+	
+	option = {
+		name = "zi_23EVTOPTION"
+		add_prestige = 5
+		set_country_flag = old_cities
+	}
+}
+
+province_event = {
+	id = zi.46
+	title = "zi_46EVTNAME"
+	desc = "zi_46EVTDESC"
+	picture = CITY_VIEW_eventPicture
+	mean_time_to_happen = { months = 1200 }
+	trigger = {
+		is_colony = yes
+		is_city = no
+		controller = { has_country_modifier = survived_apocalypse }
+	}
+	
+	option = {
+		name = "zi_46EVTOPTION"
+		controller = {
+			add_treasury = 150
+		}
+	}
+}
+
+country_event = {
+	id = zi.56
+	title = "zi_56EVTNAME"
+	desc = "zi_56EVTDESC"
+	picture = Zombie_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		ai = no
+		exists = ZOM
+	}
+	option = {
+		name = "zi_56EVTOPTION"
+		set_global_flag = startupevents1
+	}
+	
+}
+
+country_event = {
+	id = zi.63
+	title = "zi_63EVTNAME"
+	desc = "zi_63EVTDESC"
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "zi_63EVTOPTION"
+		every_country = {
+			add_country_modifier = {
+				name = extra_colonist
+				duration = -1
+			}
+		}
+	}
+	
+}
+
+#country_event = {
+#	id = zi.73
+#	title = "zi_73EVTNAME"
+#	desc = "zi_73EVTDESC"
+#	picture = MILITARY_CAMP_eventPicture
+#	mean_time_to_happen = { months = 2400 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_73EVTOPTION"
+#		random_owned_province = {
+#			infantry = PREV
+#			infantry = PREV
+#			infantry = PREV
+#			infantry = PREV
+#			infantry = PREV
+#			infantry = PREV
+#			cavalry = PREV
+#			cavalry = PREV
+#			artillery = PREV
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = zi.74
+#	title = "zi_74EVTNAME"
+#	desc = "zi_74EVTDESC"
+#	picture = DIPLOMACY_eventPicture
+#	major=yes
+#	fire_only_once = yes
+#	mean_time_to_happen = { months = 30 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_74EVTOPTION"
+#		ZOM= {
+#			prestige = -10
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = zi.72
+#	title = "zi_72EVTNAME"
+#	desc = "zi_72EVTDESC"
+#	picture = ANGRY_MOB_eventPicture
+#	mean_time_to_happen = { months = 500 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_72EVTOPTION"
+#		add_country_modifier = {
+#		name = propaganda
+#		duration = 3650
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = zi.71
+#	title = "zi_71EVTNAME"
+#	desc = "zi_71EVTDESC"
+#	picture = ANGRY_MOB_eventPicture
+#	mean_time_to_happen = { months = 500 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_71EVTOPTION"
+#		add_country_modifier = {
+#		name = disinformation
+#		duration = 3650
+#		}
+#	}
+#}
+#
+#province_event = {
+#	id = zi.75
+#	title = "zi_75EVTNAME"
+#	desc = "zi_75EVTDESC"
+#	picture = MILITARY_CAMP_eventPicture
+#	mean_time_to_happen = { months = 2400 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_75EVTOPTION"
+#		controller = {
+#			manpower = -1
+#		}
+#	}
+#}
+#country_event = {
+#	id = zi.70
+#	title = "zi_70EVTNAME"
+#	desc = "zi_70EVTDESC"
+#	picture = MILITARY_CAMP_eventPicture
+#	fire_only_once = yes
+#	mean_time_to_happen = { months = 2400 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_70EVTOPTION"
+#		add_country_modifier = {
+#		name = CONOP_8888
+#		duration = 7300
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = zi.69
+#	title = "zi_69EVTNAME"
+#	desc = "zi_69EVTDESC"
+#	picture = ANGRY_MOB_eventPicture
+#	mean_time_to_happen = { months = 500 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#	}
+#	option = {
+#		name = "zi_69EVTOPTION"
+#		stability = -1
+#	}
+#}
+#
+#country_event = {
+#	id = zi.68
+#	title = "zi_68EVTNAME"
+#	desc = "zi_68EVTDESC"
+#	picture = ANGRY_MOB_eventPicture
+#	mean_time_to_happen = { months = 50 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#		tag = MDG
+#	}
+#	option = {
+#		name = "zi_68EVTOPTIONA"
+#		white_peace = ZOM
+#		remove_country_modifier = unity_against_zombies
+#		remove_country_modifier = battle_of_dabiq
+#		remove_country_modifier = unity
+#		remove_country_modifier = new_crusade
+#		remove_country_modifier = new_jihad
+#		remove_country_modifier = bandits1
+#		remove_country_modifier = good_general
+#		remove_country_modifier = bad_general
+#		remove_country_modifier = no_general
+#		remove_country_modifier = crops_destroyed
+#		remove_country_modifier = fast_food
+#		remove_country_modifier = wagenburg_revived
+#		every_owned_province = {
+#		remove_province_modifier = the_last_stand
+#		}
+#		add_country_modifier = {
+#			name = survived_apocalypse
+#			duration = 36500
+#		}
+#	}
+#	
+#	option = {
+#		name = "zi_68EVTOPTIONB"
+#		
+#	}
+#}
+#
+#country_event = {
+#	id = zi.67
+#	title = "zi_67EVTNAME"
+#	desc = "zi_67EVTDESC"
+#	picture = DIPLOMACY_eventPicture
+#	fire_only_once = yes
+#	major = yes
+#	mean_time_to_happen = { months = 50 }
+#	trigger = {
+#		has_country_modifier = unity_against_zombies
+#		tag = NKO
+#	}
+#	option = {
+#		name = "zi_67EVTOPTION"
+#		prestige = 5
+#	}
+#	
+#}

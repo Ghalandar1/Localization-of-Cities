@@ -1,0 +1,28 @@
+government = monarchy
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = regional_representation_reform
+add_government_reform = legislative_houses_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = ceremonial_monarch
+set_legacy_government = parliamentary_monarchy
+
+capital = 3898
+primary_culture = castillian
+religion = secularism
+culture_group_union = iberian
+add_accepted_culture = sicilian
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Felipe VI"
+		dynasty = "de Bourbon"
+		birth_date = 1938.1.5
+		adm = 1
+		dip = 5
+		mil = 4
+		religion = catholic
+	}
+}

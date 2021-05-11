@@ -1,0 +1,7 @@
+﻿l_english:
+ cb_rivalries:0 "Rivalries"
+ cb_rivalries_desc:0 "Our countries have mutual enemy rivalries."
+ superiority_rivalries:0 "Show the world we are superior to our inferior rival."
+ superiority_rivalries_desc:0 "Our War goal is to show our superiority by defeating our rival in battle."
+ TOUS_RIVALS:0 "All Rivals"
+ RIVALRY_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Rivalries War"

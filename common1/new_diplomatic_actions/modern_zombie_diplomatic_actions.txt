@@ -1,0 +1,125 @@
+#papacy
+#emperor
+#access
+#covert
+#dynasty
+#papacy
+#great_powers
+#relation
+#influence
+#alliance
+#	zombie_attack = {
+#		category = influence
+#		require_acceptance = no
+#	
+#		is_visible = { 
+#			always = yes
+#		}
+#		is_allowed = {
+#			NOT = { exists = ZOM }
+#			full_idea_group = army_ideas
+#			full_idea_group = spy_ideas
+#			full_idea_group = dynasty0
+#			full_idea_group = medical_research_ideas
+#			full_idea_group = medical_army_ideas
+#			full_idea_group = influence_ideas
+#			full_idea_group = propaganda0
+#			is_great_power = yes
+#			stability = 2
+#			if = {
+#					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+#					years_of_income = 0.15
+#				}
+#				if = {
+#					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+#					years_of_income = 0.20
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+#					years_of_income = 0.25
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+#					years_of_income = 0.35
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+#					years_of_income = 0.45
+#				}
+#			
+#			if = {
+#					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+#					years_of_income = 0.55
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+#					years_of_income = 0.65
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+#					years_of_income = 0.75
+#				}
+#			
+#			has_spy_network_in = {
+#				who = FROM
+#				value = 100
+#			}
+#			
+#		}
+#		on_accept = {
+#		
+#			if = {
+#					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+#					add_years_of_income = -0.15
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+#					add_years_of_income = -0.20
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+#					add_years_of_income = -0.25
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+#					add_years_of_income = -0.35
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+#					add_years_of_income = -0.45
+#				}
+#			
+#			if = {
+#					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+#					add_years_of_income = -0.55
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+#					add_years_of_income = -0.65
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+#					add_years_of_income = -0.75
+#				}
+#		
+#			add_country_modifier = { 
+#				name = we_maked_zombie  
+#				duration = 3650 
+#				
+#				}
+#			add_spy_network_in = {
+#				who = FROM
+#				value = -100
+#			}
+#			
+#			FROM = { country_event = { id = zi.10000 } }
+#			FROM = { add_stability = -2 }
+#		}
+#		
+#		
+#		
+#		
+#		ai_will_do = {  
+#			always = yes
+#		}
+#	}

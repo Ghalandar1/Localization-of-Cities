@@ -1,0 +1,7 @@
+﻿l_english:
+ cb_threat: "Threat to us"
+ cb_threat_desc: "That Country is a threat to us."
+ superiority_threat: "Show the world we are superior to our inferior threat."
+ superiority_threat_desc: "Our War goal is to show our superiority by defeating our threat in battle."
+ ALL_THREATS: "All Threats"
+ THREAT_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Threatened War"

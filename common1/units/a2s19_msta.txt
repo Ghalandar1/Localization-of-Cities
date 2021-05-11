@@ -1,0 +1,12 @@
+# 2S19 MSTA
+
+type = artillery
+
+maneuver = 3
+offensive_morale = 9
+defensive_morale = 8
+offensive_fire = 11
+defensive_fire = 11
+offensive_shock = 8
+defensive_shock = 8
+

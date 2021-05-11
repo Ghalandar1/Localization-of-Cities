@@ -1,0 +1,133 @@
+#papacy
+#emperor
+#access
+#covert
+#dynasty
+#papacy
+#great_powers
+#relation
+#influence
+#alliance
+	attack_teryak = {
+		category = influence
+		require_acceptance = no
+	
+		is_visible = { 
+			
+				FROM = { NOT = { has_country_modifier = teryak_attack } }
+				FROM = { NOT = { has_country_modifier = teryak_attack_1 } }
+			
+		}
+		is_allowed = {
+		
+		OR = {
+		
+			production_leader = {
+				trade_goods = drugs
+			}
+			
+			trading_bonus = {
+				trade_goods = drugs
+				value = yes
+			}
+			
+		}
+		stability = 0
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					years_of_income = 0.07
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					years_of_income = 0.1
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 0.15
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.2
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.25
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.3
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					years_of_income = 0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.4
+				}
+			
+			has_spy_network_in = {
+				who = FROM
+				value = 50
+			}
+		}
+		on_accept = {
+		
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = 0.035
+				}
+			if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = 0.05
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = 0.075
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = 0.1
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = 0.125
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = 0.15
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = 0.175
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = 0.2
+				}
+		
+			add_spy_network_in = {
+				who = FROM
+				value = -50
+			}
+			
+			add_opinion = {
+				who = FROM
+				modifier = teryak_bad
+			}
+			reverse_add_opinion = {
+				who = FROM
+				modifier = teryak_bad
+			}
+			
+			
+			FROM = { 
+				country_event = { id = teryak.1 }
+			}
+		}
+		ai_will_do = {  
+			always = yes
+		}
+	}

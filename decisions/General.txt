@@ -1,0 +1,149 @@
+country_decisions = {
+
+   	adm_points = {
+		potential = {
+		    ai = no
+		}
+		allow = {
+			dip_power = 100
+            mil_power = 100
+		}
+		effect = {
+			add_adm_power = 75
+            add_dip_power = -100
+            add_mil_power = -100
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    dip_points = {
+		potential = {
+		    ai = no
+		}
+		allow = {
+			adm_power = 100
+            mil_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+            add_dip_power = 75
+            add_mil_power = -100
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    mil_points = {
+		potential = {
+		    ai = no
+		}
+		allow = {
+			adm_power = 100
+            dip_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+            add_dip_power = -100
+            add_mil_power = 75
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#land_manpower_points = {
+	#	potential = {
+	#	    ai = no
+	#	}
+	#	allow = {
+	#		mil_power = 150
+	#	}
+	#	effect = {
+    #    add_mil_power = -150
+	#	add_manpower = 100
+	#	}
+	#}
+
+    debasement = {
+		potential = {
+			ai = no
+		}
+		allow = {
+            ai = no
+			NOT = { inflation = 100 }
+		}
+		effect = {
+		
+		if = {
+        limit = {
+        NOT = { inflation = 10 }		  
+		}		
+		add_years_of_income = 0.05
+		add_inflation = 2.5
+		}
+		
+		if = {
+        limit = {
+        NOT = { inflation = 15 }
+		inflation = 10		  
+		}		
+		add_years_of_income = 0.04
+		add_inflation = 2.5
+		}
+		
+		if = {
+        limit = {
+        NOT = { inflation = 20 }
+		inflation = 15	  
+		}		
+		add_years_of_income = 0.03
+		add_inflation = 2.5
+		}
+		
+		if = {
+        limit = {
+        NOT = { inflation = 25 }
+		inflation = 20	  
+		}		
+		add_years_of_income = 0.02
+		add_inflation = 2.5
+		}
+		
+		if = {
+        limit = {
+		inflation = 30	  
+		}		
+		add_years_of_income = 0.01
+		add_inflation = 2.5
+		}
+		
+	}
+	ai_will_do = {
+			factor = 0
+		}
+		
+    }
+
+	inflation_reduction_decision = {
+		potential = {
+            ai = no
+		}
+		allow = {
+            ai = no
+			years_of_income = 0.5
+			inflation = 2.5
+		}
+		effect = {
+		add_years_of_income = -0.1
+		add_inflation = -2.5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
+	

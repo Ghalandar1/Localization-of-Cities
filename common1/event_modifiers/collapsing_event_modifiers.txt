@@ -1,0 +1,43 @@
+collapsing = {
+	state_maintenance_modifier = 0.1		# +1000% state maintenance cost	#this is what drains monthly income
+	technology_cost = 0.05					# +50% technology cost			#makes them behind in tech
+	global_unrest = 1.5					# +500 unrest					#causes lots of rebels - hopefully country fractures
+	stability_cost_modifier = 0.05			# +100% increase stability cost	#makes it hard to increase stability from -3
+	reduced_liberty_desire = 10			# +100% subject liberty desire	#makes all subjects want to revolt
+}
+
+recently_collapsed = {
+	#nothing important
+}
+
+
+collapsing_x2 = {
+	state_maintenance_modifier = 0.2		# +1000% state maintenance cost	#this is what drains monthly income
+	technology_cost = 0.1					# +50% technology cost			#makes them behind in tech
+	global_unrest = 3.0					# +500 unrest					#causes lots of rebels - hopefully country fractures
+	stability_cost_modifier = 0.1			# +100% increase stability cost	#makes it hard to increase stability from -3
+	reduced_liberty_desire = 15			# +100% subject liberty desire	#makes all subjects want to revolt
+}
+
+recently_collapsed_x2 = {
+	#nothing important
+}
+
+
+
+added_stability = {
+
+	state_maintenance_modifier = -0.05		# +1000% state maintenance cost	#this is what drains monthly income
+	technology_cost = -0.05					# +50% technology cost			#makes them behind in tech
+	yearly_corruption = -0.05					# +1.0 corruption yearly		#corruption makes governments collapse
+	global_unrest = -1.0					# +500 unrest					#causes lots of rebels - hopefully country fractures
+	stability_cost_modifier = -0.05			# +100% increase stability cost	#makes it hard to increase stability from -3
+	global_autonomy = -0.05					# +0.25 autonomy yearly			#provinces becoming more autonomous means less control
+	harsh_treatment_cost = -0.05				# +50% cost for harsh treatment	#makes it hard to stop rebels
+	reduced_liberty_desire = -10			# +100% subject liberty desire	#makes all subjects want to revolt
+}
+
+
+recently_added_stability = {
+	#nothing important
+}

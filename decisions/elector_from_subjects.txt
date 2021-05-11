@@ -1,0 +1,23 @@
+#country_decisions = {
+#
+#	empror_from_luxamburg = {
+#		major = yes
+#		potential = {
+#			
+#			tag = LUX
+#			is_part_of_hre = yes
+#			is_emperor = no
+#		}
+#		allow = {
+#			is_at_war = no
+#			
+#		}
+#		effect = {
+#			is_emperor = yes
+#		}
+#		ai_will_do = {
+#
+#			factor = 0
+#		}
+#	}
+#}

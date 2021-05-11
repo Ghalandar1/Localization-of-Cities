@@ -1,0 +1,289 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+zombie_rise = {
+	discipline = 0.05
+	global_manpower_modifier = -1
+	diplomatic_reputation = -50000
+	global_unrest = -100
+	war_exhaustion = -20
+	stability_cost_modifier = -1
+	land_morale = 1.0
+	land_forcelimit = 1000
+	no_cost_for_reinforcing = yes
+	possible_mercenaries = -1.0
+	fort_maintenance_modifier = -1.0
+	land_attrition = -0.9
+	diplomats = -10
+	improve_relation_modifier = -1000
+	relations_decay_of_me = -1000
+	recover_army_morale_speed = 0.10
+	siege_ability = 0.5
+	global_autonomy = 100
+	technology_cost = 100
+	idea_cost = 100
+}
+zombie_decline = {
+	discipline = 0.05
+	global_manpower_modifier = -1
+	diplomatic_reputation = -50000
+	global_unrest = -100
+	war_exhaustion = -20
+	stability_cost_modifier = -1
+	land_morale = 1.0
+	land_forcelimit = 1000
+	no_cost_for_reinforcing = yes
+	possible_mercenaries = -1.0
+	fort_maintenance_modifier = -1.0
+	land_attrition = -0.9
+	diplomats = -10
+	improve_relation_modifier = -1000
+	recover_army_morale_speed = 0.10
+	siege_ability = 0.5
+	global_autonomy = 100
+	technology_cost = 100
+	idea_cost = 100
+}
+
+unity_against_zombies = {
+	global_unrest = -10
+	land_maintenance_modifier = -0.10
+	stability_cost_modifier = -0.10
+	war_exhaustion = -10
+	
+}
+
+survived_apocalypse = {
+	colonists = 2
+	global_colonial_growth = 50
+	global_tax_income = 120
+}
+
+backstabber = {
+	diplomatic_reputation = -2
+	improve_relation_modifier = -0.25
+}
+
+battle_of_dabiq = {
+	land_morale = 0.20
+	global_manpower_modifier = 0.30
+	discipline = 0.10
+}
+
+refugees = {
+	local_unrest = 1
+	local_autonomy = 0.05	
+}
+
+unity = {
+	global_unrest = -5
+}
+
+destroyed_land = {
+	local_colonial_growth = -30
+	local_production_efficiency = -0.5
+	local_tax_modifier = -0.5
+}
+
+new_crusade = {
+	land_maintenance_modifier = -0.25
+	global_manpower_modifier = 0.30
+}
+
+new_jihad = {
+	cavalry_power = 0.10
+	defensiveness = 0.25
+}
+
+disbelievers = {
+	local_unrest = 5
+}
+
+bandits1 = {
+	global_tax_modifier = -0.10
+	production_efficiency = -0.10
+}
+
+good_general = {
+	land_morale = 0.10
+}
+
+bad_general = {
+	land_morale = -0.10
+}
+
+no_general = {
+	land_morale = -0.15
+}
+
+the_last_stand = {
+	garrison_size = 2
+	global_garrison_growth = 3
+}
+
+trade_restricted = {
+	global_trade_power = -0.5
+}
+
+crops_destroyed = {
+	global_manpower_modifier = -0.20
+	global_unrest = 3
+}
+
+jews_expelled = {
+	inflation_action_cost = 0.25
+	interest = +1
+	production_efficiency = -0.1
+}
+
+witch_hunting = {
+	global_unrest = -3
+}
+
+knowledge_recovered = {
+	technology_cost = -0.10
+}
+
+fast_food = { 
+	cavalry_power = 0.15
+}
+
+wagenburg_revived = {
+	land_morale = 0.15
+}
+
+tggrain = {}
+tgwine = {}
+tgwool = {}
+tgcloth = {}
+tgfish = {}
+tgfur = {}
+tgsalt = {}
+tgnaval_supplies = {}
+tgcopper = {}
+tggold = {}
+tgiron = {}
+tgslaves = {}
+tgivory = {}
+tgtea = {}
+tgchinaware = {}
+tgspices = {}
+tgcoffee = {}
+tgcotton = {}
+tgsugar = {}
+tgtobacco = {}
+tgsilk = {}
+tgdyes = {}
+tgcocoa = {}
+tgtropical_wood = {}
+
+zombie_capital = {
+	supply_limit = 1000
+}
+
+zombie_rise_hard = {
+	discipline = 0.1
+	global_manpower_modifier = -1
+	diplomatic_reputation = -50000
+	global_unrest = -100
+	war_exhaustion = -20
+	stability_cost_modifier = -1
+	land_morale = 1.0
+	land_forcelimit = 1000
+	no_cost_for_reinforcing = yes
+	possible_mercenaries = -1.0
+	fort_maintenance_modifier = -1.0
+	land_attrition = -1.0
+	diplomats = -10
+	improve_relation_modifier = -1000
+	relations_decay_of_me = -1000
+	recover_army_morale_speed = 0.20
+	siege_ability = 10
+	infantry_power = 0.2
+	cavalry_cost = 200
+	artillery_cost = 200
+}
+zombie_decline_hard = {
+	discipline = 0.15
+	global_manpower_modifier = -1
+	diplomatic_reputation = -50000
+	global_unrest = -100
+	war_exhaustion = -20
+	stability_cost_modifier = -1
+	land_morale = 1.0
+	land_forcelimit = 1000
+	no_cost_for_reinforcing = yes
+	possible_mercenaries = -1.0
+	fort_maintenance_modifier = -1.0
+	land_attrition = -1.0
+	diplomats = -10
+	improve_relation_modifier = -1000
+	relations_decay_of_me = -1000
+	recover_army_morale_speed = 0.20
+	siege_ability = 10
+	infantry_power = 0.2
+	cavalry_cost = 200
+	artillery_cost = 200
+}
+
+zombie_rise_doom = {
+	discipline = 0.30
+	global_manpower_modifier = -1
+	diplomatic_reputation = -50000
+	global_unrest = -100
+	war_exhaustion = -20
+	stability_cost_modifier = -1
+	land_morale = 1.0
+	land_forcelimit = 1000
+	no_cost_for_reinforcing = yes
+	possible_mercenaries = -1.0
+	fort_maintenance_modifier = -1.0
+	land_attrition = -1.0
+	diplomats = -10
+	improve_relation_modifier = -1000
+	relations_decay_of_me = -1000
+	recover_army_morale_speed = 0.50
+	siege_ability = 15
+	infantry_power = 1.0
+	cavalry_cost = 200
+	artillery_cost = 200
+}
+zombie_decline_doom = {
+	discipline = 0.30
+	global_manpower_modifier = -1
+	diplomatic_reputation = -50000
+	global_unrest = -100
+	war_exhaustion = -20
+	stability_cost_modifier = -1
+	land_morale = 2.4
+	land_forcelimit = 1000
+	no_cost_for_reinforcing = yes
+	possible_mercenaries = -1.0
+	fort_maintenance_modifier = -1.0
+	land_attrition = -1.0
+	diplomats = -10
+	improve_relation_modifier = -1000
+	relations_decay_of_me = -1000
+	recover_army_morale_speed = 0.50
+	siege_ability = 15
+	infantry_power = 1.0
+	cavalry_cost = 200
+	artillery_cost = 200
+}
+
+extra_colonist = {
+	colonists = 1
+}
+
+conop_8888= {
+	land_morale = 0.10
+}
+
+disinformation = {
+	global_unrest = 3
+}
+
+propaganda = {
+	global_unrest = -5
+}

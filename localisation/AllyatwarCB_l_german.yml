@@ -1,0 +1,7 @@
+﻿l_german:
+ cb_allyatwar: "Unabhängiger Bündnis-Krieg"
+ cb_allyatwar_desc: "Hilf deinem Verbündeten!"
+ superiority_allyatwar: "Zeige der Welt, dass du deinen Freunden hilfst."
+ superiority_allyatwar_desc: "Das Kriegsziel besteht darin, Unterstützung zu leisten."
+ ALL_ALLYATWAR: "Ally is at war"
+ ALLYATWAR_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Help Ally at War"

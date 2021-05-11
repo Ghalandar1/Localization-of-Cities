@@ -1,0 +1,258 @@
+
+########################################################################
+#####                                                                                               	         #####
+#####                                WESTERN        ARTILLERY                                   #####
+#####                                                                                                    	     #####
+########################################################################
+
+entity = {
+	name = "westerngfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery"
+	version = 2
+	state = { name = "attack"		animation = "arup_western_artillery_01_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "arup_western_artillery_01_idle" }
+	#state = { name = "death" 		animation = "arup_western_artillery_01_idle" }
+	state = { name = "walk" 		animation = "arup_western_artillery_01_moving" }
+	state = { name = "retreat" 		animation = "arup_western_artillery_01_moving" }
+	
+}
+entity = {
+	clone = "westerngfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "westerngfx_ARTILLERY_2_cannon"
+}
+entity = {
+	clone = "westerngfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "westerngfx_ARTILLERY_3_cannon"
+}
+entity = {
+	clone = "westerngfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "westerngfx_ARTILLERY_4_cannon"
+}
+
+########################################################################
+#####                                                                                               	         #####
+#####                                EASTERN        ARTILLERY                                    #####
+#####                                                                                                    	     #####
+########################################################################
+
+entity = {
+	name = "easterngfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery"
+	version = 2
+	state = { name = "attack"		animation = "arup_eastern_artillery_01_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "arup_eastern_artillery_01_idle" }
+	#state = { name = "death" 		animation = "arup_western_artillery_01_idle" }
+	state = { name = "walk" 		animation = "arup_eastern_artillery_01_moving" }
+	state = { name = "retreat" 		animation = "arup_eastern_artillery_01_moving" }
+}
+entity = {
+	clone = "easterngfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "easterngfx_ARTILLERY_2_cannon"
+}
+entity = {
+	clone = "easterngfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "easterngfx_ARTILLERY_3_cannon"
+}
+entity = {
+	clone = "easterngfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "easterngfx_ARTILLERY_4_cannon"
+}
+
+
+########################################################################
+#####                                                                                               	         #####
+#####                                MUSLIM        ARTILLERY                                    #####
+#####                                                                                                    	     #####
+########################################################################
+
+entity = {
+	name = "muslimgfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery"
+	version = 2
+	state = { name = "attack"		animation = "arup_muslim_artillery_01_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "arup_muslim_artillery_01_idle" }
+	#state = { name = "death" 		animation = "arup_western_artillery_01_idle" }
+	state = { name = "walk" 		animation = "arup_muslim_artillery_01_moving" }
+	state = { name = "retreat" 		animation = "arup_muslim_artillery_01_moving" }
+}
+entity = {
+	clone = "muslimgfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "muslimgfx_ARTILLERY_2_cannon"
+}
+entity = {
+	clone = "muslimgfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "muslimgfx_ARTILLERY_3_cannon"
+}
+entity = {
+	clone = "muslimgfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "muslimgfx_ARTILLERY_4_cannon"
+}
+
+########################################################################
+#####                                                                                               	         #####
+#####                                INDIAN        ARTILLERY                                    #####
+#####                                                                                                    	     #####
+########################################################################
+
+entity = {
+	name = "indiangfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery"
+	version = 2
+	state = { name = "attack"		animation = "arup_indian_artillery_01_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "arup_indian_artillery_01_idle" }
+	#state = { name = "death" 		animation = "arup_western_artillery_01_idle" }
+	state = { name = "walk" 		animation = "arup_indian_artillery_01_moving" }
+	state = { name = "retreat" 		animation = "arup_indian_artillery_01_moving" }
+}
+entity = {
+	clone = "indiangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "indiangfx_ARTILLERY_2_cannon"
+}
+entity = {
+	clone = "indiangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "indiangfx_ARTILLERY_3_cannon"
+}
+entity = {
+	clone = "indiangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "indiangfx_ARTILLERY_4_cannon"
+}
+
+########################################################################
+#####                                                                                               	         #####
+#####                                AFRICAN        ARTILLERY                                    #####
+#####                                                                                                    	     #####
+########################################################################
+
+entity = {
+	name = "africangfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery"
+	version = 2
+	state = { name = "attack"		animation = "arup_african_artillery_01_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "arup_african_artillery_01_idle" }
+	#state = { name = "death" 		animation = "arup_western_artillery_01_idle" }
+	state = { name = "walk" 		animation = "arup_african_artillery_01_moving" }
+	state = { name = "retreat" 		animation = "arup_african_artillery_01_moving" }
+}
+entity = {
+	clone = "africangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "africangfx_ARTILLERY_2_cannon"
+}
+entity = {
+	clone = "africangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "africangfx_ARTILLERY_3_cannon"
+}
+entity = {
+	clone = "africangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "africangfx_ARTILLERY_4_cannon"
+}
+
+########################################################################
+#####                                                                                               	         #####
+#####                                ASIAN        ARTILLERY                                    #####
+#####                                                                                                    	     #####
+########################################################################
+
+entity = {
+	name = "asiangfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery"
+	version = 2
+	state = { name = "attack"		animation = "arup_asian_artillery_01_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "arup_asian_artillery_01_idle" }
+	#state = { name = "death" 		animation = "arup_western_artillery_01_idle" }
+	state = { name = "walk" 		animation = "arup_asian_artillery_01_moving" }
+	state = { name = "retreat" 		animation = "arup_asian_artillery_01_moving" }
+}
+entity = {
+	clone = "asiangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "asiangfx_ARTILLERY_2_cannon"
+}
+entity = {
+	clone = "asiangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "asiangfx_ARTILLERY_3_cannon"
+}
+entity = {
+	clone = "asiangfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "asiangfx_ARTILLERY_4_cannon"
+}
+
+########################################################################
+#####                                                                                               	         #####
+#####                                N.AMERICAN        ARTILLERY                                    #####
+#####                                                                                                    	     #####
+########################################################################
+
+entity = {
+	name = "northamericagfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery"
+	version = 2
+	state = { name = "attack"		animation = "arup_northamerica_artillery_01_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "arup_northamerica_artillery_01_idle" }
+	#state = { name = "death" 		animation = "arup_western_artillery_01_idle" }
+	state = { name = "walk" 		animation = "arup_northamerica_artillery_01_moving" }
+	state = { name = "retreat" 		animation = "arup_northamerica_artillery_01_moving" }
+}
+entity = {
+	clone = "northamericagfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "northamericagfx_ARTILLERY_2_cannon"
+}
+entity = {
+	clone = "northamericagfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "northamericagfx_ARTILLERY_3_cannon"
+}
+entity = {
+	clone = "northamericagfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "northamericagfx_ARTILLERY_4_cannon"
+}
+
+########################################################################
+#####                                                                                               	         #####
+#####                                S.AMERICAN        ARTILLERY                                    #####
+#####                                                                                                    	     #####
+########################################################################
+
+entity = {
+	name = "southamericagfx_ARTILLERY_1_cannon"
+	pdxmesh = "artillery"
+	version = 2
+	state = { name = "attack"		animation = "arup_southamerica_artillery_01_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "arup_southamerica_artillery_01_idle" }
+	#state = { name = "death" 		animation = "arup_western_artillery_01_idle" }
+	state = { name = "walk" 		animation = "arup_southamerica_artillery_01_moving" }
+	state = { name = "retreat" 		animation = "arup_southamerica_artillery_01_moving" }
+}
+entity = {
+	clone = "southamericagfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "southamericagfx_ARTILLERY_2_cannon"
+}
+entity = {
+	clone = "southamericagfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "southamericagfx_ARTILLERY_3_cannon"
+}
+entity = {
+	clone = "southamericagfx_ARTILLERY_1_cannon"
+	version = 3
+	name = "southamericagfx_ARTILLERY_4_cannon"
+}

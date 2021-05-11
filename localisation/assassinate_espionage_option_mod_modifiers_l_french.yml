@@ -1,0 +1,25 @@
+﻿l_french:
+ # Event Modifiers:
+ increased_spy_defence_because_of_unnoticed_assassination: "Unsovled death within the royal family"
+ increased_spy_defence_because_of_noticed_assassination: "Assassination discovered"
+ increased_spy_offence_because_of_assassination: "Assassination discovered"
+ training_better_assassins_modifier: "Training agents"
+ desc_training_better_assassins_modifier: "We are training our own agents and assassins. Although we are trying to conceal it, it might cause a stir in foreign countries."
+ become_better_at_bribing_modifier: "Improved bribery ability"
+ desc_become_better_at_bribing_modifier: "[Root.Monarch.GetName] invited a master of bribery to the court and is trained by him. This takes much time so that [Root.Monarch.GetSheHe] neglects [Root.Monarch.GetHerHis] government duties a little bit."
+ 
+ # Opinion Modifiers:
+ successfull_assassination_noticed_opinion: "Executed or supported successful assassination"
+ failed_assassination_noticed_opinion: "Executed or supported failed assassination"
+ supported_our_assassination_attempt: "They supported our assassination attempt"
+ supported_their_assassination_attempt: "We supported their assassination attempt"
+ our_consort_tried_to_kill_their_ruler_or_heir: "They have executed their consort from our country"
+ their_consort_tried_to_kill_our_ruler_or_heir: "Consort of their country planned an assassination"
+ 
+ # Province Triggered Modifiers:
+ assassination_completed_triggered_modifier: "There currently is an assassination"
+ assassination_completed_own_ruler_triggered_modifier: "There currently is an assassination"
+ assassination_completed_own_heir_triggered_modifier: "There currently is an assassination"
+ assassination_start_own_ruler_triggered_modifier: "There currently is an assassination planned"
+ assassination_start_own_heir_triggered_modifier: "There currently is an assassination planned"
+ 

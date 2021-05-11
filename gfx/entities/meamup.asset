@@ -1,0 +1,1375 @@
+entity = {
+	name = "meamup_shield_small_entity"
+	pdxmesh = "meamup_shield_small_mesh"
+}
+
+entity = {
+	name = "meamup_shield_MAY_entity"
+	pdxmesh = "meamup_shield_MAY_mesh"
+}
+
+entity = {
+	name = "meamup_shield_AZT_entity"
+	pdxmesh = "meamup_shield_AZT_mesh"
+}
+
+entity = {
+	name = "meamup_club_AZT_MAY_entity"
+	pdxmesh = "meamup_club_AZT_MAY_mesh"
+}
+
+
+entity = {
+	name = "meamup_spear_entity"
+	pdxmesh = "meamup_spear_mesh"
+}
+
+entity = {
+	name = "meamup_rifle_02_entity"
+	pdxmesh = "meamup_rifle_02_mesh"
+	state = { name = "attack"		event = { time = 0.90	node = "muzzle"	particle = "musket_muzzle" }	  
+	}
+}
+
+entity = {
+	name = "meamup_rifle_03_entity"
+	pdxmesh = "meamup_rifle_03_mesh"
+	state = { name = "attack"		event = { time = 0.90	node = "muzzle"	particle = "musket_muzzle" }	  
+	}
+}
+
+entity = {
+	name = "meamup_rifle_04_entity"
+	pdxmesh = "meamup_rifle_04_mesh"
+	state = { name = "attack"		event = { time = 0.90	node = "muzzle"	particle = "musket_muzzle" }	  
+	}	
+}
+
+
+entity = {
+	name = "meamup_cavalry_saber"
+	pdxmesh = "meamup_cavalry_saber_mesh"
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                  AZTEC                                                  #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+entity = {
+	name = "AZT_INFANTRY_1"
+	pdxmesh = "meamup_AZT_infantry_01_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_club_AZT_MAY_entity" 
+		Left_hand_node = "meamup_shield_AZT_entity" 		
+	}
+}
+
+entity = {
+	name = "AZT_CAVALRY_1"
+	pdxmesh = "meamup_cavalry_horse_001_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AZT_CAVALRY_1_rider" 
+	}
+}
+
+entity = {
+	name = "AZT_CAVALRY_1_rider"
+	pdxmesh = "meamup_AZT_cavalry_01_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+entity = {
+	name = "AZT_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "AZT_INFANTRY_1" 
+		cannon_node = "southamericagfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	name = "AZT_INFANTRY_2"
+	pdxmesh = "meamup_AZT_infantry_02_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "meamup_rifle_02_entity" 
+	}
+}
+
+entity = {
+	name = "AZT_CAVALRY_2"
+	pdxmesh = "meamup_cavalry_horse_001_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AZT_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "AZT_CAVALRY_2_rider"
+	pdxmesh = "meamup_AZT_cavalry_02_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+
+entity = {
+	name = "AZT_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "AZT_INFANTRY_2" 
+		cannon_node = "southamericagfx_ARTILLERY_2_cannon" 
+	}
+}
+
+
+entity = {
+	name = "AZT_INFANTRY_3"
+	pdxmesh = "meamup_AZT_infantry_03_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "meamup_rifle_03_entity" 
+	}
+}
+
+entity = {
+	name = "AZT_CAVALRY_3"
+	pdxmesh = "meamup_cavalry_horse_002_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AZT_CAVALRY_3_rider" 
+	}
+}
+
+entity = {
+	name = "AZT_CAVALRY_3_rider"
+	pdxmesh = "meamup_AZT_cavalry_03_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+entity = {
+	name = "AZT_ARTILLERY_3"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "AZT_INFANTRY_3" 
+		cannon_node = "southamericagfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	name = "AZT_INFANTRY_4"
+	pdxmesh = "meamup_AZT_infantry_04_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+}
+
+entity = {
+	name = "AZT_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	Saddle_Node = "AZT_CAVALRY_4_rider" 
+	#}
+}
+
+entity = {
+	name = "AZT_CAVALRY_4_rider"
+	pdxmesh = "cavalry_horse"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = { 
+	#	Right_hand_node = "meamup_cavalry_saber" 
+	#}
+}
+entity = {
+	name = "AZT_ARTILLERY_4"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "AZT_INFANTRY_4" 
+	#	cannon_node = "southamericagfx_ARTILLERY_4_cannon" 
+	#}
+}
+# Tlaxcala
+entity = {	clone = "AZT_INFANTRY_1"				name = "TLX_INFANTRY_1"				version = 1	}
+entity = {	clone = "AZT_CAVALRY_1"					name = "TLX_CAVALRY_1"				version = 1	}
+entity = {	clone = "AZT_ARTILLERY_1"				name = "TLX_ARTILLERY_1"			version = 1	}
+entity = {	clone = "AZT_CAVALRY_1_rider"			name = "TLX_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "AZT_INFANTRY_2"				name = "TLX_INFANTRY_2"				version = 1	}
+entity = {	clone = "AZT_CAVALRY_2"					name = "TLX_CAVALRY_2"				version = 1	}
+entity = {	clone = "AZT_ARTILLERY_2"				name = "TLX_ARTILLERY_2"			version = 1	}
+entity = {	clone = "AZT_CAVALRY_2_rider"			name = "TLX_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "AZT_INFANTRY_3"				name = "TLX_INFANTRY_3"				version = 1	}
+entity = {	clone = "AZT_CAVALRY_3"					name = "TLX_CAVALRY_3"				version = 1	}
+entity = {	clone = "AZT_ARTILLERY_3"				name = "TLX_ARTILLERY_3"			version = 1	}
+entity = {	clone = "AZT_CAVALRY_3_rider"			name = "TLX_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "AZT_INFANTRY_4"				name = "TLX_INFANTRY_4"				version = 1	}
+entity = {	clone = "AZT_CAVALRY_4"					name = "TLX_CAVALRY_4"				version = 1	}
+entity = {	clone = "AZT_ARTILLERY_4"				name = "TLX_ARTILLERY_4"			version = 1	}
+entity = {	clone = "AZT_CAVALRY_4_rider"			name = "TLX_CAVALRY_4_rider"		version = 1	}
+
+# TEO
+entity = {	clone = "AZT_INFANTRY_1"				name = "TEO_INFANTRY_1"				version = 1	}
+entity = {	clone = "AZT_CAVALRY_1"					name = "TEO_CAVALRY_1"				version = 1	}
+entity = {	clone = "AZT_ARTILLERY_1"				name = "TEO_ARTILLERY_1"			version = 1	}
+entity = {	clone = "AZT_CAVALRY_1_rider"			name = "TEO_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "AZT_INFANTRY_2"				name = "TEO_INFANTRY_2"				version = 1	}
+entity = {	clone = "AZT_CAVALRY_2"					name = "TEO_CAVALRY_2"				version = 1	}
+entity = {	clone = "AZT_ARTILLERY_2"				name = "TEO_ARTILLERY_2"			version = 1	}
+entity = {	clone = "AZT_CAVALRY_2_rider"			name = "TEO_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "AZT_INFANTRY_3"				name = "TEO_INFANTRY_3"				version = 1	}
+entity = {	clone = "AZT_CAVALRY_3"					name = "TEO_CAVALRY_3"				version = 1	}
+entity = {	clone = "AZT_ARTILLERY_3"				name = "TEO_ARTILLERY_3"			version = 1	}
+entity = {	clone = "AZT_CAVALRY_3_rider"			name = "TEO_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "AZT_INFANTRY_4"				name = "TEO_INFANTRY_4"				version = 1	}
+entity = {	clone = "AZT_CAVALRY_4"					name = "TEO_CAVALRY_4"				version = 1	}
+entity = {	clone = "AZT_ARTILLERY_4"				name = "TEO_ARTILLERY_4"			version = 1	}
+entity = {	clone = "AZT_CAVALRY_4_rider"			name = "TEO_CAVALRY_4_rider"		version = 1	}
+
+
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                  MAYA                                                   #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "MAY_INFANTRY_1"
+	pdxmesh = "meamup_MAY_infantry_01_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_club_AZT_MAY_entity" 
+		Left_hand_node = "meamup_shield_MAY_entity" 		
+	}
+}
+
+entity = {
+	name = "MAY_CAVALRY_1"
+	pdxmesh = "meamup_cavalry_horse_001_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MAY_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "MAY_CAVALRY_1_rider"
+	pdxmesh = "meamup_MAY_cavalry_01_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+entity = {
+	name = "MAY_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MAY_INFANTRY_1" 
+		cannon_node = "southamericagfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	name = "MAY_INFANTRY_2"
+	pdxmesh = "meamup_MAY_infantry_02_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "meamup_rifle_02_entity" 
+	}
+}
+
+entity = {
+	name = "MAY_CAVALRY_2"
+	pdxmesh = "meamup_cavalry_horse_001_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MAY_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "MAY_CAVALRY_2_rider"
+	pdxmesh = "meamup_MAY_cavalry_02_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+
+entity = {
+	name = "MAY_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MAY_INFANTRY_2" 
+		cannon_node = "southamericagfx_ARTILLERY_2_cannon" 
+	}
+}
+
+
+entity = {
+	name = "MAY_INFANTRY_3"
+	pdxmesh = "meamup_MAY_infantry_03_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "meamup_rifle_03_entity" 
+	}
+}
+
+entity = {
+	name = "MAY_CAVALRY_3"
+	pdxmesh = "meamup_cavalry_horse_002_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MAY_CAVALRY_3_rider" 
+	}
+}
+
+entity = {
+	name = "MAY_CAVALRY_3_rider"
+	pdxmesh = "meamup_MAY_cavalry_03_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+entity = {
+	name = "MAY_ARTILLERY_3"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MAY_INFANTRY_3" 
+		cannon_node = "southamericagfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	name = "MAY_INFANTRY_4"
+	pdxmesh = "meamup_MAY_infantry_04_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+}
+
+entity = {
+	name = "MAY_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	Saddle_Node = "MAY_CAVALRY_4_rider" 
+	#}
+}
+
+entity = {
+	name = "MAY_CAVALRY_4_rider"
+	pdxmesh = "cavalry_horse"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = { 
+	#	Right_hand_node = "meamup_cavalry_saber" 
+	#}
+}
+entity = {
+	name = "MAY_ARTILLERY_4"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "MAY_INFANTRY_4" 
+	#	cannon_node = "southamericagfx_ARTILLERY_4_cannon" 
+	#}
+}
+entity = {	clone = "MAY_INFANTRY_1"				name = "COC_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "COC_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "COC_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "COC_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "COC_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "COC_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "COC_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "COC_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "COC_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "COC_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "COC_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "COC_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "COC_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "COC_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "COC_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "COC_CAVALRY_4_rider"		version = 1	}
+
+entity = {	clone = "MAY_INFANTRY_1"				name = "XIU_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "XIU_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "XIU_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "XIU_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "XIU_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "XIU_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "XIU_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "XIU_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "XIU_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "XIU_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "XIU_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "XIU_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "XIU_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "XIU_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "XIU_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "XIU_CAVALRY_4_rider"		version = 1	}
+
+entity = {	clone = "MAY_INFANTRY_1"				name = "ITZ_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "ITZ_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "ITZ_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "ITZ_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "ITZ_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "ITZ_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "ITZ_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "ITZ_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "ITZ_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "ITZ_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "ITZ_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "ITZ_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "ITZ_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "ITZ_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "ITZ_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "ITZ_CAVALRY_4_rider"		version = 1	}
+
+entity = {	clone = "MAY_INFANTRY_1"				name = "KIC_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "KIC_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "KIC_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "KIC_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "KIC_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "KIC_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "KIC_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "KIC_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "KIC_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "KIC_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "KIC_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "KIC_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "KIC_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "KIC_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "KIC_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "KIC_CAVALRY_4_rider"		version = 1	}
+
+# YOK
+entity = {	clone = "MAY_INFANTRY_1"				name = "YOK_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "YOK_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "YOK_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "YOK_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "YOK_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "YOK_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "YOK_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "YOK_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "YOK_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "YOK_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "YOK_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "YOK_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "YOK_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "YOK_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "YOK_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "YOK_CAVALRY_4_rider"		version = 1	}
+
+# LAC
+entity = {	clone = "MAY_INFANTRY_1"				name = "LAC_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "LAC_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "LAC_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "LAC_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "LAC_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "LAC_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "LAC_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "LAC_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "LAC_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "LAC_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "LAC_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "LAC_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "LAC_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "LAC_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "LAC_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "LAC_CAVALRY_4_rider"		version = 1	}
+
+# KAQ
+entity = {	clone = "MAY_INFANTRY_1"				name = "KAQ_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "KAQ_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "KAQ_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "KAQ_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "KAQ_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "KAQ_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "KAQ_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "KAQ_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "KAQ_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "KAQ_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "KAQ_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "KAQ_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "KAQ_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "KAQ_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "KAQ_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "KAQ_CAVALRY_4_rider"		version = 1	}
+
+# CHT
+entity = {	clone = "MAY_INFANTRY_1"				name = "CHT_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "CHT_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "CHT_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "CHT_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "CHT_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "CHT_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "CHT_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "CHT_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "CHT_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "CHT_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "CHT_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "CHT_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "CHT_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "CHT_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "CHT_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "CHT_CAVALRY_4_rider"		version = 1	}
+
+# CTM
+entity = {	clone = "MAY_INFANTRY_1"				name = "CTM_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "CTM_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "CTM_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "CTM_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "CTM_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "CTM_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "CTM_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "CTM_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "CTM_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "CTM_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "CTM_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "CTM_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "CTM_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "CTM_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "CTM_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "CTM_CAVALRY_4_rider"		version = 1	}
+
+# CNP
+entity = {	clone = "MAY_INFANTRY_1"				name = "CNP_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "CNP_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "CNP_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "CNP_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "CNP_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "CNP_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "CNP_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "CNP_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "CNP_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "CNP_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "CNP_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "CNP_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "CNP_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "CNP_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "CNP_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "CNP_CAVALRY_4_rider"		version = 1	}
+
+# HST
+entity = {	clone = "MAY_INFANTRY_1"				name = "HST_INFANTRY_1"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_1"					name = "HST_CAVALRY_1"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_1"				name = "HST_ARTILLERY_1"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_1_rider"			name = "HST_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_2"				name = "HST_INFANTRY_2"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_2"					name = "HST_CAVALRY_2"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_2"				name = "HST_ARTILLERY_2"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_2_rider"			name = "HST_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_3"				name = "HST_INFANTRY_3"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_3"					name = "HST_CAVALRY_3"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_3"				name = "HST_ARTILLERY_3"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_3_rider"			name = "HST_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "MAY_INFANTRY_4"				name = "HST_INFANTRY_4"				version = 1	}
+entity = {	clone = "MAY_CAVALRY_4"					name = "HST_CAVALRY_4"				version = 1	}
+entity = {	clone = "MAY_ARTILLERY_4"				name = "HST_ARTILLERY_4"			version = 1	}
+entity = {	clone = "MAY_CAVALRY_4_rider"			name = "HST_CAVALRY_4_rider"		version = 1	}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                  MESO                                                   #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+entity = {
+	name = "ZAP_INFANTRY_1"
+	pdxmesh = "meamup_MES_infantry_01_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_spear_entity" 
+		Left_hand_node = "meamup_shield_small_entity" 		
+	}
+}
+
+entity = {
+	name = "ZAP_CAVALRY_1"
+	pdxmesh = "meamup_cavalry_horse_001_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "ZAP_CAVALRY_1_rider" 
+	}
+}
+
+entity = {
+	name = "ZAP_CAVALRY_1_rider"
+	pdxmesh = "meamup_MES_cavalry_01_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+entity = {
+	name = "ZAP_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "ZAP_INFANTRY_1" 
+		cannon_node = "southamericagfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	name = "ZAP_INFANTRY_2"
+	pdxmesh = "meamup_MES_infantry_02_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "meamup_rifle_02_entity" 
+	}
+}
+
+entity = {
+	name = "ZAP_CAVALRY_2"
+	pdxmesh = "meamup_cavalry_horse_001_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "ZAP_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "ZAP_CAVALRY_2_rider"
+	pdxmesh = "meamup_MES_cavalry_02_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+
+
+entity = {
+	name = "ZAP_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "ZAP_INFANTRY_2" 
+		cannon_node = "southamericagfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	name = "ZAP_INFANTRY_3"
+	pdxmesh = "meamup_MES_infantry_03_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "meamup_rifle_03_entity" 
+	}
+}
+
+entity = {
+	name = "ZAP_CAVALRY_3"
+	pdxmesh = "meamup_cavalry_horse_002_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "ZAP_CAVALRY_3_rider" 
+	}
+}
+
+entity = {
+	name = "ZAP_CAVALRY_3_rider"
+	pdxmesh = "meamup_MES_cavalry_03_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "meamup_cavalry_saber" 
+	}
+}
+entity = {
+	name = "ZAP_ARTILLERY_3"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "ZAP_INFANTRY_3" 
+		cannon_node = "southamericagfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	name = "ZAP_INFANTRY_4"
+	pdxmesh = "meamup_MES_infantry_04_mesh"
+	version = 1
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+}
+
+entity = {
+	name = "ZAP_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	Saddle_Node = "ZAP_CAVALRY_4_rider" 
+	#}
+}
+
+entity = {
+	name = "ZAP_CAVALRY_4_rider"
+	pdxmesh = "cavalry_horse"
+	version = 1
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = { 
+	#	Right_hand_node = "meamup_cavalry_saber" 
+	#}
+}
+entity = {
+	name = "ZAP_ARTILLERY_4"
+	pdxmesh = "artillery_base_mesh"
+	version = 1
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "ZAP_INFANTRY_4" 
+	#	cannon_node = "southamericagfx_ARTILLERY_4_cannon" 
+	#}
+}
+
+
+entity = {	clone = "ZAP_INFANTRY_1"				name = "MIX_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "MIX_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "MIX_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "MIX_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "MIX_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "MIX_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "MIX_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "MIX_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "MIX_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "MIX_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "MIX_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "MIX_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "MIX_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "MIX_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "MIX_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "MIX_CAVALRY_4_rider"		version = 1	}
+
+entity = {	clone = "ZAP_INFANTRY_1"				name = "TLA_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "TLA_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "TLA_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "TLA_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "TLA_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "TLA_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "TLA_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "TLA_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "TLA_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "TLA_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "TLA_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "TLA_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "TLA_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "TLA_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "TLA_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "TLA_CAVALRY_4_rider"		version = 1	}
+
+entity = {	clone = "ZAP_INFANTRY_1"				name = "TAR_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "TAR_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "TAR_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "TAR_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "TAR_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "TAR_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "TAR_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "TAR_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "TAR_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "TAR_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "TAR_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "TAR_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "TAR_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "TAR_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "TAR_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "TAR_CAVALRY_4_rider"		version = 1	}
+
+entity = {	clone = "ZAP_INFANTRY_1"				name = "CLM_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "CLM_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "CLM_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "CLM_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "CLM_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "CLM_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "CLM_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "CLM_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "CLM_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "CLM_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "CLM_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "CLM_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "CLM_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "CLM_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "CLM_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "CLM_CAVALRY_4_rider"		version = 1	}
+
+entity = {	clone = "ZAP_INFANTRY_1"				name = "TOT_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "TOT_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "TOT_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "TOT_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "TOT_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "TOT_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "TOT_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "TOT_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "TOT_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "TOT_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "TOT_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "TOT_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "TOT_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "TOT_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "TOT_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "TOT_CAVALRY_4_rider"		version = 1	}
+
+# COI
+entity = {	clone = "ZAP_INFANTRY_1"				name = "COI_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "COI_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "COI_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "COI_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "COI_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "COI_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "COI_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "COI_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "COI_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "COI_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "COI_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "COI_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "COI_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "COI_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "COI_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "COI_CAVALRY_4_rider"		version = 1	}
+
+# MAT
+entity = {	clone = "ZAP_INFANTRY_1"				name = "MAT_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "MAT_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "MAT_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "MAT_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "MAT_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "MAT_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "MAT_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "MAT_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "MAT_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "MAT_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "MAT_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "MAT_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "MAT_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "MAT_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "MAT_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "MAT_CAVALRY_4_rider"		version = 1	}
+
+# TON
+entity = {	clone = "ZAP_INFANTRY_1"				name = "TON_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "TON_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "TON_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "TON_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "TON_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "TON_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "TON_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "TON_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "TON_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "TON_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "TON_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "TON_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "TON_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "TON_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "TON_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "TON_CAVALRY_4_rider"		version = 1	}
+
+# XAL
+entity = {	clone = "ZAP_INFANTRY_1"				name = "XAL_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "XAL_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "XAL_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "XAL_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "XAL_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "XAL_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "XAL_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "XAL_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "XAL_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "XAL_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "XAL_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "XAL_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "XAL_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "XAL_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "XAL_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "XAL_CAVALRY_4_rider"		version = 1	}
+
+# OTO
+entity = {	clone = "ZAP_INFANTRY_1"				name = "OTO_INFANTRY_1"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1"					name = "OTO_CAVALRY_1"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_1"				name = "OTO_ARTILLERY_1"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_1_rider"			name = "OTO_CAVALRY_1_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_2"				name = "OTO_INFANTRY_2"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2"					name = "OTO_CAVALRY_2"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_2"				name = "OTO_ARTILLERY_2"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_2_rider"			name = "OTO_CAVALRY_2_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_3"				name = "OTO_INFANTRY_3"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3"					name = "OTO_CAVALRY_3"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_3"				name = "OTO_ARTILLERY_3"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_3_rider"			name = "OTO_CAVALRY_3_rider"		version = 1	}
+entity = {	clone = "ZAP_INFANTRY_4"				name = "OTO_INFANTRY_4"				version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4"					name = "OTO_CAVALRY_4"				version = 1	}
+entity = {	clone = "ZAP_ARTILLERY_4"				name = "OTO_ARTILLERY_4"			version = 1	}
+entity = {	clone = "ZAP_CAVALRY_4_rider"			name = "OTO_CAVALRY_4_rider"		version = 1	}

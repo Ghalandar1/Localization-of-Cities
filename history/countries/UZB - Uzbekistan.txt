@@ -1,0 +1,28 @@
+government = republic
+add_government_reform = oligarchy_reform
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+government_rank = 1
+historical_friend = TRK
+historical_friend = TKY
+historical_friend = KZK
+historical_friend = KYR
+historical_friend = AZE
+
+capital = 1459
+primary_culture = uzbehk
+religion = secularism
+technology_group = middle_eastern 
+2019.5.30 = {
+	monarch = {
+		name = "Islam Karimov"
+		adm = 5
+		dip = 2
+		mil = 3
+		religion = sunni
+	}
+}

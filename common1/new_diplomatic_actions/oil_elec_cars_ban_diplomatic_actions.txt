@@ -1,0 +1,131 @@
+	oil_ban_action =  {
+		category = emperor
+		require_acceptance = no
+		alert_index = 15  
+		alert_tooltip = ICON_FEDERATIONINVITE
+		
+		is_visible = {
+			production_leader = { trade_goods = oil }
+			FROM = { any_owned_province = { trade_goods = oil } }
+			NOT = { FROM = { has_country_modifier = oil_ban_modifire_from_100 } }
+		}
+		
+		is_allowed = {	
+			adm_power = 120
+			mil_power = 120
+			NOT = { inflation = 6 }
+			NOT = { 
+				FROM = { 
+					trading_bonus = {
+						trade_goods = oil
+						value = yes
+					}
+				}
+			}
+		}
+		
+		on_accept = {
+			
+			country_event = { id = oil_sanction.1x }
+			
+			FROM = { save_global_event_target_as = oil_embargo_temp }
+		}
+
+		ai_will_do = { 
+			OR = {
+				NOT = { FROM = { has_opinion = { who = ROOT value = -50 }	} }
+				NOT = {ROOT = { has_opinion = { who = FROM value = -50 }	}	}
+				}
+		}
+	
+		
+	}
+	
+	
+	electronics_ban_action =  {
+		category = emperor
+		require_acceptance = no
+		alert_index = 15  
+		alert_tooltip = ICON_FEDERATIONINVITE
+		
+		is_visible = {
+			production_leader = { trade_goods = electronics }
+			FROM = { any_owned_province = { trade_goods = electronics } }
+			NOT = { FROM = { has_country_modifier = electronics_ban_modifire_from_100 } }
+		}
+		
+		is_allowed = {			
+			adm_power = 120
+			mil_power = 120
+			NOT = { inflation = 6 }
+			NOT = { 
+				FROM = { 
+					trading_bonus = {
+						trade_goods = electronics
+						value = yes
+					}
+				}
+			}
+		}
+		
+		on_accept = {
+			
+			country_event = { id = electronics_sanction.1x }
+			
+			FROM = { save_global_event_target_as = electronics_embargo_temp }
+		}
+
+		ai_will_do = { 
+			OR = {
+				NOT = { FROM = { has_opinion = { who = ROOT value = -50 }	} }
+				NOT = {ROOT = { has_opinion = { who = FROM value = -50 }	}	}
+				}
+		}
+	
+		
+	}
+	
+	cars_ban_action =  {
+		category = emperor
+		require_acceptance = no
+		alert_index = 15  
+		alert_tooltip = ICON_FEDERATIONINVITE
+		
+		is_visible = {
+			production_leader = { trade_goods = cars }
+			FROM = { any_owned_province = { trade_goods = cars } }
+			NOT = { FROM = { has_country_modifier = cars_ban_modifire_from_100 } }
+		}
+		
+		is_allowed = {			
+			adm_power = 120
+			mil_power = 120
+			NOT = { inflation = 6 }
+			NOT = { 
+				FROM = { 
+					trading_bonus = {
+						trade_goods = cars
+						value = yes
+					}
+				}
+			}
+		}
+		
+		on_accept = {
+			
+			country_event = { id = cars_sanction.1x }
+			
+			FROM = { save_global_event_target_as = cars_embargo_temp }
+		}
+
+		ai_will_do = { 
+			OR = {
+				NOT = { FROM = { has_opinion = { who = ROOT value = -50 }	} }
+				NOT = {ROOT = { has_opinion = { who = FROM value = -50 }	}	}
+				}
+		}
+	
+		
+	}
+	
+	

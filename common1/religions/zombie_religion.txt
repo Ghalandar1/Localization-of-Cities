@@ -1,0 +1,18 @@
+z_religions = {
+	r_zombie = {
+		color = { 0.3 0.3 0.3 }
+		icon = 57
+		country = {
+			land_maintenance_modifier = -10
+			global_manpower_modifier = 5.0
+			naval_forcelimit_modifier = -10
+			land_forcelimit_modifier  = 1.0
+			global_sailors_modifier = -10.0
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { POTATO_CLAN }
+	}
+}

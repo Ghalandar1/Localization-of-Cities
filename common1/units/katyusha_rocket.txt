@@ -1,0 +1,12 @@
+# Katyusha Rocket
+
+type = artillery
+
+maneuver = 3
+offensive_morale = 7
+defensive_morale = 7
+offensive_fire = 9
+defensive_fire = 8
+offensive_shock = 7
+defensive_shock = 6
+

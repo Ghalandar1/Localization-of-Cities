@@ -1,0 +1,74 @@
+
+
+graphical_culture = westerngfx
+
+
+color = { 170  50  150 }
+
+historical_score = 4000
+
+historical_idea_groups = {
+	nuclear_research
+	
+}
+
+
+historical_units = {
+	mamluk_archer
+	muslim_cavalry_archers
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Khalilillah #0" = 10
+	"Rahman #0" = 10
+	"Abdul #0" = 50
+	"Ghulam #0" = 10
+	"Siddiq #0" = 10
+	"Mithaq #0" = 10
+	"Latif #0" = 10
+	"Aryan #0" = 10
+	"Haji #0" = 10
+	"Khaled #0" = 10
+	"Sultan #0" = 10
+	"Semaryalai #0" = 10
+	"Hamza #0" = 10
+	"Mohammed #0" = 10
+	"Massouda #0" = 10
+	"Ahmad #0" = 10
+	"Wakil #0" = 10
+	"Hamid #0" = 10
+}
+
+leader_names = {
+	Khan
+	Shah
+	Khalili
+	Tokhi
+	Sanai
+	Habibi
+	Rashad
+	Ahmadi
+	Kamran
+	Abdullah
+	Ahmadzai
+	Mazbadi
+	Karzai
+	Yasini
+	Noristani
+	Sabet
+	Taufiqui
+	Bashardost
+}
+
+ship_names = {
+	Khavakend "Amu Darja" Fergana Margilan
+	Rishdan Besharik Khamza Kuva Kuvasay Nar
+	"Syr Darja" Uzeravsan "Alajskij Chrebet"
+}
+
+

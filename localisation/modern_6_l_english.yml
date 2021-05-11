@@ -1,0 +1,190 @@
+﻿l_english:
+ CLOTH_LOW:0 "Human Falled Cloth Prices"
+ CLOTH_MUCH:0 "Human Rised Cloth Price"
+ PAPER_LOW:0 "Human Falled Paper Prices"
+ PAPER_MUCH:0 "Human Rised Paper Prices"
+ SILK_LOW:0 "Human Falled Silk Prices"
+ SILK_MUCH:0 "Human Rised Silk Prices"
+ 
+ 
+ low_cloth_50:0 "Falling Cloth Prices -50%"
+ low_cloth_50_desc:0 "Falling Cloth Prices -50%"
+ low_cloth_50_title:0 "Falling Cloth Prices -50%"
+ low_cloth_50_dialog:0 "Falling Cloth Prices -50%"
+ low_cloth_50_tooltip:0 "Falling Cloth Prices -50%"
+ much_cloth_50:0 "Rising Cloth Prices 50%"
+ much_cloth_50_desc:0 "Rising Cloth Prices 50%"
+ much_cloth_50_title:0 "Rising Cloth Prices 50%"
+ much_cloth_50_dialog:0 "Rising Cloth Prices 50%"
+ much_cloth_50_tooltip:0 "Rising Cloth Prices 50%"
+ 
+ 
+ much_cloth_25:0 "Rising Cloth Prices 25%"
+ much_cloth_25_desc:0 "Rising Cloth Prices 25%"
+ much_cloth_25_title:0 "Rising Cloth Prices 25%"
+ much_cloth_25_dialog:0 "Rising Cloth Prices 25%"
+ much_cloth_25_tooltip:0 "Rising Cloth Prices 25%"
+ low_cloth_25:0 "Falling Cloth Prices -25%"
+ low_cloth_25_desc:0 "Falling Cloth Prices -25%"
+ low_cloth_25_title:0 "Falling Cloth Prices -25%"
+ low_cloth_25_dialog:0 "Falling Cloth Prices -25%"
+ low_cloth_25_tooltip:0 "Falling Cloth Prices -25%"
+ 
+ 
+ 
+ 
+ much_silk_50:0 "Rising Silk Prices 50%"
+ much_silk_50_desc:0 "Rising Silk Prices 50%"
+ much_silk_50_title:0 "Rising Silk Prices 50%"
+ much_silk_50_dialog:0 "Rising Silk Prices 50%"
+ much_silk_50_tooltip:0 "Rising Silk Prices 50%"
+ low_silk_50:0 "Falling Silk Prices -50%"
+ low_silk_50_desc:0 "Falling Silk Prices -50%"
+ low_silk_50_title:0 "Falling Silk Prices -50%"
+ low_silk_50_dialog:0 "Falling Silk Prices -50%"
+ low_silk_50_tooltip:0 "Falling Silk Prices -50%"
+ 
+ 
+ 
+ much_silk_25:0 "Rising Silk Prices 25%"
+ much_silk_25_desc:0 "Rising Silk Prices 25%"
+ much_silk_25_title:0 "Rising Silk Prices 25%"
+ much_silk_25_dialog:0 "Rising Silk Prices 25%"
+ much_silk_25_tooltip:0 "Rising Silk Prices 25%"
+ low_silk_25:0 "Falling Silk Prices -25%"
+ low_silk_25_desc:0 "Falling Silk Prices -25%"
+ low_silk_25_title:0 "Falling Silk Prices -25%"
+ low_silk_25_dialog:0 "Falling Silk Prices -25%"
+ low_silk_25_tooltip:0 "Falling Silk Prices -25%"
+ 
+
+ 
+ 
+ low_paper_50:0 "Falling Paper Prices -50%"
+ low_paper_50_desc:0 "Falling Paper Prices -50%"
+ low_paper_50_title:0 "Falling Paper Prices -50%"
+ low_paper_50_dialog:0 "Falling Paper Prices -50%"
+ low_paper_50_tooltip:0 "Falling Paper Prices -50%"
+ 
+ low_paper_25:0 "Falling Paper Prices -25%"
+ low_paper_25_desc:0 "Falling Paper Prices -25%"
+ low_paper_25_title:0 "Falling Paper Prices -25%"
+ low_paper_25_dialog:0 "Falling Paper Prices -25%"
+ low_paper_25_tooltip:0 "Falling Paper Prices -25%"
+ 
+ much_paper_50:0 "Rising Paper Prices 50%"
+ much_paper_50_desc:0 "Rising Paper Prices 50%"
+ much_paper_50_title:0 "Rising Paper Prices 50%"
+ much_paper_50_dialog:0 "Rising Paper Prices 50%"
+ much_paper_50_tooltip:0 "Rising Paper Prices 50%"
+ 
+ 
+ much_paper_25:0 "Rising Paper Prices 25%"
+ much_paper_25_desc:0 "Rising Paper Prices 25%"
+ much_paper_25_title:0 "Rising Paper Prices 25%"
+ much_paper_25_dialog:0 "Rising Paper Prices 25%"
+ much_paper_25_tooltip:0 "Rising Paper Prices 25%"
+ 
+
+ 
+ 
+
+ 
+ failling_paper_price_root_25:0 "Falled Paper Prices"
+ failling_paper_price_root:0 "Falled Paper Prices"
+ failling_paper_price_root_1:0 "Falled Paper Prices"
+ failling_paper_price_root_1_25:0 "Falled Paper Prices"
+ failling_paper_price_from_25:0 "Falled Paper Prices"
+ failling_paper_price_from:0 "Falled Paper Prices"
+ failling_paper_price_from_1:0 "Falled Paper Prices"
+ rising_paper_price_root_25:0 "Rising Paper Price"
+ rising_paper_price_root:0 "Rising Paper Price"
+ rising_paper_price_root_1:0 "Rising Paper Price"
+ rising_paper_price_root_1_25:0 "Rising Paper Price"
+ rising_paper_price_from_25:0 "Rising Paper Price"
+ rising_paper_price_from:0 "Rising Paper Price"
+ 
+ 
+ failling_cloth_price_root_25:0 "Falling Cloth Prices"
+ failling_cloth_price_root:0 "Falling Cloth Prices"
+ failling_cloth_price_root_1:0 "Falling Cloth Prices"
+ failling_cloth_price_from_25:0 "Falling Cloth Prices"
+ failling_cloth_price_from:0 "Falling Cloth Prices"
+ failling_cloth_price_root_1_25:0 "Falling Cloth Prices"
+ rising_cloth_price_root_25:0 "Rising Cloth Prices"
+ rising_cloth_price_root:0 "Rising Cloth Prices"
+ rising_cloth_price_root_1:0 "Rising Cloth Prices"
+ rising_cloth_price_from_25:0 "Rising Cloth Prices"
+ rising_cloth_price_from:0 "Rising Cloth Prices"
+ rising_cloth_price_root_1_25:0 "Falling Cloth Prices"
+ 
+ 
+ 
+ failling_silk_price_root_1:0 "Falling Silk Prices"
+ failling_silk_price_root_25:0 "Falling Silk Prices"
+ failling_silk_price_root:0 "Falling Silk Prices"
+ failling_silk_price_from_25:0 "Falling Silk Prices"
+ failling_silk_price_from:0 "Falling Silk Prices"
+ failling_silk_price_root_1_25:0 "Falling Silk Prices"
+ rising_silk_price_root_25:0 "Rising Silk Prices"
+ rising_silk_price_root:0 "Rising Silk Prices"
+ rising_silk_price_root_1:0 "Rising Silk Prices"
+ rising_silk_price_from_25:0 "Rising Silk Prices"
+ rising_silk_price_from:0 "Rising Silk Prices"
+ rising_silk_price_root_1_25:0 "Rising Silk Prices"
+ 
+ 
+ low_paper_price_1_50:0 "Human Changed Price Paper -50%"
+ much_paper_price_1_50:0 "Human Changed Price Paper 50%"
+ low_paper_price_1_25:0 "Human Changed Price Paper -25"
+ much_paper_price_1_25:0 "Human Changed Price Paper 25"
+ 
+ 
+ low_cloth_price_1_50:0 "Human Changed Price Cloth -50%"
+ much_cloth_price_1_50:0 "Human Changed Price Cloth 50%"
+ low_cloth_price_1_25:0 "Human Changed Price Cloth -25"
+ much_cloth_price_1_25:0 "Human Changed Price Cloth 25"
+ 
+ 
+ low_silk_price_1_50:0 "Human Changed Price Silk -50%"
+ much_silk_price_1_50:0 "Human Changed Price Silk 50%"
+ low_silk_price_1_25:0 "Human Changed Price Silk -25"
+ much_silk_price_1_25:0 "Human Changed Price Silk 25"
+ 
+ 
+ 
+ 
+ 
+ low_opinion_paper_good_50:0 "Good Opinion For Paper Price -50"
+ low_opinion_paper_bad_50:0 "Bad Opinion For Paper Price -50"
+ much_opinion_paper_good_50:0 "Good Opinion For Paper Price 50"
+ much_opinion_paper_bad_50:0 "Bad Opinion For Paper Price 50"
+ low_opinion_paper_good_25:0 "Good Opinion For Paper Price -25"
+ low_opinion_paper_bad_25:0 "Bad Opinion For Paper Price -25"
+ much_opinion_paper_bad_25:0 "Bad Opinion For Paper Price 25"
+ much_opinion_paper_good_25:0 "Good Opinion For Paper Price 25"
+ 
+ 
+ low_opinion_cloth_good_50:0 "Good Opinion For Cloth Price -50"
+ low_opinion_cloth_bad_50:0 "Bad Opinion For Cloth Price -50"
+ much_opinion_cloth_good_50:0 "Good Opinion For Cloth Price 50"
+ much_opinion_cloth_bad_50:0 "Bad Opinion For Cloth Price 50"
+ low_opinion_cloth_good_25:0 "Good Opinion For Cloth Price -25"
+ low_opinion_cloth_bad_25:0 "Bad Opinion For Cloth Price -25"
+ much_opinion_cloth_bad_25:0 "Bad Opinion For Cloth Price 25"
+ much_opinion_cloth_good_25:0 "Good Opinion For Cloth Price 25"
+ 
+ 
+ low_opinion_silk_good_50:0 "Good Opinion For Silk Price -50"
+ low_opinion_silk_bad_50:0 "Bad Opinion For Silk Price -50"
+ much_opinion_silk_good_50:0 "Good Opinion For Silk Price 50"
+ much_opinion_silk_bad_50:0 "Bad Opinion For Silk Price 50"
+ low_opinion_silk_good_25:0 "Good Opinion For Silk Price -25"
+ low_opinion_silk_bad_25:0 "Bad Opinion For Silk Price -25"
+ much_opinion_silk_bad_25:0 "Bad Opinion For Silk Price 25"
+ much_opinion_silk_good_25:0 "Good Opinion For Silk Price 25"
+ 
+ 
+ 
+ 
+ 

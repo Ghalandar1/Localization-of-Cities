@@ -1,0 +1,497 @@
+
+entity = {
+	name = "eucavup_cavalry_saber_entity"
+	pdxmesh = "eucavup_cavalry_saber_mesh"
+}
+
+
+
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   Level 1                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "eucavup_FRA_cavalry_01_rider_entity"
+	pdxmesh = "eucavup_FRA_cavalry_01_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity"
+	}
+}
+
+entity = {
+	name = "eucavup_ENG_cavalry_01_rider_entity"
+	pdxmesh = "eucavup_ENG_cavalry_01_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity" 
+	}
+}
+
+entity = {	
+	name = "eucavup_SPA_cavalry_01_rider_entity"
+	pdxmesh = "eucavup_SPA_cavalry_01_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+	
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity" 
+	}
+}
+
+
+entity = {
+	name = "FRA_NEWCAV_CAVALRY_1"
+	pdxmesh = "eucavup_cavalry_01_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_FRA_cavalry_01_rider_entity" 
+	}
+}
+
+
+entity = {
+	name = "ENG_NEWCAV_CAVALRY_1"
+	pdxmesh = "eucavup_cavalry_01_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_ENG_cavalry_01_rider_entity" 
+	}
+}
+
+	entity = {
+	name = "SPA_NEWCAV_CAVALRY_1"
+	pdxmesh = "eucavup_cavalry_01_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+	
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_SPA_cavalry_01_rider_entity" 
+	}
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   Level 2                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "eucavup_FRA_cavalry_02_rider_entity"
+	pdxmesh = "eucavup_FRA_cavalry_02_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity"
+	}
+}
+
+entity = {
+	name = "eucavup_ENG_cavalry_02_rider_entity"
+	pdxmesh = "eucavup_ENG_cavalry_02_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity" 
+	}
+}
+
+entity = {	
+	name = "eucavup_SPA_cavalry_02_rider_entity"
+	pdxmesh = "eucavup_SPA_cavalry_02_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+	
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity" 
+	}
+}
+
+
+entity = {
+	name = "FRA_NEWCAV_CAVALRY_2"
+	pdxmesh = "eucavup_cavalry_01_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_FRA_cavalry_02_rider_entity" 
+	}
+}
+
+
+entity = {
+	name = "ENG_NEWCAV_CAVALRY_2"
+	pdxmesh = "eucavup_cavalry_01_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_ENG_cavalry_02_rider_entity" 
+	}
+}
+
+	entity = {
+	name = "SPA_NEWCAV_CAVALRY_2"
+	pdxmesh = "eucavup_cavalry_01_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+	
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_SPA_cavalry_02_rider_entity" 
+	}
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   Level 3                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "eucavup_FRA_cavalry_03_rider_entity"
+	pdxmesh = "eucavup_FRA_cavalry_03_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity"
+	}
+}
+
+entity = {
+	name = "eucavup_ENG_cavalry_03_rider_entity"
+	pdxmesh = "eucavup_ENG_cavalry_03_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity" 
+	}
+}
+
+entity = {	
+	name = "eucavup_SPA_cavalry_03_rider_entity"
+	pdxmesh = "eucavup_SPA_cavalry_03_rider_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+	
+	attach = { 
+		name = "rider_weapon"
+		Right_hand_node = "eucavup_cavalry_saber_entity" 
+	}
+}
+
+
+entity = {
+	name = "FRA_NEWCAV_CAVALRY_3"
+	pdxmesh = "eucavup_cavalry_02_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_FRA_cavalry_03_rider_entity" 
+	}
+}
+
+
+entity = {
+	name = "ENG_NEWCAV_CAVALRY_3"
+	pdxmesh = "eucavup_cavalry_02_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_ENG_cavalry_03_rider_entity" 
+	}
+}
+
+	entity = {
+	name = "SPA_NEWCAV_CAVALRY_3"
+	pdxmesh = "eucavup_cavalry_02_horse_mesh"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+	
+	attach = {
+		name = "rider"
+		Saddle_Node = "eucavup_SPA_cavalry_03_rider_entity" 
+	}
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   Level 4                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "eucavup_FRA_cavalry_04_rider_entity"
+	pdxmesh = "cavalry_horse"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = { 
+	#	name = "rider_weapon"
+	#	Right_hand_node = "eucavup_cavalry_saber_entity"
+	#}
+}
+
+entity = {
+	name = "eucavup_ENG_cavalry_04_rider_entity"
+	pdxmesh = "cavalry_horse"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = { 
+	#	name = "rider_weapon"
+	#	Right_hand_node = "eucavup_cavalry_saber_entity" 
+	#}
+}
+
+entity = {	
+	name = "eucavup_SPA_cavalry_04_rider_entity"
+	pdxmesh = "cavalry_horse"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+	
+	#attach = { 
+	#	name = "rider_weapon"
+	#	Right_hand_node = "eucavup_cavalry_saber_entity" 
+	#}
+}
+
+
+entity = {
+	name = "FRA_NEWCAV_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	Saddle_Node = "eucavup_FRA_cavalry_04_rider_entity" 
+	#}
+}
+
+
+entity = {
+	name = "ENG_NEWCAV_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	Saddle_Node = "eucavup_ENG_cavalry_04_rider_entity" 
+	#}
+}
+
+	entity = {
+	name = "SPA_NEWCAV_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 5
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+	
+	#attach = {
+	#	name = "rider"
+	#	Saddle_Node = "eucavup_SPA_cavalry_04_rider_entity" 
+	#}
+}
+

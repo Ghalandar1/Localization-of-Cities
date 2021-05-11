@@ -1,0 +1,25 @@
+government = republic
+
+government_rank = 2
+add_government_reform = oligarchy_reform
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 1965
+primary_culture = mexican
+religion = secularism
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Andrés Manuel López Obrador"
+		birth_date = 1953.11.13
+		adm = 4
+		dip = 3
+		mil = 3
+		religion = catholic
+	}
+}

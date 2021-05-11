@@ -1,0 +1,200 @@
+cyber1 = {
+	global_tax_income = -30
+}
+cyber_fort = {
+	defensiveness = -0.25
+}
+
+cyber_corruption = {
+	yearly_corruption = 0.6
+}
+
+cyber_production = {
+	production_efficiency = -0.30
+}
+
+cyber_defense = {
+	global_spy_defence = 0.2
+}
+sanctions_approved = {
+
+}
+sanction_did = {
+	prestige = 0.1
+}
+sanction_did_1 = {
+	prestige = 0.1
+}
+sanction_did_2 = {
+	prestige = 0.1
+}
+sanction_did_3 = {
+	prestige = 0.1
+}
+has_sanction = {
+	global_foreign_trade_power = -0.1
+	global_trade_power = -0.1
+	land_forcelimit_modifier = -0.05
+	trade_efficiency = -0.1
+	}
+has_sanction_1 = { 
+	global_foreign_trade_power = -0.2
+	global_trade_power = -0.2
+	land_forcelimit_modifier = -0.07
+	trade_efficiency = -0.2
+ }
+has_sanction_2 = { 
+	global_foreign_trade_power = -0.3
+	global_trade_power = -0.3
+	land_forcelimit_modifier = -0.1
+	trade_efficiency = -0.3
+ }
+has_sanction_3 = { 
+	global_foreign_trade_power = -0.5
+	global_trade_power = -0.5
+	land_forcelimit_modifier = -0.15
+	trade_efficiency = -0.5
+ }
+ 
+ 
+ has_sanction_0_1 = {  }
+ has_sanction_1_1 = {  }
+ has_sanction_2_1 = {  }
+ has_sanction_3_1 = {  }
+ 
+ 
+ had_sanction_0 = {  }
+ had_sanction_1 = {  }
+ had_sanction_2 = {  }
+ had_sanction_3 = {  }
+ 
+ root_sanction_1 = {  }
+ root_sanction_2 = {  }
+ root_sanction_3 = {  }
+ root_sanction_4 = {  }
+
+army_limited_0 = { 
+	land_forcelimit_modifier = -0.05
+	naval_forcelimit_modifier = -0.05
+	
+  }
+army_limited_1 = { 
+	land_forcelimit_modifier = -0.1
+	naval_forcelimit_modifier = -0.1 
+ }
+army_limited_2 = {
+	land_forcelimit_modifier = -0.2 
+	naval_forcelimit_modifier = -0.2
+ }
+army_limited_3 = { 
+	land_forcelimit_modifier = -0.3
+	naval_forcelimit_modifier = -0.3
+  }
+army_limited_4 = { 
+	land_forcelimit_modifier = -0.5
+	naval_forcelimit_modifier = -0.5
+  }
+army_limited_0_0 = {  }
+army_limited_1_1 = {  }
+army_limited_2_2 = {  }
+army_limited_3_3 = {  }
+army_limited_4_4 = {  }
+
+council_member = {
+				diplomatic_reputation = 2
+				global_manpower_modifier = -0.05
+	}
+perm_council_member = {
+				diplomatic_reputation = 2
+				global_manpower_modifier = -0.05
+				army_tradition = 0.3
+	}
+un_secretary_general = {
+				discipline = 0.5
+				global_manpower_modifier = 0.75
+	}
+un_good_war = {
+				land_morale = 0.1
+}
+un_debated = {
+				diplomatic_reputation = 1
+}
+no_unpeace = {
+				diplomatic_reputation = -1
+}
+
+
+########## OIL
+failling_oil_price_root = { production_efficiency = 0.35 }
+failling_oil_price_root_25 = { production_efficiency = 0.15 }
+failling_oil_price_root_1 = { }
+failling_oil_price_root_1_25 = { }
+failling_oil_price_from = { production_efficiency = 0.35 }
+failling_oil_price_from_25 = { production_efficiency = 0.15 }
+rising_oil_price_root = {   production_efficiency = -0.35	}
+rising_oil_price_root_25 = {   production_efficiency = -0.15	}
+rising_oil_price_root_1 = {   }
+rising_oil_price_root_1_25 = {   }
+rising_oil_price_from = {   production_efficiency = -0.35	}
+rising_oil_price_from_25 = {   production_efficiency = -0.15	}
+
+
+########## Electronic
+failling_electronics_price_root ={  production_efficiency = 0.35 }
+failling_electronics_price_root_25 ={  production_efficiency = 0.15 }
+failling_electronics_price_root_1 = {  }
+failling_electronics_price_from = { production_efficiency = 0.35 }
+failling_electronics_price_from_25 = { production_efficiency = 0.15 }
+failling_electronics_price_root_1_25 = {  }
+rising_electronics_price_root = { production_efficiency = -0.35 }
+rising_electronics_price_root_25 = { production_efficiency = -0.15 }
+rising_electronics_price_root_1 = {  }
+rising_electronics_price_root_1_25 = {  }
+rising_electronics_price_from = { production_efficiency = -0.35 }
+rising_electronics_price_from_25 = { production_efficiency = -0.15 }
+
+
+########## Uranium
+failling_uranium_price_root = { production_efficiency = 0.35 }
+failling_uranium_price_root_25 = { production_efficiency = 0.15 }
+failling_uranium_price_root_1 = {  }
+failling_uranium_price_from = { production_efficiency = 0.35 }
+failling_uranium_price_from_25 = { production_efficiency = 0.15 }
+rising_uranium_price_root = { production_efficiency = -0.35 }
+rising_uranium_price_root_25 = { production_efficiency = -0.15 }
+rising_uranium_price_root_1 = {  }
+rising_uranium_price_from = { production_efficiency = -0.35 }
+rising_uranium_price_from_25 = { production_efficiency = -0.15 }
+failling_uranium_price_root_1_25 = {  }
+rising_uranium_price_root_1_25 = {  }
+
+
+
+
+
+failling_car_price_5 = { production_efficiency = 0.35 }
+
+
+
+##################### other country #####################
+low_oil_price_1_50 = { production_efficiency = 0.2 }
+much_oil_price_1_50 = { production_efficiency = -0.2 }
+low_oil_price_1_25 = { production_efficiency = 0.1 }
+much_oil_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_electronics_price_1_50 = { production_efficiency = 0.2 }
+much_electronics_price_1_50 = { production_efficiency = -0.2 }
+low_electronics_price_1_25 = { production_efficiency = 0.1 }
+much_electronics_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_uranium_price_1_50 = { production_efficiency = 0.2 }
+much_uranium_price_1_50 = { production_efficiency = -0.2 }
+low_uranium_price_1_25 = { production_efficiency = 0.1 }
+much_uranium_price_1_25 = { production_efficiency = -0.1 }
+
+#Secularism
+change_secular = {  }
+change_din = {  }
+

@@ -1,0 +1,8 @@
+#Dromon
+type = galley
+
+hull_size = 70
+base_cannons = 80
+sail_speed = 16
+
+sprite_level = 4

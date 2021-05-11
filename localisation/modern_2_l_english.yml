@@ -1,0 +1,188 @@
+﻿l_english:
+ CARS_LOW:0 "Human Falled Cars Prices"
+ CARS_MUCH:0 "Human Rised Cars Price"
+ GEMS_LOW:0 "Human Falled Gems Prices"
+ GEMS_MUCH:0 "Human Rised Gems Prices"
+ COAL_LOW:0 "Human Falled Coal Prices"
+ COAL_MUCH:0 "Human Rised Coal Prices"
+ 
+ 
+ low_gems_50:0 "Falling Gems Prices -50%"
+ low_gems_50_desc:0 "Falling Gems Prices -50%"
+ low_gems_50_title:0 "Falling Gems Prices -50%"
+ low_gems_50_dialog:0 "Falling Gems Prices -50%"
+ low_gems_50_tooltip:0 "Falling Gems Prices -50%"
+ much_gems_50:0 "Rising Gems Prices 50%"
+ much_gems_50_desc:0 "Rising Gems Prices 50%"
+ much_gems_50_title:0 "Rising Gems Prices 50%"
+ much_gems_50_dialog:0 "Rising Gems Prices 50%"
+ much_gems_50_tooltip:0 "Rising Gems Prices 50%"
+ 
+ 
+ much_gems_25:0 "Rising Gems Prices 25%"
+ much_gems_25_desc:0 "Rising Gems Prices 25%"
+ much_gems_25_title:0 "Rising Gems Prices 25%"
+ much_gems_25_dialog:0 "Rising Gems Prices 25%"
+ much_gems_25_tooltip:0 "Rising Gems Prices 25%"
+ low_gems_25:0 "Falling Gems Prices -25%"
+ low_gems_25_desc:0 "Falling Gems Prices -25%"
+ low_gems_25_title:0 "Falling Gems Prices -25%"
+ low_gems_25_dialog:0 "Falling Gems Prices -25%"
+ low_gems_25_tooltip:0 "Falling Gems Prices -25%"
+ 
+ 
+ 
+ 
+ much_coal_50:0 "Rising Coal Prices 50%"
+ much_coal_50_desc:0 "Rising Coal Prices 50%"
+ much_coal_50_title:0 "Rising Coal Prices 50%"
+ much_coal_50_dialog:0 "Rising Coal Prices 50%"
+ much_coal_50_tooltip:0 "Rising Coal Prices 50%"
+ low_coal_50:0 "Falling Coal Prices -50%"
+ low_coal_50_desc:0 "Falling Coal Prices -50%"
+ low_coal_50_title:0 "Falling Coal Prices -50%"
+ low_coal_50_dialog:0 "Falling Coal Prices -50%"
+ low_coal_50_tooltip:0 "Falling Coal Prices -50%"
+ 
+ 
+ 
+ much_coal_25:0 "Rising Coal Prices 25%"
+ much_coal_25_desc:0 "Rising Coal Prices 25%"
+ much_coal_25_title:0 "Rising Coal Prices 25%"
+ much_coal_25_dialog:0 "Rising Coal Prices 25%"
+ much_coal_25_tooltip:0 "Rising Coal Prices 25%"
+ low_coal_25:0 "Falling Coal Prices -25%"
+ low_coal_25_desc:0 "Falling Coal Prices -25%"
+ low_coal_25_title:0 "Falling Coal Prices -25%"
+ low_coal_25_dialog:0 "Falling Coal Prices -25%"
+ low_coal_25_tooltip:0 "Falling Coal Prices -25%"
+ 
+
+ 
+ 
+ low_cars_50:0 "Falling Cars Prices -50%"
+ low_cars_50_desc:0 "Falling Cars Prices -50%"
+ low_cars_50_title:0 "Falling Cars Prices -50%"
+ low_cars_50_dialog:0 "Falling Cars Prices -50%"
+ low_cars_50_tooltip:0 "Falling Cars Prices -50%"
+ 
+ low_cars_25:0 "Falling Cars Prices -25%"
+ low_cars_25_desc:0 "Falling Cars Prices -25%"
+ low_cars_25_title:0 "Falling Cars Prices -25%"
+ low_cars_25_dialog:0 "Falling Cars Prices -25%"
+ low_cars_25_tooltip:0 "Falling Cars Prices -25%"
+ 
+ much_cars_50:0 "Rising Cars Prices 50%"
+ much_cars_50_desc:0 "Rising Cars Prices 50%"
+ much_cars_50_title:0 "Rising Cars Prices 50%"
+ much_cars_50_dialog:0 "Rising Cars Prices 50%"
+ much_cars_50_tooltip:0 "Rising Cars Prices 50%"
+ 
+ 
+ much_cars_25:0 "Rising Cars Prices 25%"
+ much_cars_25_desc:0 "Rising Cars Prices 25%"
+ much_cars_25_title:0 "Rising Cars Prices 25%"
+ much_cars_25_dialog:0 "Rising Cars Prices 25%"
+ much_cars_25_tooltip:0 "Rising Cars Prices 25%"
+ 
+ 
+ 
+ 
+ failling_cars_price_root:0 "Falled Cars Prices"
+ failling_cars_price_root_25:0 "Falled Cars Prices"
+ failling_cars_price_root_1:0 "Falled Cars Prices"
+ failling_cars_price_root_1_25:0 "Falled Cars Prices"
+ failling_cars_price_from:0 "Falled Cars Prices"
+ failling_cars_price_from_25:0 "Falled Cars Prices"
+ failling_cars_price_from_1:0 "Falled Cars Prices"
+ rising_cars_price_root:0 "Rising Cars Price"
+ rising_cars_price_root_25:0 "Rising Cars Price"
+ rising_cars_price_root_1:0 "Rising Cars Price"
+ rising_cars_price_root_1_25:0 "Rising Cars Price"
+ rising_cars_price_from:0 "Rising Cars Price"
+ rising_cars_price_from_25:0 "Rising Cars Price"
+ 
+ 
+ failling_gems_price_root:0 "Falling Gems Prices"
+ failling_gems_price_root_25:0 "Falling Gems Prices"
+ failling_gems_price_root_1:0 "Falling Gems Prices"
+ failling_gems_price_from:0 "Falling Gems Prices"
+ failling_gems_price_from_25:0 "Falling Gems Prices"
+ failling_gems_price_root_1_25:0 "Falling Gems Prices"
+ rising_gems_price_root:0 "Rising Gems Prices"
+ rising_gems_price_root_25:0 "Rising Gems Prices"
+ rising_gems_price_root_1:0 "Rising Gems Prices"
+ rising_gems_price_from:0 "Rising Gems Prices"
+ rising_gems_price_from_25:0 "Rising Gems Prices"
+ rising_gems_price_root_1_25:0 "Falling Gems Prices"
+ 
+ 
+ 
+ failling_coal_price_root_1:0 "Falling Coal Prices"
+ failling_coal_price_root_25:0 "Falling Coal Prices"
+ failling_coal_price_root:0 "Falling Coal Prices"
+ failling_coal_price_from_25:0 "Falling Coal Prices"
+ failling_coal_price_from:0 "Falling Coal Prices"
+ failling_coal_price_root_1_25:0 "Falling Coal Prices"
+ rising_coal_price_root_25:0 "Rising Coal Prices"
+ rising_coal_price_root:0 "Rising Coal Prices"
+ rising_coal_price_root_1:0 "Rising Coal Prices"
+ rising_coal_price_from_25:0 "Rising Coal Prices"
+ rising_coal_price_from:0 "Rising Coal Prices"
+ rising_coal_price_root_1_25:0 "Rising Coal Prices"
+ 
+ 
+ low_cars_price_1_50:0 "Human Changed Price Cars -50%"
+ much_cars_price_1_50:0 "Human Changed Price Cars 50%"
+ low_cars_price_1_25:0 "Human Changed Price Cars -25"
+ much_cars_price_1_25:0 "Human Changed Price Cars 25"
+ 
+ 
+ low_gems_price_1_50:0 "Human Changed Price Gems -50%"
+ much_gems_price_1_50:0 "Human Changed Price Gems 50%"
+ low_gems_price_1_25:0 "Human Changed Price Gems -25"
+ much_gems_price_1_25:0 "Human Changed Price Gems 25"
+ 
+ 
+ low_coal_price_1_50:0 "Human Changed Price Coal -50%"
+ much_coal_price_1_50:0 "Human Changed Price Coal 50%"
+ low_coal_price_1_25:0 "Human Changed Price Coal -25"
+ much_coal_price_1_25:0 "Human Changed Price Coal 25"
+ 
+ 
+ 
+ 
+ 
+ low_opinion_cars_good_50:0 "Good Opinion For Cars Price -50"
+ low_opinion_cars_bad_50:0 "Bad Opinion For Cars Price -50"
+ much_opinion_cars_good_50:0 "Good Opinion For Cars Price 50"
+ much_opinion_cars_bad_50:0 "Bad Opinion For Cars Price 50"
+ low_opinion_cars_good_25:0 "Good Opinion For Cars Price -25"
+ low_opinion_cars_bad_25:0 "Bad Opinion For Cars Price -25"
+ much_opinion_cars_bad_25:0 "Bad Opinion For Cars Price 25"
+ much_opinion_cars_good_25:0 "Good Opinion For Cars Price 25"
+ 
+ 
+ low_opinion_gems_good_50:0 "Good Opinion For Gems Price -50"
+ low_opinion_gems_bad_50:0 "Bad Opinion For Gems Price -50"
+ much_opinion_gems_good_50:0 "Good Opinion For Gems Price 50"
+ much_opinion_gems_bad_50:0 "Bad Opinion For Gems Price 50"
+ low_opinion_gems_good_25:0 "Good Opinion For Gems Price -25"
+ low_opinion_gems_bad_25:0 "Bad Opinion For Gems Price -25"
+ much_opinion_gems_bad_25:0 "Bad Opinion For Gems Price 25"
+ much_opinion_gems_good_25:0 "Good Opinion For Gems Price 25"
+ 
+ 
+ low_opinion_coal_good_50:0 "Good Opinion For Coal Price -50"
+ low_opinion_coal_bad_50:0 "Bad Opinion For Coal Price -50"
+ much_opinion_coal_good_50:0 "Good Opinion For Coal Price 50"
+ much_opinion_coal_bad_50:0 "Bad Opinion For Coal Price 50"
+ low_opinion_coal_good_25:0 "Good Opinion For Coal Price -25"
+ low_opinion_coal_bad_25:0 "Bad Opinion For Coal Price -25"
+ much_opinion_coal_bad_25:0 "Bad Opinion For Coal Price 25"
+ much_opinion_coal_good_25:0 "Good Opinion For Coal Price 25"
+ 
+ 
+ 
+ 
+ 

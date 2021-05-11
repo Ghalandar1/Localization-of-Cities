@@ -1,0 +1,228 @@
+namespace = zi
+
+#Good general finds a solution
+
+country_event = {
+	id = zi.29
+	title = "zi_29EVTNAME"
+	desc = "zi_29EVTDESC"
+	picture = MILITARY_CAMP_eventPicture
+	mean_time_to_happen = { months = 180 }
+	trigger = {
+		NOT = { has_country_modifier = good_general }
+		NOT = { has_country_modifier = no_general }
+		NOT = { has_country_modifier = bad_general }
+		has_country_modifier = unity_against_zombies
+		OR = {
+			has_leader_with = {
+				fire = 4
+				shock = 0
+				manuever = 0
+				siege = 0
+			}
+			has_leader_with = {
+				fire = 0
+				shock = 4
+				manuever = 0
+				siege = 0
+			}
+			has_leader_with = {
+				fire = 0
+				shock = 0
+				manuever = 4
+				siege = 0
+			}
+		}
+	}
+	option = {
+		name = "zi_29EVTOPTION"
+		add_country_modifier = {
+			name = good_general
+			duration = 3650
+		}
+	}
+}
+
+#Bad general screws up
+country_event = {
+	id = zi.30
+	title = "zi_30EVTNAME"
+	desc = "zi_30EVTDESC"
+	picture = MILITARY_CAMP_eventPicture
+	mean_time_to_happen = { months = 180 }
+	trigger = {
+		NOT = { has_country_modifier = good_general }
+		NOT = { has_country_modifier = no_general }
+		NOT = { has_country_modifier = bad_general }
+		has_country_modifier = unity_against_zombies
+		has_leader_with = {
+				fire = 0
+				shock = 0
+				manuever = 0
+				siege = 0
+			}
+		NOT = {
+			has_leader_with = {
+				fire = 1
+				shock = 1
+				manuever = 1
+				siege = 0
+			}
+		}
+	}
+		option = {
+			name = "zi_30EVTOPTION"
+			add_country_modifier = {
+				name = bad_general
+				duration = 3650
+		}
+	}
+}
+
+
+#No general
+
+country_event = {
+	id = zi.47
+	title = "zi_47EVTNAME"
+	desc = "zi_47EVTDESC"
+	picture = MILITARY_CAMP_eventPicture
+	mean_time_to_happen = { months = 180 }
+	trigger = {
+		NOT = { has_country_modifier = good_general }
+		NOT = { has_country_modifier = no_general }
+		NOT = { has_country_modifier = bad_general }
+		has_country_modifier = unity_against_zombies
+		NOT = {
+			has_leader_with = {
+				fire = 0
+				shock = 0
+				manuever = 0
+				siege = 0
+			}
+		}
+	}
+	option = {
+		name = "zi_47EVTOPTION"
+		add_country_modifier = {
+			name = no_general
+			duration = 3650
+		}
+	}
+}
+
+#The last stand
+province_event = {
+	id = zi.31
+	title = "zi_31EVTNAME"
+	desc = "zi_31EVTDESC"
+	picture = SIEGE_eventPicture
+	mean_time_to_happen = { months = 1 }
+	trigger = {
+		NOT = { has_province_modifier = the_last_stand }
+		controller = {
+			has_country_modifier = unity_against_zombies
+			NOT = { 
+				num_of_owned_provinces_with = {
+					value = 2
+
+				}
+			}
+		}
+	}
+	option = {
+		name = "zi_31EVTOPTION"
+		controller = {
+			capital_scope = {
+				add_province_modifier = {
+					name = the_last_stand
+				duration = -1
+				}	
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = zi.43
+	title = "zi_43EVTNAME"
+	desc = "zi_43EVTDESC"
+	picture = MILITARY_CAMP_eventPicture
+	mean_time_to_happen = { months = 1500 }
+	trigger = {
+		has_country_modifier = unity_against_zombies
+	}
+	option = {
+		ai_chance = { 
+			factor = 90
+			modifier = {
+				factor = 0
+				NOT = { treasury = 100 }
+			}
+		}
+		name = "zi_43EVTOPTIONA"
+		
+	}
+	option = {
+		name = "zi_43EVTOPTIONB"
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				factor = 10
+				treasury = 100
+			}
+		}
+		random_owned_province = {
+			limit = { has_siege = no }
+			mercenary_infantry = ROOT
+			mercenary_infantry = ROOT
+			mercenary_infantry = ROOT
+			mercenary_infantry = ROOT
+			mercenary_cavalry = ROOT
+			mercenary_cavalry = ROOT
+		}
+		add_treasury = -100
+	}
+}
+
+country_event = {
+	id = zi.49
+	title = "zi_49EVTNAME"
+	desc = "zi_49EVTDESC"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	mean_time_to_happen = { months = 1 }
+	trigger = {
+		government = steppe_horde
+		has_country_modifier = unity_against_zombies
+		NOT = { has_country_modifier = fast_food }
+	}
+	option = {
+		name = "zi_49EVTOPTION"
+		add_country_modifier = {
+			name = fast_food
+			duration = -1
+		}
+	}
+	
+}
+
+country_event = {
+	id = zi.54
+	title = "zi_54EVTNAME"
+	desc = "zi_54EVTDESC"
+	picture = MILITARY_CAMP_eventPicture
+	mean_time_to_happen = { months = 12 }
+	trigger = {
+		tag = BOH
+		has_country_modifier = unity_against_zombies
+	}
+	
+	option = {
+		name = "zi_54EVTOPTION"
+		add_country_modifier = {
+			name = wagenburg_revived
+			duration = -1
+		}
+	}
+
+}

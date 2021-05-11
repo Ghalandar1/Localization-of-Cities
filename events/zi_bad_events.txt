@@ -1,0 +1,158 @@
+namespace = zi
+
+#Bandits ravaging country
+
+country_event = {
+	id = zi.28
+	title = "zi_28EVTNAME"
+	desc = "zi_28EVTDESC"
+	picture = BORDER_TENSION_eventPicture
+	mean_time_to_happen = { months = 1800 }
+	trigger = {
+		has_country_modifier = unity_against_zombies
+		NOT = { has_country_modifier = bandits1 }
+	}
+	option = {
+		name = "zi_28EVTOPTION"
+		add_country_modifier = {
+			name = bandits1
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = zi.32
+	title = "zi_32EVTNAME"
+	desc = "zi_32EVTDESC"
+	picture = DEATH_OF_HEIR_eventPicture
+	mean_time_to_happen = { months = 18000 }
+	trigger = {
+		has_heir = yes
+		has_country_modifier = unity_against_zombies
+	}
+	option = {
+		ai_chance = { factor = 90 }
+		name = "zi_32EVTOPTIONA"
+		kill_heir = yes
+	}
+	option = {
+		name = "zi_32EVTOPTIONB"
+			ai_chance = { factor = 10 }
+			random = {
+				chance = 10
+				capital_scope = {
+					cede_province = ZOM
+					add_core = ZOM
+					change_religion = r_zombie
+					ZOM = { country_event = { id = zi.4 } }
+				}
+			}
+	}
+}
+
+country_event = {
+	id = zi.33
+	title = "zi_33EVTNAME"
+	desc = "zi_33EVTDESC"
+	picture = HARBOUR_eventPicture
+	mean_time_to_happen = { months = 1500 }
+	trigger = {
+		NOT = { has_country_modifier = trade_restricted }
+		has_country_modifier = unity_against_zombies
+	}
+	option = {
+		ai_chance = { factor = 90 }
+		name = "zi_33EVTOPTIONA"
+		add_country_modifier = {
+			name = trade_restricted
+			duration = 3650
+		}
+	}
+	option = {
+		name = "zi_33EVTOPTIONB"
+			ai_chance = { factor = 10 }
+			random = {
+				chance = 10
+				random_owned_province = {
+					cede_province = ZOM
+					add_core = ZOM
+					change_religion = r_zombie
+					ZOM = { country_event = { id = zi.4 } }
+				}
+			}
+	}
+}
+
+country_event = {
+	id = zi.34
+	title = "zi_34EVTNAME"
+	desc = "zi_34EVTDESC"
+	picture = FAMINE_eventPicture
+	mean_time_to_happen = { days = 1500 }
+	trigger = {
+		NOT = { has_country_modifier = crops_destroyed }
+		has_country_modifier = unity_against_zombies
+	}
+	option = {
+		name = "zi_34EVTOPTION"
+		add_country_modifier = {
+			name = crops_destroyed
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = zi.42
+	title = "zi_42EVTNAME"
+	desc = "zi_42EVTDESC"
+	picture = BORDER_TENSION_eventPicture
+	mean_time_to_happen = { months = 120 }
+	trigger = {
+		has_country_modifier = unity_against_zombies
+	}
+	option = {
+		name = "zi_42EVTOPTION"
+		add_stability = -1
+	}
+	
+}
+
+country_event = {
+	id = zi.50
+	title = "zi_50EVTNAME"
+	desc = "zi_50EVTDESC"
+	picture = FAMINE_eventPicture
+	mean_time_to_happen = { months = 120 }
+	trigger = {
+		has_country_modifier = unity_against_zombies
+	}
+	option = {
+		name = "zi_50EVTOPTION"
+		add_stability = -1
+	}
+	
+}
+
+province_event = {
+	id = zi.52
+	title = "zi_52EVTNAME"
+	desc = "zi_52EVTDESC"
+	picture = FAMINE_eventPicture
+	mean_time_to_happen = { months = 120 }
+	trigger = {
+		has_province_modifier = disbelievers
+		sieged_by = ZOM
+	}
+	option = {
+		name = "zi_52EVTOPTION"
+		controller = {
+			every_owned_province = {
+				remove_province_modifier = disbelievers
+			}
+		}
+	controller = { set_country_flag = event19 }
+	}
+	
+}

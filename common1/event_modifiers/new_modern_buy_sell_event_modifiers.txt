@@ -1,0 +1,25 @@
+ force_culture_modifire = { 
+	culture_conversion_cost = -0.5
+	promote_culture_cost = 10.0
+ }
+ 
+  bought_oil_1 = { 
+	movement_speed = 0.05
+ }
+ 
+ bought_electronics_1 = { 
+	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.005
+	global_unrest = -1
+ }
+ 
+ #Start & 10%
+ bought_uranium_1 = {  }
+ #20&
+ bought_uranium_2 = {  }
+ #40%
+ bought_uranium_3 = {  }
+ #75%
+ bought_uranium_4 = {  }
+ #90% & Atomic Bomb
+ bought_uranium_5 = {  }

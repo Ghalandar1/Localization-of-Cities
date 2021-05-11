@@ -1,0 +1,19 @@
+﻿l_english:
+ sea_establish_devaraja_title:0 "Make Ruler a Devaraja"
+ sea_establish_devaraja_desc:0 "According to our traditions, some rulers have been worshipped as devarajas, or god-kings. Because our ruler has much legitimacy, we can establish our ruler as devaraja, a title that will survive them long after they pass on, although we shall only feel its effects as long as he sits on the throne."
+ chinese_enact_equal_field_system_title:0 "Enact the Equal-Field System"
+ chinese_enact_equal_field_system_desc:0 "By placing all lands under government control and distributing them equally among the people, we can prevent any private estates from growing too powerful by limiting the amount of land they can own. This will greatly increase direct control over our lands, preventing large monopolies and ensuring that no agricultural land remains neglected. Even more importantly, this will break the dynasty cycle, in which all dynasties must come to an end, because the people will be directly provided to by a lasting government."
+ chinese_enact_civilian_tuntian_title:0 "Enact Civilian Tuntian"
+ chinese_enact_civilian_tuntian_desc:0 "Thanks to precedents set by the great Emperor Wu of the Western Han, we can now successfully implement the tuntian system. With our country at war, we can make use of the large amount of landless refugees by granting them ownership of war-torn land, as well as supplies and oxen, in exchange for half of the harvests they produce. This will ensure that our armies are always fed, and that the lands ravaged by war are not neglected, but instead cultivated and restored to maximize production potential."
+ him_convert_to_judaism_title:0 "Convert to Judaism"
+ him_convert_to_judaism_desc:0 "Although we declined to convert to the Jewish faith in the past, interest in such a conversion still remains in the mind of our ruler, court and people."
+ egp_convert_to_kemetic_faith_title:0 "Convert to the Kemetic Faith"
+ egp_convert_to_kemetic_faith_desc:0 "We have successfully restored the Kingdom of Egypt, and many in our land and in our court call for a return to tradition, including the adoption of the old faith."
+ egp_offerings_to_the_gods_title:0 "Offerings to the Gods"
+ egp_offerings_to_the_gods_desc:0 "Once under each of pharaoh, we may make a grand offering to the gods in return for victory in battle and good harvests along the Nile."
+ 
+ #Formable nations
+ austriahungary_nation_title:0 "The Austro-Hungarian Compromise"
+ austriahungary_nation_desc:0 "To account for the immense nature of our empire, we must come to terms with our subjects under the Austrian banner. Through this compromise, we would recognize the King of Hungary as a member of a real union with the Empire of Austria. While this will decrease the authority of the Austrian crown, such compromises may be necessary to maintain imperial unity in the face of rising nationalism."
+ almohad_nation_title:0 "Form the Almohad Caliphate"
+ almohad_nation_desc:0 "Our ruler and religious leaders have found several issues with the Sunni orthodoxy, most notably the anthropomorphism of God. In order to preserve the concept of divine unity, we must set out on our own and establish a new Caliphate following the true doctrine of God."

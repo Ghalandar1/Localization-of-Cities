@@ -1,0 +1,20 @@
+country_decisions = {
+
+	timer_decision = {
+		
+		effect = {
+			country_event = {
+				id = timeru.1
+				tooltip = timer_decision_desc
+			}
+		}
+		
+		
+		ai_will_do = {
+		factor = 0
+		}
+
+
+	}
+	
+}

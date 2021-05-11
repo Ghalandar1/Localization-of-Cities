@@ -1,0 +1,1534 @@
+#papacy
+#emperor
+#access
+#covert
+#dynasty
+#papacy
+#great_powers
+#relation
+#influence
+#alliance
+	buy_uranium	= {
+		category = economy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_BUY_URANIUM
+	
+		is_visible = { 
+			FROM = { any_owned_province = { trade_goods = uranium } }
+			NOT = { ROOT = { has_country_modifier = bought_uranium_1 } }
+			NOT = { war_with = FROM }
+			OR = {
+				NOT = { ROOT = { any_owned_province = { trade_goods = uranium development = 50 } } }
+					
+						ROOT = { 
+							NOT = { 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 3
+											NOT = { development = 5 }
+										}
+											amount = 5
+								}  
+							} 
+						}
+					
+					
+						ROOT = { 
+							NOT = { 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 6
+											NOT = { development = 11 }
+										}
+											amount = 4
+								}  
+							} 
+						}
+					
+					
+						ROOT = { 
+							NOT = { 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 12
+											NOT = { development = 24 }
+										}
+											amount = 3
+								}  
+							} 
+						}
+					
+					
+						ROOT = { 
+							NOT = { 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 25
+											NOT = { development = 49 }
+										}
+											amount = 2
+								}  
+							} 
+						}
+					
+					
+						ROOT = { 
+							NOT = { 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 50
+										}
+											amount = 1
+								}  
+							} 
+						}
+					
+			}
+			
+		}
+		is_allowed = {
+			is_year = 2025
+			full_idea_group = nuclear_research
+			NOT = { FROM = { has_country_modifier = uranium_ban_modifire_from_100 } }
+			OR = {
+				has_country_modifier = nuclear_research_modifire
+				has_country_modifier = research_nuclear_10_modifire
+				has_country_modifier = research_nuclear_20_modifire
+				has_country_modifier = research_nuclear_40_modifire
+				has_country_modifier = research_nuclear_75_modifire
+				has_country_modifier = research_nuclear_90_modifire
+				has_country_modifier = nuclear_state
+			}
+			OR = {
+				AND = {
+					FROM = { 
+						
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = uranium 
+										development = 3
+										NOT = { development = 5 }
+									}
+										amount = 5
+							}  
+						
+					}
+				}
+				AND = {
+					FROM = { 
+						
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = uranium 
+										development = 6
+										NOT = { development = 11 }
+									}
+										amount = 4
+							}  
+						 
+					}
+				}
+				AND = {
+					FROM = { 
+						
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = uranium 
+										development = 12
+										NOT = { development = 24 }
+									}
+										amount = 3
+							}  
+						
+					}
+				}
+				AND = {
+					FROM = { 
+						 
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = uranium 
+										development = 25
+										NOT = { development = 49 }
+									}
+										amount = 2
+							}  
+						
+					}
+				}
+				AND = {
+					FROM = { 
+						
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = uranium 
+										development = 50
+										
+									}
+										amount = 1
+							}  
+						
+					}
+				}
+			}
+			
+		
+			
+			if = {
+				limit = {
+					
+					
+					OR = {
+						has_country_modifier = nuclear_research_modifire
+						has_country_modifier = research_nuclear_10_modifire
+					}
+					NOT = { 
+						has_country_modifier = research_nuclear_20_modifire
+						has_country_modifier = research_nuclear_40_modifire
+						has_country_modifier = research_nuclear_75_modifire
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+						
+					} 
+					
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							treasury = 50
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							treasury = 100
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							treasury = 200
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							treasury = 350
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							treasury = 650
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							treasury = 1000
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							treasury = 1700
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							treasury = 3400
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							treasury = 4500
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							treasury = 5800
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							treasury = 7000
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							treasury = 10000
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							treasury = 15000
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							treasury = 20000
+						}
+			}
+			
+			#############################################################################################
+			
+			if = {
+				limit = { 
+					
+					has_country_modifier = research_nuclear_20_modifire
+					NOT = { 
+						
+						has_country_modifier = research_nuclear_40_modifire
+						has_country_modifier = research_nuclear_75_modifire
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+						
+					} 
+					
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							treasury = 75
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							treasury = 150
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							treasury = 300
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							treasury = 600
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							treasury = 1100
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							treasury = 1500
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							treasury = 2000
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							treasury = 4500
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							treasury = 5500
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							treasury = 7000
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							treasury = 9500
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							treasury = 12000
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							treasury = 17500
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							treasury = 22000
+						}
+			}
+			
+			#############################################################################################
+			
+			if = {
+				limit = { 
+					
+					has_country_modifier = research_nuclear_40_modifire
+					
+					NOT = { 
+						has_country_modifier = research_nuclear_75_modifire
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+						
+					} 
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							treasury = 150
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							treasury = 300
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							treasury = 600
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							treasury = 1200
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							treasury = 2400
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							treasury = 3000
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							treasury = 4000
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							treasury = 6500
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							treasury = 8500
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							treasury = 12000
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							treasury = 15000
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							treasury = 18500
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							treasury = 25000
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							treasury = 30000
+						}
+			}
+			if = {
+				limit = { 
+					
+					has_country_modifier = research_nuclear_75_modifire
+					NOT = { 
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+					} 
+					
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							treasury = 300
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							treasury = 600
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							treasury = 1200
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							treasury = 2400
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							treasury = 4800
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							treasury = 6000
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							treasury = 8000
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							treasury = 12500
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							treasury = 17000
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							treasury = 24000
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							treasury = 30000
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							treasury = 37000
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							treasury = 50000
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							treasury = 60000
+						}
+			}
+			
+			if = {
+				limit = { 
+					
+					OR = {
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+					}
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							treasury = 600
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							treasury = 1200
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							treasury = 2400
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							treasury = 4800
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							treasury = 9600
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							treasury = 12000
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							treasury = 16000
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							treasury = 25000
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							treasury = 34000
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							treasury = 48000
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							treasury = 60000
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							treasury = 74000
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							treasury = 100000
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							treasury = 125000
+						}
+			}
+						
+		
+	}
+		on_accept = {
+					
+			if = {
+				limit = { 
+					
+					OR = {
+						has_country_modifier = nuclear_research_modifire
+						has_country_modifier = research_nuclear_10_modifire
+					}
+					NOT = { 
+						has_country_modifier = research_nuclear_20_modifire
+						has_country_modifier = research_nuclear_40_modifire
+						has_country_modifier = research_nuclear_75_modifire
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+						
+					} 
+				}
+		
+			if = {
+					limit = {  total_development = 3 NOT = { total_development = 50 } } 
+					add_treasury = -50
+				}
+			if = {
+					limit = {  total_development = 50 NOT = { total_development = 100 } } 
+					add_treasury = -100
+				}
+			if = {
+					limit = {  total_development = 100 NOT = { total_development = 250 } } 
+					add_treasury = -200
+			}
+			if = {
+					limit = {  total_development = 250 NOT = { total_development = 500 } } 
+					add_treasury = -350
+				}
+			if = {
+					limit = { total_development = 500 NOT = { total_development = 1000 } } 
+					add_treasury = -650
+				}
+			if = {
+					limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+					add_treasury = -1000
+				}
+			if = {
+					limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+					add_treasury = -1700
+				}
+			if = {
+					limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+					add_treasury = -3400
+				}
+			if = {
+					limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+					add_treasury = -4500
+				}
+			if = {
+					limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+					add_treasury = -5800
+				}
+			if = {
+					limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+					add_treasury = -7000
+				}
+			if = {
+					limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+					add_treasury = -10000
+				}
+			if = {
+					limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+					add_treasury = -15000
+				}
+			if = {
+					limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+					add_treasury = -20000
+				}
+				add_country_modifier = { 
+					name = bought_uranium_2 
+					duration = -1 
+				}
+			}
+				
+				
+			if = {
+				limit = { 
+					
+					has_country_modifier = research_nuclear_20_modifire
+					NOT = { 
+						
+						has_country_modifier = research_nuclear_40_modifire
+						has_country_modifier = research_nuclear_75_modifire
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+						
+					} 
+					
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							add_treasury = -75
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							add_treasury = -150
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							add_treasury = -300
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							add_treasury = -600
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							add_treasury = -1100
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							add_treasury = -1500
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							add_treasury = -2000
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							add_treasury = -4500
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							add_treasury = -5500
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							add_treasury = -7000
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							add_treasury = -9500
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							add_treasury = -12000
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							add_treasury = -17500
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							add_treasury = -22000
+						}
+					add_country_modifier = { 
+						name = bought_uranium_3 
+						duration = -1 
+					}
+				}
+			
+			#############################################################################################
+			
+			if = {
+				limit = { 
+					
+						has_country_modifier = research_nuclear_40_modifire
+						NOT = { 
+						has_country_modifier = research_nuclear_75_modifire
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+						
+					} 
+					
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							add_treasury = -150
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							add_treasury = -300
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							add_treasury = -600
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							add_treasury = -1200
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							add_treasury = -2400
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							add_treasury = -3000
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							add_treasury = -4000
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							add_treasury = -6500
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							add_treasury = -8500
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							add_treasury = -12000
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							add_treasury = -15000
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							add_treasury = -18500
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							add_treasury = -25000
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							add_treasury = -30000
+						}
+					add_country_modifier = { 
+						name = bought_uranium_4 
+						duration = -1 
+					}
+				}
+			
+			##########################################################################################
+			
+			if = {
+				limit = { 
+					
+						has_country_modifier = research_nuclear_75_modifire
+						NOT = { 
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+						
+					} 
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							add_treasury = -300
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							add_treasury = -600
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							add_treasury = -1200
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							add_treasury = -2400
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							add_treasury = -4800
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							add_treasury = -6000
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							add_treasury = -8000
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							add_treasury = -12500
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							add_treasury = -17000
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							add_treasury = -24000
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							add_treasury = -30000
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							add_treasury = -37000
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							add_treasury = -50000
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							add_treasury = -60000
+						}
+					add_country_modifier = { 
+						name = bought_uranium_5
+						duration = 3650
+					}
+			}
+			
+			##########################################################################################
+			
+			if = {
+				limit = { 
+					OR = {
+						has_country_modifier = research_nuclear_90_modifire
+						has_country_modifier = nuclear_state
+					}
+				}
+			
+					if = {
+							limit = {  total_development = 3 NOT = { total_development = 50 } } 
+							add_treasury = -600
+						}
+					if = {
+							limit = {  total_development = 50 NOT = { total_development = 100 } } 
+							add_treasury = -1200
+						}
+					if = {
+							limit = {  total_development = 100 NOT = { total_development = 250 } } 
+							add_treasury = -2400
+					}
+					if = {
+							limit = {  total_development = 250 NOT = { total_development = 500 } } 
+							add_treasury = -4800
+						}
+					if = {
+							limit = { total_development = 500 NOT = { total_development = 1000 } } 
+							add_treasury = -9600
+						}
+					if = {
+							limit = { total_development = 1000 NOT = { total_development = 1500 } } 
+							add_treasury = -12000
+						}
+					if = {
+							limit = { total_development = 1500 NOT = { total_development = 2000 } } 
+							add_treasury = -16000
+						}
+					if = {
+							limit = { total_development = 2000 NOT = { total_development = 2700 } } 
+							add_treasury = -25000
+						}
+					
+					if = {
+							limit = { total_development = 2700 NOT = { total_development = 3500 } } 
+							add_treasury = -34000
+						}
+					if = {
+							limit = { total_development = 3500 NOT = { total_development = 4500 } } 
+							add_treasury = -48000
+						}
+					if = {
+							limit = { total_development = 4500 NOT = { total_development = 6000 } } 
+							add_treasury = -60000
+						}
+					if = {
+							limit = { total_development = 6000 NOT = { total_development = 8000 } } 
+							add_treasury = -74000
+						}
+					if = {
+							limit = { total_development = 8000 NOT = { total_development = 10000 } } 
+							add_treasury = -100000
+						}
+					if = {
+							limit = { total_development = 10000 NOT = { total_development = 100000 } } 
+							add_treasury = -125000
+						}
+					add_country_modifier = { 
+							name = bought_uranium_5 
+							duration = 3650 
+					}
+				}
+			
+		
+			
+		FROM = { 
+						
+				if = {
+					limit = { 
+						ROOT = {
+								
+							OR = {
+								has_country_modifier = nuclear_research_modifire
+								has_country_modifier = research_nuclear_10_modifire
+							}
+							NOT = { 
+								has_country_modifier = research_nuclear_20_modifire
+								has_country_modifier = research_nuclear_40_modifire
+								has_country_modifier = research_nuclear_75_modifire
+								has_country_modifier = research_nuclear_90_modifire
+								has_country_modifier = nuclear_state
+						
+							} 
+						}
+					}
+			
+				if = {
+						limit = { ROOT = {  total_development = 3 NOT = { total_development = 50 } }  }
+						FROM = { add_treasury =  50 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 50 NOT = { total_development = 100 } }  }
+						FROM = { add_treasury =  100 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 100 NOT = { total_development = 250 } }  }
+						FROM = { add_treasury =  200 }
+				}
+				if = {
+						limit = { ROOT = { total_development = 250 NOT = { total_development = 500 } }  }
+						FROM = { add_treasury =  350 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 500 NOT = { total_development = 1000 } }  }
+						FROM = { add_treasury =  650 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 1000 NOT = { total_development = 1500 } }  }
+						FROM = { add_treasury =  1000 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 1500 NOT = { total_development = 2000 } }  }
+						FROM = { add_treasury =  1700 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 2000 NOT = { total_development = 2700 } }  }
+						FROM = { add_treasury =  3400 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 2700 NOT = { total_development = 3500 } }  }
+						FROM = { add_treasury =  4500 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 3500 NOT = { total_development = 4500 } }  }
+						FROM = { add_treasury =  5800 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 4500 NOT = { total_development = 6000 } }  }
+						FROM = { add_treasury =  7000 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 6000 NOT = { total_development = 8000 } }  }
+						FROM = { add_treasury =  10000 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 8000 NOT = { total_development = 10000 } }  }
+						FROM = { add_treasury =  15000 }
+					}
+				if = {
+						limit = { ROOT = { total_development = 10000 NOT = { total_development = 100000 } }  }
+						FROM = { add_treasury =  20000 }
+					}
+					
+					
+					
+				}
+					
+					
+				if = {
+					limit = { 
+						ROOT = {
+									
+							has_country_modifier = research_nuclear_20_modifire
+							NOT = { 
+								
+								has_country_modifier = research_nuclear_40_modifire
+								has_country_modifier = research_nuclear_75_modifire
+								has_country_modifier = research_nuclear_90_modifire
+								has_country_modifier = nuclear_state
+						
+							} 
+						
+							
+						}
+					}
+				
+						if = {
+								limit = { ROOT = {  total_development = 3 NOT = { total_development = 50 } }  }
+								FROM = { add_treasury =  75 }
+							}
+						if = {
+								limit = { ROOT = {  total_development = 50 NOT = { total_development = 100 } }  }
+								FROM = { add_treasury =  150 }
+							}
+						if = {
+								limit = { ROOT = {  total_development = 100 NOT = { total_development = 250 } }  }
+								FROM = { add_treasury =  300 }
+						}
+						if = {
+								limit = { ROOT = {  total_development = 250 NOT = { total_development = 500 } } } 
+								FROM = { add_treasury =  600 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 500 NOT = { total_development = 1000 } }  }
+								FROM = { add_treasury =  1100 }
+							}
+						if = {
+								limit = {ROOT = { total_development = 1000 NOT = { total_development = 1500 } }  }
+								FROM = { add_treasury =  1500 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 1500 NOT = { total_development = 2000 } }  }
+								FROM = { add_treasury =  2000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 2000 NOT = { total_development = 2700 } }  }
+								FROM = { add_treasury =  4500 }
+							}
+						
+						if = {
+								limit = { ROOT = { total_development = 2700 NOT = { total_development = 3500 } }  }
+								FROM = { add_treasury =  5500 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 3500 NOT = { total_development = 4500 } }  }
+								FROM = { add_treasury =  7000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 4500 NOT = { total_development = 6000 } }  }
+								FROM = { add_treasury =  9500 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 6000 NOT = { total_development = 8000 } }  }
+								FROM = { add_treasury =  12000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 8000 NOT = { total_development = 10000 } }  }
+								FROM = { add_treasury =  17500 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 10000 NOT = { total_development = 100000 } }  }
+								FROM = { add_treasury =  22000 }
+							}
+						
+					}
+				
+				#############################################################################################
+				
+				if = {
+					limit = {
+						ROOT = {
+							
+							has_country_modifier = research_nuclear_40_modifire
+							NOT = { 
+								
+								has_country_modifier = research_nuclear_75_modifire
+								has_country_modifier = research_nuclear_90_modifire
+								has_country_modifier = nuclear_state
+						
+							} 
+							
+						}
+					}
+				
+						if = {
+								limit = {  ROOT = { total_development = 3 NOT = { total_development = 50 } }  }
+								FROM = { add_treasury =  150 }
+							}
+						if = {
+								limit = { ROOT = {  total_development = 50 NOT = { total_development = 100 } }  }
+								FROM = { add_treasury =  300 }
+							}
+						if = {
+								limit = { ROOT = {  total_development = 100 NOT = { total_development = 250 } }  }
+								FROM = { add_treasury =  600 }
+						}
+						if = {
+								limit = { ROOT = {  total_development = 250 NOT = { total_development = 500 } }  }
+								FROM = { add_treasury =  1200 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 500 NOT = { total_development = 1000 } }  }
+								FROM = { add_treasury =  2400 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 1000 NOT = { total_development = 1500 } }  }
+								FROM = { add_treasury =  3000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 1500 NOT = { total_development = 2000 } }  }
+								FROM = { add_treasury =  4000 }
+							}
+						if = { 
+								limit = { ROOT = { total_development = 2000 NOT = { total_development = 2700 } }  }
+								FROM = { add_treasury =  6500 }
+							}
+						
+						if = {
+								limit = { ROOT = { total_development = 2700 NOT = { total_development = 3500 } }  }
+								FROM = { add_treasury =  8500 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 3500 NOT = { total_development = 4500 } }  }
+								FROM = { add_treasury =  12000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 4500 NOT = { total_development = 6000 } }  }
+								FROM = { add_treasury =  15000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 6000 NOT = { total_development = 8000 } }  }
+								FROM = { add_treasury =  18500 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 8000 NOT = { total_development = 10000 } }  }
+								FROM = { add_treasury =  25000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 10000 NOT = { total_development = 100000 } }  }
+								FROM = { add_treasury =  30000 }
+							}
+						
+				}
+				
+				##########################################################################################
+				
+				if = {
+					limit = { 
+						ROOT = {
+							has_country_modifier = research_nuclear_75_modifire
+							
+							NOT = { 
+								has_country_modifier = research_nuclear_90_modifire
+								has_country_modifier = nuclear_state
+						
+							} 
+						}
+					}
+				
+						if = {
+								limit = {  ROOT = { total_development = 3 NOT = { total_development = 50 } }  }
+								FROM = { add_treasury =  300 }
+							}
+						if = {
+								limit = { ROOT = {  total_development = 50 NOT = { total_development = 100 } }  }
+								FROM = { add_treasury =  600 }
+							}
+						if = {
+								limit = { ROOT = {  total_development = 100 NOT = { total_development = 250 } }  }
+								FROM = { add_treasury =  1200 }
+						}
+						if = {
+								limit = { ROOT = {  total_development = 250 NOT = { total_development = 500 } }  }
+								FROM = { add_treasury =  2400 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 500 NOT = { total_development = 1000 } }  }
+								FROM = { add_treasury =  4800 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 1000 NOT = { total_development = 1500 } }  }
+								FROM = { add_treasury =  6000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 1500 NOT = { total_development = 2000 } }  }
+								FROM = { add_treasury =  8000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 2000 NOT = { total_development = 2700 } }  }
+								FROM = { add_treasury =  12500 }
+							}
+						
+						if = {
+								limit = { ROOT = { total_development = 2700 NOT = { total_development = 3500 } }  }
+								FROM = { add_treasury =  17000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 3500 NOT = { total_development = 4500 } }  }
+								FROM = { add_treasury =  24000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 4500 NOT = { total_development = 6000 } }  }
+								FROM = { add_treasury =  30000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 6000 NOT = { total_development = 8000 } }  }
+								FROM = { add_treasury =  37000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 8000 NOT = { total_development = 10000 } }  }
+								FROM = { add_treasury =  50000 }
+							}
+						if = {
+								limit = { ROOT = { total_development = 10000 NOT = { total_development = 100000 } }  }
+								FROM = { add_treasury =  60000 }
+							}
+						
+				}
+				
+				##########################################################################################
+				
+				if = {
+					limit = { 
+						ROOT = {
+							OR = {
+								has_country_modifier = research_nuclear_90_modifire
+								has_country_modifier = nuclear_state
+							}
+						}
+					}
+				
+						if = {
+								limit = {  ROOT = { total_development = 3 NOT = { total_development = 50 } } } 
+								FROM = { add_treasury =  600 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 50 NOT = { total_development = 100 } }  }
+								FROM = { add_treasury =  1200 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 100 NOT = { total_development = 250 } }  }
+								FROM = { add_treasury =  2400 }
+						}
+						if = {
+								limit = {  ROOT = {  total_development = 250 NOT = { total_development = 500 } }  }
+								FROM = { add_treasury =  4800 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 500 NOT = { total_development = 1000 } }  }
+								FROM = { add_treasury =  9600 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 1000 NOT = { total_development = 1500 } }  }
+								FROM = { add_treasury =  12000 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 1500 NOT = { total_development = 2000 } }  }
+								FROM = { add_treasury =  16000 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 2000 NOT = { total_development = 2700 } }  }
+								FROM = { add_treasury =  25000 }
+							}
+						
+						if = {
+								limit = {  ROOT = { total_development = 2700 NOT = { total_development = 3500 } }  }
+								FROM = { add_treasury =  34000 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 3500 NOT = { total_development = 4500 } }  }
+								FROM = { add_treasury =  48000 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 4500 NOT = { total_development = 6000 } }  }
+								FROM = { add_treasury =  60000 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 6000 NOT = { total_development = 8000 } }  }
+								FROM = { add_treasury =  74000 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 8000 NOT = { total_development = 10000 } }  }
+								FROM = { add_treasury =  100000 }
+							}
+						if = {
+								limit = {  ROOT = { total_development = 10000 NOT = { total_development = 100000 } }  }
+								FROM = { add_treasury =  125000 }
+							}
+						
+					}
+				
+				
+			}
+		}
+		
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+			}
+						
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 5
+					}
+		
+			}
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 150 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 100 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 10
+				}
+		
+			}
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 50 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 5
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			add_entry = {
+				name = WE_HAVE_BAD_OPINON_100
+				limit = { NOT = { FROM = { has_opinion = { who = ROOT value = -100 } } } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		
+			}
+			add_entry = {
+				name = WE_HAVE_BAD_OPINON_50
+				limit = { NOT = { FROM = { has_opinion = { who = ROOT value = -50 } } } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		
+			}
+			add_entry = {
+				name = WE_HAVE_BAD_OPINON_25
+				limit = { NOT = { FROM = { has_opinion = { who = ROOT value = -25 } } } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 5
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		
+			}
+			add_entry = {
+				name = MY_RIVAL_ALIIY_WITH_YOU
+				limit = { 
+					any_rival_country = {
+						alliance_with = FROM 
+					}				
+				} 
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 30
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		
+			}
+		}
+			
+		
+		
+		
+		ai_will_do = {  
+			factor = 100
+			modifier = {
+				factor = 100
+				FROM = { alliance_with = ROOT }
+			}
+			
+			modifier = {
+				factor = 90
+				any_rival_country = {
+					 is_rival = FROM 
+				}
+			}
+			modifier = {
+				factor = 90
+				any_rival_country = {
+					is_neighbor_of = FROM 
+				}
+			}
+			modifier = {
+				factor = 100
+				any_rival_country = {
+					war_with = FROM 
+				}
+			}
+			modifier = {
+				factor = 100
+				ROOT = { is_great_power = yes }
+			}
+			modifier = {
+				factor = 75
+				FROM = { is_great_power = yes }
+			}
+			modifier = {
+			factor = 100
+				FROM = {
+					same_continent = ROOT
+				}
+			}
+			modifier = {
+			factor = 1
+				FROM = {
+					num_of_ports = 0
+				}
+			}
+			modifier = {
+			factor = 10
+				FROM = {
+					num_of_ports = 1
+				}
+			}
+			modifier = {
+			factor = 20
+				FROM = {
+					num_of_ports = 3
+				}
+			}
+			modifier = {
+			factor = 50
+				FROM = {
+					num_of_ports = 10
+				}
+			}
+			modifier = {
+			factor = 100
+				FROM = {
+					num_of_ports = 50
+				}
+			}
+			modifier = {
+			factor = 100
+				FROM = {
+					is_neighbor_of = ROOT 
+				}
+			}
+			
+	
+		}
+	}

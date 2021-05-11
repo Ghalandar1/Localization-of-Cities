@@ -1,0 +1,699 @@
+#Ideas from Extended Vanilla Experience
+
+LOT_ideas = {
+	start = {
+		infantry_power = 0.10
+		trade_steering = 0.20
+	}
+
+	bonus = {
+		global_trade_power = 0.10
+	}
+	
+	trigger = {
+		tag = LOT
+	}
+	free = yes
+	
+	legacy_of_the_carolingians = {
+		prestige = 1
+	}
+	fertile_land = {
+		production_efficiency = 0.10
+	}
+	dutch_population = {
+		global_manpower_modifier = 0.20
+	}
+	french_military_influence = {
+		land_morale = 0.10
+	}
+	dutch_cities = {
+		global_tax_modifier = 0.10
+	}
+	freedom_of_faith = {
+		tolerance_heretic = 3
+	}
+	philosophers = {
+		technology_cost = -0.05
+	}
+}
+
+HAI_ideas = {
+	start = {
+		ae_impact = -0.05
+		global_tax_modifier = 0.15
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+	
+	trigger = {
+		tag = HAI
+	}
+	free = yes
+
+	economic_diversity = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	low_countries_diplomacy = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
+		envoy_travel_time = -0.10
+	}
+	the_walloon_method = {
+		production_efficiency = 0.05
+	}
+	wallonian_armies = {
+		discipline = 0.025
+	}
+	bastion_of_northern_catholicism = {
+		global_heretic_missionary_strength = 0.01
+		papal_influence = 1
+	}
+	fortified_towns = {
+		defensiveness = 0.25
+	}
+	wine_calms_the_people = {
+		stability_cost_modifier = -0.10
+	}
+}
+
+#SPI ideas by Marco Dandolo
+SPI_ideas = {
+	start = {
+		diplomatic_upkeep = 2
+		improve_relation_modifier = 0.2
+	}
+	
+	bonus = {
+		land_morale = 0.15
+	}
+	
+	trigger = {
+		tag = SPI
+	}
+	free = yes		#will be added at load.
+	
+	an_italian_king = {
+		prestige = 1
+	}
+	sav_mercenary_tradition = {
+		mercenary_cost = -0.25
+	}
+	piemontese_legitimacy = {
+		legitimacy = 1   
+	}
+	the_fortress_of_turin = {
+		defensiveness = 0.2
+	}
+	piemontese_carabinieri = {
+		discipline = 0.1
+	}
+	piemontese_gianduia = {
+		production_efficiency = 0.1
+	}
+	piemontese_agrarian_reform = {
+		global_tax_modifier = 0.1
+	}
+}
+
+#COR ideas Werwolf, edited by Marco Dandolo
+COR_ideas = {
+	start = {
+		enemy_core_creation = 2.0
+		global_unrest = -1
+	}
+	
+	bonus = {
+		leader_naval_fire = 1
+	}
+	
+	trigger = {
+		tag = COR #only Corsica
+	}
+	free = yes
+	
+	cor_mercenaries = {
+		mercenary_cost = -0.25
+	}
+	cor_papal_guards = {
+		papal_influence = 2
+	}
+	cor_spirit = {
+		hostile_attrition = 0.5
+	}
+	cor_chant = {
+		stability_cost_modifier = -0.1
+	}
+	cor_rebels = {
+		rebel_support_efficiency = 0.25
+	}
+	cor_defense = {
+		defensiveness = 0.15
+	}
+	cor_constitution = {
+		prestige = 1
+	}
+}
+
+#FER ideas  by Marco Dandolo
+FER_ideas = {
+	start = {
+		leader_land_manuever = 1 #Este generals
+		leader_land_shock = 1
+	}
+	
+	bonus = {
+		stability_cost_modifier = -0.15 #this and the MAM best in game
+	}
+	
+	trigger = {
+		tag = FER #only Ferrara
+	}
+	free = yes
+	
+	noble_este_dynasty = {
+		legitimacy = 1
+	}
+	delta_del_po = {
+		trade_efficiency = 0.1
+	}
+	ferrarese_splendour = {
+		prestige = 1
+	}
+	addizione_erculea = {
+		defensiveness = 0.2
+	}
+	orlando_furioso = {
+		idea_cost = -0.1
+	}
+	papal_ties = {
+		papal_influence = 2
+	}
+	in_foreign_service = {
+		leader_land_fire = 1
+	}
+}
+
+#MAN ideas by Galaahd, modified by Marco Dandolo
+MAN_ideas = {
+	start = {
+		global_unrest = -1 #padan lifestyle
+		leader_siege = 1
+	}
+	
+	bonus = {
+		leader_land_shock = 1
+		leader_land_manuever = 1 #the Gonzaga generals were superb
+	}
+	
+	trigger = {
+		tag = MAN #only Mantua
+	}
+	free = yes
+	
+	rule_gonzaga = {
+		stability_cost_modifier = -0.1
+	}
+	casa_gioiosa = {
+		idea_cost = -0.10
+	}
+	il_melodramma = {
+		prestige = 1
+	}
+	celeste_galeria = {
+		legitimacy = 1
+	}
+	walls_of_mantua = {
+		defensiveness = 0.25 #only Vauban is better
+	}
+	roman_vacation = {
+		papal_influence = 2
+	}
+	scientific_theatre = {
+		technology_cost = -0.05
+	}
+}
+
+#MOD ideas  by Marco Dandolo (similar to Ferrara!)
+MOD_ideas = {
+	start = {
+		leader_land_manuever = 1 #Este generals
+		leader_land_shock = 1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = MOD #only Modena
+	}
+	free = yes
+	
+	noble_este_dynasty = {
+		legitimacy = 1
+	}
+	cuisine_of_the_bassa = {
+		global_unrest = -1
+	}
+	mod_diplomatic_reputation = {
+		diplomatic_reputation = 2
+	}
+	modena_citadel = {
+		defensiveness = 0.2
+	}
+	modena_university = {
+		technology_cost = -0.05
+	}
+	palazzo_di_modena = {
+		stability_cost_modifier = -0.1
+	}
+	in_foreign_service = {
+		leader_land_fire = 1
+	}
+}
+
+#PIS ideas by Galaahd, modified by Marco Dandolo
+PIS_ideas = {
+	start = {
+		trade_steering = 0.10 
+		naval_morale = 0.1
+	}
+	
+	bonus = {
+		merchants = 1 #overkill, but there are reasons why Pisa was hated so much
+	}
+	
+	trigger = {
+		tag = PIS #only Pisa
+	}
+	free = yes
+	
+	free_pisa_idea = {
+		diplomatic_reputation = 1
+		mercenary_cost = -0.15
+	}
+	remember_meloria = {
+		naval_forcelimit_modifier = 0.33
+	}
+	port_of_pisa = {
+		global_trade_power = 0.1
+	}
+	seafearing_tradition = {
+		galley_power = 0.15
+		navy_tradition = 0.25
+	}
+	pisa_university = {
+		technology_cost = -0.05
+	}
+	piazza_del_duomo = {
+		prestige = 1
+	}
+	reestablish_pisan_traderoutes = {
+		trade_efficiency = 0.10
+	}
+}
+
+#SIC ideas by Marco Dandolo
+SIC_ideas = {
+	start = {
+		tolerance_heretic = 1
+	 	tolerance_heathen = 2 #famous sicilian tolerance in all centuries
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.33 #an island wants a huge navy
+	}
+	
+	trigger = {
+		tag = SIC #only Sishilia
+	}
+	free = yes
+
+	centre_of_meditteranean = {
+		trade_efficiency = 0.1
+	}
+	sicilian_parliament = {
+		stability_cost_modifier = -0.1
+	}
+	sicilian_school = {
+		advisor_pool = 1
+	}
+	sicilian_vesper = {
+		land_morale = 0.15
+	}
+	sicilian_baroque = {
+		prestige = 1
+	}
+	sicilian_piety = {
+		papal_influence = 2
+	}
+	against_barbary_pirates = {
+		naval_morale = 0.15
+	}
+}
+
+#SIE ideas by Marco Dandolo
+SIE_ideas = {
+	start = {
+		production_efficiency = 0.1 #famed artisan and merchant city
+		trade_efficiency = 0.05
+	}
+	
+	bonus = {
+		global_unrest = -1 #reformed Governo Nove
+	}
+	
+	trigger = {
+		tag = SIE #only Siena
+	}
+	free = yes
+	
+	famous_palio = {
+		prestige = 1
+	}
+	florentine_rivalry = {
+		land_morale = 0.15
+	}
+	mercanti_senesi = {
+		global_trade_power = 0.1
+	}
+	siena_university = {
+		idea_cost = -0.05
+	}
+	montalcino_republic = {
+		enemy_core_creation = 1.0
+		recover_army_morale_speed = 0.05
+	}
+	buon_governo = {
+		global_tax_modifier = 0.1
+	}
+	ambitions_of_an_prince2 = {
+		mercenary_cost = -0.25
+	}
+}
+
+#TNT ideas by Marco Dandolo
+TNT_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		missionaries = 1
+	}
+	
+	bonus = {
+		improve_relation_modifier = 0.3
+	}
+	
+	trigger = {
+		tag = TNT #only Trent
+	}
+	free = yes
+	
+	between_kingdom_empire = {
+		diplomatic_reputation = 2
+	}
+	church_administration = {
+		stability_cost_modifier = -0.10
+		core_creation = -0.10
+	}
+	madruzzo_dynasty = {
+		prestige = 1
+	}
+	true_defender_of_the_faith = {
+		defensiveness = 0.25
+	}
+	council_of_trent = {
+		papal_influence = 2
+	}
+	no_witches = {
+		global_missionary_strength = 0.02
+	}
+	render_unto_ceasar = {
+		global_tax_modifier = 0.10
+	}
+}
+
+#URB ideas by Galaahd, modified by Marco Dandolo
+URB_ideas = {
+	start = {
+		leader_land_shock = 1 #no lousy "italian" generals
+		leader_siege = 1
+	}
+	
+	bonus = {
+		discipline = 0.1 #yeah, they are pretty cool
+	}
+	
+	trigger = {
+		tag = URB #only Urbino
+	}
+	free = yes
+	
+	palazzo_montefeltro = {
+		prestige = 1
+	}
+	splendid_court = {
+		advisor_pool = 1
+	}
+	condottieri_tradition = {
+		infantry_power = 0.10
+	}
+	il_cortegiano = {
+		diplomatic_reputation = 2
+	}
+	walls_of_urbino = {
+		defensiveness = 0.2
+	}
+	roman_aristocracy = {
+		papal_influence = 3 #seems strong, but true
+	}
+	ideal_city = {
+		global_unrest = -1
+	}
+}
+
+#VCP ideas
+KRU_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		trade_efficiency = 0.1
+	}
+
+	bonus = {
+		land_maintenance_modifier = -0.1
+	}
+	
+	trigger = {
+		tag = KRU
+	}
+	free = yes		#will be added at load.
+	
+	varangian_route = {
+		global_trade_power = 0.1
+	}
+	
+	druzhina = {
+		land_morale = 0.10
+	}
+	
+	cult_of_perun = {
+		discipline = 0.05
+	}
+	
+	veche = {
+		legitimacy = 0.5
+		republican_tradition = 0.5
+	}
+	
+	vyshegoroda = {
+		defensiveness = 0.2
+	}
+	
+	pogost_system = {
+		global_tax_modifier = 0.10
+	}
+	
+	remeslennye_posady = {
+		production_efficiency = 0.1
+	}
+
+}
+
+#VEF ideas
+EGY_ideas = {
+	start = {
+		trade_steering = 0.25
+		cavalry_power = 0.10
+	}
+	
+	bonus = {
+		global_trade_power = 0.20
+	}
+	
+	trigger = {
+		tag = EGY
+	}
+
+	free = yes
+	
+	red_sea_trade = {
+		global_trade_power = 0.05
+		trade_range_modifier = 0.10
+	}
+
+	monuments_to_greatness = {
+		prestige = 1
+	}
+
+	nile_transport = {
+		manpower_recovery_speed = 0.20
+	}
+
+	egy_drilling = {
+		discipline = 0.05
+	}
+
+	egy_production = {
+		production_efficiency = 0.2
+	}
+
+	egy_succession = {
+		stability_cost_modifier = -0.15
+	}
+
+	egy_monopoly_ports = {
+		trade_efficiency = 0.10
+	}
+}
+
+PTH_ideas = {
+	start = {
+		vassal_income = 0.15
+		heir_chance = 0.50
+	}
+
+	bonus = {
+		build_cost = -0.10
+	}
+
+	trigger = {
+		tag = PRT
+	}
+
+	free = yes	 #will be added at load.
+
+	the_cataphracts ={
+		cavalry_power = 0.25
+	}
+	
+	the_three_divisions = {
+		production_efficiency = 0.10
+	}
+
+	king_of_kings = {
+		legitimacy = 1
+	}
+
+	army_of_sand = {
+		global_regiment_recruit_speed = -0.33	
+	}
+
+	empire_of_tolerance = {
+		tolerance_heathen = 2
+	}
+
+	parthian_renaissance = {
+		prestige = 1
+		idea_cost = -0.10
+	}
+
+	the_persian_legacy = {
+		land_morale = 0.10
+	}
+}
+
+FRS_ideas = {
+	start = {
+		global_trade_power = 0.10
+		prestige_decay = -0.02
+	}
+
+	bonus = {
+		recover_army_morale_speed = 0.05
+	}
+	
+	trigger = {
+		tag = FRS
+	}
+	free = yes
+	
+	grutte_pier = {
+		light_ship_power = 0.15
+	}
+	eallju = {
+		stability_cost_modifier = -0.1
+	}
+	eala_frya_fresena = {
+		republican_tradition = 0.5
+	}
+	opstalboom_league = {
+		global_trade_power = 0.1
+	}
+	tritich_grietenijen = {
+		global_tax_modifier = 0.1
+	}
+	fryske_sceattas = {
+		inflation_reduction = 0.1
+	}
+	slach_oan_de_boarn = {
+		infantry_power = 0.15
+	}
+}
+
+#Ukie ideas
+VOL_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		defensiveness = 0.10
+	}
+	
+	bonus = {
+		build_cost = -0.10
+	}
+
+	trigger = {
+		tag = VOL
+	}
+	free = yes		#will be added at load.
+	
+	vol_ukrainian_nationalism = {
+		land_morale = 0.1
+	}
+	
+	vol_different_confessions = {
+		tolerance_heretic = 3
+	}
+	
+	vol_danylo_legitimacy = {
+		legitimacy = 1   
+	}
+	
+	vol_sichovi_striltsi = {
+		infantry_power = 0.10
+		discipline = 0.025
+	}
+	
+	vol_city_of_churches = {
+		global_missionary_strength = 0.01
+	}
+	
+	vol_western_legacy = {
+		technology_cost = -0.1
+	}
+	
+	vol_path_to_citizenship = {
+		core_creation = -0.20
+	}
+}

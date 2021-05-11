@@ -1,0 +1,187 @@
+﻿l_english:
+ SPICES_LOW:0 "Human Falled Salt Prices"
+ SPICES_MUCH:0 "Human Rised Salt Price"
+ SUGAR_LOW:0 "Human Falled Spices Prices"
+ SUGAR_MUCH:0 "Human Rised Spices Prices"
+ SALT_LOW:0 "Human Falled Sugar Prices"
+ SALT_MUCH:0 "Human Rised Sugar Prices"
+ 
+ 
+ low_spices_50:0 "Falling Spices Prices -50%"
+ low_spices_50_desc:0 "Falling Spices Prices -50%"
+ low_spices_50_title:0 "Falling Spices Prices -50%"
+ low_spices_50_dialog:0 "Falling Spices Prices -50%"
+ low_spices_50_tooltip:0 "Falling Spices Prices -50%"
+ much_spices_50:0 "Rising Spices Prices 50%"
+ much_spices_50_desc:0 "Rising Spices Prices 50%"
+ much_spices_50_title:0 "Rising Spices Prices 50%"
+ much_spices_50_dialog:0 "Rising Spices Prices 50%"
+ much_spices_50_tooltip:0 "Rising Spices Prices 50%"
+ 
+ 
+ much_spices_25:0 "Rising Spices Prices 25%"
+ much_spices_25_desc:0 "Rising Spices Prices 25%"
+ much_spices_25_title:0 "Rising Spices Prices 25%"
+ much_spices_25_dialog:0 "Rising Spices Prices 25%"
+ much_spices_25_tooltip:0 "Rising Spices Prices 25%"
+ low_spices_25:0 "Falling Spices Prices -25%"
+ low_spices_25_desc:0 "Falling Spices Prices -25%"
+ low_spices_25_title:0 "Falling Spices Prices -25%"
+ low_spices_25_dialog:0 "Falling Spices Prices -25%"
+ low_spices_25_tooltip:0 "Falling Spices Prices -25%"
+ 
+ 
+ 
+ 
+ much_sugar_50:0 "Rising Sugar Prices 50%"
+ much_sugar_50_desc:0 "Rising Sugar Prices 50%"
+ much_sugar_50_title:0 "Rising Sugar Prices 50%"
+ much_sugar_50_dialog:0 "Rising Sugar Prices 50%"
+ much_sugar_50_tooltip:0 "Rising Sugar Prices 50%"
+ low_sugar_50:0 "Falling Sugar Prices -50%"
+ low_sugar_50_desc:0 "Falling Sugar Prices -50%"
+ low_sugar_50_title:0 "Falling Sugar Prices -50%"
+ low_sugar_50_dialog:0 "Falling Sugar Prices -50%"
+ low_sugar_50_tooltip:0 "Falling Sugar Prices -50%"
+ 
+ 
+ 
+ much_sugar_25:0 "Rising Sugar Prices 25%"
+ much_sugar_25_desc:0 "Rising Sugar Prices 25%"
+ much_sugar_25_title:0 "Rising Sugar Prices 25%"
+ much_sugar_25_dialog:0 "Rising Sugar Prices 25%"
+ much_sugar_25_tooltip:0 "Rising Sugar Prices 25%"
+ low_sugar_25:0 "Falling Sugar Prices -25%"
+ low_sugar_25_desc:0 "Falling Sugar Prices -25%"
+ low_sugar_25_title:0 "Falling Sugar Prices -25%"
+ low_sugar_25_dialog:0 "Falling Sugar Prices -25%"
+ low_sugar_25_tooltip:0 "Falling Sugar Prices -25%"
+ 
+
+ 
+ 
+ low_salt_50:0 "Falling Salt Prices -50%"
+ low_salt_50_desc:0 "Falling Salt Prices -50%"
+ low_salt_50_title:0 "Falling Salt Prices -50%"
+ low_salt_50_dialog:0 "Falling Salt Prices -50%"
+ low_salt_50_tooltip:0 "Falling Salt Prices -50%"
+ 
+ low_salt_25:0 "Falling Salt Prices -25%"
+ low_salt_25_desc:0 "Falling Salt Prices -25%"
+ low_salt_25_title:0 "Falling Salt Prices -25%"
+ low_salt_25_dialog:0 "Falling Salt Prices -25%"
+ low_salt_25_tooltip:0 "Falling Salt Prices -25%"
+ 
+ much_salt_50:0 "Rising Salt Prices 50%"
+ much_salt_50_desc:0 "Rising Salt Prices 50%"
+ much_salt_50_title:0 "Rising Salt Prices 50%"
+ much_salt_50_dialog:0 "Rising Salt Prices 50%"
+ much_salt_50_tooltip:0 "Rising Salt Prices 50%"
+ 
+ 
+ much_salt_25:0 "Rising Salt Prices 25%"
+ much_salt_25_desc:0 "Rising Salt Prices 25%"
+ much_salt_25_title:0 "Rising Salt Prices 25%"
+ much_salt_25_dialog:0 "Rising Salt Prices 25%"
+ much_salt_25_tooltip:0 "Rising Salt Prices 25%"
+ 
+
+ 
+ failling_salt_price_root_25:0 "Falled Salt Prices"
+ failling_salt_price_root:0 "Falled Salt Prices"
+ failling_salt_price_root_1:0 "Falled Salt Prices"
+ failling_salt_price_root_1_25:0 "Falled Salt Prices"
+ failling_salt_price_from_25:0 "Falled Salt Prices"
+ failling_salt_price_from:0 "Falled Salt Prices"
+ failling_salt_price_from_1:0 "Falled Salt Prices"
+ rising_salt_price_root_25:0 "Rising Salt Price"
+ rising_salt_price_root:0 "Rising Salt Price"
+ rising_salt_price_root_1:0 "Rising Salt Price"
+ rising_salt_price_root_1_25:0 "Rising Salt Price"
+ rising_salt_price_from_25:0 "Rising Salt Price"
+ rising_salt_price_from:0 "Rising Salt Price"
+ 
+ 
+ failling_spices_price_root_25:0 "Falling Spices Prices"
+ failling_spices_price_root:0 "Falling Spices Prices"
+ failling_spices_price_root_1:0 "Falling Spices Prices"
+ failling_spices_price_from_25:0 "Falling Spices Prices"
+ failling_spices_price_from:0 "Falling Spices Prices"
+ failling_spices_price_root_1_25:0 "Falling Spices Prices"
+ rising_spices_price_root_25:0 "Rising Spices Prices"
+ rising_spices_price_root:0 "Rising Spices Prices"
+ rising_spices_price_root_1:0 "Rising Spices Prices"
+ rising_spices_price_from_25:0 "Rising Spices Prices"
+ rising_spices_price_from:0 "Rising Spices Prices"
+ rising_spices_price_root_1_25:0 "Falling Spices Prices"
+ 
+ 
+ 
+ failling_sugar_price_root_1:0 "Falling Sugar Prices"
+ failling_sugar_price_root_25:0 "Falling Sugar Prices"
+ failling_sugar_price_root:0 "Falling Sugar Prices"
+ failling_sugar_price_from_25:0 "Falling Sugar Prices"
+ failling_sugar_price_from:0 "Falling Sugar Prices"
+ failling_sugar_price_root_1_25:0 "Falling Sugar Prices"
+ rising_sugar_price_root_25:0 "Rising Sugar Prices"
+ rising_sugar_price_root:0 "Rising Sugar Prices"
+ rising_sugar_price_root_1:0 "Rising Sugar Prices"
+ rising_sugar_price_from_25:0 "Rising Sugar Prices"
+ rising_sugar_price_from:0 "Rising Sugar Prices"
+ rising_sugar_price_root_1_25:0 "Rising Sugar Prices"
+ 
+ 
+ low_salt_price_1_50:0 "Human Changed Price Salt -50%"
+ much_salt_price_1_50:0 "Human Changed Price Salt 50%"
+ low_salt_price_1_25:0 "Human Changed Price Salt -25"
+ much_salt_price_1_25:0 "Human Changed Price Salt 25"
+ 
+ 
+ low_spices_price_1_50:0 "Human Changed Price Spices -50%"
+ much_spices_price_1_50:0 "Human Changed Price Spices 50%"
+ low_spices_price_1_25:0 "Human Changed Price Spices -25"
+ much_spices_price_1_25:0 "Human Changed Price Spices 25"
+ 
+ 
+ low_sugar_price_1_50:0 "Human Changed Price Sugar -50%"
+ much_sugar_price_1_50:0 "Human Changed Price Sugar 50%"
+ low_sugar_price_1_25:0 "Human Changed Price Sugar -25"
+ much_sugar_price_1_25:0 "Human Changed Price Sugar 25"
+ 
+ 
+ 
+ 
+ 
+ low_opinion_salt_good_50:0 "Good Opinion For Salt Price -50"
+ low_opinion_salt_bad_50:0 "Bad Opinion For Salt Price -50"
+ much_opinion_salt_good_50:0 "Good Opinion For Salt Price 50"
+ much_opinion_salt_bad_50:0 "Bad Opinion For Salt Price 50"
+ low_opinion_salt_good_25:0 "Good Opinion For Salt Price -25"
+ low_opinion_salt_bad_25:0 "Bad Opinion For Salt Price -25"
+ much_opinion_salt_bad_25:0 "Bad Opinion For Salt Price 25"
+ much_opinion_salt_good_25:0 "Good Opinion For Salt Price 25"
+ 
+ 
+ low_opinion_spices_good_50:0 "Good Opinion For Spices Price -50"
+ low_opinion_spices_bad_50:0 "Bad Opinion For Spices Price -50"
+ much_opinion_spices_good_50:0 "Good Opinion For Spices Price 50"
+ much_opinion_spices_bad_50:0 "Bad Opinion For Spices Price 50"
+ low_opinion_spices_good_25:0 "Good Opinion For Spices Price -25"
+ low_opinion_spices_bad_25:0 "Bad Opinion For Spices Price -25"
+ much_opinion_spices_bad_25:0 "Bad Opinion For Spices Price 25"
+ much_opinion_spices_good_25:0 "Good Opinion For Spices Price 25"
+ 
+ 
+ low_opinion_sugar_good_50:0 "Good Opinion For Sugar Price -50"
+ low_opinion_sugar_bad_50:0 "Bad Opinion For Sugar Price -50"
+ much_opinion_sugar_good_50:0 "Good Opinion For Sugar Price 50"
+ much_opinion_sugar_bad_50:0 "Bad Opinion For Sugar Price 50"
+ low_opinion_sugar_good_25:0 "Good Opinion For Sugar Price -25"
+ low_opinion_sugar_bad_25:0 "Bad Opinion For Sugar Price -25"
+ much_opinion_sugar_bad_25:0 "Bad Opinion For Sugar Price 25"
+ much_opinion_sugar_good_25:0 "Good Opinion For Sugar Price 25"
+ 
+ 
+ 
+ 
+ 

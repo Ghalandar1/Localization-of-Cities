@@ -1,0 +1,90 @@
+﻿l_english:
+ steal.1title:0 "A Country Stealed Our Power"
+ steal.1desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Stealed From Any Power Of Our Country 25 Point. \nThis Is Too Bad. We Have To Give Them A Tough Answer!"
+ steal.1opt:0 "They Are Our Enemy"
+ steal.1noting:0 "We Need Them. They Are Still Our Friends"
+ 
+ steal.2title:0 "A Country Stealed Our Power"
+ steal.2desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Stealed From Any Power Of Our Country 50 Point. \nThis Is Too Bad. We Have To Give Them A Tough Answer!"
+ steal.2opt:0 "They Are Our Enemy"
+ steal.2noting:0 "We Need Them. They Are Still Our Friends"
+ 
+ steal_x1:0 "Steal 25 Point of Our Country"
+ steal_x2:0 "Steal 50 Point of Our Country"
+ 
+ sanction.1title:0 "We Were Sanctioned"
+ sanction.1desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! It Has Sanctioned 10% Of Our World Trade!"
+ sanction.1opt:0 "OK I Understood"
+ 
+ sanction.1everytitle:0 "They boycotted their Trade"
+ sanction.1everydesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! It Has Sanctioned 10% Of §R[From.From.Owner.GetName]§! World Trade!"
+ sanction.1everyopt:0 "OK I Understood"
+ 
+ sanction.2title:0 "We Were Sanctioned"
+ sanction.2desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! It Has Sanctioned 20% Of Our World Trade!"
+ sanction.2opt:0 "OK I Understood"
+ 
+ sanction.2everytitle:0 "They boycotted their Trade"
+ sanction.2everydesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! It Has Sanctioned 20% Of §R[From.From.GetName]§! World Trade!"
+ sanction.2everyopt:0 "OK I Understood"
+ 
+ sanction.3title:0 "We Were Sanctioned"
+ sanction.3desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! It Has Sanctioned 30% Of Our World Trade!"
+ sanction.3opt:0 "OK I Understood"
+ 
+ sanction.3everytitle:0 "They boycotted their Trade"
+ sanction.3everydesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! It Has Sanctioned 30% Of §R[From.From.GetName]§! World Trade!"
+ sanction.3everyopt:0 "OK I Understood"
+ 
+ sanction.4title:0 "We Were Sanctioned"
+ sanction.4desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! It Has Sanctioned 50% Of Our World Trade!"
+ sanction.4opt:0 "OK I Understood"
+ 
+ sanction.4everytitle:0 "They boycotted their Trade"
+ sanction.4everydesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! It Has Sanctioned 50% Of §R[From.From.GetName]§! World Trade!"
+ sanction.4everyopt:0 "OK I Understood"
+ 
+ 
+ 
+ teryak.1title:0 "Drug Distribution"
+ teryak.1desc:0 "My $MONARCHTITLE$, §G[From.Owner.GetName]§! has made our people addicted to §RDrugs§! \nWe must stop the spread of drugs and not let our people be harmed!"
+ teryak.1.a:0 "Stop The Distribution Of Drugs"
+ teryak.2.b:0 "We Can Not Stop It Now"
+ 
+ 
+ send_aid.1title:0 "A Country Sent GAdministrative Point For Us"
+ send_aid.1desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Sent Us §GAdministrative Points§! concessions."
+ send_aid.1opt:0 "Thanks"
+ 
+ send_aid.2title:0 "A Country Sent Diplomatic Point For Us"
+ send_aid.2desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Sent Us §GDiplomatic Points§! concessions."
+ 
+ 
+ send_aid.3title:0 "A Country Sent Military Point For Us"
+ send_aid.3desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Sent Us §GMilitary Points§! concessions."
+ 
+ 
+ 
+ send_aid.4title:0 "A Country Sent Manpower For Us"
+ send_aid.4desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Sent Us §GManpower§! concessions."
+ 
+ 
+ send_aid.5title:0 "A Country Sent Manpower"
+ send_aid.5desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Sent Manpower to §R[From.From.Owner.GetName]§! ."
+ send_aid.5opt:0 "It Is Interesting"
+ 
+ 
+ send_aid.6title:0 "A Country Sent Gift For Us"
+ send_aid.6desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Sent Us §G25.000 Dollars§!."
+ 
+ send_aid.7title:0 "A Country Sent Gift For Us"
+ send_aid.7desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Sent Us §G50.000 Dollars§!."
+ 
+ send_aid.8title:0 "A Country Sent Gift For Us"
+ send_aid.8desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Sent Us §G100.000 Dollars§!."
+ 
+ et.EVTOPTLA28:0 "Irreligious"
+ et.EVTOPTLAS28:0 "Satanism"
+
+
+

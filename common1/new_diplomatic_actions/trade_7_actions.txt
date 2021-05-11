@@ -1,0 +1,3183 @@
+#######################################    Trade   ############################
+#chinaware
+#coffee
+#cocoa
+#######################################   Oil  50    ##############################
+
+low_chinaware_50 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+				production_leader = {
+						trade_goods = chinaware
+					}
+				production_leader = {
+						trade_goods = coffee  
+					}
+				production_leader = {
+						trade_goods = cocoa    
+					}
+				production_leader = {
+						trade_goods = gold    
+				}
+			}
+			FROM = { any_owned_province = { trade_goods = chinaware } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 30
+			stability = 1
+			treasury = 35000
+			total_development = 2000
+			
+			reverse_has_opinion = { 
+			who = FROM value = 5
+		}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_chinaware_price_root_1
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_chinaware_price_root_1
+				}
+			}
+			OR = {
+				production_leader = {
+						trade_goods = chinaware
+					}
+				production_leader = {
+						trade_goods = coffee  
+					}
+				production_leader = {
+						trade_goods = cocoa    
+					}
+				production_leader = {
+						trade_goods = gold    
+				}
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 20000
+			stability = 1
+			total_development = 700
+			NOT = {
+			FROM = { 
+				has_country_modifier = failling_chinaware_price_from
+			}
+		}
+			any_owned_province = { trade_goods = chinaware }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = chinaware
+			key = CHINWARE_LOW
+			value = -0.5
+			duration = 1825
+		}
+	
+		every_country = {
+				
+		
+			if = {	
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = chinaware }
+				}
+				add_country_modifier = {
+							name = much_chinaware_price_1_50
+							duration = 1825
+				} 
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+					name = low_chinaware_price_1_50
+					duration = 1825
+				}
+			}
+			
+			}
+			
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_chinaware_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_chinaware_good_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_chinaware_good_50
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_chinaware_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_chinaware_bad_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_chinaware_bad_50
+				}
+			
+
+			}
+		}
+		
+	
+		
+		
+		
+		
+		ROOT = {
+
+			add_treasury = -35000
+			add_country_modifier = {
+				name = failling_chinaware_price_root
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_chinaware_price_root_1
+				duration = 1825
+			}
+			
+			
+		}
+		FROM = { 
+			add_treasury = -20000
+			add_country_modifier = {
+				name = failling_chinaware_price_from
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_chinaware_price_root_1
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+much_chinaware_50 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+				production_leader = {
+						trade_goods = chinaware
+					}
+				production_leader = {
+						trade_goods = coffee  
+					}
+				production_leader = {
+						trade_goods = cocoa    
+					}
+				production_leader = {
+						trade_goods = gold    
+				}
+			}
+			FROM = { any_owned_province = { trade_goods = chinaware } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 30
+			treasury = 35000
+			stability = 1
+			total_development = 2000
+			reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_chinaware_price_root_1
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_chinaware_price_root_1
+				}
+			}
+			OR = {
+				production_leader = {
+						trade_goods = chinaware
+					}
+				production_leader = {
+						trade_goods = coffee  
+					}
+				production_leader = {
+						trade_goods = cocoa    
+					}
+				production_leader = {
+						trade_goods = gold    
+				}
+			}
+		}
+		FROM = {
+			
+			treasury = 20000
+			stability = 1
+			total_development = 700
+			NOT = {
+			FROM = { 
+				has_country_modifier = rising_chinaware_price_from
+			}
+		}
+			any_owned_province = { trade_goods = chinaware }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = chinaware
+			key = CHINWARE_MUCH
+			value = 0.5
+			duration = 1825
+		}
+		
+		every_country = { 
+						
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = chinaware }
+					
+				}
+				add_country_modifier = {
+						name = much_chinaware_price_1_50
+						duration = 1825
+					}
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+						name = low_chinaware_price_1_50
+						duration = 1825
+				}
+			}
+		}
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_chinaware_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_chinaware_bad_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_chinaware_bad_50
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_chinaware_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_chinaware_good_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_chinaware_good_50
+				}
+			
+
+			}
+		}
+		
+		
+		
+		
+		ROOT = {
+
+			add_treasury = -35000
+			add_country_modifier = {
+				name = rising_chinaware_price_root
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_chinaware_price_root_1
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -20000
+			add_country_modifier = {
+				name = rising_chinaware_price_from
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_chinaware_price_root_1
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+
+
+
+###################################################    Iron 25    #########################################
+
+
+
+low_chinaware_25 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+		any_owned_province = { trade_goods = chinaware }
+		any_owned_province = { trade_goods = coffee }
+		any_owned_province = { trade_goods = cocoa }
+		production_leader = {
+			trade_goods = gold    
+		}
+		
+		}
+		FROM = { any_owned_province = { trade_goods = chinaware } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 20
+			treasury = 15000
+			stability = 1
+			total_development = 1250
+			reverse_has_opinion = { 
+			who = FROM value = 5
+		}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_chinaware_price_root_1_25
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_chinaware_price_root_1_25
+				}
+			}
+			OR = {
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = chinaware
+					}
+					amount = 5
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = coffee
+					}
+					amount = 3
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = cocoa
+					}
+					amount = 3
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 10000
+			stability = 1
+			total_development = 700
+			
+			any_owned_province = { trade_goods = chinaware }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = chinaware
+			key = CHINWARE_LOW
+			value = -0.25
+			duration = 1825
+		}
+		
+		
+		
+		every_country = {
+			
+			if = {	
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = chinaware }
+				}
+				add_country_modifier = {
+							name = much_chinaware_price_1_25
+							duration = 1825
+				} 
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+					name = low_chinaware_price_1_25
+					duration = 1825
+				}
+			}
+		}
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_chinaware_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_chinaware_good_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_chinaware_good_25
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_chinaware_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_chinaware_bad_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_chinaware_bad_25
+				}
+			
+
+			}
+		}
+
+		
+		ROOT = {
+
+			add_treasury = -15000
+			add_country_modifier = {
+				name = failling_chinaware_price_root_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_chinaware_price_root_1_25
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -10000
+			add_country_modifier = {
+				name = failling_chinaware_price_from_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_chinaware_price_root_1_25
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+much_chinaware_25 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+		any_owned_province = { trade_goods = chinaware }
+		any_owned_province = { trade_goods = coffee }
+		any_owned_province = { trade_goods = cocoa }
+		production_leader = {
+			trade_goods = gold    
+		}
+		
+		}
+		FROM = { any_owned_province = { trade_goods = chinaware } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 20
+			treasury = 15000
+			stability = 1
+			total_development = 1250
+			reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_chinaware_price_root_1_25
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_chinaware_price_root_1_25
+				}
+			}
+			OR = {
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = chinaware
+					}
+					amount = 5
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = coffee
+					}
+					amount = 3
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = cocoa
+					}
+					amount = 3
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 10000
+			stability = 1
+			total_development = 700
+			
+			any_owned_province = { trade_goods = chinaware  }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = chinaware
+			key = CHINWARE_MUCH
+			value = 0.25
+			duration = 1825
+		}
+		
+		every_country = { 
+						
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = chinaware }
+					
+				}
+				add_country_modifier = {
+						name = low_chinaware_price_1_25
+						duration = 1825
+				}
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+						name = much_chinaware_price_1_25
+						duration = 1825
+				}
+			}
+		}
+		
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_chinaware_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_chinaware_good_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_chinaware_good_25
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_chinaware_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_chinaware_bad_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_chinaware_bad_25
+				}
+			
+
+			}
+		}
+		
+		
+		ROOT = {
+
+			add_treasury = -15000
+			add_country_modifier = {
+				name = rising_chinaware_price_root_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_chinaware_price_root_1_25
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -10000
+			add_country_modifier = {
+				name = rising_chinaware_price_from_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_chinaware_price_root_1_25
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+
+################################################           Aluminum             #################################### 
+
+
+
+
+low_cocoa_50 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+				production_leader = {
+						trade_goods = chinaware
+					}
+				production_leader = {
+						trade_goods = coffee  
+					}
+				production_leader = {
+						trade_goods = cocoa    
+					}
+				production_leader = {
+						trade_goods = gold    
+				}
+			}
+			FROM = { any_owned_province = { trade_goods = cocoa } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 30
+			treasury = 35000
+			stability = 1
+			total_development = 2000
+			
+			reverse_has_opinion = { 
+			who = FROM value = 5
+		}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_cocoa_price_root_1
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_cocoa_price_root_1
+				}
+			}
+			OR = {
+				production_leader = {
+					trade_goods = chinaware
+				}
+				production_leader = {
+					trade_goods = coffee  
+				}
+				production_leader = {
+					trade_goods = cocoa    
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 20000
+			stability = 1
+			total_development = 700
+			NOT = {
+			FROM = { 
+				has_country_modifier = failling_cocoa_price_from
+			}
+		}
+			any_owned_province = { trade_goods = cocoa }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = cocoa
+			key = COCOA_LOW
+			value = -0.5
+			duration = 1825
+		}
+		
+		
+		every_country = {
+				
+		
+			if = {	
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = cocoa }
+				}
+				add_country_modifier = {
+							name = much_cocoa_price_1_50
+							duration = 1825
+				} 
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+					name = low_cocoa_price_1_50
+					duration = 1825
+				}
+			}
+			
+		}
+			
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_cocoa_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_cocoa_good_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_cocoa_good_50
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_cocoa_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_cocoa_bad_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_cocoa_bad_50
+				}
+			
+
+			}
+		}
+		
+		ROOT = {
+
+			add_treasury = -35000
+			add_country_modifier = {
+				name = failling_cocoa_price_root
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_cocoa_price_root_1
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -20000
+			add_country_modifier = {
+				name = failling_cocoa_price_from
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_cocoa_price_root_1
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+much_cocoa_50 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+				production_leader = {
+						trade_goods = chinaware
+					}
+				production_leader = {
+						trade_goods = coffee  
+					}
+				production_leader = {
+						trade_goods = cocoa    
+					}
+				production_leader = {
+						trade_goods = gold    
+				}
+			}
+			FROM = { any_owned_province = { trade_goods = cocoa } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 30
+			treasury = 35000
+			stability = 1
+			total_development = 2000
+			reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_cocoa_price_root_1
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_cocoa_price_root_1
+				}
+			}
+			OR = {
+				production_leader = {
+					trade_goods = chinaware
+				}
+				production_leader = {
+					trade_goods = coffee  
+				}
+				production_leader = {
+					trade_goods = cocoa    
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 20000
+			stability = 1
+			total_development = 700
+			NOT = {
+			FROM = { 
+				has_country_modifier = rising_cocoa_price_from
+			}
+		}
+			any_owned_province = { trade_goods = cocoa }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = cocoa
+			key = COCOA_MUCH
+			value = 0.5
+			duration = 1825
+		}
+		
+		
+		every_country = { 
+						
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = cocoa }
+					
+				}
+				add_country_modifier = {
+						name = much_cocoa_price_1_50
+						duration = 1825
+					}
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+						name = low_cocoa_price_1_50
+						duration = 1825
+				}
+			}
+		}
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_cocoa_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_cocoa_bad_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_cocoa_bad_50
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_cocoa_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_cocoa_good_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_cocoa_good_50
+				}
+			
+
+			}
+		}
+		
+		
+		ROOT = {
+
+			add_treasury = -35000
+			add_country_modifier = {
+				name = rising_cocoa_price_root
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_cocoa_price_root_1
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -20000
+			add_country_modifier = {
+				name = rising_cocoa_price_from
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_cocoa_price_root_1
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+
+
+
+###################################################   Wine 25    #########################################
+
+
+
+low_cocoa_25 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+		any_owned_province = { trade_goods = chinaware }
+		any_owned_province = { trade_goods = coffee }
+		any_owned_province = { trade_goods = cocoa }
+		production_leader = {
+			trade_goods = gold    
+		}
+		
+		}
+		FROM = { any_owned_province = { trade_goods = cocoa } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 20
+			treasury = 15000
+			stability = 1
+			total_development = 1250
+			reverse_has_opinion = { 
+			who = FROM value = 5
+		}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_cocoa_price_root_1_25
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_cocoa_price_root_1_25
+				}
+			}
+			OR = {
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = chinaware
+					}
+					amount = 5
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = coffee
+					}
+					amount = 3
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = cocoa
+					}
+					amount = 3
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 10000
+			stability = 1
+			total_development = 700
+			
+			any_owned_province = { trade_goods = cocoa }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = cocoa
+			key = COCOA_LOW
+			value = -0.25
+			duration = 1825
+		}
+		
+		
+		every_country = {
+			
+			if = {	
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = cocoa }
+				}
+				add_country_modifier = {
+							name = much_cocoa_price_1_25
+							duration = 1825
+				} 
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+					name = low_cocoa_price_1_25
+					duration = 1825
+				}
+			}
+		}
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_cocoa_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_cocoa_good_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_cocoa_good_25
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_cocoa_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_cocoa_bad_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_cocoa_bad_25
+				}
+			
+
+			}
+		}
+		
+		
+		
+		
+		ROOT = {
+
+			add_treasury = -15000
+			add_country_modifier = {
+				name = failling_cocoa_price_root_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_cocoa_price_root_1_25
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -10000
+			add_country_modifier = {
+				name = failling_cocoa_price_from_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_cocoa_price_root_1_25
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+much_cocoa_25 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+		any_owned_province = { trade_goods = chinaware }
+		any_owned_province = { trade_goods = coffee }
+		any_owned_province = { trade_goods = cocoa }
+		production_leader = {
+			trade_goods = gold    
+		}
+		
+		}
+		FROM = { any_owned_province = { trade_goods = cocoa } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 20
+			treasury = 15000
+			stability = 1
+			total_development = 1250
+			reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_cocoa_price_root_1_25
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_cocoa_price_root_1_25
+				}
+			}
+			OR = {
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = chinaware
+					}
+					amount = 5
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = coffee
+					}
+					amount = 3
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = cocoa
+					}
+					amount = 3
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 10000
+			stability = 1
+			total_development = 700
+			
+			any_owned_province = { trade_goods = cocoa  }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = cocoa
+			key = COCOA_MUCH
+			value = 0.25
+			duration = 1825
+		}
+		
+		
+		every_country = { 
+						
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = cocoa }
+					
+				}
+				add_country_modifier = {
+						name = low_cocoa_price_1_25
+						duration = 1825
+				}
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+						name = much_cocoa_price_1_25
+						duration = 1825
+				}
+			}
+		}
+		
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_cocoa_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_cocoa_good_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_cocoa_good_25
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_cocoa_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_cocoa_bad_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_cocoa_bad_25
+				}
+			
+
+			}
+		}
+		
+		
+		
+		ROOT = {
+
+			add_treasury = -15000
+			add_country_modifier = {
+				name = rising_cocoa_price_root_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_cocoa_price_root_1_25
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -10000
+			add_country_modifier = {
+				name = rising_cocoa_price_from_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_cocoa_price_root_1_25
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+####################################################       Copper      ##############################################
+
+
+
+
+low_coffee_50 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+				production_leader = {
+						trade_goods = chinaware
+					}
+				production_leader = {
+						trade_goods = coffee  
+					}
+				production_leader = {
+						trade_goods = cocoa    
+					}
+				production_leader = {
+						trade_goods = gold    
+				}
+			}
+			FROM = { any_owned_province = { trade_goods = coffee } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 30
+			treasury = 35000
+			stability = 1
+			total_development = 2000
+			
+			reverse_has_opinion = { 
+			who = FROM value = 5
+		}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_coffee_price_root_1
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_coffee_price_root_1
+				}
+			}
+			OR = {
+				production_leader = {
+					trade_goods = chinaware
+				}
+				production_leader = {
+					trade_goods = coffee  
+				}
+				production_leader = {
+					trade_goods = cocoa    
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 20000
+			stability = 1
+			total_development = 700
+			NOT = {
+			FROM = { 
+				has_country_modifier = failling_coffee_price_from
+			}
+		}
+			any_owned_province = { trade_goods = coffee }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = coffee
+			key = COFFEE_LOW
+			value = -0.5
+			duration = 1825
+		}
+		
+		
+		every_country = {
+				
+		
+			if = {	
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = coffee }
+				}
+				add_country_modifier = {
+							name = much_coffee_price_1_50
+							duration = 1825
+				} 
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+					name = low_coffee_price_1_50
+					duration = 1825
+				}
+			}
+			
+			}
+			
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_coffee_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_coffee_good_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_coffee_good_50
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_coffee_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_coffee_bad_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_coffee_bad_50
+				}
+			
+
+			}
+		}
+		
+		
+		
+		ROOT = {
+
+			add_treasury = -35000
+			add_country_modifier = {
+				name = failling_coffee_price_root
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_coffee_price_root_1
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -20000
+			add_country_modifier = {
+				name = failling_coffee_price_from
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_coffee_price_root_1
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+much_coffee_50 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+				production_leader = {
+						trade_goods = chinaware
+					}
+				production_leader = {
+						trade_goods = coffee  
+					}
+				production_leader = {
+						trade_goods = cocoa    
+					}
+				production_leader = {
+						trade_goods = gold    
+				}
+			}
+			FROM = { any_owned_province = { trade_goods = coffee } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 30
+			treasury = 35000
+			total_development = 2000
+			stability = 1
+			reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_coffee_price_root_1
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_coffee_price_root_1
+				}
+			}
+			OR = {
+				production_leader = {
+					trade_goods = chinaware
+				}
+				production_leader = {
+					trade_goods = coffee  
+				}
+				production_leader = {
+					trade_goods = cocoa    
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 20000
+			stability = 1
+			total_development = 700
+			NOT = {
+			FROM = { 
+				has_country_modifier = rising_coffee_price_from
+			}
+		}
+			any_owned_province = { trade_goods = coffee }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = coffee
+			key = COFFEE_MUCH
+			value = 0.5
+			duration = 1825
+		}
+		
+		
+		every_country = { 
+						
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = coffee }
+					
+				}
+				add_country_modifier = {
+						name = much_coffee_price_1_50
+						duration = 1825
+					}
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+						name = low_coffee_price_1_50
+						duration = 1825
+				}
+			}
+		}
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_coffee_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_coffee_bad_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_coffee_bad_50
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_coffee_price_1_50
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_coffee_good_50
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_coffee_good_50
+				}
+			
+
+			}
+		}
+		
+		
+		
+		
+		ROOT = {
+
+			add_treasury = -35000
+			add_country_modifier = {
+				name = rising_coffee_price_root
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_coffee_price_root_1
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -20000
+			add_country_modifier = {
+				name = rising_coffee_price_from
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_coffee_price_root_1
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+
+
+
+###################################################    Uranium 25    #########################################
+
+
+
+low_coffee_25 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+		any_owned_province = { trade_goods = chinaware }
+		any_owned_province = { trade_goods = coffee }
+		any_owned_province = { trade_goods = cocoa }
+		production_leader = {
+			trade_goods = gold    
+		}
+		
+		}
+		FROM = { any_owned_province = { trade_goods = coffee } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 20
+			treasury = 15000
+			total_development = 1250
+			stability = 1
+			reverse_has_opinion = { 
+			who = FROM value = 5
+		}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_coffee_price_root_1_25
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_coffee_price_root_1_25
+				}
+			}
+			OR = {
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = chinaware
+					}
+					amount = 5
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = coffee
+					}
+					amount = 3
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = cocoa
+					}
+					amount = 3
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 10000
+			stability = 1
+			total_development = 700
+			
+			any_owned_province = { trade_goods = coffee }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = coffee
+			key = COFFEE_LOW
+			value = -0.25
+			duration = 1825
+		}
+		
+		
+		
+		
+		every_country = {
+			
+			if = {	
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = coffee }
+				}
+				add_country_modifier = {
+							name = much_coffee_price_1_25
+							duration = 1825
+				} 
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+					name = low_coffee_price_1_25
+					duration = 1825
+				}
+			}
+		}
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_coffee_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_coffee_good_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_coffee_good_25
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_coffee_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = low_opinion_coffee_bad_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = low_opinion_coffee_bad_25
+				}
+			
+
+			}
+		}
+		
+		
+		
+		
+		
+		ROOT = {
+
+			add_treasury = -15000
+			add_country_modifier = {
+				name = failling_coffee_price_root_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_coffee_price_root_1_25
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -10000
+			add_country_modifier = {
+				name = failling_coffee_price_from_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = failling_coffee_price_root_1_25
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+much_coffee_25 = {
+	category = papacy
+	require_acceptance = yes
+	alert_index = 43
+	alert_tooltip = ICON_TRADELEAGUEINVITE
+	
+	is_visible = {
+		OR = {
+		any_owned_province = { trade_goods = chinaware }
+		any_owned_province = { trade_goods = coffee }
+		any_owned_province = { trade_goods = cocoa }
+		production_leader = {
+			trade_goods = gold    
+		}
+		
+		}
+		FROM = { any_owned_province = { trade_goods = coffee } }
+	}
+	
+	is_allowed = {	
+		ROOT = {
+			prestige = 20
+			treasury = 15000
+			total_development = 1250
+			stability = 1
+			reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = rising_coffee_price_root_1_25
+				}
+			}
+			NOT = { 	
+				ROOT = { 
+					has_country_modifier = failling_coffee_price_root_1_25
+				}
+			}
+			OR = {
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = chinaware
+					}
+					amount = 5
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = coffee
+					}
+					amount = 3
+				}
+				calc_true_if = {
+					all_owned_province = {
+						trade_goods = cocoa
+					}
+					amount = 3
+				}
+				production_leader = {
+					trade_goods = gold    
+				}
+			
+			}
+			
+		}
+		FROM = {
+			
+			treasury = 10000
+			stability = 1
+			total_development = 700
+			
+			any_owned_province = { trade_goods = coffee  }
+
+			
+		}
+		}
+	
+	
+	on_accept = {
+	
+		change_price = {
+			trade_goods = coffee
+			key = COFFEE_MUCH
+			value = 0.25
+			duration = 1825
+		}
+		
+		
+
+
+		every_country = { 
+						
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+					any_owned_province = { trade_goods = coffee }
+					
+				}
+				add_country_modifier = {
+						name = low_coffee_price_1_25
+						duration = 1825
+				}
+			}
+			if = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				add_country_modifier = {
+						name = much_coffee_price_1_25
+						duration = 1825
+				}
+			}
+		}
+		
+		
+		every_known_country = {
+		
+			if = {
+				limit = {
+					has_country_modifier = low_coffee_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_coffee_good_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_coffee_good_25
+				}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = much_coffee_price_1_25
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = much_opinion_coffee_bad_25
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = much_opinion_coffee_bad_25
+				}
+			
+
+			}
+		}
+		
+		
+		
+		
+		ROOT = {
+
+			add_treasury = -15000
+			add_country_modifier = {
+				name = rising_coffee_price_root_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_coffee_price_root_1_25
+				duration = 1825
+			}
+			
+		}
+		FROM = { 
+			add_treasury = -10000
+			add_country_modifier = {
+				name = rising_coffee_price_from_25
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = rising_coffee_price_root_1_25
+				duration = 1825
+			}
+		}
+		
+				
+	}
+	
+	
+	ai_acceptance = {
+	
+		add_entry = {
+			name = BASE_EMMBASY
+			limit = { always = yes }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+				name = RIVAL_WITH
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+				}
+				multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+	
+		}
+		
+		add_entry = {
+			name = NEUTRAL_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = {
+				variable_name = ai_value 
+				value = 10
+			}
+	
+		}
+		
+		add_entry = {
+			name = WE_HAVE_GOOD_OPINON
+			limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+			export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+			}
+	
+		}
+		add_entry = {
+				name = OPINION
+				export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 5 }
+			}
+		
+		add_entry = {
+				name = ALLY_WITH
+				limit = { FROM = { alliance_with = ROOT } } 
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+		
+		}
+		
+	}
+	
+	ai_will_do = {	
+		
+		FROM = { has_opinion = { who = ROOT value = 145 }   }
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

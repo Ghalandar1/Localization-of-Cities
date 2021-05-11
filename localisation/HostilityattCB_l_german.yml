@@ -1,0 +1,7 @@
+﻿l_german:
+ cb_Hostileatt:0 "Hostile attiude"
+ cb_Hostileatt_desc:0 "We have a hostile attitude towards you. We will inevitably crush you."
+ superiority_Hostileatt:0 "Show the world our hostility is justified."
+ superiority_Hostileatt_desc:0 "War goal is to show our hostile attitude superiority is justified."
+ ALL_HOSTILITYATT:0 "Hostile Attitude"
+ HOSTILEATT_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Hostile Attitude War"

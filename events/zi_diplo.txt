@@ -1,0 +1,46 @@
+namespace = zi
+
+country_event = {
+	id = zi.11
+	title = "zi_11EVTNAME"
+	desc = "zi_11EVTDESC"
+	picture = DIPLOMACY_eventPicture
+	trigger = {
+		any_country = {
+			NOT = { tag = ZOM }
+			war_with = ROOT
+			has_country_modifier = unity_against_zombies
+		}
+		has_country_modifier = unity_against_zombies
+		NOT = { has_country_modifier = backstabber }
+	}
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "zi_11EVTOPTIONA"
+			every_country = {
+				limit = {
+					NOT = { tag = ZOM }
+					NOT = { tag = REB }
+					NOT = { tag = NAT }
+					NOT = { tag = PIR }
+					NOT = { has_country_modifier = backstabber }
+					has_country_modifier = unity_against_zombies
+					war_with = ROOT
+				}
+				white_peace = ROOT
+			}
+		
+	}
+	
+		option = {
+		ai_chance = { factor = 1 }
+		name = "zi_11EVTOPTIONB"
+		add_stability = -2
+		add_prestige = -10
+		add_country_modifier = {
+			name = backstabber
+			duration = 18250
+		}
+	}
+}

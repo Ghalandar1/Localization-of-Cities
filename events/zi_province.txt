@@ -1,0 +1,31 @@
+namespace = zi
+
+province_event = {
+	id = zi.17
+	title = "zi_17EVTNAME"
+	desc = "zi_17EVTDESC"
+	picture = CITY_DEVELOPMENT_eventPicture
+	mean_time_to_happen = { months = 300 }
+	trigger = {
+		NOT = { has_province_modifier = refugees }
+		controller = {
+			ROOT = { owned_by = PREV }
+			has_country_modifier = unity_against_zombies
+		}
+	}
+	
+	option = {
+		name = "zi_17EVTOPTIONA"
+		add_base_manpower = 2
+		add_local_autonomy = 10
+		add_province_modifier = {
+			name = refugees
+			duration = 3650
+		}
+	}
+	
+	option = {
+		name = "zi_17EVTOPTIONB"
+		prestige = -10
+	}
+}

@@ -1,0 +1,65 @@
+namespace = teryak
+
+#teryak Point Warning X1
+country_event = {
+	id = teryak.1
+	title = "teryak.1title"
+	desc = "teryak.1desc"
+	picture = teryak_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "teryak.1.a"
+		
+			add_prestige = 5
+			if = {
+					limit = { ROOT = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = -0.04
+				}
+			if = {
+					limit = { ROOT = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = -0.07
+				}
+			if = {
+					limit = { ROOT = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -0.09
+				}
+			if = {
+					limit = { ROOT = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.12
+				}
+			if = {
+					limit = { ROOT = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.15
+				}
+			
+			if = {
+					limit = { ROOT = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.175
+				}
+			if = {
+					limit = { ROOT = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = -0.2
+				}
+			if = {
+					limit = { ROOT = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.225
+				}
+			
+				add_country_modifier = {
+					name = teryak_attack_1
+					duration = 1200
+				}
+	}
+	
+	option = {
+		name = "teryak.2.b"
+		
+			add_prestige = -10
+			add_country_modifier = {
+					name = teryak_attack
+					duration = 1000
+				}
+	}
+}

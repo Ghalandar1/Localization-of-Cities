@@ -1,0 +1,16 @@
+province = {
+    war = {
+        active = {
+            is_at_war = yes
+			NOT = { tag = ZOM }
+			NOT = { tag = SWI }
+        }
+        eval_multiply = {
+            factor = 2.7
+            modifier = {
+                is_in_capital_area = yes
+                owned_by = ROOT
+            }
+        }
+    }
+}

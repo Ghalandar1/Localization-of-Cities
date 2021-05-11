@@ -1,0 +1,139 @@
+
+#Australia Guarantee
+guarantee = {
+	first = AUS
+	second = NAU
+	start_date = 2019.10.15
+	end_date = 3000.1.1
+}
+
+#Nepal
+guarantee = {
+	first = IND
+	second = NPL
+	start_date = 2019.11.21
+	end_date = 3000.1.1
+}
+
+#USA-Israel
+alliance = {
+	first = USA
+	second = ISR
+	start_date = 2020.2.4
+	end_date = 3005.12.1
+}
+
+#USA-Great Britine
+alliance = {
+	first = USA
+	second = GBR
+	start_date = 2020.2.5
+	end_date = 3005.12.1
+}
+
+#CHN-North Korea
+alliance = {
+	first = CHN
+	second = NOK
+	start_date = 2020.2.6
+	end_date = 3005.12.1
+}
+#CHN- Pakistan
+guarantee = {
+	first = CHN
+	second = PAK
+	start_date = 2020.2.7
+	end_date = 3005.12.1
+}
+#Iran_Syria
+alliance = {
+	first = IRA
+	second = SYR
+	start_date = 2020.2.12
+	end_date = 3005.12.1
+}
+
+#CHN
+guarantee = {
+	first = CHN
+	second = NOK
+	start_date = 2020.2.13
+	end_date = 3005.12.1
+}
+#USA-Taiwan
+guarantee = {
+	first = USA
+	second = FRM
+	start_date = 2020.2.14
+	end_date = 3005.12.1
+}
+#USA-ISR
+guarantee = {
+	first = USA
+	second = ISR
+	start_date = 2020.2.15
+	end_date = 3005.12.1
+}
+#USA-SKO
+guarantee = {
+	first = USA
+	second = ICE
+	start_date = 2020.2.16
+	end_date = 3005.12.1
+}
+
+#Turish - Azerbayjan
+alliance = {
+	first = TKY
+	second = AZE
+	start_date = 2020.2.17
+	end_date = 3005.12.1
+}
+
+guarantee = {
+	first = AUS
+	second = ETI
+	start_date = 2020.4.16
+	end_date = 3005.12.1
+}
+
+#Australia Guarantee
+alliance = {
+	first = IND
+	second = VTN
+	start_date = 2020.10.15
+	end_date = 3000.1.1
+}
+
+#Australia Guarantee
+alliance = {
+	first = GBR
+	second = POR
+	start_date = 2020.10.16
+	end_date = 3000.1.1
+}
+
+guarantee = {
+	first = FR2
+	second = ABD
+	start_date = 2020.6.17
+	end_date = 3005.12.1
+}
+guarantee = {
+	first = FR2
+	second = MOA
+	start_date = 2020.6.19
+	end_date = 3005.12.1
+}
+guarantee = {
+	first = SPA
+	second = ABD
+	start_date = 2020.7.18
+	end_date = 3005.12.1
+}
+
+
+
+
+
+

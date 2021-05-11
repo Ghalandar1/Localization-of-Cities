@@ -1,0 +1,143 @@
+
+
+############# Medical
+medical_research_ideas = {
+	category = ADM
+
+
+	trigger = {
+		adm_tech = 3 
+	}
+	
+	bonus = {
+		hostile_attrition = 1
+	}
+
+	medicine_1 = {
+		manpower_recovery_speed = 0.1
+		
+	}	
+	
+	
+	medicine_2 = {
+		sailors_recovery_speed = 0.10
+			
+	}
+
+	medicine_3 = {
+		recover_army_morale_speed = 0.1
+	}	
+	
+	medicine_4 = {
+		global_unrest = -1
+	}
+
+	
+	medicine_5 = {
+		naval_attrition = -0.1
+	}
+
+	
+	medicine_6 = {
+		recover_navy_morale_speed = 0.05
+	}
+	
+	medicine_7 = {
+		land_attrition = -0.1
+	}
+
+
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 5
+			personality = ai_diplomat
+		}
+		
+		modifier = {
+			factor = 1
+			personality = ai_militarist 
+		}
+		modifier = {
+			factor = 3
+			government = monarchy
+		}
+		
+		modifier = {
+			factor = 2
+			government = republic
+		}
+		modifier = {
+			factor = 7
+			is_emperor = yes
+		}
+	}
+}
+
+######medicine Army
+medical_army_ideas = {
+	category = ADM
+	
+	 trigger = {
+		has_idea_group = medical_research_ideas 
+	}
+	
+	bonus = {
+		reinforce_speed = 0.1
+	}
+
+	
+	medical_army_1 = {
+		shock_damage_received = -0.05
+	}
+	medical_army_2 = {
+		global_manpower_modifier = 0.05
+	}
+	medical_army_3 = {
+		global_sailors_modifier = 0.05
+	}
+	
+	medical_army_4 = {
+		fire_damage_received = -0.05
+	}
+	
+	medical_army_5 = {
+		drill_gain_modifier = 0.1
+	}
+	medical_army_6  = {
+		global_regiment_recruit_speed = -0.1
+	}
+	medical_army_7 = {
+		drill_decay_modifier = -0.1
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 4
+			any_country = {
+				is_rival = ROOT
+			}
+			
+			NOT = { is_vassal = yes }
+			NOT = { is_subject = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			tag = USA
+			tag = ISR
+			tag = ISG
+			tag = GBR
+			tag = RUS
+			tag = CHN
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat 
+		}
+		
+
+	}
+}

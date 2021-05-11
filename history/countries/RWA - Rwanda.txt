@@ -1,0 +1,27 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+primary_culture = rwandan
+religion = secularism
+technology_group = central_african
+unlock_cult = mwari_cult
+unlock_cult = central_african_ancestor_cult
+unlock_cult = cwezi_cult
+unit_type = sub_saharan
+capital = 9962
+2019.5.30 = {
+	monarch = {
+		name = "Paul Kagame"
+		adm = 4
+		dip = 2
+		mil = 2
+		religion = protestant
+	}
+}

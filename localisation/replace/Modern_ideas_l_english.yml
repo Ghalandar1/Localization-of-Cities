@@ -1,0 +1,58 @@
+﻿# Typos and some wording clean up from Picasso Sparks, use or ignore as you like.
+l_english: 
+ tax_idea:0 "Tax Researches"
+ tax_idea0_desc:0 "We need to focus on taxes"
+ 
+ taxx2_idea:0 "Double Taxation"
+ taxx2_idea_desc:0 "Get double taxation from people for more income"
+ 
+ plutocracy_Ideas:0 "Forces Researches"
+ plutocracy_Ideas_bonus:0 "Full Forces"
+ 
+ aristocracy_Ideas:0 "Police Researches"
+ aristocracy_Ideas_bonus:0 "Full Police"
+ 
+ maritime_Ideas:0 "Focus on Ships"
+ maritime_Ideas_bonus:0 "Full Ships"
+ 
+ army_Ideas:0 "Army Researches"
+ army_Ideas_desc:0 "Dedicated military Researches"
+ army_Ideas_bonus:0 Full Army Researches"
+ 
+ quality_Ideas:0 "Infantry Researches"
+ quality_Ideas_desc:0 "Focus on your infantry"
+ quality_Ideas_bonus:0 "Full Infantry Researches"
+ 
+ cavalry_Ideas:0 "Military Vehicles"
+ cavalry_Ideas_desc:0 "Power up your military vehicles"
+ cavalry_Ideas_bonus:0 "Full Military vehicles"
+ 
+ artillery_Ideas:0 "Tanks Researches"
+ artillery_Ideas_desc:0 "Focus on your Tanks"
+ artillery_Ideas_bonus:0 "Full Tank Researches"
+ 
+ military_base_Ideas:0 "Military Base Researches"
+ military_base_Ideas_desc:0 "Work on your military bases"
+ military_base_Ideas_bonus:0 "Full Military Base Researches"
+ 
+ tradex2_Ideas:0 "Trade X2 Researches"
+ tradex2_Ideas_desc:0 "Double your business"
+ tradex2_Ideas_bonus:0 "Full Trade X2 Researches"
+ 
+ 
+leadernav0:0 "Naval Commanders"
+leadernav0:0 "Train your naval commanders"
+leadernav0_bonus:0 "Full Naval Commanders"
+
+indoor_security_Ideas:0 "Internal Security Researches"
+indoor_security_Ideas_desc:0 "Strengthen your internal security"
+indoor_security_Ideas_bonus:0 "Full Indoor Security Researches"
+
+dynasty0:0 "Offensive Spying"
+dynasty0:0 "Focus on spyware attacks"
+dynasty0:0 "Full Offensive Spying"
+
+exploration_Ideas:0 "Defensive Spying"
+exploration_Ideas:0 "We focus on defense against espionage"
+exploration_Ideas:0 "Full Defensive spying"
+

@@ -1,0 +1,28 @@
+government = republic
+
+government_rank = 2
+add_government_reform = oligarchy_reform
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+historical_friend = POR
+
+capital = 12923
+
+primary_culture = brazilian
+religion = secularism
+technology_group = western
+
+2019.5.30 = {
+	monarch = {
+		name = "Jair Bolsonaro"
+		birth_date = 1955.3.21
+		adm = 3
+		dip = 2
+		mil = 4
+		religion = catholic
+	}
+}

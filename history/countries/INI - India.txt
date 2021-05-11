@@ -1,0 +1,27 @@
+government = republic
+
+government_rank = 3
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+
+capital = 2086
+primary_culture = kanauji
+religion = secularism
+technology_group = indian 
+
+
+2019.5.30 = {
+	monarch = {
+		name = "Ram Nath Kovind"
+		birth_date = 1945.10.1
+		adm = 4
+		dip = 3
+		mil = 2
+		religion = hinduism
+	}
+}

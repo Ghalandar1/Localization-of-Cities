@@ -1,0 +1,7 @@
+﻿l_english:
+ cb_reverse_coalition: "Coalition reaction"
+ cb_reverse_coalition_desc: "CB is based on your unfair coalition against my country."
+ superiority_reverse_coalition: "Show the world we are superior to your unfair coalition."
+ superiority_reverse_coalition_desc: "War goal is to show our superiority by defeating the evil coalition in battles."
+ TOUT_COALITION: "For all Coalitions"
+ RVRCOALITION_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Defend against the Coalition War"

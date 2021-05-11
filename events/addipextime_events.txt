@@ -1,0 +1,107 @@
+namespace = addip_events_extime
+#terrorism attack
+country_event = {
+id = addip_events_extime.1
+title = addip_events_extime.1t
+desc = addip_events_extime.1d
+is_triggered_only = yes
+picture = TERRORISMATTACK_eventPicture
+option = { name = addip_events_extime.1a random_owned_province = {  random_list = { 20 = {} 20 = { add_base_tax = -1 } 20 = { add_base_manpower = -1 } 20 = { add_base_production = -1 } 10 = { add_base_tax = -1 add_base_production = -1 add_base_manpower = -1 } 10 = { add_base_tax = -2 add_base_production = -2 add_base_manpower = -2 } }  } add_country_modifier = { name = terrorism_reacttion duration = 2920  }  }
+
+
+}
+#free event slot
+country_event = {
+id = addip_events_extime.2
+title = addip_events_extime.2t
+desc = addip_events_extime.2d
+is_triggered_only = yes
+
+option = { name = addip_events_extime.2a   }
+
+
+}
+#free event slot
+country_event = {
+id = addip_events_extime.3
+title = addip_events_extime.3t
+desc = addip_events_extime.3d
+is_triggered_only = yes
+
+option = { name = addip_events_extime.3a   }
+
+
+}
+#ruler assasination
+country_event = {
+id = addip_events_extime.4
+title = addip_events_extime.4t
+desc = addip_events_extime.4d
+is_triggered_only = yes
+picture = ASSASINATION_eventPicture
+option = { name = addip_events_extime.4a  
+random_list = {
+40 = {   }
+10 = { every_country = { limit = { has_opinion_modifier = { modifier = ruler_assasination_soupcious who = ROOT } }  remove_opinion = { modifier = ruler_assasination_soupcious who = THIS  } }  }
+20 = { every_country = { limit = { has_opinion_modifier = { modifier = ruler_assasination_soupcious who = ROOT } }  remove_opinion = { modifier = ruler_assasination_soupcious who = THIS  } add_opinion = { modifier = attempt_ruler_assasination who = THIS  } } }
+25 = { kill_ruler = yes every_known_country = { limit = { has_opinion_modifier = { modifier = ruler_assasination_soupcious who = ROOT } } remove_opinion = { modifier = ruler_assasination_soupcious who = THIS  } ROOT = { add_opinion = { modifier = preformed_ruler_assasination  who = THIS  } } } }
+5 = { kill_ruler = yes every_known_country = { limit = { has_opinion_modifier = { modifier = ruler_assasination_soupcious who = ROOT } } remove_opinion = { modifier = ruler_assasination_soupcious who = THIS  } }  }	
+}
+
+ }
+
+
+}
+#RAID
+country_event = {
+id = addip_events_extime.5
+title = addip_events_extime.5t
+desc = addip_events_extime.5d
+is_triggered_only = yes
+picture = Viking_ride_eventPicture
+option = { name = addip_events_extime.5a   
+random_list = { 25 = { add_treasury = -10 FROM = { add_treasury = 10 } } 25 = { add_treasury = -20 FROM = { add_treasury = 20 } } 25 = { add_treasury = -30 FROM = { add_treasury = 30 } } 25 = { add_treasury = -40 FROM = { add_treasury = 40 } } } 
+clr_country_flag = raiders_incoming_to_do_some_serious_shit
+random_owned_province = { random_list = { 
+50 = { spawn_rebels = { friend = FROM type = raiding_party_group size = 1  } }
+50 = { spawn_rebels = { friend = FROM type = raiding_party_group size = 2  } }
+} 
+}
+}
+
+}
+country_event = {
+id = addip_events_extime.6
+title = addip_events_extime.6t
+desc = addip_events_extime.6d
+is_triggered_only = yes
+picture = Viking_ride_eventPicture
+option = { name = addip_events_extime.6a random_country = { limit = { has_country_flag = raiders_incoming_to_do_some_serious_shit } country_event = { id = addip_events_extime.5 } } }
+
+}
+
+country_event = {
+id = addip_events_extime.7
+title = addip_events_extime.7t
+desc = addip_events_extime.7d
+is_triggered_only = yes
+
+
+
+option = { name = addip_events_extime.7a random_country = { limit = { has_country_flag = target_of_misionary_peacefull_conversion  } country_event = { id = addip_events_extime.8 } } }
+
+}
+
+
+
+
+
+
+
+
+
+		
+		
+
+
+

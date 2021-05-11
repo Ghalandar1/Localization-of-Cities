@@ -1,0 +1,11 @@
+# AK-47
+	
+type = infantry
+
+maneuver = 3
+offensive_morale = 8
+defensive_morale = 7
+offensive_fire = 5
+defensive_fire = 4
+offensive_shock = 5
+defensive_shock = 4

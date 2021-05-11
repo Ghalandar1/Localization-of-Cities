@@ -1,0 +1,10 @@
+#Great Frigate
+type = light_ship
+
+hull_size = 20
+base_cannons = 40
+sail_speed = 20
+
+trade_power = 45.0
+
+sprite_level = 6

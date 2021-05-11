@@ -1,0 +1,2 @@
+#Everywhere
+ZOM = "countries/ZombieHorde.txt"

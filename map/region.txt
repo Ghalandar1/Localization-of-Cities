@@ -1,0 +1,1971 @@
+scandinavia_region={
+	areas={
+		area_110 
+		area_143 
+		area_142
+		area_141 
+		area_140 
+		area_139 
+		area_138 
+		area_124 
+		area_145
+		area_666 
+		area_38 
+		area_144
+		area_148
+		area_149 
+		area_150
+		area_111
+		area_1131
+		area_1037
+		area_1038
+		area_1039
+		area_1040
+		area_1041
+		area_100
+		area_99
+		area_37
+		area_314
+		area_722
+		area_147
+	}
+}
+
+california_region = {
+	areas = {
+		area_377
+		area_378
+		area_379
+		area_380
+		area_1251
+		area_1252
+		area_1253
+	}
+}
+
+rio_grande_region = {
+	areas = {
+		area_371 
+		area_372 
+		area_375
+		area_374 
+		area_376 
+	}
+}
+
+southeast_america_region = {
+	areas = {
+		
+		area_363 
+		area_364
+		area_365
+		area_366
+		area_367
+		area_368
+		area_370
+	}
+}
+
+northeast_america_region = {
+	areas = {
+		area_261
+		area_357
+		area_358
+		area_359
+		area_360 
+		area_361
+		area_362 
+		area_369
+		 
+	}
+}
+
+mississippi_region = {
+	areas = {
+		area_373
+		area_382
+		area_383 
+		area_384
+		area_389
+		area_390
+		area_391
+		area_392 
+		area_394
+		area_395 
+		area_396 
+		
+	}
+}
+
+great_lakes_region = {
+	areas = {
+		area_393
+		area_682
+		area_276
+	}
+}
+
+great_plains_region = {
+	areas = {
+		area_381
+		area_385
+		area_386
+		area_387
+		area_388
+	}
+}
+
+cascadia_region = {
+	areas = {
+		
+		area_463
+		area_471
+		area_473
+		area_739
+		area_740
+	}
+}
+
+hudson_bay_region = {
+	areas = {
+		area_469
+		area_467
+		area_470
+		area_472
+		area_683
+	}
+}
+
+
+canada_region={
+	areas={
+		 
+		area_468	
+		area_730 
+		area_466   
+		area_332 
+		area_331
+		area_464
+		area_650
+		area_1025
+		area_1346
+		area_1347
+		area_1348
+		area_1349
+	}
+}
+
+la_plata_region={
+	areas={
+		area_486 
+		area_488
+		area_489
+		area_495
+		area_491
+		area_494
+		area_496
+		area_498
+		
+		area_767
+		area_768
+		area_769
+		area_770
+		area_771
+		area_497
+		area_510
+		area_301
+		area_299
+		area_720
+		area_270
+		area_1304
+		area_1305
+		area_1306
+		area_1307
+		area_1308
+		area_1309
+		area_1310
+	}
+}
+
+egypt_region = {
+	areas = {
+		area_855
+		area_856
+		area_857
+		area_858
+		area_859
+		area_860
+		area_861
+		area_862
+		area_863
+		area_864
+		area_865
+		area_866
+		area_867
+		area_868
+		area_869
+	}
+}
+
+libya_region = {
+	areas = {
+		area_881
+		area_882
+		area_883
+		area_884
+		area_885
+		area_886
+		area_887
+		area_888
+		area_889
+		area_890
+		area_891
+		area_892
+		area_893
+		area_894
+		area_895
+		area_896
+		area_897
+	}
+}
+
+maghreb_region={
+	areas={
+		
+		
+		area_935
+		area_936
+		area_937
+		area_938
+		area_939
+		area_940
+		area_941
+		area_942
+		area_943
+		area_944
+		area_945
+		area_946
+		area_947
+		area_948
+		area_949
+		area_950
+		area_952
+		area_953
+		area_954
+		area_955
+		area_956
+		area_926
+		area_927
+		area_928
+		area_929
+		area_930
+		area_931
+		area_932
+		area_933
+		area_934
+		area_1022
+		area_1023
+		area_1024
+		area_1026
+		area_1027
+		area_1028
+		area_1029
+		area_1042
+		area_1043
+		area_1044
+		
+		
+		
+	}
+}
+
+sudan_region = {
+	areas = {
+		area_849
+		area_850
+		area_851
+		area_852
+		area_853
+		area_854
+		area_870
+		area_871
+		area_872
+		area_873
+		area_874
+		area_875
+		area_876
+		area_877
+		area_878
+		area_879
+		area_880
+		
+	}
+}
+
+
+ruthenia_region = {
+	areas = {
+		area_192
+		area_194 
+		area_200 
+		area_203 
+		area_201 
+		area_198
+		area_199
+		area_197
+		area_96  
+		area_93 
+		area_91 
+		area_94 
+		area_95 
+		area_89
+		area_206
+		area_207
+		area_241
+		area_259
+		area_225
+		area_199 
+		area_198
+		area_196
+		area_226
+		area_193
+		area_202
+		area_80
+		area_97
+		area_204
+	}
+}
+
+crimea_region = {
+	areas = {
+		area_137
+		area_195
+		area_205
+		area_209 
+		area_208
+		area_210
+		area_213 
+		area_233
+		area_215
+		area_214
+		area_228
+		area_227
+		area_221
+	}
+}
+russia_region ={
+	areas={
+		area_243 
+		area_224 
+		area_242 
+		area_263 
+		area_264 
+		area_216 
+		area_244  
+		area_247 
+		area_246 
+		area_248 
+		area_252 
+		area_255 
+		area_223 
+		area_253 
+		area_257 
+		area_254 
+		area_219 
+		area_222 
+		area_258 
+		area_260 
+		area_220 
+		area_240 
+		area_251 
+		area_239  
+		area_245  
+		area_265 
+		area_217
+		area_238 
+		area_237 
+		area_218 
+		area_236 
+		area_232 
+		area_235 
+		area_234
+		area_262  
+		area_249 
+		area_256 
+		area_250 
+		area_315
+	}
+}
+
+
+
+central_asia_region={
+	areas={
+		area_587 
+		area_402 
+		area_590 
+		area_589 
+		area_404 
+		area_588 
+		area_584 
+		area_586
+		area_1053
+		area_1054
+		area_1055
+		area_1056
+		area_1064
+		area_1065
+		area_1066
+		area_1067
+		area_407
+		area_406
+		area_408
+		area_465
+		area_462
+		area_455
+		area_461
+		area_451
+		area_442
+		area_450
+		area_449
+		area_446
+		area_447
+		area_448
+		area_454
+		
+	}
+}
+
+burma_region = {
+	areas = {
+		area_288 
+		area_640 
+	}
+}
+
+malaya_region = {
+	areas = {
+		area_724 
+		area_336 
+		area_672 
+	}
+}
+
+indo_china_region = {
+	areas = {
+		area_671 
+		area_289 
+		area_286 
+		area_741 
+		area_670 
+		
+		
+	}
+}
+
+indonesia_region = {
+	areas = {
+		area_333 
+		area_334 
+		area_335
+	}
+}
+
+moluccas_region ={
+	areas={
+		area_327 
+		area_625 
+		area_627 
+		area_628 
+		area_624 
+		area_623 
+		area_626
+		area_733
+		area_673  
+		area_668 
+		area_738  
+		area_712 
+		area_711
+		area_669
+		area_523
+		area_667
+		area_721
+	}
+}
+
+south_china_region={
+	areas={
+		area_524  
+		area_591 
+		area_594 
+		area_599 
+		area_592 
+		area_593  
+		area_602 	 	 
+		area_750 
+		area_729 
+		area_326 
+		area_728
+		area_613 
+		area_595 
+		area_620 
+		area_600 
+		area_596 
+		area_606 
+		area_749 	
+		area_1370
+	}
+}
+
+japan_region = {
+	areas = {
+		area_282
+		area_300
+		area_528
+		area_529
+		area_530
+		area_531
+		area_532
+		area_534
+		area_533
+		area_535
+		area_536
+		area_555
+	}
+}
+
+korea_region = {
+	areas = {
+		area_527 
+		area_525  
+	}
+}
+
+manchuria_region = {
+	areas = {
+		area_298
+		area_328
+		area_714 
+		area_761
+		area_715
+		area_717
+		area_716
+		area_745
+		
+	}
+}
+
+
+mongolia_region = {
+	areas = {
+		area_330
+		area_621
+		area_611 
+		area_612 
+		
+	}
+}
+
+kashgar_region = {
+	areas = { 
+		area_617 
+		area_618 
+		area_474
+		area_287
+		area_759 
+		area_760
+		area_755
+		area_756
+		area_746  
+		area_616
+	}
+}
+
+north_china_region = {
+	areas = {
+	area_609
+	area_608
+	area_610
+	area_615
+	area_614
+	area_597
+	area_622
+	area_598 
+	area_607 
+	area_744
+	area_283
+	area_743
+	}
+}
+
+tibet_region = {
+	areas = { 
+		area_475
+		area_604
+		area_322
+	}
+}
+
+xinan_region = {
+	areas = {
+		area_753 
+		area_754 
+		area_605
+		area_748
+		area_603
+		area_325
+		area_747
+		area_751
+		area_752
+	}
+}
+
+west_siberia_region = {
+	areas = {
+		area_268
+		area_267
+		area_269
+		area_271
+		area_272
+		area_273
+		area_274
+		area_275
+		area_1357
+		area_277
+		area_281
+		area_290
+	}
+}
+
+east_siberia_region={
+	areas={
+		area_292
+		area_293
+		area_294
+		area_295
+		area_296
+		area_297
+		area_304
+		area_311
+		area_313
+		area_312
+		
+	}
+}
+
+
+
+
+
+khorasan_region = { 
+	areas = { 
+		area_425
+		area_426
+		area_427
+		area_428
+		area_429
+		area_430
+		area_431
+		area_432
+		area_433
+		area_434
+		area_435
+		area_436
+		area_437
+		area_438
+		area_439
+		area_440
+		area_441
+		area_409
+		area_415
+		area_422
+		area_423
+		area_424
+		area_323
+		area_443
+		area_444
+		area_445
+		area_1356
+	}
+
+ }
+
+hindustan_region = {
+	areas = {
+		area_318
+		area_319
+		area_320
+		area_321
+		area_324
+		area_399
+		area_400
+		area_401
+		area_403
+		area_405
+		area_329
+		area_339
+	}
+}
+
+west_india_region = {
+	areas= {
+		area_316
+		area_317
+		area_351
+		area_352
+		
+	}
+}
+
+
+coromandel_region = {
+	areas = {
+		area_348
+		area_349
+		area_350
+		area_397
+		area_398
+	}
+}
+
+deccan_region = {
+	areas = { 
+		area_354
+		area_355
+		area_356
+		area_1318
+		area_1319
+		area_1320
+		area_1321
+		area_1317
+		area_353
+	}
+}
+
+bengal_region={
+	areas={
+		area_710
+		area_340
+		area_342
+		area_343
+		area_344
+		area_345
+		area_346
+		area_347
+		area_476
+		area_477
+		area_478
+		area_479
+		area_480
+		area_481
+		area_482
+		area_483
+		area_484
+		area_485
+		area_487	
+	}
+}
+
+australia_region = {
+	areas = {
+		area_522
+		area_517
+		area_518
+		area_519
+		area_520
+		area_285
+		area_521
+	}
+}
+
+
+new_zealand_region = {
+	areas = {
+		area_284 
+		area_723
+	}
+}
+
+
+oceanea_region={
+	areas={
+		area_737
+		area_634
+		area_645
+		area_1322
+		area_1323
+		area_1324
+		area_1325
+		area_1326
+		area_1327
+		area_1328
+		area_1329
+		area_1330
+		area_1331
+		area_1332
+		area_1333
+		area_1334
+		area_1335
+		area_1358
+		area_1359
+		area_734
+	}
+}
+
+italy_region = { 
+	areas={ 
+		area_1
+		area_2
+		area_39
+		area_161 
+		area_117 
+		area_162 	 
+		area_157 
+		area_115 
+		area_156 
+		area_116 
+		area_114 
+		area_160 
+		area_159 
+		area_158 
+	}
+
+ }
+ 
+low_countries_region = { 
+	areas= { 
+		area_7 
+		area_6 
+		area_35 
+		area_34 
+		area_36 
+		area_8
+	}
+ }
+ 
+ 
+ france_region = { 
+	areas = { 
+		area_26 
+		area_23 
+		area_25 
+		area_20 
+		area_33 
+		area_19 
+		area_22 
+		area_32 
+		area_735 
+		area_21 
+		area_31 
+		area_29 
+		area_15 
+		area_30 
+		area_24 
+		area_17 
+		area_14 
+		area_28 
+		area_18 
+		area_27 
+		area_16
+	}
+
+ } 
+
+british_isles_region={
+	areas={
+		area_131 
+		area_122 
+		area_132 
+		area_130
+		area_125 
+		area_129 
+		area_127 
+		area_123 
+		area_128 
+		area_338 
+		area_126
+		area_120 
+		area_121 
+		area_136 
+		area_133 
+		area_337 
+		area_119 
+		area_113 
+		area_134 
+		area_135
+	}
+}
+
+
+
+balkan_region={
+	areas={
+		area_103  
+		area_104 
+		area_109 
+		area_108 
+		area_107 
+		area_105 
+		area_106 
+		area_44 
+		area_163 
+		area_211 
+		area_48 
+		area_212 
+		area_77
+		area_341
+		area_1155
+		area_1156
+		area_185  
+		area_47 
+		area_731 
+		area_186 
+		area_187 
+		area_184 
+		area_182 
+		area_164
+	}
+}
+
+carpathia_region = {
+	areas = {
+		area_82 
+		area_84   
+		area_83 
+		area_76  
+		area_81 
+		area_46 
+		area_79 
+		area_154 
+		area_155
+		area_43
+		area_45
+		area_664
+		area_70 
+		area_71
+		area_73
+		area_1336
+		area_1337
+		area_1338
+	}
+}
+
+
+anatolia_region = { 
+
+	areas = { 
+		area_516	
+		area_526	
+		area_538	
+		area_539	
+		area_540	
+		area_541	
+		area_542	
+		area_543	
+		area_544	
+		area_545	
+		area_546	
+		area_547	
+		area_548	
+		area_549	
+		area_550	
+		area_551	
+		area_552		
+		area_556	
+		area_557	
+		area_558	
+		area_559	
+		area_560	
+		area_561	
+		area_562	
+		area_563	
+		area_564	
+		area_565	
+		area_566	
+		area_567	
+		area_568	
+		area_569	
+		area_570	
+		area_571	
+		area_572	
+		area_573	
+		area_574	
+		area_575	
+		area_576	
+		area_577	
+		area_578	
+		area_579	
+		area_580	
+		area_581	
+		area_582	
+		area_583	
+		area_585	
+		area_601		
+		area_629	
+		area_630	
+		area_631	
+		area_632	
+		area_633	
+		area_635	
+		area_636	
+		area_637	
+		area_638	
+		area_639	
+		area_641	
+		area_642	
+		area_643	
+		area_644	
+		area_1350
+		area_1351
+	}
+
+ }
+
+arabia_region = { 
+
+	areas = { 
+		area_500 	
+		area_501	
+		area_513	
+		area_514	
+		area_515
+		area_662	
+		area_663	
+		area_665	
+		area_678	
+		area_681	
+		area_684	
+		area_699	
+		area_700	
+		area_701	
+		area_703	
+		area_718	
+		area_719	
+		area_725	
+		area_726
+		area_727
+		area_732
+		area_742
+		area_757
+		area_758
+		area_790
+		area_1125
+		area_1126
+		area_658
+		area_1144
+		area_1143
+		area_1353
+		area_1354
+		area_1355
+		area_679
+		area_1105	
+		area_1112
+		area_1130
+		area_1106
+		area_1113
+		area_1107
+
+	}
+
+ }
+ 
+mashriq_region = { 
+	areas = { 
+		area_647	
+		area_648	
+		area_651	
+		area_652	
+		area_653	
+		area_657
+		area_659	
+		area_660
+		area_661
+		area_1120
+		area_1121
+		area_1123
+		area_1124
+		area_1127
+		area_1151
+		area_1152
+		area_1153
+		area_1352
+		area_553
+		area_554
+		area_1115
+		area_677
+		area_680
+		area_656
+		area_291
+		area_1116
+		area_1117
+		area_1118
+		area_1119
+		area_1154
+		area_1157
+		area_654
+		area_1179
+		area_183
+		}
+	}
+
+persia_region={
+	areas={
+		area_412
+		area_1073
+		area_1074
+		area_414
+		area_410
+		area_1075
+		area_1076
+		area_416
+		area_1077
+		area_418
+		area_411
+		area_1078
+		area_1079
+		area_413
+		area_1080
+		area_1081
+		area_1082
+		area_1083
+		area_417
+		area_421
+		area_1084	
+		area_419	
+		area_1085
+		area_420	
+		area_1086
+		area_266	
+		area_1087
+		area_1128	
+		area_1129	
+	}
+}
+
+
+caucasia_region = { 
+	areas = { 
+		area_1088
+		area_1089
+		area_229
+		area_1090
+		area_1091
+		area_1092
+		area_1093
+		area_1094
+		area_1095
+		area_1096
+		area_1097
+		area_1098
+		area_231
+		area_1099
+		area_1100
+		area_1101
+		area_1102
+		area_1103
+		area_49
+		area_40
+		area_78
+		area_101
+		area_146
+		area_646
+		area_619
+	}
+
+ }
+ 
+ 
+central_america_region = {
+	areas = {
+		area_1277
+		area_1278
+		area_1279
+		area_1280
+		area_1281
+		area_1282
+		area_1283
+		area_1284
+		area_1285
+		area_1286
+		area_1287
+		area_1288
+		area_1289
+		area_1290
+		area_1291
+		area_1292
+		area_1293
+		area_1294
+		area_1295
+		area_1296
+		area_1297
+		area_1298
+		area_1369
+		
+	}
+}
+
+mexico_region={
+	areas={
+	area_1254
+	area_1255
+	area_1256
+	area_1257
+	area_1258
+	area_1259
+	area_1260
+	area_1261
+	area_1262
+	area_1263
+	area_1264
+	area_1265
+	area_1266
+	area_1267
+	area_1268
+	area_1269
+	area_1270
+	area_1271
+	area_1272
+	area_1273
+	area_1274
+	area_1275
+	area_1276
+	}
+}
+
+carribeans_region = {
+	areas = {
+		area_308
+		area_689
+		area_686
+		area_690
+		area_691
+		area_692
+		area_693
+		area_694
+		area_695
+		area_1339
+		area_1340
+		area_1341
+		area_1342
+		area_1343
+		area_1344
+		area_1345
+		area_1368
+	}
+}
+
+
+
+
+
+iberia_region={
+	areas={
+		area_180 
+		area_174 
+		area_171 
+		area_172 
+		area_173 
+		area_166 
+		area_170 
+		area_112 
+		area_168 
+		area_181 
+		area_165 
+		area_176 
+		area_41 
+		area_169 
+		area_175 
+		area_167 
+		area_179 
+		area_118 
+		area_698 
+		area_177 
+	}
+}
+
+
+south_german_region = {
+	areas = {
+		area_3
+		area_736
+		area_4 
+		area_102 
+		area_152
+		area_151
+		area_50
+		area_52
+		area_53
+		area_54
+		area_153
+	}
+}
+
+north_german_region = {
+	areas = {
+		area_51 
+		area_42 
+		area_55 
+		area_61 
+		area_62 
+		area_64 
+		area_60
+		area_65
+		area_69 
+		area_9 
+		area_56  
+		area_58 
+		area_59 
+		area_57 
+		area_74 
+		area_75
+	}
+}
+
+baltic_region = {
+	areas = {
+		area_13
+		area_12
+		area_190 
+		area_11 
+		area_189 
+		area_191 
+		area_188
+	}
+}
+
+
+poland_region={
+	areas={ 
+		area_72
+		area_92
+		area_68 
+		area_67 
+		area_66 
+		area_63
+		area_86 
+		area_85 
+		area_5 
+		area_10 
+		area_88 
+		area_87 
+		area_762 
+		area_98 
+		area_90
+		area_178
+		area_697
+	}
+}
+
+niger_region = {
+	areas = {
+		area_705
+		area_1114
+		area_1068
+		area_1069
+		area_1104
+		area_1108
+		area_1145
+		area_1147
+		area_1148
+		area_1149
+		area_1158
+		area_1159
+		area_1160
+		area_1161
+		area_1162
+		area_1163
+		area_1164
+		area_1165
+		area_1166
+		area_1167
+		area_1168
+		area_1169
+		area_1170
+		area_1171
+		area_1172
+		area_1173
+		area_1174
+		area_1175
+		area_1176
+		area_1177
+		area_1178
+		area_1188
+		area_1189
+		area_1190
+		area_1191
+		area_1192
+		area_1193
+		area_1194
+		area_1195
+		area_1196
+		area_1197
+		area_1198
+		area_1199
+		area_1200
+		area_1201
+		area_1202
+		area_1203
+		area_1245
+		area_1246
+		area_1311
+		area_1312
+		area_1313
+		area_1314
+		area_1315
+		area_1316
+		area_1364
+	}
+}
+
+west_africa_region = {
+	areas = {
+		area_1045
+		area_1046
+		area_1047
+		area_1048
+		area_1049
+		area_1050
+		area_1051
+		area_1052
+		area_1367
+		area_1237
+		area_1238
+		area_1239
+		area_1240
+		area_1241
+		area_1242
+		area_1243
+		area_1244
+		area_1229
+		area_1230
+		area_1231
+		area_1232
+		area_1233
+		area_1234
+	}
+}
+
+guinea_region ={
+	areas={
+		area_702
+		area_1366
+		area_1204
+		area_1205
+		area_1206
+		area_1207
+		area_1208
+		area_1209
+		area_1210
+		area_1211
+		area_1213
+		area_1214
+		area_1215
+		area_1216
+		area_1217
+		area_1218
+		area_1219
+		area_1220
+		area_1221
+		area_1222
+		area_1223
+		area_1224
+		area_1225
+		area_1226
+		area_1227
+		area_1228
+		area_1235
+		area_1236
+		area_1212
+	}
+}
+
+sahel_region = {
+	areas = {
+		area_898
+		area_899
+		area_900
+		area_901
+		area_902
+		area_903
+		area_904
+		area_905
+		area_906
+		area_1063
+		area_1247
+		area_1248
+		area_1249
+		area_1250
+		area_1365
+		
+	}
+}
+
+kongo_region = {
+	areas = {
+		area_1021
+		area_1070
+		area_1071
+		area_1072
+		area_1109
+		area_1110
+		area_1111
+		area_1122
+		area_1138
+		area_1139
+		area_1140
+		area_1141
+		area_1142
+		area_1146
+		area_1180
+		area_1181
+		area_1182
+		area_1183
+		area_1184
+		area_1185
+		area_1186
+		area_1187
+		
+	}
+}
+
+central_africa_region={
+	areas={
+		area_1015
+		area_1016
+		area_1017
+		area_1018
+		area_1019
+		area_1020
+		area_975
+		area_976
+		area_977
+		area_978
+		area_979
+		area_980
+		area_981
+		area_982
+		area_983
+		area_984
+		area_985
+		area_986
+		area_987
+		area_988
+		area_989
+		area_990
+		area_991
+		area_992
+		area_993
+		area_994
+		area_995
+		area_996
+		area_997	
+	}
+}
+
+angola_region = {
+	areas = {
+		area_914
+		area_915
+		area_916
+		area_917
+		area_918
+		area_919
+		area_920
+		area_921
+		area_922
+		area_923
+		area_924
+		area_925
+		area_951
+		area_957
+		area_1363
+	}
+}
+
+south_africa_region = {
+	areas = {
+		area_452
+		area_456
+		area_457
+		area_458
+		area_459
+		area_800
+		area_801
+		area_802
+		area_803
+		area_804
+		area_805
+		area_806
+		area_807
+		area_808
+		area_809
+		area_810
+		area_811
+		area_812
+		area_813
+		area_814
+		area_815
+		area_816
+		area_817
+		area_818
+		area_819
+		area_820
+	}
+}
+
+madagascar_region = {
+	areas = {
+		area_1132
+		area_1133
+		area_1134
+		area_1135
+		area_1136
+		area_1137
+		area_708
+	}
+}
+
+zambezi_region={
+	areas={
+		area_821
+		area_822
+		area_823
+		area_824
+		area_825
+		area_826
+		area_827
+		area_838
+		area_839
+		area_840
+		area_841
+		area_842
+		area_843
+		area_844
+		area_845
+		area_846
+		area_847
+		area_848
+		area_907
+		area_706
+		area_707
+		area_704
+		area_908
+		area_909
+		area_910
+		area_911
+		area_912
+		area_913
+	}
+}
+
+east_africa_region = {
+	areas = {
+		area_958
+		area_959
+		area_960
+		area_961
+		area_962
+		area_963
+		area_964
+		area_965
+		area_966
+		area_967
+		area_968
+		area_969
+		area_970
+		area_971
+		area_972
+		area_973
+		area_974
+		area_998
+		area_999
+		area_1000
+		area_1001
+		area_1002
+		area_1003
+		area_1004
+		area_1005
+		area_1006
+		area_1361
+		area_1362
+	}
+}
+
+horn_of_africa_region={
+	areas={
+		area_709
+		area_828
+		area_829
+		area_830
+		area_831
+		area_832
+		area_833
+		area_834
+		area_835
+		area_836
+		area_837
+		area_1007
+		area_1008
+		area_1009
+		area_1010
+		area_1011
+		area_1012
+		area_1013
+		area_1014
+		area_1057
+		area_1058
+		area_1059
+		area_1060
+		area_1061
+		area_1062
+		area_1360	
+	}
+}
+
+amazon_region = {
+	areas = {
+		area_279
+		area_280
+		area_302
+		area_303
+		area_305
+		area_306
+		area_307
+		area_1030
+		area_1031	
+		area_1033
+		area_1034
+		area_1035
+		area_1036
+		
+		
+	}
+}
+
+brazil_region = {
+	areas = {
+
+		area_504
+		area_505
+		area_506
+		area_508
+		area_509
+		area_511
+		area_512
+		area_278
+		area_502
+		area_503
+		
+		
+	}
+}
+
+upper_peru_region = {
+	areas = {
+		area_1303
+		area_766
+		area_772
+		area_774
+		area_773
+		area_775
+		area_776
+		area_777
+	}
+}
+
+colombia_region = {
+	areas = {
+		area_787
+		area_788
+		area_789
+		area_1302
+		area_1300	
+		area_1299
+		area_1301
+		area_791
+		area_792
+		area_793
+		area_794
+		area_795
+		area_796
+		area_797
+		area_798
+		area_799
+		area_764
+		area_763
+		area_765
+		area_309
+		area_310
+		area_688
+		area_1032
+		area_687
+	}
+}
+
+peru_region={
+	areas={
+	
+	area_649
+	area_778
+	area_780
+	area_782
+	area_784
+	area_786
+	area_779
+	area_781
+	area_783
+	area_785
+	
+	
+	
+	}
+}
+
+
+
+
+####################Sea Region ############################
+
+region_28 = { areas = { area_537 } }
+region_30 = { areas = { area_1371 } }
+region_31 = { areas = { area_1372 } }
+region_32 = { areas = { area_1373 area_1465 } }
+region_33 = { areas = { area_1374 } }
+region_34 = { areas = { area_1375 } }
+region_35 = { areas = { area_1376 } }
+region_36 = { areas = { area_1377 } }
+region_37 = { areas = { area_1378 } }
+region_38 = { areas = { area_1379 } }
+region_39 = { areas = { area_1380 } }
+region_40 = { areas = { area_1381 } }
+region_41 = { areas = { area_1382 } }
+region_42 = { areas = { area_1383 } }
+region_43 = { areas = { area_1384 } }
+region_44 = { areas = { area_1385 } }
+region_45 = { areas = { area_1386 } }
+region_46 = { areas = { area_1387 } }
+region_47 = { areas = { area_1388 } }
+region_48 = { areas = { area_1389 } }
+region_49 = { areas = { area_1390 } }
+region_50 = { areas = { area_1391 } }
+region_51 = { areas = { area_1392 } }
+region_52 = { areas = { area_1393 } }
+region_53 = { areas = { area_1394 } }
+region_54 = { areas = { area_1395 area_1482 } }
+region_55 = { areas = { area_1396 } }
+region_56 = { areas = { area_1397 } }
+region_57 = { areas = { area_1398 } }
+region_58 = { areas = { area_1399 } }
+region_59 = { areas = { area_1400 } }
+region_60 = { areas = { area_1401 } }
+region_61 = { areas = { area_1402 } }
+region_62 = { areas = { area_1403 } }
+region_64 = { areas = { area_1405 } }
+region_65 = { areas = { area_1406 } }
+region_66 = { areas = { area_1407 } }
+region_67 = { areas = { area_1408 } }
+region_68 = { areas = { area_1409 } }
+region_69 = { areas = { area_1410 } }
+region_70 = { areas = { area_1411 } }
+region_71 = { areas = { area_1412 } }
+region_72 = { areas = { area_1413 } }
+region_73 = { areas = { area_1414 } }
+region_74 = { areas = { area_1415 } }
+region_75 = { areas = { area_1416 } }
+region_76 = { areas = { area_1417 } }
+region_77 = { areas = { area_1418 } }
+region_78 = { areas = { area_1419 } }
+region_79 = { areas = { area_1420 } }
+region_80 = { areas = { area_1421 } }
+region_81 = { areas = { area_1422 } }
+region_82 = { areas = { area_1423 } }
+region_83 = { areas = { area_1424 } }
+region_84 = { areas = { area_1425 } }
+region_85 = { areas = { area_1426 } }
+region_86 = { areas = { area_1427 } }
+region_87 = { areas = { area_1428 } }
+region_88 = { areas = { area_1429 } }
+region_89 = { areas = { area_1430 area_1487 } }
+region_90 = { areas = { area_1431 area_1486 } }
+region_91 = { areas = { area_1432 } }
+region_92 = { areas = { area_1433 } }
+region_93 = { areas = { area_1434 } }
+region_94 = { areas = { area_1435 } }
+region_95 = { areas = { area_1436 } }
+region_96 = { areas = { area_1437 } }
+region_97 = { areas = { area_1438 } }
+region_98 = { areas = { area_1439 } }
+region_99 = { areas = { area_1440 } }
+region_100 = { areas = { area_1441 } }
+region_101 = { areas = { area_1442 } }
+region_102 = { areas = { area_1443 area_1477 } }
+region_103 = { areas = { area_1444 } }
+region_104 = { areas = { area_1445 } }
+region_105 = { areas = { area_1446 } }
+region_106 = { areas = { area_1447 } }
+region_107 = { areas = { area_1448 } }
+region_108 = { areas = { area_1449 } }
+region_109 = { areas = { area_1450 } }
+region_110 = { areas = { area_1451 area_1480 } }
+region_111 = { areas = { area_1452 } }
+region_112 = { areas = { area_1453 } }
+region_113 = { areas = { area_1454 } }
+region_114 = { areas = { area_1455 } }
+region_115 = { areas = { area_1456 } }
+region_116 = { areas = { area_1457 } }
+region_117 = { areas = { area_1458 } }
+region_118 = { areas = { area_1459 } }
+region_119 = { areas = { area_1460 } }
+region_120 = { areas = { area_1461 area_1476 } }
+region_121 = { areas = { area_1462 area_1469 } }
+region_122 = { areas = { area_1463 } }
+region_123 = { areas = { area_1464 } }
+region_124 = { areas = { area_1466 } }
+region_125 = { areas = { area_1467 } }
+region_126 = { areas = { area_1468 } }
+region_127 = { areas = { area_1470 } }
+
+#River
+region_128 = { areas = { area_1471 } }
+region_129 = { areas = { area_1472 } }
+region_130 = { areas = { area_1473 area_1474 } }
+region_131 = { areas = { area_1475 } }
+region_132 = { areas = { area_1478 } }
+region_133 = { areas = { area_1479 } }
+region_134 = { areas = { area_1481 } }
+region_135 = { areas = { area_1483 } }
+region_136 = { areas = { area_1484 } }
+region_137 = { areas = { area_1485 } }
+region_138 = { areas = { area_1488 } }
+region_139 = { areas = { area_1489 } }
+
+region_140 = { areas = { area_1490 } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

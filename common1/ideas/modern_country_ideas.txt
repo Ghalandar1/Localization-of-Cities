@@ -1,0 +1,121 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+HNN_ideas = {
+	start = {
+		land_morale = 0.15
+		cavalry_power = 0.2
+	}
+
+	bonus = {
+		land_maintenance_modifier = -0.25
+	}
+	
+	trigger = {
+		OR = {
+			tag = HNN
+		}
+	}
+	free = yes		#will be added at load.
+	
+	frontier_walls = {
+		cavalry_flanking = 0.5
+	}
+	road_network = {
+		movement_speed = 0.2
+		global_manpower_modifier = 0.2
+	}
+	roman_architecture = {
+		build_cost = -0.25
+	}
+	imperial_bureaucracy = {
+		land_attrition = -0.15
+	}
+	romanization = {
+		core_creation = -0.25
+	}
+	reform_the_legion = {
+		land_forcelimit_modifier = 0.35
+	}
+	legacy_of_rome = {
+		prestige = 2
+	}
+}
+
+AFE_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.20
+		land_attrition = -0.10
+	}
+	
+	bonus = {
+		global_tax_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = AFE
+	}
+	free = yes		# will be added at load
+	
+	nomad_cavalry_tradtions = {
+		infantry_power = 0.15
+	}
+	breadbasket = {
+		global_manpower_modifier = 0.2
+	}
+	ukrainian_orthodox_church = {
+		tolerance_own = 2
+	}
+	zaporozhian_cossacks = {
+		mercenary_cost = -0.25
+	}
+	black_sea_trade = {
+		global_trade_power = 0.10
+	}
+	ukrainian_nationalism = {
+		land_morale = 0.1
+	}
+	verkhovna_rada = {
+		stability_cost_modifier = -0.1
+	}
+}
+
+TWN_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.20
+		land_attrition = -0.10
+	}
+	
+	bonus = {
+		core_creation = -0.20
+	}
+	
+	trigger = {
+		primary_culture = taiwanese
+	}
+	free = yes		# will be added at load
+	
+	nomad_cavalry_tradtions = {
+		idea_cost = -0.1
+		development_cost = -0.05
+	}
+	breadbasket = {
+		global_manpower_modifier = 0.2
+	}
+	ukrainian_orthodox_church = {
+		tolerance_own = 2
+	}
+	zaporozhian_cossacks = {
+		technology_cost = -0.05
+	}
+	black_sea_trade = {
+		global_trade_power = 0.20
+	}
+	ukrainian_nationalism = {
+		land_morale = 0.1
+	}
+	verkhovna_rada = {
+		stability_cost_modifier = -0.1
+	}
+}

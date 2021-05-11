@@ -1,0 +1,13 @@
+tributary_state_action = {
+	condition = {
+		tooltip = TRIBUTYINVALID
+		potential = {
+			always = no
+		}
+		allow = {
+				
+			always = no
+				
+		}
+	}
+}

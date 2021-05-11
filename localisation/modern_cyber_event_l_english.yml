@@ -1,0 +1,47 @@
+﻿l_english:
+ cyber.1production:0 "We are under cyber attack"
+ cyber.1title:0 "We are under cyber attack"
+ cyber.1desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Launched a Cyber Attack On Our §GProduction§!"
+ cyber.1opt:0 "OK"
+ 
+ 
+ cyber.2production:0 "Cyber attack on Production"
+ cyber.2title:0 "Successful Cyber Attack"
+ cyber.2desc:0 "My $MONARCHTITLE$, We Managed To Launch a Cyber Attack On §R[Root.Owner.GetName]§!'s §GProduction§!"
+ cyber.1opt:0 "OK"
+
+ 
+ cyber.3corruption:0 "We are under cyber attack"
+ cyber.3title:0 "We are under cyber attack"
+ cyber.3desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Created Widespread §GCorruption§! in our country "
+ cyber.1opt:0 "OK"
+ 
+ 
+ cyber.4corruption:0 "Cyber attack on Corruption"
+ cyber.4title:0 "Successful Cyber Attack"
+ cyber.4desc:0 "My $MONARCHTITLE$, We created widespread §GCorruption§! in §R[Root.Owner.GetName]§!'s "
+ cyber.1opt:0 "OK"
+ 
+ cyber.5fort:0 "Cyber attack on Forts"
+ cyber.5title:0 "We are under cyber attack"
+ cyber.5desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Has Greatly Weakened -30% The Strength Of Our §GForts§! "
+ cyber.1opt:0 "OK"
+ 
+ 
+ cyber.6fort:0 "Cyber attack on Forts"
+ cyber.6title:0 "Successful Cyber Attack"
+ cyber.6desc:0 "My $MONARCHTITLE$, We managed to weaken -30% of §R[Root.Owner.GetName]§!'s §GForts§! "
+ cyber.1opt:0 "OK"
+ 
+ 
+ cyber.7:0 "Cyber attack"
+ cyber.7title:0 "Cyber Attack"
+ cyber.7desc:0 "My $MONARCHTITLE$,We Can Cyber Attack §R[From.From.Owner.GetName]§! Infrastructure. Please Select An Attack Type."
+ cyber.2opt:0 "Attack On Production"
+ cyber.3opt:0 "Start Ceating Corruption"
+ cyber.4opt:0 "Attack the Forts"
+ cyber.5opt:0 "Exit"
+ 
+ cyber1:0 "Cyber Attack"
+
+

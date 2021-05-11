@@ -1,0 +1,30 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+historical_friend = TRK
+historical_friend = UZB
+historical_friend = KZK
+historical_friend = TKY
+historical_friend = AZE
+
+capital = 12583
+primary_culture = kirgiz
+religion = secularism
+religious_school = hanafi_school
+technology_group = middle_eastern 
+2019.5.30 = {
+	monarch = {
+		name = "Sooronbay Jeenbekov"
+		birth_date = 1958.11.16
+		adm = 4
+		dip = 3
+		mil = 3
+		religion = sunni
+	}
+}

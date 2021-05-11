@@ -1,0 +1,117 @@
+namespace = send_aid
+
+#send_aid Point admin power X1
+country_event = {
+	id = send_aid.1
+	title = "send_aid.1title"
+	desc = "send_aid.1desc"
+	picture = send_aid_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "send_aid.1opt"
+	}
+}
+
+
+
+#send_aid Point diplo power 
+country_event = {
+	id = send_aid.2
+	title = "send_aid.2title"
+	desc = "send_aid.2desc"
+	picture = send_aid_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "send_aid.1opt"
+	}
+}
+
+
+
+#send_aid Point military power 
+country_event = {
+	id = send_aid.3
+	title = "send_aid.3title"
+	desc = "send_aid.3desc"
+	picture = send_aid_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "send_aid.1opt"
+	}
+}
+
+
+#send_aid Point military power 
+country_event = {
+	id = send_aid.4
+	title = "send_aid.4title"
+	desc = "send_aid.4desc"
+	picture = send_manpower_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "send_aid.1opt"
+	}
+}
+
+#send_aid Point military power 
+country_event = {
+	id = send_aid.5
+	title = "send_aid.5title"
+	desc = "send_aid.5desc"
+	picture = send_manpower_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "send_aid.5opt"
+	}
+}
+
+
+
+country_event = {
+	id = send_aid.6
+	title = "send_aid.6title"
+	desc = "send_aid.6desc"
+	picture = send_money_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "send_aid.1opt"
+	}
+}
+
+country_event = {
+	id = send_aid.7
+	title = "send_aid.7title"
+	desc = "send_aid.7desc"
+	picture = send_money_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "send_aid.1opt"
+	}
+}
+
+country_event = {
+	id = send_aid.8
+	title = "send_aid.8title"
+	desc = "send_aid.8desc"
+	picture = send_money_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "send_aid.1opt"
+	}
+}

@@ -1,0 +1,183 @@
+#Asia
+
+spirit_of_sanada = {
+	land_morale = 0.25
+	discipline = 0.05
+}
+
+sanada_maru = {
+	fort_level = 1
+	garrison_growth = 0.05
+}
+
+emerald_buddha = {
+	prestige_decay = -0.05
+	monthly_karma = 0.1
+}
+
+honganji_temple = {
+	fort_level = 1
+}
+
+
+
+#US Civil War Disaster
+
+dredd_scott_decision = {
+	local_unrest = 2
+}
+
+
+
+
+
+#Misc modifiers 
+
+old_glory = {
+	land_morale = 0.05
+	war_exhaustion = -0.1
+}
+
+land_beyond_the_shores = {
+	colonists = 2
+	range = 0.5
+}
+
+common_enemy = {
+	global_unrest = -1
+	land_morale = 0.1
+}
+
+seclusion = {
+	diplomats = -6
+	land_morale = -0.1
+}
+
+plague_infested = {
+	local_manpower_modifier = -0.25
+	local_unrest = 1
+	local_tax_modifier = -0.5
+	trade_goods_size = -0.25
+	picture = "local_hostile_attrition"
+}
+
+quarantined_city = {
+	province_trade_power_modifier = -0.25
+ 	local_manpower_modifier = -0.25
+	local_tax_modifier = -0.25
+	trade_goods_size = -0.25
+	picture = "harsh_treatment_cost"
+}
+
+yellow_fever = {
+	local_manpower_modifier = -0.25
+	local_tax_modifier = -0.5
+	trade_goods_size = -0.25
+	picture = "local_hostile_attrition"
+}
+
+new_sea_access = {
+	naval_forcelimit_modifier = 0.1
+	global_own_trade_power = 0.1
+}
+
+warm_water_ports = {
+	trade_efficiency = 0.1
+	naval_forcelimit_modifier = 0.1
+}
+
+nomadic_conqueror_administration = {
+	administrative_efficiency = 0.1
+}
+
+nomads_begin_settling = {
+	development_cost = -0.2
+	stability_cost_modifier = -0.33
+	core_creation = 0.1
+}
+
+dominate_desert_trade = {
+	caravan_power = 0.25
+}
+
+triple_volley_firing = {
+	fire_damage = 0.1
+}
+
+saika_ikki = {
+	fire_damage = 0.1
+	mercenary_discipline = 0.1
+}
+
+mazdakite_policy = {
+	global_unrest = -3
+	min_local_autonomy = 10
+}
+
+disgruntled_peasants = {
+	global_unrest = 2
+}
+
+mass_civilian_volunteers = {
+	land_forcelimit_modifier = 1.5
+	land_morale = 0.05
+}
+
+chinese_equal_field_system_mod = {
+	global_autonomy = -0.1
+	production_efficiency = 0.05
+}
+
+chinese_civilian_tuntian_mod = {
+	production_efficiency = 0.05
+	war_exhaustion = -0.1
+}
+
+eunuch_corruption_crackdown = {
+	yearly_corruption = -0.1
+}
+
+estate_mamluk_elite_cavalry = {
+	shock_damage = 0.1
+}
+
+estate_foederati_cavalry = {
+	shock_damage = 0.05
+ 	cavalry_flanking = 0.1
+ 	cavalry_power = 0.1
+}
+
+estate_foederati_settlements = {
+	possible_mercenaries = 0.5
+}
+
+estate_foederati_varangian_guard = {
+	local_defensiveness = 0.25
+}
+
+estate_huguenots_protected = {
+	tolerance_heretic = 1
+}
+
+estate_huguenots_protected_city = {
+	local_unrest = -2
+ 	min_local_autonomy = 50
+}
+
+placated_nobility = {
+	global_unrest = -1
+	global_regiment_recruit_speed = -0.1
+}
+
+estate_ortogh_sponsored_caravan = {
+	trade_range_modifier = 0.25
+}
+
+estate_ortogh_protected_caravans = {
+	placed_merchant_power = 3
+}
+
+estate_ortogh_merchant_intelligence = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+}

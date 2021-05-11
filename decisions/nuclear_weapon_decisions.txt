@@ -1,0 +1,1506 @@
+country_decisions = {
+
+	initiate_nuclear_research = {
+		major = yes
+		potential = {		
+			
+			NOT = { has_country_modifier = nuclear_research_modifire }
+		}
+		allow = {
+			
+			full_idea_group = nuclear_research
+			mil_power = 50
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					years_of_income = 3.0
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					years_of_income = 2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.50
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					years_of_income = 0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.25
+				}
+		}
+		effect = {
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = -3.0
+				}
+			if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = -2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.5
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = -0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.25
+				}
+			
+			add_mil_power = -50
+			add_prestige = 2
+				
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			
+				country_event = { id = nuclear.1 }
+				
+				
+			every_known_country = { 
+				if =  { 
+					limit = { 
+						ai = no
+					}
+					country_event = { id = nuclear.2 }
+				}
+			}
+				
+				
+			
+			
+		}
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 0
+				any_country = {
+					NOT = {
+						check_variable = {
+							which = beginning_nuclear_research
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_country = {
+					check_variable = {
+						which = beginning_nuclear_research
+						value = 1
+					}
+					
+				}
+			}
+		}
+	}
+	
+############################################################################################################################################	
+
+	nuclear_10_research = {
+		major = yes
+		potential = {	
+			
+			has_country_modifier = nuclear_research_modifire
+			NOT = { has_country_modifier = research_nuclear_10_modifire }
+			
+		}
+		allow = {
+			OR =  {
+				has_country_modifier = bought_uranium_1
+				 ROOT = { any_owned_province = { trade_goods = uranium development = 50 } } 
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 3
+											NOT = { development = 5 }
+										}
+											amount = 5
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 6
+											NOT = { development = 11 }
+										}
+											amount = 4
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 12
+											NOT = { development = 24 }
+										}
+											amount = 3
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 25
+											NOT = { development = 49 }
+										}
+											amount = 2
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 50
+										}
+											amount = 1
+								}  
+							
+						}
+			}
+			mil_power = 100
+			calc_true_if = {
+					all_owned_province = {
+						has_building = nuclear_plant
+						controlled_by = owner
+						is_core = ROOT
+				}
+				amount = 5
+			}
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					years_of_income = 3.0
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					years_of_income = 2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.50
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					years_of_income = 0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.25
+				}
+		}
+		effect = {
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = -3.0
+				}
+			if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = -2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.5
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = -0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.25
+				}
+			
+			add_mil_power = -100
+			add_prestige = 5
+				
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}		
+				
+				country_event = { id = nuclear.3 }
+				
+				every_known_country = { 
+				if =  { 
+					limit = { 
+						ai = no
+					}
+					country_event = { id = nuclear.4 }
+				}
+				}
+			
+			
+		}
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 0
+				any_country = {
+					NOT = {
+						check_variable = {
+							which = nuclear_research_10
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_country = {
+					check_variable = {
+						which = nuclear_research_10
+						value = 1
+					}
+					
+				}
+			}
+		}
+	}
+	
+
+#######################################################################################################################################
+
+	nuclear_20_research = {
+		major = yes
+		potential = {		
+			has_country_modifier = research_nuclear_10_modifire
+			NOT = { has_country_modifier = research_nuclear_20_modifire }
+			
+		}
+		allow = {
+			OR =  {
+				has_country_modifier = bought_uranium_2
+				 ROOT = { any_owned_province = { trade_goods = uranium development = 50 } } 
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 3
+											NOT = { development = 5 }
+										}
+											amount = 5
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 6
+											NOT = { development = 11 }
+										}
+											amount = 4
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 12
+											NOT = { development = 24 }
+										}
+											amount = 3
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 25
+											NOT = { development = 49 }
+										}
+											amount = 2
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 50
+										}
+											amount = 1
+								}  
+							
+						}
+			}
+			mil_power = 200
+			calc_true_if = {
+					all_owned_province = {
+						has_building = nuclear_plant
+						controlled_by = owner
+						is_core = ROOT
+				}
+				amount = 10
+			}
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					years_of_income = 3.0
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					years_of_income = 2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.50
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					years_of_income = 0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.25
+				}
+		}
+		effect = {
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = -3.0
+				}
+			if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = -2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.5
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = -0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.25
+				}
+			
+			add_mil_power = -200
+			add_prestige = 5
+				set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+				
+				country_event = { id = nuclear.5 }
+				
+				every_known_country = { 
+				if =  { 
+					limit = { 
+						ai = no
+					}
+					country_event = { id = nuclear.6 }
+				}
+				}
+			
+			
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				any_country = {
+					NOT = {
+						check_variable = {
+							which = nuclear_research_20
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_country = {
+					check_variable = {
+						which = nuclear_research_20
+						value = 1
+					}
+					
+				}
+			}
+		}
+	}
+
+
+#######################################################################################################################################
+
+	nuclear_40_research = {
+		major = yes
+		potential = {		
+			has_country_modifier = research_nuclear_20_modifire
+			NOT = { has_country_modifier = research_nuclear_40_modifire }
+		}
+		allow = {
+			OR =  {
+				has_country_modifier = bought_uranium_3
+				 ROOT = { any_owned_province = { trade_goods = uranium development = 50 } } 
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 3
+											NOT = { development = 5 }
+										}
+											amount = 5
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 6
+											NOT = { development = 11 }
+										}
+											amount = 4
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 12
+											NOT = { development = 24 }
+										}
+											amount = 3
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 25
+											NOT = { development = 49 }
+										}
+											amount = 2
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 50
+										}
+											amount = 1
+								}  
+							
+						}
+			}
+			mil_power = 300
+			calc_true_if = {
+					all_owned_province = {
+						has_building = nuclear_plant
+						controlled_by = owner
+						is_core = ROOT
+				}
+				amount = 20
+			}
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					years_of_income = 3.0
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					years_of_income = 2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.50
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					years_of_income = 0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.25
+				}
+		}
+		effect = {
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = -3.0
+				}
+			if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = -2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.5
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = -0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.25
+				}
+			
+			add_mil_power = -300
+			add_prestige = 5
+			
+				set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+				country_event = { id = nuclear.7 }
+				
+				every_known_country = { 
+				if =  { 
+					limit = { 
+						ai = no
+					}
+					country_event = { id = nuclear.8 }
+				}
+				}
+			
+			
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				any_country = {
+					NOT = {
+						check_variable = {
+							which = nuclear_research_40
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_country = {
+					check_variable = {
+						which = nuclear_research_40
+						value = 1
+					}
+					
+				}
+			}
+		}
+	}
+	
+#######################################################################################################################################
+
+	nuclear_75_research = {
+		major = yes
+		potential = {		
+			has_country_modifier = research_nuclear_40_modifire
+			NOT = { has_country_modifier = research_nuclear_75_modifire }
+		}
+		allow = {
+			OR =  {
+				has_country_modifier = bought_uranium_4
+				 ROOT = { any_owned_province = { trade_goods = uranium development = 50 } } 
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 3
+											NOT = { development = 5 }
+										}
+											amount = 5
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 6
+											NOT = { development = 11 }
+										}
+											amount = 4
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 12
+											NOT = { development = 24 }
+										}
+											amount = 3
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 25
+											NOT = { development = 49 }
+										}
+											amount = 2
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 50
+										}
+											amount = 1
+								}  
+							
+						}
+			}
+			mil_power = 400
+			calc_true_if = {
+					all_owned_province = {
+						has_building = nuclear_plant
+						controlled_by = owner
+						is_core = ROOT
+				}
+				amount = 40
+			}
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					years_of_income = 3.0
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					years_of_income = 2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.50
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					years_of_income = 0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.25
+				}
+		}
+		effect = {
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = -3.0
+				}
+			if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = -2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.5
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = -0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.25
+				}
+			
+			add_mil_power = -400
+			add_prestige = 10
+				set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_75_modifire"
+						duration = -1
+				}
+				
+				country_event = { id = nuclear.9 }
+				
+				every_known_country = { 
+				if =  { 
+					limit = { 
+						ai = no
+					}
+					country_event = { id = nuclear.10 }
+				}
+				}
+			
+			
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				any_country = {
+					NOT = {
+						check_variable = {
+							which = nuclear_research_75
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_country = {
+					check_variable = {
+						which = nuclear_research_75
+						value = 1
+					}
+					
+				}
+			}
+		}
+	}
+
+
+#######################################################################################################################################
+
+	nuclear_90_research = {
+		major = yes
+		potential = {		
+			has_country_modifier = research_nuclear_75_modifire
+			NOT = { has_country_modifier = research_nuclear_90_modifire }
+		}
+		allow = {
+			OR =  {
+				has_country_modifier = bought_uranium_5
+				 ROOT = { any_owned_province = { trade_goods = uranium development = 50 } } 
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 3
+											NOT = { development = 5 }
+										}
+											amount = 5
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 6
+											NOT = { development = 11 }
+										}
+											amount = 4
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 12
+											NOT = { development = 24 }
+										}
+											amount = 3
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 25
+											NOT = { development = 49 }
+										}
+											amount = 2
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 50
+										}
+											amount = 1
+								}  
+							
+						}
+			}
+			mil_power = 500
+			calc_true_if = {
+					all_owned_province = {
+						has_building = fusion_reactor
+						controlled_by = owner
+						is_core = ROOT
+				}
+				amount = 20
+			}
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					years_of_income = 3.0
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					years_of_income = 2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.50
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					years_of_income = 0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.25
+				}
+		}
+		effect = {
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = -3.0
+				}
+			if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = -2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.5
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = -0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.25
+				}
+			
+			add_mil_power = -500
+			add_prestige = 10
+				set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_90_modifire"
+						duration = -1
+				}
+						
+				country_event = { id = nuclear.11 }
+				
+				every_known_country = { 
+				if =  { 
+					limit = { 
+						ai = no
+					}
+					country_event = { id = nuclear.12 }
+				}
+				}
+			
+			
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				any_country = {
+					NOT = {
+						check_variable = {
+							which = nuclear_research_90
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_country = {
+					check_variable = {
+						which = nuclear_research_90
+						value = 1
+					}
+					
+				}
+			}
+		}
+	}
+
+#######################################################################################################################################
+
+	construct_nuclear_weapon = {
+		major = yes
+		potential = {
+			has_country_modifier = research_nuclear_90_modifire
+		}
+		allow = {
+			NOT = { has_country_modifier = recently_constructed_nuclear_weapon }
+			OR =  {
+				has_country_modifier = bought_uranium_5
+				 ROOT = { any_owned_province = { trade_goods = uranium development = 50 } } 
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 3
+											NOT = { development = 5 }
+										}
+											amount = 5
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 6
+											NOT = { development = 11 }
+										}
+											amount = 4
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 12
+											NOT = { development = 24 }
+										}
+											amount = 3
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 25
+											NOT = { development = 49 }
+										}
+											amount = 2
+								}  
+							
+						}
+					
+					
+						ROOT = { 
+							 
+								calc_true_if = {
+										all_owned_province = {
+											trade_goods = uranium
+											development = 50
+										}
+											amount = 1
+								}  
+							
+						}
+			}
+			calc_true_if = {
+					all_owned_province = {
+						has_building = fusion_reactor
+						controlled_by = owner
+						is_core = ROOT
+				}
+				amount = 10
+			}
+			
+			mil_power = 100
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					years_of_income = 3.0
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					years_of_income = 2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.50
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					years_of_income = 0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.25
+				}
+		}
+		effect = {
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_years_of_income = -3.0
+				}
+			if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_years_of_income = -2.0
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -1.0
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.75
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.60
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.5
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 7000 } } }
+					add_years_of_income = -0.35
+				}
+			if = {
+					limit = { FROM = { total_development = 7000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.25
+				}
+			
+			add_mil_power = -100
+			add_prestige = 10
+			if = {
+				limit = { 
+					OR = {
+						has_country_modifier = nuclear_state
+						check_variable = {
+							which = num_of_nuclear_weapons
+							value = 1
+						}
+					}
+				}
+				change_variable = {
+				which = num_of_nuclear_weapons
+				value = 1
+				}
+				country_event = { id = nuclear.13 }
+			}
+			if = {
+				limit = { NOT = { has_country_modifier = nuclear_state } }
+				add_country_modifier = {
+					name = "nuclear_state"
+					duration = -1
+				}
+				set_variable = {
+				which = num_of_nuclear_weapons
+				value = 1
+				}
+				country_event = { id = nuclear.14 }
+			}
+			add_country_modifier = {
+				name = "recently_constructed_nuclear_weapon"
+				duration = 1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				ROOT = {
+					check_variable = {
+						which = num_of_nuclear_weapons
+						value = 5
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					NOT = {
+						check_variable = {
+							which = num_of_nuclear_weapons
+							value = 1
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				any_country = {
+					check_variable = {
+						which = num_of_nuclear_weapons
+						value = 1
+					}
+					
+				}
+			}
+		}
+	}
+	
+	use_nuke_ai = { #AI can't use custom diplomatic actions
+		potential = {
+			ai = yes
+			has_global_flag = nukes_used
+		}
+		allow = {
+			check_variable = {
+				which = num_of_nuclear_weapons
+				value = 1
+			}
+			NOT = { has_country_modifier = nuke_cooldown }
+			is_at_war = yes
+			any_country = {
+				war_with = ROOT
+				OR = {
+					AND = {
+						is_rival = ROOT
+						war_score = -40
+					}
+					reverse_has_opinion_modifier = {
+						who = ROOT
+						modifier = nuked_us
+					}
+				}
+			}
+		}
+		effect = {
+			change_variable = {
+				which = num_of_nuclear_weapons
+				value = -1
+			}
+			add_country_modifier = {
+				name = nuke_cooldown
+				duration = 30
+			}
+			random_country = {
+				limit = {
+					war_with = ROOT
+					OR = {
+						AND = {
+							is_rival = ROOT
+							war_score = -40
+						}
+						reverse_has_opinion_modifier = {
+							who = ROOT
+							modifier = nuked_us
+						}
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = nuked_us
+				}
+				if = {
+					limit = { any_owned_province = { development = 80 NOT = { has_province_modifier = province_nuked } } }
+					random_owned_province = {
+						limit = { development = 80 NOT = { has_province_modifier = province_nuked } }
+						province_event = { id = et_nuke.3 }
+					}
+				}
+				else_if = {
+					limit = { any_owned_province = { development = 40 NOT = { has_province_modifier = province_nuked } } }
+					random_owned_province = {
+						limit = { development = 40 NOT = { has_province_modifier = province_nuked } }
+						province_event = { id = et_nuke.3 }
+					}
+				}
+				else_if = {
+					limit = { any_owned_province = { development = 20 NOT = { has_province_modifier = province_nuked } } }
+					random_owned_province = {
+						limit = { development = 20 NOT = { has_province_modifier = province_nuked } }
+						province_event = { id = et_nuke.3 }
+					}
+				}
+				else = {
+					random_owned_province = {
+						province_event = { id = et_nuke.3 }
+					}
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

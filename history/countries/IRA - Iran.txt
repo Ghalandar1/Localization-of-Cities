@@ -1,0 +1,102 @@
+government = monarchy
+add_government_reform = autocracy_reform
+set_legacy_government = constitutional_monarchy
+technology_group = middle_eastern
+unit_type = muslim 
+religion = shiite
+primary_culture = persian
+capital = 10837	# Tehran
+religious_school = jafari_school
+historical_friend = CHN
+historical_friend = RUS
+historical_friend = PLS
+historical_friend = LEB
+historical_friend = SYR
+historical_rival = SAU
+historical_rival = ISR
+
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1925.12.15 = {
+	religion = secularism
+	monarch = {
+		name = "Reza Shah"
+		dynasty = "Pahlavi"
+		birth_date = 1878.3.15
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1925.12.15 = {
+	heir = {
+		name = "Mohammad"
+		monarch_name = "Mohammad Reza Shah"
+		dynasty = "Pahlavi"
+		birth_date = 1919.10.26
+		death_date = 1980.7.27
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1941.9.26 = {
+	monarch = {
+		name = "Mohammad Reza Shah"
+		dynasty = "Pahlavi"
+		birth_date = 1919.10.26
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1979.10.26 = {
+	government = theocracy
+	add_government_reform = leading_clergy_reform
+	add_government_reform = combat_heresy_reform
+	add_government_reform = maintain_religious_head_reform
+	add_government_reform = theocratic_democracy_reform
+	
+	
+	religion = shiite
+	monarch = {
+		name = "Revolutionary Council"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1979.12.3 = {
+	monarch = {
+		name = "Ruhollah Khomeini"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1989.6.4 = {
+	monarch = {
+		name = "Ali Khamenei"
+		birth_date = 1940.10.26
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+2018.5.1 = { mercantilism = 10 }

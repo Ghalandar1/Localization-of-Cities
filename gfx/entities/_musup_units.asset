@@ -1,0 +1,1739 @@
+	###################################################################################################################
+	#####                                            Musup	  			             		                      #####
+	###################################################################################################################
+
+entity = {
+	name = "musup_spear"
+	pdxmesh = "musup_spear_mesh"
+}
+
+	###################################################################################################################
+	#####                                                BAH (X)                        	               	      #####
+	###################################################################################################################
+
+	########################
+	#####    Tier 1    #####
+	########################
+	
+entity = {
+	name = "BAH_INFANTRY_1"
+	pdxmesh = "musup_BAH_infantry_01"
+	version = 1
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "musup_spear"
+	}
+}
+entity = {
+	name = "BAH_CAVALRY_1"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "BAH_CAVALRY_1_elephant_rider" 
+	}
+}	
+entity = {
+	name = "BAH_CAVALRY_1_elephant_rider"
+	pdxmesh = "musup_BAH_infantry_01"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "BAH_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 1	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "BAH_INFANTRY_1" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 2    #####
+	########################
+	
+entity = {
+	name = "BAH_INFANTRY_2"
+	pdxmesh = "musup_BAH_infantry_02"
+	version = 1
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "BAH_CAVALRY_2"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "BAH_CAVALRY_2_elephant_rider" 
+	}
+}	
+entity = {
+	name = "BAH_CAVALRY_2_elephant_rider"
+	pdxmesh = "musup_BAH_infantry_02"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "BAH_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+	version = 1	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "BAH_INFANTRY_2" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 3    #####
+	########################
+	
+entity = {
+	name = "BAH_INFANTRY_3"
+	pdxmesh = "musup_BAH_infantry_03"
+	version = 1
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "BAH_CAVALRY_3"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "BAH_CAVALRY_3_elephant_rider" 
+	}
+}	
+entity = {
+	name = "BAH_CAVALRY_3_elephant_rider"
+	pdxmesh = "musup_BAH_infantry_03"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "BAH_ARTILLERY_3"
+	pdxmesh = "artillery_base_mesh"
+	version = 1	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "BAH_INFANTRY_3" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 4    #####
+	########################
+	
+entity = {
+	name = "BAH_INFANTRY_4"
+	pdxmesh = "musup_BAH_infantry_04"
+	version = 1
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2"
+	}
+}
+entity = {
+	name = "BAH_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	saddle_node = "BAH_CAVALRY_4_elephant_rider" 
+	#}
+}	
+entity = {
+	name = "BAH_CAVALRY_4_elephant_rider"
+	#pdxmesh = "musup_BAH_infantry_04"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	#attach = { 
+	#	Right_hand_node = "musup_spear" 
+	#}
+}
+entity = {
+	name = "BAH_ARTILLERY_4"
+	pdxmesh = "artillery_base_mesh"
+	version = 1	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "BAH_INFANTRY_4" 
+	#	cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	#}
+}
+
+
+
+	###################################################################################################################
+	#####                                                GUJ (X)                        	               	      #####
+	###################################################################################################################
+
+	########################
+	#####    Tier 1    #####
+	########################
+	
+entity = {
+	name = "GUJ_INFANTRY_1"
+	pdxmesh = "musup_GUJ_infantry_01"
+	version = 3
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "musup_spear"
+	}
+}
+entity = {
+	name = "GUJ_CAVALRY_1"
+	pdxmesh = "cavalry_horse"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "GUJ_CAVALRY_1_elephant_rider" 
+	}
+}	
+entity = {
+	name = "GUJ_CAVALRY_1_elephant_rider"
+	#pdxmesh = "musup_GUJ_infantry_01"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "GUJ_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 3	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "GUJ_INFANTRY_1" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 2    #####
+	########################
+	
+entity = {
+	name = "GUJ_INFANTRY_2"
+	pdxmesh = "musup_GUJ_infantry_02"
+	version = 3
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "GUJ_CAVALRY_2"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "GUJ_CAVALRY_2_elephant_rider" 
+	}
+}	
+entity = {
+	name = "GUJ_CAVALRY_2_elephant_rider"
+	pdxmesh = "musup_GUJ_infantry_02"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "GUJ_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+	version = 3	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "GUJ_INFANTRY_2" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 3    #####
+	########################
+	
+entity = {
+	name = "GUJ_INFANTRY_3"
+	pdxmesh = "musup_GUJ_infantry_03"
+	version = 3
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "GUJ_CAVALRY_3"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "GUJ_CAVALRY_3_elephant_rider" 
+	}
+}	
+entity = {
+	name = "GUJ_CAVALRY_3_elephant_rider"
+	pdxmesh = "musup_GUJ_infantry_03"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "GUJ_ARTILLERY_3"
+	pdxmesh = "artillery_base_mesh"
+	version = 3	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "GUJ_INFANTRY_3" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 4    #####
+	########################
+	
+entity = {
+	name = "GUJ_INFANTRY_4"
+	pdxmesh = "musup_GUJ_infantry_04"
+	version = 3
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2"
+	}
+}
+entity = {
+	name = "GUJ_CAVALRY_4"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	saddle_node = "GUJ_CAVALRY_4_elephant_rider" 
+	#}
+}	
+entity = {
+	name = "GUJ_CAVALRY_4_elephant_rider"
+	#pdxmesh = "musup_GUJ_infantry_04"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	#attach = { 
+	#	Right_hand_node = "musup_spear" 
+	#}
+}
+entity = {
+	name = "GUJ_ARTILLERY_4"
+	pdxmesh = "artillery_base_mesh"
+	version = 3	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "GUJ_INFANTRY_4" 
+	#	cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	#}
+}
+
+
+	
+	
+	
+	###################################################################################################################
+	#####                                                Jaunpur (X)                        	               	      #####
+	###################################################################################################################
+
+	########################
+	#####    Tier 1    #####
+	########################
+	
+entity = {
+	name = "JNP_INFANTRY_1"
+	pdxmesh = "musup_JNP_infantry_01"
+	version = 1
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "musup_spear"
+	}
+}
+entity = {
+	name = "JNP_CAVALRY_1"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "JNP_CAVALRY_1_elephant_rider" 
+	}
+}	
+entity = {
+	name = "JNP_CAVALRY_1_elephant_rider"
+	pdxmesh = "musup_JNP_infantry_01"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "JNP_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 1	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "JNP_INFANTRY_1" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 2    #####
+	########################
+	
+entity = {
+	name = "JNP_INFANTRY_2"
+	pdxmesh = "musup_JNP_infantry_02"
+	version = 1
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "JNP_CAVALRY_2"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "JNP_CAVALRY_2_elephant_rider" 
+	}
+}	
+entity = {
+	name = "JNP_CAVALRY_2_elephant_rider"
+	pdxmesh = "musup_JNP_infantry_02"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "JNP_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+	version = 1	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "JNP_INFANTRY_2" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 3    #####
+	########################
+	
+entity = {
+	name = "JNP_INFANTRY_3"
+	pdxmesh = "musup_JNP_infantry_03"
+	version = 1
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "JNP_CAVALRY_3"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "JNP_CAVALRY_3_elephant_rider" 
+	}
+}	
+entity = {
+	name = "JNP_CAVALRY_3_elephant_rider"
+	pdxmesh = "musup_JNP_infantry_03"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "JNP_ARTILLERY_3"
+	pdxmesh = "artillery_base_mesh"
+	version = 1	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "JNP_INFANTRY_3" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 4    #####
+	########################
+	
+entity = {
+	name = "JNP_INFANTRY_4"
+	pdxmesh = "musup_JNP_infantry_04"
+	version = 1
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2"
+	}
+}
+entity = {
+	name = "JNP_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	saddle_node = "JNP_CAVALRY_4_elephant_rider" 
+	#}
+}	
+entity = {
+	name = "JNP_CAVALRY_4_elephant_rider"
+	#pdxmesh = "musup_JNP_infantry_04"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	#attach = { 
+	#	Right_hand_node = "western_musket_2" 
+	#}
+}
+entity = {
+	name = "JNP_ARTILLERY_4"
+	pdxmesh = "artillery_base_mesh"
+	version = 1	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "JNP_INFANTRY_4" 
+	#	cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	#}
+}
+
+
+	
+	
+	
+	###################################################################################################################
+	#####                                                MLW (X)                        	               	      #####
+	###################################################################################################################
+
+	########################
+	#####    Tier 1    #####
+	########################
+	
+entity = {
+	name = "MLW_INFANTRY_1"
+	pdxmesh = "musup_MLW_infantry_01"
+	version = 2
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "musup_spear"
+	}
+}
+entity = {
+	name = "MLW_CAVALRY_1"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 4
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "MLW_CAVALRY_1_elephant_rider" 
+	}
+}	
+entity = {
+	name = "MLW_CAVALRY_1_elephant_rider"
+	pdxmesh = "musup_MLW_infantry_01"
+	version = 4
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "MLW_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 2	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MLW_INFANTRY_1" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 2    #####
+	########################
+	
+entity = {
+	name = "MLW_INFANTRY_2"
+	pdxmesh = "musup_MLW_infantry_02"
+	version = 2
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "MLW_CAVALRY_2"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 4
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "MLW_CAVALRY_2_elephant_rider" 
+	}
+}	
+entity = {
+	name = "MLW_CAVALRY_2_elephant_rider"
+	pdxmesh = "musup_MLW_infantry_02"
+	version = 4
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "MLW_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+	version = 2	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MLW_INFANTRY_2" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 3    #####
+	########################
+	
+entity = {
+	name = "MLW_INFANTRY_3"
+	pdxmesh = "musup_MLW_infantry_03"
+	version = 2
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "MLW_CAVALRY_3"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 4
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "MLW_CAVALRY_3_elephant_rider" 
+	}
+}	
+entity = {
+	name = "MLW_CAVALRY_3_elephant_rider"
+	pdxmesh = "musup_MLW_infantry_03"
+	version = 4
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "MLW_ARTILLERY_3"
+	pdxmesh = "artillery_base_mesh"
+	version = 2	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MLW_INFANTRY_3" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 4    #####
+	########################
+	
+entity = {
+	name = "MLW_INFANTRY_4"
+	pdxmesh = "musup_MLW_infantry_04"
+	version = 2
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2"
+	}
+}
+entity = {
+	name = "MLW_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 4
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	saddle_node = "MLW_CAVALRY_4_elephant_rider" 
+	#}
+}	
+entity = {
+	name = "MLW_CAVALRY_4_elephant_rider"
+	#pdxmesh = "musup_MLW_infantry_04"
+	version = 4
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	#attach = { 
+	#	Right_hand_node = "musup_spear" 
+	#}
+}
+entity = {
+	name = "MLW_ARTILLERY_4"
+	pdxmesh = "artillery_base_mesh"
+	version = 2	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "MLW_INFANTRY_4" 
+	#	cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	#}
+}
+
+
+
+
+	###################################################################################################################
+	#####                                                MUG (X)                        	               	      #####
+	###################################################################################################################
+
+	########################
+	#####    Tier 1    #####
+	########################
+	
+entity = {
+	name = "MUG_NEW2_INFANTRY_1"
+	pdxmesh = "musup_MUG_infantry_01"
+	version = 2
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "musup_spear"
+	}
+}
+entity = {
+	name = "MUG_NEW2_CAVALRY_1"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "MUG_NEW2_CAVALRY_1_elephant_rider" 
+	}
+}	
+entity = {
+	name = "MUG_NEW2_CAVALRY_1_elephant_rider"
+	pdxmesh = "musup_MUG_infantry_01"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "MUG_NEW2_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 2	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MUG_NEW2_INFANTRY_1" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 2    #####
+	########################
+	
+entity = {
+	name = "MUG_NEW2_INFANTRY_2"
+	pdxmesh = "musup_MUG_infantry_02"
+	version = 2
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "MUG_NEW2_CAVALRY_2"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "MUG_NEW2_CAVALRY_2_elephant_rider" 
+	}
+}	
+entity = {
+	name = "MUG_NEW2_CAVALRY_2_elephant_rider"
+	pdxmesh = "musup_MUG_infantry_02"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "MUG_NEW2_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+	version = 2	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MUG_NEW2_INFANTRY_2" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 3    #####
+	########################
+	
+entity = {
+	name = "MUG_NEW2_INFANTRY_3"
+	pdxmesh = "musup_MUG_infantry_03"
+	version = 2
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "indian_generic_03_type1_rifle"
+	}
+}
+entity = {
+	name = "MUG_NEW2_CAVALRY_3"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "MUG_NEW2_CAVALRY_3_elephant_rider" 
+	}
+}	
+entity = {
+	name = "MUG_NEW2_CAVALRY_3_elephant_rider"
+	pdxmesh = "musup_MUG_infantry_03"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "MUG_NEW2_ARTILLERY_3"
+	pdxmesh = "artillery_base_mesh"
+	version = 2	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MUG_NEW2_INFANTRY_3" 
+		cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+	########################
+	#####    Tier 4    #####
+	########################
+	
+entity = {
+	name = "MUG_NEW2_INFANTRY_4"
+	pdxmesh = "musup_MUG_infantry_04"
+	version = 2
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2"
+	}
+}
+entity = {
+	name = "MUG_NEW2_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	saddle_node = "MUG_NEW2_CAVALRY_4_elephant_rider" 
+	#}
+}	
+entity = {
+	name = "MUG_NEW2_CAVALRY_4_elephant_rider"
+	#pdxmesh = "musup_MUG_infantry_04"
+	version = 3
+	state = { name = "idle" 		animation = "elephant_idle" }
+	state = { name = "idle_special" animation = "elephant_idle_special" }
+	state = { name = "walk" 		animation = "elephant_walk" }
+	state = { name = "attack"		animation = "elephant_attack" chance = 1 looping = no next_state = attack }
+	state = { name = "attack"		animation = "elephant_combat_idle" chance = 4 looping = no next_state = attack }
+	state = { name = "retreat"		animation = "elephant_retreat" }
+	#state = { name = "death"		animation = "elephant_death" }
+	#state = { name = "extra_state_1"		animation = "elephant_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "elephant_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "elephant_extra_state_3" }
+
+
+	attach = { 
+		Right_hand_node = "musup_spear" 
+	}
+}
+entity = {
+	name = "MUG_NEW2_ARTILLERY_4"
+	pdxmesh = "artillery_base_mesh"
+	version = 2	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "MUG_NEW2_INFANTRY_4" 
+	#	cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+	#}
+}
+
+	###################################################################################################################
+	#####                                                BNG		                                        	  #####
+	###################################################################################################################
+
+entity = { 
+	name = "BNG_CAVALRY_1"
+	pdxmesh = "dharma_cavalry_elephant_muslim"
+	version = 11
+	state = { name = "idle" 		animation = "elephant_idle_1" chance = 5 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_idle_2" chance = 1 looping = no next_state = "idle" }
+	state = { name = "idle" 		animation = "elephant_special_1" chance = 0.5 looping = no next_state = "idle" propagate_state = { rider = "idle_special" } }
+	state = { name = "walk" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "walk" }
+	state = { name = "walk" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "walk" }
+	state = { name = "retreat" 		animation = "elephant_walk_1" chance = 4 looping = no next_state = "retreat" }
+	state = { name = "retreat" 		animation = "elephant_walk_2" chance = 1 looping = no next_state = "retreat" }
+	state = { name = "attack"		animation = "elephant_charge_1" chance = 4 looping = no next_state = "attack" }
+	state = { name = "attack"		animation = "elephant_charge_2" chance = 1 looping = no next_state = "attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		saddle_node = "BNG_CAVALRY_1_elephant_rider" 
+	}
+}
+
+entity = {
+	clone = "indiangfx_CAVALRY_1_elephant_rider_v2"
+	name = "BNG_CAVALRY_1_elephant_rider"
+	pdxmesh = "indian_generic_01_type1"
+	version = 2
+	attach = { 
+		Right_hand_node = "muslim_spear" 
+	}
+}
+
+entity = { 
+	clone = "BNG_CAVALRY_1"
+	name = "BNG_CAVALRY_2"
+	version = 12
+	attach = { 
+		name = "rider"
+		saddle_node = "BNG_CAVALRY_2_elephant_rider" 
+	}
+}
+
+entity = {
+	clone = "indiangfx_CAVALRY_1_elephant_rider_v2"
+	name = "BNG_CAVALRY_2_elephant_rider"
+	pdxmesh = "indian_generic_02_type1"
+	version = 2
+	attach = { 
+		Right_hand_node = "muslim_spear" 
+	}
+}
+
+entity = { 
+	clone = "BNG_CAVALRY_1"
+	name = "BNG_CAVALRY_3"
+	version = 12
+	attach = { 
+		name = "rider"
+		saddle_node = "BNG_CAVALRY_3_elephant_rider" 
+	}
+}
+
+entity = {
+	clone = "indiangfx_CAVALRY_1_elephant_rider_v2"
+	name = "BNG_CAVALRY_3_elephant_rider"
+	pdxmesh = "indian_generic_03_type1"
+	version = 2
+	attach = { 
+		Right_hand_node = "muslim_spear" 
+	}
+}
+
+entity = { 
+	clone = "BNG_CAVALRY_1"
+	name = "BNG_CAVALRY_4"
+	version = 12
+	attach = { 
+		name = "rider"
+		saddle_node = "BNG_CAVALRY_4_elephant_rider" 
+	}
+}
+
+entity = {
+	clone = "indiangfx_CAVALRY_1_elephant_rider_v2"
+	name = "BNG_CAVALRY_4_elephant_rider"
+	pdxmesh = "indian_generic_03_type1"
+	version = 2
+	attach = { 
+		Right_hand_node = "muslim_spear" 
+	}
+}
+

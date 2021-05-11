@@ -1,0 +1,79 @@
+#Just a helpful list for localisation writing stuff
+#Removed: 7
+#added: 9
+#modified: 11
+#1 - arrival - no changes made
+#2 - start up for zombies - no changes again
+#3 - province defects (country it defects from) - no changes
+#4 - province defects (ZOM) - no changes
+#5 - event spawned troops (if they will work ffs) - will go
+#6 - new war - again
+#7 - decline of the zombie horde -good 
+#8 - actual turning into uncolonised - good
+#9 - spwntroops for base for zombies - good
+#10 - unity against zombies - good 
+#11 - end of wars to fight off the horde - ok 
+#12 - end of HYW - English event - removed
+#13 - end of HYW - French one - removed
+#14 - vassals becoming part of the realm (or marches) - good?
+#15 - marches getting bonuses - good
+#16 - Muslim end of days - obsolete
+#17 - fleeing refugees - to be changed (adding option for not allowing them at cost of prestige
+#18 - volunteers - good
+#19 - disbelievers - change to conspiracy theorist
+#20 - national unity - ok
+#21 - find the ruling insignia (+10 legitimacy) - remove
+#22 - the end of the horde! - good
+#23 - reclaiming the long lost cities - good
+#24 - Pope declares Crusade (with special modifiers) - let's say Francis would do that (won't work without Papal state though)
+#25 - Jihad declared - rename into "islamic world unites against common threat)
+#26 - Commonwealth - remove
+#27 - Scandinavia - remove (won't work anyway)
+#28 - country raided by bandits - change to bike gangs
+#29 - great general finds a way to fight them ( +10% morale ) - good
+#30 - bad general fucks up ( -10% morale ) - good 
+#31 - the last stand (garrison size rises) - good
+#32 - heir falls weirdly ill (lose him or 10% of losing capital to zombies) - maybe
+#33 - the disease spreads down the trade routes (kill off trade or risk infection) - stays
+#34 - crops ruined by zombies (lower manpower + higher unrest) - change into stock markets fall (lower income + unrest)
+#35 - Jews targetted - no changes 
+#36 - the last charge of the Pope - removed, however an image of Francis riding in a tank against the zombie horde is great
+#37 - Emperor buff - change into EU buff
+#38 - Caliph dies - removed
+#39 - burning of witches intesifies - change into burning books
+#40 - Scotland catching the occasion - if it exists ofc
+#41 - people Spilling Blood On Fire - gotta love Heavenly
+#42 - bandits distinguishing as undeads - this is good
+#43 - mercenaries offer their services far cheaper - change it into an army of destroyed country
+#44 - Wizna - 40:1
+#45 - recovery of lost knowledge - good enough 
+#46 - treasury found in abandoned city - can be
+#47 - No general (-15% morale) - of coures
+#48 - Venice seals off - it didn't work anyway
+#49 - steppe hordes get combat ability to horses coz zombies are slow  - it won't work anyway
+#50 - rumours of zombies behind the lines - stays
+#51 - nation sealing off - can be
+#52 - disbelievers shocked - stays
+#53 - England gives up on continent - sure
+#54 - Wagenburg revives - changed into "modern Wagenburg"
+#55 - occupied turning uncolonised - good
+#56 - WELCOME - good
+#57 - new trade goods - needs improvement, but stays
+#58 - Japan goes away - sure
+#59 - difficulty - of course
+#60 - cap - pozdrawiam jebawkę
+#61 - notifications - obsolete anyway
+#62 - defection and troops without an event - stays
+#63 - extra colonist for all - stays
+#64 - sudden death event, after zombies have less than 50 k troops - good
+#65 - empty x2
+#66 - empty
+#67 - North Korea denies anything is wrong (purely flavour)
+#68 - Madagascar seals borders
+#69 - total panic
+#70 - American plan to fight off zombies 
+#71 - disinformation on the internets
+#72 - propaganda
+#73 - UN troops sent to help
+#74 - EU and UN condemn the actions of the zombies
+#75 - jebawka hits itself

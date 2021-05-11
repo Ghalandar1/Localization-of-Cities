@@ -1,0 +1,83 @@
+first_fitna = {
+	potential = {
+		NOT = { has_country_flag = had_first_fitna }
+		tag = RSD
+		NOT = { has_country_modifier = rise_of_islam }
+		owns = 382
+		owns = 410
+		NOT = { is_year = 800 }
+		NOT = { dynasty = "Umayyad" }
+		NOT = { exists = UMA }
+		OR = {
+			religion = sunni
+			religion = shiite
+		}
+	}
+
+	can_start = {
+		has_any_disaster = no
+	}
+
+	can_stop = {
+		has_any_disaster = yes
+		is_at_war = yes
+	}
+
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { stability = 3 }
+		}
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				culture = al_suryah_arabic
+			}
+			NOT = { accepted_culture = al_suryah_arabic }
+		}
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				culture = al_iraqiya_arabic
+			}
+			NOT = { accepted_culture = al_iraqiya_arabic }
+		}
+	}
+	
+	can_end = {
+		OR = {
+			stability = 3
+			had_country_flag = { 
+				flag = has_first_fitna
+				days = 7300
+			}	
+		}
+		NOT = { num_of_revolts = 1 }
+		had_country_flag = { 
+			flag = has_first_fitna
+			days = 3650
+		}
+	}
+	
+	modifier = {
+		global_unrest = 2
+		stability_cost_modifier = 0.1
+	}	
+			
+	on_start = dynasties.1
+
+	on_end = dynasties.7
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			100 = dynasties.2
+			50 = dynasties.3
+			75 = dynasties.4
+			25 = dynasties.6
+		}
+	}
+
+}

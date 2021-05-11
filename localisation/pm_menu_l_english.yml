@@ -1,0 +1,76 @@
+﻿l_english:
+ pm_subcejt_interaction_dip:0 "Subject interaction"
+ pm_subcejt_interaction_dip_tooltip:0 "Not possible if already interacting"
+ pm_subcejt_interaction_dip_title:0 "Subject interaction"
+ pm_subcejt_interaction_dip_desc:0 "Open subject interaction menu"
+
+ pm_basic_menu_title:0 "Interaction with subject"
+ pm_basic_menu_desc:0 "We are interacting with our [Root.pmGetSubjectType], that has [Root.pmGetRole] role. What should we do?"
+ pm_plactate_opt:0 "Reduce liberty desire"
+ pm_exploit_opt:0 "Exploit them"
+ pm_special_opt:0 "Special interaction"
+ pm_designate_opt:0 "Designate special role"
+ pm_undesignate:0 "Revoke special role"
+ pm_quit:0 "Do nothing"
+
+ pm_back_basic:0 "Previous menu"
+
+ pm_plactate_menu_title:0 "How should we plactate them?"
+ pm_plactate_menu_desc:0 "Each option has a 6 months cooldown, and some options are available only for certain subject role"
+ pm_plactate_gift:0 "Corrupt their liders"
+ pm_send_manpower:0 "Send manpower"
+ pm_send_legit:0 "Legitimise their goverment"
+ pm_send_dev1:0 "Promote mercantilism"
+
+
+ pm_exploit_menu_title:0 "How shall we use them?"
+ pm_exploit_menu_desc:0 "Each option has a 6 months cooldown, and some options are available only for certain subject role"
+ pm_steal_manpower:0 "Steal manpower"
+ pm_exloit_mil:0 "Get genaral"
+ pm_exloit_adv_mil:0 "Get advisor"
+ pm_exloit_nav:0 "Get admiral"
+ pm_exloit_adm:0 "Get advisor"
+ pm_exloit_rel:0 "Get advisor"
+ pm_exploit_dev:0 "Contribute development"
+ pm_steal_colony:0 "Steal colonial nation"
+ pm_steal_company:0 "Steal trade company province"
+
+ pm_designate_menu_title:0 "Which role?"
+ pm_designate_menu_desc:0 "Designating a role will give our subjects bonuses connected with this role and also enforce them to repick idea groups. Roles are:   Militarist - Can be assigned to March or Personal Union,  Naval - can be assigned to March, Subject must have Diplomatic tech 7 £dip£   Developer - Having more than one subject with this role will increase their liberty desire. Subject must have Administrative tech 7 £adm£   Administrative - Having more than one subject with this role will increase their liberty desire. Subject must have Administrative tech 7 £adm£  Colonist - Having more than one subject with this role will increase their liberty desire. Can be assigned to Personal Union. Subject must have Diplomatic tech 7 £dip£   Relegious - Subject must have Administrative tech 5 £adm£"
+ pm_rel_opt:0 "Religious"
+ pm_col_opt:0 "Colonist"
+ pm_adm_opt:0 "Administrative"
+ pm_dev_opt:0 "Developer"
+ pm_nav_opt:0 "Naval"
+ pm_mil_opt:0 "Militarist"
+
+ pm_taxes_policy_title:0 "Change vassal taxation policy"
+ pm_taxes_policy_desc:0 "Gives an option to change current taxation policy"
+ pm_tax_menu_title:0 "Tax policy menu"
+ pm_tax_menu_desc:0 "Here we can manage our income from subject taxes. High taxes mean more income but more liberty desire, while low taxes mean less income but less liberty desire. Having 10 admin tech or full influence ideas allows us to set very high/low taxes"
+
+ pm_autonomy_policy_title:0 "Change vassal autonomy"
+ pm_autonomy_policy_desc:0 "Gives an option to centralise/decentralise our goverment"
+ pm_auto_menu_title:0 "Autonomy policy menu"
+ pm_auto_menu_desc:0 "Here we can manage our subjects autonomy. Centralisation mean more force limin contribution and reduced annexation cost but more liberty desire, while decentralisation mean less liberty desire, more subjects but increased annexation cost and decreased vassal force limit contribution. Having 14 admin tech or full influence ideas allows us to set very high/low autonomy"
+
+ 
+ pm_menu_special_title:0 "Special interaction"
+ pm_menu_special_desc:0 "Here we can use special interactions that may have various effects depending of our subject type and role, and here we can invest in our colonial nations. Also each vassal can be turned into Personal Union if we have same ruling dynasty (even non-Christian nations)"
+ pm_special_v2pu:0 "Enforce Personal Union"
+ pm_special_pu2v:0 "Enforce vassalisation"
+ pm_colony_investment_1_opt:0 "Administrative investment"
+ pm_colony_investment_2_opt:0 "Colonial investment"
+ pm_colony_investment_3_opt:0 "Wartime investment"
+ pm_special_adm_opt:0 "Increase autonomy"
+ pm_special_col_opt:0 "Colonial subsidies"
+ pm_special_dev_opt:0 "Focus on development"
+ pm_special_rel_opt_1:0 "Holy mission (Heretics)"
+ pm_special_rel_opt_2:0 "Holy mission (Heathens)"
+ pm_special_clear:0 "Clear special modifiers"
+ 
+ 
+
+
+
+

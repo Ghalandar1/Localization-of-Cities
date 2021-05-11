@@ -1,0 +1,678 @@
+###################################################################################################################
+#####                                                ITALIAN UNITS                                            #####
+###################################################################################################################
+
+##Florence (LAN), copied to TUS, LUC, SIE.
+
+entity = {
+	name = "SIE_INFANTRY_1"
+	pdxmesh = "LAN_infantry_01_dy_color_type1"
+	version = 2
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "western_halbard" 
+	}
+}
+
+entity = {
+	name = "SIE_INFANTRY_2"
+	pdxmesh = "LAN_infantry_02_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket" 
+	}
+}
+
+entity = {
+	name = "SIE_INFANTRY_3"
+	pdxmesh = "LAN_infantry_03_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+}
+
+entity = {
+	name = "SIE_INFANTRY_4"
+	pdxmesh = "LAN_infantry_04_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+}
+
+entity = { clone = "SIE_INFANTRY_1"		name = "LUC_INFANTRY_1" }
+entity = { clone = "SIE_INFANTRY_2"		name = "LUC_INFANTRY_2" }
+entity = { clone = "SIE_INFANTRY_3"		name = "LUC_INFANTRY_3" }
+entity = { clone = "SIE_INFANTRY_4"		name = "LUC_INFANTRY_4" }
+
+entity = { clone = "SIE_INFANTRY_1"		name = "TUS_INFANTRY_1" version = 1 }
+entity = { clone = "SIE_INFANTRY_2"		name = "TUS_INFANTRY_2" version = 1 }
+entity = { clone = "SIE_INFANTRY_3"		name = "TUS_INFANTRY_3" version = 1 }
+entity = { clone = "SIE_INFANTRY_4"		name = "TUS_INFANTRY_4" version = 1 }
+
+##Venice (VEN), copied to AQU.
+
+entity = {
+	name = "AQU_INFANTRY_1"
+	pdxmesh = "VEN_infantry_01_dy_color_type1"
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "western_halbard" 
+	}
+}
+
+entity = {
+	name = "AQU_INFANTRY_2"
+	pdxmesh = "VEN_infantry_02_dy_color_type1"
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket" 
+	}
+}
+
+entity = {
+	name = "AQU_INFANTRY_3"
+	pdxmesh = "VEN_infantry_03_dy_color_type1"
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+}
+
+entity = {
+	name = "AQU_INFANTRY_4"
+	pdxmesh = "VEN_infantry_04_dy_color_type1"
+	
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+}
+
+#####################################################################################################################
+#######                                                                                                         #####
+#######                                                   CAVALRY                                               #####
+#######                                                                                                         #####
+#####################################################################################################################
+
+##Florence (LAN), copied to TUS, LUC, SIE.
+
+entity = {
+	name = "SIE_CAVALRY_1"
+	pdxmesh = "marnoup_cavalry_horse_01"
+	version = 2
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "SIE_CAVALRY_1_rider" 
+	}
+}
+
+entity = {
+	name = "SIE_CAVALRY_2"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "SIE_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "SIE_CAVALRY_3"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "SIE_CAVALRY_3_rider" 
+	}
+}
+
+entity = {
+	name = "SIE_CAVALRY_4"
+	pdxmesh = "cavalry_horse"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = {
+	#	name = "rider"
+	#	Saddle_Node = "SIE_CAVALRY_4_rider" 
+	#}
+}
+
+entity = {
+	name = "SIE_CAVALRY_1_rider"
+	pdxmesh = "LAN_infantry_01_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "SIE_CAVALRY_2_rider"
+	pdxmesh = "LAN_infantry_02_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "SIE_CAVALRY_3_rider"
+	pdxmesh = "LAN_infantry_03_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "SIE_CAVALRY_4_rider"
+	#pdxmesh = "LAN_infantry_04_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	#attach = { 
+	#	Right_hand_node = "marnoup_spear_01" 
+	#}
+}
+
+entity = { clone = "SIE_CAVALRY_1"		name = "LUC_CAVALRY_1" }
+entity = { clone = "SIE_CAVALRY_2"		name = "LUC_CAVALRY_2" }
+entity = { clone = "SIE_CAVALRY_3"		name = "LUC_CAVALRY_3" }
+entity = { clone = "SIE_CAVALRY_4"		name = "LUC_CAVALRY_4" }
+
+entity = { clone = "SIE_CAVALRY_1"		name = "TUS_CAVALRY_1" version = 1 }
+entity = { clone = "SIE_CAVALRY_2"		name = "TUS_CAVALRY_2" }
+entity = { clone = "SIE_CAVALRY_3"		name = "TUS_CAVALRY_3" }
+entity = { clone = "SIE_CAVALRY_4"		name = "TUS_CAVALRY_4" }
+
+##Venice (VEN), copied to AQU.
+entity = {
+	name = "AQU_CAVALRY_1"
+	pdxmesh = "marnoup_cavalry_horse_01"
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AQU_CAVALRY_1_rider" 
+	}
+}
+
+entity = {
+	name = "AQU_CAVALRY_2"
+	pdxmesh = "marnoup_cavalry_horse_01"
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AQU_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "AQU_CAVALRY_3"
+	pdxmesh = "marnoup_cavalry_horse_01"
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AQU_CAVALRY_3_rider" 
+	}
+}
+
+entity = {
+	name = "AQU_CAVALRY_4"
+	pdxmesh = "marnoup_cavalry_horse_01"
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AQU_CAVALRY_4_rider" 
+	}
+}
+
+entity = {
+	name = "AQU_CAVALRY_1_rider"
+	pdxmesh = "VEN_infantry_01_dy_color_type1"	
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "AQU_CAVALRY_2_rider"
+	pdxmesh = "VEN_infantry_02_dy_color_type1"
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "AQU_CAVALRY_3_rider"
+	pdxmesh = "VEN_infantry_03_dy_color_type1"
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "AQU_CAVALRY_4_rider"
+	pdxmesh = "VEN_infantry_04_dy_color_type1"
+	
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+#####################################################################################################################
+#######                                                                                                         #####
+#######                                                   ARTILLERY                                             #####
+#######                                                                                                         #####
+#####################################################################################################################
+
+##Florence (LAN), copied to TUS, LUC, SIE.
+
+entity = {
+	name = "SIE_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 2
+	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "SIE_INFANTRY_1" 
+		cannon_node = "westerngfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "SIE_ARTILLERY_2" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "SIE_INFANTRY_2" 
+		cannon_node = "westerngfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "SIE_ARTILLERY_3" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "SIE_INFANTRY_3" 
+		cannon_node = "westerngfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "SIE_ARTILLERY_4" 
+	
+	#attach = {
+	#	name = "gunman"
+	#	infantry_node = "SIE_INFANTRY_4" 
+	#	cannon_node = "westerngfx_ARTILLERY_4_cannon" 
+	#}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "LUC_ARTILLERY_1" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "LUC_INFANTRY_1" 
+		cannon_node = "westerngfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "LUC_ARTILLERY_2" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "LUC_INFANTRY_2" 
+		cannon_node = "westerngfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "LUC_ARTILLERY_3" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "LUC_INFANTRY_3" 
+		cannon_node = "westerngfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "LUC_ARTILLERY_4" 
+	
+	#attach = {
+	#	name = "gunman"
+	#	infantry_node = "LUC_INFANTRY_4" 
+	#	cannon_node = "westerngfx_ARTILLERY_4_cannon" 
+	#}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "TUS_ARTILLERY_1" 
+	version = 1
+	attach = {
+		name = "gunman"
+		infantry_node = "TUS_INFANTRY_1" 
+		cannon_node = "westerngfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "TUS_ARTILLERY_2" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "TUS_INFANTRY_2" 
+		cannon_node = "westerngfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "TUS_ARTILLERY_3" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "TUS_INFANTRY_3" 
+		cannon_node = "westerngfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "SIE_ARTILLERY_1"
+	name = "TUS_ARTILLERY_4" 
+	
+	#attach = {
+	#	name = "gunman"
+	#	infantry_node = "TUS_INFANTRY_4" 
+	#	cannon_node = "westerngfx_ARTILLERY_4_cannon" 
+	#}
+}
+
+
+##Venice (VEN), copied to AQU.
+entity = {
+	name = "AQU_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	version = 2
+	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "AQU_INFANTRY_1" 
+		cannon_node = "westerngfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "AQU_ARTILLERY_1"
+	name = "AQU_ARTILLERY_2" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "AQU_INFANTRY_2" 
+		cannon_node = "westerngfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "AQU_ARTILLERY_1"
+	name = "AQU_ARTILLERY_3" 
+	
+	attach = {
+		name = "gunman"
+		infantry_node = "AQU_INFANTRY_3" 
+		cannon_node = "westerngfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "AQU_ARTILLERY_1"
+	name = "AQU_ARTILLERY_4" 
+	
+	#attach = {
+	#	name = "gunman"
+	#	infantry_node = "AQU_INFANTRY_4" 
+	#	cannon_node = "westerngfx_ARTILLERY_4_cannon" 
+	#}
+}

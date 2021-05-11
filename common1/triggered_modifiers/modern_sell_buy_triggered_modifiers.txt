@@ -1,0 +1,231 @@
+
+not_have_fuel = {
+	potential = {
+		is_year = 2025
+		NOT = { has_country_modifier = bought_oil_1 } 
+		
+	}
+
+	trigger = {
+	
+		OR = {
+			AND = {
+				NOT = { any_owned_province = { trade_goods = oil } }
+				total_development = 5000 
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+					}
+					amount = 10
+				}  
+				}
+			}
+			AND = { 
+				NOT = { any_owned_province = { trade_goods = oil } }
+				total_development = 4000  NOT = { total_development = 5000 }
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 8
+					}  
+				}
+			}
+			AND = { 
+				NOT = { any_owned_province = { trade_goods = oil } }
+				total_development = 3000  NOT = { total_development = 4000 }
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 6
+					}  
+				}
+			}
+			AND = { 
+				NOT = { any_owned_province = { trade_goods = oil } }
+				total_development = 2000  NOT = { total_development = 3000 }
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 4
+					}  
+				} 
+			}
+			AND = { 
+				NOT = { any_owned_province = { trade_goods = oil } }
+				total_development = 1000  NOT = { total_development = 2000 }
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 2
+					}  
+				} 
+			}
+			AND = { 
+				NOT = { has_country_modifier = bought_oil_1 } 
+				NOT = { any_owned_province = { trade_goods = oil } }
+			}
+		}
+	}
+	
+	
+
+	
+	production_efficiency = -0.2 
+	global_unrest = 5
+	global_institution_spread = -0.25
+	
+}
+
+have_owne_fuel = {
+	potential = {
+		is_year = 2025
+				
+	}
+	trigger = {
+	OR = {
+		NOT = { ROOT = { any_owned_province = { trade_goods = oil } } }
+			ROOT = { 
+				total_development = 5000 
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 10
+					}  
+				} 
+			}
+			ROOT = { 
+				total_development = 4000  NOT = { total_development = 5000 }
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 8
+					}  
+				} 
+			}
+			ROOT = { 
+				total_development = 3000 NOT = { total_development = 4000 }
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 6
+					}  
+				} 
+			}
+			ROOT = { 
+				total_development = 2000 NOT = { total_development = 3000 }
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 4
+					}  
+				} 
+			}
+			ROOT = { 
+				total_development = 1000 NOT = { total_development = 2000 }
+				NOT = { 
+					calc_true_if = {
+							all_owned_province = {
+								trade_goods = oil
+							}
+								amount = 2
+					}  
+				} 
+			}
+		}
+	}
+	movement_speed = 0.05
+	
+}
+
+
+not_have_owne_electronic = {
+	potential = {
+		is_year = 2025
+		NOT = { ROOT = { has_country_modifier = bought_electronics_1 } }		
+	}
+	trigger = {
+		OR = {
+				NOT = { ROOT = { any_owned_province = { trade_goods = electronics } } }
+					ROOT = { 
+						total_development = 5000 
+						NOT = { 
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = electronics
+										development = 35
+									}
+										amount = 5
+							}  
+						} 
+					}
+					ROOT = { 
+						total_development = 4000  NOT = { total_development = 5000 }
+						NOT = { 
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = electronics
+										development = 35
+									}
+										amount = 4
+							}  
+						} 
+					}
+					ROOT = { 
+						total_development = 3000 NOT = { total_development = 4000 }
+						NOT = { 
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = electronics
+										development = 35
+									}
+										amount = 3
+							}  
+						} 
+					}
+					ROOT = { 
+						total_development = 2000 NOT = { total_development = 3000 }
+						NOT = { 
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = electronics
+										development = 35
+									}
+										amount = 2
+							}  
+						} 
+					}
+					ROOT = { 
+						total_development = 1000 NOT = { total_development = 2000 }
+						NOT = { 
+							calc_true_if = {
+									all_owned_province = {
+										trade_goods = electronics
+										development = 35
+									}
+										amount = 1
+							}  
+						} 
+					}
+			}
+	}
+	global_spy_defence = -0.15
+	
+}
+

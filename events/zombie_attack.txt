@@ -1,0 +1,127 @@
+namespace = zi
+
+country_event = {
+	id = zi.62
+	title = "zi_62EVTNAME"
+	desc = "zi_62EVTDESC"
+	picture = SIEGE_eventPicture
+	trigger = {
+	any_province = {
+		NOT = { owned_by = ZOM }
+		controlled_by = ZOM
+		has_siege = no
+	}
+	}
+
+	option = {
+		name = "zi_62EVTOPTION"
+		random_province = {
+			limit = {
+			NOT = { owned_by = ZOM }
+			controlled_by = ZOM
+			}
+			change_religion = r_zombie
+			change_culture = zombiec
+			add_core = ZOM
+			cede_province = ZOM
+			if = {
+				limit = { 
+				OR = {
+					ZOM = { 
+						AND = {
+							NOT = { has_global_flag = 1000cap }
+							NOT = { has_global_flag = 2000cap }
+							NOT = { has_global_flag = nocap }
+							NOT = { army_size = 500 } 
+						}
+					} 
+					ZOM = { 
+						AND = {
+							has_global_flag = 1000cap
+							NOT = { army_size = 1000 } 
+						}
+					}
+					ZOM = { 
+						AND = {
+							has_global_flag = 2000cap
+							NOT = { army_size = 2000 } 
+						}
+					} 					
+					ZOM = { 
+						has_global_flag = nocap
+					} 
+					}
+				}
+				ZOM = {
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				if = {
+					limit = { PREV = { base_manpower = 2 } }
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+				}
+				if = {
+					limit = { PREV = { base_manpower = 3 } }
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+				}
+				if = {
+					limit = { PREV = { base_manpower = 4 } }
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+				}
+				if = {
+					limit = { PREV = { base_manpower = 5 } }
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+				}
+				if = {
+					limit = { PREV = { base_manpower = 6 } }
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+				}
+			
+				if = {
+					limit = { PREV = { base_manpower = 7 } }
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+				}
+			
+				if = {
+					limit = { PREV = { base_manpower = 8 } }
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+					infantry = PREV
+				}
+			}
+			}
+		add_base_manpower = -200
+		add_base_manpower = 1
+		ZOM = { set_in_empire = no }
+		
+		}
+	}
+}

@@ -1,0 +1,919 @@
+monarch_power = ADM
+
+# applied when a country is ahead of time in this technology
+ahead_of_time = {
+	yearly_corruption = -0.05
+}
+
+technology = {
+	# Tech 0
+	year = 2000
+	production_efficiency	 =	0.1
+	#Ancient Government
+	glorious_monument = yes
+	
+	native_earthwork = yes
+	native_palisade = yes
+	native_fortified_house = yes
+	native_three_sisters_field = yes
+	native_irrigation = yes
+	native_storehouse = yes
+	native_longhouse = yes
+	native_sweat_lodge = yes
+	native_great_trail = yes
+	native_ceremonial_fire_pit = yes
+	
+	military_junta = yes
+	
+	
+	
+	#Building
+
+	workshop = yes
+	temple = yes
+	windmill = yes
+	oligarchic_republic = yes
+	constable = yes
+	cathedral = yes
+	farm_estate = yes
+	courthouse = yes
+	plantations = yes
+	university = yes  
+	tax_assessor = yes
+	furnace = yes
+	mills = yes
+	town_hall = yes 
+	factory = yes
+	counting_house = yes  
+	coal_plant = yes
+	
+	#New
+	ramparts = yes
+	state_house = yes
+	soldier_households = yes
+	
+	administrative_efficiency = 0.1
+
+
+}
+
+technology = {
+	# Tech 1
+	year = 2001
+	salic_monarchy = yes
+	feudal_monarchy = yes
+	theocratic_government = yes	
+	despotic_monarchy = yes	
+	merchant_republic = yes
+	administrative_monarchy	= yes 
+	administrative_republic	= yes
+	may_force_march = yes
+	republican_dictatorship = yes
+	constitutional_monarchy = yes
+	constitutional_republic = yes 	
+	revolutionary_republic = yes
+	revolutionary_empire = yes
+	socialist_republic = yes
+	parliamentary_republic = yes
+	presidental_republic = yes
+	parliamentary_monarchy = yes
+
+	administrative_efficiency = 0.1
+	production_efficiency	 =	0.02
+	
+	
+	
+	
+	storehouse = yes
+}
+
+technology = {
+	# Tech 2
+	year = 2002
+	
+
+	# Covert Action
+	may_support_rebels = yes
+	textile = yes  
+	enlightened_despotism = yes
+	bureaucratic_despotism = yes
+
+
+	administrative_efficiency = 0.1
+	development_efficiency = 0.1
+	
+	
+
+	
+
+}
+
+
+technology = {
+	# Tech 3
+	year = 2003
+
+	
+	
+	
+	#Tribal Democracy
+}
+
+technology = {
+	# Tech 4
+	year = 2004
+	production_efficiency 	=	0.1
+	development_efficiency = 0.1	
+	
+	
+}
+
+technology = {
+	# Tech 5
+	year = 2005
+	
+	
+	
+
+	production_efficiency 	=	0.05
+	allowed_idea_groups = 1
+}
+
+technology = {
+	# Tech 6
+	year = 2006
+
+	production_efficiency	 =	0.01
+	allowed_idea_groups = 2
+	
+}
+
+technology = {
+	# Tech 7
+	year = 2007
+	
+	production_efficiency 	=	0.1
+	
+	allowed_idea_groups = 3
+}
+
+technology = {
+	# Tech 8
+	year = 2010
+	
+	#Calendar
+	production_efficiency	 =	0.01
+	allowed_idea_groups = 4
+	
+	fusion_reactor = yes
+}
+
+technology = {
+	# Tech 9
+	year = 2018
+	nuclear_plant = yes
+	
+	production_efficiency	 =	0.01
+	allowed_idea_groups = 5
+	#Granary
+	governing_capacity = 50
+}
+
+technology = {
+	# Tech 10
+	year = 2022
+	
+	
+	administrative_efficiency = 0.1
+	production_efficiency	 =	0.01
+	allowed_idea_groups = 6
+
+}
+
+technology = {
+	# Tech 11
+	year = 2027
+	production_efficiency	 =	0.01
+	
+}
+
+technology = {
+	# Tech 12
+	year = 2034
+	
+	allowed_idea_groups = 7
+	production_efficiency	 =	0.01
+	
+	#Feudalism
+	governing_capacity = 50
+}
+
+technology = {
+	# Tech 13
+	year = 2041
+
+	#Irrigation
+	production_efficiency	 =	0.01
+	
+	
+	allowed_idea_groups	= 8
+}
+
+technology = {
+	# Tech 14
+	year = 2048
+	
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 15
+	year = 2055
+
+	#Literature
+	
+	
+	allowed_idea_groups	= 9
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 16
+	year = 2062
+	
+	#Class System
+	production_efficiency	 =	0.01
+	#Literature
+	governing_capacity = 50
+	
+}
+
+technology = {
+	# Tech 17
+	year = 2069
+	allowed_idea_groups = 10
+	production_efficiency	 =	0.01
+	
+}
+
+technology = {
+	# Tech 18
+	year = 2076
+	
+	
+	production_efficiency	 =	0.1
+	
+	#Music
+	
+}
+
+technology = {
+	# Tech 19
+	year = 2083
+	allowed_idea_groups 	= 	11
+	#Laws
+	production_efficiency	 =	0.01
+	governing_capacity = 250
+	
+}
+
+technology = {
+	# Tech 20
+	year = 2090
+
+	#Warehouse
+	development_efficiency = 0.1
+	
+}
+
+technology = {
+	# Tech 21
+	year = 2097
+	allowed_idea_groups = 12
+	
+	#Despotism
+	
+}
+
+technology = {
+	# Tech 22
+	year = 2104
+
+	#Heavy Plow
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 23
+	year = 2111
+	
+	#Temples
+	production_efficiency	 =	0.01
+	#Literature
+	governing_capacity = 50
+}
+
+technology = {
+	# Tech 24
+	year = 2118
+	allowed_idea_groups = 13
+	#Philosophy
+	
+}
+
+technology = {
+	# Tech 25
+	year = 2125
+	
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 26
+	year = 2132
+	allowed_idea_groups = 14
+	
+}
+
+technology = {
+	# Tech 27
+	year = 2139
+	governing_capacity = 250
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 28
+	year = 2146
+	allowed_idea_groups = 15	
+
+}
+
+technology = {
+	# Tech 29
+	year = 2153
+
+
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 30
+	year = 2160
+	
+	development_efficiency = 0.1
+	#Literature
+	governing_capacity = 50
+	
+}
+
+technology = {
+	# Tech 31
+	year = 2167
+	allowed_idea_groups = 16
+
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 32
+	year = 2174
+	production_efficiency	 =	0.01
+	governing_capacity = 250
+
+}
+
+technology = {
+	# Tech 33
+	year = 2181
+	allowed_idea_groups = 17
+}
+
+technology = {
+	# Tech 34
+	year = 2188
+	governing_capacity = 250
+
+	
+}
+
+technology = {
+	# Tech 35
+	year = 2195
+	production_efficiency	 =	0.01
+	governing_capacity = 250
+}
+
+technology = {
+	# Tech 36
+	year = 2202
+	allowed_idea_groups = 18
+
+}
+
+technology = {
+	# Tech 37
+	year = 2209
+
+	
+	production_efficiency	 =	0.01
+	#Philosophy
+	governing_capacity = 50
+	
+}
+
+technology = {
+	# Tech 38
+	year = 2216
+	
+
+}
+
+technology = {
+	# Tech 39
+	year = 2223
+	allowed_idea_groups = 19
+	production_efficiency	 =	0.01
+	
+}
+
+technology = {
+	# Tech 40
+	year = 2230
+
+	production_efficiency	 =	0.02
+	governing_capacity = 250
+}
+
+technology = {
+	# Tech 41
+	year = 2237
+	
+	
+	
+}
+
+technology = {
+	# Tech 42
+	year = 2244
+
+	allowed_idea_groups = 20
+	production_efficiency	 =	0.02
+}
+
+technology = {
+	# Tech 43
+	year = 2251
+	production_efficiency	 =	0.01
+	
+}
+
+technology = {
+	# Tech 44
+	year = 2258
+	production_efficiency	 =	0.01
+	
+}
+
+# Pre-era techs
+technology = {
+	# Tech 45
+	year = 2265
+	allowed_idea_groups = 21
+}
+
+technology = {
+	# Tech 46
+	year = 2272
+
+	production_efficiency	 =	0.02
+	governing_capacity = 250
+	
+}
+
+technology = {
+	# Tech 47
+	year = 2279
+		production_efficiency	 =	0.01
+}
+
+# The 30 big techs from here on
+
+technology = {
+	# Tech 48
+	year = 2286
+
+	production_efficiency	 =	0.01
+	governing_capacity = 250
+}
+
+technology = {
+	# Tech 49
+	year = 2293
+	allowed_idea_groups = 22
+
+}
+
+technology = {
+	# Tech 50
+	year = 2300
+	
+	production_efficiency	 =	0.02
+	development_efficiency = 0.1
+	
+}
+
+technology = {
+	# Tech 51
+	year = 2307
+	production_efficiency	 =	0.01
+
+}
+
+technology = {
+	# Tech 52
+	year = 2314
+	allowed_idea_groups = 23
+}
+
+technology = {
+	# Tech 53
+	year = 2321
+	
+	
+}
+
+technology = {
+	# Tech 54
+	year = 2328
+	governing_capacity = 250
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 55
+	year = 2335
+	production_efficiency	 =	0.01
+	
+}
+
+technology = {
+	# Tech 56
+	year = 2342
+	
+	allowed_idea_groups = 24
+}
+
+technology = {
+	# Tech 57
+	year = 2349
+	
+	
+	governing_capacity = 250
+}
+
+technology = {
+	# Tech 58
+	year = 2356
+	
+
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 59
+	year = 2363
+	allowed_idea_groups = 25
+	governing_capacity = 250
+}
+
+technology = {
+	# Tech 60
+	year = 2370
+	
+	production_efficiency	 =	0.01
+	
+}
+
+technology = {
+	# Tech 61
+	year = 2377
+	
+
+	
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 62
+	year = 2384
+	allowed_idea_groups = 26
+	
+
+	
+	
+	
+}
+
+technology = {
+	# Tech 63
+	year = 2391
+	
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 64
+	year = 2398	
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 65
+	year = 2405
+	allowed_idea_groups = 27
+
+	
+}
+
+technology = {
+	# Tech 66
+	year = 2412
+	
+	production_efficiency 	=	0.05
+	governing_capacity = 250
+
+}
+
+technology = {
+	# Tech 67
+	year = 2419
+	production_efficiency	 =	0.01
+
+}
+
+technology = {
+	# Tech 68
+	year = 2426
+
+	
+		
+}
+
+technology = {
+	# Tech 69
+	year = 2433
+
+	allowed_idea_groups = 28
+	
+}
+
+technology = {
+	# Tech 70
+	year = 2440
+	
+	
+	production_efficiency 	=	0.05
+	
+}
+
+technology = {
+	# Tech 71
+	year = 2447
+	production_efficiency	 =	0.01
+
+}
+
+technology = {
+	# Tech 72
+	year = 2454
+	governing_capacity = 250
+	
+		
+	
+	
+}
+
+technology = {
+	# Tech 73
+	year = 2461
+	allowed_idea_groups = 29
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 74
+	year = 2469
+	production_efficiency	 =	0.01
+}
+
+technology = {
+	# Tech 75
+	year = 2476
+
+	#Improved Draft Animals
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 76
+	year = 2483
+	
+	
+
+	
+	governing_capacity = 250
+}
+
+technology = {
+	# Tech 77
+	year = 2490
+	
+	allowed_idea_groups = 30
+	
+		
+}
+
+technology = {
+	# Tech 78
+	year = 2497
+	
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 79
+	year = 2504
+
+	#Secularism
+	
+}
+
+technology = {
+	# Tech 80
+	year = 2511
+	
+	allowed_idea_groups = 31
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 81
+	year = 2519
+
+	production_efficiency	 =	0.01
+	
+
+}
+
+technology = {
+	# Tech 82
+	year = 2526
+
+	
+	production_efficiency 	=	0.05
+		
+}
+
+technology = {
+	# Tech 83
+	year = 2533
+	governing_capacity = 250
+
+}
+
+technology = {
+	# Tech 84
+	year = 2540
+	
+	allowed_idea_groups = 32
+
+	
+
+
+}
+
+technology = {
+	# Tech 85
+	year = 2547
+
+
+	
+	
+	production_efficiency 	=	0.05
+	
+}
+
+technology = {
+	# Tech 86
+	year = 2554
+
+
+}
+
+technology = {
+	# Tech 87
+	year = 2561
+
+	
+	governing_capacity = 250
+}
+
+technology = {
+	# Tech 88
+	year = 2568
+	
+	allowed_idea_groups = 33
+
+		
+}
+
+technology = {
+	# Tech 89
+	year = 2575
+
+
+	
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 90
+	year = 2590
+
+	governing_capacity = 250
+
+}
+
+technology = {
+	# Tech 91
+	year = 2605
+
+	allowed_idea_groups = 34
+
+}
+
+technology = {
+	# Tech 92
+	year = 2520
+
+		
+}
+
+technology = {
+	# Tech 93
+	year = 2535
+
+
+	
+	governing_capacity = 250
+
+}
+
+technology = {
+	# Tech 94
+	year = 2550
+
+	governing_capacity = 250
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 95
+	year = 2565
+
+
+	
+}
+
+technology = {
+	# Tech 96
+	year = 2580
+
+
+		
+}
+
+technology = {
+	# Tech 97
+	year = 2695
+
+	
+	governing_capacity = 250
+
+}
+
+technology = {
+	# Tech 98
+	year = 2710
+
+	production_efficiency 	=	0.1
+}
+
+technology = {
+	# Tech 99
+	year = 2725
+
+	governing_capacity = 250
+	
+}

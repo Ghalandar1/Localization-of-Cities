@@ -1,0 +1,41 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 64  64  64 }
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	zombies_unit
+}
+
+monarch_names = {
+	" " = 100
+}
+
+leader_names = {
+	"Uurgh"
+	"Aaargh"
+	"Hluurgh"
+	"Hreegh"
+	"Vraugh"
+	"Yyyrgh"
+	"Waagh"
+	
+}
+
+ship_names = {
+	There should be no zombie ships at all
+}
+
+
+army_names = {
+	"Horde of $PROVINCE$" 
+}
+
+fleet_names = {
+	"It shouldn't exist"
+}

@@ -1,0 +1,186 @@
+#Plactate menu
+namespace = pm_menu_plactate
+country_event = {
+    id = pm_menu_plactate.1
+    title = "pm_plactate_menu_title"
+    desc = "pm_plactate_menu_desc"
+    is_triggered_only = yes
+
+    #Corrupt
+    option = {
+        name = "pm_plactate_gift"
+        trigger = {
+            event_target:pm_target = {
+                NOT = {
+                has_country_modifier = pm_flag_gift
+                }
+            }
+        
+        }
+        event_target:pm_target = {
+            add_years_of_income = 2
+            add_liberty_desire = -10
+            hidden_effect = {
+                add_country_modifier = {
+                    name = pm_flag_gift
+                    duration = 180
+                } 
+            }
+
+        }
+        event_target:pm_overlord = {
+            add_corruption = 2.5
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+#Send manpower
+option = {
+    name = "pm_send_manpower"
+    trigger = { 
+        event_target:pm_target = {
+        NOT = {
+            manpower_percentage = 0.75
+            has_country_modifier = pm_flag_giftmp
+        }
+        }
+        event_target:pm_overlord = {
+            manpower_percentage = 0.25
+        }
+    }
+    hidden_effect = {
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_flag_giftmp
+                duration = 180
+                
+            }            
+        }
+
+    }
+    event_target:pm_target = {
+        add_liberty_desire = -10
+    }
+    #Send 1000
+    if = {
+        limit = { 
+            #check_variable = { which = manpower_to_send value = 0.1 }
+            NOT = { check_variable = { which = manpower_to_send value = 5 } }
+        }
+        add_manpower = -1
+        event_target:pm_target = {
+            add_manpower = 1
+        }
+    }
+    #Send 5000
+    if = {
+        limit = { 
+            check_variable = { which = manpower_to_send value = 5 } 
+            NOT = { check_variable = { which = manpower_to_send value = 10 } }
+        }
+        add_manpower = -5
+        event_target:pm_target = {
+            add_manpower = 5
+        }
+    }
+    #Send 10000
+    if = {
+        limit = { 
+            check_variable = { which = manpower_to_send value = 10 }
+            NOT = { check_variable = { which = manpower_to_send value = 25 } }
+        }
+        add_manpower = -10
+        event_target:pm_target = {
+            add_manpower = 10
+        } 
+    }
+    #Send 25000
+    if = {
+        limit = { 
+            check_variable = { which = manpower_to_send value = 25 }
+            NOT = { check_variable = { which = manpower_to_send value = 50 } }
+        }
+        add_manpower = -25
+        event_target:pm_target = {
+            add_manpower = 25
+        }
+    }
+    #Send 50000
+    if = {
+        limit = { 
+            check_variable = { which = manpower_to_send value = 50 }
+        }
+        add_manpower = -50
+        event_target:pm_target = {
+            add_manpower = 50
+        }
+    }
+    hidden_effect = {
+        clr_global_flag = pm_diplomacy_engaged
+    }
+}
+#Legitimise goverment
+option = {
+    name = "pm_send_legit"
+    trigger = {
+        event_target:pm_target = {
+            NOT = {
+            legitimacy_equivalent = 90 
+            }
+        }
+    }
+    event_target:pm_target = {
+        increase_legitimacy_small_effect = yes 
+        add_liberty_desire = -10
+        hidden_effect = {
+            add_country_modifier = {
+                name = pm_flag_legit
+                duration = 180
+            }
+        }
+
+    }
+    event_target:pm_overlord = {
+        reduce_legitimacy_medium_effect = yes
+    }
+    hidden_effect = {
+        clr_global_flag = pm_diplomacy_engaged
+    }
+}
+#Dev
+option = {
+    name = "pm_send_dev1"
+    trigger = {
+        event_target:pm_target = {
+            has_country_modifier = pm_dev
+        }
+    }
+        event_target:pm_target = {
+            add_mercantilism = 1
+            add_liberty_desire = -10
+            hidden_effect = {
+                add_country_modifier = {
+                    name = pm_flag_dev1
+                    duration = 180
+                }
+            }
+        }
+        event_target:pm_overlord = {
+            add_mercantilism = -2
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    
+}
+    #Quit
+    option = {
+        name = "pm_back_basic"
+        hidden_effect = {
+        country_event = {
+            id = pm_menu.1
+        }
+    }
+    }
+}

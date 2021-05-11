@@ -1,0 +1,76 @@
+
+########## Ivory
+failling_chinaware_price_root = { production_efficiency = 0.35 }
+failling_chinaware_price_root_25 = { production_efficiency = 0.15 }
+failling_chinaware_price_root_1 = { }
+failling_chinaware_price_root_1_25 = { }
+failling_chinaware_price_from = { production_efficiency = 0.35 }
+failling_chinaware_price_from_25 = { production_efficiency = 0.15 }
+rising_chinaware_price_root = {   production_efficiency = -0.35	}
+rising_chinaware_price_root_25 = {   production_efficiency = -0.15	}
+rising_chinaware_price_root_1 = {   }
+rising_chinaware_price_root_1_25 = {   }
+rising_chinaware_price_from = {   production_efficiency = -0.35	}
+rising_chinaware_price_from_25 = {   production_efficiency = -0.15	}
+
+
+########## Grain
+failling_coffee_price_root ={  production_efficiency = 0.35 }
+failling_coffee_price_root_25 ={  production_efficiency = 0.15 }
+failling_coffee_price_root_1 = {  }
+failling_coffee_price_from = { production_efficiency = 0.35 }
+failling_coffee_price_from_25 = { production_efficiency = 0.15 }
+failling_coffee_price_root_1_25 = {  }
+rising_coffee_price_root = { production_efficiency = -0.35 }
+rising_coffee_price_root_25 = { production_efficiency = -0.15 }
+rising_coffee_price_root_1 = {  }
+rising_coffee_price_root_1_25 = {  }
+rising_coffee_price_from = { production_efficiency = -0.35 }
+rising_coffee_price_from_25 = { production_efficiency = -0.15 }
+
+
+########## Salt
+failling_cocoa_price_root = { production_efficiency = 0.35 }
+failling_cocoa_price_root_25 = { production_efficiency = 0.15 }
+failling_cocoa_price_root_1 = {  }
+failling_cocoa_price_from = { production_efficiency = 0.35 }
+failling_cocoa_price_from_25 = { production_efficiency = 0.15 }
+rising_cocoa_price_root = { production_efficiency = -0.35 }
+rising_cocoa_price_root_25 = { production_efficiency = -0.15 }
+rising_cocoa_price_root_1 = {  }
+rising_cocoa_price_from = { production_efficiency = -0.35 }
+rising_cocoa_price_from_25 = { production_efficiency = -0.15 }
+failling_cocoa_price_root_1_25 = {  }
+rising_cocoa_price_root_1_25 = {  }
+
+
+
+
+
+
+
+
+
+##################### other country #####################
+low_chinaware_price_1_50 = { production_efficiency = 0.2 }
+much_chinaware_price_1_50 = { production_efficiency = -0.2 }
+low_chinaware_price_1_25 = { production_efficiency = 0.1 }
+much_chinaware_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_coffee_price_1_50 = { production_efficiency = 0.2 }
+much_coffee_price_1_50 = { production_efficiency = -0.2 }
+low_coffee_price_1_25 = { production_efficiency = 0.1 }
+much_coffee_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_cocoa_price_1_50 = { production_efficiency = 0.2 }
+much_cocoa_price_1_50 = { production_efficiency = -0.2 }
+low_cocoa_price_1_25 = { production_efficiency = 0.1 }
+much_cocoa_price_1_25 = { production_efficiency = -0.1 }
+
+
+
+
+
+

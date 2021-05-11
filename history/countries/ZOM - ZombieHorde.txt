@@ -1,0 +1,19 @@
+government = tribal
+#add_government_reform = steppe_horde
+government_rank = 3
+mercantilism = 0.25
+technology_group = zombie
+religion = r_zombie
+primary_culture = zombiec
+capital = 1878	# Aachen
+
+1444.1.1 = {
+	monarch = {
+		name = "Urgh"
+		dynasty = "Zombie"
+		birth_date = 1409.10.5
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}

@@ -1,0 +1,161 @@
+objectTypes = {
+
+	###########################################################################
+	############												###############
+	############                    Heavy ships                 ###############
+	############												###############
+	###########################################################################
+	
+		pdxmesh = {
+		name = "indian_heavy_1_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+
+		animation = { id = "idle"	type = "indian_heavy_1_idle_animation" }
+		animation = { id = "walk"	type = "indian_heavy_1_walk_animation" }
+		animation = { id = "attack"	type = "indian_heavy_1_attack_animation"}
+		scale = 1.8
+	}
+	
+		pdxmesh = {
+		name = "indian_heavy_2_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+
+		animation = { id = "idle"	type = "indian_heavy_2_idle_animation" }
+		animation = { id = "walk"	type = "indian_heavy_2_walk_animation" }
+		animation = { id = "attack"	type = "indian_heavy_2_attack_animation"}
+		scale = 1.8
+	}
+	
+	
+	pdxmesh = {
+		name = "indian_heavy_3_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+
+		animation = { id = "idle"	type = "indian_heavy_3_idle_animation" }
+		animation = { id = "walk"	type = "indian_heavy_3_walk_animation" }
+		animation = { id = "attack"	type = "indian_heavy_3_attack_animation"}
+		scale = 1.8
+	}
+	
+
+	###########################################################################
+	############												###############
+	############                    light ships                 ###############
+	############												###############
+	###########################################################################
+	
+		pdxmesh = {
+		name = "indian_light_1_mesh"
+		file = "gfx\models\ships\barque.mesh"
+
+		animation = { id = "idle"	type = "indian_light_1_idle_animation" }
+		animation = { id = "walk"	type = "indian_light_1_walk_animation" }
+		animation = { id = "attack"	type = "indian_light_1_attack_animation"}
+		scale = 1.1
+	}
+	
+		pdxmesh = {
+		name = "indian_light_2_mesh"
+		file = "gfx\models\ships\barque.mesh"
+
+		animation = { id = "idle"	type = "indian_light_2_idle_animation" }
+		animation = { id = "walk"	type = "indian_light_2_walk_animation" }
+		animation = { id = "attack"	type = "indian_light_2_attack_animation"}
+		scale = 1.1
+	}
+	
+	
+	pdxmesh = {
+		name = "indian_light_3_mesh"
+		file = "gfx\models\ships\barque.mesh"
+
+		animation = { id = "idle"	type = "indian_light_3_idle_animation" }
+		animation = { id = "walk"	type = "indian_light_3_walk_animation" }
+		animation = { id = "attack"	type = "indian_light_3_attack_animation"}
+		scale = 1.1
+	}	
+	
+	
+	
+	
+	
+	
+	###########################################################################
+	############												###############
+	############                    Transports                  ###############
+	############												###############
+	###########################################################################
+	
+
+	
+		pdxmesh = {
+		name = "indian_transport_1_mesh"
+		file = "gfx\models\ships\cog.mesh"
+
+		animation = { id = "idle"	type = "indian_transport_1_idle_animation" }
+		animation = { id = "walk"	type = "indian_transport_1_walk_animation" }
+		animation = { id = "attack"	type = "indian_transport_1_attack_animation"}
+		scale = 1.1
+	}
+	
+	pdxmesh = {
+		name = "indian_transport_2_mesh"
+		file = "gfx\models\ships\cog.mesh"
+
+		animation = { id = "idle"	type = "indian_transport_2_idle_animation" }
+		animation = { id = "walk"	type = "indian_transport_2_walk_animation" }
+		animation = { id = "attack"	type = "indian_transport_2_attack_animation"}
+		scale = 1.1
+	}
+
+		pdxmesh = {
+		name = "indian_transport_3_mesh"
+		file = "gfx\models\ships\cog.mesh"
+
+		animation = { id = "idle"	type = "indian_transport_3_idle_animation" }
+		animation = { id = "walk"	type = "indian_transport_3_walk_animation" }
+		animation = { id = "attack"	type = "indian_transport_3_attack_animation"}
+		scale = 1.1
+	}
+
+	###########################################################################
+	############												###############
+	############                    Galleys                     ###############
+	############												###############
+	###########################################################################
+
+	pdxmesh = {
+		name = "indian_galley_1_mesh"
+		file = "gfx\models\ships\galley.mesh"
+
+		animation = { id = "idle"	type = "indian_galley_1_idle_animation" }
+		animation = { id = "walk"	type = "indian_galley_1_walk_animation" }
+		animation = { id = "attack"	type = "indian_galley_1_attack_animation"}
+		scale = 1.3
+	}
+
+	pdxmesh = {
+		name = "indian_galley_2_mesh"
+		file = "gfx\models\ships\galley.mesh"
+
+		animation = { id = "idle"	type = "indian_galley_2_idle_animation" }
+		animation = { id = "walk"	type = "indian_galley_2_walk_animation" }
+		animation = { id = "attack"	type = "indian_galley_2_attack_animation"}
+		scale = 1.3
+	}
+
+
+	
+	pdxmesh = {
+		name = "indian_galley_3_mesh"
+		file = "gfx\models\ships\galley.mesh"
+
+		animation = { id = "idle"	type = "indian_galley_3_idle_animation" }
+		animation = { id = "walk"	type = "indian_galley_3_walk_animation" }
+		animation = { id = "attack"	type = "indian_galley_3_attack_animation"}
+		scale = 1.3
+	}
+
+
+
+}

@@ -1,0 +1,3208 @@
+#######################################    Trade   ############################
+
+#######################################   Oil  50    ##############################
+
+	low_oil_50 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+					production_leader = {
+							trade_goods = oil
+						}
+					production_leader = {
+							trade_goods = uranium  
+						}
+					production_leader = {
+							trade_goods = electronics    
+						}
+					production_leader = {
+							trade_goods = gold    
+					}
+				}
+			FROM = { any_owned_province = { trade_goods = oil } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 30
+				stability = 1
+				treasury = 35000
+				total_development = 2000
+				
+				reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_oil_price_root_1
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_oil_price_root_1
+					}
+				}
+				OR = {
+					production_leader = {
+							trade_goods = oil
+						}
+					production_leader = {
+							trade_goods = uranium  
+						}
+					production_leader = {
+							trade_goods = electronics    
+						}
+					production_leader = {
+							trade_goods = gold    
+					}
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 20000
+				stability = 1
+				total_development = 700
+				NOT = {
+				FROM = { 
+					has_country_modifier = failling_oil_price_from
+				}
+			}
+				any_owned_province = { trade_goods = oil }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = oil
+				key = OIL_LOW
+				value = -0.5
+				duration = 1825
+			}
+		
+			every_country = {
+					
+			
+				if = {	
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = oil }
+					}
+					add_country_modifier = {
+								name = much_oil_price_1_50
+								duration = 1825
+					} 
+				}
+				if = {
+            limit = {
+                NOT = { tag = ROOT }
+				NOT = { tag = FROM }
+			}
+					
+					add_country_modifier = {
+						name = low_oil_price_1_50
+						duration = 1825
+					}
+				}
+				
+				}
+				
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_oil_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_oil_good_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_oil_good_50
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_oil_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_oil_bad_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_oil_bad_50
+					}
+				
+	
+				}
+			}
+			
+		
+			
+			
+			
+			
+			ROOT = {
+	
+				add_treasury = -35000
+				add_country_modifier = {
+					name = failling_oil_price_root
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_oil_price_root_1
+					duration = 1825
+				}
+				
+				
+			}
+			FROM = { 
+				add_treasury = -20000
+				add_country_modifier = {
+					name = failling_oil_price_from
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_oil_price_root_1
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	much_oil_50 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+					production_leader = {
+							trade_goods = oil
+						}
+					production_leader = {
+							trade_goods = uranium  
+						}
+					production_leader = {
+							trade_goods = electronics    
+						}
+					production_leader = {
+							trade_goods = gold    
+					}
+				}
+			FROM = { any_owned_province = { trade_goods = oil } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 30
+				treasury = 35000
+				stability = 1
+				total_development = 2000
+				reverse_has_opinion = { 
+					who = FROM value = 5
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_oil_price_root_1
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_oil_price_root_1
+					}
+				}
+				
+				OR = {
+					production_leader = {
+							trade_goods = oil
+						}
+					production_leader = {
+							trade_goods = uranium  
+						}
+					production_leader = {
+							trade_goods = electronics    
+						}
+					production_leader = {
+							trade_goods = gold    
+					}
+				}
+			}
+			FROM = {
+				
+				treasury = 20000
+				stability = 1
+				total_development = 700
+				NOT = {
+				FROM = { 
+					has_country_modifier = rising_oil_price_from
+				}
+			}
+				any_owned_province = { trade_goods = oil }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = oil
+				key = OIL_MUCH
+				value = 0.5
+				duration = 1825
+			}
+			
+			every_country = { 
+							
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = oil }
+						
+					}
+					add_country_modifier = {
+							name = much_oil_price_1_50
+							duration = 1825
+						}
+				}
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+					
+					add_country_modifier = {
+							name = low_oil_price_1_50
+							duration = 1825
+					}
+				}
+			}
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_oil_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_oil_bad_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_oil_bad_50
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_oil_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_oil_good_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_oil_good_50
+					}
+				
+	
+				}
+			}
+			
+			
+			
+			
+			ROOT = {
+	
+				add_treasury = -35000
+				add_country_modifier = {
+					name = rising_oil_price_root
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_oil_price_root_1
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -20000
+				add_country_modifier = {
+					name = rising_oil_price_from
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_oil_price_root_1
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	###################################################    Oil 25    #########################################
+	
+	
+	
+	low_oil_25 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+			any_owned_province = { trade_goods = oil }
+			any_owned_province = { trade_goods = uranium }
+			any_owned_province = { trade_goods = electronics }
+			production_leader = {
+				trade_goods = gold    
+			}
+			
+			}
+			FROM = { any_owned_province = { trade_goods = oil } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 20
+				treasury = 15000
+				stability = 1
+				total_development = 1250
+				reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+				
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_oil_price_root_1_25
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_oil_price_root_1_25
+					}
+				}
+				OR = {
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = oil
+						}
+						amount = 5
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = uranium
+						}
+						amount = 3
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = electronics
+						}
+						amount = 3
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 10000
+				stability = 1
+				total_development = 700
+				
+				
+				any_owned_province = { trade_goods = oil }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = oil
+				key = OIL_LOW
+				value = -0.25
+				duration = 1825
+			}
+			
+			
+			
+			every_country = {
+				
+				if = {	
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = oil }
+					}
+					add_country_modifier = {
+								name = much_oil_price_1_25
+								duration = 1825
+					} 
+				}
+				if = {
+					limit = {
+                        NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+
+					
+					add_country_modifier = {
+						name = low_oil_price_1_25
+						duration = 1825
+					}
+				}
+			}
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_oil_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_oil_good_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_oil_good_25
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_oil_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_oil_bad_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_oil_bad_25
+					}
+				
+	
+				}
+			}
+	
+			
+			ROOT = {
+	
+				add_treasury = -15000
+				add_country_modifier = {
+					name = failling_oil_price_root_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_oil_price_root_1_25
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -10000
+				add_country_modifier = {
+					name = failling_oil_price_from_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_oil_price_root_1_25
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	much_oil_25 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+			any_owned_province = { trade_goods = oil }
+			any_owned_province = { trade_goods = uranium }
+			any_owned_province = { trade_goods = electronics }
+			production_leader = {
+				trade_goods = gold    
+			}
+			
+			}
+			FROM = { any_owned_province = { trade_goods = oil } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 20
+				treasury = 15000
+				stability = 1
+				total_development = 1250
+				reverse_has_opinion = { 
+					who = FROM value = 5
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_oil_price_root_1_25
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_oil_price_root_1_25
+					}
+				}
+				OR = {
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = oil
+						}
+						amount = 5
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = uranium
+						}
+						amount = 3
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = electronics
+						}
+						amount = 3
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 10000
+				stability = 1
+				total_development = 700
+				
+				any_owned_province = { trade_goods = oil  }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = oil
+				key = OIL_MUCH
+				value = 0.25
+				duration = 1825
+			}
+			
+			every_country = { 
+							
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = oil }
+						
+					}
+					add_country_modifier = {
+							name = low_oil_price_1_25
+							duration = 1825
+					}
+				}
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+
+						
+					
+					add_country_modifier = {
+							name = much_oil_price_1_25
+							duration = 1825
+					}
+				}
+			}
+			
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_oil_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_oil_good_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_oil_good_25
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_oil_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_oil_bad_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_oil_bad_25
+					}
+				
+	
+				}
+			}
+			
+			
+			ROOT = {
+	
+				add_treasury = -15000
+				add_country_modifier = {
+					name = rising_oil_price_root_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_oil_price_root_1_25
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -10000
+				add_country_modifier = {
+					name = rising_oil_price_from_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_oil_price_root_1_25
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	
+	################################################            Electronics             #################################### 
+	
+	
+	
+	
+	low_electronics_50 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+					production_leader = {
+							trade_goods = oil
+						}
+					production_leader = {
+							trade_goods = uranium  
+						}
+					production_leader = {
+							trade_goods = electronics    
+						}
+					production_leader = {
+							trade_goods = gold    
+					}
+				}
+			FROM = { any_owned_province = { trade_goods = electronics } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 30
+				treasury = 35000
+				stability = 1
+				total_development = 2000
+				
+				reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_electronics_price_root_1
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_electronics_price_root_1
+					}
+				}
+				OR = {
+					production_leader = {
+						trade_goods = oil
+					}
+					production_leader = {
+						trade_goods = uranium  
+					}
+					production_leader = {
+						trade_goods = electronics    
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 20000
+				stability = 1
+				total_development = 700
+				NOT = {
+				FROM = { 
+					has_country_modifier = failling_electronics_price_from
+				}
+			}
+				any_owned_province = { trade_goods = electronics }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = electronics
+				key = ELECTRONICS_LOW
+				value = -0.5
+				duration = 1825
+			}
+			
+			
+			every_country = {
+					
+			
+				if = {	
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = electronics }
+					}
+					add_country_modifier = {
+								name = much_electronics_price_1_50
+								duration = 1825
+					} 
+				}
+				if = {
+					limit = {
+                        NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+
+					add_country_modifier = {
+						name = low_electronics_price_1_50
+						duration = 1825
+					}
+				}
+				
+			}
+				
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_electronics_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_electronics_good_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_electronics_good_50
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_electronics_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_electronics_bad_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_electronics_bad_50
+					}
+				
+	
+				}
+			}
+			
+			ROOT = {
+	
+				add_treasury = -35000
+				add_country_modifier = {
+					name = failling_electronics_price_root
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_electronics_price_root_1
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -20000
+				add_country_modifier = {
+					name = failling_electronics_price_from
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_electronics_price_root_1
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	much_electronics_50 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+					production_leader = {
+							trade_goods = oil
+						}
+					production_leader = {
+							trade_goods = uranium  
+						}
+					production_leader = {
+							trade_goods = electronics    
+						}
+					production_leader = {
+							trade_goods = gold    
+					}
+				}
+				FROM = { any_owned_province = { trade_goods = electronics } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 30
+				treasury = 35000
+				stability = 1
+				total_development = 2000
+				reverse_has_opinion = { 
+					who = FROM value = 5
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_electronics_price_root_1
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_electronics_price_root_1
+					}
+				}
+				OR = {
+					production_leader = {
+						trade_goods = oil
+					}
+					production_leader = {
+						trade_goods = uranium  
+					}
+					production_leader = {
+						trade_goods = electronics    
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 20000
+				stability = 1
+				total_development = 700
+				NOT = {
+				FROM = { 
+					has_country_modifier = rising_electronics_price_from
+				}
+			}
+				any_owned_province = { trade_goods = electronics }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = electronics
+				key = ELECTRONICS_MUCH
+				value = 0.5
+				duration = 1825
+			}
+			
+			
+			every_country = { 
+							
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = electronics }
+						
+					}
+					add_country_modifier = {
+							name = much_electronics_price_1_50
+							duration = 1825
+						}
+				}
+				if = {
+					limit = {
+                        NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+
+					add_country_modifier = {
+							name = low_electronics_price_1_50
+							duration = 1825
+					}
+				}
+			}
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_electronics_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_electronics_bad_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_electronics_bad_50
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_electronics_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_electronics_good_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_electronics_good_50
+					}
+				
+	
+				}
+			}
+			
+			
+			ROOT = {
+	
+				add_treasury = -35000
+				add_country_modifier = {
+					name = rising_electronics_price_root
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_electronics_price_root_1
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -20000
+				add_country_modifier = {
+					name = rising_electronics_price_from
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_electronics_price_root_1
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	###################################################    Electronics 25    #########################################
+	
+	
+	
+	low_electronics_25 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+			any_owned_province = { trade_goods = oil }
+			any_owned_province = { trade_goods = uranium }
+			any_owned_province = { trade_goods = electronics }
+			production_leader = {
+				trade_goods = gold    
+			}
+			
+			}
+			FROM = { any_owned_province = { trade_goods = electronics } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 20
+				treasury = 15000
+				stability = 1
+				total_development = 1250
+				reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_electronics_price_root_1_25
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_electronics_price_root_1_25
+					}
+				}
+				OR = {
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = oil
+						}
+						amount = 5
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = uranium
+						}
+						amount = 3
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = electronics
+						}
+						amount = 3
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 10000
+				stability = 1
+				total_development = 700
+				
+				any_owned_province = { trade_goods = electronics }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = electronics
+				key = ELECTRONICS_LOW
+				value = -0.25
+				duration = 1825
+			}
+			
+			
+			every_country = {
+				
+				if = {	
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = electronics }
+					}
+					add_country_modifier = {
+								name = much_electronics_price_1_25
+								duration = 1825
+					} 
+				}
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+
+					
+					add_country_modifier = {
+						name = low_electronics_price_1_25
+						duration = 1825
+					}
+				}
+			}
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_electronics_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_electronics_good_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_electronics_good_25
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_electronics_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_electronics_bad_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_electronics_bad_25
+					}
+				
+	
+				}
+			}
+			
+			
+			
+			
+			ROOT = {
+	
+				add_treasury = -15000
+				add_country_modifier = {
+					name = failling_electronics_price_root_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_electronics_price_root_1_25
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -10000
+				add_country_modifier = {
+					name = failling_electronics_price_from_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_electronics_price_root_1_25
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	much_electronics_25 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+			any_owned_province = { trade_goods = oil }
+			any_owned_province = { trade_goods = uranium }
+			any_owned_province = { trade_goods = electronics }
+			production_leader = {
+				trade_goods = gold    
+			}
+			
+			}
+			FROM = { any_owned_province = { trade_goods = electronics } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 20
+				treasury = 15000
+				stability = 1
+				total_development = 1250
+				reverse_has_opinion = { 
+					who = FROM value = 5
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_electronics_price_root_1_25
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_electronics_price_root_1_25
+					}
+				}
+				OR = {
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = oil
+						}
+						amount = 5
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = uranium
+						}
+						amount = 3
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = electronics
+						}
+						amount = 3
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 10000
+				stability = 1
+				total_development = 700
+				
+				any_owned_province = { trade_goods = electronics  }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = electronics
+				key = ELECTRONICS_MUCH
+				value = 0.25
+				duration = 1825
+			}
+			
+			
+			every_country = { 
+							
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = electronics }
+						
+					}
+					add_country_modifier = {
+							name = low_electronics_price_1_25
+							duration = 1825
+					}
+				}
+				if = {
+					limit = {
+                        NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+
+						
+					
+					add_country_modifier = {
+							name = much_electronics_price_1_25
+							duration = 1825
+					}
+				}
+			}
+			
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_electronics_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_electronics_good_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_electronics_good_25
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_electronics_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_electronics_bad_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_electronics_bad_25
+					}
+				
+	
+				}
+			}
+			
+			
+			
+			ROOT = {
+	
+				add_treasury = -15000
+				add_country_modifier = {
+					name = rising_electronics_price_root_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_electronics_price_root_1_25
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -10000
+				add_country_modifier = {
+					name = rising_electronics_price_from_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_electronics_price_root_1_25
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	####################################################       Uranium      ##############################################
+	
+	
+	
+	
+	low_uranium_50 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+					production_leader = {
+							trade_goods = oil
+						}
+					production_leader = {
+							trade_goods = uranium  
+						}
+					production_leader = {
+							trade_goods = electronics    
+						}
+					production_leader = {
+							trade_goods = gold    
+					}
+				}
+				FROM = { any_owned_province = { trade_goods = uranium } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 30
+				treasury = 35000
+				stability = 1
+				total_development = 2000
+				
+				reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_uranium_price_root_1
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_uranium_price_root_1
+					}
+				}
+				OR = {
+					production_leader = {
+						trade_goods = oil
+					}
+					production_leader = {
+						trade_goods = uranium  
+					}
+					production_leader = {
+						trade_goods = electronics    
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 20000
+				stability = 1
+				total_development = 700
+				NOT = {
+				FROM = { 
+					has_country_modifier = failling_uranium_price_from
+				}
+			}
+				any_owned_province = { trade_goods = uranium }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = uranium
+				key = URANIUM_LOW
+				value = -0.5
+				duration = 1825
+			}
+			
+			
+			every_country = {
+					
+			
+				if = {	
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = uranium }
+					}
+					add_country_modifier = {
+								name = much_uranium_price_1_50
+								duration = 1825
+					} 
+				}
+				if = {
+					limit = {
+                        NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+
+					add_country_modifier = {
+						name = low_uranium_price_1_50
+						duration = 1825
+					}
+				}
+				
+				}
+				
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_uranium_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_uranium_good_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_uranium_good_50
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_uranium_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_uranium_bad_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_uranium_bad_50
+					}
+				
+	
+				}
+			}
+			
+			
+			
+			ROOT = {
+	
+				add_treasury = -35000
+				add_country_modifier = {
+					name = failling_uranium_price_root
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_uranium_price_root_1
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -20000
+				add_country_modifier = {
+					name = failling_uranium_price_from
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_uranium_price_root_1
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	much_uranium_50 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+					production_leader = {
+							trade_goods = oil
+						}
+					production_leader = {
+							trade_goods = uranium  
+						}
+					production_leader = {
+							trade_goods = electronics    
+						}
+					production_leader = {
+							trade_goods = gold    
+					}
+				}
+			FROM = { any_owned_province = { trade_goods = uranium } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 30
+				treasury = 35000
+				total_development = 2000
+				stability = 1
+				reverse_has_opinion = { 
+					who = FROM value = 5
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_uranium_price_root_1
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_uranium_price_root_1
+					}
+				}
+				OR = {
+					production_leader = {
+						trade_goods = oil
+					}
+					production_leader = {
+						trade_goods = uranium  
+					}
+					production_leader = {
+						trade_goods = electronics    
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 20000
+				stability = 1
+				total_development = 700
+				NOT = {
+				FROM = { 
+					has_country_modifier = rising_uranium_price_from
+				}
+			}
+				any_owned_province = { trade_goods = uranium }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = uranium
+				key = URANIUM_MUCH
+				value = 0.5
+				duration = 1825
+			}
+			
+			
+			every_country = { 
+							
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = uranium }
+						
+					}
+					add_country_modifier = {
+							name = much_uranium_price_1_50
+							duration = 1825
+						}
+				}
+				if = {
+					limit = {
+                        NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+					
+
+					
+					add_country_modifier = {
+							name = low_uranium_price_1_50
+							duration = 1825
+					}
+				}
+			}
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_uranium_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_uranium_bad_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_uranium_bad_50
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_uranium_price_1_50
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_uranium_good_50
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_uranium_good_50
+					}
+				
+	
+				}
+			}
+			
+			
+			
+			
+			ROOT = {
+	
+				add_treasury = -35000
+				add_country_modifier = {
+					name = rising_uranium_price_root
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_uranium_price_root_1
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -20000
+				add_country_modifier = {
+					name = rising_uranium_price_from
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_uranium_price_root_1
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	###################################################    Uranium 25    #########################################
+	
+	
+	
+	low_uranium_25 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		is_visible = {
+			OR = {
+			any_owned_province = { trade_goods = oil }
+			any_owned_province = { trade_goods = uranium }
+			any_owned_province = { trade_goods = electronics }
+			production_leader = {
+				trade_goods = gold    
+			}
+			
+			}
+			FROM = { any_owned_province = { trade_goods = uranium } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 20
+				treasury = 15000
+				total_development = 1250
+				stability = 1
+				reverse_has_opinion = { 
+				who = FROM value = 5
+			}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_uranium_price_root_1_25
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_uranium_price_root_1_25
+					}
+				}
+				OR = {
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = oil
+						}
+						amount = 5
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = uranium
+						}
+						amount = 3
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = electronics
+						}
+						amount = 3
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 10000
+				stability = 1
+				total_development = 700
+				
+				
+				any_owned_province = { trade_goods = uranium }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = uranium
+				key = URANIUM_LOW
+				value = -0.25
+				duration = 1825
+			}
+			
+			
+			
+			
+			every_country = {
+				
+				if = {	
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = uranium }
+					}
+					add_country_modifier = {
+								name = much_uranium_price_1_25
+								duration = 1825
+					} 
+				}
+				if = {
+					limit = {
+                        NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}
+					
+
+					
+					add_country_modifier = {
+						name = low_uranium_price_1_25
+						duration = 1825
+					}
+				}
+			}
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_uranium_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_uranium_good_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_uranium_good_25
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_uranium_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = low_opinion_uranium_bad_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = low_opinion_uranium_bad_25
+					}
+				
+	
+				}
+			}
+			
+			
+			
+			
+			
+			ROOT = {
+	
+				add_treasury = -15000
+				add_country_modifier = {
+					name = failling_uranium_price_root_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_uranium_price_root_1_25
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -10000
+				add_country_modifier = {
+					name = failling_uranium_price_from_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = failling_uranium_price_root_1_25
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+	
+	
+	
+	
+	much_uranium_25 = {
+		category = papacy
+		require_acceptance = yes
+		alert_index = 43
+		alert_tooltip = ICON_TRADELEAGUEINVITE
+		
+		
+		is_visible = {
+			OR = {
+			any_owned_province = { trade_goods = oil }
+			any_owned_province = { trade_goods = uranium }
+			any_owned_province = { trade_goods = electronics }
+			production_leader = {
+				trade_goods = gold    
+			}
+			
+			}
+			FROM = { any_owned_province = { trade_goods = uranium } }
+		}
+		
+		is_allowed = {	
+			ROOT = {
+				prestige = 20
+				treasury = 15000
+				total_development = 1250
+				stability = 1
+				reverse_has_opinion = { 
+					who = FROM value = 5
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = rising_uranium_price_root_1_25
+					}
+				}
+				NOT = { 	
+					ROOT = { 
+						has_country_modifier = failling_uranium_price_root_1_25
+					}
+				}
+				OR = {
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = oil
+						}
+						amount = 5
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = uranium
+						}
+						amount = 3
+					}
+					calc_true_if = {
+						all_owned_province = {
+							trade_goods = electronics
+						}
+						amount = 3
+					}
+					production_leader = {
+						trade_goods = gold    
+					}
+				
+				}
+				
+			}
+			FROM = {
+				
+				treasury = 10000
+				stability = 1
+				total_development = 700
+				
+				any_owned_province = { trade_goods = uranium  }
+	
+				
+			}
+			}
+		
+		
+		on_accept = {
+		
+			change_price = {
+				trade_goods = uranium
+				key = URANIUM_MUCH
+				value = 0.25
+				duration = 1825
+			}
+			
+			
+	
+	
+			every_country = { 
+							
+				if = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+						any_owned_province = { trade_goods = uranium }
+						
+					}
+					add_country_modifier = {
+							name = low_uranium_price_1_25
+							duration = 1825
+					}
+				}
+				if = {
+					limit = {
+                        NOT = { tag = ROOT }
+						NOT = { tag = FROM }
+					}					
+					
+					add_country_modifier = {
+							name = much_uranium_price_1_25
+							duration = 1825
+					}
+				}
+			}
+			
+			
+			every_known_country = {
+			
+				if = {
+					limit = {
+						has_country_modifier = low_uranium_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_uranium_good_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_uranium_good_25
+					}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = much_uranium_price_1_25
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = much_opinion_uranium_bad_25
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = much_opinion_uranium_bad_25
+					}
+				
+	
+				}
+			}
+			
+			
+			
+			
+			ROOT = {
+	
+				add_treasury = -15000
+				add_country_modifier = {
+					name = rising_uranium_price_root_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_uranium_price_root_1_25
+					duration = 1825
+				}
+				
+			}
+			FROM = { 
+				add_treasury = -10000
+				add_country_modifier = {
+					name = rising_uranium_price_from_25
+					duration = 1825
+				}
+				add_country_modifier = {
+					name = rising_uranium_price_root_1_25
+					duration = 1825
+				}
+			}
+			
+					
+		}
+		
+		
+		ai_acceptance = {
+		
+			add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+				multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+					name = RIVAL_WITH
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+					multiply_variable = { which = ai_value value = -1 }
+			}
+			
+			add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+		
+			}
+			
+			add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+		
+			}
+			
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+			add_entry = {
+					name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 5 }
+				}
+			
+			add_entry = {
+					name = ALLY_WITH
+					limit = { FROM = { alliance_with = ROOT } } 
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+					}
+			
+			}
+			
+		}
+		
+		ai_will_do = {	
+			
+			FROM = { has_opinion = { who = ROOT value = 145 }   }
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = iqta 
+mercantilism = 0.1
+primary_culture = yemeni_culture
+religion = sunni 
+technology_group = muslim 
+
+religious_school = shafii_school
+capital = 5074 #Hadramaut

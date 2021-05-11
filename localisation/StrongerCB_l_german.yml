@@ -1,0 +1,7 @@
+﻿l_german:
+ cb_stronger: "Weak neighbour"
+ cb_stronger_desc: "Prey on the weak."
+ superiority_stronger: "Show the world we are superior to the weak."
+ superiority_stronger_desc: "War goal is to show our military superiority."
+ ALL_STRONGER: "Attack the weaker"
+ STRONGER_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Prey on the Weak War"

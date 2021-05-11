@@ -1,0 +1,80 @@
+spriteTypes = {
+		
+	spriteType = {
+		name = "GFX_idea_tax_ideas"
+		texturefile = "gfx//interface//ideas//idea_tax_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_army_ideas"
+		texturefile = "gfx//interface//ideas//idea_army_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_artillery_ideas"
+		texturefile = "gfx//interface//ideas//idea_artillery_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_cavalry_ideas"
+		texturefile = "gfx//interface//ideas//idea_cavalry_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_military_base_ideas"
+		texturefile = "gfx//interface//ideas//idea_military_base_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_tax_idea"
+		texturefile = "gfx//interface//ideas//idea_tax_idea.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_taxx2_idea"
+		texturefile = "gfx//interface//ideas//idea_taxx2_idea.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_leadernav0"
+		texturefile = "gfx//interface//ideas//idea_leadernav0.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_nuclear_research"
+		texturefile = "gfx//interface//ideas//idea_nuclear_research.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_medical_research_ideas"
+		texturefile = "gfx//interface//ideas//idea_medical_research_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_medical_army_ideas"
+		texturefile = "gfx//interface//ideas//idea_medical_army_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

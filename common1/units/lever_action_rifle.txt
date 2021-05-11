@@ -1,0 +1,11 @@
+# Lever Action Rifle
+
+type = infantry
+
+maneuver = 3
+offensive_morale = 9
+defensive_morale = 9
+offensive_fire = 6
+defensive_fire = 5
+offensive_shock = 6
+defensive_shock = 5

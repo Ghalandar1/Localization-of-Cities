@@ -1,0 +1,44 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+Zombies = {
+	start = {
+		movement_speed = -0.75
+		land_maintenance_modifier = -0.9
+		
+	}
+
+	bonus = {
+		land_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		tag = ZOM
+	}
+	free = yes		#will be added at load.
+	
+	#frontier_walls = {
+	#	defensiveness = 0.2
+	#}
+	#road_network = {
+	#	movement_speed = 0.15
+	#	production_efficiency = 0.10
+	#}
+	#roman_architecture = {
+	#	build_cost = -0.25
+	#}
+	#imperial_bureaucracy = {
+	#	global_tax_modifier = 0.1
+	#}
+	#romanization = {
+	#	core_creation = -0.25
+	#}
+	#reform_the_legion = {
+	#	discipline = 0.075
+	#}
+	#legacy_of_rome = {
+	#	prestige = 2
+	#}
+}
+

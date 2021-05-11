@@ -1,0 +1,10 @@
+#Merchant Ship
+type = light_ship
+
+hull_size = 12
+base_cannons = 24
+sail_speed = 18
+
+trade_power = 35.0
+
+sprite_level = 4

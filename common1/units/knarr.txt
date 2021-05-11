@@ -1,0 +1,8 @@
+#Knarr
+type = transport
+
+hull_size = 2
+base_cannons = 4
+sail_speed = 22
+
+sprite_level = 2

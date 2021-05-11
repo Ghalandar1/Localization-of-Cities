@@ -1,0 +1,31 @@
+zombiegfx_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		tag = ZOM
+	}
+
+	
+
+	sprite_infantry = {
+		0 = zombiegfx_INFANTRY
+		1 = zombiegfx_INFANTRY
+		2 = zombiegfx_INFANTRY
+		3 = zombiegfx_INFANTRY
+	}
+
+	sprite_cavalry = {
+		0 = zombiegfx_CAVALRY
+		1 = zombiegfx_CAVALRY
+		2 = zombiegfx_CAVALRY
+		3 = zombiegfx_CAVALRY
+	}
+	
+	sprite_artillery = {
+		0 = zombiegfx_ARTILLERY
+		1 = zombiegfx_ARTILLERY
+		2 = zombiegfx_ARTILLERY
+		3 = zombiegfx_ARTILLERY
+	}
+}
+
+

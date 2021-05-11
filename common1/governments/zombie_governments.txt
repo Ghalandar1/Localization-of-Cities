@@ -1,0 +1,33 @@
+####################################
+#
+#Zombie gov
+#
+####################################
+
+#Changed to tribal, because I'm lazy -Sun
+
+zombie_government = {
+	republican_name = yes
+	
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	
+		
+	ai_will_do = {
+		factor = 0
+	}
+	ai_importance = 1
+
+	min_autonomy = 100
+	rank = {
+		
+		1 = {
+			technology_cost = 100
+			idea_cost = 100
+		}
+	}
+	fixed_rank = 1
+}
+
+

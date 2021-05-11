@@ -1,0 +1,85 @@
+
+	### African ###
+entity = {
+	name = "override_africangfx_fort_16th"
+	pdxmesh = "africangfx_fort_16th"
+}
+entity = {
+	name = "override_africangfx_fort_17th"
+	pdxmesh = "africangfx_fort_17th"
+}
+entity = {
+	name = "override_africangfx_fort_18th"
+	pdxmesh = "africangfx_fort_18th"
+}
+
+
+	### Asian ###
+entity = {
+	name = "override_asiangfx_fort_16th"
+	pdxmesh = "asiangfx_fort_16th"
+}
+entity = {
+	name = "override_asiangfx_fort_17th"
+	pdxmesh = "asiangfx_fort_17th"
+}
+entity = {
+	name = "override_asiangfx_fort_18th"
+	pdxmesh = "asiangfx_fort_18th"
+}
+
+	### Indian ###
+entity = {
+	name = "override_indiangfx_fort_16th"
+	pdxmesh = "indiangfx_fort_16th"
+}
+entity = {
+	name = "override_indiangfx_fort_17th"
+	pdxmesh = "indiangfx_fort_17th"
+}
+entity = {
+	name = "override_indiangfx_fort_18th"
+	pdxmesh = "indiangfx_fort_18th"
+}
+
+	### Muslim ###
+entity = {
+	name = "override_muslimgfx_fort_16th"
+	pdxmesh = "muslimgfx_fort_16th"
+}
+entity = {
+	name = "override_muslimgfx_fort_17th"
+	pdxmesh = "muslimgfx_fort_17th"
+}
+entity = {
+	name = "override_muslimgfx_fort_18th"
+	pdxmesh = "muslimgfx_fort_18th"
+}
+
+	### N.American ###
+entity = {
+	name = "override_northamericagfx_fort_16th"
+	pdxmesh = "northamericagfx_fort_16th"
+}
+entity = {
+	name = "override_northamericagfx_fort_17th"
+	pdxmesh = "northamericagfx_fort_17th"
+}
+entity = {
+	name = "override_northamericagfx_fort_18th"
+	pdxmesh = "northamericagfx_fort_18th"
+}
+
+	### S.American ###
+entity = {
+	name = "override_southamericagfx_fort_16th"
+	pdxmesh = "southamericagfx_fort_16th"
+}
+entity = {
+	name = "override_southamericagfx_fort_17th"
+	pdxmesh = "southamericagfx_fort_17th"
+}
+entity = {
+	name = "override_southamericagfx_fort_18th"
+	pdxmesh = "southamericagfx_fort_18th"
+}

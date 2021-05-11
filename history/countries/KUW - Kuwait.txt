@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = iqta
+set_legacy_government = constitutional_monarchy
+government_rank = 1
+
+
+capital = 8085
+primary_culture = gulf_arabic
+religion = sunni
+religious_school = maliki_school
+technology_group = muslim
+2019.5.30 = {
+	monarch = {
+		name = "Nawaf I"
+		dynasty = "Al-Sabah"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}

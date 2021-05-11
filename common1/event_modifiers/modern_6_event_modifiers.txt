@@ -1,0 +1,76 @@
+
+########## Ivory
+failling_cloth_price_root = { production_efficiency = 0.35 }
+failling_cloth_price_root_25 = { production_efficiency = 0.15 }
+failling_cloth_price_root_1 = { }
+failling_cloth_price_root_1_25 = { }
+failling_cloth_price_from = { production_efficiency = 0.35 }
+failling_cloth_price_from_25 = { production_efficiency = 0.15 }
+rising_cloth_price_root = {   production_efficiency = -0.35	}
+rising_cloth_price_root_25 = {   production_efficiency = -0.15	}
+rising_cloth_price_root_1 = {   }
+rising_cloth_price_root_1_25 = {   }
+rising_cloth_price_from = {   production_efficiency = -0.35	}
+rising_cloth_price_from_25 = {   production_efficiency = -0.15	}
+
+
+########## Grain
+failling_silk_price_root ={  production_efficiency = 0.35 }
+failling_silk_price_root_25 ={  production_efficiency = 0.15 }
+failling_silk_price_root_1 = {  }
+failling_silk_price_from = { production_efficiency = 0.35 }
+failling_silk_price_from_25 = { production_efficiency = 0.15 }
+failling_silk_price_root_1_25 = {  }
+rising_silk_price_root = { production_efficiency = -0.35 }
+rising_silk_price_root_25 = { production_efficiency = -0.15 }
+rising_silk_price_root_1 = {  }
+rising_silk_price_root_1_25 = {  }
+rising_silk_price_from = { production_efficiency = -0.35 }
+rising_silk_price_from_25 = { production_efficiency = -0.15 }
+
+
+########## Salt
+failling_paper_price_root = { production_efficiency = 0.35 }
+failling_paper_price_root_25 = { production_efficiency = 0.15 }
+failling_paper_price_root_1 = {  }
+failling_paper_price_from = { production_efficiency = 0.35 }
+failling_paper_price_from_25 = { production_efficiency = 0.15 }
+rising_paper_price_root = { production_efficiency = -0.35 }
+rising_paper_price_root_25 = { production_efficiency = -0.15 }
+rising_paper_price_root_1 = {  }
+rising_paper_price_from = { production_efficiency = -0.35 }
+rising_paper_price_from_25 = { production_efficiency = -0.15 }
+failling_paper_price_root_1_25 = {  }
+rising_paper_price_root_1_25 = {  }
+
+
+
+
+
+
+
+
+
+##################### other country #####################
+low_cloth_price_1_50 = { production_efficiency = 0.2 }
+much_cloth_price_1_50 = { production_efficiency = -0.2 }
+low_cloth_price_1_25 = { production_efficiency = 0.1 }
+much_cloth_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_silk_price_1_50 = { production_efficiency = 0.2 }
+much_silk_price_1_50 = { production_efficiency = -0.2 }
+low_silk_price_1_25 = { production_efficiency = 0.1 }
+much_silk_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_paper_price_1_50 = { production_efficiency = 0.2 }
+much_paper_price_1_50 = { production_efficiency = -0.2 }
+low_paper_price_1_25 = { production_efficiency = 0.1 }
+much_paper_price_1_25 = { production_efficiency = -0.1 }
+
+
+
+
+
+

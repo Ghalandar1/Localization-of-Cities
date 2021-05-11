@@ -1,0 +1,24 @@
+government = republic
+add_government_reform = parliamentary_reform
+add_government_reform = universal_suffrage_reform
+add_government_reform = reinforce_republican_values_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = abolish_presidency
+set_legacy_government = parliamentary_republic
+government_rank = 1
+
+capital = 3284
+primary_culture = british_caribbean
+religion = secularism
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Paula-Mae Weekes"
+		birth_date = 1958.12.23
+		adm = 4
+		dip = 4
+		mil = 1
+		religion = protestant
+	}
+}

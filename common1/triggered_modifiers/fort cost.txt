@@ -1,0 +1,260 @@
+fort_bonus_balance = {
+	potential = {
+		is_year = 2020
+		ai = no
+	}
+	trigger = {
+		is_year = 2020
+		NOT = { is_year = 2050 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.95
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2050
+		ai = no
+	}
+	trigger = {
+		is_year = 2050
+		NOT = { is_year = 2070 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.90
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2070
+		ai = no
+	}
+	trigger = {
+		is_year = 2070
+		NOT = { is_year = 2100 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.85
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2100
+		ai = no
+	}
+	trigger = {
+		is_year = 2100
+		NOT = { is_year = 2120 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.80
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2120
+		ai = no
+	}
+	trigger = {
+		is_year = 2120
+		NOT = { is_year = 2140 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.75
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2140
+		ai = no
+	}
+	trigger = {
+		is_year = 2140
+		NOT = { is_year = 2160 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.70
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2160
+		ai = no
+	}
+	trigger = {
+		is_year = 2160
+		NOT = { is_year = 2180 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.65
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2180
+		ai = no
+	}
+	trigger = {
+		is_year = 2180
+		NOT = { is_year = 2200 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.60
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2200
+		ai = no
+	}
+	trigger = {
+		is_year = 2200
+		NOT = { is_year = 2220 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.55
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2220
+		ai = no
+	}
+	trigger = {
+		is_year = 2220
+		NOT = { is_year = 2240 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.50
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2240
+		ai = no
+	}
+	trigger = {
+		is_year = 2240
+		NOT = { is_year = 2260 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.45
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2260
+		ai = no
+	}
+	trigger = {
+		is_year = 2260
+		NOT = { is_year = 2280 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.40
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2280
+		ai = no
+	}
+	trigger = {
+		is_year = 2280
+		NOT = { is_year = 2300 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.35
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2300
+		ai = no
+	}
+	trigger = {
+		is_year = 2300
+		NOT = { is_year = 2310 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.30
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2310
+		ai = no
+	}
+	trigger = {
+		is_year = 2310
+		NOT = { is_year = 2320 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.25
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2320
+		ai = no
+	}
+	trigger = {
+		is_year = 2320
+		NOT = { is_year = 2330 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.20
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2330
+		ai = no
+	}
+	trigger = {
+		is_year = 2330
+		NOT = { is_year = 2340 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.15
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2340
+		ai = no
+	}
+	trigger = {
+		is_year = 2340
+		NOT = { is_year = 2350 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.10
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2350
+		ai = no
+	}
+	trigger = {
+		is_year = 2350
+		NOT = { is_year = 2360 }
+		ai = no
+	}
+	
+	fort_maintenance_modifier = -0.05
+}
+fort_bonus_balance = {
+	potential = {
+		is_year = 2360
+		ai = no
+	}
+	trigger = {
+		is_year = 2360
+		
+		ai = no
+	}
+	
+	fort_maintenance_modifier = 0.01
+}

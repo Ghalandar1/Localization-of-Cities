@@ -1,0 +1,45 @@
+namespace = fcsp_events
+
+province_event = {
+	id = fcsp_events.1
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		fort_level = 1
+		NOT = {
+			controlled_by = owner
+		}
+		NOT = { controlled_by = ZOM }
+	}
+
+	immediate = {
+		hidden_effect = {
+			controller = {
+				save_event_target_as = conquerer
+			}
+			every_neighbor_province = {
+				limit = {
+					NOT = {
+						fort_level = 1
+					}
+					controlled_by = owner
+					owner = {
+						war_with = event_target:conquerer
+					}
+				}
+				change_controller = event_target:conquerer
+			}
+		}
+	}
+
+	option = {
+		name = "fcsp_events.1.o"
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

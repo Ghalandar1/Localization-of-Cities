@@ -1,0 +1,10 @@
+cb_zi = {
+	ai_peace_desire = -5000
+	valid_for_subject = no
+	
+	prerequisites = {
+		tag = ZOM
+	}
+	
+	war_goal = take_capital_imperial
+}

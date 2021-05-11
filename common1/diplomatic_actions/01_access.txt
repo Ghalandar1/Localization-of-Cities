@@ -1,0 +1,60 @@
+milaccess = {
+    condition = {
+		potential = {
+            always = yes
+		}
+		allow = {
+            FROM = {
+                has_opinion = {
+                    who = ROOT
+                    value = 25
+                }
+            }
+		}
+	}
+}
+offermilaccess = {
+    condition = {
+		potential = {
+            always = yes
+		}
+		allow = {
+            FROM = {
+                has_opinion = {
+                    who = ROOT
+                    value = 0
+                }
+            }
+		}
+	}
+}
+fleet_access = {
+    condition = {
+		potential = {
+            always = yes
+		}
+		allow = {
+            FROM = {
+                has_opinion = {
+                    who = ROOT
+                    value = 50
+                }
+            }
+		}
+	}
+}
+offer_fleet_access = {
+    condition = {
+		potential = {
+            always = yes
+		}
+		allow = {
+            FROM = {
+                has_opinion = {
+                    who = ROOT
+                    value = 25
+                }
+            }
+		}
+	}
+}

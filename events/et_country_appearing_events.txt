@@ -1,0 +1,6847 @@
+# Drevlians
+country_event = {
+	id = et.100
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1943
+		is_year = 500
+		OR = {
+			1941 = { is_empty = yes }
+			4274 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1941 = { is_empty = yes } }
+			1941 = { 
+				cede_province = DRV 
+				add_core = DRV
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4274 = { is_empty = yes } }
+			4274 = { 
+				cede_province = DRV 
+				add_core = DRV
+				change_trade_goods = wool
+			}
+		}
+		DRV = { every_neighbor_country = { add_truce_with = DRV } }
+	}
+}
+
+# Severians
+country_event = {
+	id = et.101
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 298
+		is_year = 500
+		OR = {
+			289 = { is_empty = yes }
+			1945 = { is_empty = yes }
+			297 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 289 = { is_empty = yes } }
+			289 = { 
+				cede_province = SVR 
+				add_core = SVR
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 1945 = { is_empty = yes } }
+			1945 = { 
+				cede_province = SVR
+				add_core = SVR
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 297 = { is_empty = yes } }
+			297 = { 
+				cede_province = SVR
+				add_core = SVR
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4368 = { is_empty = yes } }
+			4368 = { 
+				cede_province = SVR
+				add_core = SVR
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4247 = { is_empty = yes } }
+			4247 = { 
+				cede_province = SVR
+				add_core = SVR
+				change_trade_goods = grain
+			}
+		}
+		SVR = { every_neighbor_country = { add_truce_with = SVR } }
+	}
+}
+
+# Lendians
+country_event = {
+	id = et.102
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 279
+		is_year = 500
+		OR = {
+			277 = { is_empty = yes }
+			278 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 277 = { is_empty = yes } }
+			277 = { 
+				cede_province = LDN
+				add_core = LDN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 278 = { is_empty = yes } }
+			278 = { 
+				cede_province = LDN
+				add_core = LDN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4677 = { is_empty = yes } }
+			4677 = { 
+				cede_province = LDN
+				add_core = LDN
+				change_trade_goods = wool
+			}
+		}
+		279 = {
+			change_culture = ruthenian
+			add_core = LDN
+			nationalist_rebels = 2
+		}
+		1940 = {
+			change_culture = ruthenian
+			add_core = LDN
+			nationalist_rebels = 2
+		}
+		LDN = { every_neighbor_country = { add_truce_with = LDN } }
+	}
+}
+
+# Curonians
+country_event = {
+	id = et.103
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 41
+		is_year = 500
+		OR = {
+			40 = { is_empty = yes }
+			39 = { is_empty = yes }
+			1935 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 40 = { is_empty = yes } }
+			40 = { 
+				cede_province = CUR 
+				add_core = CUR 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 39 = { is_empty = yes } }
+			39 = { 
+				cede_province = CUR
+				add_core = CUR 
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 1935 = { is_empty = yes } }
+			1935 = { 
+				cede_province = CUR 
+				add_core = CUR 
+				change_trade_goods = naval_supplies
+			}
+		}
+		CUR = { every_neighbor_country = { add_truce_with = CUR } }
+	}
+}
+
+# Lithuanians
+country_event = {
+	id = et.104
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 42
+		is_year = 500
+		OR = {
+			272 = { is_empty = yes }
+			270 = { is_empty = yes }
+			1936 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 270 = { is_empty = yes } }
+			270 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 271 = { is_empty = yes } }
+			271 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 272 = { is_empty = yes } }
+			272 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1936 = { is_empty = yes } }
+			1936 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 269 = { is_empty = yes } }
+			269 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1937 = { is_empty = yes } }
+			1937 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2149 = { is_empty = yes } }
+			2149 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4674 = { is_empty = yes } }
+			4674 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4675 = { is_empty = yes } }
+			4675 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4676 = { is_empty = yes } }
+			4676 = { 
+				cede_province = LIT 
+				add_core = LIT 
+				change_trade_goods = grain
+			}
+		}
+		LIT = { every_neighbor_country = { add_truce_with = LIT } }
+	}
+}
+
+# Latgalians
+country_event = {
+	id = et.105
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1935
+		is_year = 500
+		OR = {
+			38 = { is_empty = yes }
+			273 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 38 = { is_empty = yes } }
+			38 = { 
+				cede_province = LTG
+				add_core = LTG
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 273 = { is_empty = yes } }
+			273 = { 
+				cede_province = LTG
+				add_core = LTG
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4365 = { is_empty = yes } }
+			4365 = { 
+				cede_province = LTG
+				add_core = LTG
+				change_trade_goods = grain
+			}
+		}
+		LTG = { every_neighbor_country = { add_truce_with = LTG } }
+	}
+}
+
+# Livonians
+country_event = {
+	id = et.106
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1935
+		is_year = 500
+		OR = {
+			37 = { is_empty = yes }
+			1834 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 37 = { is_empty = yes } }
+			37 = { 
+				cede_province = LVA
+				add_core = LVA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1834 = { is_empty = yes } }
+			1834 = { 
+				cede_province = LVA
+				add_core = LVA
+				change_trade_goods = grain
+			}
+		}
+		LVA = { every_neighbor_country = { add_truce_with = LVA } }
+	}
+}
+
+# Estonians
+country_event = {
+	id = et.107
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 37
+		is_year = 500
+		OR = {
+			36 = { is_empty = yes }
+			1842 = { is_empty = yes }
+			35 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 36 = { is_empty = yes } }
+			36 = { 
+				cede_province = EST
+				add_core = EST
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1842 = { is_empty = yes } }
+			1842 = { 
+				cede_province = EST
+				add_core = EST
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 35 = { is_empty = yes } }
+			35 = { 
+				cede_province = EST
+				add_core = EST
+				change_trade_goods = grain
+			}
+		}
+		EST = { every_neighbor_country = { add_truce_with = EST } }
+	}
+}
+
+# Dregovichs
+country_event = {
+	id = et.108
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 37
+		is_year = 500
+		OR = {
+			276 = { is_empty = yes }
+			292 = { is_empty = yes }
+			1941 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 276 = { is_empty = yes } }
+			276 = { 
+				cede_province = DRE
+				add_core = DRE
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 4366 = { is_empty = yes } }
+			4366 = { 
+				cede_province = DRE
+				add_core = DRE
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 292 = { is_empty = yes } }
+			292 = { 
+				cede_province = DRE
+				add_core = DRE
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4370 = { is_empty = yes } }
+			4370 = { 
+				cede_province = DRE
+				add_core = DRE
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4684 = { is_empty = yes } }
+			4684 = { 
+				cede_province = DRE
+				add_core = DRE
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4685 = { is_empty = yes } }
+			4685 = { 
+				cede_province = DRE
+				add_core = DRE
+				change_trade_goods = wool
+			}
+		}
+		DRE = { every_neighbor_country = { add_truce_with = DRE } }
+	}
+}
+
+# Vyatihs
+country_event = {
+	id = et.109
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 297
+		is_year = 500
+		OR = {
+			295 = { is_empty = yes }
+			294 = { is_empty = yes }
+			296 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 296 = { is_empty = yes } }
+			296 = { 
+				cede_province = VYA
+				add_core = VYA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 295 = { is_empty = yes } }
+			295 = { 
+				cede_province = VYA
+				add_core = VYA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 294 = { is_empty = yes } }
+			294 = { 
+				cede_province = VYA
+				add_core = VYA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1752 = { is_empty = yes } }
+			1752 = { 
+				cede_province = VYA
+				add_core = VYA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1959 = { is_empty = yes } }
+			1959 = { 
+				cede_province = VYA
+				add_core = VYA
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4373 = { is_empty = yes } }
+			4373 = { 
+				cede_province = VYA
+				add_core = VYA
+				change_trade_goods =  grain
+			}
+		}
+		if = {
+			limit = { 4375 = { is_empty = yes } }
+			4375 = { 
+				cede_province = VYA
+				add_core = VYA
+				change_trade_goods =  grain
+			}
+		}
+		VYA = { every_neighbor_country = { add_truce_with = VYA } }
+	}
+}
+
+# West Geates
+country_event = {
+	id = et.110
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 26
+		is_year = 360
+		OR = {
+			7 = { is_empty = yes }
+			5 = { is_empty = yes }
+			16 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 7 = { is_empty = yes } }
+			7 = { 
+				cede_province = GEW
+				add_core = GEW
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 5 = { is_empty = yes } }
+			5 = { 
+				cede_province = GEW
+				add_core = GEW
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 16 = { is_empty = yes } }
+			16 = { 
+				cede_province = GEW
+				add_core = GEW
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 4293 = { is_empty = yes } }
+			4293 = { 
+				cede_province = GEW
+				add_core = GEW
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 4294 = { is_empty = yes } }
+			4294 = { 
+				cede_province = GEW
+				add_core = GEW
+				change_trade_goods = grain
+			}
+		}
+		26 = { add_core = GEW }
+		GEW = { every_neighbor_country = { add_truce_with = GEW } }
+	}
+}
+
+# East Geates
+country_event = {
+	id = et.111
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1982
+		is_year = 360
+		OR = {
+			3 = { is_empty = yes }
+			2 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 3 = { is_empty = yes } }
+			3 = { 
+				cede_province = GEE
+				add_core = GEE
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 2 = { is_empty = yes } }
+			2 = { 
+				cede_province = GEE
+				add_core = GEE
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4296 = { is_empty = yes } }
+			4296 = { 
+				cede_province = GEE
+				add_core = GEE
+				change_trade_goods = grain
+			}
+		}
+		1982 = { add_core = GEE }
+		GEE = { every_neighbor_country = { add_truce_with = GEE } }
+	}
+}
+
+# Svealand
+country_event = {
+	id = et.112
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2
+		is_year = 500
+		OR = {
+			1 = { is_empty = yes }
+			4 = { is_empty = yes }
+			1985 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1 = { is_empty = yes } }
+			1 = { 
+				cede_province = SVE
+				add_core = SVE
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4 = { is_empty = yes } }
+			4 = { 
+				cede_province = SVE
+				add_core = SVE
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 1985 = { is_empty = yes } }
+			1985 = { 
+				cede_province = SVE
+				add_core = SVE
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 1930 = { is_empty = yes } }
+			1930 = { 
+				cede_province = SVE
+				add_core = SVE
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 9 = { is_empty = yes } }
+			9 = { 
+				cede_province = SVE
+				add_core = SVE
+				change_trade_goods = fish
+			}
+		}
+		SVE = { every_neighbor_country = { add_truce_with = SVE } }
+	}
+}
+
+# Vestfold
+country_event = {
+	id = et.113
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 5
+		is_year = 700
+		OR = {
+			17 = { is_empty = yes }
+			22 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 17 = { is_empty = yes } }
+			17 = { 
+				cede_province = VES
+				add_core = VES
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 22 = { is_empty = yes } }
+			22 = { 
+				cede_province = VES
+				add_core = VES
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 4290 = { is_empty = yes } }
+			4290 = { 
+				cede_province = VES
+				add_core = VES
+				change_trade_goods = naval_supplies
+			}
+		}
+		VES = { every_neighbor_country = { add_truce_with = VES } }
+	}
+}
+
+# Agder
+country_event = {
+	id = et.114
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 17
+		is_year = 700
+		OR = {
+			24 = { is_empty = yes }
+			23 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 4291 = { is_empty = yes } }
+			4291 = { 
+				cede_province = AGD
+				add_core = AGD
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 4292 = { is_empty = yes } }
+			4292 = { 
+				cede_province = AGD
+				add_core = AGD
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 24 = { is_empty = yes } }
+			24 = { 
+				cede_province = ROG
+				add_core = ROG
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 23 = { is_empty = yes } }
+			23 = { 
+				cede_province = HOR
+				add_core = HOR
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 3088 = { is_empty = yes } }
+			3088 = { 
+				cede_province = RMD
+				add_core = RMD
+				change_trade_goods = fish
+			}
+		}
+		AGD = { every_neighbor_country = { add_truce_with = AGD } }
+		ROG = { every_neighbor_country = { add_truce_with = AGD } }
+		HOR = { every_neighbor_country = { add_truce_with = AGD } }
+		RMD = { every_neighbor_country = { add_truce_with = AGD } }
+	}
+}
+
+# Halogaland
+country_event = {
+	id = et.115
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 22
+		is_year = 700
+		OR = {
+			20 = { is_empty = yes }
+			21 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 20 = { is_empty = yes } }
+			20 = { 
+				cede_province = HAL
+				add_core = HAL
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 21 = { is_empty = yes } }
+			21 = { 
+				cede_province = HAL
+				add_core = HAL
+				change_trade_goods = fish
+			}
+		}
+		HAL = { every_neighbor_country = { add_truce_with = HAL } }
+	}
+}
+
+# Huns
+country_event = {
+	id = et.116
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 464
+		is_year = 140
+		OR = {
+			469 = { is_empty = yes }
+			465 = { is_empty = yes }
+			474 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 469 = { is_empty = yes } }
+			469 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2436 = { is_empty = yes } }
+			2436 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 474 = { is_empty = yes } }
+			474 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2437 = { is_empty = yes } }
+			2437 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 470 = { is_empty = yes } }
+			470 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 472 = { is_empty = yes } }
+			472 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2438 = { is_empty = yes } }
+			2438 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 465 = { is_empty = yes } }
+			465 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 471 = { is_empty = yes } }
+			471 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 2439 = { is_empty = yes } }
+			2439 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 2441 = { is_empty = yes } }
+			2441 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 2442 = { is_empty = yes } }
+			2442 = { 
+				cede_province = HNS
+				add_core = HNS
+				change_trade_goods = wool
+			}
+		}
+		HNS = { every_neighbor_country = { add_truce_with = HNS } }
+	}
+}
+
+# Ghassanids
+country_event = {
+	id = et.117
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 381
+		is_year = 200
+		OR = {
+			405 = { is_empty = yes }
+			406 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 405 = { is_empty = yes } }
+			405 = { 
+				cede_province = GHS
+				add_core = GHS
+				change_religion = chalcedonism
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 406 = { is_empty = yes } }
+			406 = { 
+				cede_province = GHS
+				add_core = GHS
+				change_religion = chalcedonism
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4394 = { is_empty = yes } }
+			4394 = { 
+				cede_province = GHS
+				add_core = GHS
+				change_religion = chalcedonism
+				change_trade_goods = livestock
+			}
+		}
+		GHS = { every_neighbor_country = { add_truce_with = GHS } }
+	}
+}
+
+# Lakhmids
+country_event = {
+	id = et.118
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 410
+		is_year = 200
+		409 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		409 = { 
+			cede_province = LAK
+			add_core = LAK
+			change_religion = chalcedonism
+			change_trade_goods = spices
+		}
+		LAK = { every_neighbor_country = { add_truce_with = LAK } }
+	}
+}
+
+# Kindah
+country_event = {
+	id = et.119
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 394
+		is_year = 400
+		OR = {
+			392 = { is_empty = yes }
+			393 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 392 = { is_empty = yes } }
+			392 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 393 = { is_empty = yes } }
+			393 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = cloth
+			}
+		}
+		if = {
+			limit = { 2544 = { is_empty = yes } }
+			2544 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2545 = { is_empty = yes } }
+			2545 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2532 = { is_empty = yes } }
+			2532 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2533 = { is_empty = yes } }
+			2533 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2534 = { is_empty = yes } }
+			2534 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4396 = { is_empty = yes } }
+			4396 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = livestock
+			}
+		}
+		if = {
+			limit = { 4397 = { is_empty = yes } }
+			4397 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = livestock
+			}
+		}
+		if = {
+			limit = { 4398 = { is_empty = yes } }
+			4398 = { 
+				cede_province = KIN
+				add_core = KIN
+				change_trade_goods = livestock
+			}
+		}
+		KIN = { every_neighbor_country = { add_truce_with = KIN } }
+	}
+}
+
+# Ghana
+country_event = {
+	id = et.120
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1156
+		is_year = 330
+		OR = {
+			2308 = { is_empty = yes }
+			2305 = { is_empty = yes }
+			1123 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2308 = { is_empty = yes } }
+			2308 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 2306 = { is_empty = yes } }
+			2306 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2307 = { is_empty = yes } }
+			2307 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1793 = { is_empty = yes } }
+			1793 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2314 = { is_empty = yes } }
+			2314 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 1123 = { is_empty = yes } }
+			1123 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1131 = { is_empty = yes } }
+			1131 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2320 = { is_empty = yes } }
+			2320 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 2321 = { is_empty = yes } }
+			2321 = { 
+				cede_province = GHA
+				add_core = GHA
+				change_trade_goods = grain
+			}
+		}
+		GHA = { every_neighbor_country = { add_truce_with = GHA } }
+	}
+}
+
+# Takrur
+country_event = {
+	id = et.121
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2306
+		is_year = 740
+		OR = {
+			2310 = { is_empty = yes }
+			1115 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2310 = { is_empty = yes } }
+			2310 = { 
+				cede_province = TAK
+				add_core = TAK
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 1115 = { is_empty = yes } }
+			1115 = { 
+				cede_province = TAK
+				add_core = TAK
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 1112 = { is_empty = yes } }
+			1112 = { 
+				cede_province = TAK
+				add_core = TAK
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 2309 = { is_empty = yes } }
+			2309 = { 
+				cede_province = TAK
+				add_core = TAK
+				change_trade_goods = gold
+			}
+		}
+		TAK = { every_neighbor_country = { add_truce_with = TAK } }
+	}
+}
+
+# Kano
+country_event = {
+	id = et.122
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2345
+		is_year = 980
+		OR = {
+			1155 = { is_empty = yes }
+			2343 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1155 = { is_empty = yes } }
+			1155 = { 
+				cede_province = KAN
+				add_core = KAN
+				change_trade_goods = dyes
+			}
+		}
+		if = {
+			limit = { 2343 = { is_empty = yes } }
+			2343 = { 
+				cede_province = KAN
+				add_core = KAN
+				change_trade_goods = dyes
+			}
+		}
+		if = {
+			limit = { 2344 = { is_empty = yes } }
+			2344 = { 
+				cede_province = KAN
+				add_core = KAN
+				change_trade_goods = dyes
+			}
+		}
+		KAN = { every_neighbor_country = { add_truce_with = KAN } }
+	}
+}
+
+# Songhai
+country_event = {
+	id = et.123
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2321
+		is_year = 700
+		OR = {
+			1133 = { is_empty = yes }
+			1142 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1133 = { is_empty = yes } }
+			1133 = { 
+				cede_province = SON
+				add_core = SON
+				change_trade_goods = cloth
+			}
+		}
+		if = {
+			limit = { 1142 = { is_empty = yes } }
+			1142 = { 
+				cede_province = SON
+				add_core = SON
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2349 = { is_empty = yes } }
+			2349 = { 
+				cede_province = SON
+				add_core = SON
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2347 = { is_empty = yes } }
+			2347 = { 
+				cede_province = SON
+				add_core = SON
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2348 = { is_empty = yes } }
+			2348 = { 
+				cede_province = SON
+				add_core = SON
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2350 = { is_empty = yes } }
+			2350 = { 
+				cede_province = SON
+				add_core = SON
+				change_trade_goods = grain
+			}
+		}
+		SON = { every_neighbor_country = { add_truce_with = SON } }
+	}
+}
+
+# Benin
+country_event = {
+	id = et.124
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2345
+		is_year = 1160
+		OR = {
+			1147 = { is_empty = yes }
+			2339 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1147 = { is_empty = yes } }
+			1147 = { 
+				cede_province = BEN
+				add_core = BEN
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2339 = { is_empty = yes } }
+			2339 = { 
+				cede_province = BEN
+				add_core = BEN
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2340 = { is_empty = yes } }
+			2340 = { 
+				cede_province = BEN
+				add_core = BEN
+				change_trade_goods = coffee
+			}
+		}
+		BEN = { every_neighbor_country = { add_truce_with = BEN } }
+	}
+}
+
+# Oyo
+country_event = {
+	id = et.125
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1147
+		is_year = 1050
+		OR = {
+			1144 = { is_empty = yes }
+			1146 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1144 = { is_empty = yes } }
+			1144 = { 
+				cede_province = OYO
+				add_core = OYO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1146 = { is_empty = yes } }
+			1146 = { 
+				cede_province = OYO
+				add_core = OYO
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 1145 = { is_empty = yes } }
+			1145 = { 
+				cede_province = OYO
+				add_core = OYO
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 2338 = { is_empty = yes } }
+			2338 = { 
+				cede_province = OYO
+				add_core = OYO
+				change_trade_goods = slaves
+			}
+		}
+		OYO = { every_neighbor_country = { add_truce_with = OYO } }
+	}
+}
+
+# Jamtaland
+country_event = {
+	id = et.126
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 22
+		is_year = 700
+		OR = {
+			8 = { is_empty = yes }
+			10 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 8 = { is_empty = yes } }
+			8 = { 
+				cede_province = JMT
+				add_core = JMT
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 10 = { is_empty = yes } }
+			10 = { 
+				cede_province = JMT
+				add_core = JMT
+				change_trade_goods = fur
+			}
+		}
+		JMT = { every_neighbor_country = { add_truce_with = JMT } }
+	}
+}
+
+# Chudes
+country_event = {
+	id = et.127
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 311
+		is_year = 700
+		OR = {
+			34 = { is_empty = yes }
+			1961 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 34 = { is_empty = yes } }
+			34 = { 
+				cede_province = CUD
+				add_core = CUD
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 2844 = { is_empty = yes } }
+			2844 = { 
+				cede_province = CUD
+				add_core = CUD
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 1961 = { is_empty = yes } }
+			1961 = { 
+				cede_province = CUD
+				add_core = CUD
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 309 = { is_empty = yes } }
+			309 = { 
+				cede_province = CUD
+				add_core = CUD
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4384 = { is_empty = yes } }
+			4384 = { 
+				cede_province = CUD
+				add_core = CUD
+				change_trade_goods = fur
+			}
+		}
+		CUD = { every_neighbor_country = { add_truce_with = CUD } }
+	}
+}
+
+# Magyars
+country_event = {
+	id = et.128
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 300
+		is_year = 550
+		OR = {
+			301 = { is_empty = yes }
+			302 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 302 = { is_empty = yes } }
+			302 = { 
+				cede_province = HUN
+				add_core = HUN
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 4379 = { is_empty = yes } }
+			4379 = { 
+				cede_province = HUN
+				add_core = HUN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 1778 = { is_empty = yes } }
+			1778 = { 
+				cede_province = HUN
+				add_core = HUN
+				change_trade_goods = wool
+			}
+		}
+		HUN = { every_neighbor_country = { add_truce_with = HUN } }
+	}
+}
+
+# Meryas & Meshchera
+country_event = {
+	id = et.129
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 294
+		is_year = 550
+		OR = {
+			308 = { is_empty = yes }
+			307 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 308 = { is_empty = yes } }
+			308 = { 
+				cede_province = MRY
+				add_core = MRY
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 4275 = { is_empty = yes } }
+			4275 = { 
+				cede_province = MRY
+				add_core = MRY
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4285 = { is_empty = yes } }
+			4285 = { 
+				cede_province = MRY
+				add_core = MRY
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4372 = { is_empty = yes } }
+			4372 = { 
+				cede_province = MRY
+				add_core = MRY
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4374 = { is_empty = yes } }
+			4374 = { 
+				cede_province = MRY
+				add_core = MRY
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4377 = { is_empty = yes } }
+			4377 = { 
+				cede_province = MRY
+				add_core = MRY
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 307 = { is_empty = yes } }
+			307 = { 
+				cede_province = MES
+				add_core = MES
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 300 = { is_empty = yes } }
+			300 = { 
+				cede_province = MES
+				add_core = MES
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 301 = { is_empty = yes } }
+			301 = { 
+				cede_province = MES
+				add_core = MES
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4376 = { is_empty = yes } }
+			4376 = { 
+				cede_province = MES
+				add_core = MES
+				change_trade_goods = grain
+			}
+		}
+		MRY = { every_neighbor_country = { add_truce_with = MRY } }
+		MES = { every_neighbor_country = { add_truce_with = MES } }
+	}
+}
+
+# Muromians & Mordvins
+country_event = {
+	id = et.130
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 307
+		is_year = 550
+		OR = {
+			1956 = { is_empty = yes }
+			1754 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1754 = { is_empty = yes } }
+			1754 = { 
+				cede_province = MUR
+				add_core = MUR
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1956 = { is_empty = yes } }
+			1956 = { 
+				cede_province = MUR
+				add_core = MUR
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4378 = { is_empty = yes } }
+			4378 = { 
+				cede_province = MUR
+				add_core = MUR
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2621 = { is_empty = yes } }
+			2621 = { 
+				cede_province = MRD
+				add_core = MRD
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 304 = { is_empty = yes } }
+			304 = { 
+				cede_province = MRD
+				add_core = MRD
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2618 = { is_empty = yes } }
+			2618 = { 
+				cede_province = MRD
+				add_core = MRD
+				change_trade_goods = grain
+			}
+		}
+		MUR = { every_neighbor_country = { add_truce_with = MUR } }
+		MRD = { every_neighbor_country = { add_truce_with = MRD } }
+	}
+}
+
+# Maris
+country_event = {
+	id = et.131
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1956
+		is_year = 550
+		OR = {
+			1083 = { is_empty = yes }
+			1957 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1957 = { is_empty = yes } }
+			1957 = { 
+				cede_province = MAA
+				add_core = MAA
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 1753 = { is_empty = yes } }
+			1753 = { 
+				cede_province = MAA
+				add_core = MAA
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 306 = { is_empty = yes } }
+			306 = { 
+				cede_province = MAA
+				add_core = MAA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1083 = { is_empty = yes } }
+			1083 = { 
+				cede_province = MAA
+				add_core = MAA
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 4387 = { is_empty = yes } }
+			4387 = { 
+				cede_province = MAA
+				add_core = MAA
+				change_trade_goods = naval_supplies
+			}
+		}
+		MAA = { every_neighbor_country = { add_truce_with = MAA } }
+	}
+}
+
+# Volga Bulgaria
+country_event = {
+	id = et.132
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1971
+		is_year = 630
+		OR = {
+			1081 = { is_empty = yes }
+			1082 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1081 = { is_empty = yes } }
+			1081 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 1082 = { is_empty = yes } }
+			1082 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2838 = { is_empty = yes } }
+			2838 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2839 = { is_empty = yes } }
+			2839 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 303 = { is_empty = yes } }
+			303 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 473 = { is_empty = yes } }
+			473 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 1965 = { is_empty = yes } }
+			1965 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2619 = { is_empty = yes } }
+			2619 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2620 = { is_empty = yes } }
+			2620 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4388 = { is_empty = yes } }
+			4388 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4391 = { is_empty = yes } }
+			4391 = { 
+				cede_province = VBU
+				add_core = VBU
+				change_trade_goods = grain
+			}
+		}
+		VBU = { every_neighbor_country = { add_truce_with = VBU } }
+	}
+}
+
+# Veps, Bjarmia, Samoyed
+country_event = {
+	id = et.133
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 310
+		is_year = 700
+		OR = {
+			1955 = { is_empty = yes }
+			1958 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1958 = { is_empty = yes } }
+			1958 = { 
+				cede_province = VEP
+				add_core = VEP
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 312 = { is_empty = yes } }
+			312 = { 
+				cede_province = VEP
+				add_core = VEP
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 314 = { is_empty = yes } }
+			314 = { 
+				cede_province = VEP
+				add_core = VEP
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 4383 = { is_empty = yes } }
+			4383 = { 
+				cede_province = VEP
+				add_core = VEP
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4385 = { is_empty = yes } }
+			4385 = { 
+				cede_province = VEP
+				add_core = VEP
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 4386 = { is_empty = yes } }
+			4386 = { 
+				cede_province = VEP
+				add_core = VEP
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 313 = { is_empty = yes } }
+			313 = { 
+				cede_province = BJA
+				add_core = BJA
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4246 = { is_empty = yes } }
+			4246 = { 
+				cede_province = BJA
+				add_core = BJA
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4382 = { is_empty = yes } }
+			4382 = { 
+				cede_province = BJA
+				add_core = BJA
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 4381 = { is_empty = yes } }
+			4381 = { 
+				cede_province = BJA
+				add_core = BJA
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 4380 = { is_empty = yes } }
+			4380 = { 
+				cede_province = BJA
+				add_core = BJA
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 2118 = { is_empty = yes } }
+			2118 = { 
+				cede_province = SMY
+				add_core = SMY
+				change_trade_goods = fur
+			}
+		}
+		VEP = { every_neighbor_country = { add_truce_with = VEP } }
+		BJA = { every_neighbor_country = { add_truce_with = BJA } }
+		SMY = { every_neighbor_country = { add_truce_with = SMY } }
+	}
+}
+
+# Kakisalmians
+country_event = {
+	id = et.134
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1961
+		is_year = 700
+		OR = {
+			32 = { is_empty = yes }
+			31 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 32 = { is_empty = yes } }
+			32 = { 
+				cede_province = KKS
+				add_core = KKS
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 30 = { is_empty = yes } }
+			30 = { 
+				cede_province = KKS
+				add_core = KKS
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 33 = { is_empty = yes } }
+			33 = { 
+				cede_province = KKS
+				add_core = KKS
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 31 = { is_empty = yes } }
+			31 = { 
+				cede_province = KKS
+				add_core = KKS
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4264 = { is_empty = yes } }
+			4264 = { 
+				cede_province = KKS
+				add_core = KKS
+				change_trade_goods = fur
+			}
+		}
+		KKS = { every_neighbor_country = { add_truce_with = KKS } }
+	}
+}
+
+# Tavastians
+country_event = {
+	id = et.135
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 31
+		is_year = 700
+		OR = {
+			29 = { is_empty = yes }
+			19 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 29 = { is_empty = yes } }
+			29 = { 
+				cede_province = TAV
+				add_core = TAV
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 28 = { is_empty = yes } }
+			28 = { 
+				cede_province = TAV
+				add_core = TAV
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 27 = { is_empty = yes } }
+			27 = { 
+				cede_province = TAV
+				add_core = TAV
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 19 = { is_empty = yes } }
+			19 = { 
+				cede_province = TAV
+				add_core = TAV
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4263 = { is_empty = yes } }
+			4263 = { 
+				cede_province = TAV
+				add_core = TAV
+				change_trade_goods = fur
+			}
+		}
+		TAV = { every_neighbor_country = { add_truce_with = TAV } }
+	}
+}
+
+# Sami
+country_event = {
+	id = et.136
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 19
+		is_year = 700
+		OR = {
+			18 = { is_empty = yes }
+			2005 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2005 = { is_empty = yes } }
+			2005 = { 
+				cede_province = SMI
+				add_core = SMI
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 18 = { is_empty = yes } }
+			18 = { 
+				cede_province = SMI
+				add_core = SMI
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 11 = { is_empty = yes } }
+			11 = { 
+				cede_province = SMI
+				add_core = SMI
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 315 = { is_empty = yes } }
+			315 = { 
+				cede_province = SMI
+				add_core = SMI
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 1777 = { is_empty = yes } }
+			1777 = { 
+				cede_province = SMI
+				add_core = SMI
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4262 = { is_empty = yes } }
+			4262 = { 
+				cede_province = SMI
+				add_core = SMI
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4282 = { is_empty = yes } }
+			4282 = { 
+				cede_province = SMI
+				add_core = SMI
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 1776 = { is_empty = yes } }
+			1776 = { 
+				cede_province = KRL
+				add_core = KRL
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 4283 = { is_empty = yes } }
+			4283 = { 
+				cede_province = KRL
+				add_core = KRL
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 1955 = { is_empty = yes } }
+			1955 = { 
+				cede_province = KRL
+				add_core = KRL
+				change_trade_goods = fur
+			}
+		}
+		SMI = { every_neighbor_country = { add_truce_with = SMI } }
+		KRL = { every_neighbor_country = { add_truce_with = SMI } }
+	}
+}
+
+# Perm
+country_event = {
+	id = et.137
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1082
+		is_year = 750
+		OR = {
+			1963 = { is_empty = yes }
+			1964 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1963 = { is_empty = yes } }
+			1963 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 1964 = { is_empty = yes } }
+			1964 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 1962 = { is_empty = yes } }
+			1962 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 1079 = { is_empty = yes } }
+			1079 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 1972 = { is_empty = yes } }
+			1972 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 1077 = { is_empty = yes } }
+			1077 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 305 = { is_empty = yes } }
+			305 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 4276 = { is_empty = yes } }
+			4276 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 1755 = { is_empty = yes } }
+			1755 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4390 = { is_empty = yes } }
+			4390 = { 
+				cede_province = PRM
+				add_core = PRM
+				change_trade_goods = fur
+			}
+		}
+		PRM = { every_neighbor_country = { add_truce_with = PRM } }
+	}
+}
+
+# Mogadishu
+country_event = {
+	id = et.138
+	title = "et.EVTNAME101"
+	desc = "et.EVTDESC101"
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 388
+		is_year = 850
+		1205 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA101"
+		1205 = { 
+			cede_province = MDI
+			add_core = MDI
+			change_trade_goods = ivory
+			change_religion = sunni
+		}
+		if = {
+			limit = { 2701 = { is_empty = yes } }
+			2701 = { 
+				cede_province = MDI
+				add_core = MDI
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2699 = { is_empty = yes } }
+			2699 = { 
+				cede_province = MDI
+				add_core = MDI
+				change_trade_goods = grain
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					technology_group = indian
+					technology_group = muslim
+					technology_group = ottoman
+					technology_group = east_african
+				}
+			}
+			discover_province = 1205
+			discover_province = 1204
+			discover_province = 1447
+			discover_province = 2698
+			discover_province = 2699
+			discover_province = 2701
+			discover_province = 2704
+			discover_province = 2706
+			discover_province = 2707
+			discover_province = 2708
+		}
+		MDI = { every_neighbor_country = { add_truce_with = MDI } }
+	}
+}
+
+# Mombasa, Malindi and Pate
+country_event = {
+	id = et.139
+	title = "et.EVTNAME101"
+	desc = "et.EVTDESC101"
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1205
+		is_year = 850
+		1202 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA101"
+		1202 = { 
+			cede_province = MBA
+			add_core = MBA
+			change_trade_goods = ivory
+			change_religion = sunni
+		}
+		if = {
+			limit = { 1200 = { is_empty = yes } }
+			1200 = { 
+				cede_province = MBA
+				add_core = MBA
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1203 = { is_empty = yes } }
+			1203 = { 
+				cede_province = MLI
+				add_core = MLI
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1204 = { is_empty = yes } }
+			1204 = { 
+				cede_province = MLI
+				add_core = MLI
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2708 = { is_empty = yes } }
+			2708 = { 
+				cede_province = PTE
+				add_core = PTE
+				change_trade_goods = cloth
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					technology_group = indian
+					technology_group = muslim
+					technology_group = ottoman
+					technology_group = east_african
+				}
+			}
+			discover_province = 1200
+			discover_province = 1202
+			discover_province = 1203
+			discover_province = 1448
+		}
+		MBA = { every_neighbor_country = { add_truce_with = MBA } }
+		MLI = { every_neighbor_country = { add_truce_with = MLI } }
+		PTE = { every_neighbor_country = { add_truce_with = PTE } }
+	}
+}
+
+# Kilwa
+country_event = {
+	id = et.140
+	title = "et.EVTNAME101"
+	desc = "et.EVTDESC101"
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1205
+		is_year = 850
+		1196 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA101"
+		1196 = { 
+			cede_province = ZAN
+			add_core = MBA
+			change_trade_goods = gold
+			change_religion = sunni
+		}
+		if = {
+			limit = { 2855 = { is_empty = yes } }
+			2855 = { 
+				cede_province = ZAN
+				add_core = ZAN
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4195 = { is_empty = yes } }
+			4195 = { 
+				cede_province = ZAN
+				add_core = ZAN
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1195 = { is_empty = yes } }
+			1195 = { 
+				cede_province = ZAN
+				add_core = ZAN
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1199 = { is_empty = yes } }
+			1199 = { 
+				cede_province = ZAN
+				add_core = ZAN
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2856 = { is_empty = yes } }
+			2856 = { 
+				cede_province = ZAN
+				add_core = ZAN
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1201 = { is_empty = yes } }
+			1201 = { 
+				cede_province = ZAN
+				add_core = ZAN
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2854 = { is_empty = yes } }
+			2854 = { 
+				cede_province = ZAN
+				add_core = ZAN
+				change_trade_goods = slaves
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					technology_group = indian
+					technology_group = muslim
+					technology_group = ottoman
+					technology_group = east_african
+				}
+			}
+			discover_province = 1201
+			discover_province = 1199
+			discover_province = 1196
+			discover_province = 1195
+			discover_province = 1449
+			discover_province = 2855
+			discover_province = 2856
+			discover_province = 4195
+			if = { 
+				limit = { NOT = { technology_group = indian } }
+				discover_province = 1456
+				discover_province = 1186
+				discover_province = 1192
+				discover_province = 2854
+			}
+			if = { 
+				limit = { 
+					NOT = { technology_group = muslim } 
+					NOT = { technology_group = ottoman } 
+				}
+				discover_province = 1457
+			}
+		}
+		ZAN = { every_neighbor_country = { add_truce_with = ZAN } }
+	}
+}
+
+# Sofala
+country_event = {
+	id = et.141
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1224
+		is_year = 680
+		1186 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		1186 = { 
+			cede_province = SFA
+			add_core = SFA
+			change_trade_goods = ivory
+		}
+		if = {
+			limit = { 1192 = { is_empty = yes } }
+			1192 = { 
+				cede_province = SFA
+				add_core = SFA
+				change_trade_goods = ivory
+			}
+		}
+		SFA = { every_neighbor_country = { add_truce_with = SFA } }
+	}
+}
+
+# Zimbabwe
+country_event = {
+	id = et.142
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1186
+		is_year = 1100
+		1184 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		1184 = { 
+			cede_province = ZIB
+			add_core = ZIB
+			change_trade_goods = gold
+		}
+		if = {
+			limit = { 1185 = { is_empty = yes } }
+			1185 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 1187 = { is_empty = yes } }
+			1187 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1188 = { is_empty = yes } }
+			1188 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 1189 = { is_empty = yes } }
+			1189 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1190 = { is_empty = yes } }
+			1190 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1191 = { is_empty = yes } }
+			1191 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2851 = { is_empty = yes } }
+			2851 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2852 = { is_empty = yes } }
+			2852 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2853 = { is_empty = yes } }
+			2853 = { 
+				cede_province = ZIB
+				add_core = ZIB
+				change_trade_goods = grain
+			}
+		}
+		ZIB = { every_neighbor_country = { add_truce_with = ZIB } }
+	}
+}
+
+# Ajuuraan
+country_event = {
+	id = et.143
+	title = "et.EVTNAME101"
+	desc = "et.EVTDESC101"
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1205
+		is_year = 1200
+		2704 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA101"
+		2704 = { 
+			cede_province = AJU
+			add_core = AJU
+			change_trade_goods = grain
+			change_religion = sunni
+		}
+		if = {
+			limit = { 2147 = { is_empty = yes } }
+			2147 = { 
+				cede_province = AJU
+				add_core = AJU
+				change_trade_goods = grain
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2705 = { is_empty = yes } }
+			2705 = { 
+				cede_province = AJU
+				add_core = AJU
+				change_trade_goods = wool
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2703 = { is_empty = yes } }
+			2703 = { 
+				cede_province = AJU
+				add_core = AJU
+				change_trade_goods = grain
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2706 = { is_empty = yes } }
+			2706 = { 
+				cede_province = AJU
+				add_core = AJU
+				change_trade_goods = ivory
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2707 = { is_empty = yes } }
+			2707 = { 
+				cede_province = AJU
+				add_core = AJU
+				change_trade_goods = ivory
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2702 = { is_empty = yes } }
+			2702 = { 
+				cede_province = AJU
+				add_core = AJU
+				change_trade_goods = wool
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2700 = { is_empty = yes } }
+			2700 = { 
+				cede_province = AJU
+				add_core = AJU
+				change_trade_goods = wool
+				change_religion = sunni
+			}
+		}
+		AJU = { every_neighbor_country = { add_truce_with = AJU } }
+	}
+}
+
+# Ifat
+country_event = {
+	id = et.144
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2003
+		is_year = 1150
+		OR = {
+			1211 = { is_empty = yes }
+			1212 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1212 = { is_empty = yes } }
+			1212 = { 
+				cede_province = IFA
+				add_core = IFA
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 1211 = { is_empty = yes } }
+			1211 = { 
+				cede_province = IFA
+				add_core = IFA
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2688 = { is_empty = yes } }
+			2688 = { 
+				cede_province = IFA
+				add_core = IFA
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2689 = { is_empty = yes } }
+			2689 = { 
+				cede_province = IFA
+				add_core = IFA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2690 = { is_empty = yes } }
+			2690 = { 
+				cede_province = IFA
+				add_core = IFA
+				change_trade_goods = grain
+			}
+		}
+		IFA = { every_neighbor_country = { add_truce_with = IFA } }
+	}
+}
+
+# Chuban
+country_event = {
+	id = et.145
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1969
+		is_year = 240
+		OR = {
+			461 = { is_empty = yes }
+			477 = { is_empty = yes }
+			2447 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2445 = { is_empty = yes } }
+			2445 = { 
+				cede_province = CBN
+				add_core = CBN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 477 = { is_empty = yes } }
+			477 = { 
+				cede_province = CBN
+				add_core = CBN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2447 = { is_empty = yes } }
+			2447 = { 
+				cede_province = CBN
+				add_core = CBN
+				change_trade_goods = wool
+			}
+		}
+		CBN = { every_neighbor_country = { add_truce_with = CBN } }
+	}
+}
+
+# Oghuz
+country_event = {
+	id = et.146
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 471
+		is_year = 320
+		OR = {
+			2440 = { is_empty = yes }
+			476 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2440 = { is_empty = yes } }
+			2440 = { 
+				cede_province = OGH
+				add_core = OGH
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 476 = { is_empty = yes } }
+			476 = { 
+				cede_province = OGH
+				add_core = OGH
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2450 = { is_empty = yes } }
+			2450 = { 
+				cede_province = OGH
+				add_core = OGH
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2451 = { is_empty = yes } }
+			2451 = { 
+				cede_province = OGH
+				add_core = OGH
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2443 = { is_empty = yes } }
+			2443 = { 
+				cede_province = OGH
+				add_core = OGH
+				change_trade_goods = grain
+			}
+		}
+		OGH = { every_neighbor_country = { add_truce_with = OGH } }
+	}
+}
+
+# Swaziland
+country_event = {
+	id = et.147
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1186
+		is_year = 1700
+		2021 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		2021 = { 
+			cede_province = SWZ
+			add_core = SWZ
+			change_trade_goods = grain
+		}
+		SWZ = { every_neighbor_country = { add_truce_with = SWZ } }
+	}
+}
+
+# Zululand
+country_event = {
+	id = et.148
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1186
+		is_year = 1700
+		OR = {
+			1181 = { is_empty = yes }
+			2597 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2597 = { is_empty = yes } }
+			2597 = { 
+				cede_province = ZUL
+				add_core = ZUL
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1181 = { is_empty = yes } }
+			1181 = { 
+				cede_province = ZUL
+				add_core = ZUL
+				change_trade_goods = ivory
+			}
+		}
+		ZUL = { every_neighbor_country = { add_truce_with = ZUL } }
+	}
+}
+
+# Lesotho
+country_event = {
+	id = et.149
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1186
+		is_year = 1700
+		2022 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		2022 = { 
+			cede_province = LES
+			add_core = LES
+			change_trade_goods = grain
+		}
+		LES = { every_neighbor_country = { add_truce_with = LES } }
+	}
+}
+
+# Madagascar
+country_event = {
+	id = et.150
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1195
+		is_year = 1400
+		OR = {
+			1193 = { is_empty = yes }
+			1194 = { is_empty = yes }
+			1792 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1193 = { is_empty = yes } }
+			1193 = { 
+				cede_province = MNB
+				add_core = MNB
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4253 = { is_empty = yes } }
+			4253 = { 
+				cede_province = MNB
+				add_core = MNB
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 4259 = { is_empty = yes } }
+			4259 = { 
+				cede_province = MNB
+				add_core = MNB
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1194 = { is_empty = yes } }
+			1194 = { 
+				cede_province = BOI
+				add_core = BOI
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4252 = { is_empty = yes } }
+			4252 = { 
+				cede_province = BOI
+				add_core = BOI
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 1792 = { is_empty = yes } }
+			1792 = { 
+				cede_province = MIR
+				add_core = MIR
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4257 = { is_empty = yes } }
+			4257 = { 
+				cede_province = MIR
+				add_core = MIR
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 3145 = { is_empty = yes } }
+			3145 = { 
+				cede_province = MFY
+				add_core = MFY
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4260 = { is_empty = yes } }
+			4260 = { 
+				cede_province = ATS
+				add_core = ATS
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 4258 = { is_empty = yes } }
+			4258 = { 
+				cede_province = ANT
+				add_core = ANT
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 3146 = { is_empty = yes } }
+			3146 = { 
+				cede_province = BTS
+				add_core = BTS
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4255 = { is_empty = yes } }
+			4255 = { 
+				cede_province = BTS
+				add_core = BTS
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4254 = { is_empty = yes } }
+			4254 = { 
+				cede_province = BTS
+				add_core = BTS
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 4256 = { is_empty = yes } }
+			4256 = { 
+				cede_province = BTS
+				add_core = BTS
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 3147 = { is_empty = yes } }
+			3147 = { 
+				cede_province = BRX
+				add_core = BRX
+				change_trade_goods = wool
+			}
+		}
+	}
+}
+
+# Langkasuka
+country_event = {
+	id = et.151
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 591
+		is_year = 110
+		OR = {
+			594 = { is_empty = yes }
+			595 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 594 = { is_empty = yes } }
+			594 = { 
+				cede_province = LGK
+				add_core = LGK
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 593 = { is_empty = yes } }
+			593 = { 
+				cede_province = LGK
+				add_core = LGK
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 2394 = { is_empty = yes } }
+			2394 = { 
+				cede_province = LGK
+				add_core = LGK
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2395 = { is_empty = yes } }
+			2395 = { 
+				cede_province = LGK
+				add_core = LGK
+				change_trade_goods = fish
+			}
+		}
+		LGK = { every_neighbor_country = { add_truce_with = LGK } }
+	}
+}
+
+# Salakanagara
+country_event = {
+	id = et.152
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 605
+		is_year = 100
+		OR = {
+			630 = { is_empty = yes }
+			624 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 630 = { is_empty = yes } }
+			630 = { 
+				cede_province = SLK
+				add_core = SLK
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 624 = { is_empty = yes } }
+			624 = { 
+				cede_province = SLK
+				add_core = SLK
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 625 = { is_empty = yes } }
+			625 = { 
+				cede_province = SLK
+				add_core = SLK
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2410 = { is_empty = yes } }
+			2410 = { 
+				cede_province = SLK
+				add_core = SLK
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 2411 = { is_empty = yes } }
+			2411 = { 
+				cede_province = SLK
+				add_core = SLK
+				change_trade_goods = fish
+			}
+		}
+		SLK = { every_neighbor_country = { add_truce_with = SLK } }
+	}
+}
+
+# Kantoli
+country_event = {
+	id = et.153
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 595
+		is_year = 410
+		OR = {
+			620 = { is_empty = yes }
+			2407 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 620 = { is_empty = yes } }
+			620 = { 
+				cede_province = KNT
+				add_core = KNT
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 2406 = { is_empty = yes } }
+			2406 = { 
+				cede_province = KNT
+				add_core = KNT
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2407 = { is_empty = yes } }
+			2407 = { 
+				cede_province = KNT
+				add_core = KNT
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2403 = { is_empty = yes } }
+			2403 = { 
+				cede_province = KNT
+				add_core = KNT
+				change_trade_goods = fish
+			}
+		}
+		KNT = { every_neighbor_country = { add_truce_with = KNT } }
+	}
+}
+
+# Brunei
+country_event = {
+	id = et.154
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 599
+		is_year = 580
+		OR = {
+			636 = { is_empty = yes }
+			2009 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 636 = { is_empty = yes } }
+			636 = { 
+				cede_province = BEI
+				add_core = BEI
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2009 = { is_empty = yes } }
+			2009 = { 
+				cede_province = BEI
+				add_core = BEI
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2417 = { is_empty = yes } }
+			2417 = { 
+				cede_province = BEI
+				add_core = BEI
+				change_trade_goods = tropical_wood
+			}
+		}
+		if = {
+			limit = { 4485 = { is_empty = yes } }
+			4485 = { 
+				cede_province = BEI
+				add_core = BEI
+				change_trade_goods = fish
+			}
+		}
+		BEI = { every_neighbor_country = { add_truce_with = BEI } }
+	}
+}
+
+# Dvaravati
+country_event = {
+	id = et.155
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 601
+		is_year = 510
+		OR = {
+			602 = { is_empty = yes }
+			614 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 602 = { is_empty = yes } }
+			602 = { 
+				cede_province = DVA
+				add_core = DVA
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 614 = { is_empty = yes } }
+			614 = { 
+				cede_province = DVA
+				add_core = DVA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1817 = { is_empty = yes } }
+			1817 = { 
+				cede_province = DVA
+				add_core = DVA
+				change_trade_goods = grain
+			}
+		}
+		DVA = { every_neighbor_country = { add_truce_with = DVA } }
+	}
+}
+
+# Nanzhao
+country_event = {
+	id = et.156
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 662
+		is_year = 700
+		OR = {
+			661 = { is_empty = yes }
+			660 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 661 = { is_empty = yes } }
+			661 = { 
+				cede_province = NAN
+				add_core = NAN
+				change_trade_goods = tea
+			}
+		}
+		if = {
+			limit = { 660 = { is_empty = yes } }
+			660 = { 
+				cede_province = NAN
+				add_core = NAN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 615 = { is_empty = yes } }
+			615 = { 
+				cede_province = NAN
+				add_core = NAN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 587 = { is_empty = yes } }
+			587 = { 
+				cede_province = NAN
+				add_core = NAN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2466 = { is_empty = yes } }
+			2466 = { 
+				cede_province = NAN
+				add_core = NAN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2467 = { is_empty = yes } }
+			2467 = { 
+				cede_province = NAN
+				add_core = NAN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2379 = { is_empty = yes } }
+			2379 = { 
+				cede_province = NAN
+				add_core = NAN
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2465 = { is_empty = yes } }
+			2465 = { 
+				cede_province = NAN
+				add_core = NAN
+				change_trade_goods = wool
+			}
+		}
+		NAN = { every_neighbor_country = { add_truce_with = NAN } }
+	}
+}
+
+# Mataram
+country_event = {
+	id = et.157
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 630
+		is_year = 710
+		OR = {
+			626 = { is_empty = yes }
+			628 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 626 = { is_empty = yes } }
+			626 = { 
+				cede_province = MTR
+				add_core = MTR
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 628 = { is_empty = yes } }
+			628 = { 
+				cede_province = MTR
+				add_core = MTR
+				change_trade_goods = cotton
+			}
+		}
+		if = {
+			limit = { 2412 = { is_empty = yes } }
+			2412 = { 
+				cede_province = MTR
+				add_core = MTR
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 629 = { is_empty = yes } }
+			629 = { 
+				cede_province = MTR
+				add_core = MTR
+				change_trade_goods = sugar
+			}
+		}
+		if = {
+			limit = { 2413 = { is_empty = yes } }
+			2413 = { 
+				cede_province = MTR
+				add_core = MTR
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2414 = { is_empty = yes } }
+			2414 = { 
+				cede_province = MTR
+				add_core = MTR
+				change_trade_goods = spices
+			}
+		}
+		MTR = { every_neighbor_country = { add_truce_with = MTR } }
+	}
+}
+
+# Bali
+country_event = {
+	id = et.158
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 630
+		is_year = 880
+		OR = {
+			631 = { is_empty = yes }
+			627 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 631 = { is_empty = yes } }
+			631 = { 
+				cede_province = BLI
+				add_core = BLI
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 627 = { is_empty = yes } }
+			627 = { 
+				cede_province = BLI
+				add_core = BLI
+				change_trade_goods = cotton
+			}
+		}
+		BLI = { every_neighbor_country = { add_truce_with = BLI } }
+	}
+}
+
+# Pasai
+country_event = {
+	id = et.159
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 620
+		is_year = 1180
+		OR = {
+			617 = { is_empty = yes }
+			2399 = { is_empty = yes }
+			618 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2399 = { is_empty = yes } }
+			2399 = { 
+				cede_province = PSA
+				add_core = PSA
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 617 = { is_empty = yes } }
+			617 = { 
+				cede_province = PSA
+				add_core = PSA
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 618 = { is_empty = yes } }
+			618 = { 
+				cede_province = PSA
+				add_core = PSA
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2400 = { is_empty = yes } }
+			2400 = { 
+				cede_province = PSA
+				add_core = PSA
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 2401 = { is_empty = yes } }
+			2401 = { 
+				cede_province = PSA
+				add_core = PSA
+				change_trade_goods = tropical_wood
+			}
+		}
+		if = {
+			limit = { 2402 = { is_empty = yes } }
+			2402 = { 
+				cede_province = PSA
+				add_core = PSA
+				change_trade_goods = tropical_wood
+			}
+		}
+		PSA = { every_neighbor_country = { add_truce_with = PSA } }
+	}
+}
+
+# Makassar
+country_event = {
+	id = et.160
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 627
+		is_year = 1240
+		641 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		641 = { 
+			cede_province = MKS
+			add_core = MKS
+			change_trade_goods = spices
+		}
+		if = {
+			limit = { 2427 = { is_empty = yes } }
+			2427 = { 
+				cede_province = MKS
+				add_core = MKS
+				change_trade_goods = fish
+			}
+		}
+	}
+}
+
+# Ternate
+country_event = {
+	id = et.161
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 627
+		is_year = 1200
+		649 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		649 = { 
+			cede_province = TER
+			add_core = TER
+			change_trade_goods = spices
+		}
+	}
+}
+
+# Tidore
+country_event = {
+	id = et.162
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 627
+		is_year = 1100
+		650 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		650 = { 
+			cede_province = TID
+			add_core = TID
+			change_trade_goods = spices
+		}
+	}
+}
+
+# Sulu
+country_event = {
+	id = et.163
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 636
+		is_year = 1440
+		OR = {
+			651 = { is_empty = yes }
+			653 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 651 = { is_empty = yes } }
+			651 = { 
+				cede_province = SUL
+				add_core = SUL
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 653 = { is_empty = yes } }
+			653 = { 
+				cede_province = SUL
+				add_core = SUL
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 637 = { is_empty = yes } }
+			637 = { 
+				cede_province = SUL
+				add_core = SUL
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2425 = { is_empty = yes } }
+			2425 = { 
+				cede_province = SUL
+				add_core = SUL
+				change_trade_goods = tropical_wood
+			}
+		}
+	}
+}
+
+# Krivichs
+country_event = {
+	id = et.164
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 292
+		is_year = 500
+		OR = {
+			275 = { is_empty = yes }
+			2605 = { is_empty = yes }
+			293 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 275 = { is_empty = yes } }
+			275 = { 
+				cede_province = KRI
+				add_core = KRI
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2605 = { is_empty = yes } }
+			2605 = { 
+				cede_province = KRI
+				add_core = KRI
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 293 = { is_empty = yes } }
+			293 = { 
+				cede_province = KRI
+				add_core = KRI
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4369 = { is_empty = yes } }
+			4369 = { 
+				cede_province = KRI
+				add_core = KRI
+				change_trade_goods = cloth
+			}
+		}
+		KRI = { every_neighbor_country = { add_truce_with = KRI } }
+	}
+}
+
+# Ilmen Slavs
+country_event = {
+	id = et.165
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 36
+		is_year = 500
+		OR = {
+			310 = { is_empty = yes }
+			274 = { is_empty = yes }
+			311 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+
+		if = {
+			limit = { 274 = { is_empty = yes } }
+			274 = { 
+				cede_province = ILM
+				add_core = ILM
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 310 = { is_empty = yes } }
+			310 = { 
+				cede_province = ILM
+				add_core = ILM
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 1960 = { is_empty = yes } }
+			1960 = { 
+				cede_province = ILM
+				add_core = ILM
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 311 = { is_empty = yes } }
+			311 = { 
+				cede_province = ILM
+				add_core = ILM
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4286 = { is_empty = yes } }
+			4286 = { 
+				cede_province = ILM
+				add_core = ILM
+				change_trade_goods = naval_supplies
+			}
+		}
+		if = {
+			limit = { 4367 = { is_empty = yes } }
+			4367 = { 
+				cede_province = ILM
+				add_core = ILM
+				change_trade_goods = grain
+			}
+		}
+		ILM = { every_neighbor_country = { add_truce_with = ILM } }
+	}
+}
+
+# Warsangali
+country_event = {
+	id = et.166
+	title = "et.EVTNAME101"
+	desc = "et.EVTDESC101"
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1212
+		is_year = 1200
+		2693 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA101"
+		2693 = { 
+			cede_province = WAR
+			add_core = WAR
+			change_trade_goods = ivory
+			change_religion = sunni
+		}
+		if = {
+			limit = { 2694 = { is_empty = yes } }
+			2694 = { 
+				cede_province = WAR
+				add_core = WAR
+				change_trade_goods = grain
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2692 = { is_empty = yes } }
+			2692 = { 
+				cede_province = WAR
+				add_core = WAR
+				change_trade_goods = grain
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2691 = { is_empty = yes } }
+			2691 = { 
+				cede_province = WAR
+				add_core = WAR
+				change_trade_goods = wool
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 1209 = { is_empty = yes } }
+			1209 = { 
+				cede_province = WAR
+				add_core = WAR
+				change_trade_goods = ivory
+				change_religion = sunni
+			}
+		}
+		WAR = { every_neighbor_country = { add_truce_with = WAR } }
+	}
+}
+
+# Marehan
+country_event = {
+	id = et.167
+	title = "et.EVTNAME101"
+	desc = "et.EVTDESC101"
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1205
+		is_year = 1300
+		2697 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA101"
+		if = {
+			limit = { 2697 = { is_empty = yes } }
+			2697 = { 
+				cede_province = MRE
+				add_core = MRE
+				change_trade_goods = grain
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 1206 = { is_empty = yes } }
+			1206 = { 
+				cede_province = MRE
+				add_core = MRE
+				change_trade_goods = wool
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2698 = { is_empty = yes } }
+			2698 = { 
+				cede_province = MRE
+				add_core = MRE
+				change_trade_goods = fish
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2696 = { is_empty = yes } }
+			2696 = { 
+				cede_province = MRE
+				add_core = MRE
+				change_trade_goods = wool
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 2695 = { is_empty = yes } }
+			2695 = { 
+				cede_province = MRE
+				add_core = MRE
+				change_trade_goods = fish
+				change_religion = sunni
+			}
+		}
+		if = {
+			limit = { 1208 = { is_empty = yes } }
+			1208 = { 
+				cede_province = MRE
+				add_core = MRE
+				change_trade_goods = wool
+				change_religion = sunni
+			}
+		}
+		MRE = { every_neighbor_country = { add_truce_with = MRE } }
+	}
+}
+
+# Timbuktu
+country_event = {
+	id = et.168
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1156
+		is_year = 330
+		OR = {
+			1132 = { is_empty = yes }
+			1129 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1132 = { is_empty = yes } }
+			1132 = { 
+				cede_province = TMB
+				add_core = TMB
+				change_trade_goods = cloth
+			}
+		}
+		if = {
+			limit = { 1129 = { is_empty = yes } }
+			1129 = { 
+				cede_province = TMB
+				add_core = TMB
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 1130 = { is_empty = yes } }
+			1130 = { 
+				cede_province = TMB
+				add_core = TMB
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 1128 = { is_empty = yes } }
+			1128 = { 
+				cede_province = TMB
+				add_core = TMB
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 2325 = { is_empty = yes } }
+			2325 = { 
+				cede_province = TMB
+				add_core = TMB
+				change_trade_goods = fish
+			}
+		}
+		TMB = { every_neighbor_country = { add_truce_with = TMB } }
+	}
+}
+
+# Jenne
+country_event = {
+	id = et.169
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1156
+		is_year = 330
+		OR = {
+			1134 = { is_empty = yes }
+			2322 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1134 = { is_empty = yes } }
+			1134 = { 
+				cede_province = JNN
+				add_core = JNN
+				change_trade_goods = cloth
+			}
+		}
+		if = {
+			limit = { 2322 = { is_empty = yes } }
+			2322 = { 
+				cede_province = JNN
+				add_core = JNN
+				change_trade_goods = fish
+			}
+		}
+		JNN = { every_neighbor_country = { add_truce_with = JNN } }
+	}
+}
+
+# Kangaba
+country_event = {
+	id = et.170
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1123
+		is_year = 740
+		OR = {
+			2316 = { is_empty = yes }
+			2315 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2316 = { is_empty = yes } }
+			2316 = { 
+				cede_province = KAG
+				add_core = KAG
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1120 = { is_empty = yes } }
+			1120 = { 
+				cede_province = KAG
+				add_core = KAG
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 2315 = { is_empty = yes } }
+			2315 = { 
+				cede_province = KAG
+				add_core = KAG
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1121 = { is_empty = yes } }
+			1121 = { 
+				cede_province = KAG
+				add_core = KAG
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 2317 = { is_empty = yes } }
+			2317 = { 
+				cede_province = KAG
+				add_core = KAG
+				change_trade_goods = spices
+			}
+		}
+		KAG = { every_neighbor_country = { add_truce_with = KAG } }
+	}
+}
+
+# Jolof
+country_event = {
+	id = et.171
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2310
+		is_year = 1320
+		OR = {
+			1116 = { is_empty = yes }
+			1113 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1116 = { is_empty = yes } }
+			1116 = { 
+				cede_province = JOL
+				add_core = JOL
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 1113 = { is_empty = yes } }
+			1113 = { 
+				cede_province = JOL
+				add_core = JOL
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2015 = { is_empty = yes } }
+			2015 = { 
+				cede_province = JOL
+				add_core = JOL
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2311 = { is_empty = yes } }
+			2311 = { 
+				cede_province = JOL
+				add_core = JOL
+				change_trade_goods = slaves
+			}
+		}
+		JOL = { every_neighbor_country = { add_truce_with = JOL } }
+	}
+}
+
+# Kaabu
+country_event = {
+	id = et.172
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2309
+		is_year = 1220
+		OR = {
+			1114 = { is_empty = yes }
+			2312 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1114 = { is_empty = yes } }
+			1114 = { 
+				cede_province = KBU
+				add_core = KBU
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2312 = { is_empty = yes } }
+			2312 = { 
+				cede_province = KBU
+				add_core = KBU
+				change_trade_goods = ivory
+			}
+		}
+		KBU = { every_neighbor_country = { add_truce_with = KBU } }
+	}
+}
+
+# Mossi
+country_event = {
+	id = et.173
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2321
+		is_year = 1020
+		OR = {
+			1137 = { is_empty = yes }
+			1136 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1137 = { is_empty = yes } }
+			1137 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2323 = { is_empty = yes } }
+			2323 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2324 = { is_empty = yes } }
+			2324 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 1135 = { is_empty = yes } }
+			1135 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2330 = { is_empty = yes } }
+			2330 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2329 = { is_empty = yes } }
+			2329 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2328 = { is_empty = yes } }
+			2328 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1136 = { is_empty = yes } }
+			1136 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1143 = { is_empty = yes } }
+			1143 = { 
+				cede_province = MSI
+				add_core = MSI
+				change_trade_goods = grain
+			}
+		}
+		MSI = { every_neighbor_country = { add_truce_with = MSI } }
+	}
+}
+
+# Kong
+country_event = {
+	id = et.174
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2309
+		is_year = 1120
+		OR = {
+			2326 = { is_empty = yes }
+			2327 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2326 = { is_empty = yes } }
+			2326 = { 
+				cede_province = KNG
+				add_core = KNG
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2327 = { is_empty = yes } }
+			2327 = { 
+				cede_province = KNG
+				add_core = KNG
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 1124 = { is_empty = yes } }
+			1124 = { 
+				cede_province = KNG
+				add_core = KNG
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2318 = { is_empty = yes } }
+			2318 = { 
+				cede_province = KNG
+				add_core = KNG
+				change_trade_goods = dyes
+			}
+		}
+		if = {
+			limit = { 2319 = { is_empty = yes } }
+			2319 = { 
+				cede_province = KNG
+				add_core = KNG
+				change_trade_goods = iron
+			}
+		}
+		KNG = { every_neighbor_country = { add_truce_with = KNG } }
+	}
+}
+
+# Bonoman
+country_event = {
+	id = et.175
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1134
+		is_year = 1020
+		OR = {
+			2334 = { is_empty = yes }
+			2331 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2334 = { is_empty = yes } }
+			2334 = { 
+				cede_province = BON
+				add_core = BON
+				change_trade_goods = tropical_wood
+			}
+		}
+		if = {
+			limit = { 2331 = { is_empty = yes } }
+			2331 = { 
+				cede_province = BON
+				add_core = BON
+				change_trade_goods = coffee
+			}
+		}
+		BON = { every_neighbor_country = { add_truce_with = BON } }
+	}
+}
+
+# Dagbon
+country_event = {
+	id = et.176
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1136
+		is_year = 1390
+		OR = {
+			2335 = { is_empty = yes }
+			2336 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2335 = { is_empty = yes } }
+			2335 = { 
+				cede_province = DGB
+				add_core = DGB
+				change_trade_goods = dyes
+			}
+		}
+		if = {
+			limit = { 2336 = { is_empty = yes } }
+			2336 = { 
+				cede_province = DGB
+				add_core = DGB
+				change_trade_goods = tropical_wood
+			}
+		}
+		DGB = { every_neighbor_country = { add_truce_with = DGB } }
+	}
+}
+
+# Dahomey
+country_event = {
+	id = et.177
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2338
+		is_year = 1390
+		1140 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		1140 = { 
+			cede_province = DAH
+			add_core = DAH
+			change_trade_goods = slaves
+		}
+		DAH = { every_neighbor_country = { add_truce_with = DAH } }
+	}
+}
+
+# Air
+country_event = {
+	id = et.178
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1156
+		is_year = 1330
+		OR = {
+			2053 = { is_empty = yes }
+			2352 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2053 = { is_empty = yes } }
+			2053 = { 
+				cede_province = AIR
+				add_core = AIR
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2351 = { is_empty = yes } }
+			2351 = { 
+				cede_province = AIR
+				add_core = AIR
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2352 = { is_empty = yes } }
+			2352 = { 
+				cede_province = AIR
+				add_core = AIR
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 2353 = { is_empty = yes } }
+			2353 = { 
+				cede_province = AIR
+				add_core = AIR
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2356 = { is_empty = yes } }
+			2356 = { 
+				cede_province = AIR
+				add_core = AIR
+				change_trade_goods = salt
+			}
+		}
+		AIR = { every_neighbor_country = { add_truce_with = AIR } }
+	}
+}
+
+# Zazzau
+country_event = {
+	id = et.179
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1155
+		is_year = 1080
+		OR = {
+			1154 = { is_empty = yes }
+			2341 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1154 = { is_empty = yes } }
+			1154 = { 
+				cede_province = ZZZ
+				add_core = ZZZ
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 1150 = { is_empty = yes } }
+			1150 = { 
+				cede_province = ZZZ
+				add_core = ZZZ
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2341 = { is_empty = yes } }
+			2341 = { 
+				cede_province = ZZZ
+				add_core = ZZZ
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 2342 = { is_empty = yes } }
+			2342 = { 
+				cede_province = ZZZ
+				add_core = ZZZ
+				change_trade_goods = grain
+			}
+		}
+		ZZZ = { every_neighbor_country = { add_truce_with = ZZZ } }
+	}
+}
+
+# Katsina
+country_event = {
+	id = et.180
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1155
+		is_year = 1080
+		OR = {
+			1149 = { is_empty = yes }
+			2354 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1149 = { is_empty = yes } }
+			1149 = { 
+				cede_province = KTS
+				add_core = KTS
+				change_trade_goods = cloth
+			}
+		}
+		if = {
+			limit = { 1148 = { is_empty = yes } }
+			1148 = { 
+				cede_province = KTS
+				add_core = KTS
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2354 = { is_empty = yes } }
+			2354 = { 
+				cede_province = KTS
+				add_core = KTS
+				change_trade_goods = dyes
+			}
+		}
+		KTS = { every_neighbor_country = { add_truce_with = KTS } }
+	}
+}
+
+# Nupe
+country_event = {
+	id = et.181
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1146
+		is_year = 1420
+		OR = {
+			1152 = { is_empty = yes }
+			1153 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1145 = { is_empty = yes } }
+			1145 = { 
+				cede_province = NUP
+				add_core = NUP
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 1153 = { is_empty = yes } }
+			1153 = { 
+				cede_province = NUP
+				add_core = NUP
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 1152 = { is_empty = yes } }
+			1152 = { 
+				cede_province = NUP
+				add_core = NUP
+				change_trade_goods = ivory
+			}
+		}
+		NUP = { every_neighbor_country = { add_truce_with = NUP } }
+	}
+}
+
+# Kanem-Bornu
+country_event = {
+	id = et.182
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2055
+		is_year = 680
+		OR = {
+			2357 = { is_empty = yes }
+			1157 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1156 = { is_empty = yes } }
+			1156 = { 
+				cede_province = KBO
+				add_core = KBO
+				change_trade_goods = livestock
+			}
+		}
+		if = {
+			limit = { 1157 = { is_empty = yes } }
+			1157 = { 
+				cede_province = KBO
+				add_core = KBO
+				change_trade_goods = livestock
+			}
+		}
+		if = {
+			limit = { 1158 = { is_empty = yes } }
+			1158 = { 
+				cede_province = KBO
+				add_core = KBO
+				change_trade_goods = paper
+			}
+		}
+		if = {
+			limit = { 1159 = { is_empty = yes } }
+			1159 = { 
+				cede_province = SA0
+				add_core = SA0
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1160 = { is_empty = yes } }
+			1160 = { 
+				cede_province = KBO
+				add_core = KBO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2041 = { is_empty = yes } }
+			2041 = { 
+				cede_province = SA0
+				add_core = SA0
+				change_trade_goods = tropical_wood
+			}
+		}
+		if = {
+			limit = { 2345 = { is_empty = yes } }
+			2345 = { 
+				cede_province = KBO
+				add_core = KBO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2346 = { is_empty = yes } }
+			2346 = { 
+				cede_province = KBO
+				add_core = KBO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2355 = { is_empty = yes } }
+			2355 = { 
+				cede_province = KBO
+				add_core = KBO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2357 = { is_empty = yes } }
+			2357 = { 
+				cede_province = YAO
+				add_core = YAO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2358 = { is_empty = yes } }
+			2358 = { 
+				cede_province = SA0
+				add_core = SA0
+				change_trade_goods = grain
+			}
+		}
+		KBO = { every_neighbor_country = { add_truce_with = KBO } }
+		SA0 = { every_neighbor_country = { add_truce_with = SA0 } }
+		YAO = { every_neighbor_country = { add_truce_with = YAO } }
+	}
+}
+
+# Alodia
+country_event = {
+	id = et.183
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2667
+		is_year = 1420
+		OR = {
+			1222 = { is_empty = yes }
+			1225 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1222 = { is_empty = yes } }
+			1222 = { 
+				cede_province = ALO
+				add_core = ALO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1225 = { is_empty = yes } }
+			1225 = { 
+				cede_province = ALO
+				add_core = ALO
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2668 = { is_empty = yes } }
+			2668 = { 
+				cede_province = ALO
+				add_core = ALO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4273 = { is_empty = yes } }
+			4273 = { 
+				cede_province = ALO
+				add_core = ALO
+				change_trade_goods = grain
+			}
+		}
+		ALO = { every_neighbor_country = { add_truce_with = ALO } }
+	}
+}
+
+# Gotland
+country_event = {
+	id = et.184
+	title = "et.EVTNAME102"
+	desc = "et.EVTDESC102"
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = norse_pagan_reformed
+		dip_tech = 28
+		num_of_ports = 1
+		25 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "et.EVTOPTA101"
+		25 = { 
+			cede_province = GOT
+			add_core = GOT
+			change_trade_goods = wool
+		}
+		every_country = {
+			limit = {
+				religion = norse_pagan_reformed
+			}
+			discover_province = 25
+			discover_province = 1255
+			discover_province = 1926
+			discover_province = 1927
+		}
+	}
+}
+
+# Pan Pan
+country_event = {
+	id = et.185
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 591
+		is_year = 180
+		OR = {
+			599 = { is_empty = yes }
+			2397 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 599 = { is_empty = yes } }
+			599 = { 
+				cede_province = PPA
+				add_core = PPA
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 2397 = { is_empty = yes } }
+			2397 = { 
+				cede_province = PPA
+				add_core = PPA
+				change_trade_goods = fish
+			}
+		}
+		PPA = { every_neighbor_country = { add_truce_with = PPA } }
+	}
+}
+
+# Kedah
+country_event = {
+	id = et.186
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 591
+		is_year = 180
+		OR = {
+			595 = { is_empty = yes }
+			2396 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2396 = { is_empty = yes } }
+			2396 = { 
+				cede_province = KED
+				add_core = KED
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 595 = { is_empty = yes } }
+			595 = { 
+				cede_province = KED
+				add_core = KED
+				change_trade_goods = fish
+			}
+		}
+		KED = { every_neighbor_country = { add_truce_with = KED } }
+	}
+}
+
+# Pagarryung
+country_event = {
+	id = et.187
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 620
+		is_year = 1180
+		OR = {
+			619 = { is_empty = yes }
+			2405 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 619 = { is_empty = yes } }
+			619 = { 
+				cede_province = PGR
+				add_core = PGR
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2404 = { is_empty = yes } }
+			2404 = { 
+				cede_province = PGR
+				add_core = PGR
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2405 = { is_empty = yes } }
+			2405 = { 
+				cede_province = PGR
+				add_core = PGR
+				change_trade_goods = spices
+			}
+		}
+		PGR = { every_neighbor_country = { add_truce_with = PGR } }
+	}
+}
+
+# Kutei
+country_event = {
+	id = et.188
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 636
+		is_year = 1200
+		OR = {
+			638 = { is_empty = yes }
+			2422 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 638 = { is_empty = yes } }
+			638 = { 
+				cede_province = KUT
+				add_core = KUT
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2421 = { is_empty = yes } }
+			2421 = { 
+				cede_province = KUT
+				add_core = KUT
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 2422 = { is_empty = yes } }
+			2422 = { 
+				cede_province = KUT
+				add_core = KUT
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 2423 = { is_empty = yes } }
+			2423 = { 
+				cede_province = KUT
+				add_core = KUT
+				change_trade_goods = tropical_wood
+			}
+		}
+		if = {
+			limit = { 2424 = { is_empty = yes } }
+			2424 = { 
+				cede_province = KUT
+				add_core = KUT
+				change_trade_goods = tropical_wood
+			}
+		}
+		KUT = { every_neighbor_country = { add_truce_with = KUT } }
+	}
+}
+
+# Buton
+country_event = {
+	id = et.189
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 641
+		is_year = 1380
+		2866 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		2866 = { 
+			cede_province = BTN
+			add_core = BTN
+			change_trade_goods = spices
+		}
+		BTN = { every_neighbor_country = { add_truce_with = BTN } }
+	}
+}
+
+# Central Africa
+country_event = {
+	id = et.190
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1189
+		is_year = 1400
+		OR = {
+			1799 = { is_empty = yes }
+			2036 = { is_empty = yes }
+			4180 = { is_empty = yes }
+			1170 = { is_empty = yes }
+			4174 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 480
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 4190 = { is_empty = yes } }
+			4190 = { 
+				cede_province = LDU
+				add_core = LDU
+				change_trade_goods = cloth
+			}
+		}
+		if = {
+			limit = { 4189 = { is_empty = yes } }
+			4189 = { 
+				cede_province = LDU
+				add_core = LDU
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1799 = { is_empty = yes } }
+			1799 = { 
+				cede_province = MRA
+				add_core = MRA
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2029 = { is_empty = yes } }
+			2029 = { 
+				cede_province = MRA
+				add_core = MRA
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4192 = { is_empty = yes } }
+			4192 = { 
+				cede_province = MRA
+				add_core = MRA
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4191 = { is_empty = yes } }
+			4191 = { 
+				cede_province = MKU
+				add_core = MKU
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2850 = { is_empty = yes } }
+			2850 = { 
+				cede_province = MKU
+				add_core = MKU
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4201 = { is_empty = yes } }
+			4201 = { 
+				cede_province = TBK
+				add_core = TBK
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4200 = { is_empty = yes } }
+			4200 = { 
+				cede_province = TBK
+				add_core = TBK
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4211 = { is_empty = yes } }
+			4211 = { 
+				cede_province = BSG
+				add_core = BSG
+				change_trade_goods = fish
+			}
+		}
+		if = {
+			limit = { 2036 = { is_empty = yes } }
+			2036 = { 
+				cede_province = BUG
+				add_core = BUG
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 4209 = { is_empty = yes } }
+			4209 = { 
+				cede_province = BNY
+				add_core = BNY
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 2153 = { is_empty = yes } }
+			2153 = { 
+				cede_province = BNY
+				add_core = BNY
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4208 = { is_empty = yes } }
+			4208 = { 
+				cede_province = NKO
+				add_core = NKO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2035 = { is_empty = yes } }
+			2035 = { 
+				cede_province = RWA
+				add_core = RWA
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 4183 = { is_empty = yes } }
+			4183 = { 
+				cede_province = RWA
+				add_core = RWA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2034 = { is_empty = yes } }
+			2034 = { 
+				cede_province = BUU
+				add_core = BUU
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 4205 = { is_empty = yes } }
+			4205 = { 
+				cede_province = KRW
+				add_core = KRW
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 2165 = { is_empty = yes } }
+			2165 = { 
+				cede_province = KRW
+				add_core = KRW
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 1197 = { is_empty = yes } }
+			1197 = { 
+				cede_province = UBH
+				add_core = UBH
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 4203 = { is_empty = yes } }
+			4203 = { 
+				cede_province = UBH
+				add_core = UBH
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4204 = { is_empty = yes } }
+			4204 = { 
+				cede_province = UBH
+				add_core = UBH
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1166 = { is_empty = yes } }
+			1166 = { 
+				cede_province = LOA
+				add_core = LOA
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4271 = { is_empty = yes } }
+			4271 = { 
+				cede_province = LOA
+				add_core = LOA
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 1169 = { is_empty = yes } }
+			1169 = { 
+				cede_province = TYO
+				add_core = TYO
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 1170 = { is_empty = yes } }
+			1170 = { 
+				cede_province = KON
+				add_core = KON
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 4270 = { is_empty = yes } }
+			4270 = { 
+				cede_province = KON
+				add_core = KON
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2845 = { is_empty = yes } }
+			2845 = { 
+				cede_province = KON
+				add_core = KON
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4269 = { is_empty = yes } }
+			4269 = { 
+				cede_province = KON
+				add_core = KON
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2037 = { is_empty = yes } }
+			2037 = { 
+				cede_province = KON
+				add_core = KON
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 2059 = { is_empty = yes } }
+			2059 = { 
+				cede_province = KON
+				add_core = KON
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 4166 = { is_empty = yes } }
+			4166 = { 
+				cede_province = KON
+				add_core = KON
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4168 = { is_empty = yes } }
+			4168 = { 
+				cede_province = KON
+				add_core = KON
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1171 = { is_empty = yes } }
+			1171 = { 
+				cede_province = NDO
+				add_core = NDO
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 4167 = { is_empty = yes } }
+			4167 = { 
+				cede_province = NDO
+				add_core = NDO
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 4170 = { is_empty = yes } }
+			4170 = { 
+				cede_province = KSJ
+				add_core = KSJ
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 4171 = { is_empty = yes } }
+			4171 = { 
+				cede_province = KSJ
+				add_core = KSJ
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 4169 = { is_empty = yes } }
+			4169 = { 
+				cede_province = KSJ
+				add_core = KSJ
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2846 = { is_empty = yes } }
+			2846 = { 
+				cede_province = YAK
+				add_core = YAK
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 4172 = { is_empty = yes } }
+			4172 = { 
+				cede_province = YAK
+				add_core = YAK
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2027 = { is_empty = yes } }
+			2027 = { 
+				cede_province = CKW
+				add_core = CKW
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4177 = { is_empty = yes } }
+			4177 = { 
+				cede_province = CKW
+				add_core = CKW
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4176 = { is_empty = yes } }
+			4176 = { 
+				cede_province = LND
+				add_core = LND
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 2164 = { is_empty = yes } }
+			2164 = { 
+				cede_province = LND
+				add_core = LND
+				change_trade_goods = ivory
+			}
+		}
+		if = {
+			limit = { 4175 = { is_empty = yes } }
+			4175 = { 
+				cede_province = LND
+				add_core = LND
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 4174 = { is_empty = yes } }
+			4174 = { 
+				cede_province = KUB
+				add_core = KUB
+				change_trade_goods = tropical_wood
+			}
+		}
+		if = {
+			limit = { 4173 = { is_empty = yes } }
+			4173 = { 
+				cede_province = KUB
+				add_core = KUB
+				change_trade_goods = tropical_wood
+			}
+		}
+		if = {
+			limit = { 2058 = { is_empty = yes } }
+			2058 = { 
+				cede_province = KUB
+				add_core = KUB
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 4179 = { is_empty = yes } }
+			4179 = { 
+				cede_province = KLD
+				add_core = KLD
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2172 = { is_empty = yes } }
+			2172 = { 
+				cede_province = KLD
+				add_core = KLD
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4180 = { is_empty = yes } }
+			4180 = { 
+				cede_province = LUB
+				add_core = LUB
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 4181 = { is_empty = yes } }
+			4181 = { 
+				cede_province = LUB
+				add_core = LUB
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2160 = { is_empty = yes } }
+			2160 = { 
+				cede_province = LUB
+				add_core = LUB
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 4178 = { is_empty = yes } }
+			4178 = { 
+				cede_province = KIK
+				add_core = KIK
+				change_trade_goods = salt
+			}
+		}
+		if = {
+			limit = { 2161 = { is_empty = yes } }
+			2161 = { 
+				cede_province = KIK
+				add_core = KIK
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 4185 = { is_empty = yes } }
+			4185 = { 
+				cede_province = KZB
+				add_core = KZB
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 4186 = { is_empty = yes } }
+			4186 = { 
+				cede_province = KZB
+				add_core = KZB
+				change_trade_goods = copper
+			}
+		}
+		if = {
+			limit = { 2032 = { is_empty = yes } }
+			2032 = { 
+				cede_province = KZB
+				add_core = KZB
+				change_trade_goods = salt
+			}
+		}
+	}
+}
+
+# Ryukyu
+country_event = {
+	id = et.191
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1012
+		is_year = 1150
+		1015 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		1015 = { 
+			cede_province = RYU
+			add_core = RYU
+			change_trade_goods = chinaware
+		}
+	}
+}
+
+# Bashkiria
+country_event = {
+	id = et.192
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 472
+		is_year = 630
+		OR = {
+			475 = { is_empty = yes }
+			2841 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2841 = { is_empty = yes } }
+			2841 = { 
+				cede_province = BSH
+				add_core = BSH
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 2840 = { is_empty = yes } }
+			2840 = { 
+				cede_province = BSH
+				add_core = BSH
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 475 = { is_empty = yes } }
+			475 = { 
+				cede_province = BSH
+				add_core = BSH
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 2842 = { is_empty = yes } }
+			2842 = { 
+				cede_province = BSH
+				add_core = BSH
+				change_trade_goods = fur
+			}
+		}
+		if = {
+			limit = { 4389 = { is_empty = yes } }
+			4389 = { 
+				cede_province = BSH
+				add_core = BSH
+				change_trade_goods = wool
+			}
+		}
+		BSH = { every_neighbor_country = { add_truce_with = BSH } }
+	}
+}
+
+# Ethiopia
+country_event = {
+	id = et.193
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1224
+		is_year = 1150
+		OR = {
+			1213 = { is_empty = yes }
+			2687 = { is_empty = yes }
+			1218 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 1213 = { is_empty = yes } }
+			1213 = { 
+				cede_province = SOA
+				add_core = SOA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2685 = { is_empty = yes } }
+			2685 = { 
+				cede_province = SOA
+				add_core = SOA
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1210 = { is_empty = yes } }
+			1210 = { 
+				cede_province = HDY
+				add_core = HDY
+				change_trade_goods = iron
+			}
+		}
+		if = {
+			limit = { 4297 = { is_empty = yes } }
+			4297 = { 
+				cede_province = JJI
+				add_core = JJI
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2687 = { is_empty = yes } }
+			2687 = { 
+				cede_province = DWR
+				add_core = DWR
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2686 = { is_empty = yes } }
+			2686 = { 
+				cede_province = DWR
+				add_core = DWR
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 2683 = { is_empty = yes } }
+			2683 = { 
+				cede_province = WLY
+				add_core = WLY
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 2044 = { is_empty = yes } }
+			2044 = { 
+				cede_province = WLY
+				add_core = WLY
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 1223 = { is_empty = yes } }
+			1223 = { 
+				cede_province = ETH
+				add_core = ETH
+				change_trade_goods = coffee
+			}
+		}
+		if = {
+			limit = { 2679 = { is_empty = yes } }
+			2679 = { 
+				cede_province = ETH
+				add_core = ETH
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 2680 = { is_empty = yes } }
+			2680 = { 
+				cede_province = DAM
+				add_core = DAM
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2681 = { is_empty = yes } }
+			2681 = { 
+				cede_province = DAM
+				add_core = DAM
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 1218 = { is_empty = yes } }
+			1218 = { 
+				cede_province = KAF
+				add_core = KAF
+				change_trade_goods = gold
+			}
+		}
+		if = {
+			limit = { 1217 = { is_empty = yes } }
+			1217 = { 
+				cede_province = KAF
+				add_core = KAF
+				change_trade_goods = slaves
+			}
+		}
+		if = {
+			limit = { 2682 = { is_empty = yes } }
+			2682 = { 
+				cede_province = ENA
+				add_core = ENA
+				change_trade_goods = wool
+			}
+		}
+		SHW = { every_neighbor_country = { add_truce_with = SHW } }
+		DWR = { every_neighbor_country = { add_truce_with = DWR } }
+		ETH = { every_neighbor_country = { add_truce_with = ETH } }
+		KAF = { every_neighbor_country = { add_truce_with = KAF } }
+	}
+}
+
+# Eastern Arabia
+country_event = {
+	id = et.193
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 400
+		is_year = 550
+		OR = {
+			403 = { is_empty = yes }
+			404 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 403 = { is_empty = yes } }
+			403 = { 
+				cede_province = OMA
+				add_core = OMA
+				change_trade_goods = wool
+			}
+		}
+		if = {
+			limit = { 4407 = { is_empty = yes } }
+			4407 = { 
+				cede_province = OMA
+				add_core = OMA
+				change_trade_goods = livestock
+			}
+		}
+		if = {
+			limit = { 404 = { is_empty = yes } }
+			404 = { 
+				cede_province = YAS
+				add_core = YAS
+				change_trade_goods = livestock
+			}
+		}
+		OMA = { every_neighbor_country = { add_truce_with = OMA } }
+		YAS = { every_neighbor_country = { add_truce_with = YAS } }
+	}
+}
+
+# Philippines 1
+country_event = {
+	id = et.194
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2475
+		is_year = 880
+		OR = {
+			2860 = { is_empty = yes }
+			2863 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 2860 = { is_empty = yes } }
+			2860 = { 
+				cede_province = TDO
+				add_core = TDO
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 656 = { is_empty = yes } }
+			656 = { 
+				cede_province = TDO
+				add_core = TDO
+				change_trade_goods = chinaware
+			}
+		}
+		if = {
+			limit = { 4475 = { is_empty = yes } }
+			4475 = { 
+				cede_province = TDO
+				add_core = TDO
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4476 = { is_empty = yes } }
+			4476 = { 
+				cede_province = TDO
+				add_core = TDO
+				change_trade_goods = gems
+			}
+		}
+		if = {
+			limit = { 2863 = { is_empty = yes } }
+			2863 = { 
+				cede_province = BTU
+				add_core = BTU
+				change_trade_goods = gems
+			}
+		}
+		TDO = { every_neighbor_country = { add_truce_with = TDO } }
+		BTU = { every_neighbor_country = { add_truce_with = BTU } }
+	}
+}
+
+# Philippines 2
+country_event = {
+	id = et.195
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2863
+		is_year = 1180
+		OR = {
+			653 = { is_empty = yes }
+			2862 = { is_empty = yes }
+			4478 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 652 = { is_empty = yes } }
+			652 = { 
+				cede_province = MGD
+				add_core = MGD
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 653 = { is_empty = yes } }
+			653 = { 
+				cede_province = MGD
+				add_core = MGD
+				change_trade_goods = spices
+			}
+		}
+		if = {
+			limit = { 2862 = { is_empty = yes } }
+			2862 = { 
+				cede_province = MAS
+				add_core = MAS
+				change_trade_goods = grain
+			}
+		}
+		if = {
+			limit = { 4477 = { is_empty = yes } }
+			4477 = { 
+				cede_province = MAS
+				add_core = MAS
+				change_trade_goods = sugar
+			}
+		}
+		if = {
+			limit = { 4478 = { is_empty = yes } }
+			4478 = { 
+				cede_province = CEB
+				add_core = CEB
+				change_trade_goods = gems
+			}
+		}
+		MGD = { every_neighbor_country = { add_truce_with = MGD } }
+		MAS = { every_neighbor_country = { add_truce_with = MAS } }
+		CEB = { every_neighbor_country = { add_truce_with = CEB } }
+	}
+}
+
+# Philippines 3
+country_event = {
+	id = et.196
+	title = "et.EVTNAME100"
+	desc = "et.EVTDESC100"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2860
+		is_year = 1400
+		OR = {
+			2859 = { is_empty = yes }
+			651 = { is_empty = yes }
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA100"
+		if = {
+			limit = { 651 = { is_empty = yes } }
+			651 = { 
+				cede_province = SUL
+				add_core = SUL
+				change_trade_goods = gems
+			}
+		}
+		if = {
+			limit = { 2859 = { is_empty = yes } }
+			2859 = { 
+				cede_province = PGS
+				add_core = PGS
+				change_trade_goods = salt
+			}
+		}
+		SUL = { every_neighbor_country = { add_truce_with = SUL } }
+		PGS = { every_neighbor_country = { add_truce_with = PGS } }
+	}
+}

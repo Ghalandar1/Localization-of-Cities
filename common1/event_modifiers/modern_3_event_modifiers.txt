@@ -1,0 +1,76 @@
+
+########## Cars
+failling_iron_price_root = { production_efficiency = 0.35 }
+failling_iron_price_root_25 = { production_efficiency = 0.15 }
+failling_iron_price_root_1 = { }
+failling_iron_price_root_1_25 = { }
+failling_iron_price_from = { production_efficiency = 0.35 }
+failling_iron_price_from_25 = { production_efficiency = 0.15 }
+rising_iron_price_root = {   production_efficiency = -0.35	}
+rising_iron_price_root_25 = {   production_efficiency = -0.15	}
+rising_iron_price_root_1 = {   }
+rising_iron_price_root_1_25 = {   }
+rising_iron_price_from = {   production_efficiency = -0.35	}
+rising_iron_price_from_25 = {   production_efficiency = -0.15	}
+
+
+########## Gems
+failling_aluminum_price_root ={  production_efficiency = 0.35 }
+failling_aluminum_price_root_25 ={  production_efficiency = 0.15 }
+failling_aluminum_price_root_1 = {  }
+failling_aluminum_price_from = { production_efficiency = 0.35 }
+failling_aluminum_price_from_25 = { production_efficiency = 0.15 }
+failling_aluminum_price_root_1_25 = {  }
+rising_aluminum_price_root = { production_efficiency = -0.35 }
+rising_aluminum_price_root_25 = { production_efficiency = -0.15 }
+rising_aluminum_price_root_1 = {  }
+rising_aluminum_price_root_1_25 = {  }
+rising_aluminum_price_from = { production_efficiency = -0.35 }
+rising_aluminum_price_from_25 = { production_efficiency = -0.15 }
+
+
+########## Coal
+failling_copper_price_root = { production_efficiency = 0.35 }
+failling_copper_price_root_25 = { production_efficiency = 0.15 }
+failling_copper_price_root_1 = {  }
+failling_copper_price_from = { production_efficiency = 0.35 }
+failling_copper_price_from_25 = { production_efficiency = 0.15 }
+rising_copper_price_root = { production_efficiency = -0.35 }
+rising_copper_price_root_25 = { production_efficiency = -0.15 }
+rising_copper_price_root_1 = {  }
+rising_copper_price_from = { production_efficiency = -0.35 }
+rising_copper_price_from_25 = { production_efficiency = -0.15 }
+failling_copper_price_root_1_25 = {  }
+rising_copper_price_root_1_25 = {  }
+
+
+
+
+
+
+
+
+
+##################### other country #####################
+low_iron_price_1_50 = { production_efficiency = 0.2 }
+much_iron_price_1_50 = { production_efficiency = -0.2 }
+low_iron_price_1_25 = { production_efficiency = 0.1 }
+much_iron_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_aluminum_price_1_50 = { production_efficiency = 0.2 }
+much_aluminum_price_1_50 = { production_efficiency = -0.2 }
+low_aluminum_price_1_25 = { production_efficiency = 0.1 }
+much_aluminum_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_copper_price_1_50 = { production_efficiency = 0.2 }
+much_copper_price_1_50 = { production_efficiency = -0.2 }
+low_copper_price_1_25 = { production_efficiency = 0.1 }
+much_copper_price_1_25 = { production_efficiency = -0.1 }
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 4989
+primary_culture = senegambian
+religion = secularism
+technology_group = muslim
+religious_school = maliki_school
+2019.5.30 = {
+	monarch = {		
+		name = "Adama Barrow"
+		birth_date = 1965.2.16
+		adm = 2
+		dip = 5
+		mil = 2
+		religion = sunni
+	}
+}

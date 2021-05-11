@@ -1,0 +1,157 @@
+namespace = cyber
+
+#cyber Point admin power X1
+country_event = {
+	id = cyber.1production
+	title = "cyber.1title"
+	desc = "cyber.1desc"
+	picture = cyber_production_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cyber.1opt"
+	}
+}
+
+
+
+#cyber Point diplo power 
+country_event = {
+	id = cyber.2production
+	title = "cyber.2title"
+	desc = "cyber.2desc"
+	picture = cyber_production_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cyber.1opt"
+	}
+}
+
+
+
+#cyber Point military power 
+country_event = {
+	id = cyber.3corruption
+	title = "cyber.3title"
+	desc = "cyber.3desc"
+	picture = cyber_corruption_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cyber.1opt"
+	}
+}
+
+
+#cyber Point military power 
+country_event = {
+	id = cyber.4corruption
+	title = "cyber.4title"
+	desc = "cyber.4desc"
+	picture = cyber_corruption_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cyber.1opt"
+	}
+}
+
+#cyber Point military power 
+country_event = {
+	id = cyber.5fort
+	title = "cyber.5title"
+	desc = "cyber.5desc"
+	picture = cyber_fort_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cyber.5opt"
+	}
+}
+
+
+
+country_event = {
+	id = cyber.6fort
+	title = "cyber.6title"
+	desc = "cyber.6desc"
+	picture = cyber_fort_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cyber.1opt"
+	}
+}
+
+
+
+country_event = {
+	id = cyber.7
+	title = "cyber.7title"
+	desc = "cyber.7desc"
+	picture = cyber_attack_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cyber.2opt"
+		event_target:cyber_atack_temp = {
+			add_country_modifier = {
+				name = cyber1
+				duration = 365
+			}
+			add_country_modifier = {
+				name = cyber_production
+				duration = 1095
+			}
+			country_event = { id = cyber.1production }
+		}
+		add_spy_network_in = { who = event_target:cyber_atack_temp value = -65 }
+		ROOT = { country_event = { id = cyber.2production } }
+	}
+	
+	option = {
+		name = "cyber.3opt"
+		event_target:cyber_atack_temp = {
+			add_country_modifier = {
+				name = cyber1
+				duration = 365
+			}
+			add_country_modifier = {
+				name = cyber_corruption
+				duration = 1460
+			}
+			country_event = { id = cyber.3corruption }
+		}
+		add_spy_network_in = { who = event_target:cyber_atack_temp value = -65 }
+		ROOT = { country_event = { id = cyber.4corruption } }
+	}
+	
+	option = {
+		name = "cyber.4opt"
+		event_target:cyber_atack_temp = {
+			add_country_modifier = {
+				name = cyber1
+				duration = 365
+			}
+			add_country_modifier = {
+				name = cyber_fort
+				duration = 912
+			}
+			country_event = { id = cyber.5fort }
+		}
+		add_spy_network_in = { who = event_target:cyber_atack_temp value = -65 }
+		ROOT = { country_event = { id = cyber.6fort } }
+	}
+	
+	option = {
+		name = "cyber.5opt"
+	}
+}

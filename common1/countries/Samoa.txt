@@ -1,0 +1,78 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+
+random_nation_chance = 0
+
+color = { 89  137  52 }
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Tuilaepa Aiono Sailele #0" = 10
+	"Fonotoe Nuafesili Pierre #0" = 10
+	"Le Mamea #0" = 10
+	"Tuisugaletaua Sofara #0" = 10
+	"Magele #0" = 10
+	"Faumuina #0" = 10
+	"Tuitama Talalelei #0" = 10
+	"Fiame Naomi #0" = -10
+	"Faamoetauloa Ulaitino Faale #0" = 10
+	"Sala Fata #0" = 10
+	"Tuiloma Pule #0" = 10
+	"Tolofuaivalelei Falemoe #0" = 10
+	"Manu'alesagalala Enokati #0" = 10
+	"Palusalue #0" = 10
+	"Gaina #0" = 10
+	"Mulitalo Siafusa #0" = 10
+	"Tuisugaletua Sofara #0" = 10
+	"Tuala Ainiu #0" = 10
+	"Ulu Vaomalo #0" = 10
+}
+
+leader_names = {
+	Malielegaoi Lauofo Ropati Aveau Mauiliu Liuga Tuitama Mataafa Tumaalii
+	Pinati Lameko Leiataua Posala Faapo Tino Vui Iusitino Kini Keil
+}
+
+ship_names = {
+	Adams Alfred Alliance "Andrew Doria" Argo Argus
+	Cabot Chesapeake Champion Columbus
+	Dolphin Deane Diligent 
+	Effingham Enterprise
+	Fly
+	Hampden Hancock Hornet
+	Lexington
+	Montgomery Mosquito
+	Nautilus
+	Pigot
+	Randolph Racehorse Ranger Reprisal Repulse Resistance Retaliation Revenge
+	Sachem Saratoga Serapis Siren Surprise
+	Trumbull
+	Viper Vixen
+	Warren Wasp 
+}
+
+

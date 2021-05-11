@@ -1,0 +1,224 @@
+
+diplomatic_ideas = {
+	category = DIP
+	
+	 trigger = {
+		adm_tech = 3 
+	}
+	
+	bonus = {
+		diplomats = 5
+	}
+
+	
+	foreign_embassies_on_countries = {
+		diplomatic_reputation = 1
+	}
+	establish_cadet_branches_00 = {
+		reduced_stab_impacts = yes
+	}
+	cabinet_00 = {
+		diplomatic_upkeep = 1
+	}
+	
+	diplomatic_corps = {
+		unjustified_demands = -0.5
+	}
+	
+	benign_diplomats_00 = {
+		improve_relation_modifier = 0.1
+	}
+	experienced_diplomats  = {
+		liberty_desire_from_subject_development = -0.05
+	}
+	dynastie_00 = {
+		ae_impact = -0.05
+	}
+
+	ai_will_do = {
+		factor = 10
+
+		modifier = {
+			factor = 5
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 4
+			any_country = {
+				is_rival = ROOT
+			}
+			
+			NOT = { is_vassal = yes }
+			NOT = { is_subject = yes }
+			
+		}
+		
+		modifier = {
+			factor = 2
+			personality = ai_diplomat 
+		}
+		
+
+	}
+}
+
+
+
+propaganda0 = {
+	category = DIP
+	
+	trigger = {
+		has_idea_group = diplomatic_ideas 
+	}
+
+	bonus = {
+		hostile_attrition = 1
+	}
+		
+	
+	propaganda1 = {
+		trade_efficiency = 0.05
+	}
+	propaganda2 = {
+		diplomats = 2
+	}
+	propaganda3 = {
+		improve_relation_modifier = 0.1
+	}
+
+	propaganda4 = {
+		prestige_decay = -0.01
+	}
+
+	propaganda5 = {
+		promote_culture_cost = -0.2
+	}
+	propaganda6 = {
+		caravan_power = 0.1
+	}
+	propaganda7 = {
+		envoy_travel_time = -0.5
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {			
+			factor = 1.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 3
+			government = monarchy
+		}
+		
+		modifier = {
+			factor = 3
+			government = republic
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+		
+	}
+}
+
+
+
+influence_ideas = {
+	category = DIP
+	
+	trigger = {
+		has_idea_group = diplomatic_ideas 
+	}
+
+	bonus = {
+		unjustified_demands = -0.1
+	}
+
+	tribute_system = {
+		governing_capacity_modifier = 0.1
+	}
+	flexible_negotiation = {
+		province_warscore_cost = -0.1
+	}
+	integrated_elites = {
+		yearly_absolutism = 1.0
+	}
+	state_propaganda = {
+		ae_impact = -0.1
+	}
+	diplomatic_influence = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+	postal_service = {
+		fabricate_claims_cost = -0.15
+	}
+	marcher_lords = {
+		autonomy_change_time = -0.1
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 10
+			personality = ai_diplomat 
+		}
+
+		
+
+	}	
+}
+
+
+
+military_base_ideas = {
+	category = DIP
+	
+	trigger = {
+		adm_tech = 3 
+	}
+
+	bonus = {
+		diplomatic_upkeep = 2
+	}
+	
+	diplomats = {
+		diplomatic_annexation_cost = -0.25
+	}
+	additional_relations = {
+		reduced_liberty_desire = 10
+	}
+	vassal_tribute = {
+		vassal_income = 0.25
+	}
+	diplomatic_reputation = {
+		liberty_desire_from_subject_development = -0.25
+	}
+	foreign_customs = {
+		global_tariffs = 0.25
+	}
+	claims = {
+		vassal_forcelimit_bonus = 1.0
+	}
+	entwicklung6 = {
+		
+		build_cost = -0.20
+	}
+	
+	ai_will_do = {
+		factor = 0.1
+	}
+}
+

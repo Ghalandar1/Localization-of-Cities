@@ -1,0 +1,211 @@
+namespace = pm_menu_designate
+
+country_event = {
+    id = pm_menu_designate.1
+    title = "pm_designate_menu_title"
+    desc = "pm_designate_menu_desc"
+    is_triggered_only = yes
+    #Militarist
+    option = {
+        name = "pm_mil_opt"        
+        event_target:pm_target = {
+            set_country_flag = pm_have_specialisation
+            add_country_modifier = {
+            name = pm_mil
+            duration = -1
+             }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Religious vassal
+    option = {
+        name = "pm_rel_opt"
+        trigger = {
+            event_target:pm_target = {
+                adm_tech = 5
+                NOT = {
+                    OR = {
+                        is_subject_of_type = march
+                        is_subject_of_type = client_march
+                        is_subject_of_type = personal_union
+                    }
+                }
+            }
+        }
+        event_target:pm_target = {
+            set_country_flag = pm_have_specialisation
+            add_country_modifier = {
+            name = pm_rel
+            duration = -1
+             }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Coloniser
+    option = {
+        name = "pm_col_opt"
+        trigger = {
+            event_target:pm_target = {
+                dip_tech = 7
+                NOT = {
+                    OR = {
+                        is_subject_of_type = march
+                        is_subject_of_type = client_march
+                    }
+                }
+            }
+        }
+        #extra ld for same subject type
+        if = {
+            limit = {
+                event_target:pm_overlord = {
+                    any_subject_country = {
+                        has_country_modifier = pm_col
+                    }
+                }
+            }
+            event_target:pm_overlord = {
+                every_subject_country = {
+                    limit = {
+                        has_country_modifier = pm_col
+                    }
+                    add_liberty_desire = 25
+                }
+            }
+        }
+
+        event_target:pm_target = {
+            set_country_flag = pm_have_specialisation
+            add_country_modifier = {
+            name = pm_col
+            duration = -1
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Administrator
+    option = {
+        name = "pm_adm_opt"
+        trigger = {
+            event_target:pm_target = {
+                adm_tech = 7
+                NOT = {
+                    OR = {
+                        is_subject_of_type = march
+                        is_subject_of_type = client_march
+                        is_subject_of_type = personal_union
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                event_target:pm_overlord = {
+                    any_subject_country = {
+                        has_country_modifier = pm_adm
+                    }
+                }
+            }
+            event_target:pm_overlord = {
+                every_subject_country = {
+                    limit = {
+                        has_country_modifier = pm_adm
+                    }
+                    add_liberty_desire = 15
+                }
+            }
+        }
+        event_target:pm_target = {
+            set_country_flag = pm_have_specialisation
+            add_country_modifier = {
+            name = pm_adm
+            duration = -1
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Developer
+    option = {
+        name = "pm_dev_opt"
+        trigger = {
+            event_target:pm_target = {
+                adm_tech = 7
+                NOT = {
+                    OR = {
+                        is_subject_of_type = march
+                        is_subject_of_type = client_march
+                        is_subject_of_type = personal_union
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                event_target:pm_overlord = {
+                    any_subject_country = {
+                        has_country_modifier = pm_dev
+                    }
+                }
+            }
+            event_target:pm_overlord = {
+                every_subject_country = {
+                    limit = {
+                        has_country_modifier = pm_dev
+                    }
+                    add_liberty_desire = 20
+                }
+            }
+        }
+        event_target:pm_target = {
+            set_country_flag = pm_have_specialisation
+            add_country_modifier = {
+            name = pm_dev
+            duration = -1
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Naval
+    option = {
+        name = "pm_nav_opt"
+        trigger = {
+            event_target:pm_target = {
+                dip_tech = 7
+                NOT = {
+                    OR = {
+                        is_subject_of_type = personal_union
+                    }
+                }
+            }
+        }
+        event_target:pm_target = {
+            set_country_flag = pm_have_specialisation
+            add_country_modifier = {
+            name = pm_nav
+            duration = -1
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Quit
+    option = {
+        name = "pm_back_basic"
+        hidden_effect = {
+        country_event = {
+            id = pm_menu.1
+        }
+    }
+    }
+}

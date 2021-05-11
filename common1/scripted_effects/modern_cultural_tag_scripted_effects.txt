@@ -1,0 +1,2049 @@
+
+cultural_tag_script_effect = {
+	
+			every_province = {
+				limit = { 
+					NOT = { exists = SAX }
+					culture = saxon
+				}
+				add_core = SAX
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = hessian
+					NOT = { exists = HES }
+				}
+				add_core = HES
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = pommeranian
+					NOT = { exists = POM }
+				}
+				add_core = POM
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = prussian
+					NOT = { exists = PRU }
+				}
+				add_core = PRU
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = hannoverian
+					NOT = { exists = HAN }
+				}
+				add_core = HAN
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = franconian
+					NOT = { exists = FRC }
+				}
+				add_core = FRC
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = swabian
+					NOT = { exists = SWA }
+				}
+				add_core = SWA
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = swiss
+					NOT = { exists = SWI }
+				}
+				add_core = SWI
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = bavarian
+					NOT = { exists = BAV }
+				}
+				add_core = BAV
+			}
+	
+	
+			every_province = {
+				limit = { 
+					area = area_53
+					area = area_52
+					
+				}
+				change_culture = bavarian
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = frisian
+					NOT = { exists = FRY }
+				}
+				add_core = FRY
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = flemish
+					NOT = { exists = FLA }
+				}
+				add_core = FLA
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = gothic
+					NOT = { exists = GCR }
+				}
+				add_core = GCR
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = anglo_saxon
+					NOT = { exists = WSX }
+				}
+				add_core = WSX
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = quadian
+					NOT = { exists = QUA }
+				}
+				add_core = QUA
+			}
+	
+	
+	
+	
+	
+############ English	
+	
+			every_province = {
+				limit = { 
+					culture = scottish
+					NOT = { exists = SCO }
+				}
+				add_core = SCO
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = welsh
+					NOT = { exists = WLS }
+				}
+				add_core = WLS
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = breton
+					NOT = { exists = BRI }
+				}
+				add_core = BRI
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = irish
+					NOT = { exists = IRE }
+				}
+				add_core = IRE
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = gallian
+					NOT = { exists = GLI }
+				}
+				add_core = GLI
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = briton
+					NOT = { exists = ERG }
+				}
+				add_core = ERG
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = highland_scottish
+					NOT = { exists = HSC }
+				}
+				add_core = HSC
+			}
+	
+	
+	
+############ Italy
+	
+			every_province = {
+				limit = { 
+					culture = lombard
+					NOT = { exists = LOM }
+				}
+				add_core = LOM
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = tuscan
+					NOT = { exists = TUS }
+				}
+				add_core = TUS
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = sardinian
+					NOT = { exists = SAR }
+				}
+				add_core = SAR
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = romagnan
+					NOT = { exists = FER }
+				}
+				add_core = FER
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = ligurian
+					NOT = { exists = GEN }
+				}
+				add_core = GEN
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = venetian
+					NOT = { exists = VEN }
+				}
+				add_core = VEN
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = neapolitan
+					NOT = { exists = NAP }
+				}
+				add_core = NAP
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = piedmontese
+					NOT = { exists = SAV }
+				}
+				
+				add_core = SAV
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = umbrian
+					NOT = { exists = URB }
+				}
+				add_core = URB
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = sicilian
+					NOT = { exists = SIC }
+				}
+				add_core = SIC
+			}
+	
+	
+################ Spain
+	
+			every_province = {
+				limit = { 
+					culture = castillian
+					NOT = { exists = CAS }
+				}
+				add_core = CAS
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = leonese
+					NOT = { exists = LON }
+				}
+				add_core = LON
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = aragonese
+					NOT = { exists = ARA }
+				}
+				add_core = ARA
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = catalan
+					NOT = { exists = CAT }
+				}
+				add_core = CAT
+			}
+	
+			every_province = {
+				limit = { 
+					culture = galician
+					NOT = { exists = GAL }
+				}
+				add_core = GAL
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = andalucian
+					NOT = { exists = GRA }
+				}
+				add_core = GRA
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = portugese
+					NOT = { exists = POR }
+				}
+				add_core = POR
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = basque
+					NOT = { exists = VAS }
+				}
+				add_core = VAS
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = aquitanian
+					NOT = { exists = AQT }
+				}
+				add_core = AQT
+			}
+	
+	
+	
+################## France
+
+			every_province = {
+				limit = { 
+					culture = gascon
+					NOT = { exists = GUY }
+				}
+				add_core = GUY
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = normand
+					NOT = { exists = NRM }
+				}
+				add_core = NRM
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = aquitaine
+					NOT = { exists = TOU }
+				}
+				add_core = TOU
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = burgundian
+					NOT = { exists = BUR }
+				}
+				add_core = BUR
+		}
+	
+	
+			every_province = {
+				limit = { 
+					culture = occitain
+					NOT = { exists = PRO }
+				}
+				add_core = PRO
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = wallonian
+					NOT = { exists = HAI }
+				}
+				add_core = HAI
+			}
+	
+	
+################ Polish
+	
+			every_province = {
+				limit = { 
+					culture = schlesian
+					NOT = { exists = SIL }
+				}
+				add_core = SIL
+			}
+	
+
+######################## Russian
+	
+			every_province = {
+				limit = { 
+					culture = russian
+					NOT = { exists = RUS }
+				}
+				add_core = RUS
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = byelorussian
+					NOT = { exists = BLR }
+				}
+				add_core = BLR
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = ruthenian
+					NOT = { exists = UKR }
+				}
+				add_core = UKR
+			}
+	
+	
+################### Caucasia 
+	
+			every_province = {
+				limit = { 
+					culture = georgian
+					NOT = { exists = GEO }
+				}
+				add_core = GEO
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = circassian
+					NOT = { exists = CIR }
+				}
+				add_core = CIR
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = dagestani
+					NOT = { exists = GAZ }
+				}
+				add_core = GAZ
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = armenian
+					NOT = { exists = ARM }
+				}
+				add_core = ARM
+			}
+	
+	
+############################ Arabic
+	
+			every_province = {
+				limit = { 
+					culture = al_suryah_arabic
+					NOT = { exists = SYR }
+				}
+				add_core = SYR
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = al_iraqiya_arabic
+					NOT = { exists = IRQ }
+				}
+				add_core = IRQ
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = gulf_arabic
+					NOT = { exists = ALH }
+				}
+				add_core = ALH
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = mahri_culture
+					NOT = { exists = MHR }
+				}
+				add_core = MHR
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = bedouin_arabic
+					NOT = { exists = NAJ }
+				}
+				add_core = NAJ
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = nabataean_culture
+					NOT = { exists = NAJ }
+				}
+				add_core = NAJ
+			}
+	
+	
+	
+			every_province = {
+				limit = { 
+					culture = omani_culture
+					NOT = { exists = OMA }
+				}
+				add_core = OMA
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = yemeni_culture
+					NOT = { exists = YEM }
+				}
+				add_core = YEM
+			}
+	
+	
+	
+##################### Iranian
+
+	
+	
+			every_province = {
+				limit = { 
+					culture = baluch
+					NOT = { exists = BAL }
+				}
+				add_core = BAL
+			}
+	
+		
+			every_province = {
+				limit = { 
+					NOT = { exists = IRA }
+					NOT = { exists = IRN }
+					culture = persian
+				}
+				add_core = PER
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = afghani
+					NOT = { exists = AFG }
+				}
+				add_core = AFG
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = khorasani
+					NOT = { exists = KHO }
+				}
+				add_core = KHO
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = alan
+					NOT = { exists = SOU }
+				}
+				add_core = SOU
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = sarmatian
+					NOT = { exists = SRT }
+				}
+				add_core = SRT
+			}
+	
+	
+			every_province = {
+				limit = { 
+					NOT = { exists = TJK }
+					culture = tajik
+				}
+				add_core = TJK
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = khwarezmian
+					NOT = { exists = KHW }
+				}
+				add_core = KHW
+			}
+	
+	
+################ Mongolic
+
+	
+			every_province = {
+				limit = { 
+					culture = mongol
+					NOT = { exists = KHA }
+				}
+				add_core = KHA
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = chahar
+					NOT = { exists = CHH }
+				}
+				add_core = CHH
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = oirats
+					NOT = { exists = ZUN }
+				}
+				add_core = ZUN
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = buryat
+					NOT = { exists = BRT }
+				}
+				add_core = BRT
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = khitan
+					NOT = { exists = KHT }
+				}
+				add_core = KHT
+			}
+	
+
+############## Altic
+	
+			every_province = {
+				limit = { 
+					culture = uzbehk
+				}
+				add_core = SHY
+				NOT = { exists = SHY }
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = uyghur
+					NOT = { exists = KAS }
+				}
+				add_core = KAS
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = khazak
+					NOT = { exists = KZH }
+				}
+				add_core = KZH
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = kirgiz
+					NOT = { exists = CHG }
+				}
+				add_core = CHG
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = cuman
+					NOT = { exists = CUM }
+				}
+				add_core = CUM
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = tuvan
+					NOT = { exists = TUV }
+				}
+				add_core = TUV
+			}
+	
+	
+##################### Native
+	
+			every_province = {
+				limit = { 
+					culture = aztek
+					NOT = { exists = AZT }
+				}
+				add_core = AZT
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = totonac
+					NOT = { exists = TOT }
+				}
+				add_core = TOT
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = purepecha
+					NOT = { exists = TAR }
+				}
+				add_core = TAR
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = yaqui
+					NOT = { exists = YAQ }
+				}
+				add_core = YAQ
+		}
+	
+	
+			every_province = {
+				limit = { 
+					culture = chichimecan
+					NOT = { exists = CCM }
+				}
+				add_core = CCM
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = guamares
+					NOT = { exists = GAM }
+				}
+				add_core = GAM
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = yucatec
+					NOT = { exists = XIA }
+				}
+				add_core = XIU
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = putun
+					NOT = { exists = ITZ }
+				}
+				add_core = ITZ
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = lacandon
+					NOT = { exists = LAC }
+				}
+				add_core = LAC
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = wastek
+					NOT = { exists = HST }
+				}
+				add_core = HST
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = chontales
+					NOT = { exists = YOK }
+				}
+				add_core = YOK
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = zapotek
+					NOT = { exists = ZAP }
+				}
+				add_core = ZAP
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = mixtec
+					NOT = { exists = MIX }
+				}
+				
+				add_core = MIX
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = tlapanec
+					NOT = { exists = TLA }
+				}
+				add_core = TLA
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = otomi
+					NOT = { exists = OTO }
+				}
+				add_core = OTO
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = matlatzinca
+					NOT = { exists = MAT }
+				}
+				add_core = MAT
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = inca
+					NOT = { exists = CSU }
+				}
+				add_core = CSU
+			}
+	
+	
+			every_province = {
+				limit = { 
+					culture = aimara
+					NOT = { exists = CCQ }
+				}
+				add_core = CCQ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = diaguita
+					NOT = { exists = CCQ }
+				}
+				add_core = CCQ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = chimuan
+					NOT = { exists = CHM }
+				}
+				add_core = CHM
+			}
+			
+			
+			every_province = {
+				limit = { 
+					culture = tupinamba
+					NOT = { exists = TPQ }
+				}
+				add_core = TPQ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = guarani
+					NOT = { exists = GUA }
+				}
+				add_core = GUA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = charruan
+					NOT = { exists = CUA }
+				}
+				add_core = CUA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = ge
+					NOT = { exists = TUA }
+				}
+				add_core = TUA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = chachapoyan
+					NOT = { exists = CYA }
+				}
+				add_core = CYA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = muisca
+					NOT = { exists = MCA }
+				}
+				add_core = MCA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = cara
+					NOT = { exists = QTO }
+				}
+				add_core = QTO
+			}
+			
+			every_province = {
+				limit = { 
+					culture = chihan
+					NOT = { exists = YAN }
+				}
+				add_core = YAN
+			}
+			
+			every_province = {
+				limit = { 
+					culture = jianghuai
+					NOT = { exists = MNG }
+				}
+				add_core = MNG
+			}
+			
+			every_province = {
+				limit = { 
+					culture = xibei
+					NOT = { exists = CSH }
+				}
+				add_core = CSH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = hubei
+					NOT = { exists = ZAO }
+				}
+				add_core = ZAO
+			}
+			
+			every_province = {
+				limit = { 
+					culture = zhongyuan
+					NOT = { exists = LNG }
+				}
+				add_core = LNG
+			}
+			
+			every_province = {
+				limit = { 
+					culture = shandong_culture
+					NOT = { exists = QIC }
+				}
+				add_core = QIC
+			}
+			
+			every_province = {
+				limit = { 
+					culture = cantonese
+					NOT = { exists = YUE }
+				}
+				add_core = YUE
+			}
+			
+			every_province = {
+				limit = { 
+					culture = wu
+					NOT = { exists = WUU }
+				}
+				add_core = WUU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = chimin
+					NOT = { exists = MIN }
+				}
+				add_core = MIN
+			}
+			
+			every_province = {
+				limit = { 
+					culture = hakka
+					NOT = { exists = HUA }
+				}
+				add_core = HUA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = gan
+					NOT = { exists = NNG }
+				}
+				add_core = NNG
+			}
+			
+			every_province = {
+				limit = { 
+					culture = xiang
+					NOT = { exists = CHC }
+				}
+				add_core = CHC
+			}
+			
+			every_province = {
+				limit = { 
+					culture = sichuanese
+					NOT = { exists = SHU }
+				}
+				add_core = SHU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = jin
+					NOT = { exists = JIN }
+				}
+				add_core = JIN
+			}
+			
+			every_province = {
+				limit = { 
+					culture = miao
+					NOT = { exists = CNI }
+				}
+				add_core = CNI
+			}
+			
+			every_province = {
+				limit = { 
+					culture = ainu
+					NOT = { exists = ANU }
+				}
+				add_core = ANU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = ryukyuan
+					NOT = { exists = RYU }
+				}
+				add_core = RYU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = emishi
+					NOT = { exists = EMI }
+				}
+				add_core = EMI
+			}
+			
+			every_province = {
+				limit = { 
+					culture = khmer
+					NOT = { exists = KHM }
+				}
+				add_core = KHM
+			}
+			
+			every_province = {
+				limit = { 
+					culture = mon
+					NOT = { exists = PEG }
+				}
+				add_core = PEG
+			}
+			
+			every_province = {
+				limit = { 
+					culture = vietnamese
+					NOT = { exists = DAI }
+				}
+				add_core = DAI
+			}
+			
+			every_province = {
+				limit = { 
+					culture = cham
+					NOT = { exists = CHA }
+				}
+				add_core = CHA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = malayan
+					NOT = { exists = MLC }
+				}
+				add_core = MLC
+			}
+			
+			every_province = {
+				limit = { 
+					culture = sumatran
+					NOT = { exists = ATJ }
+				}
+				add_core = ATJ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = javanese
+					NOT = { exists = MJA }
+				}
+				add_core = MAJ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = filipino
+					NOT = { exists = SUL }
+				}
+				add_core = SUL
+			}
+			
+			every_province = {
+				limit = { 
+					culture = bornean
+					NOT = { exists = BEI }
+				}
+				add_core = BEI
+			}
+			
+			every_province = {
+				limit = { 
+					culture = sulawesi
+					NOT = { exists = MKS }
+				}
+				add_core = MKS
+			}
+			
+			every_province = {
+				limit = { 
+					culture = central_thai
+					NOT = { exists = AYU }
+				}
+				add_core = AYU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = lao
+					NOT = { exists = LAU }
+				}
+				add_core = LUA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = northern_thai
+					NOT = { exists = LNA }
+				}
+				add_core = LNA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = shan
+					NOT = { exists = SST }
+				}
+				add_core = SST
+			}
+			
+			every_province = {
+				limit = { 
+					culture = tibetan
+					NOT = { exists = TIB }
+				}
+				add_core = TIB
+			}
+			
+			every_province = {
+				limit = { 
+					culture = bai
+					NOT = { exists = CDL }
+				}
+				add_core = CDL
+			}
+			
+			every_province = {
+				limit = { 
+					culture = tangut
+					NOT = { exists = TUY }
+				}
+				add_core = TUY
+			}
+			
+			every_province = {
+				limit = { 
+					culture = burmese
+					NOT = { exists = TAU }
+				}
+				add_core = TAU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = chin
+					NOT = { exists = MLB }
+				}
+				add_core = MLB
+			}
+			
+			every_province = {
+				limit = { 
+					culture = arakanese
+					NOT = { exists = ARK }
+				}
+				add_core = ARK
+			}
+			
+			every_province = {
+				limit = { 
+					culture = moluccan
+					NOT = { exists = TER }
+				}
+				add_core = TER
+			}
+			
+			every_province = {
+				limit = { 
+					culture = assamese
+					NOT = { exists = ASS }
+				}
+				add_core = ASS
+			}
+			
+			every_province = {
+				limit = { 
+					culture = bengali
+					NOT = { exists = BNG }
+				}
+				add_core = BNG
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kochi
+					NOT = { exists = KMT }
+				}
+				add_core = KMT
+			}
+			
+			every_province = {
+				limit = { 
+					culture = bihari
+					NOT = { exists = TRT }
+				}
+				add_core = TRT
+			}
+			
+			every_province = {
+				limit = { 
+					culture = pahari
+					NOT = { exists = GHR }
+				}
+				add_core = GHR
+			}
+			
+			every_province = {
+				limit = { 
+					culture = nepali
+					NOT = { exists = NPL }
+				}
+				add_core = NPL
+			}
+			
+			every_province = {
+				limit = { 
+					culture = oriya
+					NOT = { exists = ORI }
+				}
+				add_core = ORI
+			}
+			
+			every_province = {
+				limit = { 
+					culture = sinhala
+					NOT = { exists = CEY }
+				}
+				add_core = CEY
+			}
+			
+			every_province = {
+				limit = { 
+					culture = avadhi
+					NOT = { exists = ODH }
+				}
+				add_core = ODH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kanauji
+					NOT = { exists = DLH }
+				}
+				
+				add_core = DLH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = vindhyan
+					NOT = { exists = BND }
+				}
+				add_core = BND
+			}
+			
+			every_province = {
+				limit = { 
+					culture = panjabi
+					NOT = { exists = PUN }
+				}
+				add_core = PUN
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kashmiri
+					NOT = { exists = KSH }
+				}
+				add_core = KSH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = gujarati
+					NOT = { exists = GUJ }
+				}
+				add_core = GUJ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = saurashtri
+					NOT = { exists = JGD }
+				}
+				add_core = JGD
+			}
+			
+			every_province = {
+				limit = { 
+					culture = marathi
+					NOT = { exists = MAR }
+				}
+				add_core = MAR
+			}
+			
+			every_province = {
+				limit = { 
+					culture = sindhi
+					NOT = { exists = SND }
+				}
+				add_core = SND
+			}
+			
+			every_province = {
+				limit = { 
+					culture = rajput
+					NOT = { exists = MER }
+				}
+				add_core = MER
+			}
+			
+			every_province = {
+				limit = { 
+					culture = malvi
+					NOT = { exists = MLW }
+				}
+				add_core = MLW
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kannada
+					NOT = { exists = MYS }
+				}
+				
+				add_core = MYS
+			}
+			
+			every_province = {
+				limit = { 
+					culture = malayalam
+					NOT = { exists = VND }
+				}
+				add_core = VND
+			}
+			
+			every_province = {
+				limit = { 
+					culture = tamil
+					NOT = { exists = MAD }
+				}
+				add_core = MAD
+			}
+			
+			every_province = {
+				limit = { 
+					culture = telegu
+					NOT = { exists = GOC }
+				}
+				add_core = GOC
+			}
+			
+			every_province = {
+				limit = { 
+					culture = gondi
+					NOT = { exists = GDW }
+				}
+				add_core = GDW
+			}
+			
+			every_province = {
+				limit = { 
+					culture = garjati
+					NOT = { exists = GRJ }
+				}
+				add_core = GRJ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = jharkhandi
+					NOT = { exists = NGP }
+				}
+				add_core = NGP
+			}
+			
+			every_province = {
+				limit = { 
+					culture = mali
+					NOT = { exists = MAL }
+				}
+				add_core = MAL
+			}
+			
+			every_province = {
+				limit = { 
+					culture = songhai
+					NOT = { exists = SON }
+				}
+				
+				add_core = SON
+			}
+			
+			every_province = {
+				limit = { 
+					culture = soninke
+					NOT = { exists = ZAP }
+				}
+				add_core = ZAF
+			}
+			
+			every_province = {
+				limit = { 
+					culture = bambara
+					NOT = { exists = SOP }
+				}
+				add_core = SOF
+			}
+			
+			every_province = {
+				limit = { 
+					culture = bozo
+					NOT = { exists = JNN }
+				}
+				add_core = JNN
+			}
+			
+			every_province = {
+				limit = { 
+					culture = dyola
+					NOT = { exists = KNG }
+				}
+				add_core = KNG
+			}
+			
+			every_province = {
+				limit = { 
+					culture = hausa
+					NOT = { exists = HAU }
+				}
+				add_core = HAU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kanuri
+					NOT = { exists = KBO }
+				}
+				add_core = KBO
+			}
+			
+			every_province = {
+				limit = { 
+					culture = bilala
+					NOT = { exists = YAO }
+				}
+				add_core = YAO
+			}
+			
+			every_province = {
+				limit = { 
+					culture = senegambian
+					NOT = { exists = JOL }
+				}
+				add_core = JOL
+			}
+			
+			every_province = {
+				limit = { 
+					culture = fulani
+					NOT = { exists = FUL }
+				}
+				add_core = FUL
+			}
+			
+			every_province = {
+				limit = { 
+					culture = yorumba
+					NOT = { exists = OYO }
+				}
+				add_core = OYO
+			}
+			
+			every_province = {
+				limit = { 
+					culture = aka
+					NOT = { exists = ASH }
+				}
+				add_core = ASH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = nupe
+					NOT = { exists = NUP }
+				}
+				add_core = NUP
+			}
+			
+			every_province = {
+				limit = { 
+					culture = fon
+					NOT = { exists = DAH }
+				}
+				add_core = DAH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = mossi
+					NOT = { exists = MSI }
+				}
+				add_core = MSI
+			}
+			
+			every_province = {
+				limit = { 
+					culture = dagomba
+					NOT = { exists = DGB }
+				}
+				add_core = DGB
+			}
+			
+			every_province = {
+				limit = { 
+					culture = northern_bantu
+					NOT = { exists = CMR }
+				}
+				add_core = CMR
+			}
+			
+			every_province = {
+				limit = { 
+					NOT = { exists = BOT }
+					culture = tswana
+				}
+				add_core = BOT
+			}
+			
+			every_province = {
+				limit = { 
+					culture = nguni
+					NOT = { exists = ZUL }
+				}
+				add_core = ZUL
+			}
+			
+			every_province = {
+				limit = { 
+					culture = makua
+					NOT = { exists = MKU }
+				}
+				add_core = MKU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = nyasa
+					NOT = { exists = MRA }
+				}
+				add_core = MRA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = swahili
+					NOT = { exists = ZAN }
+				}
+				add_core = ZAN
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kongolese
+					NOT = { exists = KON }
+				}
+				add_core = KON
+			}
+			
+			every_province = {
+				limit = { 
+					culture = lunda
+					NOT = { exists = LND }
+				}
+				add_core = LND
+			}
+			
+			every_province = {
+				limit = { 
+					culture = luba
+					NOT = { exists = LUB }
+				}
+				add_core = LUB
+			}
+			
+			every_province = {
+				limit = { 
+					culture = yaka
+					NOT = { exists = YAK }
+				}
+				add_core = YAK
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kuba
+					NOT = { exists = KUB }
+				}
+				add_core = KUB
+			}
+			
+			every_province = {
+				limit = { 
+					culture = mbundu
+					NOT = { exists = NDO }
+				}
+				add_core = NDO
+			}
+			
+			every_province = {
+				limit = { 
+					culture = chokwe
+					NOT = { exists = CKW }
+				}
+				add_core = CKW
+			}
+			
+			every_province = {
+				limit = { 
+					culture = mbangala
+					NOT = { exists = KSJ }
+				}
+				add_core = KSJ
+			}
+			
+			every_province = {
+				limit = { 
+					NOT = { exists = ZIM }
+					culture = shona
+				}
+				add_core = ZIM
+			}
+			
+			every_province = {
+				limit = { 
+					culture = gbaya
+					NOT = { exists = CAP }
+				}
+				add_core = CAF
+			}
+			
+			every_province = {
+				limit = { 
+					culture = herero
+					NOT = { exists = ZAM }
+				}
+				add_core = ZAM
+			}
+			
+			every_province = {
+				limit = { 
+					culture = fang
+					NOT = { exists = GAB }
+				}
+				add_core = GAB
+			}
+			
+			every_province = {
+				limit = { 
+					culture = rwandan
+					NOT = { exists = RWA }
+				}
+				add_core = RWA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = ganda
+					NOT = { exists = BUG }
+				}
+				add_core = BUG
+			}
+			
+			every_province = {
+				limit = { 
+					culture = somali
+					NOT = { exists = ADA }
+				}
+				add_core = ADA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = harari
+					NOT = { exists = HAR }
+				}
+				add_core = HAR
+			}
+			
+			every_province = {
+				limit = { 
+					culture = afar
+					NOT = { exists = AFA }
+				}
+				add_core = AFA
+			}
+			
+			every_province = {
+				limit = { 
+					culture = oromo
+					NOT = { exists = JIM }
+				}
+				add_core = JIM
+			}
+			
+			every_province = {
+				limit = { 
+					culture = tigray
+					NOT = { exists = MED }
+				}
+				add_core = MED
+			}
+			
+			every_province = {
+				limit = { 
+					culture = sidamo
+					NOT = { exists = KAF }
+				}
+				add_core = KAF
+			}
+			
+			every_province = {
+				limit = { 
+					culture = amhara
+					NOT = { exists = ETH }
+				}
+				add_core = ETH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = beja
+					NOT = { exists = BEJ }
+				}
+				add_core = BEJ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = nubian
+					NOT = { exists = NUB }
+				}
+				add_core = NUB
+			}
+			
+			every_province = {
+				limit = { 
+					culture = dinka
+					NOT = { exists = SSU }
+				}
+				add_core = SSU
+			}
+			
+			every_province = {
+				limit = { 
+					culture = masai
+					NOT = { exists = KEY }
+				}
+				add_core = KEY
+			}
+			
+			every_province = {
+				limit = { 
+					culture = fur_culture
+					NOT = { exists = DAR }
+				}
+				add_core = DAR
+			}
+			
+			every_province = {
+				limit = { 
+					culture = maba
+					NOT = { exists = WAD }
+				}
+				add_core = WAD
+			}
+			
+			every_province = {
+				limit = { 
+					culture = khoi
+					NOT = { exists = NMB }
+				}
+				add_core = NMB
+			}
+			
+			every_province = {
+				limit = { 
+					culture = yukagyr
+					NOT = { exists = HOD }
+				}
+				add_core = HOD
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kamchatkan
+					NOT = { exists = KMC }
+				}
+				add_core = KMC
+			}
+			
+			every_province = {
+				limit = { 
+					culture = manchu
+					NOT = { exists = MCH }
+				}
+				add_core = MCH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = astrakhani
+					NOT = { exists = AST }
+				}
+				add_core = AST
+			}
+			
+			every_province = {
+				limit = { 
+					culture = bashkir
+					NOT = { exists = BSH }
+				}
+				add_core = BSH
+			}
+			
+			every_province = {
+				limit = { 
+					culture = crimean
+					NOT = { exists = CRI }
+				}
+				add_core = CRI
+			}
+			
+			every_province = {
+				limit = { 
+					culture = kazani
+					NOT = { exists = KAZ }
+				}
+				add_core = KAZ
+			}
+			
+			every_province = {
+				limit = { 
+					culture = mishary
+					NOT = { exists = GOL }
+				}
+				add_core = GOL
+			}
+			
+			every_province = {
+				limit = { 
+					culture = nogaybak
+					NOT = { exists = NOG }
+				}
+				add_core = NOG
+			}
+			
+			every_province = {
+				limit = { 
+					culture = qasim
+					NOT = { exists = QAS }
+				}
+				add_core = QAS
+			}
+			
+			every_province = {
+				limit = { 
+					culture = siberian
+					NOT = { exists = SIB }
+				}
+				add_core = SIB
+			}
+			
+			every_province = {
+				limit = { 
+					NOT = { exists = ASY }
+					culture = assyrian
+				}
+				add_core = ASY
+			}
+			
+			every_province = {
+				limit = { 
+					culture = babylonian
+					NOT = { exists = IRQ }
+				}
+				add_core = IRQ
+			}
+			
+					
+}

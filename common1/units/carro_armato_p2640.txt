@@ -1,0 +1,11 @@
+# Carro Armato P 26/40
+
+type = cavalry
+
+maneuver = 4
+offensive_morale = 5
+defensive_morale = 5
+offensive_fire = 4
+defensive_fire = 5
+offensive_shock = 9
+defensive_shock = 8

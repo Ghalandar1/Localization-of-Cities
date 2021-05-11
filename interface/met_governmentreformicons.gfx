@@ -1,0 +1,52 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_ah_dual_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//ah_dual_monarchy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_great_yuan_empire"
+		texturefile = "gfx//interface//government_reform_icons//great_yuan_empire.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_habsburg_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//habsburg_monarchy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_seljuk_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//seljuk_monarchy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_carolingian_feudalism"
+		texturefile = "gfx//interface//government_reform_icons//carolingian_feudalism.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_iron_and_golden_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//iron_and_golden_monarchy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_napoleonic_empire"
+		texturefile = "gfx//interface//government_reform_icons//napoleonic_empire.dds"
+	}	
+	
+	spriteType = {
+		name = "government_reform_egyptian_pharaoh"
+		texturefile = "gfx//interface//government_reform_icons//egyptian_pharaoh.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_chinese_warlord_state"
+		texturefile = "gfx//interface//government_reform_icons//chinese_warlord_state.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_chinese_claimant_empire"
+		texturefile = "gfx//interface//government_reform_icons//chinese_claimant_empire.dds"
+	}
+	
+}

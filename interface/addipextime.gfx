@@ -1,0 +1,36 @@
+spriteTypes = {
+ spriteType = {
+		name = "GFX_icon_faction"
+		texturefile = "gfx/interface/icon_faction.dds"
+	}
+	spriteType = {
+		name = "GFX_leeding_faction"
+		texturefile = "gfx/interface/icon_leader_faction.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_infaction"
+		texturefile = "gfx/interface/icon_faction.dds"
+	}
+		spriteType = {
+		name = "GFX_missionarism_icon"
+		texturefile = "gfx/interface/piecze.dds"
+	}
+	spriteType = {
+		name = "ASSASINATION_eventPicture"
+		texturefile = "gfx/assasination.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "Viking_ride_eventPicture"
+		texturefile = "gfx/viking_warfare.dds"
+		allwaystransparent = yes
+	}
+		spriteType = {
+		name = "TERRORISMATTACK_eventPicture"
+		texturefile = "gfx/terrorismatta.dds"
+		allwaystransparent = yes
+	}
+	
+	
+	}

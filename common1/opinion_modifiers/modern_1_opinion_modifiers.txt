@@ -1,0 +1,147 @@
+
+############################# 50
+###########Oil
+low_opinion_oil_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_oil_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_oil_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_oil_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+######################################Electronic
+low_opinion_electronics_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_electronics_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_electronics_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_electronics_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+########################################Uranium
+low_opinion_uranium_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_uranium_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_uranium_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_uranium_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+####################################### 25
+
+
+
+
+low_opinion_oil_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_oil_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_oil_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_oil_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_electronics_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_electronics_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_electronics_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_electronics_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_uranium_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_uranium_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_uranium_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_uranium_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+

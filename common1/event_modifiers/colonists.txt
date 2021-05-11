@@ -1,0 +1,14 @@
+more_colonists = {
+
+	colonists = 10
+}
+
+better_colonists = {
+
+	global_colonial_growth = 500
+}
+
+further_colonists = {
+
+	range = 100
+}

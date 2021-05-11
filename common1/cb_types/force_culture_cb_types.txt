@@ -1,0 +1,16 @@
+
+cb_force_culture = {
+	valid_for_subject = yes
+
+	prerequisites = {
+		is_neighbor_of = FROM
+		NOT = { primary_culture = FROM }
+		has_idea = deus_vult
+		is_revolutionary = no
+	}
+
+	allowed_provinces = {
+		always = yes
+	}
+	war_goal = superiority_culture
+}

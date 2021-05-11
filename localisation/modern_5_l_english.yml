@@ -1,0 +1,186 @@
+﻿l_english:
+ IVORY_LOW:0 "Human Falled Ivory Prices"
+ IVORY_MUCH:0 "Human Rised Ivory Price"
+ WINE_LOW:0 "Human Falled Wine Prices"
+ WINE_MUCH:0 "Human Rised Wine Prices"
+ GRAIN_LOW:0 "Human Falled Grain Prices"
+ GRAIN_MUCH:0 "Human Rised Grain Prices"
+ 
+ 
+ low_ivory_50:0 "Falling Ivory Prices -50%"
+ low_ivory_50_desc:0 "Falling Ivory Prices -50%"
+ low_ivory_50_title:0 "Falling Ivory Prices -50%"
+ low_ivory_50_dialog:0 "Falling Ivory Prices -50%"
+ low_ivory_50_tooltip:0 "Falling Ivory Prices -50%"
+ much_ivory_50:0 "Rising Ivory Prices 50%"
+ much_ivory_50_desc:0 "Rising Ivory Prices 50%"
+ much_ivory_50_title:0 "Rising Ivory Prices 50%"
+ much_ivory_50_dialog:0 "Rising Ivory Prices 50%"
+ much_ivory_50_tooltip:0 "Rising Ivory Prices 50%"
+ 
+ 
+ much_ivory_25:0 "Rising Ivory Prices 25%"
+ much_ivory_25_desc:0 "Rising Ivory Prices 25%"
+ much_ivory_25_title:0 "Rising Ivory Prices 25%"
+ much_ivory_25_dialog:0 "Rising Ivory Prices 25%"
+ much_ivory_25_tooltip:0 "Rising Ivory Prices 25%"
+ low_ivory_25:0 "Falling Ivory Prices -25%"
+ low_ivory_25_desc:0 "Falling Ivory Prices -25%"
+ low_ivory_25_title:0 "Falling Ivory Prices -25%"
+ low_ivory_25_dialog:0 "Falling Ivory Prices -25%"
+ low_ivory_25_tooltip:0 "Falling Ivory Prices -25%"
+ 
+ 
+ 
+ 
+ much_grain_50:0 "Rising Grain Prices 50%"
+ much_grain_50_desc:0 "Rising Grain Prices 50%"
+ much_grain_50_title:0 "Rising Grain Prices 50%"
+ much_grain_50_dialog:0 "Rising Grain Prices 50%"
+ much_grain_50_tooltip:0 "Rising Grain Prices 50%"
+ low_grain_50:0 "Falling Grain Prices -50%"
+ low_grain_50_desc:0 "Falling Grain Prices -50%"
+ low_grain_50_title:0 "Falling Grain Prices -50%"
+ low_grain_50_dialog:0 "Falling Grain Prices -50%"
+ low_grain_50_tooltip:0 "Falling Grain Prices -50%"
+ 
+ 
+ 
+ much_grain_25:0 "Rising Grain Prices 25%"
+ much_grain_25_desc:0 "Rising Grain Prices 25%"
+ much_grain_25_title:0 "Rising Grain Prices 25%"
+ much_grain_25_dialog:0 "Rising Grain Prices 25%"
+ much_grain_25_tooltip:0 "Rising Grain Prices 25%"
+ low_grain_25:0 "Falling Grain Prices -25%"
+ low_grain_25_desc:0 "Falling Grain Prices -25%"
+ low_grain_25_title:0 "Falling Grain Prices -25%"
+ low_grain_25_dialog:0 "Falling Grain Prices -25%"
+ low_grain_25_tooltip:0 "Falling Grain Prices -25%"
+ 
+
+ 
+ 
+ low_wine_50:0 "Falling Wine Prices -50%"
+ low_wine_50_desc:0 "Falling Wine Prices -50%"
+ low_wine_50_title:0 "Falling Wine Prices -50%"
+ low_wine_50_dialog:0 "Falling Wine Prices -50%"
+ low_wine_50_tooltip:0 "Falling Wine Prices -50%"
+ 
+ low_wine_25:0 "Falling Wine Prices -25%"
+ low_wine_25_desc:0 "Falling Wine Prices -25%"
+ low_wine_25_title:0 "Falling Wine Prices -25%"
+ low_wine_25_dialog:0 "Falling Wine Prices -25%"
+ low_wine_25_tooltip:0 "Falling Wine Prices -25%"
+ 
+ much_wine_50:0 "Rising Wine Prices 50%"
+ much_wine_50_desc:0 "Rising Wine Prices 50%"
+ much_wine_50_title:0 "Rising Wine Prices 50%"
+ much_wine_50_dialog:0 "Rising Wine Prices 50%"
+ much_wine_50_tooltip:0 "Rising Wine Prices 50%"
+ 
+ 
+ much_wine_25:0 "Rising Wine Prices 25%"
+ much_wine_25_desc:0 "Rising Wine Prices 25%"
+ much_wine_25_title:0 "Rising Wine Prices 25%"
+ much_wine_25_dialog:0 "Rising Wine Prices 25%"
+ much_wine_25_tooltip:0 "Rising Wine Prices 25%"
+ 
+ 
+ failling_wine_price_root_25:0 "Falled Wine Prices"
+ failling_wine_price_root:0 "Falled Wine Prices"
+ failling_wine_price_root_1:0 "Falled Wine Prices"
+ failling_wine_price_root_1_25:0 "Falled Wine Prices"
+ failling_wine_price_from_25:0 "Falled Wine Prices"
+ failling_wine_price_from:0 "Falled Wine Prices"
+ failling_wine_price_from_1:0 "Falled Wine Prices"
+ rising_wine_price_root_25:0 "Rising Wine Price"
+ rising_wine_price_root:0 "Rising Wine Price"
+ rising_wine_price_root_1:0 "Rising Wine Price"
+ rising_wine_price_root_1_25:0 "Rising Wine Price"
+ rising_wine_price_from_25:0 "Rising Wine Price"
+ rising_wine_price_from:0 "Rising Wine Price"
+ 
+ 
+ failling_ivory_price_root_25:0 "Falling Ivory Prices"
+ failling_ivory_price_root:0 "Falling Ivory Prices"
+ failling_ivory_price_root_1:0 "Falling Ivory Prices"
+ failling_ivory_price_from_25:0 "Falling Ivory Prices"
+ failling_ivory_price_from:0 "Falling Ivory Prices"
+ failling_ivory_price_root_1_25:0 "Falling Ivory Prices"
+ rising_ivory_price_root_25:0 "Rising Ivory Prices"
+ rising_ivory_price_root:0 "Rising Ivory Prices"
+ rising_ivory_price_root_1:0 "Rising Ivory Prices"
+ rising_ivory_price_from_25:0 "Rising Ivory Prices"
+ rising_ivory_price_from:0 "Rising Ivory Prices"
+ rising_ivory_price_root_1_25:0 "Falling Ivory Prices"
+ 
+ 
+ 
+ failling_grain_price_root_1:0 "Falling Grain Prices"
+ failling_grain_price_root_25:0 "Falling Grain Prices"
+ failling_grain_price_root:0 "Falling Grain Prices"
+ failling_grain_price_from_25:0 "Falling Grain Prices"
+ failling_grain_price_from:0 "Falling Grain Prices"
+ failling_grain_price_root_1_25:0 "Falling Grain Prices"
+ rising_grain_price_root_25:0 "Rising Grain Prices"
+ rising_grain_price_root:0 "Rising Grain Prices"
+ rising_grain_price_root_1:0 "Rising Grain Prices"
+ rising_grain_price_from_25:0 "Rising Grain Prices"
+ rising_grain_price_from:0 "Rising Grain Prices"
+ rising_grain_price_root_1_25:0 "Rising Grain Prices"
+ 
+ 
+ low_wine_price_1_50:0 "Human Changed Price Wine -50%"
+ much_wine_price_1_50:0 "Human Changed Price Wine 50%"
+ low_wine_price_1_25:0 "Human Changed Price Wine -25"
+ much_wine_price_1_25:0 "Human Changed Price Wine 25"
+ 
+ 
+ low_ivory_price_1_50:0 "Human Changed Price Ivory -50%"
+ much_ivory_price_1_50:0 "Human Changed Price Ivory 50%"
+ low_ivory_price_1_25:0 "Human Changed Price Ivory -25"
+ much_ivory_price_1_25:0 "Human Changed Price Ivory 25"
+ 
+ 
+ low_grain_price_1_50:0 "Human Changed Price Grain -50%"
+ much_grain_price_1_50:0 "Human Changed Price Grain 50%"
+ low_grain_price_1_25:0 "Human Changed Price Grain -25"
+ much_grain_price_1_25:0 "Human Changed Price Grain 25"
+ 
+ 
+ 
+ 
+ 
+ low_opinion_wine_good_50:0 "Good Opinion For Wine Price -50"
+ low_opinion_wine_bad_50:0 "Bad Opinion For Wine Price -50"
+ much_opinion_wine_good_50:0 "Good Opinion For Wine Price 50"
+ much_opinion_wine_bad_50:0 "Bad Opinion For Wine Price 50"
+ low_opinion_wine_good_25:0 "Good Opinion For Wine Price -25"
+ low_opinion_wine_bad_25:0 "Bad Opinion For Wine Price -25"
+ much_opinion_wine_bad_25:0 "Bad Opinion For Wine Price 25"
+ much_opinion_wine_good_25:0 "Good Opinion For Wine Price 25"
+ 
+ 
+ low_opinion_ivory_good_50:0 "Good Opinion For Ivory Price -50"
+ low_opinion_ivory_bad_50:0 "Bad Opinion For Ivory Price -50"
+ much_opinion_ivory_good_50:0 "Good Opinion For Ivory Price 50"
+ much_opinion_ivory_bad_50:0 "Bad Opinion For Ivory Price 50"
+ low_opinion_ivory_good_25:0 "Good Opinion For Ivory Price -25"
+ low_opinion_ivory_bad_25:0 "Bad Opinion For Ivory Price -25"
+ much_opinion_ivory_bad_25:0 "Bad Opinion For Ivory Price 25"
+ much_opinion_ivory_good_25:0 "Good Opinion For Ivory Price 25"
+ 
+ 
+ low_opinion_grain_good_50:0 "Good Opinion For Grain Price -50"
+ low_opinion_grain_bad_50:0 "Bad Opinion For Grain Price -50"
+ much_opinion_grain_good_50:0 "Good Opinion For Grain Price 50"
+ much_opinion_grain_bad_50:0 "Bad Opinion For Grain Price 50"
+ low_opinion_grain_good_25:0 "Good Opinion For Grain Price -25"
+ low_opinion_grain_bad_25:0 "Bad Opinion For Grain Price -25"
+ much_opinion_grain_bad_25:0 "Bad Opinion For Grain Price 25"
+ much_opinion_grain_good_25:0 "Good Opinion For Grain Price 25"
+ 
+ 
+ 
+ 
+ 

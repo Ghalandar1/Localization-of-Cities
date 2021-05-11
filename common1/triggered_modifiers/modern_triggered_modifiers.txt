@@ -1,0 +1,1570 @@
+
+african_balance = {
+	potential = {
+		capital_scope = {
+				continent = africa
+			}
+	}
+
+	trigger = {
+	
+		capital_scope = {
+			continent = africa
+		}
+		NOT = { total_development = 4500 }
+	}
+	
+
+	global_trade_power = 0.1
+	production_efficiency = 0.2 
+	trade_efficiency = 0.2
+	
+}
+
+
+#############################################################
+#Province
+#############################################################
+
+meditarane = {
+	potential = {
+		owns_core_province = 124
+		owns_core_province = 126
+		owns_core_province = 125
+		owns_core_province = 3224
+		owns_core_province = 3225
+		owns_core_province = 3133
+		owns_core_province = 127
+		owns_core_province = 3223
+		owns_core_province = 3134
+		owns_core_province = 1247
+		owns_core_province = 4703
+		owns_core_province = 333
+		owns_core_province = 4702
+		owns_core_province = 163
+	
+		
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 124
+		owns_core_province = 126
+		owns_core_province = 125
+		owns_core_province = 3224
+		owns_core_province = 3225
+		owns_core_province = 3133
+		owns_core_province = 127
+		owns_core_province = 3223
+		owns_core_province = 3134
+		owns_core_province = 1247
+		owns_core_province = 4703
+		owns_core_province = 333
+		owns_core_province = 4702
+		owns_core_province = 163
+	
+		
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+
+
+
+
+
+
+marmara = {
+	potential = {
+		owns_core_province = 316
+		owns_core_province = 151
+		
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 316
+		owns_core_province = 151
+		
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+
+
+djiboti = {
+	potential = {
+		owns_core_province = 2003
+		owns_core_province = 388
+		
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 2003
+		owns_core_province = 388
+		
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+
+russian_canal = {
+	potential = {
+		owns_core_province = 1971 
+		
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 1971
+		
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+
+singapor = {
+	potential = {
+		owns_core_province = 2005
+		 
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 2005
+		
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+gibraltar = {
+	potential = {
+		owns_core_province = 226
+		owns_core_province = 1751 
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 226
+		owns_core_province = 1751
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+suez_canal = {
+	potential = {
+		owns_core_province = 4438
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 4438
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+
+
+lubek_canal = {
+	potential = {
+		owns_core_province = 13 
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 13
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+
+panama_canal = {
+	potential = {
+		owns_core_province = 835
+		
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 835
+		
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+Hurmuz = {
+	potential = {
+		owns_core_province = 398
+		owns_core_province = 3141
+		owns_core_province = 431
+		owns_core_province = 4447
+		
+	}
+
+	trigger = {
+
+		owns_core_province = 398
+		owns_core_province = 3141
+		owns_core_province = 431
+		owns_core_province = 4447
+	}
+	
+
+	global_trade_power = 0.1
+	
+}
+
+
+
+
+#######################################################
+	
+american_help = {
+	potential = {
+		capital_scope = {
+			OR = {
+				continent = north_america 
+				continent = south_america 
+			}
+		}
+	}
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				continent = north_america 
+				continent = south_america 
+			}
+		}
+		
+	}
+	
+		global_institution_spread = 0.25
+		embracement_cost = -0.2
+	}
+
+all_player_2 = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		ai = no
+	}
+		state_maintenance_modifier = -0.5
+		merc_maintenance_modifier = -0.5
+}
+
+all_ai = {
+	potential = {
+		ai = yes
+		NOT = { tag = ZOM }
+	}
+
+	trigger = {
+		ai = yes
+		NOT = { tag = ZOM }
+	}
+		inflation_reduction = 0.05
+		interest = -0.05
+		fort_maintenance_modifier = -0.9
+		naval_maintenance_modifier = -0.20
+		state_maintenance_modifier = -3.0
+		global_regiment_cost = -6.0
+		land_maintenance_modifier = 2.5
+		mercenary_cost = 2.5
+		merc_maintenance_modifier = 3.5
+		
+}
+
+
+
+
+japan_ai = {
+	potential = {
+		ai = yes
+		
+	}
+
+	trigger = {
+		tag = JAP
+	}
+	
+
+		global_manpower_modifier = 0.1
+		naval_forcelimit_modifier = 0.3
+		
+		
+	
+}
+
+china_ai = {
+	potential = {
+		ai = yes
+		
+	}
+
+	trigger = {
+		tag = CHN
+	}
+	
+
+		global_manpower_modifier = 0.1
+		diplomats = 5
+		merchants = 5
+		trade_efficiency = 0.4
+		fort_maintenance_modifier = -0.9
+		naval_forcelimit_modifier = 0.1
+		governing_capacity = 20000
+		global_unrest = -4
+		
+		discipline = 0.1
+		
+}
+
+
+usa_ai = {
+	potential = {
+		ai = yes
+		
+	}
+
+	trigger = {
+		tag = USA
+	}
+	
+
+		merchants = 10
+		diplomats = 10
+		governing_capacity = 20000
+		advisor_cost = -0.2
+		discipline = 0.1
+		
+}
+
+
+russia_ai = {
+	potential = {
+		ai = yes
+		
+	}
+
+	trigger = {
+		OR = {
+		tag = RUS
+		tag = SOV
+		}
+	}
+	
+
+	land_maintenance_modifier = -0.70
+	fort_maintenance_modifier = -0.9
+	trade_efficiency = 0.3
+	production_efficiency = 0.35
+	naval_forcelimit_modifier = 0.4
+	
+	advisor_cost = -0.45
+	discipline = 0.1
+	infantry_power = 0.1
+	
+
+	
+}
+
+INDIA_ai = {
+	potential = {
+		ai = yes
+		
+	}
+
+	trigger = {
+		tag = INI
+	}
+	
+
+		fort_maintenance_modifier = -0.9
+		land_maintenance_modifier = -0.65
+		naval_forcelimit_modifier = 0.6
+		production_efficiency = 0.65
+		
+		infantry_power = 0.30
+		discipline = 0.1
+		global_institution_spread = 0.2
+		
+	
+}
+
+france_help = {
+	potential = {
+		OR = {
+			tag = FR2	
+			tag = FRA
+		}
+	}
+
+	trigger = {
+		NOT = { adm_tech = 99 }
+		total_development = 2000
+		NOT = { total_development = 3500 }
+	}
+	
+
+	global_tax_modifier = 0.2
+	stability_cost_modifier = -0.1
+	global_regiment_cost = -0.2
+	trade_efficiency = 0.1
+	production_efficiency = 0.15
+	land_maintenance_modifier = -0.15
+	
+
+}
+
+#germany_help = {
+#	potential = {
+#		
+#			tag = GER
+#		}	
+#		
+#
+#	trigger = {
+#		NOT = { adm_tech = 99 }
+#		total_development = 2000
+#		NOT = { total_development = 3000 }
+#	}
+#	
+#
+#	global_tax_modifier = 0.2
+#	stability_cost_modifier = -0.1
+#	global_regiment_cost = -0.2
+#	trade_efficiency = 0.3
+#	production_efficiency = 0.3
+#	land_maintenance_modifier = -0.25
+#	global_ship_cost = -0.1
+#	
+#
+#}
+
+
+
+
+
+
+##########################################
+
+all_3_250 = {
+	potential = {
+		total_development = 3
+		NOT = { total_development = 250 }
+		NOT = { tag = ZOM }
+	}
+
+	trigger = {
+		total_development = 3
+		NOT = { total_development = 250 }
+		NOT = { tag = ZOM }
+
+	}
+	
+
+	land_forcelimit_modifier =  0.1
+	naval_forcelimit_modifier = 0.2
+	state_maintenance_modifier = -0.75
+	
+}
+
+all_250_500 = {
+	potential = {
+		total_development = 250
+		NOT = { total_development = 500 }
+		NOT = { tag = ZOM }
+	}
+
+	trigger = {
+		total_development = 250
+		NOT = { total_development = 500 }
+		NOT = { tag = ZOM }
+	}
+	
+
+	global_regiment_cost = 1.0
+	land_forcelimit_modifier =  0.05
+	naval_forcelimit_modifier = 0.1
+	state_maintenance_modifier = -0.6
+	
+}
+
+all_3_500 = {
+	potential = {
+		total_development = 3
+		NOT = { total_development = 500 }
+		NOT = { tag = ZOM }
+	}
+
+	trigger = {
+
+		
+		total_development = 3
+		NOT = { total_development = 500 }
+		NOT = { tag = ZOM }
+
+	}
+	global_tax_modifier = 0.50
+	stability_cost_modifier = -0.2
+	trade_efficiency = 0.5
+	production_efficiency = 0.5
+	land_maintenance_modifier = -0.5
+	global_ship_cost = -0.2
+	naval_forcelimit_modifier = 0.15
+}
+all_500_1000 = {
+	potential = {
+		total_development = 500
+		NOT = { total_development = 1000 }
+		NOT = { tag = ZOM }
+	}
+
+	trigger = {
+		total_development = 500
+		NOT = { total_development = 1000 }
+		NOT = { tag = ZOM }
+	}
+	global_tax_modifier = 0.35
+	stability_cost_modifier = -0.15
+	global_regiment_cost = 2.0
+	trade_efficiency = 0.35
+	production_efficiency = 0.35
+	land_maintenance_modifier = -0.3
+	global_ship_cost = -0.1
+	naval_forcelimit_modifier = 0.1
+	state_maintenance_modifier = -0.5
+	
+}
+all_1000_2000 = {
+	potential = {
+			NOT = { tag = SKO }
+			NOT = { tag = KOR }
+			NOT = { tag = ZOM }
+			
+	}
+
+	trigger = {
+		
+		total_development = 1000
+		NOT = { total_development = 2000 }
+	}
+	
+
+	global_tax_modifier = 0.2
+	stability_cost_modifier = -0.1
+	global_regiment_cost = 3.5
+	trade_efficiency = 0.2
+	production_efficiency = 0.2
+	land_maintenance_modifier = -0.15
+	global_ship_cost = -0.05
+	state_maintenance_modifier = -0.25
+	
+
+}
+
+base_Game = {
+	potential = {
+		total_development = 2000			
+	}
+	trigger = {
+		total_development = 2000	
+	}
+	global_regiment_cost = 5.0
+}
+
+fixed_south_korea = {
+	potential = {
+		OR = {
+		tag = SKO
+		tag = KOR
+		}
+		total_development = 1000
+		NOT = { total_development = 2000 }
+	}
+	trigger = {
+	OR = {
+		tag = SKO
+		tag = KOR
+	}
+	total_development = 1000
+	NOT = { total_development = 2000 }
+	}
+	global_regiment_cost = 4.0
+}
+
+
+
+#japan_korea = {
+#	potential = {
+#		OR = {
+#			tag = SKO
+#			tag = JAP
+#			tag = KOR
+#		}
+#	}
+#
+#	trigger = {
+#	
+#		NOT = { adm_tech = 90 }
+#		total_development = 3500
+#		NOT = { total_development = 7000 }
+#	}
+#	
+#
+#	global_tax_modifier = -0.15
+#	stability_cost_modifier = 0.1
+#	global_regiment_cost = 0.15
+#	trade_efficiency = -0.15
+#	production_efficiency = -0.2 
+#	land_maintenance_modifier = 0.3
+#	global_ship_cost = 0.15
+#	
+#}
+
+
+
+##############################################################################
+#
+################################################################################
+
+#large_empire = {
+#	potential = {
+#		NOT = { adm_tech = 90 }
+#	}
+#
+#	trigger = {
+#				NOT = { adm_tech = 90 }
+#				total_development = 6000
+#				NOT = { total_development = 8000 }
+#	}
+#
+#	global_tax_modifier = -0.05
+#	global_unrest = 1
+#	stability_cost_modifier = 0.05
+#	global_regiment_cost = 0.05
+#}
+#
+#huge_empire = {
+#	potential = {
+#		NOT = { adm_tech = 90 }
+#	}
+#
+#	trigger = {
+#		NOT = { adm_tech = 90 }
+#		total_development = 8000
+#	}
+#
+#	global_tax_modifier = -0.1
+#	global_unrest = 2
+#	stability_cost_modifier = 0.1
+#	global_regiment_cost = 0.1
+#}
+
+
+
+#primitive_government = {
+#	potential = {
+#		government = monarchy
+#	}
+#
+#	trigger = {
+#		government = monarchy
+#		adm_tech = 99
+#	}
+#
+#	land_forcelimit_modifier = -0.5
+#	global_manpower_modifier = -0.5
+#	global_regiment_cost = 0.4
+#	technology_cost = 0.5
+#	global_unrest = 1
+#}
+
+large_tribe = {
+	potential = {
+		government = tribal
+	}
+
+	trigger = {
+		government = tribal
+		num_of_cities = 8
+	}
+
+	colonist_placement_chance = -10
+}
+
+###########################################
+#Nationalist Of Country
+###########################################
+ottoman_turky = {
+	potential = {
+		current_age = classical_age
+		has_dlc = "Common Sense"
+		tag = TKY
+		ai = yes
+	}
+
+	trigger = {
+		current_age = classical_age
+		tag = TKY
+		ai = yes
+	}
+
+	discipline = 0.1
+	naval_forcelimit_modifier = 0.1
+	infantry_power = 0.1
+	land_morale = 0.05
+	envoy_travel_time = -0.1
+	development_cost = -0.3
+	global_regiment_cost = -0.2
+	culture_conversion_cost = -0.7
+}
+
+brazil_ai = {
+	potential = {
+		
+		tag = BRZ
+		ai = yes
+	}
+
+	trigger = {
+		
+		tag = BRZ
+		ai = yes
+	}
+
+
+	trade_efficiency = 0.3
+	production_efficiency = 0.3
+	global_ship_cost = -0.2
+	merchants = 4
+}
+
+iran_ai = {
+	potential = {
+		
+		tag = IRA
+		ai = yes
+	}
+
+	trigger = {
+		
+		tag = IRA
+		ai = yes
+	}
+
+
+	culture_conversion_cost = -0.3
+	missionaries = 7
+}
+persian_iran = {
+	potential = {
+		tag = PER
+		ai = yes
+	}
+
+	trigger = {
+		tag = PER
+		ai = yes
+	}
+
+	discipline = 0.1
+	naval_forcelimit_modifier = 0.25
+	envoy_travel_time = -0.1
+	diplomatic_reputation = 1
+	development_cost = -0.3
+	culture_conversion_cost = -0.7
+}
+saudi_arabian = {
+	potential = {
+		tag = SAU
+		ai = yes
+	}
+
+	trigger = {
+		tag = SAU
+		ai = yes
+	}
+
+	envoy_travel_time = -0.1
+	diplomatic_reputation = 1
+	production_efficiency = 0.25
+	trade_efficiency = 0.15
+	development_cost = -0.3
+	global_regiment_cost = -0.2
+	culture_conversion_cost = -0.7
+}
+
+australia_balance = {
+	potential = {
+		tag = AUS
+		ai = yes
+	}
+
+	trigger = {
+		tag = AUS
+		ai = yes
+	}
+
+
+	naval_forcelimit_modifier = 0.3
+	global_ship_cost = -0.25
+	envoy_travel_time = -0.2
+	diplomatic_reputation = 1
+	production_efficiency = 0.25
+	trade_efficiency = 0.15
+	development_cost = -0.3
+	global_regiment_cost = -0.2
+	culture_conversion_cost = -0.7
+}
+north_korea = {
+	potential = {
+		tag = NOK
+	}
+
+	trigger = {
+		tag = NOK
+		NOT = { total_development = 4000 }
+		
+	}
+
+	land_forcelimit_modifier = 0.1
+	naval_forcelimit_modifier = 0.1
+	infantry_power = 0.15
+	cavalry_power = 0.15
+	artillery_power = 0.15
+	discipline = 0.1
+	global_ship_cost = -0.1
+	
+	
+}
+
+north_korea_ai = {
+	potential = {
+		OR = {
+			tag = CUB
+			tag = NOK
+			tag = CHN
+		}
+		religion = irreligious
+	}
+	
+	trigger = {
+		NOT = { is_year = 2100 }
+		OR = {
+			tag = CUB
+			tag = NOK
+			tag = CHN
+		}
+		religion = irreligious
+	}
+
+	tolerance_heretic = 6
+	tolerance_heathen = 4
+}
+
+classical_age_modifier = {
+	potential = {
+		current_age = classical_age
+		has_dlc = "Common Sense"
+	}
+
+	trigger = {
+		current_age = classical_age
+	}
+
+	naval_forcelimit_modifier = 0.1
+	envoy_travel_time = 0.1
+	development_cost = -0.05
+	culture_conversion_cost = -0.4
+}
+
+#####################################################
+
+
+late_classical_age_modifier = {
+	potential = {
+		current_age = late_classical_age
+		has_dlc = "Common Sense"
+	}
+
+	trigger = {
+		current_age = late_classical_age
+	}
+
+	discipline = -0.1
+	naval_forcelimit_modifier = 0.05
+	global_trade_power = -0.3
+	envoy_travel_time = -0.1
+	development_cost = -0.05
+	
+	culture_conversion_cost = -0.15
+}
+
+age_of_migrations_modifier = {
+	potential = {
+		current_age = age_of_migrations
+		has_dlc = "Common Sense"
+	}
+
+	trigger = {
+		current_age = age_of_migrations
+	}
+
+	discipline = 0.1
+	naval_forcelimit_modifier = 0.05
+	envoy_travel_time = -0.1
+	development_cost = 0.01
+	church_loyalty_modifier = -0.1
+	dhimmi_loyalty_modifier = 0.1
+	culture_conversion_cost = -0.1
+}
+
+dark_age_modifier = {
+	potential = {
+		current_age = dark_age
+		has_dlc = "Common Sense"
+	}
+
+	trigger = {
+		current_age = dark_age
+	}
+
+	discipline = -0.075
+	naval_forcelimit_modifier = 0.1
+	envoy_travel_time = -0.1
+	development_cost = 0.05
+	global_trade_power = 0.15
+	culture_conversion_cost = -0.15
+}
+
+feudal_age_modifier = {
+	potential = {
+		current_age = feudal_age
+		has_dlc = "Common Sense"
+	}
+
+	trigger = {
+		current_age = feudal_age
+	}
+
+	discipline = -0.075
+	naval_forcelimit_modifier = 0.1
+	envoy_travel_time = -0.1
+	development_cost = 0.05
+	culture_conversion_cost = -0.1
+}
+##########
+china_military = {
+	potential = {
+		current_age = feudal_age
+		tag = CHN
+		ai = yes
+	}
+
+	trigger = {
+		current_age = feudal_age
+		tag = CHN
+	}
+
+	discipline = 0.2
+	naval_forcelimit_modifier = 0.25
+	artillery_power = 0.20
+	cavalry_power = 0.20
+	infantry_power = 0.2
+	land_morale = 0.1
+}
+#########################
+
+high_middle_ages_modifier = {
+	potential = {
+		current_age = high_middle_ages
+		has_dlc = "Common Sense"
+	}
+
+	trigger = {
+		current_age = high_middle_ages
+	}
+
+	discipline = -0.05
+	naval_forcelimit_modifier = -0.3
+	envoy_travel_time = -0.1
+	development_cost = -0.05
+	culture_conversion_cost = -0.05
+}
+fall_of_usa = {
+	potential = {
+		current_age = high_middle_ages
+		has_dlc = "Common Sense"
+		tag = USA
+	}
+
+	trigger = {
+		current_age = high_middle_ages
+		tag = USA
+	}
+
+	envoy_travel_time = 0.5
+	
+}
+################################################
+
+late_middle_ages_modifier = {
+	potential = {
+		current_age = late_middle_ages
+		has_dlc = "Common Sense"
+	}
+
+	trigger = {
+		current_age = late_middle_ages
+	}
+
+	discipline = -0.05
+	naval_forcelimit_modifier = -0.2
+	envoy_travel_time = -0.1
+	development_cost = 0.05
+	culture_conversion_cost = -0.05
+}
+
+industrial_age_modifier = {
+	potential = {
+		current_age = industrial_age
+	}
+
+	trigger = {
+		current_age = industrial_age
+	}
+
+	envoy_travel_time = -0.1
+	free_leader_pool = 1
+	siege_ability = 0.50
+	technology_cost = 0.1
+	development_cost = -0.1
+	culture_conversion_cost = -0.15
+	land_maintenance_modifier = 0.2
+}
+
+great_war_age_modifier = {
+	potential = {
+		current_age = great_war_age
+	}
+
+	trigger = {
+		current_age = great_war_age
+	}
+
+	envoy_travel_time = -0.1
+	free_leader_pool = 2
+	siege_ability = 0.75
+	technology_cost = 0.2
+	development_cost = -0.2
+	culture_conversion_cost = -0.3
+	land_maintenance_modifier = 0.4
+}
+
+information_age_modifier = {
+	potential = {
+		current_age = information_age
+	}
+
+	trigger = {
+		current_age = information_age
+	}
+
+	envoy_travel_time = -0.1
+	free_leader_pool = 2
+	siege_ability = 1
+	technology_cost = 0.3
+	development_cost = -0.05
+	culture_conversion_cost = -0.1
+	land_maintenance_modifier = 0.6
+}
+
+the_polar_bear_emperor = {
+	potential = {
+		tag = JMN
+	}
+
+	trigger = {
+		tag = JMN
+	}
+
+	heir_chance = -2
+	global_tax_modifier = -1
+	papal_influence = -10
+	imperial_authority = -10
+	diplomatic_reputation = -100
+}
+
+ai_rome = {
+	potential = {
+		ai = yes
+		tag = ROM
+	}
+
+	trigger = {
+		ai = yes
+		tag = ROM
+	}
+
+	global_unrest = -2
+}
+
+
+
+classical_age_modifier_no_cs = {
+	potential = {
+		current_age = classical_age
+		NOT = { has_dlc = "Common Sense" }
+	}
+
+	trigger = {
+		current_age = classical_age
+	}
+
+	discipline = -0.1
+	naval_forcelimit_modifier = -0.05
+	envoy_travel_time = -0.1
+	culture_conversion_cost = -0.15
+}
+
+late_classical_age_modifier_no_cs = {
+	potential = {
+		current_age = late_classical_age
+		NOT = { has_dlc = "Common Sense" }
+	}
+
+	trigger = {
+		current_age = late_classical_age
+	}
+
+	discipline = -0.1
+	naval_forcelimit_modifier = 0.05
+	envoy_travel_time = 0.1
+	culture_conversion_cost = -0.25
+}
+
+age_of_migrations_modifier_no_cs = {
+	potential = {
+		current_age = age_of_migrations
+		NOT = { has_dlc = "Common Sense" }
+	}
+
+	trigger = {
+		current_age = age_of_migrations
+	}
+
+	discipline = -0.1
+	naval_forcelimit_modifier = -0.4
+	envoy_travel_time = 0.2
+	culture_conversion_cost = -0.05
+}
+
+dark_age_modifier_no_cs = {
+	potential = {
+		current_age = dark_age
+		NOT = { has_dlc = "Common Sense" }
+	}
+
+	trigger = {
+		current_age = dark_age
+	}
+
+	discipline = 0.075
+	naval_forcelimit_modifier = 0.05
+	envoy_travel_time = -0.1
+	culture_conversion_cost = -0.1
+}
+
+feudal_age_modifier_no_cs = {
+	potential = {
+		current_age = feudal_age
+		NOT = { has_dlc = "Common Sense" }
+	}
+
+	trigger = {
+		current_age = feudal_age
+	}
+
+	discipline = -0.075
+	naval_forcelimit_modifier = 0.05
+	envoy_travel_time = 0.2
+	culture_conversion_cost = -0.35
+}
+
+high_middle_ages_modifier_no_cs = {
+	potential = {
+		current_age = high_middle_ages
+		NOT = { has_dlc = "Common Sense" }
+	}
+
+	trigger = {
+		current_age = high_middle_ages
+	}
+
+	discipline = -0.05
+	naval_forcelimit_modifier = -0.05
+	envoy_travel_time = 0.1
+	culture_conversion_cost = -0.02
+}
+
+late_middle_ages_modifier_no_cs = {
+	potential = {
+		current_age = late_middle_ages
+		NOT = { has_dlc = "Common Sense" }
+	}
+
+	trigger = {
+		current_age = late_middle_ages
+	}
+
+	discipline = -0.05
+	naval_forcelimit_modifier = -0.05
+	envoy_travel_time = 0.1
+	culture_conversion_cost = -0.12
+}
+
+chalcedonism_rome = {
+	potential = {
+		NOT = { has_dlc = "Rights of Man" }
+		religion = chalcedonism
+	}
+
+	trigger = {
+		118 = {
+			religion = chalcedonism
+			owner = { religion = chalcedonism }
+		}
+	}
+
+	tolerance_own = 2
+}
+
+chalcedonism_constantinople = {
+	potential = {
+		NOT = { has_dlc = "Rights of Man" }
+		religion = chalcedonism
+	}
+
+	trigger = {
+		151 = {
+			religion = chalcedonism
+			owner = { religion = chalcedonism }
+		}
+	}
+
+	stability_cost_modifier = -0.25
+}
+
+chalcedonism_alexandria = {
+	potential = {
+		NOT = { has_dlc = "Rights of Man" }
+		religion = chalcedonism
+	}
+
+	trigger = {
+		358 = {
+			religion = chalcedonism
+			owner = { religion = chalcedonism }
+		}
+	}
+
+	legitimacy = 0.5
+	horde_unity = 0.5
+	republican_tradition = 0.2
+	devotion = 0.5
+}
+
+chalcedonism_antioch = {
+	potential = {
+		NOT = { has_dlc = "Rights of Man" }
+		religion = chalcedonism
+	}
+
+	trigger = {
+		2367 = {
+			religion = chalcedonism
+			owner = { religion = chalcedonism }
+		}
+	}
+
+	manpower_recovery_speed = 0.1
+}
+
+chalcedonism_jerusalem = {
+	potential = {
+		NOT = { has_dlc = "Rights of Man" }
+		religion = chalcedonism
+	}
+
+	trigger = {
+		379 = {
+			religion = chalcedonism
+			owner = { religion = chalcedonism }
+		}
+	}
+
+	global_missionary_strength = 0.015
+}
+
+#######################################################################
+######## Zombie
+#######################################################################
+
+
+zombie_trigger = {
+	potential = {
+		tag = ZOM
+	}
+
+	trigger = {
+		tag = ZOM
+	}
+
+	colonists = -20
+	diplomats = -10
+	missionaries = -20
+}
+
+
+###########################################
+#####Atomic Bomb 
+###########################################
+
+inferior_nuclear_strength = {
+	potential = {
+	
+		total_development = 3
+	}
+
+	trigger = {
+		
+		any_country = {
+			war_with = ROOT
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 1 
+				}
+		}
+		any_country = {
+			war_with = ROOT
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 3 
+				}
+			}
+		}
+		ROOT = {
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 1
+				}
+			}
+		}
+	}
+
+	land_morale = -0.01
+}
+
+inferior_nuclear_strength = {
+	potential = {
+		total_development = 3
+		
+	}
+
+	trigger = {
+		any_country = {
+			war_with = ROOT
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 3 
+				}
+		}
+		any_country = {
+			war_with = ROOT
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 6
+				}
+			}
+		}
+		ROOT = {
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 1
+				}
+			}
+		}
+	}
+
+	land_morale = -0.02
+}
+
+inferior_nuclear_strength = {
+	potential = {
+		total_development = 3
+	}
+
+	trigger = {
+		any_country = {
+			war_with = ROOT
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 6 
+				}
+		}
+		any_country = {
+			war_with = ROOT
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 10
+				}
+			}
+		}
+		ROOT = {
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 1
+				}
+			}
+		}
+	}
+
+	land_morale = -0.03
+}
+inferior_nuclear_strength = {
+	potential = {
+		total_development = 3
+	}
+
+	trigger = {
+	
+	
+		any_country = {
+			war_with = ROOT
+				check_variable = {
+					which = num_of_nuclear_weapons
+					
+					value = 10
+				}
+		}
+		any_country = {
+			war_with = ROOT
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 20
+				}
+			}
+		}
+		ROOT = {
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 1
+				}
+			}
+		}
+	}
+
+	land_morale = -0.05
+}
+
+
+inferior_nuclear_strength = {
+	potential = {
+		total_development = 3
+	}
+
+	trigger = {
+	
+	
+		any_country = {
+			war_with = ROOT
+				check_variable = {
+					which = num_of_nuclear_weapons
+					
+					value = 20
+				}
+		}
+		ROOT = {
+			NOT = {
+				check_variable = {
+					which = num_of_nuclear_weapons
+					value = 1
+				}
+			}
+		}
+	}
+
+	land_morale = -0.1
+}
+
+
+####################################################################################################
+
+
+
+

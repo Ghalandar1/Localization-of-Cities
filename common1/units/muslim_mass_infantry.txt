@@ -1,0 +1,12 @@
+# Muslim Mass Infantry
+	
+type = infantry
+unit_type = muslim
+
+maneuver = 2
+offensive_morale = 6
+defensive_morale = 5
+offensive_fire = 3
+defensive_fire = 3
+offensive_shock = 3
+defensive_shock = 3

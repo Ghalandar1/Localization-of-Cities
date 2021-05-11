@@ -1,0 +1,12 @@
+# M270 MLRS
+
+type = artillery
+
+maneuver = 3
+offensive_morale = 9
+defensive_morale = 9
+offensive_fire = 11
+defensive_fire = 11
+offensive_shock = 9
+defensive_shock = 8
+

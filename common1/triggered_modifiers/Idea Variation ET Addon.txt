@@ -1,0 +1,140 @@
+Idea_Cost_Bonus = {
+	potential = {
+
+		
+		start_date = 2020.12.2
+		
+	}
+	trigger = {
+	
+		start_date = 2020.12.2
+		NOT = { is_year = 2032 }
+		
+		}
+	
+	trade_efficiency = 0.1
+	production_efficiency = 0.1
+}
+
+
+Idea_Cost_Bonus = {
+	potential = {
+
+		
+		start_date = 2050.7.1
+		
+	}
+	trigger = {
+	
+		start_date = 2050.7.1
+		NOT = { is_year = 2070 }
+		
+		}
+	
+	global_ship_cost = -0.05
+}
+
+
+
+Idea_Cost_Bonus = {
+	potential = {
+
+		
+		start_date = 2100.1.1
+		
+	}
+	trigger = {
+	
+		start_date = 2100.1.1
+		NOT = { is_year = 2115 }
+		
+		}
+	
+	advisor_pool = 1
+}
+
+
+Idea_Cost_Bonus = {
+	potential = {
+
+		
+		start_date = 2130.12.25
+		
+	}
+	trigger = {
+	
+		start_date = 2130.12.25
+		NOT = { is_year = 2150 }
+		
+		}
+	
+	global_tax_modifier = 0.3
+}
+
+Idea_Cost_Bonus = {
+	potential = {
+
+		
+		start_date = 2165.7.19
+		
+	}
+	trigger = {
+	
+		start_date = 2165.7.19
+		NOT = { is_year = 2175 }
+		
+		}
+	
+	trade_efficiency = 0.1
+}
+
+Idea_Cost_Bonus = {
+	potential = {
+
+		
+		start_date = 2190.1.1
+		
+	}
+	trigger = {
+	
+		start_date = 2190.1.1
+		NOT = { is_year = 2200}
+		
+		}
+	
+	global_unrest = 2
+}
+
+Idea_Cost_Bonus = {
+	potential = {
+
+		
+		start_date = 2215.7.28
+		
+	}
+	trigger = {
+	
+		start_date = 2215.7.28
+		NOT = { is_year = 2225 }
+		
+		}
+	
+	caravan_power = 0.15
+}
+
+Idea_Cost_Bonus = {
+	potential = {
+
+		
+		start_date = 2240.9.3
+		
+	}
+	trigger = {
+	
+		start_date = 2240.9.3
+		NOT = { is_year = 2250 }
+		
+		}
+	
+	build_cost = -0.1
+}

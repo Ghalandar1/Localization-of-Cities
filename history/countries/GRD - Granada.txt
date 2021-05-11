@@ -1,0 +1,21 @@
+government = monarchy
+
+government_rank = 1
+add_government_reform = autocracy_reform
+set_legacy_government = administrative_monarchy 
+
+capital = 11106
+primary_culture = andalucian
+add_accepted_culture = berber
+religious_school = maliki_school
+religion = secularism
+technology_group = muslim
+2019.5.30 = {
+	monarch = {
+		name = "Muhammad XII Boabdil"
+		dynasty = "Nasrid"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}

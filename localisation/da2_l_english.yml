@@ -1,0 +1,8 @@
+﻿l_english:
+ # Diplomacy
+ great_claims_title:0 "Great Claims"
+ great_claims_tooltip:0 "We will gain permanent claims on all bordering provinces."
+ great_claims_desc:0 "As a Great Power, we are able to use our influence and diplomatic abilities to gain strong permanent claims against a Great Power nation.\n(§R-100 £adm£§!§YAdministrative Power§! §R-100 £dip£§!§YDiplomatic Power§!)\n\n These are §YPermanent§! claims and will last forever due to our ability to claim these lands as truly ours. \n\n This will cost us quite a bit of stability in our nation and prestige for our country by using our Great Power status for such aggressive means.\n(§R-1§! §YStability§! §R-10§! §YPrestige§!)"
+ # Modifiers
+ recently_claimed_great_claims:0 "Recently did Great Claims"
+ had_great_claims_against_us:0 "Great Claims Against us"

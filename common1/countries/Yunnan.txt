@@ -1,0 +1,98 @@
+
+graphical_culture = asiangfx
+
+
+color = { 171  190  152 }
+historical_units = {
+	mamluk_archer
+	muslim_cavalry_archers
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Mohammed #0" = 30
+	"Mohamed #0" = 30
+	"Ali #0" = 10
+	"Ahmed #0" = 10
+	"Husayn #0" = 10
+	"Ibrahim #0" = 10
+	"Mustafa #0" = 10
+	"Abdull�h #0" = 20
+	"Abdall�h #0" = 20
+	"Abdul #0" = 10
+	"M�s� #0" = 10
+	"'Umar #0" = 10
+	"Y�suf #0" = 10
+	"Selim #0" = 10
+	"Uthm�n #0" = 10
+	"Yaghmuras�n #0" = 10
+	"Abdelkader #0" = 10
+	"Ahlam #0" = 10
+	"Barakat #0" = 10
+	"Basir #0" = 10
+	"Dawud #0" = 10
+	"Faris #0" = 10
+	"Haidar #0" = 10
+	"Hasan #0" = 10
+	"Hashim #0" = 10
+	"Hosni #0" = 10
+	"Jabbar #0" = 10
+	"Jamal #0" = 10
+	"Junayd #0" = 10
+	"Kateb #0" = 10
+	"Lakhdar #0" = 10
+	"Mahfoud #0" = 10
+	"Malek #0" = 10
+	"Miloud #0" = 10
+	"Moufdi #0" = 10
+	"Najib #0" = 10
+	"Qasim #0" = 10
+	"Rachid #0" = 10
+	"Rahim #0" = 10
+	"Rash�d #0" = 10
+	"Safi #0" = 10
+	"Sakhr #0" = 10
+	"Tahar #0" = 10
+	"Wahid #0" = 10
+	"Zahir #0" = 10
+}
+
+leader_names = {
+	Selmi
+	Amara
+	Behar
+	Ilaes
+	Benzine
+	Essaid
+	Hacini
+	Benzai
+	Boudjedra
+	Djaballah
+	Djaout
+	Djebar
+	Feraoun
+	Hmida
+	Kelkal
+	Madani
+	Malek
+	Merah
+	Mimouni
+	Mostaghanemi
+	Sadi
+	Zeroual
+}
+
+ship_names = {
+	Aljuneid "Mansur Umar" Zaizz Zabid
+	"Muzaffar Yusuf" "Malik al-Mujahid" 
+	"Shaykh Uthman" "Al-Kawd" Whaqra "Wadi Bana"
+	Ta'izz "At-Tubah" Dhubab "Jabal Kharaz" Musaymir
+	Mawiyah "Jabal al-Hasha" Ibb Qa'tabah "Jabal Thamar"
+}
+
+
+

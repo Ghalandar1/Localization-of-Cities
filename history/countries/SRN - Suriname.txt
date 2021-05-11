@@ -1,0 +1,17 @@
+government = republic
+
+government_rank = 1
+set_legacy_government = constitutional_republic
+capital = 10906
+primary_culture = germanic_colombian
+religion = secularism
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Dési Bouterse"
+		adm = 5
+		dip = 4
+		mil = 2
+		religion = reformed
+	}
+}

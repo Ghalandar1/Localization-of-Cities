@@ -1,0 +1,40 @@
+﻿l_english:
+ TECH_TRESURY_TITLE:0 "Dollers"
+ INCOMETRADE:0 "Export"
+ INCOMEGOLD:0 "Tourism"
+ 
+ 
+ PEACE_po_force_culture:0 "Force Culture"
+ po_force_culture_desc:0 "Changes the culture of our enemy to [Root.Culture.GetName]"
+ cb_force_culture:0 "Force Culture"
+ ALL_FORCE_CULTURE:0 "We shall assimilate and integrate them into our culture!"
+ CULTURE_WAR_NAME:0 "Cultural Imperialism"
+ 
+ army_limited_1:0 "Army & Navy Limited 10%"
+ army_limited_1_title:0 "Army & Navy Limited 10%"
+ 
+ army_limited_2:0 "Army & Navy Limited 20%"
+ army_limited_2_title:0 "Army & Navy Limited 20%"
+ 
+ PEACE_po_limited_army_10:0 "Limit Their Army 10%"
+ po_limited_army_10_desc:0 "This military contract limits them to 10% for 10 years"
+ 
+ PEACE_po_make_military_base:0 "Make Military Base"
+ po_make_military_base_desc:0 "Make this country your military base"
+ 
+ PEACE_po_limited_army_20:0 "Limit Their Army 20%"
+ po_limited_army_20_desc:0 "This military contract limits them to 20% for 10 years"
+ 
+ PEACE_po_cancel_military_base:0 "Cancel Military Base "
+ po_cancel_military_base_desc:0 "We are expelling foreign forces from [From.Owner.GetName]"
+ 
+ PEACE_po_cancel_EU:0 "Exit from the EU"
+ po_cancel_EU_desc:0 "We are taking them out of the EU"
+ 
+ destroy_antiquities.2opt:0 "They destroyed our Antiquities"
+ destroy_antiquities.2opt_desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! destroyed our §GAntiquities§!"
+ 
+ 
+ destroy_antiquities.1title:0 "Destroyed Antiquities"
+ destroy_antiquities.1desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! destroyed §R[From.From.Owner.GetName]§!'s Antiquities"
+ destroy_antiquities.1opt:0 "This is a Disaster"

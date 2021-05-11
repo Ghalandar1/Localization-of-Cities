@@ -1,0 +1,292 @@
+#6.Special interactions menu
+namespace = pm_menu_special
+country_event = {
+    id = pm_menu_special.1
+    title = "pm_menu_special_title"
+    desc = "pm_menu_special_desc"
+    is_triggered_only = yes
+    #Make PU out of vassal
+    option = {
+        name = "pm_special_v2pu"
+        highlight = yes
+        trigger = {
+            event_target:pm_target = {
+                dynasty = event_target:pm_overlord
+                is_lesser_in_union = no
+            }
+        }
+        event_target:pm_overlord = {
+            create_union = event_target:pm_target
+            add_stability = -2
+
+        }
+        event_target:pm_target = {
+            add_liberty_desire = 25
+            add_opinion = { 
+                who = event_target:pm_overlord
+                modifier = pm_vpu_op
+            }
+            random_owned_province = {
+                pretender_rebels = 2
+            }
+            random_owned_province = {
+                pretender_rebels = 2
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Make vassal out of PU
+    option = {
+        name = "pm_special_pu2v"
+        highlight = yes
+        trigger = {
+            event_target:pm_target = {
+                is_lesser_in_union = yes
+            }
+        }
+        add_stability = -1
+
+        vassalize = event_target:pm_target
+        event_target:pm_target = {
+            add_liberty_desire = 50
+            add_opinion = { 
+                who = event_target:pm_overlord
+                modifier = pm_vpu_op    
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Colony
+    #adm
+    option = {
+        name = "pm_colony_investment_1_opt"
+        trigger = {
+            event_target:pm_target = {
+                is_subject_of_type = colony
+                NOT = {
+                    has_country_modifier = pm_colony_investment_1
+                }
+
+            }
+        }
+        event_target:pm_overlord = {
+            add_adm_power = -100
+            add_treasury = -500
+        }
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_colony_investment_1
+                duration = 3650
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #dip
+    option = {
+        name = "pm_colony_investment_2_opt"
+        trigger = {
+            event_target:pm_target = {
+                is_subject_of_type = colony
+                NOT = {
+                    has_country_modifier = pm_colony_investment_2
+                }
+
+            }
+        }
+        event_target:pm_overlord = {
+            add_dip_power = -100
+            add_treasury = -500
+        }
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_colony_investment_2
+                duration = 3650
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #mil
+    option = {
+        name = "pm_colony_investment_3_opt"
+        trigger = {
+            event_target:pm_target = {
+                is_subject_of_type = colony
+                NOT = {
+                    has_country_modifier = pm_colony_investment_3
+                }
+
+            }
+        }
+        event_target:pm_overlord = {
+            add_mil_power = -100
+            add_treasury = -500
+        }
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_colony_investment_3
+                duration = 3650
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    ##BUFFS
+    #Adm
+    option = {
+        name = "pm_special_adm_opt"
+        highlight = yes
+        trigger = {
+            event_target:pm_target = {
+                has_country_modifier = pm_adm
+                NOT = {
+                    has_country_modifier = pm_special_adm
+                }
+            }
+        }
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_special_adm
+                duration = -1  
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Col
+    option = {
+        name = "pm_special_col_opt"
+        highlight = yes
+        trigger = {
+            event_target:pm_target = {
+                has_country_modifier = pm_col
+                NOT = {
+                    has_country_modifier = pm_special_col
+                }
+            }
+        }
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_special_col
+                duration = -1  
+            }
+        }
+        event_target:pm_overlord = {
+            add_treasury = -500
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Dev
+    option = {
+        name = "pm_special_dev_opt"
+        highlight = yes
+        trigger = {
+            event_target:pm_target = {
+                has_country_modifier = pm_dev
+                NOT = {
+                    has_country_modifier = pm_special_dev
+                }
+            }
+        }
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_special_dev
+                duration = -1  
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Rel 1
+    option = {
+        name = "pm_special_rel_opt_1"
+        highlight = yes
+        trigger = {
+            event_target:pm_target = {
+                has_country_modifier = pm_rel
+                NOT = {
+                    has_country_modifier = pm_special_rel_1
+                }
+            }
+        }
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_special_rel_1
+                duration = -1  
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Rel 2
+    option = {
+        name = "pm_special_rel_opt_2"
+        highlight = yes
+        trigger = {
+            event_target:pm_target = {
+                has_country_modifier = pm_rel
+                NOT = {
+                    has_country_modifier = pm_special_rel_2
+                }
+            }
+        }
+        event_target:pm_target = {
+            add_country_modifier = {
+                name = pm_special_rel_2
+                duration = -1  
+            }
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Clear buffs
+    option = {
+        name = "pm_special_clear"
+        highlight = yes
+        trigger = {
+            event_target:pm_target = {
+                OR = {
+                    has_country_modifier = pm_special_adm
+                    has_country_modifier = pm_special_dev
+                    has_country_modifier = pm_special_rel_1
+                    has_country_modifier = pm_special_rel_2
+                    has_country_modifier = pm_special_col
+                }
+            }
+        }
+        event_target:pm_target = {
+            add_liberty_desire = 25
+            remove_country_modifier = pm_special_adm
+            remove_country_modifier = pm_special_dev
+            remove_country_modifier = pm_special_col
+            remove_country_modifier = pm_special_rel_1
+            remove_country_modifier = pm_special_rel_2
+        }
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+    #Quit
+    option = {
+        name = "pm_back_basic"
+        hidden_effect = {
+        country_event = {
+            id = pm_menu.1
+        }
+    }
+    }
+}

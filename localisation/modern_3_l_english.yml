@@ -1,0 +1,186 @@
+﻿l_english:
+ IRON_LOW:0 "Human Falled Iron Prices"
+ IRON_MUCH:0 "Human Rised Iron Price"
+ ALUMINUM_LOW:0 "Human Falled Aluminum Prices"
+ ALUMINUM_MUCH:0 "Human Rised Aluminum Prices"
+ COPPER_LOW:0 "Human Falled Copper Prices"
+ COPPER_MUCH:0 "Human Rised Copper Prices"
+ 
+ 
+ low_aluminum_50:0 "Falling Aluminum Prices -50%"
+ low_aluminum_50_desc:0 "Falling Aluminum Prices -50%"
+ low_aluminum_50_title:0 "Falling Aluminum Prices -50%"
+ low_aluminum_50_dialog:0 "Falling Aluminum Prices -50%"
+ low_aluminum_50_tooltip:0 "Falling Aluminum Prices -50%"
+ much_aluminum_50:0 "Rising Aluminum Prices 50%"
+ much_aluminum_50_desc:0 "Rising Aluminum Prices 50%"
+ much_aluminum_50_title:0 "Rising Aluminum Prices 50%"
+ much_aluminum_50_dialog:0 "Rising Aluminum Prices 50%"
+ much_aluminum_50_tooltip:0 "Rising Aluminum Prices 50%"
+ 
+ 
+ much_aluminum_25:0 "Rising Aluminum Prices 25%"
+ much_aluminum_25_desc:0 "Rising Aluminum Prices 25%"
+ much_aluminum_25_title:0 "Rising Aluminum Prices 25%"
+ much_aluminum_25_dialog:0 "Rising Aluminum Prices 25%"
+ much_aluminum_25_tooltip:0 "Rising Aluminum Prices 25%"
+ low_aluminum_25:0 "Falling Aluminum Prices -25%"
+ low_aluminum_25_desc:0 "Falling Aluminum Prices -25%"
+ low_aluminum_25_title:0 "Falling Aluminum Prices -25%"
+ low_aluminum_25_dialog:0 "Falling Aluminum Prices -25%"
+ low_aluminum_25_tooltip:0 "Falling Aluminum Prices -25%"
+ 
+ 
+ 
+ 
+ much_copper_50:0 "Rising Copper Prices 50%"
+ much_copper_50_desc:0 "Rising Copper Prices 50%"
+ much_copper_50_title:0 "Rising Copper Prices 50%"
+ much_copper_50_dialog:0 "Rising Copper Prices 50%"
+ much_copper_50_tooltip:0 "Rising Copper Prices 50%"
+ low_copper_50:0 "Falling Copper Prices -50%"
+ low_copper_50_desc:0 "Falling Copper Prices -50%"
+ low_copper_50_title:0 "Falling Copper Prices -50%"
+ low_copper_50_dialog:0 "Falling Copper Prices -50%"
+ low_copper_50_tooltip:0 "Falling Copper Prices -50%"
+ 
+ 
+ 
+ much_copper_25:0 "Rising Copper Prices 25%"
+ much_copper_25_desc:0 "Rising Copper Prices 25%"
+ much_copper_25_title:0 "Rising Copper Prices 25%"
+ much_copper_25_dialog:0 "Rising Copper Prices 25%"
+ much_copper_25_tooltip:0 "Rising Copper Prices 25%"
+ low_copper_25:0 "Falling Copper Prices -25%"
+ low_copper_25_desc:0 "Falling Copper Prices -25%"
+ low_copper_25_title:0 "Falling Copper Prices -25%"
+ low_copper_25_dialog:0 "Falling Copper Prices -25%"
+ low_copper_25_tooltip:0 "Falling Copper Prices -25%"
+ 
+
+ 
+ 
+ low_iron_50:0 "Falling Iron Prices -50%"
+ low_iron_50_desc:0 "Falling Iron Prices -50%"
+ low_iron_50_title:0 "Falling Iron Prices -50%"
+ low_iron_50_dialog:0 "Falling Iron Prices -50%"
+ low_iron_50_tooltip:0 "Falling Iron Prices -50%"
+ 
+ low_iron_25:0 "Falling Iron Prices -25%"
+ low_iron_25_desc:0 "Falling Iron Prices -25%"
+ low_iron_25_title:0 "Falling Iron Prices -25%"
+ low_iron_25_dialog:0 "Falling Iron Prices -25%"
+ low_iron_25_tooltip:0 "Falling Iron Prices -25%"
+ 
+ much_iron_50:0 "Rising Iron Prices 50%"
+ much_iron_50_desc:0 "Rising Iron Prices 50%"
+ much_iron_50_title:0 "Rising Iron Prices 50%"
+ much_iron_50_dialog:0 "Rising Iron Prices 50%"
+ much_iron_50_tooltip:0 "Rising Iron Prices 50%"
+ 
+ 
+ much_iron_25:0 "Rising Iron Prices 25%"
+ much_iron_25_desc:0 "Rising Iron Prices 25%"
+ much_iron_25_title:0 "Rising Iron Prices 25%"
+ much_iron_25_dialog:0 "Rising Iron Prices 25%"
+ much_iron_25_tooltip:0 "Rising Iron Prices 25%"
+ 
+ 
+ failling_iron_price_root:0 "Falled Iron Prices"
+ failling_iron_price_root_25:0 "Falled Iron Prices"
+ failling_iron_price_root_1:0 "Falled Iron Prices"
+ failling_iron_price_root_1_25:0 "Falled Iron Prices"
+ failling_iron_price_from:0 "Falled Iron Prices"
+ failling_iron_price_from_25:0 "Falled Iron Prices"
+ failling_iron_price_from_1:0 "Falled Iron Prices"
+ rising_iron_price_root_25:0 "Rising Iron Price"
+ rising_iron_price_root:0 "Rising Iron Price"
+ rising_iron_price_root_1:0 "Rising Iron Price"
+ rising_iron_price_root_1_25:0 "Rising Iron Price"
+ rising_iron_price_from_25:0 "Rising Iron Price"
+ rising_iron_price_from:0 "Rising Iron Price"
+ 
+ 
+ failling_aluminum_price_root_25:0 "Falling Aluminum Prices"
+ failling_aluminum_price_root:0 "Falling Aluminum Prices"
+ failling_aluminum_price_root_1:0 "Falling Aluminum Prices"
+ failling_aluminum_price_from_25:0 "Falling Aluminum Prices"
+ failling_aluminum_price_from:0 "Falling Aluminum Prices"
+ failling_aluminum_price_root_1_25:0 "Falling Aluminum Prices"
+ rising_aluminum_price_root_25:0 "Rising Aluminum Prices"
+ rising_aluminum_price_root:0 "Rising Aluminum Prices"
+ rising_aluminum_price_root_1:0 "Rising Aluminum Prices"
+ rising_aluminum_price_from_25:0 "Rising Aluminum Prices"
+ rising_aluminum_price_from:0 "Rising Aluminum Prices"
+ rising_aluminum_price_root_1_25:0 "Falling Aluminum Prices"
+ 
+ 
+ 
+ failling_copper_price_root_1:0 "Falling Copper Prices"
+ failling_copper_price_root_25:0 "Falling Copper Prices"
+ failling_copper_price_root:0 "Falling Copper Prices"
+ failling_copper_price_from_25:0 "Falling Copper Prices"
+ failling_copper_price_from:0 "Falling Copper Prices"
+ failling_copper_price_root_1_25:0 "Falling Copper Prices"
+ rising_copper_price_root_25:0 "Rising Copper Prices"
+ rising_copper_price_root:0 "Rising Copper Prices"
+ rising_copper_price_root_1:0 "Rising Copper Prices"
+ rising_copper_price_from_25:0 "Rising Copper Prices"
+ rising_copper_price_from:0 "Rising Copper Prices"
+ rising_copper_price_root_1_25:0 "Rising Copper Prices"
+ 
+ 
+ low_iron_price_1_50:0 "Human Changed Price Iron -50%"
+ much_iron_price_1_50:0 "Human Changed Price Iron 50%"
+ low_iron_price_1_25:0 "Human Changed Price Iron -25"
+ much_iron_price_1_25:0 "Human Changed Price Iron 25"
+ 
+ 
+ low_aluminum_price_1_50:0 "Human Changed Price Aluminum -50%"
+ much_aluminum_price_1_50:0 "Human Changed Price Aluminum 50%"
+ low_aluminum_price_1_25:0 "Human Changed Price Aluminum -25"
+ much_aluminum_price_1_25:0 "Human Changed Price Aluminum 25"
+ 
+ 
+ low_copper_price_1_50:0 "Human Changed Price Copper -50%"
+ much_copper_price_1_50:0 "Human Changed Price Copper 50%"
+ low_copper_price_1_25:0 "Human Changed Price Copper -25"
+ much_copper_price_1_25:0 "Human Changed Price Copper 25"
+ 
+ 
+ 
+ 
+ 
+ low_opinion_iron_good_50:0 "Good Opinion For Iron Price -50"
+ low_opinion_iron_bad_50:0 "Bad Opinion For Iron Price -50"
+ much_opinion_iron_good_50:0 "Good Opinion For Iron Price 50"
+ much_opinion_iron_bad_50:0 "Bad Opinion For Iron Price 50"
+ low_opinion_iron_good_25:0 "Good Opinion For Iron Price -25"
+ low_opinion_iron_bad_25:0 "Bad Opinion For Iron Price -25"
+ much_opinion_iron_bad_25:0 "Bad Opinion For Iron Price 25"
+ much_opinion_iron_good_25:0 "Good Opinion For Iron Price 25"
+ 
+ 
+ low_opinion_aluminum_good_50:0 "Good Opinion For Aluminum Price -50"
+ low_opinion_aluminum_bad_50:0 "Bad Opinion For Aluminum Price -50"
+ much_opinion_aluminum_good_50:0 "Good Opinion For Aluminum Price 50"
+ much_opinion_aluminum_bad_50:0 "Bad Opinion For Aluminum Price 50"
+ low_opinion_aluminum_good_25:0 "Good Opinion For Aluminum Price -25"
+ low_opinion_aluminum_bad_25:0 "Bad Opinion For Aluminum Price -25"
+ much_opinion_aluminum_bad_25:0 "Bad Opinion For Aluminum Price 25"
+ much_opinion_aluminum_good_25:0 "Good Opinion For Aluminum Price 25"
+ 
+ 
+ low_opinion_copper_good_50:0 "Good Opinion For Copper Price -50"
+ low_opinion_copper_bad_50:0 "Bad Opinion For Copper Price -50"
+ much_opinion_copper_good_50:0 "Good Opinion For Copper Price 50"
+ much_opinion_copper_bad_50:0 "Bad Opinion For Copper Price 50"
+ low_opinion_copper_good_25:0 "Good Opinion For Copper Price -25"
+ low_opinion_copper_bad_25:0 "Bad Opinion For Copper Price -25"
+ much_opinion_copper_bad_25:0 "Bad Opinion For Copper Price 25"
+ much_opinion_copper_good_25:0 "Good Opinion For Copper Price 25"
+ 
+ 
+ 
+ 
+ 

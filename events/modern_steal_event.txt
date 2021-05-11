@@ -1,0 +1,53 @@
+namespace = steal
+
+#Steal Point Warning X1
+country_event = {
+	id = steal.1
+	title = "steal.1title"
+	desc = "steal.1desc"
+	picture = STEALX1_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "steal.1opt"
+		
+			ROOT = {
+				add_opinion = { who = FROM modifier = steal_x1 }
+			}
+			FROM = {
+				add_opinion = { who = ROOT modifier = steal_x1 }
+			}
+	}
+	
+	option = {
+		name = "steal.1noting"
+	}
+}
+
+
+
+#Steal Point Warning X2
+country_event = {
+	id = steal.2
+	title = "steal.2title"
+	desc = "steal.2desc"
+	picture = STEALX1_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "steal.2opt"
+		
+			ROOT = {
+			add_opinion = { who = FROM modifier = steal_x2 }
+		}
+		FROM = {
+				add_opinion = { who = ROOT modifier = steal_x2 }
+			}
+	}
+	
+	option = {
+		name = "steal.2noting"
+	}
+}

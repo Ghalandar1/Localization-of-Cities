@@ -1,0 +1,177 @@
+namespace = zi
+
+#Scotland catches occasion
+
+country_event = {
+	id = zi.40
+	title = "zi_40EVTNAME"
+	desc = "zi_40EVTDESC"
+	picture = MILITARY_CAMP_eventPicture
+	mean_time_to_happen = { months = 30 }
+	trigger = {
+		tag = SCO
+		has_country_modifier = unity_against_zombies
+		NOT = { has_country_flag = had_event_40 }
+		ENG = {
+			war_with = ZOM
+		}
+	}
+	option = {
+		name = "zi_40EVTOPTIONA"
+		ai_chance = { factor = 90 }
+		set_country_flag = had_event_40
+	}
+	option = {
+		name = "zi_40EVTOPTIONB"
+			capital_scope = {
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+			}
+		every_neighbor_province = {
+			limit = { region = northumbria }
+			SCO = {
+				add_claim = PREV
+			}
+		}
+		declare_war_with_cb = {
+			who = ENG
+			casus_belli = cb_conquest
+		}
+	}
+}
+#####
+country_event = {
+	id = zi.53
+	title = "zi_53EVTNAME"
+	desc = "zi_53EVTDESC"
+	picture = DIPLOMACY_eventPicture
+	trigger = {
+		tag = ENG
+		all_owned_province = {
+			region = british_isles
+		}
+		has_country_modifier = unity_against_zombies
+		war_with = ZOM
+		NOT = { has_country_flag = not_given_up_on_europe }
+	}
+	option = {
+		name = "zi_53EVTOPTIONA"
+		ai_chance = { factor = 90 }
+		remove_country_modifier = unity_against_zombies
+		add_country_modifier = {
+				name = survived_apocalypse
+				duration = 36500
+		}
+		white_peace = ZOM
+	}
+	option = {
+		name = "zi_53EVTOPTIONB"
+		ai_chance = { factor = 10 }
+		add_prestige = 15
+		set_country_flag = not_given_up_on_europe
+	}
+}
+######
+
+#country_event = {
+#	id = zi.48
+#	title = "zi_48EVTNAME"
+#	desc = "zi_48EVTDESC"
+#	picture = DEBATE_REPUBLICAN_eventPicture
+#	trigger = {
+#		tag = VEN
+#		NOT = {	border_distance = { who = ZOM distance = 100 } }
+#		has_country_modifier = unity_against_zombies
+#		war_with = ZOM
+#		NOT = { has_border_with_religious_enemy = yes }
+#		NOT = { has_country_flag = not_given_up_on_europe }
+#	}
+#	option = {
+#		name = "zi_48EVTOPTIONA"
+#		ai_chance = { factor = 90 }
+#		remove_country_modifier = unity_against_zombies
+#		add_country_modifier = {
+#			name = survived_apocalypse
+#			duration = 36500
+#		}
+#	}
+#	option = {
+#		name = "zi_48EVTOPTIONB"
+#		ai_chance = { factor = 10 }
+#		add_prestige = 15
+#		set_country_flag = not_given_up_on_europe
+#	}
+#}
+#
+#country_event = {
+#	id = zi.51
+#	title = "zi_51EVTNAME"
+#	desc = "zi_51EVTDESC"
+#	picture = DEBATE_REPUBLICAN_eventPicture
+#	trigger = {
+#		NOT = {	border_distance = { who = ZOM distance = 100 } }
+#		has_country_modifier = unity_against_zombies
+#		border_distance = { who = ZOM distance = 300 }
+#		war_with = ZOM
+#		NOT = { has_border_with_religious_enemy = yes }
+#		NOT = { has_country_flag = not_given_up_on_europe }
+#	}
+#	option = {
+#		name = "zi_51EVTOPTIONA"
+#		ai_chance = { factor = 90 }
+#		remove_country_modifier = unity_against_zombies
+#		add_country_modifier = {
+#			name = survived_apocalypse
+#			duration = 36500
+#		}
+#	}
+#	option = {
+#		name = "zi_51EVTOPTIONB"
+#		ai_chance = { factor = 10 }
+#		add_prestige = 15
+#		set_country_flag = not_given_up_on_europe
+#	}
+#}
+
+country_event = {
+	id = zi.58
+	title = "zi_58EVTNAME"
+	desc = "zi_58EVTDESC"
+	picture = DIPLOMACY_eventPicture
+	trigger = {
+		tag = JAP
+		all_owned_province = {
+			region = japanese_region
+		}
+		has_country_modifier = unity_against_zombies
+		war_with = ZOM
+		NOT = { has_country_flag = not_given_up_on_asia }
+	}
+	option = {
+		name = "zi_58EVTOPTIONA"
+		ai_chance = { factor = 90 }
+		every_country = {
+			limit = { all_owned_province = { region = japanese_region } }
+			remove_country_modifier = unity_against_zombies
+			add_country_modifier = {
+				name = survived_apocalypse
+				duration = 36500
+		}
+		white_peace = ZOM
+		}
+		
+	}
+	option = {
+		name = "zi_58EVTOPTIONB"
+		ai_chance = { factor = 10 }
+		add_prestige = 15
+		set_country_flag = not_given_up_on_asia
+	}
+}

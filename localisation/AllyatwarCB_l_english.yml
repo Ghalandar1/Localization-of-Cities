@@ -1,0 +1,7 @@
+﻿l_english:
+ cb_allyatwar: "Helping allies"
+ cb_allyatwar_desc: "Your country is at war with my ally. I want to help my ally."
+ superiority_allyatwar: "Show the world we will support our ally."
+ superiority_allyatwar_desc: "War goal is to show we will support our ally."
+ ALL_ALLYATWAR: "Ally is at war"
+ ALLYATWAR_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Help Ally at War"

@@ -1,0 +1,46 @@
+terrorism_reacttion = {  global_unrest = 2  }
+misionary_mision_reciver = { missionaries = 1 global_missionary_strength = 0.01 }
+misionary_mision_sender = { missionaries = -1  }
+the_honorus_letter = { prestige = 0.5  }
+the_iron_leatter_prottectorate = { }
+joined_from_own_free_will = { liberty_desire = -20 }
+HRE = {
+    spy_offence = 0.1
+	advisor_pool = 1
+	diplomatic_upkeep = 1
+	free_leader_pool = 1
+	prestige = 1
+    build_cost = -0.1
+    development_cost = -0.1
+    global_unrest = -1
+    diplomatic_reputation = 1
+    diplomats = 1
+    legitimacy = 1
+    core_creation = -0.10
+    global_tax_income = 120
+    stability_cost_modifier = -0.10
+}
+
+
+THE_PAP = {
+    diplomats = 1							
+	prestige = 1							
+	stability_cost_modifier = -0.25			
+	advisor_pool = 3
+	advisor_cost = -0.25
+	free_leader_pool = 1
+	ae_impact = -0.25
+	technology_cost = -0.05
+}
+
+mandate_of_heaven1 = {
+    legitimacy = 0.5
+	republican_tradition = 0.005
+    devotion = 0.5											  
+    horde_unity = 0.5
+    diplomats = 1
+    trade_efficiency = 0.05
+    global_autonomy = -0.05
+	core_creation = -0.1
+	monarch_admin_power = 1
+}

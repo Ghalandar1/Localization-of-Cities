@@ -1,0 +1,27 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = universal_suffrage_reform
+add_government_reform = reinforce_republican_values_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = ceremonial_president
+set_legacy_government = presidental_republic
+
+capital = 9596
+primary_culture = slovene
+religion = secularism
+technology_group = western 
+2019.5.30 = {
+	monarch = {
+		name = "Borut Pahor"
+		adm = 4
+		dip = 3
+		mil = 4
+		religion = catholic
+	}
+}
+2020.1.1 = { decision = join_european_union }
+2020.1.2 = { decision = adopt_the_euro }
+2020.1.2 = { elector = yes  }

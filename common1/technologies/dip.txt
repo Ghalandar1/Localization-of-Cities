@@ -1,0 +1,1045 @@
+monarch_power = DIP
+
+# applied when a country is ahead of time in this technology
+ahead_of_time = {
+	trade_efficiency = 0.2
+	yearly_corruption = -0.05
+}
+
+technology = {
+	# Tech 0
+	year = 2000
+
+	#Trading
+	may_fabricate_claims = yes
+	merchants = yes
+	trade_range			=	1000
+	
+	
+	global_colonial_growth	= 	20
+	tradecompany = yes
+}
+
+technology = {
+	# Tech 1
+	year = 2001
+
+	#Ancient Seafaring
+	naval_morale			=	1.0
+	
+	trade_efficiency 		= 	0.1
+	trade_range				=	100
+	
+	#Building
+	road = yes
+	marketplace = yes 
+	dock = yes
+	shipyard = yes
+	trade_post = yes
+	trade_depot = yes 
+	drydock = yes
+	
+	grand_shipyard = yes 
+	treasury_office = yes
+	reduced_naval_attrition = yes
+	naval_arsenal = yes 
+	railroad = yes
+	mass_transit_system = yes
+	highway = yes
+	naval_base = yes
+	impressment_offices 	= yes
+	#New
+	wharf = yes
+	coastal_defence = yes
+	naval_battery = yes
+	
+	naval_maintenance	= 0.1
+}
+
+technology = {
+	# Tech 2
+	year = 2002
+
+	naval_morale			=	1.0
+	
+	#Diplomacy
+	may_steal_maps = yes
+	may_study_technology = yes
+	may_slander_merchants = yes
+	may_sabotage_recruitment = yes
+	may_sow_discontent = yes
+	may_sabotage_reputation = yes
+	allow_client_states = yes
+	may_corrupt_officials = yes
+	may_infiltrate_administration = yes
+	may_agitate_for_liberty = yes
+	stock_exchange = yes
+	
+	
+	num_accepted_cultures = 5
+	naval_maintenance	= 0.1
+	global_colonial_growth	= 	400
+}
+
+technology = {
+	# Tech 3
+	year = 2003
+
+	
+	
+	
+	
+}
+
+technology = {
+	# Tech 4
+	year = 2004
+	
+
+	trade_range				=	100
+	
+	range					=	1000
+}
+
+technology = {
+	# Tech 5
+	year = 2005
+
+	
+
+	#Alphabet
+	trade_range				=	200
+}
+
+technology = {
+	# Tech 6
+	year = 2006
+	global_colonial_growth	= 	100
+	
+
+	#Roadbuilding
+	
+	naval_maintenance	= 0.1
+}
+
+technology = {
+	# Tech 7
+	year = 2007
+	trade_efficiency 		= 	0.2
+	naval_morale			=	1.0
+	naval_maintenance	= 0.1
+	
+	#Ship 0
+	enable = early_carrack
+	enable = barque
+	enable = early_galley
+	enable = transport
+	range					=	1000
+	
+}
+
+technology = {
+	# Tech 8
+	year = 2010
+
+	#Naval Ram
+	naval_morale			=	1.0
+}
+
+technology = {
+	# Tech 9
+	year = 2018
+
+	global_colonial_growth	= 	200
+	range					=	1000
+}
+
+technology = {
+	# Tech 10
+	year = 2022
+
+	
+
+	naval_maintenance	= 0.1
+	trade_efficiency 		= 	0.05
+}
+
+technology = {
+	# Tech 11
+	year = 2027
+	
+	global_colonial_growth	= 	200
+
+	
+}
+
+technology = {
+	# Tech 12
+	year = 2034
+	naval_maintenance	= 0.1
+	num_accepted_cultures = 3
+	naval_morale			=	0.5
+}
+
+technology = {
+	# Tech 13
+	year = 2041
+	global_colonial_growth	= 	100
+	naval_morale			=	0.5
+	trade_efficiency 		= 	0.05
+}
+
+technology = {
+	# Tech 14
+	year = 2048
+
+
+	trade_range				=	100
+	naval_morale			=	0.5
+}
+
+technology = {
+	# Tech 15
+	year = 2055
+	
+	global_colonial_growth	= 	200
+	naval_maintenance	= 0.1
+	naval_morale			=	0.5
+}
+
+technology = {
+	# Tech 16
+	year = 2062
+
+	trade_range		= 	100
+	naval_morale			=	0.2
+}
+
+technology = {
+	# Tech 17
+	year = 2069
+	naval_morale			=	0.2
+	#Dromon
+	
+	#ship 1
+	enable = carrack
+	enable = early_frigate
+	enable = trireme
+	enable = knarr
+	range					=	200
+}
+
+technology = {
+	# Tech 18
+	year = 2076
+
+	#Naval Raiding
+	naval_morale			=	0.2
+}
+
+technology = {
+	# Tech 19
+	year = 2083
+
+	#Bridgebuilding
+	trade_efficiency 		= 	0.05
+	naval_morale			=	0.5
+}
+
+technology = {
+	# Tech 20
+	year = 2090
+	naval_maintenance	= 0.1
+	#Trade Ventures
+	trade_range		= 	100
+	naval_morale			=	0.5
+	
+	
+}
+
+technology = {
+	# Tech 21
+	year = 2097
+
+	naval_morale			=	0.5
+	trade_efficiency 		= 	0.02
+}
+
+technology = {
+	# Tech 22
+	year = 2104
+
+	naval_morale			=	0.5
+	global_colonial_growth	= 	2
+	range					=	200
+}
+
+technology = {
+	# Tech 23
+	year = 2111
+	
+	
+	
+	naval_morale			=	0.2
+	naval_maintenance	= 0.1
+}
+
+technology = {
+	# Tech 24
+	year = 2118
+
+	#Ship 2
+	enable = galleon
+	enable = caravel
+	enable = longship
+	enable = brig
+	
+	
+	#Piracy
+	trade_efficiency 		= 	0.02
+	naval_morale			=	0.5
+}
+
+technology = {
+	# Tech 25
+	year = 2125
+
+
+	naval_morale			=	0.2
+}
+
+technology = {
+	# Tech 26
+	year = 2132
+
+
+	range					=	100
+	naval_morale			=	0.5
+	naval_maintenance	= 0.1
+}
+
+technology = {
+	# Tech 27
+	year = 2139
+
+	trade_efficiency 		= 	0.02
+
+	naval_morale			=	0.2
+}
+
+technology = {
+	# Tech 28
+	year = 2146
+
+	range					=	100
+	naval_maintenance		=	0.1
+	naval_morale			=	0.5
+}
+
+technology = {
+	# Tech 29
+	year = 2153
+
+	naval_morale			=	0.5
+	
+
+}
+
+technology = {
+	# Tech 30
+	year = 2160
+
+	#Tech Ship 3
+	enable = wargalleon
+	enable = dromon
+	enable = merchant_ship
+	enable = cog
+
+	
+	trade_efficiency 		= 	0.02
+}
+
+technology = {
+	# Tech 31
+	year = 2167
+	
+	naval_morale			=	0.5
+	naval_maintenance	= 0.1
+
+}
+
+technology = {
+	# Tech 32
+	year = 2174
+
+	naval_morale			=	0.5
+
+}
+
+technology = {
+	# Tech 33
+	year = 2181
+
+
+	naval_morale			=	0.2
+	trade_efficiency 		= 	0.02
+}
+
+technology = {
+	# Tech 34
+	year = 2188
+
+
+	naval_morale			=	0.2
+	trade_efficiency 		= 	0.02
+}
+
+technology = {
+	# Tech 35
+	year = 2195
+
+	trade_efficiency 		= 	0.01
+	trade_range				=	10
+	naval_maintenance	= 0.1
+}
+
+technology = {
+	# Tech 36
+	year = 2202
+
+	#Bartering
+	trade_efficiency 		= 	0.02
+}
+
+technology = {
+	# Tech 37
+	year = 2209
+	
+	#Ship 4
+	enable = twodecker
+	enable = galley
+	enable = frigate
+	enable = flute
+
+	naval_morale			=	0.2
+}
+
+technology = {
+	# Tech 38
+	year = 2216
+	naval_morale			=	0.2
+	naval_maintenance	= 0.1
+	
+	
+}
+
+technology = {
+	# Tech 39
+	year = 2223
+
+
+	naval_morale			=	0.2
+}
+
+technology = {
+	# Tech 40
+	year = 2230
+
+	#Sternpost
+	trade_efficiency 		= 	0.02
+}
+
+technology = {
+	# Tech 41
+	year = 2237
+
+
+	global_colonial_growth	= 	3
+	naval_maintenance	= 0.1
+}
+
+technology = {
+	# Tech 42
+	year = 2244
+
+	trade_efficiency 		= 	0.02
+
+
+}
+
+technology = {
+	# Tech 43
+	year = 2251
+
+
+	range					=	200
+	
+	#Ship 5
+	enable = threedecker
+	enable = galleass
+	enable = great_frigate
+	enable = merchantman
+}
+
+technology = {
+	# Tech 44
+	year = 2258
+
+
+	naval_morale			=	0.2
+}
+
+# Pre-era techs
+technology = {
+	# Tech 45
+	year = 2265
+	
+
+	range					=	20
+	naval_morale			=	0.3
+	naval_maintenance	= 0.1
+
+}
+
+technology = {
+	# Tech 46
+	year = 2272
+	
+
+	trade_range				=	10
+	global_colonial_growth	= 	5
+	naval_morale			=	0.3
+}
+
+technology = {
+	# Tech 47
+	year = 2279
+	
+	naval_morale			=	0.3
+
+}
+
+# The 30 big techs from here on
+
+technology = {
+	# Tech 48
+	year = 2286
+
+	naval_morale			=	0.3
+	naval_maintenance		= 	0.1
+	range					= 	60
+	global_colonial_growth	= 	15
+	
+
+
+}
+
+technology = {
+	# Tech 49
+	year = 2293
+		
+	#Ship 6
+	enable = ironclad
+	enable = war_galley
+	enable = cruiser
+	enable = trabakul
+	
+	trade_range	= 10
+}
+
+technology = {
+	# Tech 50
+	year = 2300
+	
+	trade_efficiency 		= 	0.05
+	trade_range				=	10
+	naval_morale			=	0.3
+}
+
+technology = {
+	# Tech 51
+	year = 2307
+	
+	naval_morale			=	0.3
+
+}
+
+technology = {
+	# Tech 52
+	year = 2314
+	
+	naval_morale			=	0.3
+	range					= 	115
+	naval_maintenance	= 0.1
+	
+}
+
+technology  = {
+	# Tech 53
+	year = 2321
+	
+	num_accepted_cultures = 2
+
+	trade_range				=	10
+	naval_morale			=	0.3
+
+}
+
+technology = {
+	# Tech 54
+	year = 2328
+	
+	naval_morale			=	0.2
+	naval_maintenance		= 	0.2	
+	range					=	50
+	
+
+	
+}
+
+technology = {
+	# Tech 55
+	year = 2335
+	
+	trade_efficiency		= 	0.05
+	trade_range				=	10
+	global_colonial_growth  = 	10
+	
+	#Ship 7
+	enable = destroyer
+	enable = galiot
+	enable = missile_cruiser
+	enable = eastindiaman
+}
+
+technology = {
+	# Tech 56
+	year = 2342
+	
+	range					= 	100
+	
+}
+
+technology = {
+	# Tech 57
+	year = 2349
+	
+	naval_morale			=	0.4
+	naval_maintenance	= 0.1
+
+}
+
+technology = {
+	# Tech 58
+	year = 2356
+	naval_morale			=	0.3
+	
+}
+
+technology = {
+	# Tech 59
+	year = 2363
+	
+
+	num_accepted_cultures = 2
+}
+
+technology = {
+	# Tech 60
+	year = 2370
+	
+	naval_maintenance		= 	0.2	
+	range					=	50
+	global_colonial_growth  = 	15
+	
+	#Ship 8
+	enable = chebeck
+	enable = dreadnought
+	enable = troopship
+	
+	
+}
+
+technology = {
+	# Tech 61
+	year = 2377
+	
+	trade_efficiency 		= 	0.05
+	trade_range				=	10
+
+}
+
+technology = {
+	# Tech 62
+	year = 2384
+	
+	trade_efficiency 		= 	0.05
+	trade_range				=	20
+	range					=	50
+
+	 naval_morale			=	0.3
+	
+}
+
+technology = {
+	# Tech 63
+	year = 2391
+	
+	naval_morale			=	0.5
+	
+}
+
+technology = {
+	# Tech 64
+	year = 2398
+	
+	naval_maintenance		= 	0.1	
+	range					=	50
+	
+	naval_morale			=	0.3
+
+	
+}
+
+technology = {
+	# Tech 65
+	year = 2405
+	
+	trade_efficiency 		= 	0.05
+	trade_range				=	20
+	num_accepted_cultures = 1
+	
+	#Ship 9
+	enable = battleship
+	enable = archipelago_frigate
+}
+
+technology = {
+	# Tech 66
+	year = 2412
+
+	naval_morale			=	0.3
+	
+}
+
+technology = {
+	# Tech 67
+	year = 2419
+	
+	naval_morale			=	0.5
+	naval_maintenance		= 	0.25
+
+
+	
+}
+
+technology = {
+	# Tech 68
+	year = 2426
+	
+	global_colonial_growth  = 	25
+	range					=	150
+	naval_morale			=	0.3
+		
+	
+}
+
+technology = {
+	# Tech 69
+	year = 2433
+
+	
+	
+	trade_efficiency 		= 	0.05
+	trade_range				=	250
+	naval_morale			=	0.3
+	
+}
+
+technology = {
+	# Tech 70
+	year = 2440
+	
+	naval_morale			=	0.5
+	naval_maintenance		= 	0.25
+
+	trade_range				=	250
+	
+	
+	#Ship 10
+	enable = torpedo_boat
+	enable = missile_destroyer
+}
+
+technology = {
+	# Tech 71
+	year = 2447
+	
+	range					=	200
+	num_accepted_cultures = 1
+	naval_morale			=	0.3
+	
+}
+
+technology = {
+	# Tech 72
+	year = 2454
+	
+	naval_morale			=	0.5
+	naval_maintenance		= 	0.25
+	trade_range				=	250
+}
+
+technology = {
+	# Tech 73
+	year = 2461
+	
+	trade_efficiency 		= 	0.05
+	naval_morale			=	0.3
+	trade_range				=	250
+}
+
+technology = {
+	# Tech 74
+	year = 2469
+	
+	naval_morale			=	0.5
+	naval_maintenance		= 	0.25
+
+}
+
+technology = {
+	# Tech 75
+	year = 2476
+	
+	trade_efficiency 		= 	0.05
+	trade_range				=	250
+	naval_morale			=	0.3
+	
+}
+
+technology = {
+	# Tech 76
+	year = 2483
+	
+
+	naval_morale			=	0.5
+	naval_maintenance		= 	0.25	
+	num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 77
+	year = 2490
+	
+	trade_efficiency 		= 	0.05
+	trade_range				=	250
+	global_colonial_growth  = 	25
+}
+
+technology = {
+	# Tech 78
+	year = 2497
+
+	naval_morale			=	0.3
+	trade_efficiency 		= 	0.05
+}
+
+technology = {
+	# Tech 79
+	year = 2504
+
+	#Ironclad
+
+	naval_maintenance	= 0.1
+	global_colonial_growth  = 	25
+	trade_range				=	250
+
+}
+
+technology = {
+	# Tech 80
+	year = 2511
+
+	
+	naval_morale		= 0.5
+	num_accepted_cultures = 1
+	trade_range				=	250
+}
+
+technology = {
+	# Tech 81
+	year = 2519
+
+	range			= 200
+	trade_range				=	20
+
+	
+}
+
+technology = {
+	# Tech 82
+	year = 2526
+
+
+	trade_efficiency 	= 0.05
+	global_colonial_growth  = 	25
+	trade_range				=	250
+}
+
+technology = {
+	# Tech 83
+	year = 2533
+	trade_range				=	20
+
+	
+}
+
+technology = {
+	# Tech 84
+	year = 2540
+
+	#Radar
+	naval_morale		= 0.5
+
+	trade_range				=	250
+}
+
+technology = {
+	# Tech 85
+	year = 2547
+
+	#Mass Media
+	trade_efficiency 	= 0.05
+	num_accepted_cultures = 1
+	trade_range				=	250
+}
+
+technology = {
+	# Tech 86
+	year = 2554
+
+	#Battleships
+	naval_maintenance	= 0.1
+
+	
+}
+
+technology = {
+	# Tech 87
+	year = 2561
+
+	#International System of Units
+	trade_efficiency 	= 0.05
+	trade_range		= 250
+	naval_maintenance	= 0.1
+	
+}
+
+technology = {
+	# Tech 88
+	year = 2568
+
+	#Civil Aviation
+	
+	trade_efficiency 	= 0.05
+	trade_range		= 250
+	range			= 200
+	
+}
+
+technology = {
+	# Tech 89
+	year = 2575
+
+	#Naval Missiles
+
+	naval_morale			=	0.3
+}
+
+technology = {
+	# Tech 90
+	year = 2590
+
+	#The Internet
+	trade_efficiency 	= 0.05
+	num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 91
+	year = 2605
+
+	#Nanotechnology
+	trade_efficiency 	= 0.05
+	naval_morale			=	0.3
+	
+}
+
+technology = {
+	# Tech 92
+	year = 2620
+
+	#Future Diplomacy 1
+	naval_morale			=	0.5
+}
+
+technology = {
+	# Tech 93
+	year = 2635
+
+	#Future Diplomacy 2
+	trade_efficiency 	= 0.05
+}
+
+technology = {
+	# Tech 94
+	year = 2650
+
+	#Future Diplomacy 3
+	naval_morale			=	0.3
+
+}
+
+technology = {
+	# Tech 95
+	year = 2665
+
+	#Future Diplomacy 4
+	trade_range		= 20
+}
+
+technology = {
+	# Tech 96
+	year = 2680
+
+	#Future Diplomacy 5
+	range			= 200
+	naval_morale			=	0.3
+}
+
+technology = {
+	# Tech 97
+	year = 2695
+
+	#Future Diplomacy 6
+	num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 98
+	year = 2710
+
+	#Future Diplomacy 7
+	naval_morale			=	0.5
+}
+
+technology = {
+	# Tech 99
+	year = 2725
+
+	#Future Diplomacy 8
+	trade_efficiency 	= 0.05
+	naval_maintenance	= 0.1
+	
+}

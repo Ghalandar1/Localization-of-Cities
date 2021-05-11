@@ -1,0 +1,123 @@
+namespace = sanction
+
+#sanction Point Warning X1
+country_event = {
+	id = sanction.1x
+	title = "sanction.1title"
+	desc = "sanction.1desc"
+	picture = sanctionX1_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "sanction.1opt"
+		
+	}
+}
+
+country_event = {
+	id = sanction.2xevery
+	title = "sanction.1everytitle"
+	desc = "sanction.1everydesc"
+	picture = sanctionX1_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "sanction.1opt"
+		
+	}
+}
+
+####################################################################
+
+#sanction Point Warning X2
+country_event = {
+	id = sanction.3x
+	title = "sanction.2title"
+	desc = "sanction.2desc"
+	picture = sanctionX2_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "sanction.2opt"	
+	}
+}
+
+country_event = {
+	id = sanction.4xevery
+	title = "sanction.2everytitle"
+	desc = "sanction.2everydesc"
+	picture = sanctionX2_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "sanction.1opt"
+		
+	}
+}
+
+#########################################################################
+
+#sanction Point Warning X3
+country_event = {
+	id = sanction.5x
+	title = "sanction.3title"
+	desc = "sanction.3desc"
+	picture = sanctionX3_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "sanction.1opt"
+		
+	}
+}
+
+country_event = {
+	id = sanction.6xevery
+	title = "sanction.3everytitle"
+	desc = "sanction.3everydesc"
+	picture = sanctionX3_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "sanction.1opt"
+		
+	}
+}
+
+############################################################################
+
+#sanction Point Warning X4
+country_event = {
+	id = sanction.7x
+	title = "sanction.4title"
+	desc = "sanction.4desc"
+	picture = sanctionX4_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "sanction.1opt"
+		
+	}
+}
+
+country_event = {
+	id = sanction.8xevery
+	title = "sanction.4everytitle"
+	desc = "sanction.4everydesc"
+	picture = sanctionX4_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "sanction.1opt"
+		
+	}
+}
+

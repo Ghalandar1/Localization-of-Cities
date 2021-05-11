@@ -1,0 +1,76 @@
+
+########## Ivory
+failling_ivory_price_root = { production_efficiency = 0.35 }
+failling_ivory_price_root_25 = { production_efficiency = 0.15 }
+failling_ivory_price_root_1 = { }
+failling_ivory_price_root_1_25 = { }
+failling_ivory_price_from = { production_efficiency = 0.35 }
+failling_ivory_price_from_25 = { production_efficiency = 0.15 }
+rising_ivory_price_root = {   production_efficiency = -0.35	}
+rising_ivory_price_root_25 = {   production_efficiency = -0.15	}
+rising_ivory_price_root_1 = {   }
+rising_ivory_price_root_1_25 = {   }
+rising_ivory_price_from = {   production_efficiency = -0.35	}
+rising_ivory_price_from_25 = {   production_efficiency = -0.15	}
+
+
+########## Grain
+failling_grain_price_root ={  production_efficiency = 0.35 }
+failling_grain_price_root_25 ={  production_efficiency = 0.15 }
+failling_grain_price_root_1 = {  }
+failling_grain_price_from = { production_efficiency = 0.35 }
+failling_grain_price_from_25 = { production_efficiency = 0.15 }
+failling_grain_price_root_1_25 = {  }
+rising_grain_price_root = { production_efficiency = -0.35 }
+rising_grain_price_root_25 = { production_efficiency = -0.15 }
+rising_grain_price_root_1 = {  }
+rising_grain_price_root_1_25 = {  }
+rising_grain_price_from = { production_efficiency = -0.35 }
+rising_grain_price_from_25 = { production_efficiency = -0.15 }
+
+
+########## Salt
+failling_wine_price_root = { production_efficiency = 0.35 }
+failling_wine_price_root_25 = { production_efficiency = 0.15 }
+failling_wine_price_root_1 = {  }
+failling_wine_price_from = { production_efficiency = 0.35 }
+failling_wine_price_from_25 = { production_efficiency = 0.15 }
+rising_wine_price_root = { production_efficiency = -0.35 }
+rising_wine_price_root_25 = { production_efficiency = -0.15 }
+rising_wine_price_root_1 = {  }
+rising_wine_price_from = { production_efficiency = -0.35 }
+rising_wine_price_from_25 = { production_efficiency = -0.15 }
+failling_wine_price_root_1_25 = {  }
+rising_wine_price_root_1_25 = {  }
+
+
+
+
+
+
+
+
+
+##################### other country #####################
+low_ivory_price_1_50 = { production_efficiency = 0.2 }
+much_ivory_price_1_50 = { production_efficiency = -0.2 }
+low_ivory_price_1_25 = { production_efficiency = 0.1 }
+much_ivory_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_grain_price_1_50 = { production_efficiency = 0.2 }
+much_grain_price_1_50 = { production_efficiency = -0.2 }
+low_grain_price_1_25 = { production_efficiency = 0.1 }
+much_grain_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_wine_price_1_50 = { production_efficiency = 0.2 }
+much_wine_price_1_50 = { production_efficiency = -0.2 }
+low_wine_price_1_25 = { production_efficiency = 0.1 }
+much_wine_price_1_25 = { production_efficiency = -0.1 }
+
+
+
+
+
+

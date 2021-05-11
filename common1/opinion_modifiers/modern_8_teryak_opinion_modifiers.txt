@@ -1,0 +1,20 @@
+
+
+teryak_bad = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+steal_x1 = { 
+
+	opinion = -30
+	yearly_decay = 10
+
+ }
+ 
+steal_x2 = { 
+
+	opinion = -60
+	yearly_decay = 10
+
+}

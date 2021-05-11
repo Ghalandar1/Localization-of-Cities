@@ -1,0 +1,54 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+used_nukes = {
+	diplomatic_reputation = -2
+}
+
+province_nuked = {
+	local_defensiveness = -0.5
+	local_manpower_modifier = -1
+	local_sailors_modifier = -1
+	supply_limit_modifier = -1
+	local_tax_modifier = -1
+	trade_goods_size_modifier = -1
+}
+
+nuke_cooldown = {
+}
+
+nuclear_research_modifire = {
+	prestige = 0.05
+}
+
+research_nuclear_10_modifire = {
+	prestige = 0.01
+}
+
+research_nuclear_20_modifire = {
+	prestige = 0.01
+}
+
+research_nuclear_40_modifire = {
+	prestige = 0.01
+}
+
+research_nuclear_75_modifire = {
+	prestige = 0.01
+}
+
+research_nuclear_90_modifire = {
+	prestige = 0.01
+}
+
+nuclear_state = {
+	land_morale = 0.05
+	prestige = 0.05
+}
+
+recently_constructed_nuclear_weapon = {
+	prestige = 0.05
+}
+
+

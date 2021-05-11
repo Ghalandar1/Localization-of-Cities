@@ -1,0 +1,14 @@
+﻿l_german:
+ cb_spread_communism:0 "Verbreite Komunismus"
+ cb_spread_communism_desc:0 "Zwingen die Regierung ein kommunistisches Regime zu werden"
+ cb_spread_fascism:0 "Spread Fascism"
+ cb_spread_fascism_desc:0 "Zwingen die Regierung ein faschistisches Regime zu werden"
+ cb_spread_democracy:0 "Verbreite Demokratie"
+ cb_spread_democracy_desc:0 "Zwingen die Regierung eine Demokratie zu werden"
+ et_government_event.1.t:0 "[Root.Monarch.GetTitle] ist gestorben"
+ et_government_event.1.d:0 "In the event of [Root.Monarch.GetHerHis] death, our [Root.Monarch.GetTitle] intended for a successor to take [Root.Monarch.GetHerHis] place. However, the new [Root.Monarch.GetTitle] hardly has the same charisma [Root.Monarch.GetSheHe] had. Maybe being elected by a Senate would increase [Root.Monarch.GetHerHis] legitimacy?"
+ et_government_event.1.a:0 "We can always reestablish the monarchy"
+ et_government_event.1.b:0 "Gather an assembly"
+ et_government_event.1.c:0 "The [Root.Monarch.GetTitle] must have all the power!"
+ friendly_government:0 "Friendly government"
+ 

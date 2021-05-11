@@ -1,0 +1,205 @@
+
+
+#############Spy Idea 1
+spy_ideas = {
+	category = MIL
+
+
+	 trigger = {
+		adm_tech = 3 
+	}
+	
+	bonus = {
+		advisor_cost = -0.05
+	}
+
+	efficient_spies = {
+		spy_offence = 0.10
+		
+	}	
+	
+	
+	agent_training = {
+		rebel_support_efficiency = 0.10
+			
+	}
+
+	vetting = {
+		global_spy_defence = 0.10
+	}	
+	
+	additional_loyalist_recruitment = {
+		reduced_liberty_desire = 10
+	}
+
+	
+	spion5 = {
+		diplomats = 1
+	}
+
+	
+	privateers = {
+		privateer_efficiency = 0.10
+	}
+	
+	audit_checks = {
+		yearly_corruption = -0.05
+	}
+
+
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 5
+			personality = ai_diplomat
+		}
+		
+		modifier = {
+			factor = 1
+			personality = ai_militarist 
+		}
+		modifier = {
+			factor = 3
+			government = monarchy
+		}
+		
+		modifier = {
+			factor = 2
+			government = republic
+		}
+		modifier = {
+			factor = 7
+			is_emperor = yes
+		}
+	}
+}
+
+######Spy Attack
+dynasty0 = {
+	category = MIL
+	
+	 trigger = {
+		has_idea_group = spy_ideas 
+	}
+	
+	bonus = {
+		
+		heir_chance = 0.5
+	}
+
+	
+	foreign_embassies_2 = {
+		diplomats = 2
+	}
+	establish_cadet_branches = {
+		spy_offence = 0.15
+	}
+	cabinet = {
+		liberty_desire_from_subject_development = -0.1
+	}
+	
+	diplomatic_corps_2 = {
+		culture_conversion_cost = -0.15
+	}
+	
+	benign_diplomats = {
+		improve_relation_modifier = -0.1
+	}
+	experienced_diplomats  = {
+		diplomatic_upkeep = 1
+	}
+	dynastie4 = {
+		may_perform_slave_raid = yes
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 4
+			any_country = {
+				is_rival = ROOT
+			}
+			
+			NOT = { is_vassal = yes }
+			NOT = { is_subject = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			tag = USA
+			tag = ISR
+			tag = ISG
+			tag = GBR
+			tag = RUS
+			tag = CHN
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat 
+		}
+		
+
+	}
+}
+#######Spy Defense
+exploration_ideas = {
+	category = MIL
+	
+	 trigger = {
+		has_idea_group = spy_ideas 
+	}
+
+	bonus = {
+		reduced_stab_impacts = yes
+	}
+
+	colonial_ventures =  {
+		global_spy_defence = 0.15
+	}
+	quest_for_the_new_world	= {
+		improve_relation_modifier = 0.1
+	}
+	overseas_exploration = {
+		yearly_corruption = -0.15
+	}
+	land_of_opportunity = {
+		global_autonomy = -0.025
+	}
+	vice_roys  = {
+ 		global_unrest = -1
+ 	}
+	free_colonies = {
+		diplomatic_reputation = 1
+	}
+	global_empire = {
+		global_manpower_modifier = 0.05
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 4
+			tag = IRA
+		}
+		modifier = {
+			factor = 4
+			OR = {
+				tag = USA
+				tag = CHN
+				tag = GBR
+			}
+		}
+		modifier = {
+			factor = 10
+			personality = ai_capitalist
+		}
+		modifier = {			
+			factor = 3
+			tag = NOK
+			tag = JAP
+			tag = SKO
+		}				
+	}
+}
+

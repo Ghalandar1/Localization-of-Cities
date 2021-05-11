@@ -1,0 +1,17 @@
+name = "Somalian War"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 2699 #Grodno
+}
+
+2020.2.3 = {
+	add_attacker = SML
+	add_defender = SOM
+}
+
+2020.2.6 = {
+	rem_attacker = SML
+	rem_defender = SOM
+}

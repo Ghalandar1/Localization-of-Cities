@@ -1,0 +1,24 @@
+government = republic
+
+government_rank = 1
+add_government_reform = oligarchy_reform
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 5199
+primary_culture = bemba
+religion = secularism
+technology_group = central_african
+2019.5.30 = {
+	monarch = {
+		name = "Edgar Lungu"
+		adm = 4
+		dip = 3
+		mil = 2
+		religion = protestant
+	}
+}

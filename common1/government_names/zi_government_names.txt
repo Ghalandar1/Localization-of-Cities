@@ -1,0 +1,19 @@
+zombie_gov = {
+	rank = {
+		3 = ZOMBIE_HORDE
+	}	
+	
+	ruler_male = {
+		3 = ZOMBIE_RULER
+	}
+	
+	ruler_female = {
+		3 = ZOMBIE_RULER
+	}
+	
+	trigger = {
+		tag = ZOM
+		#government = tribal
+		#government = zombie_government
+	}
+}

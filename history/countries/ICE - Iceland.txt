@@ -1,0 +1,24 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 12674
+primary_culture = norwegian
+religion = secularism
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Guðni Jóhannesson"
+		birth_date = 1968.6.26
+		adm = 3
+		dip = 5
+		mil = 2
+		religion = protestant
+	}
+}

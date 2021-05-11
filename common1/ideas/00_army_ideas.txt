@@ -1,0 +1,1673 @@
+
+army_ideas = {
+	category = MIL
+
+	bonus = {
+		land_forcelimit_modifier = 0.1
+	}
+	
+	formation = {
+		discipline = 0.025
+	}
+	professional_soldiers = {
+		infantry_power = 0.05
+	}
+	military_education = {
+		army_tradition_decay = -0.005
+	}
+	horse_breeding = {
+		cavalry_power = 0.05
+	}
+	early_mercenaries = {
+		mercenary_cost = -0.1
+	}
+	military_innovation = {
+		artillery_power = 0.05
+	}
+	cheaper_mercenaries = {
+		land_maintenance_modifier = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+	}
+}
+
+
+
+
+
+wehrpflicht0 = {
+	category = MIL
+
+	bonus = {
+		manpower_recovery_speed = 0.125
+	}
+		
+	trigger = {
+		has_idea_group = army_ideas
+	}
+	
+	wehrpflicht3 = {
+		reinforce_speed = 0.2
+	}
+	wehrpflicht2 = {
+		land_morale = 0.05
+	}
+	wehrpflicht1 = {
+		global_manpower = 5.0
+		# <<WIKI>> add_age_manpower = 5.0
+	}
+
+	wehrpflicht4 = {
+		army_tradition = 1
+	}
+
+	wehrpflicht5 = {
+		mil_tech_cost_modifier = -0.025
+	}
+	wehrpflicht6 = {
+		global_manpower_modifier = 0.05
+	}
+	wehrpflicht7 = {
+		drill_gain_modifier = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 30
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 10
+			total_development = 1000
+		}
+		modifier = {
+			factor = 3
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 4000
+		}
+		modifier = {
+			factor = 5
+			total_development = 8000
+		}
+		modifier = {
+			factor = 6
+			total_development = 10000
+		}
+		modifier = {
+			factor = 5
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+		modifier = {
+			factor = 3
+			total_development = 300
+		}
+		modifier = {
+			factor = 4
+			total_development = 500
+		}
+		modifier = {
+			factor = 5
+			total_development = 1000
+		}
+		modifier = {
+			factor = 10
+			total_development = 2000
+		}
+		modifier = {
+			factor = 20
+			total_development = 3000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+nuclear_research = {
+	category = MIL
+
+	bonus = {
+		manpower_recovery_speed = 0.125
+	}
+		
+	trigger = {
+		adm_tech = 3 
+	}
+	
+	nuclear_research_1 = {
+		land_morale = 0.05
+	}
+	nuclear_research_2 = {
+		discipline = 0.02
+	}
+	nuclear_research_3 = {
+		drill_gain_modifier = 0.05
+	}
+
+	nuclear_research_4 = {
+		mil_tech_cost_modifier = 0.05
+	}
+
+	nuclear_research_5 = {
+		yearly_army_professionalism = 0.001
+	}
+	nuclear_research_6 = {
+		yearly_absolutism = 0.5
+	}
+	nuclear_research_7 = {
+		siege_ability = 0.03
+		# <<WIKI>> decision = initiate_nuclear_research
+
+	}
+	
+	ai_will_do = {
+		factor = 30
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 10
+			total_development = 1000
+		}
+		modifier = {
+			factor = 3
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 4000
+		}
+		modifier = {
+			factor = 5
+			total_development = 8000
+		}
+		modifier = {
+			factor = 6
+			total_development = 10000
+		}
+		modifier = {
+			factor = 5
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+		modifier = {
+			factor = 3
+			total_development = 300
+		}
+		modifier = {
+			factor = 4
+			total_development = 500
+		}
+		modifier = {
+			factor = 5
+			total_development = 1000
+		}
+		modifier = {
+			factor = 10
+			total_development = 2000
+		}
+		modifier = {
+			factor = 20
+			total_development = 3000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+stehendesheer0 = {
+	category = MIL
+
+	bonus = {
+		land_maintenance_modifier = 0.075
+	}
+		
+		trigger = {
+			has_idea_group = wehrpflicht0
+		}
+	
+	stehendesheer1 = {
+		infantry_power = 0.1
+	}
+	stehendesheer2 = {
+		cavalry_power = 0.1
+	}
+	stehendesheer3 = {
+		artillery_power = 0.1
+	}
+
+	stehendesheer5 = {
+		drill_gain_modifier = 0.1
+	}
+	stehendesheer6 = {
+		drill_decay_modifier = -0.15
+		
+	}
+	stehendesheer7 = {
+		siege_ability = 0.1
+	}
+	
+	stehendesheer4 = {
+		yearly_army_professionalism = 0.002
+	}
+	
+	ai_will_do = {
+		factor = 30
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+
+		modifier = {
+			factor = 2
+			total_development = 1000
+		}
+		modifier = {
+			factor = 10
+			total_development = 2500
+		}
+		modifier = {
+			factor = 4
+			total_development = 3000
+		}
+		modifier = {
+			factor = 5
+			total_development = 5000
+		}
+		modifier = {
+			factor = 6
+			total_development = 7000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+festung0 = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = wehrpflicht0
+	}
+
+	bonus = {
+		reinforce_speed = 0.25
+	}
+		
+		
+	festung7 = {
+		reinforce_cost_modifier = -0.25
+	}
+	festung1 = {
+		defensiveness = 0.25
+	}
+	
+	festung4 = {
+		fort_maintenance_modifier = -0.3
+	}
+	
+	festung6 = {
+		shock_damage_received = -0.05
+	}
+	
+	festung2 = {
+		garrison_size = 0.50
+		
+	}
+
+	festung5 = {
+		hostile_attrition = 3
+	}
+	
+	festung3 = {
+		global_garrison_growth = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 5
+				is_march = yes
+			
+		}
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+
+		modifier = {
+			factor = 2
+			total_development = 1000
+		}
+		modifier = {
+			factor = 10
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 3000
+		}
+		modifier = {
+			factor = 5
+			total_development = 5000
+		}
+		modifier = {
+			factor = 6
+			total_development = 7000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+kriegsproduktion0 = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = wehrpflicht0
+	}
+
+	bonus = {
+		land_morale = 0.075
+	}
+		
+	
+	kriegsproduktion1 = {
+		infantry_cost = -0.50
+	}
+	kriegsproduktion2 = {
+		cavalry_cost = -0.50
+	}
+	kriegsproduktion3 = {
+		artillery_cost = -0.50
+	}
+
+	kriegsproduktion4 = {
+		heavy_ship_cost = -0.05
+	}
+
+	kriegsproduktion5 = {
+		galley_cost = -0.05
+	}
+	kriegsproduktion6 = {
+		light_ship_cost = -0.05
+		
+	}
+	kriegsproduktion7 = {
+		transport_cost = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			
+				is_march = yes
+			
+		}
+		modifier = {
+			factor = 5
+			
+				is_vassal = yes
+			
+		}
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 20
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			total_development = 1000
+		}
+		modifier = {
+			factor = 3
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 3000
+		}
+		modifier = {
+			factor = 5
+			total_development = 5000
+		}
+		modifier = {
+			factor = 6
+			total_development = 6000
+		}
+		modifier = {
+			factor = 3
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+		modifier = {
+			factor = 3
+			total_development = 300
+		}
+		modifier = {
+			factor = 4
+			total_development = 500
+		}
+		modifier = {
+			factor = 5
+			total_development = 1000
+		}
+		modifier = {
+			factor = 10
+			total_development = 2000
+		}
+		modifier = {
+			factor = 20
+			total_development = 3000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+militarismus0 = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = wehrpflicht0
+	}
+
+	bonus = {
+		war_exhaustion = -0.05
+	}
+		
+	
+	militarismus1 = {
+		land_forcelimit_modifier = 0.075
+	}
+	militarismus2 = {
+		global_manpower_modifier = 0.05
+	}
+	militarismus3 = {
+		discipline = 0.05
+	}
+
+	militarismus4 = {
+		garrison_size = 0.25
+	}
+
+	militarismus5 = {
+		global_garrison_growth = 0.25
+	}
+	militarismus6 = {
+		monthly_militarized_society = 0.05
+		
+	}
+	militarismus7 = {
+		global_supply_limit_modifier = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 20
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			total_development = 500
+		}
+		modifier = {
+			factor = 3
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 4000
+		}
+		modifier = {
+			factor = 5
+			total_development = 5000
+		}
+		modifier = {
+			factor = 6
+			total_development = 6000
+		}
+		modifier = {
+			factor = 3
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+quantity_ideas = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = wehrpflicht0
+	}
+
+	bonus = {
+		recover_army_morale_speed = 0.05
+	}
+	
+	border_guard = {
+		defensiveness = 0.15
+	}
+	no_aid_for_enemy = {
+		hostile_attrition = 3.0
+	}
+	fight_for_our_land = {
+		land_morale = 0.1
+	}
+	history_of_independence = {
+		enemy_core_creation = 0.3
+	}
+	recruitment = {
+		manpower_recovery_speed = 0.15
+	}
+	slave_army = {
+		global_manpower_modifier = 0.1
+	}
+	fortifications = {
+		defensiveness = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 0.1
+	}
+}
+
+
+
+
+
+
+#########################################################################
+#Polic 
+aristocracy_ideas = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = army_ideas
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.05
+		
+	}
+
+	noble_knights = {
+		fort_maintenance_modifier = -0.2
+	}
+	military_traditions = {
+		defensiveness = 0.10
+	}
+	local_nobility = {
+		drill_gain_modifier = 0.1
+	}
+	serfdom = {
+		war_exhaustion = -0.05
+		war_exhaustion_cost = -0.20
+	}
+	noble_officers = {
+		drill_decay_modifier = -0.15
+	}
+	international_nobility = {
+		manpower_recovery_speed = 0.2
+	}
+	noble_resilience = {
+		merc_maintenance_modifier = -0.25
+	}
+	
+
+	ai_will_do = {
+		factor = 0.45
+		
+		modifier = {
+			factor = 0.5
+			is_subject = yes
+		}	
+	}
+}
+
+
+
+
+
+generalstab0 = {
+	category = MIL
+	
+	 trigger = {
+		has_idea_group = aristocracy_ideas
+	}
+
+	bonus = {
+		army_tradition = 0.005
+	}
+		
+	
+	generalstab1 = {
+		leader_land_shock = 2
+	}
+	generalstab2 = {
+		leader_land_fire = 2
+	}
+	generalstab3 = {
+		leader_land_manuever = 2
+	}
+
+	generalstab4 = {
+		leader_siege = 2
+	}
+
+	generalstab5 = {
+		army_tradition_from_battle = 0.15
+	}
+	generalstab6 = {
+		yearly_army_professionalism = 0.001
+	}
+	generalstab7 = {
+		may_recruit_female_generals = yes
+		free_leader_pool = 1
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			total_development = 1000
+		}
+		modifier = {
+			factor = 3
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 3000
+		}
+		modifier = {
+			factor = 5
+			total_development = 5000
+		}
+		modifier = {
+			factor = 6
+			total_development = 7000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+offensive_ideas = {
+	category = MIL
+
+	 trigger = {
+		has_idea_group = aristocracy_ideas
+	}
+	
+	bonus = {
+		land_attrition = -0.05
+	}
+
+	bayonet_leaders = {
+		land_morale = 0.20
+	}
+	national_conscripts = {
+		global_regiment_recruit_speed = -0.25
+	}
+	improved_manuever = {
+		land_maintenance_modifier = -0.15
+	}
+	glorious_arms = {
+		shock_damage = 0.15
+	}
+	engineer_corps = {
+		fire_damage = 0.15
+	}
+	grand_army = {
+		land_forcelimit_modifier = 0.075
+	}
+	napoleonic_warfare = {
+		loot_amount = 0.25
+	}
+
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 10
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+
+		modifier = {
+			factor = 2
+			total_development = 200
+		}
+		modifier = {
+			factor = 10
+			total_development = 500
+		}
+		modifier = {
+			factor = 4
+			total_development = 700
+		}
+		modifier = {
+			factor = 5
+			total_development = 800
+		}
+		modifier = {
+			factor = 6
+			total_development = 1000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+
+defensive_ideas = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = aristocracy_ideas
+	}
+
+	bonus = {
+		reinforce_speed = 0.33
+	}
+
+	battlefield_commisions = {
+		recover_army_morale_speed = 0.2
+	}
+	military_drill = {
+		land_morale = 0.1
+		
+	}
+	superior_firepower = {
+		defensiveness = 0.15
+	}
+	regimental_system = {
+		fire_damage_received = -0.15
+	}
+	defensive_mentality = {
+		shock_damage_received = -0.15
+		
+	}
+	supply_trains = {
+		hostile_attrition = 5
+	}
+	improved_foraging = {
+		land_maintenance_modifier = -0.10
+	}
+
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+
+		modifier = {
+			factor = 3
+			total_development = 300
+		}
+		modifier = {
+			factor = 4
+			total_development = 500
+		}
+		modifier = {
+			factor = 5
+			total_development = 1000
+		}
+		modifier = {
+			factor = 10
+			total_development = 2000
+		}
+		modifier = {
+			factor = 20
+			total_development = 3000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+
+
+soldnerheer0 = {
+	category = MIL
+
+	bonus = {
+		land_forcelimit_modifier = 0.05
+	}
+	
+	trigger = {
+		has_idea_group = aristocracy_ideas
+	}
+		
+	
+	soldnerheer1 = {
+		loot_amount = 0.25
+	}
+	soldnerheer2 = {
+		mercenary_cost = -0.33
+	}
+	soldnerheer3 = {
+		mercenary_discipline = 0.025
+	}
+
+	soldnerheer4 = {
+		merc_maintenance_modifier = -0.5
+		# <<WIKI>> no_prof_loss_for_mercs = yes
+	}
+
+	soldnerheer5 = {
+		free_leader_pool = 1
+	}
+	soldnerheer6 = {
+		mercenary_discipline = 0.05
+	}
+	soldnerheer7 = {
+		mercenary_manpower = 0.5
+		
+		
+	}
+	
+	ai_will_do = {
+		factor = 30
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			total_development = 1000
+		}
+		modifier = {
+			factor = 3
+			total_development = 5000
+		}
+		modifier = {
+			factor = 10
+			total_development = 7000
+		}
+		modifier = {
+			factor = 5
+			total_development = 8000
+		}
+		modifier = {
+			factor = 6
+			total_development = 10000
+		}
+		modifier = {
+			factor = 5
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+		modifier = {
+			factor = 5
+			government = republic
+		}
+	}
+}
+
+#####################################################################################
+
+plutocracy_ideas = {
+	category = MIL
+
+	bonus = {
+		global_institution_spread = 0.10
+	}
+
+	trigger = {
+		has_idea_group = army_ideas
+	}
+
+	tradition_of_payment = {
+		mercenary_discipline = 0.025
+	}
+	abolished_serfdom = {
+		land_morale = 0.05
+	}
+	bill_of_rights = {
+		discipline = 0.1
+	}
+	free_merchants = {
+		yearly_army_professionalism = 0.001
+	}
+	free_subjects = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	free_cities = {
+		caravan_power = 0.25
+	}
+	emancipation = {
+		manpower_recovery_speed = 0.2
+	}
+
+	ai_will_do = {
+		factor = 20
+		
+		modifier = {
+			factor = 3
+			total_development = 300
+		}
+		modifier = {
+			factor = 4
+			total_development = 500
+		}
+		modifier = {
+			factor = 5
+			total_development = 1000
+		}
+		modifier = {
+			factor = 10
+			total_development = 2000
+		}
+		modifier = {
+			factor = 20
+			total_development = 3000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+quality_ideas = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = plutocracy_ideas
+	}
+
+	bonus = {
+		discipline = 0.025
+	}
+
+	private_to_marshal = {
+		infantry_power = 0.15
+	}
+	quality_education = {
+		army_tradition = 0.005
+	}
+	finest_of_horses = {
+		infantry_cost = -0.25
+	}
+	escort_ships = {
+		mercenary_discipline = 0.025
+	}
+	naval_drill = {
+		mercenary_cost = -0.1
+	}
+	copper_bottoms = {
+		free_leader_pool = 1
+	}
+	massed_battery = {
+		leader_land_fire = 1
+	}
+
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+
+		modifier = {
+			factor = 3
+			total_development = 300
+		}
+		modifier = {
+			factor = 5
+			total_development = 700
+		}
+		modifier = {
+			factor = 10
+			total_development = 1000
+		}
+		modifier = {
+			factor = 20
+			total_development = 2000
+		}
+		modifier = {
+			factor = 30
+			total_development = 3000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+cavalry_ideas = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = plutocracy_ideas 
+	}
+
+	bonus = {
+		recover_army_morale_speed = 0.05
+	}
+	
+	border_guard = {
+		cavalry_power = 0.15
+	}
+	no_aid_for_enemy = {
+		cavalry_cost = -0.25
+	}
+	fight_for_our_land = {
+		cavalry_flanking = 0.25
+	}
+	history_of_independence = {
+		leader_land_manuever = 1
+	}
+	recruitment = {
+		reinforce_speed = 0.10
+	}
+	slave_army = {
+		cav_to_inf_ratio = 0.25
+	}
+	fortifications = {
+		movement_speed = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 0.1
+	}
+}
+
+
+
+
+artillery_ideas = {
+	category = MIL
+	
+	trigger = {
+		has_idea_group = plutocracy_ideas 
+	}
+
+	bonus = {
+		artillery_fire = 1
+	}
+	mass_army = {
+		artillery_power = 0.05
+	}
+	the_young_can_serve = {
+		artillery_cost = -0.25
+	}
+	enforced_service = {
+		prestige_from_land = 0.15
+	}
+	the_old_and_infirm = {
+		artillery_shock 	=	0.1
+	}
+	mercenary_contracts = {
+		leader_siege = 1
+	}
+	garrison_conscription = {
+		backrow_artillery_damage = 0.05
+	}
+	expanded_supply_trains = {
+		artillery_bonus_vs_fort = 1
+	}
+
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+
+		modifier = {
+			factor = 2
+			total_development = 200
+		}
+		modifier = {
+			factor = 10
+			total_development = 500
+		}
+		modifier = {
+			factor = 4
+			total_development = 700
+		}
+		modifier = {
+			factor = 5
+			total_development = 800
+		}
+		modifier = {
+			factor = 6
+			total_development = 1000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+waffenqualitat0 = {
+	category = MIL
+	
+	 trigger = {
+		
+		OR = {
+			has_idea_group = quality_ideas 
+			has_idea_group = cavalry_ideas 
+			has_idea_group = artillery_ideas 
+		}
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.05
+	}
+		
+	
+	waffenqualitat1 = {
+		cav_to_inf_ratio = 0.25
+	}
+	waffenqualitat2 = {
+		infantry_power = 0.075
+	}
+	waffenqualitat3 = {
+		cavalry_power = 0.075
+	}
+
+	waffenqualitat4 = {
+		discipline = 0.05
+	}
+
+	waffenqualitat5 = {
+		siege_ability = 0.15
+	}
+	waffenqualitat6 = {
+		movement_speed = 0.25
+	}
+	waffenqualitat7 = {
+		artillery_power = 0.075
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 20
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2.0
+			has_idea_group = quality_ideas
+		}
+		modifier = {
+			factor = 2
+			total_development = 2000
+		}
+		modifier = {
+			factor = 3
+			total_development = 3000
+		}
+		modifier = {
+			factor = 4
+			total_development = 4000
+		}
+		modifier = {
+			factor = 5
+			total_development = 5000
+		}
+		modifier = {
+			factor = 6
+			total_development = 6000
+		}
+		modifier = {
+			factor = 4
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 4
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+formation0 = {
+	category = MIL
+	
+	trigger = {
+		OR = {
+			has_idea_group = quality_ideas 
+			has_idea_group = cavalry_ideas 
+			has_idea_group = artillery_ideas 
+		}
+	}
+
+	bonus = {
+		fire_damage_received = -0.05
+	}
+		
+	
+	formation1 = {
+		prestige_from_land = -0.15
+	}
+	formation2 = {
+		shock_damage = 0.05
+	}
+	formation3 = {
+		cavalry_flanking = 0.5
+	}
+
+	formation4 = {
+		shock_damage_received = -0.05
+	}
+
+	formation5 = {
+		fire_damage = 0.05
+	}
+	formation6 = {
+		global_supply_limit_modifier = 0.33
+		
+	}
+	formation7 = {
+		land_attrition = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 20
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			total_development = 200
+		}
+		modifier = {
+			factor = 3
+			total_development = 1500
+		}
+		modifier = {
+			factor = 4
+			total_development = 2400
+		}
+		modifier = {
+			factor = 5
+			total_development = 5500
+		}
+		modifier = {
+			factor = 6
+			total_development = 6500
+		}
+		modifier = {
+			factor = 3
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+shock0 = {
+	category = MIL
+	
+	trigger = {
+		
+		NOT = {
+			has_idea_group = fire0
+			}	
+			has_idea_group = army_ideas
+		}
+	
+	bonus = {
+		cavalry_power = 0.075
+	}
+		
+	
+	shock2 = {
+		cavalry_flanking = 1.0
+	}
+	shock1 = {
+		fire_damage_received = -0.1
+		# <<WIKI>> add_age_fire_damage_received = -0.05
+	}
+	shock3 = {
+		cavalry_cost = -0.25
+	}
+	shock6 = {
+		cav_to_inf_ratio = 0.25
+	}
+	shock4 = {
+		shock_damage = 0.1
+	}
+	shock5 = {
+		cavalry_power = 0.075
+	}
+	shock7 = {
+		leader_land_shock = 1
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 20
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			total_development = 1000
+		}
+		modifier = {
+			factor = 3
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 3000
+		}
+		modifier = {
+			factor = 5
+			total_development = 4000
+		}
+		modifier = {
+			factor = 6
+			total_development = 5000
+		}
+		modifier = {
+			factor = 3
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+
+
+fire0 = {
+	category = MIL
+	
+	trigger = {
+		
+		NOT = {
+			has_idea_group = shock0
+			}	
+			has_idea_group = army_ideas
+		}
+	
+	bonus = {
+		shock_damage_received = -0.05
+	}
+		
+	
+	fire1 = {
+		shock_damage_received = -0.1
+	}
+	fire2 = {
+		artillery_bonus_vs_fort = 1
+	}
+	fire3 = {
+		artillery_power = 0.075
+	}
+
+	fire4 = {
+		fire_damage = 0.05
+	}
+
+	fire5 = {
+		siege_ability = 0.1
+	}
+	fire6 = {
+		backrow_artillery_damage = 0.1
+	}
+	fire7 = {
+		leader_land_fire = 1
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 20
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			total_development = 1000
+		}
+		modifier = {
+			factor = 3
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 4000
+		}
+		modifier = {
+			factor = 5
+			total_development = 5000
+		}
+		modifier = {
+			factor = 6
+			total_development = 6000
+		}
+		modifier = {
+			factor = 3
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}

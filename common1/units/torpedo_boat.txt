@@ -1,0 +1,8 @@
+#Torpedo Boat
+type = galley
+
+hull_size = 250
+base_cannons = 300
+sail_speed = 28
+
+sprite_level = 11

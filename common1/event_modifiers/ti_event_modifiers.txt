@@ -1,0 +1,2090 @@
+#######################
+# written by Aetherum #
+#######################
+
+England = {
+	global_trade_goods_size_modifier = 0.025
+	trade_efficiency = 0.025
+	sailor_maintenance_modifer = -0.025
+	global_colonial_growth = 5
+}
+
+Sweden = {
+	garrison_size = 0.025
+    global_manpower_modifier = 0.025
+	manpower_recovery_speed = 0.025
+	stability_cost_modifier = -0.025
+}
+
+Moscovy = {
+	tolerance_own = 0.1
+	global_missionary_strength = 0.005
+	fort_maintenance_modifier = -0.025
+	diplomatic_reputation = 0.5
+}
+
+Russia = {
+	core_creation = -0.025
+	ae_impact = -0.025
+	land_forcelimit_modifier = 0.025
+	yearly_corruption = -0.025
+}
+
+Spain = {
+	missionaries = 1
+	global_colonial_growth = 5
+	global_missionary_strength = 0.005
+}
+
+Netherlands = {
+	trade_efficiency = 0.025
+	inflation_reduction = 0.025
+	merchants = 1
+	development_cost = -0.025
+}
+
+Denmark = {
+	manpower_recovery_speed = 0.025
+	global_tax_modifier = 0.025
+	naval_forcelimit_modifier = 0.025
+	trade_value_modifier = 0.025
+}
+
+France = {
+	diplomatic_reputation = 0.5
+	global_manpower_modifier = 0.025
+	tolerance_heathen = 0.1
+	tolerance_heretic = 0.1
+}
+
+Turkey = {
+	tolerance_heathen = 0.5
+	core_creation = -0.025
+	num_accepted_cultures = 1
+	trade_efficiency = 0.025
+}
+
+Venice = {
+	diplomats = 1
+	stability_cost_modifier = -0.025
+	land_attrition = -0.025
+	naval_attrition = -0.025
+}
+
+Prussia = {
+	ae_impact = -0.025
+	global_regiment_recruit_speed = -0.025
+	development_cost = -0.025
+	tolerance_heretic = 0.1
+	}
+ 
+Portugal = {
+    global_tariffs = 0.025
+	merchants = 1
+	build_cost = -0.025
+	global_colonial_growth = 5
+}
+
+Poland = {
+	num_accepted_cultures = 1
+	tolerance_heretic = 0.1
+	production_efficiency = 0.025
+	global_manpower_modifier = 0.025
+}
+
+
+Austria = {
+	improve_relation_modifier = 0.025
+	diplomatic_annexation_cost = -0.025
+	fort_maintenance_modifier = -0.025
+	diplomatic_reputation = 0.5
+}
+
+China = {
+	fort_maintenance_modifier = -0.025
+	idea_cost = -0.025
+	defensiveness = 0.025
+	garrison_size = 0.025
+}
+
+Bavaria = {
+	development_cost = -0.025
+	production_efficiency = 0.025
+	global_heretic_missionary_strength = 0.005
+	global_tax_modifier = 0.025
+}
+
+Persia = {
+	global_manpower_modifier = 0.025
+	global_trade_goods_size_modifier = 0.025
+	production_efficiency = 0.025
+	manpower_recovery_speed = 0.025
+}
+
+Burgundy = {
+	trade_steering = 0.025
+	garrison_size = 0.025
+	possible_mercenaries = 0.025
+	trade_efficiency = 0.025
+}
+
+Genoa = {
+	global_sailors_modifier = 0.025
+	justify_trade_conflict_cost = -0.025
+	global_foreign_trade_power = 0.025
+	naval_forcelimit_modifier = 0.025
+}
+
+Scotland = {
+	land_forcelimit_modifier = 0.025
+	trade_value_modifier = 0.025
+	global_ship_cost = -0.025
+	ae_impact = -0.025
+}
+
+Hungary = {
+	trade_value_modifier = 0.025
+	global_manpower_modifier = 0.025
+	global_tax_modifier = 0.025
+	global_own_trade_power = 0.025
+}
+
+Japan = {
+	trade_value_modifier = 0.025
+	global_institution_spread = 0.025
+	global_colonial_growth = 5
+	ae_impact = -0.025
+}
+
+Egypt = {
+	trade_value_modifier = 0.025
+	global_sailors_modifier = 0.025
+	naval_forcelimit_modifier = 0.025
+	global_prov_trade_power_modifier = 0.025
+}
+
+Naples_ = {
+	trade_steering = 0.025
+	global_prov_trade_power_modifier = 0.025
+	global_trade_power = 0.025
+	trade_efficiency = 0.025
+}
+
+Aragon = {
+    culture_conversion_cost = -0.025
+    naval_forcelimit_modifier = 0.025
+	global_sailors_modifier = 0.025
+	global_autonomy = -0.025
+}
+
+Mughals = {
+	core_creation = -0.025
+	idea_cost = -0.025
+	tolerance_heathen = 0.5
+	religious_unity = 0.025
+}
+
+Timurids = {
+	diplomatic_reputation = 0.5
+	global_tax_modifier = 0.025
+	global_own_trade_power = 0.025
+	yearly_corruption = -0.025
+}
+
+Hansa = {
+    global_trade_power = 0.025
+	merchants = 1
+	justify_trade_conflict_cost = -0.025
+	global_prov_trade_power_modifier = 0.025
+}
+
+Milan = {
+	garrison_size = 0.025
+	idea_cost = -0.025
+	development_cost = -0.025
+	stability_cost_modifier = -0.025
+}
+
+Byzantium = {
+	advisor_cost = -0.025
+	tolerance_own = 0.1
+	garrison_size = 0.025
+	global_missionary_strength = 0.005
+}
+
+Vijayanagar = {
+	advisor_pool = 1
+	possible_mercenaries = 0.025
+	tolerance_heretic = 0.1
+ 	tolerance_heathen = 0.1
+}
+
+Ayutthaya = {
+	religious_unity = 0.025
+	num_accepted_cultures = 1
+	vassal_income = 0.025
+	trade_value_modifier = 0.025
+}
+
+Norway = {
+	global_sailors_modifier = 0.025
+	ship_durability = 0.025
+	colonists = 1
+	global_ship_cost = -0.025
+}
+
+Oman = {
+	global_sailors_modifier = 0.025
+	blockade_efficiency = 0.025
+	tolerance_heathen = 0.1
+	merchants = 1
+}
+
+Korea = {
+	build_cost = -0.025
+	production_efficiency = 0.025
+    stability_cost_modifier = -0.025
+	idea_cost = -0.025
+}
+
+Bohemia = {
+	advisor_cost = -0.025
+	tolerance_heretic = 0.5
+	trade_value_modifier = 0.025
+    enemy_core_creation = 0.025
+}
+
+Italy = {
+	global_trade_power = 0.025
+	defensiveness = 0.025
+	stability_cost_modifier = -0.025
+	core_creation = -0.025
+}
+
+Manchu = {
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+	manpower_recovery_speed = 0.025
+	trade_value_modifier = 0.025
+}
+
+Palatinate = {
+	improve_relation_modifier = 0.025
+	advisor_cost = -0.025
+	rebel_support_efficiency = 0.025
+	global_missionary_strength = 0.005
+}
+
+Novgorod = {
+	garrison_size = 0.025
+	merchants = 1
+	global_trade_power = 0.025
+	privateer_efficiency = 0.025
+}
+
+Ethiopia = {
+	global_autonomy = -0.025
+	land_attrition = -0.025
+	missionaries = 1
+	core_creation = -0.10
+}
+
+dai_viet = {
+	hostile_attrition = 0.025
+	enemy_core_creation = 0.025
+	defensiveness = 0.025
+	core_creation = -0.025
+}
+
+Savoy = {
+	defensiveness = 0.025
+	global_missionary_strength = 0.005
+	idea_cost = -0.025
+   	global_prov_trade_power_modifier = 0.025
+}
+
+Saxony = {
+	advisor_cost = -0.025
+	development_cost = -0.025
+	global_trade_goods_size_modifier = 0.025
+	tolerance_heretic = 0.1
+}
+
+Lithuania = {
+	manpower_recovery_speed = 0.025
+	tolerance_heretic = 0.1
+	stability_cost_modifier = -0.025
+	trade_value_modifier = 0.025
+}
+
+Granada = {
+    religious_unity = 0.025
+	idea_cost = -0.025
+	tolerance_heathen = 0.1
+	global_institution_spread = 0.025
+}
+
+papal_state = {
+	diplomatic_reputation = 0.5
+	religious_unity = 0.025
+	tolerance_own = 0.1
+	ae_impact = -0.025
+}
+
+Serbia = {
+	manpower_recovery_speed = 0.025
+	reinforce_speed = 0.025
+	trade_value_modifier = 0.025
+	garrison_size = 0.025
+}
+
+Ragusa = {
+	trade_efficiency = 0.025
+	global_foreign_trade_power = 0.025
+	global_own_trade_power = 0.025
+	naval_forcelimit_modifier = 0.025
+}
+
+Assam = {
+	global_manpower_modifier = 0.10
+	trade_value_modifier = 0.025
+	development_cost = -0.025
+	hostile_attrition = 0.025
+}
+
+Tusacny = {
+	development_cost = -0.025
+	idea_cost = -0.025
+	garrison_size = 0.025
+	global_manpower_modifier = 0.025
+}
+
+USA = {
+	merchants = 1
+	religious_unity = 0.025
+	colonists = 1
+}
+
+Switzerland = {
+	garrison_size = 0.025
+	fort_maintenance_modifier = -0.025
+	development_cost = -0.025
+	tolerance_heretic = 0.1
+}
+
+Songhai = {
+	global_trade_power = 0.025
+	defensiveness = 0.025
+	global_institution_spread = 0.025
+	tolerance_own = 0.1
+}
+
+Bruttany = {
+	trade_steering = 0.025
+	naval_forcelimit_modifier = 0.025
+	enemy_core_creation = 0.025
+	global_missionary_strength = 0.005
+}
+
+Najd = {
+	global_missionary_strength = 0.005
+	movement_speed = 0.025
+	missionaries = 1
+	tolerance_own = 0.1
+}
+
+Hejaz = {
+	tolerance_own = 0.1
+	ae_impact = -0.025
+	land_attrition = -0.025
+	global_missionary_strength = 0.005
+}
+
+Nepal = {
+	land_forcelimit_modifier = 0.025
+	manpower_recovery_speed = 0.025		
+	diplomatic_reputation = 0.5
+	defensiveness = 0.025
+}
+
+the_knights = {
+	defensiveness = 0.025
+	manpower_recovery_speed = 0.025
+	trade_value_modifier = 0.025
+	naval_forcelimit_modifier = 0.025
+}
+
+Kongo = {
+	trade_efficiency = 0.06
+	land_attrition = -0.025
+	improve_relation_modifier = 0.025
+	envoy_travel_time = -0.025
+}
+
+Mali = {
+	land_attrition = -0.025
+	tolerance_heathen = 0.1
+	vassal_income = 0.025
+	merchants = 1
+}
+
+Huron = {
+	trade_efficiency = 0.025
+	global_prov_trade_power_modifier = 0.025
+	merchants = 1
+    diplomatic_reputation = 0.5
+}
+
+Iroquois = {
+	diplomatic_reputation = 0.5
+	improve_relation_modifier = 0.025
+	diplomats = 1
+	manpower_recovery_speed = 0.025
+}
+
+Ckickasaw = {
+	land_attrition = -0.025
+	build_cost = -0.025
+	hostile_attrition = 0.025
+    loot_amount = 0.025
+}
+
+Cherokee = {
+	advisor_cost = -0.025
+	enemy_core_creation = 0.025
+	global_institution_spread = 0.025
+	build_cost = -0.025
+}
+
+Pueblo = {
+	global_garrison_growth = 0.025
+	build_cost = -0.025
+	religious_unity = 0.025
+	tolerance_own = 0.1
+}
+
+Shawnee = {
+	hostile_attrition = 0.025
+	idea_cost = -0.025
+	advisor_pool = 1
+	global_manpower_modifier = 0.025
+}
+
+Creek = {
+	unjustified_demands = -0.025
+	global_spy_defence = 0.025
+	stability_cost_modifier = -0.025
+	global_manpower_modifier = 0.025
+}
+
+Kurland = {
+	trade_efficiency = 0.025
+	global_foreign_trade_power = 0.025
+	production_efficiency = 0.025
+	naval_forcelimit_modifier = 0.025
+}
+
+Provence = {
+	fabricate_claims_cost = -0.025
+	trade_value_modifier = 0.025
+	global_sailors_modifier = 0.025
+	naval_forcelimit_modifier = 0.025
+}
+
+Mogadishu = {
+	merchants = 1
+	global_trade_power = 0.025
+	development_cost = -0.025
+	trade_efficiency = 0.025
+}
+
+Trebizond = {
+	global_trade_goods_size_modifier = 0.025
+	diplomatic_reputation = 0.5
+	diplomats = 1
+	spy_offence = 0.025
+}
+
+Georgia = {
+	defensiveness = 0.025
+	improve_relation_modifier = 0.025
+	tolerance_own = 0.1
+	build_cost = -0.025
+}
+
+Majapahit = {
+	tolerance_heathen = 0.1
+	religious_unity = 0.025
+	global_institution_spread = 0.025
+	merchants = 1
+}
+
+Afghanistan = {
+	global_own_trade_power = 0.025
+	defensiveness = 0.025
+	global_manpower_modifier = 0.025
+	hostile_attrition = 0.025
+}
+
+Wallachia = {
+	manpower_recovery_speed = 0.025
+	diplomatic_reputation = 0.5
+	global_prov_trade_power_modifier = 0.025
+	global_manpower_modifier = 0.025
+}
+
+Croatia = {
+	naval_forcelimit_modifier = 0.025
+	defensiveness = 0.025
+	tolerance_own = 0.1
+	ae_impact = -0.025
+}
+
+Cyprus = {
+	tolerance_heretic = 0.1
+	fabricate_claims_cost = -0.025
+	embargo_efficiency = 0.025
+	privateer_efficiency = 0.025
+}
+
+Navarra = {
+	trade_efficiency = 0.025
+	global_colonial_growth = 5
+	global_institution_spread = 0.025
+	trade_steering = 0.025
+}
+
+Aztec = {
+	idea_cost = -0.025
+	global_manpower_modifier = 0.025
+	manpower_recovery_speed = 0.025
+	spy_offence = 0.025
+}
+
+kanem_bornu = {
+	vassal_income = 0.025
+	global_trade_goods_size_modifier = 0.025
+	global_missionary_strength = 0.005
+	tolerance_own = 0.1
+}
+
+Theodoro = {
+	global_trade_power = 0.025
+	diplomatic_reputation = 0.5
+    trade_efficiency = 0.025
+	tolerance_own = 0.1
+}
+
+Silesia = {
+	build_cost = -0.025
+	development_cost = -0.025
+	trade_steering = 0.025
+	trade_efficiency = 0.025
+}
+
+Krakow = {
+	trade_steering = 0.025
+	trade_efficiency = 0.025
+	stability_cost_modifier = -0.025
+	advisor_pool = 1
+}
+
+Ajuuraan = {
+	global_missionary_strength = 0.005
+	missionaries = 1
+	development_cost = -0.025
+	global_institution_spread = 0.025
+}
+
+Ryazan = {
+	recover_army_morale_speed = 0.025
+	land_forcelimit_modifier = 0.025
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+}
+
+Tver = {
+	global_prov_trade_power_modifier = 0.025		
+	reinforce_speed = 0.025
+	trade_efficiency = 0.025
+	stability_cost_modifier = -0.025
+}
+
+Yaroslavl = {
+	reinforce_speed = 0.025
+	manpower_recovery_speed = 0.025	
+	fabricate_claims_cost = -0.025
+	improve_relation_modifier = 0.025
+}
+
+Pskov = {
+	caravan_power = 0.025
+	merchants = 1		
+	global_trade_goods_size_modifier = 0.025
+	recover_army_morale_speed = 0.025
+}
+
+Smolensk = {
+	advisor_cost = -0.025	
+	religious_unity = 0.025
+	garrison_size = 0.025
+	siege_ability = 0.025
+}
+
+Bosnia = {
+	religious_unity = 0.025
+	tolerance_heretic = 0.1	
+	core_creation = -0.025
+	hostile_attrition = 0.025
+}
+
+Moldavia = {
+	improve_relation_modifier = 0.025
+	manpower_recovery_speed = 0.025
+	global_missionary_strength = 0.005
+    trade_efficiency = 0.025
+}
+
+Air = {
+	movement_speed = 0.025
+	caravan_power = 0.025
+	trade_efficiency = 0.025
+	global_missionary_strength = 0.005
+}
+
+Mossi = {
+	cavalry_power = 0.025
+	num_accepted_cultures = 1
+	global_autonomy = -0.025
+	tolerance_own = 0.1
+}
+
+Tarascan = {
+	years_of_nationalism = -2.5
+	trade_efficiency = 0.025
+	defensiveness = 0.025
+	fort_maintenance_modifier = -0.025
+}
+
+Karaman = {
+	core_creation = -0.025
+	culture_conversion_cost = -0.025
+	development_cost = -0.025
+	religious_unity = 0.025
+}
+
+Montenegro = {
+	hostile_attrition = 0.025	
+	tolerance_own = 0.1		
+    embargo_efficiency = 0.025
+	privateer_efficiency = 0.025
+}
+
+Athenes = {
+	tolerance_heretic = 0.1
+	num_accepted_cultures = 1
+	diplomatic_reputation = 0.5
+	global_missionary_strength = 0.005
+}
+
+Gotland = {
+	privateer_efficiency = 0.025
+	core_creation = -0.025
+	trade_efficiency = 0.025
+	development_cost = -0.025
+}
+
+Finland = {
+	global_tax_modifier = 0.025
+	global_heretic_missionary_strength = 0.005
+	development_cost = -0.1
+	hostile_attrition = 1
+}
+
+Albania = {
+	manpower_recovery_speed = 0.025		
+	land_forcelimit_modifier = 0.025
+	stability_cost_modifier = -0.025
+	global_manpower_modifier = 0.025
+}
+
+Polotsk = {	
+	hostile_attrition = 0.025	
+	idea_cost = -0.025
+	trade_efficiency = 0.025
+	development_cost = -0.025
+}
+
+Perm = {
+	advisor_cost = -0.025
+	trade_efficiency = 0.025		
+	religious_unity = 0.025
+	land_forcelimit_modifier = 0.025
+}
+
+Mapuche = {
+	hostile_attrition = 0.025
+	global_manpower_modifier = 0.025
+	diplomats = 1
+	diplomatic_reputation = 0.5
+}
+
+Cusco = {
+	land_forcelimit_modifier = 0.025
+	development_cost = -0.025
+	build_cost = -0.025
+	land_attrition = -0.025
+}
+
+Chimu = {
+	global_trade_goods_size_modifier = 0.025
+	defensiveness = 0.025
+	build_cost = -0.025
+	global_spy_defence = 0.025
+}
+
+Muisca = {
+	global_own_trade_power = 0.025
+	defensiveness = 0.025
+	trade_value_modifier = 0.025
+	stability_cost_modifier = -0.025
+}
+
+Chachapoya = {
+	advisor_pool = 1
+	development_cost = -0.025
+	diplomatic_reputation = 0.5		
+	hostile_attrition = 0.025
+}
+
+teutonic_order = {
+	global_institution_spread = 0.025
+	global_missionary_strength = 0.005
+	missionaries = 1
+	tolerance_own = 0.1
+}
+
+Bulgaria = {
+	merchants = 1
+	core_creation = -0.025		
+	stability_cost_modifier = -0.025
+	global_heretic_missionary_strength = 0.005		
+}
+
+Kiev = {
+	diplomatic_reputation = 0.5		
+	global_missionary_strength = 0.005
+	tolerance_own = 0.1	
+	merchants = 1
+}
+
+Naxos = {
+	sunk_ship_morale_hit_recieved = -0.025
+	embargo_efficiency = 0.025
+	privateer_efficiency = 0.025
+	core_creation = -0.025
+}
+
+Tapuia = {
+	tolerance_own = 0.1
+	global_institution_spread = 0.025
+	land_attrition = -0.025
+	trade_efficiency = 0.025
+}
+
+Pomerania = {
+ 	global_trade_power = 0.025
+	embargo_efficiency = 0.025
+	privateer_efficiency = 0.025
+	merchants = 1
+}
+
+Kazan = {
+	ae_impact = -0.025		
+	core_creation = -0.025
+	global_manpower_modifier = 0.025	
+	trade_efficiency = 0.025
+}
+
+Armenia = {
+	recover_army_morale_speed = 0.025
+	hostile_attrition = 0.025
+	global_missionary_strength = 0.005
+	development_cost = -0.025
+}
+
+Wales = {
+	hostile_attrition = 0.025
+	land_forcelimit_modifier = 0.025
+	tolerance_own = 0.1
+	global_heretic_missionary_strength = 0.005
+}
+
+Katsina = {
+	global_own_trade_power = 0.025
+	development_cost = -0.025
+	caravan_power = 0.025
+	global_institution_spread = 0.025
+}
+
+Guarani = {
+	trade_value_modifier = 0.025
+	tolerance_heathen = 0.1
+	global_manpower_modifier = 0.025
+	defensiveness = 0.025
+}
+
+Charrua = {
+	stability_cost_modifier = -0.025
+	development_cost = -0.025
+	land_attrition = -0.025
+	hostile_attrition = 0.025
+}
+
+Circassia = {
+	global_prov_trade_power_modifier = 0.025
+	trade_efficiency = 0.025
+	tolerance_heathen = 0.1
+	tolerance_heretic = 0.1
+}
+
+lan_xang = {
+	tolerance_own = 0.1
+	num_accepted_cultures = 1
+	ae_impact = -0.025
+	global_institution_spread = 0.025
+}
+
+Khiva = {
+	reinforce_speed = 0.025
+	caravan_power = 0.025
+	global_missionary_strength = 0.005
+	trade_efficiency = 0.025
+}
+
+Bahmanis = {
+	tolerance_heathen = 0.1
+	religious_unity = 0.025
+	num_accepted_cultures = 1
+	diplomatic_reputation = 0.5
+}
+
+Habsan = {
+	tolerance_heathen = 0.1
+	sailor_maintenance_modifer = -0.025
+	trade_efficiency = 0.025
+	global_sailors_modifier = 0.025
+}
+
+Jaunpur = {
+	tolerance_heathen = 0.1
+	global_trade_power = 0.025
+	global_institution_spread = 0.025
+	development_cost = -0.025
+}
+
+Hamburg = {
+	naval_forcelimit_modifier = 0.025
+	global_trade_power = 0.025
+	defensiveness = 0.025
+	idea_cost = -0.025
+}
+
+Jerusalem = {
+	tolerance_heathen = 0.1
+	global_missionary_strength = 0.005
+	missionaries = 1
+	defensiveness = 0.025
+}
+
+Khmer = {
+	advisor_cost = -0.025
+	global_manpower_modifier = 0.025
+	tolerance_own = 0.1
+	trade_efficiency = 0.025
+}
+
+Zaporozhie = {
+	loot_amount = 0.025
+	manpower_recovery_speed = 0.025
+	development_cost = -0.025
+	land_attrition = -0.025
+}
+
+Canada = {
+	trade_efficiency = 0.025
+    merchants = 1
+	colonists = 1
+	trade_steering = 0.025
+}
+
+Quebec = {
+	tolerance_own = 0.1
+	defensiveness = 0.025
+	global_institution_spread = 0.025
+	global_missionary_strength = 0.005
+}
+
+Mexico = {
+	global_colonial_growth = 5
+	build_cost = -0.025
+	num_accepted_cultures = 1
+	years_of_nationalism = -2.5
+}
+
+Transylvania = {
+	global_manpower_modifier = 0.025
+	trade_steering = 0.025
+	tolerance_heretic = 0.1
+	tolerance_own = 0.1
+}
+
+Sukhothai = {
+	diplomatic_reputation = 0.5
+	tolerance_own = 0.1
+	land_forcelimit_modifier = 0.025
+	global_missionary_strength = 0.005
+}
+
+Wurzburg = {
+	global_prov_trade_power_modifier = 0.025
+	diplomatic_reputation = 0.5
+	global_tax_modifier = 0.025
+	production_efficiency = 0.025
+}
+ 
+Ceylon = {
+	trade_efficiency = 0.025	
+	global_own_trade_power = 0.025
+	merchants = 1
+	global_trade_goods_size_modifier = 0.025
+}
+ 
+Candar = {
+	core_creation = -0.025
+	merchants = 1
+	development_cost = -0.025
+	naval_forcelimit_modifier = 0.025
+}
+
+Brazil = {
+	envoy_travel_time = -0.025
+	global_trade_goods_size_modifier = 0.025
+	global_institution_spread = 0.025
+	core_creation = -0.025
+}
+
+Carib = {
+	trade_efficiency = 0.025
+	colonists = 1
+	tolerance_heathen = 0.1
+	global_manpower_modifier = 0.025
+}
+
+Benin = {
+	siege_ability = 0.025
+	defensiveness = 0.025
+	num_accepted_cultures = 1
+	trade_efficiency = 0.025
+}
+
+Bremen = {
+	global_missionary_strength = 0.005
+	tolerance_own = 0.1
+	trade_efficiency = 0.025
+	global_prov_trade_power_modifier = 0.025
+}
+
+Holstein = {
+	global_manpower_modifier = 0.025
+	merchants = 1
+	global_tax_modifier = 0.025
+	global_trade_power = 0.025
+}
+
+Hesse = {
+	diplomatic_reputation = 0.5
+	idea_cost = -0.025
+	development_cost = -0.025
+	land_forcelimit_modifier = 0.025
+}
+
+Arakan = {
+	num_accepted_cultures = 1
+	tolerance_heathen = 0.1
+	merchants = 1
+	privateer_efficiency = 0.025
+}
+
+Northumberlend = {
+	hostile_attrition = 0.025
+	missionaries = 1 
+	fabricate_claims_cost = -0.025
+	tolerance_own = 0.1
+}
+
+Munster = {
+	global_trade_power = 0.025
+	global_heretic_missionary_strength = 0.005
+	tolerance_own = 0.1
+	global_institution_spread = 0.025
+}
+
+Thuringen = {
+	diplomats = 1
+	improve_relation_modifier = 0.025
+	defensiveness = 0.025
+	tolerance_heretic = 0.1
+}
+
+Semien = {
+	tolerance_heathen = 0.1
+	fort_maintenance_modifier = -0.025
+	ae_impact = -0.025
+	development_cost = -0.025
+}
+
+Catalonia = {
+    merchants = 1
+    advisor_cost = -0.025
+	fort_maintenance_modifier = -0.025
+    manpower_recovery_speed = 0.025
+}
+
+lan_na = {
+    development_cost = -0.025
+    global_trade_goods_size_modifier = 0.025
+    tolerance_own = 0.1
+    num_accepted_cultures = 1
+}
+
+Pagarruyung = {
+	global_missionary_strength = 0.005
+	trade_value_modifier = 0.025
+	global_institution_spread = 0.025
+	stability_cost_modifier = -0.025
+}
+
+Miao = {
+	global_trade_goods_size_modifier = 0.1
+	fort_maintenance_modifier = -0.025
+    tolerance_own = 0.1
+	trade_value_modifier = 0.025
+}
+
+Champa = {
+	naval_forcelimit_modifier = 0.025
+	global_trade_power = 0.025
+	global_colonial_growth = 5
+	trade_efficiency = 0.025
+}
+
+Baden = {
+	fort_maintenance_modifier = -0.025
+	tolerance_heretic = 0.1
+	stability_cost_modifier = -0.025
+	ae_impact = -0.025
+}
+
+Sadiya = {
+	hostile_attrition = 0.025
+	diplomatic_reputation = 0.5
+	tolerance_heathen =	0.1
+	defensiveness = 0.025
+}
+
+Manipur = {
+	loot_amount = 0.025	
+	defensiveness = 0.025
+	tolerance_own = 0.1
+	global_manpower_modifier = 0.025
+}
+
+Pegu = {
+	global_prov_trade_power_modifier = 0.10
+	merchants = 1
+	development_cost = -0.1
+	trade_efficiency = 0.1
+}
+
+Kutai = {
+	global_prov_trade_power_modifier = 0.025
+	trade_steering = 0.025
+	global_own_trade_power = 0.025
+	global_foreign_trade_power = 0.025
+}
+
+Kiche = {
+	global_own_trade_power = 0.025
+	global_tax_modifier = 0.025
+	production_efficiency = 0.025
+	global_trade_goods_size_modifier = 0.025
+}
+
+Ladakh = {
+	tolerance_own = 0.1
+	fort_maintenance_modifier = -0.025
+	global_trade_goods_size_modifier = 0.025
+	global_foreign_trade_power = 0.025
+}
+
+Mutapa = {
+	global_trade_goods_size_modifier = 0.025
+	development_cost = -0.025
+	fort_maintenance_modifier = -0.025
+	global_foreign_trade_power = 0.025
+}
+
+Baluchistan = {
+	fort_maintenance_modifier = -0.025
+	loot_amount = 0.025
+	land_forcelimit_modifier = 0.025
+	hostile_attrition = 0.025
+}
+
+Hormuz = {
+	merchants = 1
+	global_foreign_trade_power = 0.025
+	development_cost = -0.025
+	naval_forcelimit_modifier = 0.025
+}
+
+Kangra = {
+	hostile_attrition = 0.025
+	global_manpower_modifier = 0.025
+	fort_maintenance_modifier = -0.025
+	garrison_size = 0.025
+}
+
+Yarkand = {
+	global_foreign_trade_power = 0.025
+	caravan_power = 0.025
+	tolerance_own = 0.1
+	global_prov_trade_power_modifier = 0.025	
+}
+
+Luxembourg = {
+	global_garrison_growth = 0.025
+	diplomatic_reputation = 0.5
+	defensiveness = 0.025
+	fort_maintenance_modifier = -0.025
+}
+
+Andhra = {
+	garrison_size = 0.025
+	global_tax_modifier = 0.025
+    production_efficiency = 0.025
+    global_own_trade_power = 0.025
+}
+
+Sami = {
+	religious_unity = 0.025
+	global_missionary_strength = 0.005
+	merchants = 1
+	tolerance_own = 0.1
+}
+
+
+Mazovia = {
+	land_forcelimit_modifier = 0.025
+	defensiveness = 0.025
+	stability_cost_modifier = -0.025
+	global_prov_trade_power_modifier = 0.025
+}
+
+Nevers = {
+    production_efficiency = 0.025
+	stability_cost_modifier = -0.025
+	global_trade_goods_size_modifier = 0.025
+	manpower_recovery_speed = 0.025
+}
+
+medri_bahri = {
+	trade_steering = 0.025
+	global_foreign_trade_power = 0.025
+	global_own_trade_power = 0.025
+	ae_impact = -0.025
+}
+
+Tirhut = {
+	diplomatic_reputation = 0.5
+	advisor_cost = -0.025
+	stability_cost_modifier = -0.025
+	global_trade_goods_size_modifier = 0.025
+}
+
+Maravi = {
+	idea_cost = -0.025
+	diplomatic_reputation = 0.5
+	global_trade_goods_size_modifier = 0.025
+	global_tax_modifier = 0.025
+}
+
+Rome = {
+	global_manpower_modifier = 0.025
+	diplomatic_reputation = 0.5
+	land_forcelimit_modifier = 0.025
+	core_creation = -0.025
+}
+
+Thomond = {
+	core_creation = -0.025
+	tolerance_own = 0.1
+	land_forcelimit_modifier = 0.025
+	global_colonial_growth = 5
+}
+
+Sligo = {
+	trade_efficiency = 0.025
+	enemy_core_creation = 0.025
+	num_accepted_cultures = 1
+	naval_forcelimit_modifier = 0.025
+}
+
+Antemoro = {
+	improve_relation_modifier = 0.025
+	idea_cost = -0.025
+	diplomatic_reputation = 0.5
+	tolerance_own = 0.1
+}
+
+Betsimisaraka = {
+	global_sailors_modifier = 0.025
+	sailor_maintenance_modifer = -0.025
+	embargo_efficiency = 0.025
+	privateer_efficiency = 0.025
+}
+
+Imerina = {
+	manpower_recovery_speed = 0.025
+	global_autonomy = -0.025
+	global_trade_goods_size_modifier = 0.025
+	defensiveness = 0.025
+}
+
+Tumbuka = {
+	hostile_attrition = 0.025
+	num_accepted_cultures = 1
+	caravan_power = 0.025
+	merchants = 1
+}
+
+Luba = {
+	hostile_attrition = 0.025
+	improve_relation_modifier = 0.025
+	stability_cost_modifier = -0.025
+	development_cost = -0.025
+}
+
+Kuba = {
+	advisor_pool = 1
+	development_cost = -0.025
+	spy_offence = 0.025
+	hostile_attrition = 0.025
+}
+
+Butua = {
+	build_cost = -0.025
+	inflation_reduction = 0.025
+	global_tax_modifier = 0.025
+	trade_efficiency = 0.025
+}
+
+Desmond = {
+	garrison_size = 0.025  
+	global_manpower_modifier = 0.025
+	defensiveness = 0.025
+	stability_cost_modifier = -0.025
+}
+
+Malwa = {
+	tolerance_heathen = 0.1
+	num_accepted_cultures = 1
+	religious_unity = 0.025
+	global_foreign_trade_power = 0.025
+}
+
+Pattani = {
+	num_accepted_cultures = 1
+	global_foreign_trade_power = 0.025
+	trade_steering = 0.025
+	development_cost = -0.025
+}
+
+Kaffa = {
+	tolerance_heathen = 0.1
+	movement_speed = 0.025
+	stability_cost_modifier = -0.025
+	num_accepted_cultures = 1
+}
+
+Lorraine = {
+	defensiveness = 0.025
+	fabricate_claims_cost = -0.025
+	diplomats = 1
+	num_accepted_cultures = 1
+}
+
+Wurttemberg = {
+	global_foreign_trade_power = 0.025
+	advisor_pool = 1
+	global_manpower_modifier = 0.025
+	ae_impact = -0.025
+}
+
+Ansbach = {
+	ae_impact = -0.025
+	diplomatic_reputation = 0.5
+	religious_unity = 0.025
+	development_cost = -0.025
+}
+
+Odoyev = {
+	defensiveness = 0.025
+	diplomatic_reputation = 0.5
+	merchants = 1
+	fort_maintenance_modifier = -0.025
+}
+
+Garhwal = {
+	development_cost = -0.025
+	hostile_attrition = 0.025
+	global_autonomy = -0.025
+	tolerance_own = 0.1
+}
+
+Dirthmarschen = {
+	tolerance_own = 0.1
+	merchants = 1
+	privateer_efficiency = 0.025
+	development_cost = -0.025
+}
+
+Beloozero = {
+	global_foreign_trade_power = 0.025
+	global_trade_goods_size_modifier = 0.025
+	global_own_trade_power = 0.025
+	hostile_attrition = 0.025
+}
+
+Rostov = {
+	global_prov_trade_power_modifier = 0.025
+	idea_cost = -0.025
+	development_cost = -0.025
+	ae_impact = -0.025
+}
+
+Tripura = {
+	hostile_attrition = 0.025
+	global_trade_goods_size_modifier = 0.025
+	land_forcelimit_modifier = 0.025
+	state_maintenance_modifier = -0.025
+}
+
+aq_qoyunlu = {
+	core_creation = -0.025
+	global_manpower_modifier = 0.025
+	diplomats = 1
+	global_trade_goods_size_modifier = 0.025
+}
+
+Khorasan = {
+	diplomatic_reputation = 0.5
+	global_manpower_modifier = 0.025
+	global_trade_goods_size_modifier = 0.025
+	tolerance_own = 0.1
+}
+
+Transoxiana = {
+	idea_cost = -0.025
+	spy_offence = 0.025
+	global_own_trade_power = 0.025
+	yearly_corruption = -0.025    
+}
+
+Ajam = {
+	production_efficiency = 0.025
+	defensiveness = 0.025
+	tolerance_heretic = 0.1
+	envoy_travel_time = -0.025
+}
+
+Fars = {
+	global_trade_goods_size_modifier = 0.025
+	idea_cost = -0.025
+	tolerance_own = 0.1
+	development_cost = -0.025
+}
+
+Luristan = {
+	fort_maintenance_modifier = -0.025
+	global_own_trade_power = 0.025
+	global_manpower_modifier = 0.025
+	tolerance_heretic = 0.1
+}
+
+qara_qoyunlu = {
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+	global_tax_modifier = 0.025
+	envoy_travel_time = -0.025
+}
+
+Mahra = {
+	global_sailors_modifier = 0.025
+	garrison_size = 0.025
+	movement_speed = 0.025
+	global_autonomy = -0.025
+}
+
+Yemen = {
+	global_institution_spread = 0.025
+	global_trade_power = 0.025
+	global_manpower_modifier = 0.025
+	merchants = 1
+}
+
+Rassids = {
+	global_manpower_modifier = 0.025
+	defensiveness = 0.025
+	global_trade_goods_size_modifier = 0.025
+	global_institution_spread = 0.025
+}
+
+Mushasha = {
+	tolerance_own = 0.1
+	missionaries = 1
+	hostile_attrition = 0.025
+	global_heretic_missionary_strength = 0.005
+}
+
+Sistan = {
+	production_efficiency = 0.025
+	global_autonomy = -0.025
+	global_own_trade_power = 0.025
+	global_institution_spread = 0.025
+}
+
+Ardabil = {
+	global_manpower_modifier = 0.025
+	manpower_recovery_speed = 0.025
+	tolerance_own = 0.1
+	global_heretic_missionary_strength = 0.005
+}
+
+Samtskhe = {
+	rebel_support_efficiency = 0.025
+	tolerance_heathen = 0.1
+	spy_offence = 0.025
+	tolerance_own = 0.1
+}
+
+Shirvan = {
+	global_prov_trade_power_modifier = 0.025
+	global_trade_goods_size_modifier = 0.025
+	same_culture_advisor_cost = -0.025
+	merchants = 1
+}
+
+Haasa = {
+	tolerance_heretic = 0.1
+	naval_forcelimit_modifier = 0.025
+	tolerance_own = 0.1
+	privateer_efficiency = 0.025
+}
+
+Hadhramaut = {
+	hostile_attrition = 0.025
+	naval_forcelimit_modifier = 0.025
+	sailors_recovery_speed = 0.025
+	improve_relation_modifier = 0.025
+}
+
+hisn_kayfa = {
+	global_tax_modifier = 0.025
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+	global_trade_goods_size_modifier = 0.025
+}
+
+Madyas = {
+	sailor_maintenance_modifer = -0.025
+	idea_cost = -0.025
+	development_cost = -0.025
+	stability_cost_modifier = -0.025
+}
+
+Butuan = {
+	global_own_trade_power = 0.025
+	global_trade_power = 0.025
+	merchants = 1
+	global_prov_trade_power_modifier = 0.025
+}
+
+Cebu = {
+	embargo_efficiency = 0.025	
+	privateer_efficiency = 0.025
+	global_institution_spread = 0.025
+	development_cost = -0.025
+}
+
+Marathas = {
+	manpower_recovery_speed = 0.025
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+	global_trade_goods_size_modifier = 0.025
+}
+
+Tangu = {
+	global_tax_modifier = 0.025
+	core_creation = -0.025
+	global_manpower_modifier = 0.025
+	religious_unity = 0.025
+}
+
+Orissa = {
+	production_efficiency = 0.025
+	global_tax_modifier = 0.025
+	global_trade_goods_size_modifier = 0.025
+	naval_forcelimit_modifier = 0.025
+}
+
+Punjab = {
+	religious_unity = 0.025	
+	tolerance_heathen = 0.1			
+	global_trade_goods_size_modifier = 0.025						
+	global_manpower_modifier = 0.025
+}
+
+Dahomey = {
+	enemy_core_creation = 0.025
+	production_efficiency = 0.025
+	global_manpower_modifier = 0.025
+	global_institution_spread = 0.025
+}
+
+Danzig = {
+	global_own_trade_power = 0.025
+	trade_steering = 0.025
+	global_trade_power = 0.025
+	manpower_recovery_speed = 0.025
+}
+
+Sokoto = {
+	recover_army_morale_speed = 0.025
+	missionaries = 1
+	global_missionary_strength = 0.005
+	num_accepted_cultures = 1
+}
+
+Romania = {
+	tolerance_own = 0.1
+	improve_relation_modifier = 0.025
+	manpower_recovery_speed = 0.025
+	hostile_attrition = 0.025
+}
+
+Ashanti = {
+	loot_amount = 0.025
+	merchants = 1
+	advisor_cost = -0.025
+}
+
+Orleans = {
+	fort_maintenance_modifier = -0.025
+	global_prov_trade_power_modifier = 0.025
+	tolerance_own = 0.1
+	idea_cost = -0.025
+}
+
+Leon = {
+	tolerance_own = 0.1
+	global_tax_modifier = 0.025
+	production_efficiency = 0.025
+	colonists = 1
+}
+
+Yi = {
+	manpower_recovery_speed = 0.025
+	hostile_attrition = 0.025
+	reinforce_speed = 0.025
+	tolerance_own = 0.1
+}
+
+nizhny_novgorod = {	
+	caravan_power = 0.025
+	development_cost = -0.025
+	colonists = 1
+	culture_conversion_cost = -0.025
+}
+
+Galicia = {
+	merchants = 1
+	global_tax_modifier = 0.025
+	defensiveness = 0.025
+	stability_cost_modifier = -0.025
+}
+
+Dali = {
+	tolerance_heretic = 0.1
+	global_manpower_modifier = 0.025
+	caravan_power = 0.025
+	development_cost = -0.025
+}
+
+jan_mayen = {
+	core_creation = -0.025
+	global_manpower_modifier = 0.025
+	num_accepted_cultures = 1
+	development_cost = -0.025
+}
+
+Lunda = {
+	global_manpower_modifier = 0.025
+	hostile_attrition = 0.025
+	core_creation = -0.025
+	culture_conversion_cost = -0.025
+}
+
+Corfu = {
+	merchants = 1
+	defensiveness = 0.025
+	naval_forcelimit_modifier = 0.025
+	culture_conversion_cost = -0.025
+}
+
+Slovakia = {
+	production_efficiency = 0.025
+	global_trade_goods_size_modifier = 0.025
+	fort_maintenance_modifier = -0.025
+	garrison_size = 0.025
+}
+
+golden_horde = {
+	global_manpower_modifier = 0.025
+	global_institution_spread = 0.025
+	core_creation = -0.025
+	development_cost = -0.025
+}
+
+
+
+Yuan = {
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+	movement_speed = 0.025
+	envoy_travel_time = -0.025
+}
+
+Moravia = {
+	tolerance_own = 0.1
+	development_cost = -0.025
+	num_accepted_cultures = 1
+	unjustified_demands = -0.025
+}
+
+Estonia = {
+	naval_forcelimit_modifier = 0.025
+	sailors_recovery_speed = 0.025
+	fort_maintenance_modifier = -0.025
+	merchants = 1
+}
+
+Hatakeyama = {
+	global_manpower_modifier = 0.025
+	global_institution_spread = 0.025
+	tolerance_own = 0.1
+	advisor_cost = -0.025
+}
+
+Imagawa = {
+	land_forcelimit_modifier = 0.025
+	improve_relation_modifier = 0.025
+	unjustified_demands = -0.025
+	core_creation = -0.025
+}
+
+Amago = {
+	defensiveness = 0.025
+	global_prov_trade_power_modifier = 0.025
+	tolerance_own = 0.1
+	global_trade_goods_size_modifier = 0.025
+}
+
+Hosokawa = {
+	global_institution_spread = 0.025
+	global_foreign_trade_power = 0.025
+	land_forcelimit_modifier = 0.025
+	development_cost = -0.025
+}
+
+Uesugi = {
+	production_efficiency = 0.025
+	reinforce_cost_modifier = -0.025
+	spy_offence = 0.025
+	idea_cost = -0.025
+}
+
+Yamana = {
+	diplomatic_reputation = 0.5
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+	defensiveness = 0.025
+}
+
+Date = {
+	global_trade_power = 0.025
+	core_creation = -0.025
+	ae_impact = -0.025
+	development_cost = -0.025
+}
+
+Shoni = {
+	land_forcelimit_modifier = 0.025
+	caravan_power = 0.025
+	global_own_trade_power = 0.025
+	merchants = 1
+}
+
+Ogasawara = {
+	hostile_attrition = 0.025
+	production_efficiency = 0.025
+	global_manpower_modifier = 0.025
+	tolerance_own = 0.1
+}
+
+Otomo = {
+	global_tax_modifier = 0.025
+	production_efficiency = 0.025
+	global_manpower_modifier = 0.025
+	siege_ability = 0.025
+}
+
+Ouchi = {
+	caravan_power = 0.025
+	diplomatic_reputation = 0.5
+	global_own_trade_power = 0.025
+	merchants = 1
+}
+
+Utsunomiya = {
+	diplomats = 1
+	global_own_trade_power = 0.025
+	global_manpower_modifier = 0.025
+	tolerance_heretic = 0.1
+}
+
+Ashiaga = {
+	global_own_trade_power = 0.025
+	advisor_cost = -0.025
+	global_tax_modifier = 0.025
+	vassal_income = 0.025
+}
+
+Toki = {
+	land_forcelimit_modifier = 0.025
+	global_garrison_growth = 0.025
+	movement_speed = 0.025
+	idea_cost = -0.025
+}
+
+Satake = {
+	land_forcelimit_modifier = 0.025
+	global_tax_modifier = 0.025
+	development_cost = -0.025
+	improve_relation_modifier = 0.025
+}
+
+Ando = {
+	caravan_power = 0.025
+	global_colonial_growth = 5
+	global_own_trade_power = 0.025
+	land_forcelimit_modifier = 0.025
+}
+
+Chiba = {
+	global_tax_modifier = 0.025
+	manpower_recovery_speed = 0.025
+	fabricate_claims_cost = -0.025
+	production_efficiency = 0.025
+}
+
+Yuan = {
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+	movement_speed = 0.025
+	envoy_travel_time = -0.025
+}
+
+Moravia = {
+	tolerance_own = 0.1
+	development_cost = -0.025
+	num_accepted_cultures = 1
+	unjustified_demands = -0.025
+}
+
+Estonia = {
+	naval_forcelimit_modifier = 0.025
+	sailors_recovery_speed = 0.025
+	fort_maintenance_modifier = -0.025
+	merchants = 1
+}
+
+Hatakeyama = {
+	global_manpower_modifier = 0.025
+	global_institution_spread = 0.025
+	tolerance_own = 0.1
+	advisor_cost = -0.025
+}
+
+Imagawa = {
+	land_forcelimit_modifier = 0.025
+	improve_relation_modifier = 0.025
+	unjustified_demands = -0.025
+	core_creation = -0.025
+}
+
+Amago = {
+	defensiveness = 0.025
+	global_prov_trade_power_modifier = 0.025
+	tolerance_own = 0.1
+	global_trade_goods_size_modifier = 0.025
+}
+
+Hosokawa = {
+	global_institution_spread = 0.025
+	global_foreign_trade_power = 0.025
+	land_forcelimit_modifier = 0.025
+	development_cost = -0.025
+}
+
+Uesugi = {
+	production_efficiency = 0.025
+	reinforce_cost_modifier = -0.025
+	spy_offence = 0.025
+	idea_cost = -0.025
+}
+
+Yamana = {
+	diplomatic_reputation = 0.5
+	global_manpower_modifier = 0.025
+	core_creation = -0.025
+	defensiveness = 0.025
+}
+
+Date = {
+	global_trade_power = 0.025
+	core_creation = -0.025
+	ae_impact = -0.025
+	development_cost = -0.025
+}
+
+Shoni = {
+	land_forcelimit_modifier = 0.025
+	caravan_power = 0.025
+	global_own_trade_power = 0.025
+	merchants = 1
+}
+
+Ogasawara = {
+	hostile_attrition = 0.025
+	production_efficiency = 0.025
+	global_manpower_modifier = 0.025
+	tolerance_own = 0.1
+}
+
+Otomo = {
+	global_tax_modifier = 0.025
+	production_efficiency = 0.025
+	global_manpower_modifier = 0.025
+	siege_ability = 0.025
+}
+
+Ouchi = {
+	caravan_power = 0.025
+	diplomatic_reputation = 0.5
+	global_own_trade_power = 0.025
+	merchants = 1
+}
+
+Utsunomiya = {
+	diplomats = 1
+	global_own_trade_power = 0.025
+	global_manpower_modifier = 0.025
+	tolerance_heretic = 0.1
+}
+
+Ashiaga = {
+	global_own_trade_power = 0.025
+	advisor_cost = -0.025
+	global_tax_modifier = 0.025
+	vassal_income = 0.025
+}
+
+Toki = {
+	land_forcelimit_modifier = 0.025
+	global_garrison_growth = 0.025
+	movement_speed = 0.025
+	idea_cost = -0.025
+}
+
+Satake = {
+	land_forcelimit_modifier = 0.025
+	global_tax_modifier = 0.025
+	development_cost = -0.025
+	improve_relation_modifier = 0.025
+}
+
+Ando = {
+	caravan_power = 0.025
+	global_colonial_growth = 5
+	global_own_trade_power = 0.025
+	land_forcelimit_modifier = 0.025
+}
+
+Chiba = {
+	global_tax_modifier = 0.025
+	manpower_recovery_speed = 0.025
+	fabricate_claims_cost = -0.025
+	production_efficiency = 0.025
+}
+
+Shimazu = {
+	global_tax_modifier = 0.025
+	manpower_recovery_speed = 0.025
+	production_efficiency = 0.025
+	trade_steering = 0.025
+}
+
+Ito = {
+	spy_offence = 0.025
+	global_garrison_growth = 0.025
+	ae_impact = -0.025
+	core_creation = -0.025
+}
+
+Isshiki = {
+	global_institution_spread = 0.025
+	global_own_trade_power = 0.025
+	movement_speed = 0.025
+	development_cost = -0.025
+}
+
+Tsutsiu = {
+	defensiveness = 0.025
+	global_missionary_strength = 0.005
+	hostile_attrition = 0.025
+	ae_impact = -0.025
+}
+
+Kikuchi = {
+	unjustified_demands = -0.025
+	tolerance_heretic = 0.1
+	tolerance_heathen = 0.1
+	global_autonomy = -0.025
+}
+
+Kono = {
+	global_own_trade_power = 0.025
+	global_foreign_trade_power = 0.025
+	naval_forcelimit_modifier = 0.025
+	privateer_efficiency = 0.025
+}
+
+Nanbu = { 
+	production_efficiency = 0.025
+	diplomats = 1
+	global_tax_modifier = 0.025
+	development_cost = -0.025
+}
+
+Takeda = {
+	global_institution_spread = 0.025
+	global_trade_goods_size_modifier = 0.025
+	improve_relation_modifier = 0.025
+	idea_cost = -0.025
+}
+
+Shiba = {
+	global_manpower_modifier = 0.025
+	production_efficiency = 0.025
+	global_trade_goods_size_modifier = 0.025
+	advisor_pool = 1
+}
+
+Ryukyu = {
+	global_foreign_trade_power = 0.025
+	diplomatic_reputation = 0.5
+	ae_impact = -0.025
+	caravan_power = 0.025
+}
+
+Kitabatake = {
+	years_of_nationalism = -2.5
+	tolerance_own = 0.1
+	same_culture_advisor_cost = -0.025
+	movement_speed = 0.025
+}
+
+Oda = {
+	global_trade_goods_size_modifier = 0.025
+	core_creation = -0.025
+	global_manpower_modifier = 0.025
+	advisor_pool = 1
+}
+
+Tokugawa = {
+	ae_impact = -0.025
+	development_cost = -0.025
+	spy_offence = 0.025
+	global_autonomy = -0.025
+}
+
+Ainu = {
+	land_attrition = -0.025
+	global_manpower_modifier = 0.025
+	defensiveness = 0.025
+	hostile_attrition = 0.025
+}
+
+Hojo = {
+	development_cost = -0.025
+	manpower_recovery_speed = 0.025
+	idea_cost = -0.025
+	same_culture_advisor_cost = -0.025
+}
+
+Chosokabe = {
+	same_culture_advisor_cost = -0.025
+	global_manpower_modifier = 0.025
+	ae_impact = -0.025
+	tolerance_own = 0.1
+}
+
+Mori = {
+	diplomats = 1
+	land_forcelimit_modifier = 0.025
+	global_autonomy = -0.025
+	development_cost = -0.025
+}
+
+Asakura = {
+	global_trade_goods_size_modifier = 0.025
+	development_cost = -0.025
+	tolerance_own = 0.1
+	ae_impact = -0.025
+}
+
+Hanover = {
+	state_maintenance_modifier = -0.025
+	global_trade_goods_size_modifier = 0.025
+	same_culture_advisor_cost = -0.025
+	global_heretic_missionary_strength = 0.005
+}
+
+Rum = {
+	manpower_recovery_speed = 0.025
+	core_creation = -0.025
+	num_accepted_cultures = 1
+	tolerance_heathen = 0.1
+}

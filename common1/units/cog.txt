@@ -1,0 +1,9 @@
+#Cog
+type = transport
+
+hull_size = 4
+base_cannons = 8
+sail_speed = 24
+
+
+sprite_level = 4

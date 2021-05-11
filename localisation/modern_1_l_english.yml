@@ -1,0 +1,248 @@
+﻿l_english:
+ OIL_LOW:0 "Human Falled Oil Prices"
+ OIL_MUCH:0 "Human Rised Oil Price"
+ ELECTRONICS_LOW:0 "Human Falled Electronics Prices"
+ ELECTRONICS_MUCH:0 "Human Rised Electronics Prices"
+ URANIUM_LOW:0 "Human Falled Uranium Prices"
+ URANIUM_MUCH:0 "Human Rised Uranium Prices"
+ 
+ RECENTLY_STABILITY_ADD:0 "Recently Added Stability"
+ 
+ low_electronics_50:0 "Falling Electronics Prices -50%"
+ low_electronics_50_desc:0 "Falling Electronics Prices -50%"
+ low_electronics_50_title:0 "Falling Electronics Prices -50%"
+ low_electronics_50_dialog:0 "Falling Electronics Prices -50%"
+ low_electronics_50_tooltip:0 "Falling Electronics Prices -50%"
+ much_electronics_50:0 "Rising Electronics Prices 50%"
+ much_electronics_50_desc:0 "Rising Electronics Prices 50%"
+ much_electronics_50_title:0 "Rising Electronics Prices 50%"
+ much_electronics_50_dialog:0 "Rising Electronics Prices 50%"
+ much_electronics_50_tooltip:0 "Rising Electronics Prices 50%"
+ 
+ 
+ much_electronics_25:0 "Rising Electronics Prices 25%"
+ much_electronics_25_desc:0 "Rising Electronics Prices 25%"
+ much_electronics_25_title:0 "Rising Electronics Prices 25%"
+ much_electronics_25_dialog:0 "Rising Electronics Prices 25%"
+ much_electronics_25_tooltip:0 "Rising Electronics Prices 25%"
+ low_electronics_25:0 "Falling Electronics Prices -25%"
+ low_electronics_25_desc:0 "Falling Electronics Prices -25%"
+ low_electronics_25_title:0 "Falling Electronics Prices -25%"
+ low_electronics_25_dialog:0 "Falling Electronics Prices -25%"
+ low_electronics_25_tooltip:0 "Falling Electronics Prices -25%"
+ 
+ 
+ 
+ 
+ much_uranium_50:0 "Rising Uranium Prices 50%"
+ much_uranium_50_desc:0 "Rising Uranium Prices 50%"
+ much_uranium_50_title:0 "Rising Uranium Prices 50%"
+ much_uranium_50_dialog:0 "Rising Uranium Prices 50%"
+ much_uranium_50_tooltip:0 "Rising Uranium Prices 50%"
+ low_uranium_50:0 "Falling Uranium Prices -50%"
+ low_uranium_50_desc:0 "Falling Uranium Prices -50%"
+ low_uranium_50_title:0 "Falling Uranium Prices -50%"
+ low_uranium_50_dialog:0 "Falling Uranium Prices -50%"
+ low_uranium_50_tooltip:0 "Falling Uranium Prices -50%"
+ 
+ 
+ 
+ much_uranium_25:0 "Rising Uranium Prices 25%"
+ much_uranium_25_desc:0 "Rising Uranium Prices 25%"
+ much_uranium_25_title:0 "Rising Uranium Prices 25%"
+ much_uranium_25_dialog:0 "Rising Uranium Prices 25%"
+ much_uranium_25_tooltip:0 "Rising Uranium Prices 25%"
+ low_uranium_25:0 "Falling Uranium Prices -25%"
+ low_uranium_25_desc:0 "Falling Uranium Prices -25%"
+ low_uranium_25_title:0 "Falling Uranium Prices -25%"
+ low_uranium_25_dialog:0 "Falling Uranium Prices -25%"
+ low_uranium_25_tooltip:0 "Falling Uranium Prices -25%"
+ 
+
+ 
+ 
+ low_oil_50:0 "Falling Oil Prices -50%"
+ low_oil_50_desc:0 "Falling Oil Prices -50%"
+ low_oil_50_title:0 "Falling Oil Prices -50%"
+ low_oil_50_dialog:0 "Falling Oil Prices -50%"
+ low_oil_50_tooltip:0 "Falling Oil Prices -50%"
+ 
+ low_oil_25:0 "Falling Oil Prices -25%"
+ low_oil_25_desc:0 "Falling Oil Prices -25%"
+ low_oil_25_title:0 "Falling Oil Prices -25%"
+ low_oil_25_dialog:0 "Falling Oil Prices -25%"
+ low_oil_25_tooltip:0 "Falling Oil Prices -25%"
+ 
+ much_oil_50:0 "Rising Oil Prices 50%"
+ much_oil_50_desc:0 "Rising Oil Prices 50%"
+ much_oil_50_title:0 "Rising Oil Prices 50%"
+ much_oil_50_dialog:0 "Rising Oil Prices 50%"
+ much_oil_50_tooltip:0 "Rising Oil Prices 50%"
+ 
+ 
+ much_oil_25:0 "Rising Oil Prices 25%"
+ much_oil_25_desc:0 "Rising Oil Prices 25%"
+ much_oil_25_title:0 "Rising Oil Prices 25%"
+ much_oil_25_dialog:0 "Rising Oil Prices 25%"
+ much_oil_25_tooltip:0 "Rising Oil Prices 25%"
+ 
+ 
+ 
+ 
+ 
+ 
+ stealing_powers:0 "Stealing Powers"
+ stealing_powers_desc:0 "Stealing Powers"
+ stealing_powers_title:0 "Stealing Powers"
+ stealing_powers_tooltip:0 "Stealing Powers"
+ stealing_powers_dialog:0 "Stealed Powers of Our Country"
+ 
+ stealing_powers_x2:0 "Stealing Powers X2"
+ stealing_powers_x2_desc:0 "Stealing Powers X2"
+ stealing_powers_x2_title:0 "Stealing Powers X2"
+ stealing_powers_x2_tooltip:0 "Stealing Powers X2"
+ stealing_powers_x2_dialog:0 "Stealed Powers of Our Country X2"
+ 
+ 
+ low_Car:0 "Falling Car Prices -50%"
+ low_Car_desc:0 "Falling Car Prices -50%"
+ low_Car_title:0 "Falling Car Prices -50%"
+ low_Car_dialog:0 "Falling Car Prices -50%"
+ low_Car_tooltip:0 "Falling Car Prices -50%"
+ 
+ failling_oil_price_root:0 "Falled Oil Prices"
+ failling_oil_price_root_25:0 "Falled Oil Prices"
+ failling_oil_price_root_1:0 "Falled Oil Prices"
+ failling_oil_price_root_1_25:0 "Falled Oil Prices"
+ failling_oil_price_from:0 "Falled Oil Prices"
+ failling_oil_price_from_25:0 "Falled Oil Prices"
+ failling_oil_price_from_1:0 "Falled Oil Prices"
+ rising_oil_price_root:0 "Rising Oil Price"
+ rising_oil_price_root_25:0 "Rising Oil Price"
+ rising_oil_price_root_1:0 "Rising Oil Price"
+ rising_oil_price_root_1_25:0 "Rising Oil Price"
+ rising_oil_price_from:0 "Rising Oil Price"
+ rising_oil_price_from_25:0 "Rising Oil Price"
+ 
+ 
+ failling_electronics_price_root:0 "Falling Electronics Prices"
+ failling_electronics_price_root_25:0 "Falling Electronics Prices"
+ failling_electronics_price_root_1:0 "Falling Electronics Prices"
+ failling_electronics_price_from:0 "Falling Electronics Prices"
+ failling_electronics_price_from_25:0 "Falling Electronics Prices"
+ failling_electronics_price_root_1_25:0 "Falling Electronics Prices"
+ rising_electronics_price_root:0 "Rising Electronics Prices"
+ rising_electronics_price_root_25:0 "Rising Electronics Prices"
+ rising_electronics_price_root_1:0 "Rising Electronics Prices"
+ rising_electronics_price_from:0 "Rising Electronics Prices"
+ rising_electronics_price_from_25:0 "Rising Electronics Prices"
+ rising_electronics_price_root_1_25:0 "Falling Electronics Prices"
+ 
+ 
+ 
+ failling_uranium_price_root_1:0 "Falling Uranium Prices"
+ failling_uranium_price_root_25:0 "Falling Uranium Prices"
+ failling_uranium_price_from:0 "Falling Uranium Prices"
+ failling_uranium_price_from_25:0 "Falling Uranium Prices"
+ failling_uranium_price_root_1_25:0 "Falling Uranium Prices"
+ rising_uranium_price_root:0 "Rising Uranium Prices"
+ rising_uranium_price_root_25:0 "Rising Uranium Prices"
+ rising_uranium_price_root_1:0 "Rising Uranium Prices"
+ rising_uranium_price_from:0 "Rising Uranium Prices"
+ rising_uranium_price_from_25:0 "Rising Uranium Prices"
+ rising_uranium_price_root_1_25:0 "Rising Uranium Prices"
+ 
+ 
+ 
+ IS_GREAT_POWER_TRADE_BIG:0 "Is Great Power"
+ IS_GREAT_POWER_DONT_WANT_TRADE:0 "Great Power Don't Want to Trade"
+ HAVE_ENOUGH_MONEY_TO_TRADE_BIG:0 "Have Enough Money"
+ HAVE_ENOUGH_PRESTIGR_TO_TRADE_BIG:0 "Have Enough Prestige"
+ 
+ ALLY_WITH:0 "Alliance"
+ RIVAL_WITH:0 "You Are Rival"
+ 
+ low_oil_price_1_50:0 "Human Changed Price Oil -50%"
+ much_oil_price_1_50:0 "Human Changed Price Oil 50%"
+ low_oil_price_1_25:0 "Human Changed Price Oil -25"
+ much_oil_price_1_25:0 "Human Changed Price Oil 25"
+ 
+ 
+ low_electronics_price_1_50:0 "Human Changed Price Electronics -50%"
+ much_electronics_price_1_50:0 "Human Changed Price Electronics 50%"
+ low_electronics_price_1_25:0 "Human Changed Price Electronics -25"
+ much_electronics_price_1_25:0 "Human Changed Price Electronics 25"
+ 
+ 
+ low_uranium_price_1_50:0 "Human Changed Price Uranium -50%"
+ much_uranium_price_1_50:0 "Human Changed Price Uranium 50%"
+ low_uranium_price_1_25:0 "Human Changed Price Uranium -25"
+ much_uranium_price_1_25:0 "Human Changed Price Uranium 25"
+ 
+ 
+ 
+ 
+ 
+ low_opinion_oil_good_50:0 "Good Opinion For Oil Price -50"
+ low_opinion_oil_bad_50:0 "Bad Opinion For Oil Price -50"
+ much_opinion_oil_good_50:0 "Good Opinion For Oil Price 50"
+ much_opinion_oil_bad_50:0 "Bad Opinion For Oil Price 50"
+ low_opinion_oil_good_25:0 "Good Opinion For Oil Price -25"
+ low_opinion_oil_bad_25:0 "Bad Opinion For Oil Price -25"
+ much_opinion_oil_bad_25:0 "Bad Opinion For Oil Price 25"
+ much_opinion_oil_good_25:0 "Good Opinion For Oil Price 25"
+ 
+ 
+ low_opinion_electronics_good_50:0 "Good Opinion For Electronics Price -50"
+ low_opinion_electronics_bad_50:0 "Bad Opinion For Electronics Price -50"
+ much_opinion_electronics_good_50:0 "Good Opinion For Electronics Price 50"
+ much_opinion_electronics_bad_50:0 "Bad Opinion For Electronics Price 50"
+ low_opinion_electronics_good_25:0 "Good Opinion For Electronics Price -25"
+ low_opinion_electronics_bad_25:0 "Bad Opinion For Electronics Price -25"
+ much_opinion_electronics_bad_25:0 "Bad Opinion For Electronics Price 25"
+ much_opinion_electronics_good_25:0 "Good Opinion For Electronics Price 25"
+ 
+ 
+ low_opinion_uranium_good_50:0 "Good Opinion For Uranium Price -50"
+ low_opinion_uranium_bad_50:0 "Bad Opinion For Uranium Price -50"
+ much_opinion_uranium_good_50:0 "Good Opinion For Uranium Price 50"
+ much_opinion_uranium_bad_50:0 "Bad Opinion For Uranium Price 50"
+ low_opinion_uranium_good_25:0 "Good Opinion For Uranium Price -25"
+ low_opinion_uranium_bad_25:0 "Bad Opinion For Uranium Price -25"
+ much_opinion_uranium_bad_25:0 "Bad Opinion For Uranium Price 25"
+ much_opinion_uranium_good_25:0 "Good Opinion For Uranium Price 25"
+ 
+ 
+ 
+ 
+ 
+ 
+ opinion_sanction_1:0 "Sanction X1"
+ opinion_sanction_2:0 "Sanction X2"
+ opinion_sanction_3:0 "Sanction X3"
+ opinion_sanction_4:0 "Sanction X4"
+ create_embassy:0 "Embassy"
+ create_embassy_net:0 "Don't Want Embassy"
+ added_stability:0 "Added Stability To Our Country"
+ stability_added:0 "Added Stability To Our Country"
+ recently_added_stability:0 "Recently Added Stability To Our Country"
+ 
+ 
+ south_empire_title:0 "Make South Empire"
+ german_empire_title:0 "Restore German Empire"
+ great_britain_title:0 "Restore Great Britain"
+ persian_empire_title:0 "Restore Persian Empire"
+ mexican_empire_title:0 "Restore Mexican Empire"
+ arabian_empire_title:0 "Rstore Arabian Empire"
+ restore_ottoman_empire:0 "Restore Ottoman Empire"
+ great_israel_title:0 "Make Great Israel"
+ 
+ 
+ 
+ MARCHTOOLARGE:0 "March Too Large"
+ MARCHTOOLARGEUS:0 "March Too Large Us"
+ 
+ caspian_region:0 "Capian Sea"
+ caspian_sea_area:0 "Capian sea"
+ volga_river_area:0 "Volga"
+ don_area:0 "Don"

@@ -1,0 +1,14 @@
+province = {
+    war = {
+        active = {
+            is_at_war = yes
+			NOT = { tag = ZOM }
+        }
+        eval_multiply = {
+            factor = 0.4
+            modifier = {
+				has_province_modifier = arctic
+            }
+        }
+    }
+}

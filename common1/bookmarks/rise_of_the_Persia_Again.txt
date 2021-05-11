@@ -1,0 +1,24 @@
+bookmark =
+{
+	name = "Rise_of_THE_PERSIA_AGAIN"
+	desc = "RISE_OF_THE_PERSIA_DESC"
+	date = 2021.5.7
+		
+	country = IRA
+	country = JAP
+	country = USA
+	country = FR2
+	country = ISR
+	country = CHN
+	country = GER
+	country = BRZ
+	country = SAU
+	country = IND
+
+	easy_country = USA
+	easy_country = CHN
+	easy_country = JAP
+
+	center = 10837
+	default = yes
+}

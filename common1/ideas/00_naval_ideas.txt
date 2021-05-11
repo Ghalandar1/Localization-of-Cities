@@ -1,0 +1,586 @@
+
+naval_ideas = {
+	category = DIP
+	
+	trigger = {
+		 num_of_ports = 1
+	}
+
+	bonus = {
+		naval_forcelimit_modifier = 0.20
+	}
+
+	boarding_parties = {
+		own_coast_naval_combat_bonus = 1
+	}
+	improved_rams = {
+		ship_durability = 0.1
+	}
+	naval_cadets = {
+		sunk_ship_morale_hit_recieved = -0.20
+	}
+	naval_glory = {
+		navy_tradition = 0.25
+	}
+	press_gangs = {
+		sailors_recovery_speed = 0.25
+	}
+	oak_forests_for_ships = {
+	}
+	superior_seamanship = {
+		global_naval_engagement_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 10.0
+		modifier = {
+			factor = 1
+			num_of_ports = 1
+		}
+		modifier = {
+			factor = 10
+			num_of_ports = 25
+		}
+		modifier = {
+			factor = 20
+			num_of_ports = 50
+		}
+		modifier = {
+			factor = 30
+			num_of_ports = 100
+		}
+		modifier = {
+			factor = 70
+			num_of_ports = 200
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				has_reform = pirate_republic_reform
+			}
+		}
+	}
+}
+
+
+maritime_ideas = {
+	category = DIP
+
+	trigger = {
+		has_idea_group = naval_ideas
+	}
+
+	bonus = {
+		leader_naval_shock = 1
+		blockade_efficiency = 0.5
+	}
+
+	sea_hawks = {
+		navy_tradition = 1
+	}
+	merchant_marine_2 = {
+		global_sailors_modifier = 0.5
+		# <<WIKI>> add_building = navymanpower_lvl_2
+	}
+	sheltered_ports = {
+		global_ship_repair = 0.5
+		sailor_maintenance_modifer = -0.2
+	}
+	grand_navy_2 = {
+		naval_forcelimit_modifier = 0.6
+		# <<WIKI>> add_building = navyforcelimit_lvl_2
+	}
+	ships_penny = {
+		global_ship_cost = -0.20
+	}
+	excellent_shipwrights = {
+		leader_naval_manuever = 1
+	}
+	naval_fighting_instruction = {
+		leader_naval_fire = 1
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 3 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 5 }
+			num_of_cities = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			tag = SPA
+			tag = ENG
+			tag = GBR
+			tag = CAS
+			tag = POR
+			tag = NED
+			tag = HOL
+			tag = BUR
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 8 }
+			num_of_cities = 10
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				num_of_heavy_ship = 20
+				num_of_light_ship = 50
+				num_of_galley = 70
+			}
+		}
+	
+	}
+}
+
+
+leadernav0 = {
+	category = DIP
+	
+	 trigger = {
+		has_idea_group = naval_ideas
+	}
+
+	bonus = {
+		naval_attrition = -0.1
+	}
+		
+	
+	leadernav1 = {
+		leader_naval_manuever = 2
+	}
+	leadernav2 = {
+		leader_naval_fire = 2
+	}
+	leadernav3 = {
+		leader_naval_shock = 2
+	}
+
+	leadernav4 = {
+		leader_siege = 2
+	}
+
+	leadernav5 = {
+		global_naval_engagement_modifier = 0.25
+	}
+	leadernav6 = {
+		naval_morale = 0.20
+	}
+	leadernav7 = {
+		naval_maintenance_modifier = -0.25
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 30
+			personality = ai_militarist 
+		}
+		modifier = {			
+			factor = 4.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			total_development = 1000
+		}
+		modifier = {
+			factor = 3
+			total_development = 2000
+		}
+		modifier = {
+			factor = 4
+			total_development = 3000
+		}
+		modifier = {
+			factor = 5
+			total_development = 5000
+		}
+		modifier = {
+			factor = 6
+			total_development = 7000
+		}
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	}
+}
+
+flottenbasis0 = {
+	category = DIP
+	
+	trigger = {
+		has_idea_group = naval_ideas 
+	}
+
+	bonus = {
+		recover_navy_morale_speed = 0.15
+	}
+		
+	
+	flottenbasis2 = {
+		sailor_maintenance_modifer = -0.25
+		
+	}
+	flottenbasis3 = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	flottenbasis1 = {
+		sailors_recovery_speed = 0.10
+	}
+
+	flottenbasis4 = {
+		global_sailors_modifier = 0.1
+		# <<WIKI>> add_age_sailors = 25000
+	}
+
+	flottenbasis5 = {
+		naval_morale = 0.15
+		
+	}
+	flottenbasis6 = {
+		navy_tradition_decay = -0.01
+	}
+	flottenbasis7 = {
+		global_ship_repair = 0.2
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 4 }
+			num_of_cities = 4
+		}
+		
+		modifier = {
+			factor = 1.5
+			num_of_ports = 16
+		}
+		
+		modifier = {
+			factor = 2
+			OR = {
+				num_of_heavy_ship = 12
+				num_of_light_ship = 18
+				num_of_galley = 28
+			}
+			
+		}
+		modifier = {			
+			factor = 1.5
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		
+		modifier = {
+			factor = 10
+			num_of_colonists = 1 
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		
+		modifier = {
+			factor = 4
+			personality = ai_militarist 
+		}
+	}
+}
+
+
+gross0 = {
+	category = DIP
+
+	trigger = {
+		has_idea_group = maritime_ideas 
+	}
+	
+	bonus = {
+		recover_navy_morale_speed = 0.15
+		# <<WIKI>> extra_navy tradition_heavy_ships = yes
+	}
+		
+	
+	gross1 = {
+		heavy_ship_cost = -0.15
+	}
+	gross2 = {
+		heavy_ship_power = 0.15
+	}
+	gross3 = {
+		global_ship_recruit_speed = -0.1
+	}
+
+	gross4 = {
+		global_sailors_modifier = 0.25
+	}
+
+	gross5 = {
+		capture_ship_chance = 0.2
+	}
+	gross6 = {
+		global_ship_repair = 0.15
+	}
+	gross7 = {
+		ship_power_propagation = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 3 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 5 }
+			num_of_cities = 5
+		}
+		modifier = {
+			factor = 10
+			OR = {
+			tag = SPA
+			tag = ENG
+			tag = GBR
+			tag = POR
+			tag = NED
+			tag = RUS
+			tag = ITA
+			tag = USA
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 5 }
+		}
+		modifier = {
+			factor = 1
+			num_of_ports = 25
+		}
+		modifier = {
+			factor = 5
+			num_of_ports = 50
+		}
+		modifier = {
+			factor = 10
+			num_of_ports = 100
+		}
+		modifier = {
+			factor = 20
+			num_of_ports = 200
+		}
+		modifier = {
+			factor = 20
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 2
+			government_rank = 2  # Kingdom
+		}
+	
+	}
+}
+
+
+
+galle0 = {
+	category = DIP
+
+	trigger = {
+		has_idea_group = maritime_ideas 
+	}
+	
+	bonus = {
+		sailors_recovery_speed = 0.15
+		# <<WIKI>> extra_navy tradition_galley = yes
+	}
+		
+	
+	galle1 = {
+		galley_cost = -0.15
+		transport_cost = -0.15
+	}
+	galle2 = {
+		own_coast_naval_combat_bonus = 1
+	}
+	galle3 = {
+		galley_power = 0.15
+		transport_power = 0.2
+	}
+
+	galle7 = {
+		leader_naval_manuever = 1
+	}
+
+	galle5 = {
+		sailor_maintenance_modifer = -0.25
+		
+	}
+	galle6 = {
+		ship_durability = 0.15
+		# <<WIKI>> add_age_forcelimit_naval = 50
+	}
+	galle4 = {
+		blockade_efficiency = 0.15
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 3 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 5 }
+			num_of_cities = 5
+		}
+
+		modifier = {
+			factor = 4
+				num_of_galley = 25
+			
+		}
+		modifier = {
+			factor = 15
+			OR = {
+			tag = TUR
+			tag = VEN
+			tag = GEN
+			}
+		}
+		modifier = {
+			factor = 10
+			capital_scope = {
+				OR = {
+					region = italy_region
+					region = baltic_region
+					region = balkan_region
+					region = maghreb_region
+					region = japan_region
+					region = anatolia_region
+					
+				}
+			}
+			NOT = { technology_group = high_american }
+		}
+		
+	}
+}
+
+
+handel0 = {
+	category = DIP
+
+	trigger = {
+		has_idea_group = maritime_ideas
+	}
+	
+	bonus = {
+		merchants = 3
+		# <<WIKI>> extra_navy tradition_light_ships = yes
+	}
+		
+	
+	handel1 = {
+		light_ship_cost = -0.15
+	}
+	handel2 = {
+		light_ship_power = 0.25
+	}
+	handel3 = {
+		justify_trade_conflict_cost = -0.15
+	}
+
+	handel4 = {
+		global_ship_trade_power = 0.1
+	}
+
+	handel5 = {
+		trade_range_modifier = 0.10
+	}
+	handel6 = {
+		ship_power_propagation = 0.25		
+	}
+	handel7 = {
+		embargo_efficiency = 0.25
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 20
+			num_of_ports = 1
+		}
+		modifier = {
+			factor = 20
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 20
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 20
+			num_of_ports = 15
+		}
+		modifier = {
+			factor = 20
+			num_of_ports = 20
+		}
+		modifier = {
+			factor = 25
+
+			num_of_light_ship = 50
+		}
+		
+	}
+}
+
+
+
+	

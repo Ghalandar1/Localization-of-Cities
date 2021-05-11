@@ -1,0 +1,24 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 4801
+primary_culture = mongol
+religion = secularism
+technology_group = chinese 
+2019.5.30 = {
+	monarch = {
+		name = "Battulga Khaltmaa"
+		birth_date = 1963.3.3
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = vajrayana
+	}
+}

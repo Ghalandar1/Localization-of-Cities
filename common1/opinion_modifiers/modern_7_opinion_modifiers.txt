@@ -1,0 +1,147 @@
+
+############################# 50
+####################################Cars
+low_opinion_chinaware_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_chinaware_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_chinaware_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_chinaware_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+######################################Gems
+low_opinion_cocoa_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_cocoa_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_cocoa_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_cocoa_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+########################################Coal
+low_opinion_coffee_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_coffee_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_coffee_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_coffee_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+####################################### 25
+
+
+
+
+low_opinion_chinaware_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_chinaware_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_chinaware_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_chinaware_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_cocoa_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_cocoa_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_cocoa_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_cocoa_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_coffee_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_coffee_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_coffee_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_coffee_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+

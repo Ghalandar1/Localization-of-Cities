@@ -1,0 +1,12 @@
+# Zombies
+
+unit_type = zombie
+type = infantry
+
+maneuver = 15
+offensive_morale = 15
+defensive_morale = 15
+offensive_fire = 15
+defensive_fire = 15
+offensive_shock = 15
+defensive_shock = 15

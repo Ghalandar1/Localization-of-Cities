@@ -1,0 +1,184 @@
+namespace = cars_sanction
+
+#cars_sanction Point Warning X1
+country_event = {
+	id = cars_sanction.1x
+	title = "cars_sanction.1title"
+	desc = "cars_sanction.1desc"
+	picture = cars_sanctionX1_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cars_sanction.1opt"
+		
+		
+		
+	
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 5 NOT = { total_development = 1000 } } }
+					FROM = { add_adm_power = -25 add_mil_power = -25 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 1000 NOT = { total_development = 2000 } } }
+					FROM = { add_adm_power = -30  add_mil_power = -30 }
+					
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 2000 NOT = { total_development = 3000 } } }
+					FROM = { add_adm_power = -35 add_mil_power = -35 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 3000 NOT = { total_development = 4000 } } }
+					FROM = { add_adm_power = -40 add_mil_power = -40 }
+				}
+			
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 4000 NOT = { total_development = 5000 } } }
+					FROM = { add_adm_power = -45 add_mil_power = -45 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 5000 NOT = { total_development = 6000 } } }
+					FROM = { add_adm_power = -50 add_mil_power = -50 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 6000 NOT = { total_development = 7000 } } }
+					FROM = { add_adm_power = -55 add_mil_power = -55 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 7000 NOT = { total_development = 40000 } } }
+					FROM = { add_adm_power = -60 add_mil_power = -60 }
+				}
+			
+			
+				random_country = { limit = { tag = event_target:cars_embargo_temp   }
+				
+					country_event = { id = cars_sanction.2x } 
+						every_owned_province = {
+						limit = {
+							trade_goods = cars
+						}
+						add_province_modifier = {
+							name = cars_ban_50
+							duration = 1825
+						}
+					}
+				
+				}
+			
+	}
+	
+	option = {
+		name = "cars_sanction.2opt"	
+			
+			
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 5 NOT = { total_development = 1000 } } }
+					FROM = { add_adm_power = -50 add_mil_power = -50  }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 1000 NOT = { total_development = 2000 } } }
+					FROM = { add_adm_power = -60 add_mil_power = -60 }
+					
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 2000 NOT = { total_development = 3000 } } }
+					FROM = { add_adm_power = -70 add_mil_power = -70 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 3000 NOT = { total_development = 4000 } } }
+					FROM = { add_adm_power = -80 add_mil_power = -80 }
+				}
+			
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 4000 NOT = { total_development = 5000 } } }
+					FROM = { add_adm_power = -90 add_mil_power = -90 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 5000 NOT = { total_development = 6000 } } }
+					FROM = { add_adm_power = -100 add_mil_power = -100 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 6000 NOT = { total_development = 7000 } } }
+					FROM = { add_adm_power = -110 add_mil_power = -110 }
+				}
+			if = {
+					limit = { event_target:cars_embargo_temp = { total_development = 7000 NOT = { total_development = 40000 } } }
+					FROM = { add_adm_power = -120 add_mil_power = -120 }
+				}
+				
+			random_country = { limit = { tag = event_target:cars_embargo_temp   }
+				
+					country_event = { id = cars_sanction.3x }
+						every_owned_province = {
+							limit = {
+								trade_goods = cars
+							}
+							add_province_modifier = {
+								name = cars_ban_100
+								duration = 1825
+							}
+						}
+					add_country_modifier = {
+						name = cars_ban_modifire_from_100
+						duration = 1825
+					}
+				
+			}
+			
+		
+	}
+	option = {
+		name = "cars_sanction.4opt"	
+		
+		}
+}
+
+#############################################################################
+
+country_event = {
+	id = cars_sanction.2
+	title = "cars_sanction.2title"
+	desc = "cars_sanction.2desc"
+	picture = cars_sanctionX1_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "cars_sanction.3opt"
+		
+		change_price = {
+				trade_goods = cars
+				key = EMBARGO_50
+				value = 0.02
+				duration = 1825
+		}
+	}
+}
+
+#cars_sanction Point Warning X2
+country_event = {
+	id = cars_sanction.3x
+	title = "cars_sanction.3title"
+	desc = "cars_sanction.3desc"
+	picture = cars_sanctionX1_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	
+	option = {
+		name = "cars_sanction.3opt"
+		
+		change_price = {
+				trade_goods = cars
+				key = EMBARGO_100
+				value = 0.05
+				duration = 1825
+		}
+	}
+}
+
+
+

@@ -1,0 +1,39 @@
+﻿l_english:
+ 
+ support_Military.1disciplinetitle:0 "Support Discipline"
+ support_Military.1disciplinedesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GDiscipline§!"
+ support_Military.1opt:0 "Oh My God"
+ 
+ 
+ 
+ support_Military.2firetitle:0 "Support Fire"
+ support_Military.2firedesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GFire§!"
+ 
+ 
+ support_Military.3landlimittitle:0 "Support Land Force Limit"
+ support_Military.3landlimitdesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GLand Force Limit§!"
+ 
+ 
+ support_Military.4navallimittitle:0 "Support Naval Force Limit"
+ support_Military.4navallimitdesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GNaval Force Limit§!"
+ 
+ 
+ support_Military.5maintancetitle:0 "Support Maintenance"
+ support_Military.5maintancedesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GMaintenance§!"
+ 
+ 
+ support_Military.6navalmoraletitle:0 "Support Naval Morale"
+ support_Military.6navalmoraledesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GNaval Morale§!"
+ 
+ 
+ support_Military.7landmoraletitle:0 "Support Land Morale"
+ support_Military.7landmoraledesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GLand Morale§!"
+ 
+ 
+ support_Military.8shoktitle:0 "Support Shok"
+ support_Military.8shokdesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GShok§!"
+ 
+ 
+ support_Military.9speedtitle:0 "Support Speed"
+ support_Military.9speeddesc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! Boosts §R[From.From.Owner.GetName]§!'s military §GSpeed§!"
+

@@ -1,0 +1,589 @@
+free_one_by_one_company = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_1 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_2 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_3 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_4 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_5 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_6 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_7 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_8 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_9 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_10 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_11 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_12 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_13 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_14 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_15 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_16 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_17 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_18 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_19 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_20 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_21 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_22 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_23 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_24 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_25 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_26 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_27 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_28 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_29 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+
+free_one_by_one_company_30 = {
+    regiments_per_development = 0.0001
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				ai = no
+				NOT = { army_size_percentage = 1 }
+			}
+		}
+        total_development = 3
+    }
+	modifier = { 
+		infantry_power = 0.05
+	}
+}
+

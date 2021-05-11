@@ -1,0 +1,7 @@
+spriteTypes = {
+		
+	spriteType = {
+		name = "GFX_combat_terrain_impassable_mountains"
+		texturefile = "gfx/interface/combat_terrain_impassable_mountains.dds"
+	}	
+}

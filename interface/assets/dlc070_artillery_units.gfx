@@ -1,0 +1,93 @@
+objectTypes = {
+
+
+
+
+pdxmesh = {
+		name = "arup_western_artillery_01_mesh"
+		file = "gfx/models/Units/artillery.mesh"
+		
+		animation = { id = "arup_western_artillery_01_attack" 	type = "arup_artillery_01_attack_animation" }
+		animation = { id = "arup_western_artillery_01_idle"	type = "arup_artillery_01_idle_animation" }
+		animation = { id = "arup_western_artillery_01_moving"	type = "arup_artillery_01_moving_animation" }
+		
+		scale = 0.8
+	}
+
+pdxmesh = {
+		name = "arup_eastern_artillery_01_mesh"
+		file = "gfx/models/Units/artillery.mesh"
+		
+		animation = { id = "arup_eastern_artillery_01_attack" 	type = "arup_artillery_01_attack_animation" }
+		animation = { id = "arup_eastern_artillery_01_idle"	type = "arup_artillery_01_idle_animation" }
+		animation = { id = "arup_eastern_artillery_01_moving"	type = "arup_artillery_01_moving_animation" }
+		
+		scale = 0.8
+	}
+
+pdxmesh = {
+		name = "arup_muslim_artillery_01_mesh"
+		file = "gfx/models/Units/artillery.mesh"
+		
+		animation = { id = "arup_muslim_artillery_01_attack" 	type = "arup_artillery_01_attack_animation" }
+		animation = { id = "arup_muslim_artillery_01_idle"	type = "arup_artillery_01_idle_animation" }
+		animation = { id = "arup_muslim_artillery_01_moving"	type = "arup_artillery_01_moving_animation" }
+		
+		scale = 0.8
+	}
+	
+pdxmesh = {
+		name = "arup_asian_artillery_01_mesh"
+		file = "gfx/models/Units/artillery.mesh"
+		
+		animation = { id = "arup_asian_artillery_01_attack" 	type = "arup_artillery_01_attack_animation" }
+		animation = { id = "arup_asian_artillery_01_idle"	type = "arup_artillery_01_idle_animation" }
+		animation = { id = "arup_asian_artillery_01_moving"	type = "arup_artillery_01_moving_animation" }
+		
+		scale = 0.8
+	}
+	
+pdxmesh = {
+		name = "arup_indian_artillery_01_mesh"
+		file = "gfx/models/Units/artillery.mesh"
+		
+		animation = { id = "arup_indian_artillery_01_attack" 	type = "arup_artillery_01_attack_animation" }
+		animation = { id = "arup_indian_artillery_01_idle"	type = "arup_artillery_01_idle_animation" }
+		animation = { id = "arup_indian_artillery_01_moving"	type = "arup_artillery_01_moving_animation" }
+		
+		scale = 0.8
+	}
+
+pdxmesh = {
+		name = "arup_african_artillery_01_mesh"
+		file = "gfx/models/Units/artillery.mesh"
+		
+		animation = { id = "arup_african_artillery_01_attack" 	type = "arup_artillery_01_attack_animation" }
+		animation = { id = "arup_african_artillery_01_idle"	type = "arup_artillery_01_idle_animation" }
+		animation = { id = "arup_african_artillery_01_moving"	type = "arup_artillery_01_moving_animation" }
+		
+		scale = 0.8
+	}
+
+pdxmesh = {
+		name = "arup_southamerica_artillery_01_mesh"
+		file = "gfx/models/Units/artillery.mesh"
+		
+		animation = { id = "arup_southamerica_artillery_01_attack" 	type = "arup_artillery_01_attack_animation" }
+		animation = { id = "arup_southamerica_artillery_01_idle"	type = "arup_artillery_01_idle_animation" }
+		animation = { id = "arup_southamerica_artillery_01_moving"	type = "arup_artillery_01_moving_animation" }
+		
+		scale = 0.8
+	}
+	
+pdxmesh = {
+		name = "arup_northamerica_artillery_01_mesh"
+		file = "gfx/models/Units/artillery.mesh"
+		
+		animation = { id = "arup_northamerica_artillery_01_attack" 	type = "arup_artillery_01_attack_animation" }
+		animation = { id = "arup_northamerica_artillery_01_idle"	type = "arup_artillery_01_idle_animation" }
+		animation = { id = "arup_northamerica_artillery_01_moving"	type = "arup_artillery_01_moving_animation" }
+		
+		scale = 0.8
+	}
+}

@@ -1,0 +1,144 @@
+namespace = support_Military
+
+
+country_event = {
+	id = support_Military.1discipline
+	title = "support_Military.1disciplinetitle"
+	desc = "support_Military.1disciplinedesc"
+	picture = Military_Support_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+country_event = {
+	id = support_Military.2fire
+	title = "support_Military.2firetitle"
+	desc = "support_Military.2firedesc"
+	picture = Military_Support_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+country_event = {
+	id = support_Military.3landlimit
+	title = "support_Military.3landlimittitle"
+	desc = "support_Military.3landlimitdesc"
+	picture = Military_Support_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+country_event = {
+	id = support_Military.4navallimit
+	title = "support_Military.4navallimittitle"
+	desc = "support_Military.4navallimitdesc"
+	picture = Naval_Support_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+country_event = {
+	id = support_Military.5maintance
+	title = "support_Military.5maintancetitle"
+	desc = "support_Military.5maintancedesc"
+	picture = Military_Support_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+country_event = {
+	id = support_Military.6navalmorale
+	title = "support_Military.6navalmoraletitle"
+	desc = "support_Military.6navalmoraledesc"
+	picture = Naval_Support_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+
+country_event = {
+	id = support_Military.7landmorale
+	title = "support_Military.7landmoraletitle"
+	desc = "support_Military.7landmoraledesc"
+	picture = Military_Support_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+country_event = {
+	id = support_Military.8shok
+	title = "support_Military.8shoktitle"
+	desc = "support_Military.8shokdesc"
+	picture = Military_Support_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+country_event = {
+	id = support_Military.9speed
+	title = "support_Military.9speedtitle"
+	desc = "support_Military.9speeddesc"
+	picture = Military_Support_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "support_Military.1opt"
+		
+	}
+}
+
+
+
+
+
+

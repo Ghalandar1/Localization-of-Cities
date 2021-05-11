@@ -1,0 +1,164 @@
+great_unifier = {
+	prestige = 1
+	army_tradition_decay = -0.05
+}
+
+sengoku_great_unifier = {
+	war_exhaustion = -0.1
+	army_tradition_decay = -0.05
+}
+
+divine_conqueror = {
+	warscore_cost_vs_other_religion = -0.1
+	global_missionary_strength = 0.05
+}
+
+great_conqueror = {
+	discipline = 0.05
+	years_of_nationalism = -3
+}
+
+traitor_of_honnoji = {
+	diplomatic_reputation = 3
+}
+
+#Barbarian Conqueror
+superator_barbara = {
+	loot_amount = 0.2
+	harsh_treatment_cost = -0.25
+}
+
+#Tamer of Lions
+leones_frenatoris = {
+	mercenary_discipline = 0.1
+	reduced_liberty_desire = 5
+}
+
+#Attila's nickname
+scourge_of_god = {
+	horde_unity = 1
+	loot_amount = 0.2
+}
+
+#God-king of Hindu Southeast Asia
+devaraja = {
+	legitimacy = 1
+	monthly_karma = 0.05
+}
+
+#Imperial Court Regent Japan
+ruler_is_kampaku = {
+	prestige = 0.2
+	legitimacy = 1
+	diplomatic_reputation = 1
+}
+
+kus_title_kushanshah = {
+	legitimacy = 1
+}
+
+#Barbarian King of the Romans
+rex_barbarus_romanum = {
+	prestige_decay = -0.05
+	army_tradition = 1
+}
+
+king_of_the_lombards_and_romans = {
+	promote_culture_cost = -0.5
+	legitimacy = 1.2
+}
+
+lon_el_conde_de_castilla = {
+	fort_maintenance_modifier = -0.1
+	rival_border_fort_maintenance = -0.25
+}
+
+conqueror_of_rum = {
+	legitimacy = 0.5
+	advisor_pool = 1
+}
+
+sultan_of_the_romans = {
+	claim_duration = 0.2
+	diplomatic_reputation = 1
+}
+
+#Xiongnu Chanyu
+chengli_gutu_chanyu = {
+	raze_power_gain = 0.1
+	loot_amount = 0.1
+}
+
+sotapanna_mod = {
+	monthly_karma = 0.1
+	prestige = 0.25
+}
+
+hep_raja_of_huna = {
+	prestige = 1
+	horde_unity = 2
+}
+
+shahanshah_mod = {
+	legitimacy = 1.5
+	prestige = 1
+}
+
+apostle_of_kongo = {
+	prestige = 0.5
+	papal_influence = 0.5
+	church_power_modifier = 0.5
+	monthly_fervor_increase = 1
+}
+
+imperator_romanus = {
+	prestige = 1
+	legitimacy = 1
+	reduced_liberty_desire = 5
+}
+
+piissimus_rex = {
+	global_unrest = -2
+}
+
+
+
+
+###Epithets###
+epithet_the_mighty = {
+	land_morale = 0.1
+}
+
+epithet_the_conqueror = {
+	years_of_nationalism = -5
+}
+
+epithet_the_great = {
+	diplomatic_reputation = 2
+}
+
+epithet_the_magnanimous = {
+	global_unrest = -2
+	reduced_liberty_desire = 5
+}
+
+epithet_the_victorious = {
+	army_tradition_decay = -0.1
+	war_exhaustion = -0.1
+}
+
+epithet_the_saint = {
+	devotion = 1
+	monthly_karma = 0.1
+	reduced_liberty_desire = 10
+}
+
+epithet_the_pious = {
+	tolerance_own = 2
+	global_missionary_strength = 0.05
+}
+
+epithet_the_splendid = {
+	prestige = 0.5
+	army_tradition_from_battle = 0.1
+}

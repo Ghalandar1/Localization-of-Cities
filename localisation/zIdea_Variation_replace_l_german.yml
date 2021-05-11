@@ -1,0 +1,8 @@
+﻿l_german:
+ FACTIONS_TITLE:0 "Rat"
+ M_FACTION_BUTTON:0 "Rat"
+ mechanic_has_parliament_yes:2 "Aktiviert Parlament."
+ CHANGE_REFORM_DESC:1 "Der Wechsel zur Regierungsreform $REFORM|Y$ fügt eurer Nation $COST|R$ Korruption und §R-1§W Stabilität hinzu und hat folgende Auswirkung:\n$BENEFITS$"
+ CHANGE_REFORM_CONFIRM_DESC:1 "Seid Ihr sicher, dass Ihr zur Regierungsreform $REFORM|Y$ wechseln möchtet? Dies fügt Eurer Nation $COST|R$ Korruption und und §R-1§W Stabilitä hinzu und hat folgende Auswirkung:\n$BENEFITS$$POTENTIAL$"
+ 
+ 

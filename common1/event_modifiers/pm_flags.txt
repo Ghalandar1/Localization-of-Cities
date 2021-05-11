@@ -1,0 +1,50 @@
+pm_flag_gift = {
+    global_tax_modifier = 0.01
+}
+
+pm_flag_giftmp = {
+    global_manpower_modifier = 0.01
+}
+
+pm_flag_Ngift = {
+    global_tax_modifier = 0.01
+}
+
+pm_flag_stealmp = {
+    global_manpower_modifier = 0.01
+}
+
+pm_flag_legit = {
+    legitimacy = 0.01
+    meritocracy = 0.01
+    devotion = 0.01
+    republican_tradition = 0.01 
+}
+
+pm_flag_dev1 = {
+    trade_efficiency = 0.01
+}
+
+pm_flag_e_dev = {
+    development_cost = 0.01
+}
+
+pm_flag_e_nav = {
+    global_sailors_modifier = 0.01
+}
+
+pm_flag_e_mil = {
+    global_manpower_modifier = 0.01
+}
+
+pm_flag_e_mil_adv = {
+    global_manpower_modifier = 0.01
+}
+
+pm_flag_e_adm = {
+    stability_cost_modifier = -0.01
+}
+
+pm_flag_e_rel ={
+    global_missionary_strength = 0.001
+}

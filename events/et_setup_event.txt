@@ -1,0 +1,63 @@
+namespace = et
+
+country_event = {
+	id = et.63
+	title = "et.EVTNAME1"
+	desc = "et.EVTDESC1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = REB
+	}
+	
+	immediate = {
+		set_global_flag = extended_timeline_mod
+		if = {
+			limit = {
+				NOT = { exists = EUR }
+				any_country = {
+					has_country_modifier = european_union
+				}
+			}
+			country_event = { id = european_union.6 days = 183 }
+		}
+		if = {
+			limit = { is_year = 1390 }
+			set_global_flag = timurids_exist_at_start
+		}
+		if = {
+			limit = { is_year = 1896 }
+			1775 = { 
+				add_great_project = kiel_canal 
+				add_construction_progress = 1
+			}	
+		}
+		if = {
+			limit = { is_year = 1870 }
+			363 = { 
+				add_great_project = suez_canal 
+				add_construction_progress = 1
+			}	
+		}
+		if = {
+			limit = { is_year = 1914 }
+			835 = { 
+				add_great_project = panama_canal 
+				add_construction_progress = 1
+			}	
+		}
+		every_country = {
+			set_variable = {
+				which = num_of_nuclear_weapons
+				value = 0
+			}
+		}
+		set_variable = {
+			which = num_of_immigrants
+			value = 0
+		}
+	}
+}

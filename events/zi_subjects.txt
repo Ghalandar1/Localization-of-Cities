@@ -1,0 +1,66 @@
+namespace = zi
+
+country_event = {
+	id = zi.14
+	title = "zi_14EVTNAME"
+	desc = "zi_14EVTDESC"
+	picture = CONQUEST_eventPicture
+	mean_time_to_happen = { months = 12 }
+	trigger = {
+		NOT = { has_country_flag = had_event14 }
+		num_of_vassals = 1
+		has_country_modifier = unity_against_zombies
+		NOT = { tag = DAN }
+		NOT = { tag = POL }
+	}
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = "zi_14EVTOPTIONA"
+		set_country_flag = had_event14
+		every_subject_country = {
+			limit = {
+				is_march = no
+			}
+			overlord = {
+				inherit = PREV
+			}
+		}			
+	}
+	option = {
+		ai_chance = { factor = 60 }
+		name = "zi_14EVTOPTIONB"
+		set_country_flag = had_event14
+		every_subject_country = {
+			limit = {
+				is_march = no
+			}
+			overlord = {	
+				create_march = PREV
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = zi.15
+	title = "zi_15EVTNAME"
+	desc = "zi_15EVTDESC"
+	picture = MILITARY_CAMP_eventPicture
+	mean_time_to_happen = { months = 12 }
+	trigger = {
+		is_march = yes
+		has_country_modifier = unity_against_zombies
+	}
+	
+	option = {
+		name = "zi_15EVTOPTION"
+		add_manpower = 10
+		add_treasury = 200
+		add_war_exhaustion = -5
+		add_mil_power = 100
+		add_stability = 1
+	}
+
+}
+

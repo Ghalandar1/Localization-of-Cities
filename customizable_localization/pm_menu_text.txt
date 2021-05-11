@@ -1,0 +1,139 @@
+defined_text = {
+    name = pmGetRole
+
+    #dev
+    text = {
+        localisation_key = pms_role_dev
+        trigger = {
+            event_target:pm_target = {
+                has_country_modifier = pm_dev  
+            }
+        }
+    }
+    #mil
+    text = {
+        localisation_key = pms_role_mil
+        trigger = {
+            event_target:pm_target = {
+            has_country_modifier = pm_mil
+            }
+        }
+    }
+    #nav
+    text = {
+        localisation_key = pms_role_nav
+        trigger = {
+            event_target:pm_target = {
+            has_country_modifier = pm_nav
+            }
+        }
+    }
+    #adm
+    text = {
+        localisation_key = pms_role_adm
+        trigger = {
+            event_target:pm_target = {
+            has_country_modifier = pm_adm
+            }
+        }
+    }
+    #col
+    text = {
+        localisation_key = pms_role_col
+        trigger = {
+            event_target:pm_target = {
+            has_country_modifier = pm_col
+            }
+        }
+    }
+    #rel
+    text = {
+        localisation_key = pms_role_rel
+        trigger = {
+            event_target:pm_target = {
+            has_country_modifier = pm_rel
+            }
+        }
+    }
+
+    #not designated
+    text = {
+        localisation_key = pms_role_default
+        trigger = {
+            always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = pmGetSubjectType
+
+    #vassal
+    text = {
+        localisation_key = pms_type_vassal
+        trigger = {
+            event_target:pm_target = {
+            is_subject_of_type = vassal
+            }
+        }
+    }
+
+    #client state
+    text = {
+        localisation_key = pms_type_client_state
+        trigger = {
+            event_target:pm_target = {
+            is_subject_of_type = client_vassal
+            }
+        }
+    }
+
+    #Colonial Nation
+    text = {
+        localisation_key = pms_type_colony
+        trigger = {
+            event_target:pm_target = {
+            is_subject_of_type = colony
+            }
+        }
+    }
+
+    #march
+    text = {
+        localisation_key = pms_type_march
+        trigger = {
+            event_target:pm_target = {
+            is_subject_of_type = march
+            }
+        }
+    }
+
+    #client march
+    text = {
+        localisation_key = pms_type__client_march
+        trigger = {
+            event_target:pm_target = {
+            is_subject_of_type = client_march
+            }
+        }
+    }
+
+    #junior partner
+    text = {
+        localisation_key = pms_type_PU
+        trigger = {
+            event_target:pm_target = {
+            is_subject_of_type = personal_union
+            }
+        }
+    }
+
+    #non definend
+    text = {
+        localisation_key = pms_type_default
+        trigger = {
+            always = yes
+        }
+    }
+
+}

@@ -1,0 +1,62 @@
+spriteTypes = {
+
+		spriteType = {
+		name = "GFX_great_project_hanging_gardens"	
+		texturefile = "gfx//interface//great_projects//great_project_hanging_gardens.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_house_wisdom"	
+		texturefile = "gfx//interface//great_projects//great_project_house_wisdom.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_masjid_haram"	
+		texturefile = "gfx//interface//great_projects//great_project_masjid_haram.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_apadana"	
+		texturefile = "gfx//interface//great_projects//great_project_apadana.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_harichavank_monastery"	
+		texturefile = "gfx//interface//great_projects//great_project_harichavank_monastery.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_gelati_monastery"	
+		texturefile = "gfx//interface//great_projects//great_project_gelati_monastery.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_grand_bazaar"	
+		texturefile = "gfx//interface//great_projects//great_project_grand_bazaar.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_acre"	
+		texturefile = "gfx//interface//great_projects//great_project_acre.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_temple_mount"	
+		texturefile = "gfx//interface//great_projects//great_project_temple_mount.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_masjid_nabawi"	
+		texturefile = "gfx//interface//great_projects//great_project_masjid_nabawi.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_fort_bahla"	
+		texturefile = "gfx//interface//great_projects//great_project_fort_bahla.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_asha_mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_asha_mosque.dds"
+	}
+}

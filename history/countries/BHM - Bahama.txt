@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = parliamentary_reform
+add_government_reform = regional_representation_reform
+add_government_reform = legislative_houses_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = ceremonial_monarch
+set_legacy_government = parliamentary_monarchy
+government_rank = 1
+add_government_reform = feudalism_reform
+capital = 4647
+primary_culture = persian
+religion = secularism
+technology_group = muslim
+2019.5.30 = {
+	monarch = {
+		name = "Mohammed Zahir"
+		dynasty = "Shah"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

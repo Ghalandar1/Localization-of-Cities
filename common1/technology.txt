@@ -1,0 +1,224 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+
+# Groups must be defined BEFORE tables.
+
+#Nation Designer Cost is set to match triggers for starting institutions.
+
+groups = {
+	western = {
+		start_level = 10
+		start_cost_modifier = 0.1
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 100
+		}
+	}
+	eastern_rus = {
+		start_level = 10
+		start_cost_modifier = 0.1
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 100
+		}
+	}
+	ottoman = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 99
+		}
+	}
+	muslim = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 80
+		}
+	}
+	indian = {
+		start_level = 10
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = eastern_rus
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	chinese = {
+		start_level = 10
+		start_cost_modifier = 0.1
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	nomad_group = {
+		start_level = 9
+		start_cost_modifier = 0.1
+	}
+	sub_saharan = { #West African
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = muslim
+	}
+	north_american = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		is_primitive = yes
+	}
+	mesoamerican = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		is_primitive = yes
+	}
+	south_american = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		is_primitive = yes
+	}
+	andean = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = western
+		is_primitive = yes
+	}	
+	roman_group = {
+		start_level = 11
+		start_cost_modifier = 0.1
+	}
+	barbarian = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = muslim
+	}
+	middle_eastern = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = muslim
+	}
+	asian = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = chinese
+	}
+	early_indian = {
+		start_level = 9
+		start_cost_modifier = 0.1
+	}
+	early_chinese = {
+		start_level = 9
+		start_cost_modifier = 0.1
+	}
+	western_nomad_group = {
+		start_level = 9
+		start_cost_modifier = 0.1
+	}
+	eastern_nomad_group = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = muslim
+	}
+	high_american = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = high_american
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	east_african = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = muslim
+	}
+	central_african = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		nation_designer_unit_type = muslim
+	}
+	zombie = {
+		start_level = 1
+		cav_to_inf_ratio = 0
+		
+	}
+	dummy_group = {
+		start_level = 9
+		start_cost_modifier = 0.1
+		power = -1
+		
+	}
+}
+
+tables = {
+	adm_tech = "technologies/adm.txt"
+	dip_tech = "technologies/dip.txt"
+	mil_tech = "technologies/mil.txt"
+}

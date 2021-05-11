@@ -1,0 +1,132 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 255  124  76 } 
+
+historical_score = 5500
+
+historical_idea_groups = {
+	nuclear_research
+	
+}
+
+historical_units = {
+	mamluk_archer
+	muslim_cavalry_archers
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Mohammad #0" = 30
+	"Mahmod #0" = 30
+	"Ali #0" = 10
+	"Ahmad #0" = 10
+	"Kazem #0" = 10
+	"Ebrahim #0" = 10
+	"Mustafa #0" = 10
+	"Kianosh #0" = 20
+	"Key Kavos #0" = 10
+	"Sajad #0" = 10
+	"Mosa #0" = 10
+	"Arsalan #0" = 10
+	"Ardalan #0" = 10
+	"Bardia #0" = 10
+	"Dawood #0" = 10
+	"Parsa #0" = 10
+	"Hashem #0" = 10
+	"Naser #0" = 10
+	"Chengiz #0" = 10
+	"Korush #0" = 10
+	"Amin #0" = 10
+	"Abbas #0" = 10
+	"Esmail #0" = 10
+	"Alireza #0" = 10
+	"Bizhan #0" = 10
+	"Kambojie #0" = 10
+	"Nader #0" = 10
+	"Milad #0" = 10
+	"Meisam #0" = 10
+	"Shahram #0" = 10
+	"Bahram #0" = 10
+	"Rashid #0" = 10
+	"Rahim #0" = 10
+	"Mehdi #0" = 10
+	"Mohammad Javad #0" = 10
+	"Amir #0" = 10
+	"Sina #0" = 10
+	"Vahid #0" = 10
+	"Dariush #0" = 10
+	"Farhad #0" = -10
+}
+
+leader_names = {
+
+	Ahmad 
+	Kazem 
+	Ebrahim
+	Mustafa
+	Kianosh
+	Key Kavos 
+	Sajad 
+	Mosa 
+	Arsalan
+	Ardalan
+	Bardia
+	Dawood 
+	Parsa 
+	Hashem
+	Naser 
+	Chengiz
+	Korush
+	Amin
+	Abbas
+	Esmail
+	Alireza
+	Bizhan
+	Kambojie
+	Nader
+	Milad
+	Meisam
+	Shahram
+	Bahram
+	Rashid
+	Rahim
+	Mehdi
+	Mohammad Javad
+	Amir
+	Sina
+	Vahid
+	Dariush
+	Farhad
+
+}
+
+ship_names = {
+	Abathur "Adamn Kasia" "Aesma Daeva" Agas
+	Ahriman Ahura "Ahura Mazda" Ahurani Airyaman
+	"Aka Manah" Aladdin Allatum Amashaspan Ameratat
+	"Amesha Spentas" Anahita "Angra Mainyu" Anjuman
+	"Apam-natat" Apaosa Aredvi Arishtat Armaiti Arsaces
+	"Asha vahista" Asman "Asto Vidatu" "Astvat-Ereta"
+	Atar "Azi Dahaka" Baga Bahram Burijas Bushyasta Buyasta
+	Camros Daena Daevas Ahaka Dahhak Dena Dev Diwe Drug
+	Drvaspa Frashegird Fravashis Gandarewa "Gao-kerena"
+	Gayomard Gayomart "Geus-Tasan" "Geus-Urvan" Haoma
+	Haurvatat Humay Hvar Hvarekhshaeta Indar Indra Izha
+	Jamshid Jeh Karshipta Kavi Khara "Khshathra vairya"
+	Kundrav Mah Mahre Mahrianag Manu Manuchihir Mao 
+	Mashyane Mashye Menog Mithra Nairyosangha Nanghaithya
+	Neriosang Ormazd Peris Peshdadians Rapithwin Rashnu
+	Rustam Saurva Simurgh "Spenta Mainyu" Sraosa Srosh
+	Tawrich Thunaupa Tistrya Tushnamatay Vanant Vata
+	Verethragna "Vohu Manah" Vouruskasha Yam Yasht Yazata
+	Yezidi Yima Zal Zam "Zam-Armatay" Zarathustra Zarich
+	"Zend-Avesta" Zurvan
+}
+
+

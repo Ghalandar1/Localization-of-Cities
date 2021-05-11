@@ -1,0 +1,25 @@
+government = republic
+
+government_rank = 2
+add_government_reform = oligarchy_reform
+add_government_reform = presidential_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = communist_government
+add_government_reform = powerful_head_of_state
+set_legacy_government = socialist_republic
+
+capital = 1073
+primary_culture = vietnamese
+religion = secularism
+technology_group = chinese 
+2019.5.30 = {
+	monarch = {
+		name = "Tran Dai Quang"
+		birth_date = 1956.10.12
+		adm = 2
+		dip = 4
+		mil = 4
+		religion = mahayana
+	}
+}

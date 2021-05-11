@@ -1,0 +1,11 @@
+# M16-rifle
+	
+type = infantry
+
+maneuver = 3
+offensive_morale = 7
+defensive_morale = 8
+offensive_fire = 4
+defensive_fire = 5
+offensive_shock = 4
+defensive_shock = 5

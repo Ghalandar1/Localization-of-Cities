@@ -1,0 +1,112 @@
+﻿l_english:
+ support_fire_55:0 "Support Fire +10%"
+ support_fire_55_desc:0 "Support Fire +10%"
+ support_fire_55_title:0 "Support Fire +10%"
+ support_fire_55_dialog:0 "Support Fire +10%"
+ support_fire_55_tooltip:0 "Support Fire +10%"
+ 
+ support_naval_limit_55:0 "Naval Limit +20%"
+ support_naval_limit_55_desc:0 "Naval Limit +20%"
+ support_naval_limit_55_title:0 "Naval Limit +20%"
+ support_naval_limit_55_dialog:0 "Naval Limit +20%"
+ support_naval_limit_55_tooltip:0 "Naval Limit +20%"
+ 
+ support_maintance_5:0 "Reduce Maintance -20%"
+ support_maintance_5_desc:0 "Reduce Maintance -20%"
+ support_maintance_5_title:0 "Reduce Maintance -20%"
+ support_maintance_5_dialog:0 "Reduce Maintance -20%"
+ support_maintance_5_tooltip:0 "Reduce Maintance -20%"
+ 
+ support_moral_navy_55:0 "Support Morale Navy +10%"
+ support_moral_navy_55_desc:0 "Support Morale Navy +10%"
+ support_moral_navy_55_title:0 "Support Morale Navy +10%"
+ support_moral_navy_55_tooltip:0 "Support Morale Navy +10%"
+ support_moral_navy_55_dialog:0 "Support Morale Navy +10%"
+ 
+ support_shok_55:0 "Support Fire +10%"
+ support_shok_55_desc:0 "Support Fire +10%"
+ support_shok_55_title:0 "Support Fire +10%"
+ support_shok_55_dialog:0 "Support Fire +10%"
+ support_shok_55_tooltip:0 "Support Fire +10%"
+ 
+ support_speed_55:0 "Support Speed +10%"
+ support_speed_5_desc:0 "Support Speed +10%"
+ support_speed_55_title:0 "Support Speed +10%"
+ support_speed_55_dialog:0 "Support Speed +10%"
+ support_speed_55_tooltip:0 "Support Speed +10%"
+ 
+ support_limit_55:0 "Army Limit +20"
+ support_limit_55_desc:0 "Army Limit +20"
+ support_limit_55_title:0 "Army Limit +20"
+ support_limit_55_dialog:0 "Army Limit +20"
+ support_limit_55_tooltip:0 "Army Limit +20"
+ 
+ 
+ support_main_5:0 "Supported Maintance"
+ support_main_5_1:0 "Supported Maintance"
+ 
+ support_shok_5_1:0 "Support Shock 10%"
+ support_shok_5:0 "Supported Shock 10%"
+ 
+ support_fire_5_1:0 "Supported Fire 10%"
+ support_fire_5:0 "Supported Fire 10%"
+ 
+ support_moral_navy_5_1:0 "Supported Naval Morale +10%"
+ support_moral_navy_5:0 "Supported Morale +10%"
+
+ 
+ support_limit_5_1:0 "Army Limit +20%"
+ support_limit_5:0 "Army Limit +20%"
+ 
+ support_naval_limit_5_1:0 "Naval Limit +20%"
+ support_naval_limit_5:0 "Naval Limit +20%"
+ 
+ support_speed_5_1:0 "Supported Speed +20%"
+ support_speed_5:0 "Supported Speed +20%"
+ 
+ 
+ western_desc:0 "With the Modern technology group, technology levels are standard cost (100%)."
+ western:0 "Modern"
+ eastern_desc:0 "With the Russian technology group, technology levels are 20% more expensive (120%)."
+ eastern_rus:0 "Russian"
+ ottoman_desc:0 "With the Turkish technology group, technology levels are 25% more expensive (125%)."
+ ottoman:0 "Turkish"
+ chinese_desc:0 "With the Chinse technology group, technology levels are 60% more expensive (160%)."
+ chinese:0 "Chinese"
+ 
+ feudalism_date:0 "2150"
+ renaissance_date:0 "2160"
+ new_world_i_date:0 "2170"
+ printing_press_date:0 "2180"
+ global_trade_date:0 "2190"
+ manufactories_date:0 "2200"
+ enlightenment_date:0 "2210"
+ imperialism_date:0 "2220"
+ industrialization_date:0 "2230"
+ 
+ 
+ teryak_bad:0 "Opium Distribution In Country"
+ teryak_bad_title:0 "Opium Distribution In Country"
+ 
+ djiboti:0 "Strait of Aden"
+ russian_canal:0 "Volga Canal"
+ singapor:0 "Singapore"
+ gibraltar:0 "Gibraltar"
+ suez_canal:0 "Suez Canal"
+ lubek_canal:0 "Lubeck Canal"
+ panama_canal:0 "Panama Canal"
+ Hurmuz:0 "Strait of Hurmuz"
+ france_help:0 "Help France"
+ germany_help:0 "Help Germany"
+ all_3_500:0 "All Country in 3 - 500 Dev"
+ all_500_1000:0 "All Country in 500 - 1000 Dev"
+ all_1000_2000:0 "All Country in 1000 - 2000 Dev"
+ all_3_250:0 "All Country in 3 - 250 Dev"
+ all_250_500:0 "All Country in 250 - 500 Dev"
+ marmara:0 "Sea of Marmara"
+ meditarane:0 "Mediterranean sea"
+ african_balance:0 "Help Africa"
+ north_korea:0 "North Korea Balance"
+ 
+ all_player_2:0 "For All Player to Balance."
+ 

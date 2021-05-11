@@ -1,0 +1,147 @@
+
+############################# 50
+####################################Cars
+low_opinion_iron_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_iron_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_iron_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_iron_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+######################################Gems
+low_opinion_aluminum_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_aluminum_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_aluminum_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_aluminum_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+########################################Coal
+low_opinion_copper_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_copper_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_copper_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_copper_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+####################################### 25
+
+
+
+
+low_opinion_iron_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_iron_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_iron_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_iron_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_aluminum_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_aluminum_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_aluminum_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_aluminum_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_copper_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_copper_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_copper_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_copper_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+

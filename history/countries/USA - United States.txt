@@ -1,0 +1,41 @@
+government = republic
+
+government_rank = 3
+add_government_reform = parliamentary_reform
+add_government_reform = universal_suffrage_reform
+add_government_reform = reinforce_republican_values_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = ceremonial_president
+set_legacy_government = presidental_republic
+historical_friend = GBR
+historical_friend = ISR
+historical_rival = CHN
+
+
+capital = 3957
+primary_culture = american
+religion = secularism
+technology_group = roman_group
+
+
+2019.5.30 = {
+	monarch = {
+		name = "Donald Trump"
+		birth_date = 1946.6.14
+		adm = 6
+		dip = 6
+		mil = 4
+		religion = protestant
+	}
+}
+2020.1.20 = {
+	monarch = {
+		name = "Joe Biden"
+		birth_date = 1942.11.20
+		adm = 2
+		dip = 1
+		mil = 2
+		religion = catholic
+	}
+}

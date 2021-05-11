@@ -1,0 +1,27 @@
+oil_ban_50 = { local_production_efficiency = -0.5 }
+oil_ban_100 = { local_production_efficiency = -10 }
+cars_ban_50 = { local_production_efficiency = -0.5 }
+cars_ban_100 = { local_production_efficiency = -10 }
+electronics_ban_50 = { local_production_efficiency = -0.5 }
+electronics_ban_100 = { local_production_efficiency = -10 }
+
+iron_ban_50 = { local_production_efficiency = -0.5 }
+iron_ban_100 = { local_production_efficiency = -10 }
+aluminum_ban_50 = { local_production_efficiency = -0.5 }
+aluminum_ban_100 = { local_production_efficiency = -10 }
+copper_ban_50 = { local_production_efficiency = -0.5 }
+copper_ban_100 = { local_production_efficiency = -10 }
+
+
+oil_ban_modifire_from_100 = {  }
+cars_ban_modifire_from_100 = {  }
+electronics_ban_modifire_from_100 = {  }
+
+
+iron_ban_modifire_from_100 = {  }
+aluminum_ban_modifire_from_100 = {  }
+copper_ban_modifire_from_100 = {  }
+
+silk_ban_modifire_from_100 = {  }
+wool_ban_modifire_from_100 = {  }
+colth_ban_modifire_from_100 = {  }

@@ -1,0 +1,147 @@
+
+############################# 50
+####################################Cars
+low_opinion_cars_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_cars_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_cars_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_cars_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+######################################Gems
+low_opinion_gems_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_gems_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_gems_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_gems_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+########################################Coal
+low_opinion_coal_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_coal_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_coal_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_coal_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+####################################### 25
+
+
+
+
+low_opinion_cars_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_cars_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_cars_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_cars_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_gems_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_gems_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_gems_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_gems_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_coal_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_coal_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_coal_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_coal_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+

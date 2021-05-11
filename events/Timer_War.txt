@@ -1,0 +1,1272 @@
+namespace = timeru
+
+country_event = {
+
+	id = timeru.222
+	
+	title = "timeru.222.t"
+	desc = "timeru.01.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.01.opt1"
+		
+		hidden_effect = {
+			country_event = {
+					id = timeru.223
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt2"
+		hidden_effect = {
+			country_event = {
+					id = timeru.224
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt3"
+		hidden_effect = {
+			country_event = {
+					id = timeru.225
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt4"
+		hidden_effect = {
+			country_event = {
+					id = timeru.226
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt5"
+		hidden_effect = {
+			country_event = {
+					id = timeru.227
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt6"
+		hidden_effect = {
+			country_event = {
+					id = timeru.228
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt7"
+		hidden_effect = {
+			country_event = {
+					id = timeru.229
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt8"
+		hidden_effect = {
+			country_event = {
+					id = timeru.230
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt9"
+		hidden_effect = {
+			country_event = {
+					id = timeru.231
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt10"
+		hidden_effect = {
+			country_event = {
+					id = timeru.232
+			}
+		}
+	}
+	
+	option = {
+		name = "timeru.01.opt12"
+		}
+}
+
+country_event = {
+
+	id = timeru.223
+	
+	title = "timeru.223.t"
+	desc = "timeru.02.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.02.opt1"
+		hidden_effect = {
+		
+			country_event = {
+					id = timeru.109
+					days = 365
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 730
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 1095
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 1460
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 1825
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 2190
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 2555
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 2920
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 3285
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt10"
+		hidden_effect = {
+		
+			country_event = {
+					id = timeru.109
+					days = 3650
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.224
+	
+	title = "timeru.224.t"
+	desc = "timeru.03.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.03.opt1"
+		hidden_effect = {
+		
+			country_event = {
+					id = timeru.109
+					days = 4015
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 4380
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 4745
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 5110
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 5475
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt6"
+			hidden_effect = {
+			country_event = {
+					id = timeru.109
+					days = 5840
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt7"
+			hidden_effect = {
+			country_event = {
+					id = timeru.109
+					days = 6205
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt8"
+			hidden_effect = {
+			country_event = {
+					id = timeru.109
+					days = 6570
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt9"
+			hidden_effect = {
+			country_event = {
+					id = timeru.109
+					days = 6935
+			}
+		}
+	}
+	option = {
+		name = "timeru.03.opt10"
+			hidden_effect = {
+			country_event = {
+					id = timeru.109
+					days = 7300
+			}
+		}
+	}
+	option = {
+		name = "timeru.02.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.225
+	
+	title = "timeru.225.t"
+	desc = "timeru.04.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.04.opt1"
+		hidden_effect = {
+		
+			country_event = {
+					id = timeru.109
+					days = 7665
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 8030
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 8395
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 8760
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 9125
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 9490
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 9855
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 10220
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 10585
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt10"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 10950
+			}
+		}
+	}
+	option = {
+		name = "timeru.04.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.226
+	
+	title = "timeru.226.t"
+	desc = "timeru.05.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.05.opt1"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 11315
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 11680
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 12045
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 12410
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 12775
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 13140
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 13505
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 13870
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 14235
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt10"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 14600
+			}
+		}
+	}
+	option = {
+		name = "timeru.05.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.227
+	
+	title = "timeru.227.t"
+	desc = "timeru.06.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.06.opt1"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 14965
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 15330
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 15695
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 16060
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 16425
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 16790
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 17155
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 17520
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 17885
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt10"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 18250
+			}
+		}
+	}
+	option = {
+		name = "timeru.06.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.228
+	
+	title = "timeru.228.t"
+	desc = "timeru.07.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.07.opt1"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 18615
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 18980
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 19345
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 19710
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 20075
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 20440
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 20805
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 21170
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 21535
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt10"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 21900
+			}
+		}
+	}
+	option = {
+		name = "timeru.07.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.229
+	
+	title = "timeru.229.t"
+	desc = "timeru.08.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.08.opt1"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 22265
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 22630
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 22995
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 23360
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 23725
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 24090
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 24455
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 24820
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 25185
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt10"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 25550
+			}
+		}
+	}
+	option = {
+		name = "timeru.08.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.230
+	
+	title = "timeru.230.t"
+	desc = "timeru.09.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.09.opt1"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 25915
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 26280
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 26645
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 27010
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 27375
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 27740
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 28105
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 28470
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 28835
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt10"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 29200
+			}
+		}
+	}
+	option = {
+		name = "timeru.09.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.231
+	
+	title = "timeru.231.t"
+	desc = "timeru.10.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.10.opt1"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 29565
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 29930
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 30295
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 30660
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 31025
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 31390
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 31755
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 32120
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 32485
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt10"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 32850
+			}
+		}
+	}
+	option = {
+		name = "timeru.10.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.232
+	
+	title = "timeru.232.t"
+	desc = "timeru.11.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.11.opt1"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 33215
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt2"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 33580
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt3"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 33945
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt4"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 34310
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt5"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 34675
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt6"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 35040
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt7"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 35405
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt8"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 35770
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt9"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 36135
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt10"
+		hidden_effect = {
+			
+			country_event = {
+					id = timeru.109
+					days = 36500
+			}
+		}
+	}
+	option = {
+		name = "timeru.11.opt11"
+	}
+}
+
+country_event = {
+
+	id = timeru.109
+	
+	title = "timeru.109.t"
+	desc = "timeru.109.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.109.opt1"
+		hidden_effect = {
+			
+			}
+		}
+	}
+
+

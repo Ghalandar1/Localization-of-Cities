@@ -1,0 +1,32 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 12320
+primary_culture = persian
+religion = coptic
+technology_group = middle_eastern
+2019.5.30 = {
+	monarch = {
+		name = "Armen Sarkissian"
+		birth_date = 1953.6.23
+		adm = 4
+		dip = 3
+		mil = 3
+		religion = coptic
+	}
+}
+
+
+
+
+
+
+
+

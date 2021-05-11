@@ -1,0 +1,25 @@
+﻿l_german:
+ # Event Modifiers:
+ increased_spy_defence_because_of_unnoticed_assassination: "Ungeklärter Todesfall in der Königsfamilie"
+ increased_spy_defence_because_of_noticed_assassination: "Attentat aufgedeckt"
+ increased_spy_offence_because_of_assassination: "Attentat aufgedeckt"
+ training_better_assassins_modifier: "Ausbildung von Agenten"
+ desc_training_better_assassins_modifier: "Wir bilden unsere eigenen Agenten und Auftragsmörder aus. Auch wenn wir dies versuchen zu verheimlichen, könnte dies im Ausland für Aufsehen sorgen."
+ become_better_at_bribing_modifier: "Verbesserung der Bestechungsfähigkeiten"
+ desc_become_better_at_bribing_modifier: "[Root.Monarch.GetName] hat einen Meister der Bestechung an den Hof geladen und wird von diesem unterrichtet. Dies benötigt viel Zeit, sodass [Root.Monarch.GetSheHe] [Root.Monarch.GetHerHis]e Regierungsaufgaben ein wenig vernachlässigt."
+ 
+ # Opinion Modifiers:
+ successfull_assassination_noticed_opinion: "Erfolgreiches Attentat durchgeführt oder unterstützt"
+ failed_assassination_noticed_opinion: "Gescheitertes Attentat durchgeführt oder unterstützt"
+ supported_our_assassination_attempt: "Sie untersützen unseren Attentatsversuch"
+ supported_their_assassination_attempt: "Wir unterstützen ihren Attentatsversuch"
+ our_consort_tried_to_kill_their_ruler_or_heir: "Sie haben ihren Gemahl aus unserem Land hingerichtet"
+ their_consort_tried_to_kill_our_ruler_or_heir: "Gemahl aus ihrem Land hat ein Attentat geplant"
+ 
+ # Province Triggered Modifiers:
+ assassination_completed_triggered_modifier: "Ein Attentat wird durchgeführt"
+ assassination_completed_own_ruler_triggered_modifier: "Ein Attentat wird durchgeführt"
+ assassination_completed_own_heir_triggered_modifier: "Ein Attentat wird durchgeführt"
+ assassination_start_own_ruler_triggered_modifier: "Ein Attentat wird geplant"
+ assassination_start_own_heir_triggered_modifier: "Ein Attentat wird geplant"
+ 

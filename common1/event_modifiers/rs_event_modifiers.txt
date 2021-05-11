@@ -1,0 +1,15 @@
+rise_of_sparta = {
+    discipline = 0.25
+	land_morale = 0.35
+	land_maintenance_modifier = -0.50
+	manpower_recovery_speed = 1.0
+	land_forcelimit_modifier = 0.35	
+	recover_army_morale_speed = 0.10
+    liberty_desire = -9999
+}
+
+spartan_traditions = {
+    discipline = 0.10
+	land_morale = 0.10
+	recover_army_morale_speed = 0.05
+}

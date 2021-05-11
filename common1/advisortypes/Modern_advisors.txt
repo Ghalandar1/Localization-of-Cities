@@ -1,0 +1,274 @@
+######################################################
+##### Idea Variation Advisors by flogi
+######################################################
+
+air_croft_cost = {		# Administrator
+	monarch_power = DIP
+	
+	skill_scaled_modifier = { meritocracy = 0.5 }
+	
+	heavy_ship_cost = -0.1
+	
+	chance = {
+		factor = 0.2
+		modifier = {
+			factor = 0
+			has_port = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+war_ship_cost = {		# Lawyer
+	monarch_power = DIP
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	galley_cost = -0.1
+	
+	chance = {
+		factor = 0.2
+		modifier = {
+			factor = 0
+			has_port = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+transport_ship_cost = {		# Architect
+	monarch_power = DIP
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	transport_cost = -0.20
+
+	
+	chance = {
+		factor = 0.2
+		modifier = {
+			factor = 0
+			has_port = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+trade_ship_cost = {		# Capitalist
+	monarch_power = DIP
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	light_ship_cost = -0.1
+	
+	chance = {
+		factor = 0.2
+		modifier = {
+			factor = 0
+			has_port = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+################################
+
+air_croft_cost_x2 = {		# Administrator
+	monarch_power = DIP
+	
+	skill_scaled_modifier = { meritocracy = 0.5 }
+	
+	heavy_ship_cost = -0.2
+	
+	chance = {
+		factor = 0.1
+		modifier = {
+			factor = 0
+			has_port = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+war_ship_cost_x2 = {		# Lawyer
+	monarch_power = DIP
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	galley_cost = -0.2
+	
+	chance = {
+		factor = 0.1
+		modifier = {
+			factor = 0
+			has_port = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+transport_ship_cost_x2 = {		# Architect
+	monarch_power = DIP
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	transport_cost = -0.40
+
+	
+	chance = {
+		factor = 0.1
+		modifier = {
+			factor = 0
+			has_port = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+trade_ship_cost_x2 = {		# Capitalist
+	monarch_power = DIP
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	light_ship_cost = -0.2
+	
+	chance = {
+		factor = 0.1
+		modifier = {
+			factor = 0
+			has_port = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+############################################################
+#####relogion
+############################################################
+
+num_of_misionary = {		# Capitalist
+	monarch_power = ADM
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	missionaries = 3
+	
+	chance = {
+		factor = 0.75
+		modifier = {
+			factor = 0
+			religion = secularism
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+num_of_misionary_x2 = {		# Capitalist
+	monarch_power = ADM
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	missionaries = 6
+	
+	chance = {
+		factor = 0.
+		modifier = {
+			factor = 0
+			religion = secularism
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+num_of_colonist = {		# Capitalist
+	monarch_power = ADM
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	colonists = 3
+	
+	chance = {
+		factor = 0.75
+		modifier = {
+			factor = 0
+			religion = secularism
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+num_of_colonist = {		# Capitalist
+	monarch_power = ADM
+	
+	skill_scaled_modifier = {
+	meritocracy = 0.5
+	}
+	
+	# Bonus
+	colonists = 6
+	
+	chance = {
+		factor = 0.3
+		modifier = {
+			factor = 0
+			religion = secularism
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+

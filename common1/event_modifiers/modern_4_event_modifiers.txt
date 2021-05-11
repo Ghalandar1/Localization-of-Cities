@@ -1,0 +1,76 @@
+
+########## Spoces
+failling_spices_price_root = { production_efficiency = 0.35 }
+failling_spices_price_root_25 = { production_efficiency = 0.15 }
+failling_spices_price_root_1 = { }
+failling_spices_price_root_1_25 = { }
+failling_spices_price_from = { production_efficiency = 0.35 }
+failling_spices_price_from_25 = { production_efficiency = 0.15 }
+rising_spices_price_root = {   production_efficiency = -0.35	}
+rising_spices_price_root_25 = {   production_efficiency = -0.15	}
+rising_spices_price_root_1 = {   }
+rising_spices_price_root_1_25 = {   }
+rising_spices_price_from = {   production_efficiency = -0.35	}
+rising_spices_price_from_25 = {   production_efficiency = -0.15	}
+
+
+########## Sugar
+failling_sugar_price_root ={  production_efficiency = 0.35 }
+failling_sugar_price_root_25 ={  production_efficiency = 0.15 }
+failling_sugar_price_root_1 = {  }
+failling_sugar_price_from = { production_efficiency = 0.35 }
+failling_sugar_price_from_25 = { production_efficiency = 0.15 }
+failling_sugar_price_root_1_25 = {  }
+rising_sugar_price_root = { production_efficiency = -0.35 }
+rising_sugar_price_root_25 = { production_efficiency = -0.15 }
+rising_sugar_price_root_1 = {  }
+rising_sugar_price_root_1_25 = {  }
+rising_sugar_price_from = { production_efficiency = -0.35 }
+rising_sugar_price_from_25 = { production_efficiency = -0.15 }
+
+
+########## Salt
+failling_salt_price_root = { production_efficiency = 0.35 }
+failling_salt_price_root_25 = { production_efficiency = 0.15 }
+failling_salt_price_root_1 = {  }
+failling_salt_price_from = { production_efficiency = 0.35 }
+failling_salt_price_from_25 = { production_efficiency = 0.15 }
+rising_salt_price_root = { production_efficiency = -0.35 }
+rising_salt_price_root_25 = { production_efficiency = -0.15 }
+rising_salt_price_root_1 = {  }
+rising_salt_price_from = { production_efficiency = -0.35 }
+rising_salt_price_from_25 = { production_efficiency = -0.15 }
+failling_salt_price_root_1_25 = {  }
+rising_salt_price_root_1_25 = {  }
+
+
+
+
+
+
+
+
+
+##################### other country #####################
+low_spices_price_1_50 = { production_efficiency = 0.2 }
+much_spices_price_1_50 = { production_efficiency = -0.2 }
+low_spices_price_1_25 = { production_efficiency = 0.1 }
+much_spices_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_sugar_price_1_50 = { production_efficiency = 0.2 }
+much_sugar_price_1_50 = { production_efficiency = -0.2 }
+low_sugar_price_1_25 = { production_efficiency = 0.1 }
+much_sugar_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_salt_price_1_50 = { production_efficiency = 0.2 }
+much_salt_price_1_50 = { production_efficiency = -0.2 }
+low_salt_price_1_25 = { production_efficiency = 0.1 }
+much_salt_price_1_25 = { production_efficiency = -0.1 }
+
+
+
+
+
+

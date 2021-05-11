@@ -1,0 +1,24 @@
+namespace = zi
+
+country_event = {
+	id = zi.10
+	title = "zi_10EVTNAME"
+	desc = "zi_10EVTDESC"
+	picture = DIPLOMACY_eventPicture
+	trigger = {
+		NOT = {	border_distance = { who = ZOM distance = 150 } }
+		ZOM = { exists = yes }
+		NOT = { has_country_flag = had_unity }
+		NOT = { has_country_modifier = survived_apocalypse }
+	}
+	
+	option = {
+		name = "zi_10EVTOPTION"
+		add_country_modifier = {
+		name = unity_against_zombies
+		duration = -1
+		}
+		set_country_flag = had_unity
+	
+	}
+}

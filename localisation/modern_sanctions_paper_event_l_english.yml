@@ -1,0 +1,89 @@
+﻿l_english:
+
+ paper_sanction.1title:0 "Oil Embargo"
+ paper_sanction.1opt:0 "Oil Embargo 50%"
+ paper_sanction.2opt:0 "Oil Embargo 100%"
+ paper_sanction.1desc:0 "My $MONARCHTITLE$, We Must Boycott Their Oil To Punish §R[From.Owner.GetName]§!"
+ 
+ paper_sanction.2title:0 "Oil Embargo"
+ paper_sanction.2desc:0 "My $MONARCHTITLE$, The §R[From.Owner.GetName]§! Imposed A §R50%§! Embargo On Our §GOil§!"
+ 
+ paper_sanction.3title:0 "Oil Embargo"
+ paper_sanction.3desc:0 "My $MONARCHTITLE$, The §R[From.Owner.GetName]§! Imposed A §R100%§! Embargo On Our §GOil§!"
+ paper_sanction.3opt:0 "No This Is Very Bad"
+ 
+ paper_sanction.4opt:0 "Exit"
+ 
+ paper_ban_50:0 "Oil Embargo 50%"
+ paper_ban_100:0 "Oil Embargo 100%"
+ paper_ban_modifire_from_100:0 "Oil Embargo"
+ 
+ paper_ban_action:0 "Oil Embargo"
+ paper_ban_action_title:0 "Oil Embargo"
+ paper_ban_action_desc:0 "Oil Embargo"
+ paper_ban_action_long:0 "Oil Embargo"
+ paper_ban_action_long_tooltip:0 "Oil Embargo"
+ paper_ban_action_tooltip:0 "Oil Embargo"
+ 
+ paper_ban_modifire_from_100:0 "Oil Embargo"
+ 
+ EMBARGO_50:0 "A Country Was 50% Sanctioned"
+ EMBARGO_100:0 "A Country Was 100% sanctioned"
+ 
+ 
+ cocoa_sanction.1title:0 "Electronics Embargo"
+ cocoa_sanction.1opt:0 "Electronics Embargo 50%"
+ cocoa_sanction.2opt:0 "Electronics Embargo 100%"
+ cocoa_sanction.1desc:0 "My $MONARCHTITLE$, We Must Boycott Their Electronics To Punish §R[From.Owner.GetName]§!"
+ 
+ cocoa_sanction.2title:0 "Electronics Embargo"
+ cocoa_sanction.2desc:0 "My $MONARCHTITLE$, The §R[From.Owner.GetName]§! Imposed A §R50%§! Embargo On Our §GElectronics§!"
+ 
+ cocoa_sanction.3title:0 "Electronics Embargo"
+ cocoa_sanction.3desc:0 "My $MONARCHTITLE$, The §R[From.Owner.GetName]§! Imposed A §R100%§! Embargo On Our §GElectronics§!"
+ cocoa_sanction.3opt:0 "No This Is Very Bad"
+ 
+ cocoa_sanction.4opt:0 "Exit"
+ 
+ cocoa_ban_50:0 "Electronics Embargo 50%"
+ cocoa_ban_100:0 "Electronics Embargo 100%"
+ cocoa_ban_modifire_from_100:0 "Electronics Embargo 100%"
+ 
+ cocoa_ban_action:0 "Electronics Embargo"
+ cocoa_ban_action_title:0 "Electronics Embargo"
+ cocoa_ban_action_desc:0 "Electronics Embargo"
+ cocoa_ban_action_long:0 "Electronics Embargo"
+ cocoa_ban_action_long_tooltip:0 "Electronics Embargo"
+ cocoa_ban_action_tooltip:0 "Electronics Embargo"
+ 
+ 
+ 
+ coffee_sanction.1title:0 "Cars Embargo"
+ coffee_sanction.1opt:0 "Cars Embargo 50%"
+ coffee_sanction.2opt:0 "Cars Embargo 100%"
+ coffee_sanction.1desc:0 "My $MONARCHTITLE$, We Must Boycott Their Cars To Punish §R[From.Owner.GetName]§!"
+ 
+ coffee_sanction.2title:0 "Cars Embargo"
+ coffee_sanction.2desc:0 "My $MONARCHTITLE$, The §R[From.Owner.GetName]§! Imposed A §R50%§! Embargo On Our §GCars§!"
+ 
+ coffee_sanction.3title:0 "Cars Embargo"
+ coffee_sanction.3desc:0 "My $MONARCHTITLE$, The §R[From.Owner.GetName]§! Imposed A §R100%§! Embargo On Our §GCars§!"
+ coffee_sanction.3opt:0 "No This Is Very Bad"
+ 
+ coffee_sanction.4opt:0 "Exit"
+ 
+ coffee_ban_50:0 "Cars Embargo 50%"
+ coffee_ban_100:0 "Cars Embargo 100%"
+ coffee_ban_modifire_from_100:0 "Cars Embargo 100%"
+ 
+ coffee_ban_action:0 "Cars Embargo"
+ coffee_ban_action_title:0 "Cars Embargo"
+ coffee_ban_action_desc:0 "Cars Embargo"
+ coffee_ban_action_long:0 "Cars Embargo"
+ coffee_ban_action_long_tooltip:0 "Cars Embargo"
+ coffee_ban_action_tooltip:0 "Cars Embargo"
+
+
+
+
+

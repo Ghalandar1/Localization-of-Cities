@@ -1,0 +1,7 @@
+﻿l_english:
+ cb_aggressive_expansion1: "Aggressive Expansion"
+ cb_aggressive_expansion1_desc: "Too high Aggressive Expansion."
+ superiority_aggressive_expansion1: "Show the world we are superior to our aggressive enemy."
+ superiority_aggressive_expansion1_desc: "Our Aggressive expansion War goal is to show our superiority by defeating the aggressive enemy in battle. Their aggressive expansion is far too high."
+ ALL_AGGREXPWAR: "War against Aggressive Expansion"
+ AGGREXPWAR_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Aggressive Expansion War"

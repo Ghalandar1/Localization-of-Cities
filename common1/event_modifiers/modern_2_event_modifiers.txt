@@ -1,0 +1,76 @@
+
+########## Cars
+failling_cars_price_root = { production_efficiency = 0.35 }
+failling_cars_price_root_25 = { production_efficiency = 0.15 }
+failling_cars_price_root_1 = { }
+failling_cars_price_root_1_25 = { }
+failling_cars_price_from = { production_efficiency = 0.35 }
+failling_cars_price_from_25 = { production_efficiency = 0.15 }
+rising_cars_price_root = {   production_efficiency = -0.35	}
+rising_cars_price_root_25 = {   production_efficiency = -0.15	}
+rising_cars_price_root_1 = {   }
+rising_cars_price_root_1_25 = {   }
+rising_cars_price_from = {   production_efficiency = -0.35	}
+rising_cars_price_from_25 = { production_efficiency = 0.15 }
+
+
+########## Gems
+failling_gems_price_root ={  production_efficiency = 0.35 }
+failling_gems_price_root_25 ={  production_efficiency = 0.15 }
+failling_gems_price_root_1 = {  }
+failling_gems_price_from = { production_efficiency = 0.35 }
+failling_gems_price_from_25 = { production_efficiency = 0.15 }
+failling_gems_price_root_1_25 = {  }
+rising_gems_price_root = { production_efficiency = -0.35 }
+rising_gems_price_root_25 = { production_efficiency = -0.15 }
+rising_gems_price_root_1 = {  }
+rising_gems_price_root_1_25 = {  }
+rising_gems_price_from = { production_efficiency = -0.35 }
+rising_gems_price_from_25 = { production_efficiency = -0.15 }
+
+
+########## Coal
+failling_coal_price_root = { production_efficiency = 0.35 }
+failling_coal_price_root_25 = { production_efficiency = 0.15}
+failling_coal_price_root_1 = {  }
+failling_coal_price_from = { production_efficiency = 0.35 }
+failling_coal_price_from_25 = { production_efficiency = 0.15 }
+rising_coal_price_root = { production_efficiency = -0.35 }
+rising_coal_price_root_25 = { production_efficiency = -0.15 }
+rising_coal_price_root_1 = {  }
+rising_coal_price_from = { production_efficiency = -0.35 }
+rising_coal_price_from_25 = { production_efficiency = -0.15 }
+failling_coal_price_root_1_25 = {  }
+rising_coal_price_root_1_25 = {  }
+
+
+
+
+
+
+
+
+
+##################### other country #####################
+low_cars_price_1_50 = { production_efficiency = 0.2 }
+much_cars_price_1_50 = { production_efficiency = -0.2 }
+low_cars_price_1_25 = { production_efficiency = 0.1 }
+much_cars_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_gems_price_1_50 = { production_efficiency = 0.2 }
+much_gems_price_1_50 = { production_efficiency = -0.2 }
+low_gems_price_1_25 = { production_efficiency = 0.1 }
+much_gems_price_1_25 = { production_efficiency = -0.1 }
+
+
+low_coal_price_1_50 = { production_efficiency = 0.2 }
+much_coal_price_1_50 = { production_efficiency = -0.2 }
+low_coal_price_1_25 = { production_efficiency = 0.1 }
+much_coal_price_1_25 = { production_efficiency = -0.1 }
+
+
+
+
+
+

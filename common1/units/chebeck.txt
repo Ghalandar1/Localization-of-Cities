@@ -1,0 +1,8 @@
+#Chebeck
+type = galley
+
+hull_size = 170
+base_cannons = 190
+sail_speed = 22
+
+sprite_level = 9

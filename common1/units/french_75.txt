@@ -1,0 +1,12 @@
+# French 75
+
+type = artillery
+
+maneuver = 3
+offensive_morale = 7
+defensive_morale = 6
+offensive_fire = 8
+defensive_fire = 8
+offensive_shock = 6
+defensive_shock = 6
+

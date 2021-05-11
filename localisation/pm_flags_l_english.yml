@@ -1,0 +1,28 @@
+﻿l_english:
+ pm_extra_LDreduce:0 "Development-based LD reduction"
+
+ pm_flag_gift:0 "Gifted flag"
+ pm_flag_giftmp:0 "Gifted mp flag"
+ pm_flag_dev1:0 "Gifted dev flag"
+
+ pm_flag_stealmp:0 "steal mp flag"
+ pm_flag_e_mil:0 "mil flag"
+ pm_flag_e_mil_adv:0 "mil adv flag"
+ pm_flag_e_nav:0 "nav flag"
+ pm_flag_e_adm:0 "adm flag"
+ pm_flag_e_rel:0 "rel flag"
+ pm_flag_e_dev:0 "dev flag"
+
+ desc_pm_mil:0 ""
+ desc_pm_flag_stealmp:0 ""
+ desc_pm_flag_e_mil:0 ""
+ desc_pm_flag_e_mil_adv:0 ""
+ desc_pm_flag_e_nav:0 ""
+ desc_pm_flag_e_adm:0 ""
+ desc_pm_flag_e_rel:0 ""
+ desc_pm_flag_e_dev:0 ""
+ desc_pm_flag_gift:0 ""
+ desc_pm_flag_giftmp:0 ""
+ desc_pm_flag_dev1:0 ""
+ pm_ai_disable_buff_sp_title:0 "Disable buffs"
+ pm_ai_disable_buff_sp_desc:0 "Disable buffs"

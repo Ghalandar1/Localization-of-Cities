@@ -1,0 +1,321 @@
+
+#Arabian_NATO
+alliance = {
+        
+	first = SAU
+	second = BHR
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+#Arabian_NATO
+alliance = {
+	first = SAU
+	second = JOR
+	start_date = 2020.2.9
+	end_date = 3005.12.1
+}
+#Arabian_NATO
+alliance = {
+        
+	first = SAU
+	second = KUW
+	start_date = 2020.2.9
+	end_date = 3005.12.1
+}
+
+#Arabian_NATO
+alliance = {
+       
+	first = SAU
+	second = UAE
+	start_date = 2020.2.7
+	end_date = 3005.12.1
+}
+
+
+
+######################
+#Arabian_NATO
+alliance = {
+	first = KUW
+	second = JOR
+	start_date = 2020.2.9
+	end_date = 3005.12.1
+}
+#Arabian_NATO
+alliance = {
+        
+	first = KUW
+	second = BHR
+	start_date = 2020.2.9
+	end_date = 3005.12.1
+}
+
+#Arabian_NATO
+alliance = {
+       
+	first = KUW
+	second = UAE
+	start_date = 2020.2.7
+	end_date = 3005.12.1
+}
+######################
+#Arabian_NATO
+alliance = {
+	first = BHR
+	second = JOR
+	start_date = 2020.2.9
+	end_date = 3005.12.1
+}
+#Arabian_NATO
+alliance = {
+       
+	first = BHR
+	second = UAE
+	start_date = 2020.2.7
+	end_date = 3005.12.1
+}
+######################
+#Arabian_NATO
+alliance = {
+       
+	first = JOR
+	second = UAE
+	start_date = 2020.2.7
+	end_date = 3005.12.1
+}
+######################
+#New Arabian_NATO
+alliance = {
+       
+	first = JOR
+	second = OMA
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = OMA
+	second = SAU
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = OMA
+	second = KUW
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = OMA
+	second = QTR
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = OMA
+	second = UAE
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = OMA
+	second = BHR
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+##################################
+alliance = {
+       
+	first = QTR
+	second = SAU
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = QTR
+	second = KUW
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = QTR
+	second = JOR
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = QTR
+	second = UAE
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = QTR
+	second = BHR
+	start_date = 2020.2.8
+	end_date = 3005.12.1
+}
+
+#Islamic Republic
+alliance = {
+       
+	first = IRA
+	second = LEB
+	start_date = 2020.2.10
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = IRA
+	second = YEM
+	start_date = 2020.2.11
+	end_date = 3005.12.1
+}
+
+
+#Russian - Armenian
+alliance = {
+        
+	first = RUS
+	second = ARM
+	start_date = 2019.3.19
+	end_date = 3005.12.1
+}
+#Russian - Tajik
+alliance = {
+    
+	first = RUS
+	second = TJK
+	start_date = 2019.3.20
+	end_date = 3005.12.1
+}
+#Russian - Blarus
+alliance = {
+        
+	first = RUS
+	second = BLR
+	start_date = 2019.3.21
+	end_date = 3005.12.1
+}
+#Russian - Kazakhestan
+alliance = {
+        
+	first = RUS
+	second = KZK
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+#Russian - Kerkizestan
+alliance = {
+       
+	first = RUS
+	second = KYR
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+################################
+#Russian - Tajik
+alliance = {
+    
+	first = BLR
+	second = TJK
+	start_date = 2019.3.20
+	end_date = 3005.12.1
+}
+#Russian - Kazakhestan
+alliance = {
+        
+	first = BLR
+	second = KZK
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+#Russian - Kerkizestan
+alliance = {
+       
+	first = BLR
+	second = KYR
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+#Russian - Kerkizestan
+alliance = {
+       
+	first = BLR
+	second = ARM
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+#################################
+
+#Russian - Kazakhestan
+alliance = {
+        
+	first = TJK
+	second = KZK
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+#Russian - Kerkizestan
+alliance = {
+       
+	first = TJK
+	second = KYR
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+#Russian - Kerkizestan
+alliance = {
+       
+	first = TJK
+	second = ARM
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+#################################
+#Russian - Kerkizestan
+alliance = {
+       
+	first = ARM
+	second = KYR
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+#Russian - Kerkizestan
+alliance = {
+       
+	first = ARM
+	second = KZK
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+##################################
+alliance = {
+       
+	first = KYR
+	second = KZK
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+alliance = {
+       
+	first = SYR
+	second = LEB
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+
+
+
+
+
+

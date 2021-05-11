@@ -1,0 +1,147 @@
+
+############################# 50
+####################################Cars
+low_opinion_spices_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_spices_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_spices_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_spices_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+######################################Gems
+low_opinion_sugar_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_sugar_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_sugar_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_sugar_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+########################################Coal
+low_opinion_salt_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_salt_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_salt_bad_50= {
+	opinion = -50
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_salt_good_50= {
+	opinion = 50
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+####################################### 25
+
+
+
+
+low_opinion_spices_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_spices_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_spices_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_spices_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_sugar_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_sugar_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_sugar_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_sugar_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+low_opinion_salt_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+low_opinion_salt_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_salt_bad_25= {
+	opinion = -25
+	years = 5
+	yearly_decay = 10
+}
+much_opinion_salt_good_25= {
+	opinion = 25
+	years = 5
+	yearly_decay = 10
+}
+
+
+
+
+
+

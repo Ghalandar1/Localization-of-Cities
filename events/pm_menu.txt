@@ -1,0 +1,99 @@
+namespace = pm_menu
+
+#1.Basic menu
+country_event = {
+    id = pm_menu.1
+    title = "pm_basic_menu_title"
+    desc = "pm_basic_menu_desc"
+    is_triggered_only = yes
+    #2.Plactate
+    option = {
+        name = "pm_plactate_opt"
+        hidden_effect = {
+        country_event = {
+             id = pm_menu_plactate.1 
+            }
+            export_to_variable = {
+                which = manpower_to_send
+                value = max_manpower
+                who = event_target:pm_target
+            }
+            multiply_variable = {
+                which = manpower_to_send
+                value = 0.2
+            }
+        }
+    }
+    #3.Exploit
+    option = {
+        name = "pm_exploit_opt"
+        hidden_effect = {
+        country_event = {
+            id = pm_menu_exploit.1
+        }
+        export_to_variable = {
+            which = manpower_to_send
+            value = max_manpower
+            who = event_target:pm_target
+        }
+        multiply_variable = {
+            which = manpower_to_send
+            value = 0.2
+        }
+    }
+}
+    #4.Special interaction
+    option = {
+        name = "pm_special_opt"
+        hidden_effect = {
+            country_event = {
+                 id = pm_menu_special.1
+                }
+            }
+    }
+    #5.Desigante
+    option = {
+        name = "pm_designate_opt"
+        highlight = yes
+    trigger = {
+        event_target:pm_target = {
+            NOT = {
+                has_country_flag = pm_have_specialisation 
+            }
+            NOT = {
+                is_subject_of_type = colony
+            }
+        }
+    }
+        hidden_effect = {
+        country_event = {
+             id = pm_menu_designate.1
+            }
+        }
+    }
+
+
+    #7Undesignate
+    option = {
+        name = "pm_undesignate" 
+        highlight = yes
+    trigger = {
+        event_target:pm_target = {
+        has_country_flag = pm_have_specialisation
+        }
+    }
+    pm_undesignate_clr = yes
+    hidden_effect = {
+        clr_global_flag = pm_diplomacy_engaged
+    }
+    }
+    #
+    #99Quit
+    option = {
+        name = "pm_quit"
+        hidden_effect = {
+            clr_global_flag = pm_diplomacy_engaged
+        }
+    }
+}
+

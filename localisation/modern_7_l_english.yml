@@ -1,0 +1,190 @@
+﻿l_english:
+ CHINWARE_LOW:0 "Human Falled Chinaware Prices"
+ CHINWARE_MUCH:0 "Human Rised Chinaware Price"
+ COCOA_LOW:0 "Human Falled Cocoa Prices"
+ COCOA_MUCH:0 "Human Rised Cocoa Prices"
+ COFFEE_LOW:0 "Human Falled Coffee Prices"
+ COFFEE_MUCH:0 "Human Rised Coffee Prices"
+ 
+ 
+ low_chinaware_50:0 "Falling Chinaware Prices -50%"
+ low_chinaware_50_desc:0 "Falling Chinaware Prices -50%"
+ low_chinaware_50_title:0 "Falling Chinaware Prices -50%"
+ low_chinaware_50_dialog:0 "Falling Chinaware Prices -50%"
+ low_chinaware_50_tooltip:0 "Falling Chinaware Prices -50%"
+ much_chinaware_50:0 "Rising Chinaware Prices 50%"
+ much_chinaware_50_desc:0 "Rising Chinaware Prices 50%"
+ much_chinaware_50_title:0 "Rising Chinaware Prices 50%"
+ much_chinaware_50_dialog:0 "Rising Chinaware Prices 50%"
+ much_chinaware_50_tooltip:0 "Rising Chinaware Prices 50%"
+ 
+ 
+ much_chinaware_25:0 "Rising Chinaware Prices 25%"
+ much_chinaware_25_desc:0 "Rising Chinaware Prices 25%"
+ much_chinaware_25_title:0 "Rising Chinaware Prices 25%"
+ much_chinaware_25_dialog:0 "Rising Chinaware Prices 25%"
+ much_chinaware_25_tooltip:0 "Rising Chinaware Prices 25%"
+ low_chinaware_25:0 "Falling Chinaware Prices -25%"
+ low_chinaware_25_desc:0 "Falling Chinaware Prices -25%"
+ low_chinaware_25_title:0 "Falling Chinaware Prices -25%"
+ low_chinaware_25_dialog:0 "Falling Chinaware Prices -25%"
+ low_chinaware_25_tooltip:0 "Falling Chinaware Prices -25%"
+ 
+ 
+ 
+ 
+ much_coffee_50:0 "Rising Coffee Prices 50%"
+ much_coffee_50_desc:0 "Rising Coffee Prices 50%"
+ much_coffee_50_title:0 "Rising Coffee Prices 50%"
+ much_coffee_50_dialog:0 "Rising Coffee Prices 50%"
+ much_coffee_50_tooltip:0 "Rising Coffee Prices 50%"
+ low_coffee_50:0 "Falling Coffee Prices -50%"
+ low_coffee_50_desc:0 "Falling Coffee Prices -50%"
+ low_coffee_50_title:0 "Falling Coffee Prices -50%"
+ low_coffee_50_dialog:0 "Falling Coffee Prices -50%"
+ low_coffee_50_tooltip:0 "Falling Coffee Prices -50%"
+ 
+ 
+ 
+ much_coffee_25:0 "Rising Coffee Prices 25%"
+ much_coffee_25_desc:0 "Rising Coffee Prices 25%"
+ much_coffee_25_title:0 "Rising Coffee Prices 25%"
+ much_coffee_25_dialog:0 "Rising Coffee Prices 25%"
+ much_coffee_25_tooltip:0 "Rising Coffee Prices 25%"
+ low_coffee_25:0 "Falling Coffee Prices -25%"
+ low_coffee_25_desc:0 "Falling Coffee Prices -25%"
+ low_coffee_25_title:0 "Falling Coffee Prices -25%"
+ low_coffee_25_dialog:0 "Falling Coffee Prices -25%"
+ low_coffee_25_tooltip:0 "Falling Coffee Prices -25%"
+ 
+
+ 
+ 
+ low_cocoa_50:0 "Falling Cocoa Prices -50%"
+ low_cocoa_50_desc:0 "Falling Cocoa Prices -50%"
+ low_cocoa_50_title:0 "Falling Cocoa Prices -50%"
+ low_cocoa_50_dialog:0 "Falling Cocoa Prices -50%"
+ low_cocoa_50_tooltip:0 "Falling Cocoa Prices -50%"
+ 
+ low_cocoa_25:0 "Falling Cocoa Prices -25%"
+ low_cocoa_25_desc:0 "Falling Cocoa Prices -25%"
+ low_cocoa_25_title:0 "Falling Cocoa Prices -25%"
+ low_cocoa_25_dialog:0 "Falling Cocoa Prices -25%"
+ low_cocoa_25_tooltip:0 "Falling Cocoa Prices -25%"
+ 
+ much_cocoa_50:0 "Rising Cocoa Prices 50%"
+ much_cocoa_50_desc:0 "Rising Cocoa Prices 50%"
+ much_cocoa_50_title:0 "Rising Cocoa Prices 50%"
+ much_cocoa_50_dialog:0 "Rising Cocoa Prices 50%"
+ much_cocoa_50_tooltip:0 "Rising Cocoa Prices 50%"
+ 
+ 
+ much_cocoa_25:0 "Rising Cocoa Prices 25%"
+ much_cocoa_25_desc:0 "Rising Cocoa Prices 25%"
+ much_cocoa_25_title:0 "Rising Cocoa Prices 25%"
+ much_cocoa_25_dialog:0 "Rising Cocoa Prices 25%"
+ much_cocoa_25_tooltip:0 "Rising Cocoa Prices 25%"
+ 
+
+ 
+ 
+
+ 
+ failling_cocoa_price_root_25:0 "Falled Cocoa Prices"
+ failling_cocoa_price_root:0 "Falled Cocoa Prices"
+ failling_cocoa_price_root_1:0 "Falled Cocoa Prices"
+ failling_cocoa_price_root_1_25:0 "Falled Cocoa Prices"
+ failling_cocoa_price_from_25:0 "Falled Cocoa Prices"
+ failling_cocoa_price_from:0 "Falled Cocoa Prices"
+ failling_cocoa_price_from_1:0 "Falled Cocoa Prices"
+ rising_cocoa_price_root_25:0 "Rising Cocoa Price"
+ rising_cocoa_price_root:0 "Rising Cocoa Price"
+ rising_cocoa_price_root_1:0 "Rising Cocoa Price"
+ rising_cocoa_price_root_1_25:0 "Rising Cocoa Price"
+ rising_cocoa_price_from_25:0 "Rising Cocoa Price"
+ rising_cocoa_price_from:0 "Rising Cocoa Price"
+ 
+ 
+ failling_chinaware_price_root_25:0 "Falling Chinaware Prices"
+ failling_chinaware_price_root:0 "Falling Chinaware Prices"
+ failling_chinaware_price_root_1:0 "Falling Chinaware Prices"
+ failling_chinaware_price_from_25:0 "Falling Chinaware Prices"
+ failling_chinaware_price_from:0 "Falling Chinaware Prices"
+ failling_chinaware_price_root_1_25:0 "Falling Chinaware Prices"
+ rising_chinaware_price_root_25:0 "Rising Chinaware Prices"
+ rising_chinaware_price_root:0 "Rising Chinaware Prices"
+ rising_chinaware_price_root_1:0 "Rising Chinaware Prices"
+ rising_chinaware_price_from_25:0 "Rising Chinaware Prices"
+ rising_chinaware_price_from:0 "Rising Chinaware Prices"
+ rising_chinaware_price_root_1_25:0 "Falling Chinaware Prices"
+ 
+ 
+ 
+ failling_coffee_price_root_1:0 "Falling Coffee Prices"
+ failling_coffee_price_root_25:0 "Falling Coffee Prices"
+ failling_coffee_price_root:0 "Falling Coffee Prices"
+ failling_coffee_price_from_25:0 "Falling Coffee Prices"
+ failling_coffee_price_from:0 "Falling Coffee Prices"
+ failling_coffee_price_root_1_25:0 "Falling Coffee Prices"
+ rising_coffee_price_root_25:0 "Rising Coffee Prices"
+ rising_coffee_price_root:0 "Rising Coffee Prices"
+ rising_coffee_price_root_1:0 "Rising Coffee Prices"
+ rising_coffee_price_from_25:0 "Rising Coffee Prices"
+ rising_coffee_price_from:0 "Rising Coffee Prices"
+ rising_coffee_price_root_1_25:0 "Rising Coffee Prices"
+ 
+ 
+ low_cocoa_price_1_50:0 "Human Changed Price Cocoa -50%"
+ much_cocoa_price_1_50:0 "Human Changed Price Cocoa 50%"
+ low_cocoa_price_1_25:0 "Human Changed Price Cocoa -25"
+ much_cocoa_price_1_25:0 "Human Changed Price Cocoa 25"
+ 
+ 
+ low_chinaware_price_1_50:0 "Human Changed Price Chinaware -50%"
+ much_chinaware_price_1_50:0 "Human Changed Price Chinaware 50%"
+ low_chinaware_price_1_25:0 "Human Changed Price Chinaware -25"
+ much_chinaware_price_1_25:0 "Human Changed Price Chinaware 25"
+ 
+ 
+ low_coffee_price_1_50:0 "Human Changed Price Coffee -50%"
+ much_coffee_price_1_50:0 "Human Changed Price Coffee 50%"
+ low_coffee_price_1_25:0 "Human Changed Price Coffee -25"
+ much_coffee_price_1_25:0 "Human Changed Price Coffee 25"
+ 
+ 
+ 
+ 
+ 
+ low_opinion_cocoa_good_50:0 "Good Opinion For Cocoa Price -50"
+ low_opinion_cocoa_bad_50:0 "Bad Opinion For Cocoa Price -50"
+ much_opinion_cocoa_good_50:0 "Good Opinion For Cocoa Price 50"
+ much_opinion_cocoa_bad_50:0 "Bad Opinion For Cocoa Price 50"
+ low_opinion_cocoa_good_25:0 "Good Opinion For Cocoa Price -25"
+ low_opinion_cocoa_bad_25:0 "Bad Opinion For Cocoa Price -25"
+ much_opinion_cocoa_bad_25:0 "Bad Opinion For Cocoa Price 25"
+ much_opinion_cocoa_good_25:0 "Good Opinion For Cocoa Price 25"
+ 
+ 
+ low_opinion_chinaware_good_50:0 "Good Opinion For Chinaware Price -50"
+ low_opinion_chinaware_bad_50:0 "Bad Opinion For Chinaware Price -50"
+ much_opinion_chinaware_good_50:0 "Good Opinion For Chinaware Price 50"
+ much_opinion_chinaware_bad_50:0 "Bad Opinion For Chinaware Price 50"
+ low_opinion_chinaware_good_25:0 "Good Opinion For Chinaware Price -25"
+ low_opinion_chinaware_bad_25:0 "Bad Opinion For Chinaware Price -25"
+ much_opinion_chinaware_bad_25:0 "Bad Opinion For Chinaware Price 25"
+ much_opinion_chinaware_good_25:0 "Good Opinion For Chinaware Price 25"
+ 
+ 
+ low_opinion_coffee_good_50:0 "Good Opinion For Coffee Price -50"
+ low_opinion_coffee_bad_50:0 "Bad Opinion For Coffee Price -50"
+ much_opinion_coffee_good_50:0 "Good Opinion For Coffee Price 50"
+ much_opinion_coffee_bad_50:0 "Bad Opinion For Coffee Price 50"
+ low_opinion_coffee_good_25:0 "Good Opinion For Coffee Price -25"
+ low_opinion_coffee_bad_25:0 "Bad Opinion For Coffee Price -25"
+ much_opinion_coffee_bad_25:0 "Bad Opinion For Coffee Price 25"
+ much_opinion_coffee_good_25:0 "Good Opinion For Coffee Price 25"
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,105 @@
+﻿l_english:
+
+ initiate_nuclear_research:0 "Start Nuclear Research"
+ initiate_nuclear_research_title:0 "Start Nuclear Research"
+ initiate_nuclear_research_desc:0 "Try not to start this research as it will cause a world war III"
+ 
+ 
+ nuclear_10_research:0 "Uranium enrichment up to §R10%§!"
+ nuclear_10_research_title:0 "Uranium enrichment up to §R10%§!"
+ nuclear_10_research_desc:0 "Increase uranium enrichment to 10% and grow your peaceful research"
+ 
+ nuclear_20_research:0 "Uranium enrichment up to §R20%§!"
+ nuclear_20_research_title:0 "Uranium enrichment up to §R20%§!"
+ nuclear_20_research_desc:0 "Increase uranium enrichment to 20% and grow your peaceful research"
+ 
+ nuclear_40_research:0 "Uranium enrichment up to §R40%§!"
+ nuclear_40_research_title:0 "Uranium enrichment up to §R40%§!"
+ nuclear_40_research_desc:0 "Increase uranium enrichment to 40% and grow your peaceful research :)"
+ 
+ nuclear_75_research:0 "Uranium enrichment up to §R75%§!"
+ nuclear_75_research_title:0 "Uranium enrichment up to §R75%§!"
+ nuclear_75_research_desc:0 "Increase uranium enrichment to 75% and grow your peaceful research :)"
+ 
+ nuclear_90_research:0 "Uranium enrichment up to §R90%§!"
+ nuclear_90_research_title:0 "Uranium enrichment up to §R90%§!"
+ nuclear_90_research_desc:0 "Increase uranium enrichment to 90% and grow your peaceful research :)"
+ 
+ num_of_nuclear_weapons:0 "Number of Nuclear Weapons"
+ use_nuke_title:0 "Atomic Attack"
+ use_nuke_tooltip:0 "Use an Atomic Bomb to cause great devastation to a single enemy province as well as increase their war exhaustion."
+ use_nuke_desc:0 "By using nuclear weapons we can cause great devastation to a single enemy province as well as increase their war exhaustion making them more willing to accept peace. However, it will also make them much more willing to use their nukes on us, if they have any, so we should be careful when trying to nuke another nuclear power.\n\nThis action will not lunch the nuke straight away, but you will get to choose the target province first."
+
+
+ #########################################################################
+
+
+
+
+
+
+
+
+ nuclear.1title:0 "Start Nuclear Research"
+ nuclear.1opt:0 "It's Great"
+ nuclear.1desc:0 "My $MONARCHTITLE$, We Start Nuclear Research. \nAnd we hope that this research will come to fruition."
+ 
+ nuclear.2title:0 "§R[From.Owner.GetName]§! Started Nuclear Research"
+ nuclear.2desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! have begun nuclear research. \nWe either have to stop them \nor \nwe have to start nuclear research to defend ourselves."
+ nuclear.2opt:0 "This Is Very Dangerous"
+ 
+ nuclear.3title:0 "Uranium enrichment up to §R10%§!"
+ nuclear.3desc:0 "My $MONARCHTITLE$, Uranium enrichment up to §R10%§!."
+
+ 
+ nuclear.4title:0 "§R[From.Owner.GetName]§! Uranium enrichment up to §R10%§!"
+ nuclear.4desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! increased uranium enrichment to §R10%§!. \nWe either have to stop them \nor \nwe have to start nuclear research to defend ourselves."
+ 
+ nuclear.5title:0 "Uranium enrichment up to §R20%§!"
+ nuclear.5desc:0 "My $MONARCHTITLE$, Uranium enrichment up to §R20%§!."
+
+ 
+ nuclear.6title:0 "§R[From.Owner.GetName]§! Uranium enrichment up to §R20%§!"
+ nuclear.6desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! increased uranium enrichment to §R20%§!. \nWe either have to stop them \nor \nwe have to start nuclear research to defend ourselves."
+ 
+ nuclear.7title:0 "Uranium enrichment up to §R40%§!"
+ nuclear.7desc:0 "My $MONARCHTITLE$, Uranium enrichment up to §R40%§!."
+
+ 
+ nuclear.8title:0 "§R[From.Owner.GetName]§! Uranium enrichment up to §R40%§!"
+ nuclear.8desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! increased uranium enrichment to §R40%§!. \nWe either have to stop them \nor \nwe have to start nuclear research to defend ourselves."
+ 
+ nuclear.9title:0 "Uranium enrichment up to §R75%§!"
+ nuclear.9desc:0 "My $MONARCHTITLE$, Uranium enrichment up to §R75%§!."
+
+ 
+ nuclear.10title:0 "§R[From.Owner.GetName]§! Uranium enrichment up to §R75%§!"
+ nuclear.10desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! increased uranium enrichment to §R75%§!. \nWe either have to stop them \nor \nwe have to start nuclear research to defend ourselves."
+ 
+ nuclear.11title:0 "Uranium enrichment up to §R90%§!"
+ nuclear.11desc:0 "My $MONARCHTITLE$, Uranium enrichment up to §R90%§!."
+
+ 
+ nuclear.12title:0 "§R[From.Owner.GetName]§! Uranium enrichment up to §R90%§!"
+ nuclear.12desc:0 "My $MONARCHTITLE$, §R[From.Owner.GetName]§! increased uranium enrichment to §R90%§!. \nWe either have to stop them \nor \nwe have to start nuclear research to defend ourselves."
+ 
+ nuclear.13title:0 "Mass` production of Atomic Bombs"
+ nuclear.13desc:0 "My $MONARCHTITLE$, Now we have §G**[Root.num_of_nuclear_weapons.GetValue]**§! §RAtomic Bomb§! "
+
+ 
+ nuclear.14title:0 "§R[From.Owner.GetName]§! We made our §G**[Root.num_of_nuclear_weapons.GetValue]**§! §RAtomic Bomb§!"
+ nuclear.14desc:0 "My $MONARCHTITLE$,We made our own §G**[Root.num_of_nuclear_weapons.GetValue]**§! §RAtomic Bomb§! and now the world must be afraid of us."
+ 
+ 
+ nuclear.14title:0 "§R[From.Owner.GetName]§! They dropped an §RAtomic Bomb§! on our city"
+ nuclear.14desc:0 "My $MONARCHTITLE$,§R[From.Owner.GetName]§! dropped an §RAtomic Bomb§! on our city ."
+ nuclear.3opt:0 "Worst Possible"
+ 
+ nuclear_research_modifire:0 "Initiate nuclear research"
+ research_nuclear_10_modifire:0 "10% uranium enrichment"
+ research_nuclear_20_modifire:0 "20% uranium enrichment"
+ research_nuclear_40_modifire:0 "40% uranium enrichment"
+ research_nuclear_75_modifire:0 "75% uranium enrichment"
+ research_nuclear_90_modifire:0 "90% uranium enrichment"
+ 
+

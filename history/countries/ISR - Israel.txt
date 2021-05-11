@@ -1,0 +1,28 @@
+government = republic
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+government_rank = 2
+
+capital = 1086
+primary_culture = israeli
+religion = jewish
+historical_friend = USA
+historical_rival = PLS
+historical_rival = IRA
+technology_group = western 
+
+
+
+2019.5.30 = {
+	monarch = {
+		name = "Benyamin Netaniaho"
+		adm = 3
+		dip = 3
+		mil = 3
+		religion = jewish
+	}
+}

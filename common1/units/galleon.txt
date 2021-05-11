@@ -1,0 +1,8 @@
+#Galleon
+type = heavy_ship
+
+hull_size = 250
+base_cannons = 300
+sail_speed = 14
+
+sprite_level = 3

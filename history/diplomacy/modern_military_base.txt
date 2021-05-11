@@ -1,0 +1,553 @@
+
+#Russian - Syria
+dependency = {
+        subject_type = "access_building_on_state"
+	first = RUS
+	second = SYR
+	start_date = 2019.3.18
+	end_date = 3005.12.1
+}
+#Russian - Mozambiq
+dependency = {
+        subject_type = "access_building_on_state"
+	first = RUS
+	second = MZM
+	start_date = 2019.3.19
+	end_date = 3005.12.1
+}
+#Russian - Centeral Africa
+dependency = {
+        subject_type = "access_building_on_state"
+	first = RUS
+	second = CAF
+	start_date = 2019.3.19
+	end_date = 3005.12.1
+}
+#Russian - Sudan
+dependency = {
+        subject_type = "access_building_on_state"
+	first = RUS
+	second = SUD
+	start_date = 2019.3.20
+	end_date = 3005.12.1
+}
+#Russian - Eritare
+dependency = {
+        subject_type = "access_building_on_state"
+	first = RUS
+	second = ERI
+	start_date = 2019.3.21
+	end_date = 3005.12.1
+}
+#Russian - Moldavia
+dependency = {
+        subject_type = "access_building_on_state"
+	first = RUS
+	second = MDV
+	start_date = 2019.3.23
+	end_date = 3005.12.1
+}
+
+
+#Turish - Qatar
+dependency = {
+        subject_type = "access_building_on_state"
+	first = TKY
+	second = QTR
+	start_date = 2019.3.24
+	end_date = 3005.12.1
+}
+#Turish - Somalia
+dependency = {
+        subject_type = "access_building_on_state"
+	first = TKY
+	second = SOM
+	start_date = 2019.3.25
+	end_date = 3005.12.1
+}
+#Turish - Albania
+dependency = {
+        subject_type = "access_building_on_state"
+	first = TKY
+	second = ALB
+	start_date = 2019.3.25
+	end_date = 3005.12.1
+}
+#Turish - Libya
+dependency = {
+        subject_type = "access_building_on_state"
+	first = TKY
+	second = LBY
+	start_date = 2019.3.25
+	end_date = 3005.12.1
+}
+
+
+#Chinise - Djiboti
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = DJI
+	start_date = 2019.4.1
+	end_date = 3005.12.1
+}
+#Chinise - Myanmar
+dependency = {
+        subject_type = "access_building_on_state"
+	first = CHN
+	second = MNM
+	start_date = 2019.4.2
+	end_date = 3005.12.1
+}
+
+
+
+
+#Indian - Bhotan
+dependency = {
+        subject_type = "access_building_on_state"
+	first = IND
+	second = BHU
+	start_date = 2019.4.2
+	end_date = 3005.12.1
+}
+#Indian - Madagaskar
+dependency = {
+        subject_type = "access_building_on_state"
+	first = IND
+	second = MDG
+	start_date = 2019.4.3
+	end_date = 3005.12.1
+}
+#Indian - Mauritis
+dependency = {
+        subject_type = "access_building_on_state"
+	first = IND
+	second = MTU
+	start_date = 2019.4.4
+	end_date = 3005.12.1
+}
+#Indian - Seycheles
+dependency = {
+        subject_type = "access_building_on_state"
+	first = IND
+	second = SEY
+	start_date = 2019.4.5
+	end_date = 3005.12.1
+}
+
+
+
+
+#British - Cyprus
+dependency = {
+        subject_type = "access_building_on_state"
+	first = GBR
+	second = CYP
+	start_date = 2019.4.6
+	end_date = 3005.12.1
+}
+#British - Brunei
+dependency = {
+        subject_type = "access_building_on_state"
+	first = GBR
+	second = BEI
+	start_date = 2019.4.8
+	end_date = 3005.12.1
+}
+
+#British - Kenya
+dependency = {
+        subject_type = "access_building_on_state"
+	first = GBR
+	second = KEY
+	start_date = 2019.4.9
+	end_date = 3005.12.1
+}
+#British - Nepal
+dependency = {
+        subject_type = "access_building_on_state"
+	first = GBR
+	second = NPL
+	start_date = 2019.4.10
+	end_date = 3005.12.1
+}
+
+
+
+
+
+
+#France - Ivori coast
+dependency = {
+        subject_type = "access_building_on_state"
+	first = FR2
+	second = IVO
+	start_date = 2019.4.10
+	end_date = 3005.12.1
+}
+#France - Senegal
+dependency = {
+        subject_type = "access_building_on_state"
+	first = FR2
+	second = SGL
+	start_date = 2019.4.11
+	end_date = 3005.12.1
+}
+#France - Gabon
+dependency = {
+        subject_type = "access_building_on_state"
+	first = FR2
+	second = GAB
+	start_date = 2019.4.12
+	end_date = 3005.12.1
+}
+#France - Gabon
+dependency = {
+        subject_type = "access_building_on_state"
+	first = FR2
+	second = CDD
+	start_date = 2019.4.13
+	end_date = 3005.12.1
+}
+
+
+
+
+#American - Iraq
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = IRQ
+	start_date = 2019.2.9
+	end_date = 3005.12.1
+}
+#American - Afghanistan
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = AFG
+	start_date = 2019.2.10
+	end_date = 3005.12.1
+}
+#American - Oman
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = OMA
+	start_date = 2019.2.11
+	end_date = 3005.12.1
+}
+#American - Greece
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = GRE
+	start_date = 2019.2.14
+	end_date = 3005.12.1
+}
+#American - Philipin
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = POR
+	start_date = 2019.2.15
+	end_date = 3005.12.1
+}
+#American - Belgium
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = BEL
+	start_date = 2019.2.17
+	end_date = 3005.12.1
+}
+#American - Netherland
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = NED
+	start_date = 2019.2.20
+	end_date = 3005.12.1
+}
+#American - Bulgaria
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = BUL
+	start_date = 2019.2.21
+	end_date = 3005.12.1
+}
+#American - Singapor
+dependency = {
+        subject_type = "access_building_on_state"
+	first = GBR
+	second = SGA
+	start_date = 2019.4.9
+	end_date = 3005.12.1
+}
+#American - Kosovo
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = KOS
+	start_date = 2019.4.10
+	end_date = 3005.12.1
+}
+#American - Niger
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = NGR
+	start_date = 2019.4.11
+	end_date = 3005.12.1
+}
+#American - Norway
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = NOR
+	start_date = 2019.4.12
+	end_date = 3005.12.1
+}
+
+#American - Poland
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = POL
+	start_date = 2019.4.14
+	end_date = 3005.12.1
+}
+#American - Australia
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = AUS
+	start_date = 2019.4.15
+	end_date = 3005.12.1
+}
+
+#American - Tunesia
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = TUN
+	start_date = 2019.4.18
+	end_date = 3005.12.1
+}
+#American - Thiland
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = THL
+	start_date = 2019.4.20
+	end_date = 3005.12.1
+}
+#American - Egypt
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = EGY
+	start_date = 2019.4.21
+	end_date = 3005.12.1
+}
+
+#American - Georgia
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = GEO
+	start_date = 2019.4.23
+	end_date = 3005.12.1
+}
+#American - Azerbaijan
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = AZE
+	start_date = 2019.4.25
+	end_date = 3005.12.1
+}
+
+
+#American - Japan
+dependency = {
+        subject_type = "limited_army"
+	first = USA
+	second = JAP
+	start_date = 2019.4.26
+	end_date = 3005.12.1
+}
+#American - Germany
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = GER
+	start_date = 2019.4.27
+	end_date = 3005.12.1
+}
+#American - South Korea
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = SKO
+	start_date = 2019.4.28
+	end_date = 3005.12.1
+}
+#American - Philipin
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = PHI
+	start_date = 2019.5.1
+	end_date = 3005.12.1
+}
+#American - Panama
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = PNM
+	start_date = 2019.5.1
+	end_date = 3005.12.1
+}
+#American - Colombia
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = COL
+	start_date = 2019.5.2
+	end_date = 3005.12.1
+}
+#American - PRU
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = PEU
+	start_date = 2019.5.3
+	end_date = 3005.12.1
+}
+#American - Saudi Arabia
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = SAU
+	start_date = 2019.5.4
+	end_date = 3005.12.1
+}
+#American - Ecuadur
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = ECU
+	start_date = 2019.5.5
+	end_date = 3005.12.1
+}
+#American - Cuba
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = CUB
+	start_date = 2019.5.6
+	end_date = 3005.12.1
+}
+#American - Cuba
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = HON
+	start_date = 2019.5.7
+	end_date = 3005.12.1
+}
+
+
+#British - Canada
+dependency = {
+        subject_type = "access_building_on_state"
+	first = GBR
+	second = CAN
+	start_date = 2019.6.1
+	end_date = 3005.12.1
+}
+
+#British - Canada
+dependency = {
+        subject_type = "access_building_on_state"
+	first = AUS
+	second = MLA
+	start_date = 2019.6.2
+	end_date = 3005.12.1
+}
+#British - Beliz
+dependency = {
+        subject_type = "access_building_on_state"
+	first = GBR
+	second = BLZ
+	start_date = 2019.6.3
+	end_date = 3005.12.1
+}
+
+#British - Paragua
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = PRG
+	start_date = 2019.6.4
+	end_date = 3005.12.1
+}
+
+#USA - QTR
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = QTR
+	start_date = 2019.6.5
+	end_date = 3005.12.1
+}
+
+#USA - Bahrein
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = UAE
+	start_date = 2019.6.5
+	end_date = 3005.12.1
+}
+
+#USA - Bahrein
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = KUW
+	start_date = 2019.6.5
+	end_date = 3005.12.1
+}
+
+#USA - Bahrein
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = JOR
+	start_date = 2019.6.5
+	end_date = 3005.12.1
+}
+
+#USA - Bahrein
+dependency = {
+        subject_type = "access_building_on_state"
+	first = USA
+	second = BHR
+	start_date = 2019.6.5
+	end_date = 3005.12.1
+}
+
+#USA - Bahrein
+dependency = {
+        subject_type = "access_building_on_state"
+	first = CHN
+	second = IRA
+	start_date = 2020.3.1
+	end_date = 3005.12.1
+}
+
+

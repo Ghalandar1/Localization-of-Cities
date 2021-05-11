@@ -1,0 +1,26 @@
+government = republic
+
+government_rank = 2
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+historical_rival = SKO
+
+capital = 1182
+primary_culture = japanese
+religion = secularism
+technology_group = western 
+2019.5.30 = {
+	monarch = {
+		name = "Yoshihide"
+		birth_date = 1933.12.23
+		dynasty = "Suga"
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = shinto
+	}
+}

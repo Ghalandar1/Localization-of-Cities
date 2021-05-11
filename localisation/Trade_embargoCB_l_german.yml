@@ -1,0 +1,8 @@
+﻿l_german:
+ cb_trade_embargowar: "They unilaterally embargo us"
+ cb_trade_embargowar_desc: "They unilaterally embargo us. They embargo us but we do not embargo them"
+ superiority_trade_embargo_war: "Show the world we are superior to our enemy who unilaterally embargo us."
+ superiority_trade_embargo_war_desc: "They embargo us. We do not embargo them. Their attitude towards us needs to be corrected. They will regret the day they got entangled with us."
+ ALL_TRADEEMBARGOWAR: "Trade Embargo War"
+ TRADE_EMBARGO_WAR_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Trade Embargoed War"
+ ALL_PROVS: "ALL PROVS"

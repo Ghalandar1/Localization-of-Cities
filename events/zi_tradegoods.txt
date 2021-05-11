@@ -1,0 +1,164 @@
+province_event = {
+	id = zi.57
+	title = "zi_57EVTNAME"
+	desc = "zi_57EVTDESC"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	trigger = {
+	is_colony = no
+	OR = {	
+		has_province_modifier = tggrain
+		has_province_modifier = tgwine
+		has_province_modifier = tgcloth
+		has_province_modifier = tgfish
+		has_province_modifier = tgfur
+		has_province_modifier = tgsalt
+		has_province_modifier = tgfish
+		has_province_modifier = tgnaval_supplies
+		has_province_modifier = tgcopper
+		has_province_modifier = tggold
+		has_province_modifier = tgiron
+		has_province_modifier = tgslaves
+		has_province_modifier = tgivory
+		has_province_modifier = tgtea
+		has_province_modifier = tgchinaware
+		has_province_modifier = tgspices
+		has_province_modifier = tgcoffee
+		has_province_modifier = tgcotton
+		has_province_modifier = tgsugar
+		has_province_modifier = tgtobacco
+		has_province_modifier = tgsilk
+		has_province_modifier = tgdyes
+		has_province_modifier = tgcocoa
+		has_province_modifier = tgtropical_wood
+	}
+	}
+	
+			immediate = {
+		if = { 
+			limit = { has_province_modifier = tggrain } 
+			remove_province_modifier = tggrain
+			change_trade_goods = grain
+		}
+		if = { 
+			limit = { has_province_modifier = tgwine } 
+			remove_province_modifier = tgwine
+			change_trade_goods = wine
+		}
+		if = { 
+			limit = { has_province_modifier = tgwool } 
+			remove_province_modifier = tgwool
+			change_trade_goods = wool
+		}
+		if = { 
+			limit = { has_province_modifier = tgcloth } 
+			remove_province_modifier = tgcloth
+			change_trade_goods = cloth
+		}
+		if = { 
+			limit = { has_province_modifier = tgfish } 
+			remove_province_modifier = tgfish
+			change_trade_goods = fish
+		}
+		if = { 
+			limit = { has_province_modifier = tgfur } 
+			remove_province_modifier = tgfur
+			change_trade_goods = fur
+		}
+		if = { 
+			limit = { has_province_modifier = tgsalt } 
+			remove_province_modifier = tgsalt
+			change_trade_goods = salt
+		}
+		if = { 
+			limit = { has_province_modifier = tgnaval_supplies } 
+			remove_province_modifier = tgnaval_supplies
+			change_trade_goods = naval_supplies
+		}
+		if = { 
+			limit = { has_province_modifier = tgcopper } 
+			remove_province_modifier = tgcopper
+			change_trade_goods = copper
+		}
+		if = { 
+			limit = { has_province_modifier = tggold } 
+			remove_province_modifier = tggold
+			change_trade_goods = gold
+		}
+		if = { 
+			limit = { has_province_modifier = tgiron } 
+			remove_province_modifier = tgiron
+			change_trade_goods = iron
+		}
+		if = { 
+			limit = { has_province_modifier = tgslaves } 
+			remove_province_modifier = tgslaves
+			change_trade_goods = slaves
+		}
+		if = { 
+			limit = { has_province_modifier = tgivory } 
+			remove_province_modifier = tgivory
+			change_trade_goods = ivory
+		}
+		if = { 
+			limit = { has_province_modifier = tgtea } 
+			remove_province_modifier = tgtea
+			change_trade_goods = tea
+		}
+		if = { 
+			limit = { has_province_modifier = tgchinaware } 
+			remove_province_modifier = tgchinaware
+			change_trade_goods = chinaware
+		}
+		if = { 
+			limit = { has_province_modifier = tgspices } 
+			remove_province_modifier = tgspices
+			change_trade_goods = spices
+		}
+		if = { 
+			limit = { has_province_modifier = tgcoffee } 
+			remove_province_modifier = tgcoffee
+			change_trade_goods = coffee
+		}
+		if = { 
+			limit = { has_province_modifier = tgcotton } 
+			remove_province_modifier = tgcotton
+			change_trade_goods = cotton
+		}
+		if = { 
+			limit = { has_province_modifier = tgsugar } 
+			remove_province_modifier = tgsugar
+			change_trade_goods = sugar
+		}
+		if = { 
+			limit = { has_province_modifier = tgtobacco } 
+			remove_province_modifier = tgtobacco
+			change_trade_goods = tobacco
+		}
+		if = { 
+			limit = { has_province_modifier = tgsilk } 
+			remove_province_modifier = tgsilk
+			change_trade_goods = silk
+		}
+		if = { 
+			limit = { has_province_modifier = tgdyes } 
+			remove_province_modifier = tgdyes
+			change_trade_goods = dyes
+		}
+		if = { 
+			limit = { has_province_modifier = tgcocoa } 
+			remove_province_modifier = tgcocoa
+			change_trade_goods = cocoa
+		}
+		if = { 
+			limit = { has_province_modifier = tgtropical_wood } 
+			remove_province_modifier = tgtropical_wood
+			change_trade_goods = tropical_wood
+		}
+	}
+	
+	option = {
+		name = "zi_57EVTOPTION"
+	
+	}
+}

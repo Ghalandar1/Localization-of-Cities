@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = autocracy_reform
+add_government_reform = parliamentary_reform
+add_government_reform = universal_suffrage_reform
+add_government_reform = reinforce_republican_values_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+set_legacy_government = parliamentary_monarchy
+government_rank = 2
+
+capital = 10837
+primary_culture = persian
+religion = shiite
+religious_school = jafari_school
+technology_group = muslim
+2019.5.30 = {
+	monarch = {
+		name = "Kurosh"
+		dynasty = "Hakhamaneshi"
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}

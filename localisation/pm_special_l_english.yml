@@ -1,0 +1,16 @@
+﻿l_english:
+ pms_role_dev:0 "§GDeveloper§!"
+ pms_role_adm:0 "§RAdministrator§!"
+ pms_role_col:0 "§BColonist§!"
+ pms_role_mil:0 "§RMilitarist§!"
+ pms_role_nav:0 "§BNaval§!"
+ pms_role_rel:0 "§RReligious§!"
+ pms_role_default:0 "no"
+ 
+ pms_type_vassal:0 "§GVassal§!"
+ pms_type_client_sate:0 "§BClient state§!"
+ pms_type_march:0 "§RMarch§!"
+ pms_type_colony:0 "§BColonial nation§!"
+ pms_type_client_march:0 "§RClient March§!"
+ pms_type_PU:0 "§GJunior partner§!"
+ pms_type_default:0 "§WSubject§!"

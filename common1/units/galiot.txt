@@ -1,0 +1,8 @@
+#Galiot
+type = galley
+
+hull_size = 140
+base_cannons = 170
+sail_speed = 21
+
+sprite_level = 8

@@ -1,0 +1,15 @@
+﻿l_english:
+ TKY:0 "Turkey"
+ TKY_ADJ:0 "Turkish"
+ TUR:1 "Ottoman Empire"
+ TUR_ADJ:0 "Turkish"
+ KZK:0 "Kazakhstan"
+ KZK_ADJ:0 "Kazakh"
+ RUS:0 "Russia"
+ RUS_ADJ:0 "Russian"
+ SOV:0 "Soviet Union"
+ SOV_ADJ:0 "Russian"
+ SOO:1 "South Ossetia"
+ SOO_ADJ:1 "Alan"
+ 
+ INFILTRATETITLE:0 "Use GPS"

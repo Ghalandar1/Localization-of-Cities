@@ -1,0 +1,39 @@
+namespace = destroy_antiquities
+
+province_event = {
+	id = destroy_antiquities.2
+	title = "destroy_antiquities.2title"
+	desc = "destroy_antiquities.2desc"
+	picture = destroy_antiquities_eventPicture
+	
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "destroy_antiquities.2opt"
+		
+		if = {
+			limit = {
+				any_owned_province = { trade_goods = antiquities }
+			}
+			change_trade_goods = grain
+		}
+	}
+}
+
+
+country_event = {
+	id = destroy_antiquities.1
+	title = "destroy_antiquities.1title"
+	desc = "destroy_antiquities.1desc"
+	picture = destroy_antiquities_eventPicture
+	
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "destroy_antiquities.1opt"
+	}
+
+
+}

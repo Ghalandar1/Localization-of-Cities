@@ -1,0 +1,157 @@
+﻿l_english:
+ #Mission Related
+ mf_mission.EVTNAME1:0 "An Ally of the Church"
+ mf_mission.EVTDESC1:0 "Because we occupy the home of the Church in Rome, we have had the privilege of establishing close ties to the Papacy. Since we have built up much rapport with the church, some members of the clergy as well as our own court come to us with a proposal to grant the Church partial autonomy in our lands. We can either grant the Church their own piece of land with greater autonomy, while still owing tribute to our court, or we can also simply integrate the Church into our nation itself and continue to maintain direct control over Church affairs, which will weaken the Papacy itself, while at the same time boosting the influence and prestige of the members of the church already in our court. Politically, it all come down to whether we wish to please the Pope or the holy men of our court."   
+ mf_mission.EVTOPTA1:0 "Grant land to the Church"
+ mf_mission.EVTOPTB1:0 "Integrate them under our rule"
+ 
+ mf_mission.EVTNAME2:0 "Restoration of the Umayyad"
+ mf_mission.EVTDESC2:0 "Though the Umayyad Caliphate as a political entity no longer exists, the Umayyad dynasty's lineage survives in the blood of our rulers. Now that the main lands of the Umayyad Caliphate have been reclaimed, and the false Caliphates having been defeated by our righteous forces, the question of the restoration of the legitimate Caliphate comes to the mind of all in the court. Let us make a decision that shall surely change the annals of history forever."  
+ mf_mission.EVTOPTA2:0 "Restore the Caliphate!"
+ mf_mission.EVTOPTB2:0 "We should have some humility..."
+ 
+ met_change_nation.EVTNAME1:0 "A New Indo-Scythian Nation?"
+ met_change_nation.EVTDESC1:0 "Ever since the unification of the Sakas under a single banner and the restoration of Sakastan under our rule, many officials and nobles of our court call for the return to our traditional identity. By establishing an Indo-Scythian state, it will be known to all that we are no longer a mere satrap, but rather a united peoples that have survived and thrived against all odds."
+ met_change_nation.EVTOPTA1:0 "The time for an Indo-Scythian nation has come!"
+ met_change_nation.EVTOPTB1:0 "Indo-Scythia should be left in history."
+ 
+ met_change_nation.EVTNAME2:0 "Neo-Assyrian Missions"
+ met_change_nation.EVTDESC2:0 "With the restoration of the Assyrian state, our nation now has new objectives that will shape the course of our peoples. Let us adopt these new missions in restoring the glory of the Assyrian Empire once more."
+ met_change_nation.EVTOPTA2:0 "Glory to Assyria!"
+ 
+ met_change_nation.EVTNAME3:0 "A Gran Colombia"
+ met_change_nation.EVTDESC3:0 "A member of the Congress has proposed that we adopt a new name for our nation: Gran Colombia. While this reflects the sentiment of our peoples of a strong and united Colombia since the time of the early Libertadores, such a decision will have long lasting consequences for our nation, state and peoples."
+ met_change_nation.EVTOPTA3:0 "¡Viva la Gran Colombia!"
+ met_change_nation.EVTOPTB3:0 "We must strive for humility."
+ 
+ met_change_nation.EVTNAME4:0 "Restoration of the Han?"
+ met_change_nation.EVTDESC4:0 "Our great founder was a legitimate scion of the imperial house of Han; every day he dreamt of reviving of the Han, and he viewed his state of Shu Han as a rightful successor to the Han itself. With all the lands of the Middle Country united at last, perhaps it is time to change our dynasty to one deserving of our lineage."
+ met_change_nation.EVTOPTA4:0 "Restore the Han!"
+ met_change_nation.EVTOPTB4:0 "The Han is long gone."
+ 
+ met_change_nation.EVTNAME5:0 "A United Saudi Arabia?"
+ met_change_nation.EVTDESC5:0 "We have successfully united the dominions of Najd and Hejaz through the grand efforts of many generations of our house. Our hard-fought unification has left many of our court and generals eager for the declaration of a united state that shall represent the Arabian peoples, beyond our homeland of Najd. This would mean the declaration of a Kingdom of Saudi Arabia."
+ met_change_nation.EVTOPTA5:0 "Declare the new state!"
+ met_change_nation.EVTOPTB5:0 "We cannot forget our origins."
+ 
+ met_change_nation.EVTNAME6:0 "A New Tangut State?"
+ met_change_nation.EVTDESC6:0 "We peoples of the Tangut have proven our worth under Heaven, and now we "barbarians" have even established a mighty state reigning over the "civilized" Chinese of the Middle Country. With such a claim to the empire, we can establish a new reigning state of the Western Xia, reforming and sinicizing our government in the process; on the other hand, we could also maintain our Tangut traditions and preserve the order of our tribes."
+ met_change_nation.EVTOPTA6:0 "Xi Xia Wansui!"
+ met_change_nation.EVTOPTB6:0 "We mustn't sinicize..."
+ 
+ met_change_nation.EVTNAME7:0 "New Faith, New Missions"
+ met_change_nation.EVTDESC7:0 "With the adoption of Christianity as the official state religion of our empire, Rome is now faced with new missions and objectives for the sake of piety, prosperity and Pax Romana."
+ met_change_nation.EVTOPTA7:0 "Rome enters a new age!"
+ 
+ met_change_nation.EVTNAME8:0 "New Kingdom, New Missions"
+ met_change_nation.EVTDESC8:0 "The kingdom of Egypt has been restored after many centuries of foreign rule, and with a new kingdom comes new objectives in both foreign and domestic policy. Let us do what we can to fulfill the missions and ambitions of the Twenty Sixth Dynasty of Egypt!" 
+ met_change_nation.EVTOPTA8:0 "May our restored kingdom prosper!"
+ 
+ 
+ 
+ 
+ mf_mission.EVTNAME3:0 "Sarmatian Amazons"
+ mf_mission.EVTDESC3:0 "Our women are renowned across the land for their bravery and martial prowess on the field, and even the Greeks view our Amazonian women with admiration. To this day, women still hold high ranking positions in our military, and their leadership on the field cannot be denied. With our growing armies and our successive victories, there are now even more talented women among our ranks. Let us recruit them from the Sarmatian tribes and place them in positions of greater military authority in our horde."
+ mf_mission.EVTOPTA3:0 "Grant them generalship."
+ mf_mission.EVTOPTB3:0 "Grant them a court position."
+ 
+ mf_mission.EVTNAME4:0 "A Jewish Conversion?"
+ mf_mission.EVTDESC4:0 "Our ruler has become inspired by the Jewish faith and Jewish laws and wishes to convert themselves and the entirety of our state to Judaism. Although this would present new opportunities as well as ensure our neutrality, we will surely lose favor from the current religious caste."
+ mf_mission.EVTOPTA4:0 "Adopt the new faith!"
+ mf_mission.EVTOPTB4:0 "We cannot abandon our faith."
+ 
+ mf_mission.EVTNAME5:0 "Rebels in Jerusalem"
+ mf_mission.EVTDESC5:0 "Our spy network in Jerusalem is strong enough to support an open rebellion of Jewish zealots in the province. We have achieved much through our espionage maneuvers, and now all there is left is deciding on what capacity we shall support the rebels."
+ mf_mission.EVTOPTA5:0 "Send them plenty of supplies."
+ mf_mission.EVTOPTB5:0 "Grant them supplies and arms."
+ mf_mission.EVTOPTC5:0 "Fully fund the revolt!"
+ mf_mission.EVTOPTD5:0 "I change my mind..."
+ 
+ mf_mission.EVTNAME6:0 "Trade or Faith?"
+ mf_mission.EVTDESC6:0 "The Roman and Persian empires are opposed both militarily and religiously. Our ruler has recently considered the possibility of a conversion to the Jewish faith in order to maintain complete religious impartiality between the empires; not only will they be unable to influence our traders, but they shall also be unable to influence our state through their statuses as the leaders of their respective faiths."
+ mf_mission.EVTOPTA6:0 "For Himyar, and for Rahmanan!"
+ mf_mission.EVTOPTB6:0 "We cannot abandon the gods!"
+ 
+ mf_mission.EVTNAME7:0 "Papal Privileges"
+ mf_mission.EVTDESC7:0 "Our strong ties with the Pope have granted us greater privileges beyond the realm of the Church. In return for our services to the Church, the Pope shall make our naval customs the unquestioned laws of the sea for all of Europe, including even our rivals, to follow. Of course, we can take advantage of this and make it so the laws favor us. On the other hand, perhaps we can instead use our new recognition to strengthen the Diocese of Pisa back home. Unfortunately, both would be asking for too much and strain our relationship with the Pope himself."
+ mf_mission.EVTOPTA7:0 "Request temporal authority."
+ mf_mission.EVTOPTB7:0 "Request religious authority."
+ 
+ mf_mission.EVTNAME8:0 "Breaking Genoese Ties"
+ mf_mission.EVTDESC8:0 "Although we have been allied with the Genoese in the past, our conflicting interests over trade and dominance over the sea have made war between our two states inevitable. Although there are many incidents for us to declare a war over trade against Genoa, we may be able to forge claims on Genoa itself, should we put our most talented officials to the task. However, we will have to put in just as much effort to maintain a good reputation if we make such a move."
+ mf_mission.EVTOPTA8:0 "We desire influence, not land."
+ mf_mission.EVTOPTB8:0 "Forge claims on Genoa!"
+ 
+ mf_mission.EVTNAME9:0 "The Question of Burgher Privileges"
+ mf_mission.EVTDESC9:0 "The growing influence of the burgher class in our state has greatly alarmed the weakening nobility of Verona. Our court officials project that the burghers may soon surpass the counts of Verona in the near future, and both estates appeal to us for aid. We could either grant the burghers privileges and cement their position as the rising estate of Verona, or we could attempt to limit the burghers' power to appease our counts."
+ mf_mission.EVTOPTA9:0 "Grant burgher privileges."
+ mf_mission.EVTOPTB9:0 "Support the counts."
+ 
+ mf_mission.EVTNAME10:0 "The Grand Principality"
+ mf_mission.EVTDESC10:0 "As the power of our ruler and central government grows at the expense of the various tribes and generals of our state, the question of government reform has become a common topic in our court. Such reform has been pushed by supporters of the royal family and, on the other hand, opposed by tribal chiefs who wish to maintain a great degree of autonomy from our central state. As Hungary expands, we must make a decision before either faction provokes a civil war. Based on Magyar tradition, the royalists are in favor of a Grand Principality, in which the senior members of the family are elected as Grand Princes rather than inheritance through primogeniture." 
+ mf_mission.EVTOPTA10:0 "Declare the Principality!"
+ mf_mission.EVTOPTB10:0 "Maintain the status quo."
+ 
+ mf_mission.EVTNAME11:0 "The New Capital of al-Andalus"
+ mf_mission.EVTDESC11:0 "The great Andalusian cities of Seville and Córdoba have been restored at last under our Caliphate. With the cultural, religious and intellectual centers of Andalusia now under our rule, the question of a new capital has arisen within our court. Having cultivated these cities to such an extent, it will not be costly to move our court to the new capitals of Andalusia."
+ mf_mission.EVTOPTA11:0 "To Seville!"
+ mf_mission.EVTOPTB11:0 "To Córdoba!"
+ mf_mission.EVTOPTC11:0 "I am comfortable in [ROOT.Capital.GetName]."
+ 
+ mf_mission.EVTNAME12:0 "The Senussi Movement"
+ mf_mission.EVTDESC12:0 "A growing Sufi movement within our lands known as that of the Senussi order has grown in popularity, and our compliance with the order has allowed the movement to thrive under our rule. However, the Senussi also call for resistance to foreign influence, and for this reason our ties with them shall affect our relations with the Sublime Porte. Therefore, we must decide whether or not to support the movement, which will have both political and religious consequences for our state."
+ mf_mission.EVTOPTA12:0 "Promote the Senussi cause."
+ mf_mission.EVTOPTB12:0 "Deny involvement with the movement."
+ 
+ mf_mission.EVTNAME13:0 "A Chalice for the Khan"
+ mf_mission.EVTDESC13:0 "The ruler of Kiev has been finally captured after a long siege, and now stands trial for his crimes against our peoples. It is a tradition of ours to create a chalice from the skull of the captured ruler for our own khan, and it would be quite satisfying to drink wine from the skull of our enemy. Despite being custom, what happens to the ruler of Kiev is entirely up to our own khan."
+ mf_mission.EVTOPTA13:0 "Bring me their skull!"
+ mf_mission.EVTOPTB13:0 "I am feeling merciful today..."
+ 
+ mf_mission.EVTNAME14:0 "The Greek Question"
+ mf_mission.EVTDESC14:0 "Although she was Greek by blood, the Ptolemaic queen Cleopatra strove to unite the peoples of her kingdom, Greek and Egyptian, by syncretizing the Egyptian and Greek pantheons. Now, many who follow the religions of the Greeks and the Romans remain in our lands as a result of their respective imperial legacies. Perhaps we should make a similar decision in order to integrate the Romanized and Hellenized peoples within our kingdom."
+ mf_mission.EVTOPTA14:0 "Perhaps Zeus is but an interpretation of Amun-Ra..."
+ mf_mission.EVTOPTB14:0 "False gods shall not be worshipped in our kingdom!"
+
+ mf_mission.EVTNAME14b:0 "Restoration of the Pyramids"
+ mf_mission.EVTDESC14b:0 "We have cultivated the ancient imperial cities of the Twenty Five dynasties, and now a new issue concerning these cities has been brought to our attention. The ancient pyramids, housing those of the ancient dynasties long passed, had fallen into a state of poor condition under the rule of the Romans and the tribes of the Nile. Now that we rule these cities, we can establish ourselves as the true continuation of the dynasties by restoring the condition of the pyramids to their former glory."
+ mf_mission.EVTOPTA14b:0 "Begin the restoration, of the pyramids and of their legacy!"
+ mf_mission.EVTOPTB14b:0 "They stand as nothing but symbols of the past."
+ 
+ 
+ 
+ #Government Related
+ met_government.EVTNAME1:0 "Antipope Arrives in Roma"
+ met_government.EVTDESC1:0 "After much turmoil in the realm of Christendom, the true, legitimate pope has arrived in Rome at last. With all of the Papal States, from the clergy to the counts, agreeing with the election of our antipope to the offical status as Pope of the Holy See, the Bishop of Rome and the leader of the Church. With the papal schism behind us, let us walk together with all of Christendom towards the dawn of a new age of prosperity!"
+ met_government.EVTOPTA1:0 "Habemus Papam!"
+ 
+ met_government.EVTNAME2:0 "A New Royal Consort"
+ met_government.EVTDESC2:0 "According to Kemetic custom, the pharaoh shall be wed to a member of the royal dynasty in order to preserve the purity of the bloodline of Horus, just as the god Osiris had wed his sister Isis. With the accession of a new pharaoh, the Great Royal Consort has thus been chosen as [Root.Monarch.GetHerHis] partner for eternity."
+ met_government.EVTOPTA2:0 "May the royal consort serve our pharaoh and kingdom well!"
+ 
+ 
+ 
+ #Tooltips
+ met_change_nation_indo_scythia:0 "Gain an event to change nation to §YIndo-Scythia§!"
+ met_change_nation_gran_colombia:0 "Gain an event to change nation to §YGran Colombia§!"
+ naj_unify_saudi_arabia_mission.tooltip:0 "Triggers an event that will allow for the formation of §YSaudi Arabia§!."
+ met_change_nation_tangut_xia.tooltip:0 "Triggers an event to change nation to §YXia§!"
+ met_srt_sarmatian_amazons_mission.tt:0 "Triggers the event §YSarmatian Amazons§!"
+ adb_religious_awakening_mission.tt:0 "Triggers the event §YA Jewish Conversion?§!"
+ met_adb_jewish_conversion_mission.tt:0 "§YContinues the Mission Tree§!"
+ him_trade_or_faith_mission.tt:0 "Triggers the event §YTrade or Faith?§!"
+ pis_papal_recognition_mission.tt:0 "Triggers the event §YPapal Privileges§!"
+ pis_genoese_rivalry_mission.tt:0 "Triggers the event §YBreaking Genoese Ties§!"
+ vrn_ally_the_burghers_mission.tt:0 "Triggers the event §YThe Question of Burgher Privileges§!"
+ hun_centralize_the_state_mission.tt:0 "Triggers the event §YThe Grand Principality§!"
+ amh_andalusian_capitals_mission.tt:0 "Triggers the event §YThe New Capital of al-Andalus§!"
+ trp_ally_the_grand_senussi_mission.tt:0 "Triggers the event §YThe Senussi Movement§!"
+ pec_decimate_the_rus_mission.tt:0 "Triggers the event §YA Chalice for the Khan§!"
+ egp_the_son_of_ra_mission.tt:0 "Triggers the event §YThe Greek Question§!"
+ egp_the_imperial_cities_mission.tt:0 "Triggers the event §YRestoration of the Pyramids§!"
+ 
+ met_government.1.tt:0 "Gain a §Ypermanent claim§! on every province that is either owned by and/or a core of the §YPapal States§!"
+ 
+ EST_VAL_RISING_BURGHER_CLASS_VRN:0 "Rising Burgher Class"
+ 
+ 

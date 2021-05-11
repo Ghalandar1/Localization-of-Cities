@@ -1,0 +1,21 @@
+government = monarchy
+
+government_rank = 1
+add_government_reform = autocracy_reform
+add_government_reform = political_absolutism_reform
+add_government_reform = oligarchic_reform
+
+capital = 4556
+primary_culture = nguni
+religion = protestant 
+technology_group = central_african
+2019.5.30 = {
+	monarch = {
+		name = "Lerotholi Seeiso"
+		dynasty = "Moshesh"
+		adm = 4
+		dip = 2
+		mil = 3
+		religion = catholic
+	}
+}

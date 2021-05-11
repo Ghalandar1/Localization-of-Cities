@@ -1,0 +1,26 @@
+government = republic
+
+government_rank = 1
+add_government_reform = presidential_reform
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 2097
+primary_culture = al_iraqiya_arabic
+religion = shiite
+religious_school = jafari_school
+technology_group = middle_eastern
+
+2019.5.30 = {
+	monarch = {
+		name = "Barham Salih"
+		birth_date = 1960.9.12
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

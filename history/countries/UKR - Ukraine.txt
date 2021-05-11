@@ -1,0 +1,25 @@
+government = republic
+
+government_rank = 2
+add_government_reform = parliamentary_reform
+add_government_reform = universal_suffrage_reform
+add_government_reform = reinforce_republican_values_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = ceremonial_president
+set_legacy_government = presidental_republic
+
+capital = 525
+primary_culture = ruthenian
+religion = secularism
+technology_group = western 
+2019.5.30 = {
+	monarch = {
+		name = "Petro Poroshenko"
+		birth_date = 1965.9.26
+		adm = 3
+		dip = 4
+		mil = 2
+		religion = orthodox
+	}
+}

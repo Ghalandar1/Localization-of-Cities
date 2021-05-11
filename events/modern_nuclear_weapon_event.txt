@@ -1,0 +1,279 @@
+namespace = nuclear
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.1
+	title = "nuclear.1title"
+	desc = "nuclear.1desc"
+	picture = starrt_nuclear_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	
+	
+	option = {
+		name = "nuclear.1opt"
+			
+	}
+}
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.2
+	title = "nuclear.2title"
+	desc = "nuclear.2desc"
+	picture = starrt_nuclear_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "nuclear.2opt"
+	}
+}
+###################################################################
+
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.3
+	title = "nuclear.3title"
+	desc = "nuclear.3desc"
+	picture = nuclear_10_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "nuclear.1opt"
+
+	}
+}
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.4
+	title = "nuclear.4title"
+	desc = "nuclear.4desc"
+	picture = nuclear_10_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "nuclear.2opt"
+	}
+}
+
+#########################################################################
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.5
+	title = "nuclear.5title"
+	desc = "nuclear.5desc"
+	picture = nuclear_20_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+		}
+	}
+	
+	option = {
+		name = "nuclear.1opt"
+		
+	}
+}
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.6
+	title = "nuclear.6title"
+	desc = "nuclear.6desc"
+	picture = nuclear_20_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "nuclear.2opt"
+	}
+}
+##########################################################################################
+
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.7
+	title = "nuclear.7title"
+	desc = "nuclear.7desc"
+	picture = nuclear_40_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+		}
+	}
+	
+	option = {
+		name = "nuclear.1opt"
+		
+	}
+}
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.8
+	title = "nuclear.8title"
+	desc = "nuclear.8desc"
+	picture = nuclear_40_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "nuclear.2opt"
+	}
+}
+
+
+###############################################################################################
+
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.9
+	title = "nuclear.9title"
+	desc = "nuclear.9desc"
+	picture = nuclear_75_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+		}
+	}
+	
+	option = {
+		name = "nuclear.1opt"
+		
+	}
+}
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.10
+	title = "nuclear.10title"
+	desc = "nuclear.10desc"
+	picture = nuclear_75_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "nuclear.2opt"
+	}
+}
+
+######################################################################################################
+
+
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.11
+	title = "nuclear.11title"
+	desc = "nuclear.11desc"
+	picture = nuclear_90_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+		}
+	}
+	
+	option = {
+		name = "nuclear.1opt"
+			
+	}
+}
+
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.12
+	title = "nuclear.12title"
+	desc = "nuclear.12desc"
+	picture = nuclear_90_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "nuclear.2opt"
+	}
+}
+
+
+
+#####################################################################
+#nuclear Point admin power X1
+country_event = {
+	id = nuclear.13
+	title = "nuclear.13title"
+	desc = "nuclear.13desc"
+	picture = Get_atomic_bombs_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_modifier = research_nuclear_90_modifire
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "nuclear.1opt"
+	}
+}
+
+country_event = {
+	id = nuclear.14
+	title = "nuclear.14title"
+	desc = "nuclear.14desc"
+	picture = Get_atomic_bomb_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "nuclear.1opt"
+	}
+}
+
+###########################################################################
+
+
+
+

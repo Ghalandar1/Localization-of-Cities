@@ -1,0 +1,26 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = universal_suffrage_reform
+add_government_reform = reinforce_republican_values_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = abolish_presidency
+set_legacy_government = parliamentary_republic
+
+capital = 1814
+primary_culture = british_oceanian
+religion = secularism
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Jacinda Ardern"
+		birth_date = 1980.7.26
+		adm = 4
+		dip = 3
+		mil = 2
+		religion = protestant
+		female = yes
+	}
+}

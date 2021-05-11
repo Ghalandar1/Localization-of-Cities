@@ -1,0 +1,262 @@
+#country_decisions = {
+#
+#	construct_kiel_canal = {
+#		major = yes
+#		potential = {
+#			OR = {
+#				ai = no
+#				AND = {
+#					treasury = 1
+#					owns_or_vassal_of = 3231
+#					owns_or_vassal_of = 6389
+#				}
+#			}
+#			has_discovered = 3231
+#			has_discovered = 6389
+#			3231 = {
+#				range = ROOT
+#				NOT = { has_great_project = kiel_canal }
+#				NOT = { has_construction = canal }
+#			}
+#			6389 = {
+#				range = ROOT
+#				NOT = { has_great_project = kiel_canal }
+#				NOT = { has_construction = canal }
+#			}
+#			adm_tech = 3
+#		}
+#		allow = {
+#			owns_or_vassal_of = 3231
+#			owns_or_vassal_of = 6389
+#			is_subject = no			
+#			adm_tech = 3
+#			treasury = 1
+#		}
+#		effect = {
+#			add_treasury = -1
+#			6389 = {	# Holstein
+#				add_great_project = kiel_canal
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	
+#	construct_Volga_canal = {
+#		major = yes
+#		potential = {
+#			OR = {
+#				ai = no
+#				AND = {
+#					treasury = 1
+#					owns_or_vassal_of = 9504
+#				}
+#			}
+#			has_discovered = 9504
+#			9504 = {
+#				range = ROOT
+#				NOT = { has_great_project = volga_canal }
+#				NOT = { has_construction = canal }
+#			}
+#			adm_tech = 3
+#		}
+#		allow = {
+#			owns_or_vassal_of = 9504
+#			is_subject = no			
+#			adm_tech = 3
+#			treasury = 1
+#		}
+#		effect = {
+#			add_treasury = -1
+#			9504 = {	# Holstein
+#				add_great_project = volga_canal
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	
+#	construct_suez_canal = {
+#		major = yes
+#		potential = {
+#			OR = {
+#				ai = no
+#				AND = {
+#					treasury = 1
+#					owns_or_vassal_of = 1155
+#					owns_or_vassal_of = 9947
+#				}
+#			}
+#			has_discovered = 1155
+#			has_discovered = 9947
+#			1155 = {
+#				range = ROOT
+#				NOT = { has_great_project = suez_canal }
+#				NOT = { has_construction = canal }
+#			}
+#			9947 = {
+#				range = ROOT
+#				NOT = { has_great_project = suez_canal }
+#				NOT = { has_construction = canal }
+#			}
+#			adm_tech = 3
+#		}
+#		allow = {
+#			owns_or_vassal_of = 1155
+#			owns_or_vassal_of = 9947
+#			is_subject = no
+#			adm_tech = 3
+#			treasury = 1
+#		}
+#		effect = {
+#			add_treasury = -1
+#			1155 = {	# Dumyat
+#				add_great_project = suez_canal
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	
+#	construct_panama_canal = {
+#		major = yes
+#		potential = {
+#			is_random_new_world = no
+#			OR = {
+#				ai = no
+#				AND = {
+#					treasury = 1
+#					owns_or_vassal_of = 7630
+#				}
+#			}
+#			has_discovered = 7630
+#			7630 = {
+#				range = ROOT
+#				NOT = { has_great_project = panama_canal }
+#				NOT = { has_construction = canal }
+#			}
+#			adm_tech = 3
+#		}
+#		allow = {
+#			owns_or_vassal_of = 7630
+#			is_subject = no
+#			adm_tech = 3
+#			treasury = 1
+#		}
+#		effect = {
+#			add_treasury = -1
+#			7630 = {	# Panama
+#				add_great_project = panama_canal
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	cancel_kiel_canal = {
+#		major = yes
+#		potential = {
+#			ai = no
+#			owns_or_vassal_of = 3231
+#			owns_or_vassal_of = 6389
+#			is_subject = no
+#			3231 = {
+#				has_construction = canal
+#			}
+#		}
+#		allow = {
+#			6389 = {
+#				has_construction = canal
+#			}
+#		}
+#		effect = {
+#			6389 = {	# Holstein
+#				cancel_construction = yes
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	
+#	cancel_suez_canal = {
+#		major = yes
+#		potential = {
+#			ai = no
+#			owns_or_vassal_of = 1155
+#			owns_or_vassal_of = 9947
+#			is_subject = no
+#			1155 = {
+#				has_construction = canal
+#			}
+#		}
+#		allow = {
+#			1155 = {
+#				has_construction = canal
+#			}
+#		}
+#		effect = {
+#			1155 = {	# Diamientia
+#				cancel_construction = yes
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	
+#	cancel_panama_canal = {
+#		major = yes
+#		potential = {
+#			ai = no
+#			owns_or_vassal_of = 7630
+#			is_subject = no
+#			7630 = {
+#				has_construction = canal
+#			}
+#		}
+#		allow = {
+#			7630 = {
+#				has_construction = canal
+#			}
+#		}
+#		effect = {
+#			7630 = {	# Panama
+#				cancel_construction = yes
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	
+#	cancel_Volga_canal = {
+#		major = yes
+#		potential = {
+#			ai = no
+#			owns_or_vassal_of = 9504
+#			is_subject = no
+#			9504 = {
+#				has_construction = canal
+#			}
+#		}
+#		allow = {
+#			9504 = {
+#				has_construction = canal
+#			}
+#		}
+#		effect = {
+#			9504 = {	# Volga
+#				cancel_construction = yes
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#
+#}

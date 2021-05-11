@@ -1,0 +1,173 @@
+
+
+send_administrative_aid = {
+		category = dynasty
+		require_acceptance = no
+		
+		is_visible = {
+			always = yes
+		}
+		is_allowed = {     
+				NOT = { has_opinion_modifier = {  who = FROM  modifier = sended_points } }
+	
+		}
+			
+		on_accept = {
+			FROM = { 
+				country_event = { id = send_aid.1 }
+				save_global_event_target_as = the_reciver_mypos 
+			}
+			ROOT = { country_event = { id = addip_events.5 }  }
+			
+													}
+	
+		ai_will_do = {
+			FROM = { alliance_with = ROOT }
+			ruler_has_personality = kind_hearted_personality
+			NOT = { has_opinion_modifier = {  who = FROM  modifier = sended_points } }
+			reverse_has_opinion = { who = FROM value = 185  } 
+		}		
+	}
+
+
+
+
+#not requiring accepance											
+	send_diplomatic_aid = {
+		category = dynasty
+		require_acceptance = no
+		
+		is_visible = {
+			always = yes
+		}
+		is_allowed = { 
+		
+		NOT = { has_opinion_modifier = {  who = FROM  modifier = sended_points } }
+		
+			}
+			
+			
+			on_accept = {
+				#small infromation how to create global to local call allowing to call multiple countries at once without any interferation problems
+				FROM = { 
+					country_event = { id = send_aid.2 }
+					save_global_event_target_as = the_reciver_mypos
+				} #global event target is set it needs to be set before the event-> 
+				ROOT = { 
+					country_event = { 
+						id = addip_events.6 
+					}  
+				} #calling event -> go to addip_events.6 event 
+			
+			}
+	
+		ai_will_do = {
+			FROM = { 
+				alliance_with = ROOT 
+			}
+				ruler_has_personality = kind_hearted_personality
+			NOT = { 
+				has_opinion_modifier = {  
+					who = FROM  modifier = sended_points 
+				} 
+			}
+			reverse_has_opinion = { who = FROM value = 185  } 
+		}
+	}											
+
+
+send_military_aid = {
+category = dynasty
+	
+	require_acceptance = no
+	
+	is_visible = {
+    always = yes
+	}
+	is_allowed = { 	 
+		NOT = { has_opinion_modifier = {  who = FROM  modifier = sended_points } }
+			
+		}
+		
+	on_accept = {
+		FROM = { 
+			country_event = { id = send_aid.3 }
+			save_global_event_target_as = the_reciver_mypos
+		}
+		ROOT = { country_event = { id = addip_events.7 }  }
+		
+		
+		
+	}
+
+	ai_will_do = {
+		FROM = { alliance_with = ROOT }
+		ruler_has_personality = kind_hearted_personality
+		NOT = { has_opinion_modifier = {  who = FROM  modifier = sended_points } }
+		reverse_has_opinion = { who = FROM value = 185  } 
+	}		
+}
+
+
+send_volunteers_to_ally = {   
+category = dynasty
+	
+	require_acceptance = no
+	
+	is_visible = {
+		always = yes
+	}
+	is_allowed = {
+	ROOT = { manpower_percentage = 0.3  }
+	
+		}
+	on_accept = {
+		FROM = {
+			country_event = { id = send_aid.4 } 
+			save_global_event_target_as = the_reciver_mypos }
+			country_event = { id = addip_events.8 }  
+			
+			
+		 
+		}
+		
+												
+	ai_will_do = {
+		FROM = { alliance_with = ROOT }
+		FROM = { is_at_war = yes  }
+		ruler_has_personality = kind_hearted_personality
+		NOT = { has_opinion_modifier = {  who = FROM  modifier = sended_manpower } }
+	}
+}
+
+strenghten_dynasty = {   
+category = dynasty
+	
+	require_acceptance = no
+	
+	is_visible = {
+   	FROM = { marriage_with = ROOT }
+	}
+	is_allowed = {
+	legitimacy = 60
+		}
+	on_accept = {
+		FROM = { save_global_event_target_as = the_reciver_mypos }
+		 country_event = { id = addip_events.9 }  
+		 
+		}
+		
+												
+	ai_will_do = {
+		FROM = { alliance_with = ROOT }
+		has_opinion = { who = FROM value = 100 }
+		NOT = { has_opinion_modifier = {  who = FROM  modifier = strenghtened_dynasty } }
+	}
+}
+#ET
+
+
+########################################################## Religion #######################################
+
+
+

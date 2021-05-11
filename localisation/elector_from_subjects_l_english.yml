@@ -1,0 +1,6 @@
+﻿l_english:
+ elector_from_subjects_title: "Your overlord becomes elector"
+ elector_from_subjects_desc: "As subject of our new overlord we lose our right to elect the emperor to our sovereign."
+ elector_from_subjects.option: "Oh no."
+ you_get_elector_from_vassal_title: "Claim the title of an elector"
+ you_get_elector_from_vassal_desc: "Your subject is an elector. This title belongs to us, their rightful sovereign."

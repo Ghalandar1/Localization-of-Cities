@@ -1,0 +1,164 @@
+
+######################################
+# Merchant at development
+######################################
+
+add_merchant_500 = {
+	merchants = 1			
+}
+
+add_merchant_1000 = {
+	merchants = 1			
+}
+
+add_merchant_1500 = {
+	merchants = 1			
+}
+
+add_merchant_2000 = {
+	merchants = 1			
+}
+
+add_merchant_2500 = {
+	merchants = 1		
+}
+
+add_merchant_3000 = {
+	merchants = 1		
+}
+
+add_merchant_3500 = {
+	merchants = 1			
+}
+
+add_merchant_4000 = {
+	merchants = 1			
+}
+
+add_merchant_4500 = {
+	merchants = 1			
+}
+
+add_merchant_5000 = {
+	merchants = 1			
+}
+
+add_merchant_5500 = {
+	merchants = 1			
+}
+
+add_merchant_6000 = {
+	merchants = 1		
+}
+
+add_merchant_6500 = {
+	merchants = 1		
+}
+
+add_merchant_7000 = {
+	merchants = 1			
+}
+
+add_merchant_7500 = {
+	merchants = 1		
+}
+
+add_merchant_8000 = {
+	merchants = 1		
+}
+
+add_merchant_8500 = {
+	merchants = 1		
+}
+
+add_merchant_9000 = {
+	merchants = 1		
+}
+
+add_merchant_9500 = {
+	merchants = 1		
+}
+
+add_merchant_10000 = {
+	merchants = 1		
+}
+
+add_merchant_10500 = {
+	merchants = 1			
+}
+
+add_merchant_11000 = {
+	merchants = 1			
+}
+
+add_merchant_11500 = {
+	merchants = 1			
+}
+
+add_merchant_12000 = {
+	merchants = 1			
+}
+
+add_merchant_12500 = {
+	merchants = 1			
+}
+
+add_merchant_13000 = {
+	merchants = 1			
+}
+
+add_merchant_13500 = {
+	merchants = 1			
+}
+
+add_merchant_14000 = {
+	merchants = 1			
+}
+
+add_merchant_14500 = {
+	merchants = 1			
+}
+
+add_merchant_15000 = {
+	merchants = 1			
+}
+
+add_merchant_15500 = {
+	merchants = 1			
+}
+
+add_merchant_16000 = {
+	merchants = 1			
+}
+
+add_merchant_16500 = {
+	merchants = 1			
+}
+
+add_merchant_17000 = {
+	merchants = 1			
+}
+
+add_merchant_17500 = {
+	merchants = 1			
+}
+
+add_merchant_18000 = {
+	merchants = 1			
+}
+
+add_merchant_18500 = {
+	merchants = 1			
+}
+
+add_merchant_19000 = {
+	merchants = 1			
+}
+
+add_merchant_19500 = {
+	merchants = 1			
+}
+
+add_merchant_20000 = {
+	merchants = 1			
+}

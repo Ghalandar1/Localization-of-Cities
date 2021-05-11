@@ -1,0 +1,12 @@
+# T-38
+
+type = cavalry
+
+maneuver = 4
+offensive_morale = 4
+defensive_morale = 5
+offensive_fire = 4
+defensive_fire = 5
+offensive_shock = 7
+defensive_shock = 8
+

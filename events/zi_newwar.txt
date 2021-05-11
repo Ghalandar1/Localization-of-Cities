@@ -1,0 +1,34 @@
+namespace = zi
+
+country_event = {
+	id = zi.6
+	title = "zi_6EVTNAME"
+	desc = "zi_6EVTDESC"
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		tag = ZOM
+		any_neighbor_country = {
+			NOT = { war_with = ZOM }
+			has_country_modifier = unity_against_zombies
+		}
+		is_colonial_nation = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "zi_6EVTOPTION"
+		random_neighbor_country = {
+			limit = {
+				NOT = { war_with = ZOM }
+				NOT = { tag = ZOM }
+				has_country_modifier = unity_against_zombies 
+			}
+			declare_war_with_cb = {
+				who = ZOM
+				casus_belli = cb_zi
+			}
+		}
+	}
+}

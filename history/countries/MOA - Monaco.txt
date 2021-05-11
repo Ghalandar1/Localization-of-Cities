@@ -1,0 +1,25 @@
+government = monarchy
+
+government_rank = 1 
+add_government_reform = parliamentary_reform
+add_government_reform = regional_representation_reform
+add_government_reform = legislative_houses_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = ceremonial_monarch
+set_legacy_government = parliamentary_monarchy
+capital = 3928
+primary_culture = cosmopolitan_french
+religion = catholic
+culture_group_union = french
+technology_group = western 
+2019.5.30 = {
+	monarch = {
+		name = "Napoléon III"
+		birth_date = 1808.4.20
+		dynasty = "Bonaparte"
+		adm = 2
+		dip = 0
+		mil = 2
+	}
+}

@@ -1,0 +1,15 @@
+government = eu_gov
+mercantilism = 0.1
+technology_group = dummy_group
+religion = secularism
+primary_culture = prussian
+capital = 3148
+
+1951.1.1 = {
+	monarch = {
+		name = "Council of Europe"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

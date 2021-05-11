@@ -1,0 +1,32 @@
+﻿l_english:
+ WE_HAVE_BAD_OPINON_25:0 "We do not have a good relationship"
+ WE_HAVE_BAD_OPINON_50:0 "We do not have a good relationship"
+ WE_HAVE_BAD_OPINON_100:0 "We have ruined our relationship in general"
+ 
+ WE_HAVE_GOOD_OPINON_50:0 "Improving relationship"
+ WE_HAVE_GOOD_OPINON_100:0 "Good relationship"
+ WE_HAVE_GOOD_OPINON_150:0 "Great relationship"
+ 
+ MY_RIVAL_ALIIY_WITH_YOU:0 "Friendship with my Enemy"
+ 
+ RIVAL_WITH:0 "Rival"
+ 
+ bought_oil_1:0 "Purchased Fuel"
+ bought_electronics_1:0 "Purchased Electronics"
+ 
+ bought_uranium_1:0 "Yellow cake for 10% enrichment"
+ bought_uranium_2:0 "Yellow cake for 20% enrichment"
+ bought_uranium_3:0 "Yellow cake for 40% enrichment"
+ bought_uranium_4:0 "Yellow cake for 75% enrichment"
+ bought_uranium_5:0 "Yellow cake for 90% enrichment"
+ 
+ not_have_owne_electronic:0 "We need Electronics"
+ have_owne_fuel:0 "We are a fuel seller ourselves"
+ not_have_fuel:0 "We need Fuel"
+ 
+ fort_bonus_balance:0 "Maintaining Forts"
+ 
+ tourist:0 "Tourism"
+ antiquities:0 "Antiquities"
+
+ buy_electronics_dialog:0 "They want to buy Electronics"

@@ -1,0 +1,305 @@
+############################ Atomic Bomb ##########################
+nuked_us = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+###################### ############################
+imperial_restoration_supported_rebels = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+helped_restore_emperor = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+increased_dominion_autonomy = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+dominion_autonomy_increase_blocked = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+####################Pupet Master #############
+
+pm_vpu_op = {
+    opinion = -200
+    min = -300
+    yearly_decay = 10
+}
+
+##################### Diplo Action modern ############################
+
+intived_into_hre = { 
+	
+	opinion = 30
+	years = 10
+	yearly_decay = 3
+
+ }
+
+sended_points = {
+	opinion = 5
+	years = 1
+	yearly_decay = 10
+}
+refused_signed_pact_of_non_agresion = { 
+	opinion = -20
+	years = 10
+	yearly_decay = 2
+  }
+
+refused_signed_pact_of_non_agresion_five = { 
+	opinion = -10
+	years = 5
+	yearly_decay = 2
+  }
+
+signed_pact_of_non_agresion = { 
+	opinion = 20
+	years = 10
+  }
+
+signed_pact_of_non_agresion_five = { 
+	opinion = 10
+	years = 5
+	
+  }
+
+  faction_member_opinion = { opinion = 30 }
+  faction_leader_opinion = { opinion = 30 }
+  terrorism_act_preformer = { 
+	opinion = -30
+	years = 15
+  }
+
+peacefull_conversion = {  
+  	opinion = 30
+	years = 15
+	yearly_decay = 2
+  }
+  started_raiding = {
+  	opinion = -40
+	years = 15
+  }
+
+create_embassy ={
+
+	opinion = 15
+	years = 10
+
+}
+create_embassy_net = {
+
+	opinion = -15
+	years = 10
+	yearly_decay = 1
+
+}
+
+stability_added = {
+	
+	opinion = 20
+	years = 10
+	yearly_decay = 2
+
+}
+
+opinion_sanction_1 = {
+	opinion = -5 years = 10 
+	}
+opinion_sanction_2 = {
+	opinion = -10 years = 10 
+	}
+opinion_sanction_3 = {
+	opinion = -15 years = 10 
+	}
+opinion_sanction_4 = {
+	opinion = -20 years = 10 
+	}
+	
+	opinion_sanction_1_1 = {
+	opinion = 10 years = 10 
+	}
+	opinion_sanction_2_2 = {
+	opinion = 20 years = 10 
+	}
+	opinion_sanction_3_3 = {
+	opinion = 25 years = 10 
+	}
+	opinion_sanction_4_4 = {
+	opinion = 30 years = 10 
+	}
+
+  ruler_assasination_soupcious = {
+    opinion = -20
+	years = 10
+  }
+    attempt_ruler_assasination = {
+  	opinion = -60
+	years = 40
+  }
+	preformed_ruler_assasination = {
+  	opinion = -100
+	years = 40
+  }
+  honorus_letter_opinion = {  
+  	opinion = 40
+	years = 20
+	yearly_decay = 2
+  }
+  faction_refused = { opinion = -15 years = 10  }
+
+
+####################### Sended Manpower ###############
+
+
+sended_manpower = {
+	opinion = 5
+	years = 5
+	yearly_decay = 1
+}
+strenghtened_dynasty = {
+	opinion = 30
+	years = 10
+	yearly_decay = 2.5
+}
+
+
+####################### Gameplay Extention #####################
+
+
+new_friend = {
+	opinion = 200
+	yearly_decay = 1
+}
+
+ffriend = {
+    opinion = 100
+	yearly_decay = 1
+}
+
+new_enemy = {
+	opinion = -200
+	yearly_decay = 1
+}
+
+eenemy = {
+    opinion = -100
+	yearly_decay = 1
+}
+
+
+###################################### More Rule Prosonalist #####################
+
+opinion_extravagant_party_reception = {
+	opinion = 25
+	yearly_decay = 2
+}
+
+
+################################ mf opinion modifiers ###############################
+
+opinion_caliph_relations = {
+	opinion = 30
+	years = 30
+	yearly_decay = 1
+}
+
+trp_senussi_movement = {
+	opinion = -25
+}
+
+trp_senussi_movement_denied = {
+	opinion = 25
+}
+friendly_government = { opinion = 25 }
+
+
+########################### Jadid #####################################
+
+aggressive_expansion = {
+	opinion = -1
+	months = 0
+	yearly_decay = 10	
+	min = -300
+}
+
+opinion_military_access = {
+	opinion = 15
+}
+
+opinion_fleet_access = {
+	opinion = 15
+}
+
+embargo = {
+	opinion = -35
+}
+
+historical_friend = {
+	opinion = 35
+}
+
+historical_rival = {
+	opinion = -35
+}
+
+transfers_trade_power = {
+	opinion = 25
+}
+
+getting_trade_power = {
+	opinion = 25
+}
+
+has_cb = {
+	opinion = -5
+}
+
+in_war_together = {
+	opinion = 30
+}
+###############################################religion#####################################
+
+republic_same_religion = {
+	opinion = 7
+}
+
+republic_different_religions_group = {
+	opinion = -7
+}
+
+republic_different_religion_same_group = {
+	opinion = -10
+}
+
+republic_different_religions_group_border = {
+	opinion = -10
+}
+
+republic_different_religion_same_group_border = {
+	opinion = -10
+}
+
+
+different_religions_group = {
+	opinion = -12
+}
+
+different_religions_group_border = {
+	opinion = -10
+}
+
+different_religion_same_group = {
+	opinion = -10
+}
+
+different_religion_same_group_border = {
+	opinion = -15
+}

@@ -1,0 +1,29 @@
+government = republic
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = universal_suffrage_reform
+add_government_reform = reinforce_republican_values_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = ceremonial_president
+set_legacy_government = presidental_republic
+
+
+capital = 12003
+primary_culture = maltese
+religion = catholic
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Marie Louise Coleiro Preca"
+		adm = 5
+		dip = 3
+		mil = 3
+		religion = catholic
+		female = yes
+	}
+}
+
+2020.1.1 = { decision = join_european_union }
+2020.1.2 = { decision = adopt_the_euro }

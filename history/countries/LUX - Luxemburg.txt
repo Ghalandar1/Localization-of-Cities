@@ -1,0 +1,24 @@
+government = republic
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 6583
+primary_culture = hessian 
+religion = secularism
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Guillaume I"
+		dynasty = "de Bourbon-Parma"
+		adm = 4
+		dip = 2
+		mil = 4
+		religion = catholic
+	}
+}
+2020.1.1 = { decision = join_european_union }
+2020.1.2 = { decision = adopt_the_euro }

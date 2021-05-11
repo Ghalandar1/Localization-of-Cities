@@ -1,0 +1,173 @@
+# Great Iran
+region_1_superregion = { 
+	persia_region 
+	khorasan_region 
+	central_asia_region 
+	caucasia_region
+}
+
+#Arabia Region	  
+region_2_superregion = { 
+	arabia_region
+	mashriq_region
+	egypt_region
+}   
+
+#Eastern Rome     
+region_3_superregion = { 
+	anatolia_region
+	balkan_region
+}
+
+#Western Rome
+region_4_superregion = { 
+	italy_region
+	france_region
+	iberia_region
+
+} 
+      
+#Great Britain
+region_5_superregion = { british_isles_region }        
+
+#Geman Region
+region_6_superregion = { 
+	north_german_region
+	south_german_region
+	low_countries_region
+}       
+#poland
+region_7_superregion = { 
+	poland_region
+}  
+     
+#Scandinavia
+region_8_superregion = { 
+	scandinavia_region
+	baltic_region
+}
+
+#Russian 
+region_9_superregion = { 
+	russia_region
+	ruthenia_region
+	crimea_region
+}        
+#Carpathia
+region_10_superregion = { carpathia_region }  
+
+#North Africa   
+region_11_superregion = { 
+	libya_region
+	maghreb_region
+ }    
+#Western Africa 
+region_12_superregion = { 
+	niger_region
+	guinea_region
+	west_africa_region
+	sahel_region
+}    
+
+#Central Africa 
+region_13_superregion = { 
+	kongo_region
+	central_africa_region
+	angola_region
+}      
+
+#South Africa
+region_14_superregion = { south_africa_region }
+     
+#Indian Empire
+region_15_superregion = {
+	hindustan_region
+	west_india_region
+	coromandel_region
+	deccan_region
+	bengal_region
+}
+
+#china
+region_16_superregion = { 
+	south_china_region
+	north_china_region
+	xinan_region
+	tibet_region
+	manchuria_region
+}
+
+#Mongolia     
+region_17_superregion = { 
+	mongolia_region
+	kashgar_region
+}
+#East Asia       
+region_18_superregion = { 
+	japan_region
+	korea_region
+}
+#Central America
+region_19_superregion = { 
+	mexico_region
+	central_america_region
+	carribeans_region	
+}
+#Horn Africa
+region_20_superregion = { 
+	sudan_region
+	horn_of_africa_region
+ }   
+#East Africa
+region_22_superregion = { 
+	east_africa_region
+	zambezi_region
+	madagascar_region
+} 
+#Spain Infelunce
+region_24_superregion = { 
+	la_plata_region
+	peru_region
+	upper_peru_region
+	colombia_region
+}      
+#Portughal Influnce
+region_25_superregion = { 
+	brazil_region
+	amazon_region
+}
+#North America
+region_26_superregion = { 
+	rio_grande_region
+	southeast_america_region
+	northeast_america_region
+	mississippi_region
+	california_region
+	great_lakes_region
+	great_plains_region
+	cascadia_region
+	hudson_bay_region
+	canada_region
+}
+#South East Asia
+region_27_superregion = { 
+	burma_region
+	indo_china_region
+	malaya_region
+}
+#Oceania
+region_28_superregion = { 
+	indonesia_region
+	moluccas_region
+	oceanea_region
+}
+#Australia
+region_29_superregion = { 
+	australia_region
+	new_zealand_region
+}
+#Siberia
+region_30_superregion = { 
+	east_siberia_region
+	west_siberia_region
+}

@@ -1,0 +1,23 @@
+government = monarchy
+
+government_rank = 1
+add_government_reform = autocracy_reform
+add_government_reform = political_absolutism_reform
+add_government_reform = authoritarian_rule
+add_government_reform = oligarchic_reform
+set_legacy_government = venetian_merchant_republic
+
+capital = 7900
+primary_culture = nguni
+religion = protestant 
+technology_group = central_african
+2019.5.30 = {
+	monarch = {
+		name = "Mswati III"
+		dynasty = "Dlamini"
+		adm = 4
+		dip = 3
+		mil = 3
+		religion = protestant
+	}
+}

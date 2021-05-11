@@ -1,0 +1,30 @@
+government = republic
+
+government_rank = 1
+add_government_reform = oligarchy_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = dictatorial_rule
+add_government_reform = communist_government
+add_government_reform = powerful_head_of_state
+set_legacy_government = communist_dictatorship
+historical_friend = CHN
+historical_rival = SKO
+
+capital = 4052
+primary_culture = korean
+religion = irreligious
+technology_group = asian 
+
+
+2019.5.30 = {
+	monarch = {
+		name = "Kim Jong-un"
+		adm = 2
+		dip = 1
+		mil = 4
+		religion = irreligious
+	}
+}
+
+
+

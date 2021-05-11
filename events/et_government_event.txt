@@ -1,0 +1,136 @@
+namespace = et_government_event
+
+# Fascist ruler dies
+country_event = {
+	id = et_government_event.1
+	title = et_government_event.1.t
+	desc = et_government_event.1.d
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_reform = fascist_dictatorship
+			has_reform = fascist_government
+		}
+	}
+	
+	option = {
+		name = et_government_event.1.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				calc_true_if = {
+					all_country = {
+						OR = {
+							has_reform = fascist_dictatorship
+							has_reform = fascist_government
+						}
+					}
+					amount = 10
+				}
+			}
+			modifier = {
+				factor = 3
+				tag = SPA
+			}
+		}
+		change_government = monarchy
+		add_government_reform = autocracy_reform
+		add_government_reform = political_absolutism_reform
+		add_government_reform = authoritatian_rule
+		add_government_reform = oligarchic_reform
+		add_government_reform = royal_power
+		set_legacy_government = parliamentary_monarchy
+		define_ruler = {
+			claim = 100
+		}
+	}
+	
+	option = {
+		name = et_government_event.1.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				calc_true_if = {
+					all_country = {
+						OR = {
+							has_reform = fascist_dictatorship
+							has_reform = fascist_government
+						}
+					}
+					amount = 10
+				}
+			}
+		}
+		add_government_reform = single_party_system
+		add_government_reform = democracy_reform
+		set_legacy_government = parliamentary_republic
+		add_republican_tradition = 0.10
+	}
+	
+	option = {
+		name = et_government_event.1.c
+		ai_chance = {
+			factor = 50
+		}
+		add_republican_tradition = -0.10
+	}
+}
+
+# Communist ruler dies
+country_event = {
+	id = et_government_event.2
+	title = et_government_event.1.t
+	desc = et_government_event.1.d
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_reform = communist_dictatorship
+			has_reform = communist_government
+		}
+	}
+	
+	option = {
+		name = et_government_event.1.a
+		ai_chance = {
+			factor = 0
+		}
+		change_government = monarchy
+		add_government_reform = autocracy_reform
+		add_government_reform = political_absolutism_reform
+		add_government_reform = authoritatian_rule
+		add_government_reform = oligarchic_reform
+		add_government_reform = royal_power
+		set_legacy_government = parliamentary_monarchy
+		define_ruler = {
+			claim = 100
+		}
+	}
+	
+	option = {
+		name = et_government_event.1.b
+		ai_chance = {
+			factor = 0
+		}
+		add_government_reform = single_party_system
+		set_legacy_government = socialist_republic
+		add_republican_tradition = 0.10
+	}
+	
+	option = {
+		name = et_government_event.1.c
+		ai_chance = {
+			factor = 100
+		}
+		add_republican_tradition = -0.10
+	}
+}
+
+# Adtriarior

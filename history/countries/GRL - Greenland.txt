@@ -1,0 +1,26 @@
+government = monarchy
+
+government_rank = 1
+add_government_reform = parliamentary_reform
+add_government_reform = regional_representation_reform
+add_government_reform = legislative_houses_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = ceremonial_monarch
+set_legacy_government = parliamentary_monarchy
+
+capital = 13224
+primary_culture = danish
+religion = secularism
+technology_group = western 
+2019.5.30 = {
+	monarch = {
+		name = "Margrethe II"
+		dynasty = "von Glücksburg"
+		adm = 5
+		dip = 4
+		mil = 2
+		religion = protestant
+		female = yes
+	}
+}

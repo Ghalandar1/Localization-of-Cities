@@ -1,0 +1,8 @@
+#Destroyer
+type = heavy_ship
+
+hull_size = 850
+base_cannons = 950
+sail_speed = 19
+
+sprite_level = 9

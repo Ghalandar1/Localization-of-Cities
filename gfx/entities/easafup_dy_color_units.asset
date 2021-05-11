@@ -1,0 +1,1448 @@
+###################################################################################################################
+#####                                         EAST AFRICAN UNITS                                              #####
+###################################################################################################################
+
+##NUBIAN(NUB), copied to MAK, ALO, BEJ, ABB.
+
+entity = {
+	name = "MAK_INFANTRY_1" 
+	pdxmesh = "NUB_infantry_01_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "african_spear" 
+	}
+}
+
+entity = {
+	name = "MAK_INFANTRY_2" 
+	pdxmesh = "NUB_infantry_02_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "african_rifle_02" 
+	}
+}
+
+entity = {
+	name = "MAK_INFANTRY_3" 
+	pdxmesh = "NUB_infantry_03_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "african_rifle_03" 
+	}
+}
+
+entity = {
+	name = "MAK_INFANTRY_4" 
+	pdxmesh = "NUB_infantry_04_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "muslim_rifle_04" 
+	}
+}
+
+entity = { clone = "MAK_INFANTRY_1"		name = "ALO_INFANTRY_1" }
+entity = { clone = "MAK_INFANTRY_2"		name = "ALO_INFANTRY_2" }
+entity = { clone = "MAK_INFANTRY_3"		name = "ALO_INFANTRY_3" }
+entity = { clone = "MAK_INFANTRY_4"		name = "ALO_INFANTRY_4" }
+
+entity = { clone = "MAK_INFANTRY_1"		name = "ABB_INFANTRY_1" }
+entity = { clone = "MAK_INFANTRY_2"		name = "ABB_INFANTRY_2" }
+entity = { clone = "MAK_INFANTRY_3"		name = "ABB_INFANTRY_3" }
+entity = { clone = "MAK_INFANTRY_4"		name = "ABB_INFANTRY_4" }
+
+entity = { clone = "MAK_INFANTRY_1"		name = "BEJ_INFANTRY_1" }
+entity = { clone = "MAK_INFANTRY_2"		name = "BEJ_INFANTRY_2" }
+entity = { clone = "MAK_INFANTRY_3"		name = "BEJ_INFANTRY_3" }
+entity = { clone = "MAK_INFANTRY_4"		name = "BEJ_INFANTRY_4" }
+
+##SOMALIA(MDI), copied to AJU, MRE, WAR, ADA, MJE, HOB, HDY.
+
+entity = {
+	name = "AJU_INFANTRY_1" 
+	pdxmesh = "MDI_infantry_01_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "african_spear" 
+	}
+}
+
+entity = {
+	name = "AJU_INFANTRY_2" 
+	pdxmesh = "MDI_infantry_02_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "african_rifle_02" 
+	}
+}
+
+entity = {
+	name = "AJU_INFANTRY_3" 
+	pdxmesh = "MDI_infantry_03_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "african_rifle_03" 
+	}
+}
+
+entity = {
+	name = "AJU_INFANTRY_4" 
+	pdxmesh = "MDI_infantry_04_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "muslim_rifle_04" 
+	}
+}
+
+entity = { clone = "AJU_INFANTRY_1"		name = "MRE_INFANTRY_1" }
+entity = { clone = "AJU_INFANTRY_2"		name = "MRE_INFANTRY_2" }
+entity = { clone = "AJU_INFANTRY_3"		name = "MRE_INFANTRY_3" }
+entity = { clone = "AJU_INFANTRY_4"		name = "MRE_INFANTRY_4" }
+
+#entity = { clone = "AJU_INFANTRY_1"		name = "MDI_INFANTRY_1"  version = 1}
+#entity = { clone = "AJU_INFANTRY_2"		name = "MDI_INFANTRY_2"  version = 1}
+#entity = { clone = "AJU_INFANTRY_3"		name = "MDI_INFANTRY_3"  version = 1}
+#entity = { clone = "AJU_INFANTRY_4"		name = "MDI_INFANTRY_4"  version = 1}
+
+entity = { clone = "AJU_INFANTRY_1"		name = "WAR_INFANTRY_1" }
+entity = { clone = "AJU_INFANTRY_2"		name = "WAR_INFANTRY_2" }
+entity = { clone = "AJU_INFANTRY_3"		name = "WAR_INFANTRY_3" }
+entity = { clone = "AJU_INFANTRY_4"		name = "WAR_INFANTRY_4" }
+
+entity = { clone = "AJU_INFANTRY_1"		name = "ADA_INFANTRY_1" }
+entity = { clone = "AJU_INFANTRY_2"		name = "ADA_INFANTRY_2" }
+entity = { clone = "AJU_INFANTRY_3"		name = "ADA_INFANTRY_3" }
+entity = { clone = "AJU_INFANTRY_4"		name = "ADA_INFANTRY_4" }
+
+entity = { clone = "AJU_INFANTRY_1"		name = "MJE_INFANTRY_1" }
+entity = { clone = "AJU_INFANTRY_2"		name = "MJE_INFANTRY_2" }
+entity = { clone = "AJU_INFANTRY_3"		name = "MJE_INFANTRY_3" }
+entity = { clone = "AJU_INFANTRY_4"		name = "MJE_INFANTRY_4" }
+
+entity = { clone = "AJU_INFANTRY_1"		name = "HOB_INFANTRY_1" }
+entity = { clone = "AJU_INFANTRY_2"		name = "HOB_INFANTRY_2" }
+entity = { clone = "AJU_INFANTRY_3"		name = "HOB_INFANTRY_3" }
+entity = { clone = "AJU_INFANTRY_4"		name = "HOB_INFANTRY_4" }
+
+entity = { clone = "AJU_INFANTRY_1"		name = "HDY_INFANTRY_1" }
+entity = { clone = "AJU_INFANTRY_2"		name = "HDY_INFANTRY_2" }
+entity = { clone = "AJU_INFANTRY_3"		name = "HDY_INFANTRY_3" }
+entity = { clone = "AJU_INFANTRY_4"		name = "HDY_INFANTRY_4" }
+
+##SWAHILI(ZAN), copied to MBA, MLI, PTE, SFA.
+
+entity = {
+	name = "MBA_INFANTRY_1" 
+	pdxmesh = "ZAN_infantry_01_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "african_spear" 
+	}
+}
+
+entity = {
+	name = "MBA_INFANTRY_2" 
+	pdxmesh = "ZAN_infantry_02_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "african_rifle_02" 
+	}
+}
+
+entity = {
+	name = "MBA_INFANTRY_3" 
+	pdxmesh = "ZAN_infantry_03_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "african_rifle_03" 
+	}
+}
+
+entity = {
+	name = "MBA_INFANTRY_4" 
+	pdxmesh = "ZAN_infantry_04_dy_color_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "muslim_rifle_04" 
+	}
+}
+
+entity = { clone = "MBA_INFANTRY_1"		name = "MLI_INFANTRY_1" }
+entity = { clone = "MBA_INFANTRY_2"		name = "MLI_INFANTRY_2" }
+entity = { clone = "MBA_INFANTRY_3"		name = "MLI_INFANTRY_3" }
+entity = { clone = "MBA_INFANTRY_4"		name = "MLI_INFANTRY_4" }
+
+entity = { clone = "MBA_INFANTRY_1"		name = "PTE_INFANTRY_1" }
+entity = { clone = "MBA_INFANTRY_2"		name = "PTE_INFANTRY_2" }
+entity = { clone = "MBA_INFANTRY_3"		name = "PTE_INFANTRY_3" }
+entity = { clone = "MBA_INFANTRY_4"		name = "PTE_INFANTRY_4" }
+
+entity = { clone = "MBA_INFANTRY_1"		name = "SFA_INFANTRY_1" }
+entity = { clone = "MBA_INFANTRY_2"		name = "SFA_INFANTRY_2" }
+entity = { clone = "MBA_INFANTRY_3"		name = "SFA_INFANTRY_3" }
+entity = { clone = "MBA_INFANTRY_4"		name = "SFA_INFANTRY_4" }
+
+#####################################################################################################################
+#######                                                                                                         #####
+#######                                                   CAVALRY                                               #####
+#######                                                                                                         #####
+#####################################################################################################################
+##
+####NOTE: You spawn the horse/camel and with that follows the rider. First in order below is the horse/camel and after comes the riders.
+##
+
+##NUBIAN(NUB), copied to MAK, ALO, BEJ, ABB.
+
+entity = {
+	name = "MAK_CAVALRY_1"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MAK_CAVALRY_1_rider" 
+	}
+}
+
+entity = {
+	name = "MAK_CAVALRY_2"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MAK_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "MAK_CAVALRY_3"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MAK_CAVALRY_3_rider" 
+	}
+}
+
+entity = {
+	name = "MAK_CAVALRY_4"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MAK_CAVALRY_4_rider" 
+	}
+}
+
+entity = {
+	name = "MAK_CAVALRY_1_rider"
+	pdxmesh = "NUB_infantry_01_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "MAK_CAVALRY_2_rider"
+	pdxmesh = "NUB_infantry_02_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "MAK_CAVALRY_3_rider"
+	pdxmesh = "NUB_infantry_03_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "MAK_CAVALRY_4_rider"
+	pdxmesh = "NUB_infantry_04_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = { clone = "MAK_CAVALRY_1"		name = "BEJ_CAVALRY_1" }
+entity = { clone = "MAK_CAVALRY_2"		name = "BEJ_CAVALRY_2" }
+entity = { clone = "MAK_CAVALRY_3"		name = "BEJ_CAVALRY_3" }
+entity = { clone = "MAK_CAVALRY_4"		name = "BEJ_CAVALRY_4" }
+
+entity = { clone = "MAK_CAVALRY_1"		name = "ABB_CAVALRY_1" }
+entity = { clone = "MAK_CAVALRY_2"		name = "ABB_CAVALRY_2" }
+entity = { clone = "MAK_CAVALRY_3"		name = "ABB_CAVALRY_3" }
+entity = { clone = "MAK_CAVALRY_4"		name = "ABB_CAVALRY_4" }
+
+entity = { clone = "MAK_CAVALRY_1"		name = "ALO_CAVALRY_1" }
+entity = { clone = "MAK_CAVALRY_2"		name = "ALO_CAVALRY_2" }
+entity = { clone = "MAK_CAVALRY_3"		name = "ALO_CAVALRY_3" }
+entity = { clone = "MAK_CAVALRY_4"		name = "ALO_CAVALRY_4" }
+
+##SOMALIA(MDI), copied to AJU, MRE, WAR, ADA, MJE, HOB.
+
+entity = {
+	name = "AJU_CAVALRY_1"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AJU_CAVALRY_1_rider" 
+	}
+}
+
+entity = {
+	name = "AJU_CAVALRY_2"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AJU_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "AJU_CAVALRY_3"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AJU_CAVALRY_3_rider" 
+	}
+}
+
+entity = {
+	name = "AJU_CAVALRY_4"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "AJU_CAVALRY_4_rider" 
+	}
+}
+
+entity = {
+	name = "AJU_CAVALRY_1_rider"
+	pdxmesh = "MDI_infantry_01_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "AJU_CAVALRY_2_rider"
+	pdxmesh = "MDI_infantry_02_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "AJU_CAVALRY_3_rider"
+	pdxmesh = "MDI_infantry_03_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "AJU_CAVALRY_4_rider"
+	pdxmesh = "MDI_infantry_04_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = { clone = "AJU_CAVALRY_1"		name = "MRE_CAVALRY_1" }
+entity = { clone = "AJU_CAVALRY_2"		name = "MRE_CAVALRY_2" }
+entity = { clone = "AJU_CAVALRY_3"		name = "MRE_CAVALRY_3" }
+entity = { clone = "AJU_CAVALRY_4"		name = "MRE_CAVALRY_4" }
+
+#entity = { clone = "AJU_CAVALRY_1"		name = "MDI_CAVALRY_1" version = 1}
+#entity = { clone = "AJU_CAVALRY_2"		name = "MDI_CAVALRY_2" version = 1}
+#entity = { clone = "AJU_CAVALRY_3"		name = "MDI_CAVALRY_3" version = 1}
+#entity = { clone = "AJU_CAVALRY_4"		name = "MDI_CAVALRY_4" version = 1}
+
+entity = { clone = "AJU_CAVALRY_1"		name = "WAR_CAVALRY_1" }
+entity = { clone = "AJU_CAVALRY_2"		name = "WAR_CAVALRY_2" }
+entity = { clone = "AJU_CAVALRY_3"		name = "WAR_CAVALRY_3" }
+entity = { clone = "AJU_CAVALRY_4"		name = "WAR_CAVALRY_4" }
+
+entity = { clone = "AJU_CAVALRY_1"		name = "ADA_CAVALRY_1" }
+entity = { clone = "AJU_CAVALRY_2"		name = "ADA_CAVALRY_2" }
+entity = { clone = "AJU_CAVALRY_3"		name = "ADA_CAVALRY_3" }
+entity = { clone = "AJU_CAVALRY_4"		name = "ADA_CAVALRY_4" }
+
+entity = { clone = "AJU_CAVALRY_1"		name = "MJE_CAVALRY_1" }
+entity = { clone = "AJU_CAVALRY_2"		name = "MJE_CAVALRY_2" }
+entity = { clone = "AJU_CAVALRY_3"		name = "MJE_CAVALRY_3" }
+entity = { clone = "AJU_CAVALRY_4"		name = "MJE_CAVALRY_4" }
+
+entity = { clone = "AJU_CAVALRY_1"		name = "HOB_CAVALRY_1" }
+entity = { clone = "AJU_CAVALRY_2"		name = "HOB_CAVALRY_2" }
+entity = { clone = "AJU_CAVALRY_3"		name = "HOB_CAVALRY_3" }
+entity = { clone = "AJU_CAVALRY_4"		name = "HOB_CAVALRY_4" }
+
+entity = { clone = "AJU_CAVALRY_1"		name = "HDY_CAVALRY_1" }
+entity = { clone = "AJU_CAVALRY_2"		name = "HDY_CAVALRY_2" }
+entity = { clone = "AJU_CAVALRY_3"		name = "HDY_CAVALRY_3" }
+entity = { clone = "AJU_CAVALRY_4"		name = "HDY_CAVALRY_4" }
+
+##SWAHILI(ZAN), copied to MBA, MLI, PTE, SFA.
+
+entity = {
+	name = "MBA_CAVALRY_1"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MBA_CAVALRY_1_rider" 
+	}
+}
+
+entity = {
+	name = "MBA_CAVALRY_2"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MBA_CAVALRY_2_rider" 
+	}
+}
+
+entity = {
+	name = "MBA_CAVALRY_3"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MBA_CAVALRY_3_rider" 
+	}
+}
+
+entity = {
+	name = "MBA_CAVALRY_4"
+	pdxmesh = "marnoup_cavalry_horse_01"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "MBA_CAVALRY_4_rider" 
+	}
+}
+
+entity = {
+	name = "MBA_CAVALRY_1_rider"
+	pdxmesh = "ZAN_infantry_01_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "MBA_CAVALRY_2_rider"
+	pdxmesh = "ZAN_infantry_02_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "MBA_CAVALRY_3_rider"
+	pdxmesh = "ZAN_infantry_03_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = {
+	name = "MBA_CAVALRY_4_rider"
+	pdxmesh = "ZAN_infantry_04_dy_color_type1"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "marnoup_spear_01" 
+	}
+}
+
+entity = { clone = "MBA_CAVALRY_1"		name = "MLI_CAVALRY_1" }
+entity = { clone = "MBA_CAVALRY_2"		name = "MLI_CAVALRY_2" }
+entity = { clone = "MBA_CAVALRY_3"		name = "MLI_CAVALRY_3" }
+entity = { clone = "MBA_CAVALRY_4"		name = "MLI_CAVALRY_4" }
+
+entity = { clone = "MBA_CAVALRY_1"		name = "PTE_CAVALRY_1" }
+entity = { clone = "MBA_CAVALRY_2"		name = "PTE_CAVALRY_2" }
+entity = { clone = "MBA_CAVALRY_3"		name = "PTE_CAVALRY_3" }
+entity = { clone = "MBA_CAVALRY_4"		name = "PTE_CAVALRY_4" }
+
+entity = { clone = "MBA_CAVALRY_1"		name = "SFA_CAVALRY_1" }
+entity = { clone = "MBA_CAVALRY_2"		name = "SFA_CAVALRY_2" }
+entity = { clone = "MBA_CAVALRY_3"		name = "SFA_CAVALRY_3" }
+entity = { clone = "MBA_CAVALRY_4"		name = "SFA_CAVALRY_4" }
+
+#####################################################################################################################
+#######                                                                                                         #####
+#######                                                   ARTILLERY                                             #####
+#######                                                                                                         #####
+#####################################################################################################################
+
+##NUBIAN(NUB), copied to MAK, ALO, BEJ, ABB.
+
+entity = {
+	name = "MAK_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MAK_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "MAK_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MAK_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "MAK_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MAK_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "MAK_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MAK_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "ALO_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ALO_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "ALO_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ALO_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "ALO_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ALO_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "ALO_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ALO_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "ABB_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ABB_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "ABB_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ABB_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "ABB_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ABB_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "ABB_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ABB_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "BEJ_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "BEJ_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "BEJ_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "BEJ_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "BEJ_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "BEJ_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "MAK_ARTILLERY_1"
+	name = "BEJ_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "BEJ_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+##SOMALIA(MDI), copied to AJU, MRE, WAR, ADA, MJE, HOB.
+
+entity = {
+	name = "AJU_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "AJU_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "AJU_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "AJU_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "AJU_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "AJU_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "AJU_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "AJU_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "MRE_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MRE_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "MRE_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MRE_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "MRE_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MRE_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "MRE_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MRE_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "WAR_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "WAR_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "WAR_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "WAR_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "WAR_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "WAR_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "WAR_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "WAR_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "ADA_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ADA_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "ADA_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ADA_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "ADA_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ADA_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "ADA_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ADA_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "MJE_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MJE_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "MJE_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MJE_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "MJE_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MJE_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "MJE_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MJE_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "HOB_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "HOB_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "HOB_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "HOB_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "HOB_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "HOB_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "HOB_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "HOB_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "HDY_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ABB_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "HDY_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ABB_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "HDY_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ABB_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "AJU_ARTILLERY_1"
+	name = "HDY_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ABB_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+##SWAHILI(ZAN), copied to MBA, MLI, PTE, SFA.
+
+entity = {
+	name = "MBA_ARTILLERY_1"
+	pdxmesh = "artillery_base_mesh"
+	
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	attach = { 
+		name = "gunman"
+		infantry_node = "MBA_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "MBA_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MBA_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "MBA_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MBA_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "MBA_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MBA_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "MLI_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MLI_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "MLI_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MLI_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "MLI_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MLI_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "MLI_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "MLI_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "PTE_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "PTE_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "PTE_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "PTE_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "PTE_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "PTE_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "PTE_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "PTE_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "SFA_ARTILLERY_1" 
+	attach = {
+		name = "gunman"
+		infantry_node = "SFA_INFANTRY_1" 
+		cannon_node = "africangfx_ARTILLERY_1_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "SFA_ARTILLERY_2" 
+	attach = {
+		name = "gunman"
+		infantry_node = "SFA_INFANTRY_2" 
+		cannon_node = "africangfx_ARTILLERY_2_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "SFA_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "SFA_INFANTRY_3" 
+		cannon_node = "africangfx_ARTILLERY_3_cannon" 
+	}
+}
+
+entity = {
+	clone = "MBA_ARTILLERY_1"
+	name = "SFA_ARTILLERY_4" 
+	attach = {
+		name = "gunman"
+		infantry_node = "SFA_INFANTRY_4" 
+		cannon_node = "africangfx_ARTILLERY_4_cannon" 
+	}
+}

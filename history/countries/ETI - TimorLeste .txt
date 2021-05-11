@@ -1,0 +1,18 @@
+government = republic
+
+government_rank = 1
+set_legacy_government = constitutional_republic
+capital = 1326
+primary_culture = papuan
+religion = secularism
+technology_group = chinese 
+2019.5.30 = {
+	monarch = {
+		name = "Francisco Guterres"
+		birth_date = 1954.9.7
+		adm = 5
+		dip = 3
+		mil = 1
+		religion = catholic
+	}
+}

@@ -1,0 +1,8 @@
+#Three-Decker
+type = heavy_ship
+
+hull_size = 450
+base_cannons = 500
+sail_speed = 16
+
+sprite_level = 6

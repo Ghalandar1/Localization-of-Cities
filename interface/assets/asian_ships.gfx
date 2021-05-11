@@ -1,0 +1,246 @@
+objectTypes = {
+
+
+#######################
+###		Heavy		###
+#######################
+	pdxmesh = {
+		name = "asian_heavy_01_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+		scale = 1.8
+		
+		animation = { id = "idle"	type = "asian_heavy_01_idle_animation" }
+		animation = { id = "walk"	type = "asian_heavy_01_walk_animation" }
+		animation = { id = "attack"	type = "asian_heavy_01_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_heavy_02_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+		scale = 1.8
+		
+		animation = { id = "idle"	type = "asian_heavy_02_idle_animation" }
+		animation = { id = "walk"	type = "asian_heavy_02_walk_animation" }
+		animation = { id = "attack"	type = "asian_heavy_02_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_heavy_03_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+		scale = 1.8
+		
+		animation = { id = "idle"	type = "asian_heavy_03_idle_animation" }
+		animation = { id = "walk"	type = "asian_heavy_03_walk_animation" }
+		animation = { id = "attack"	type = "asian_heavy_03_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "JAP_heavy_03_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+		scale = 1.8
+		
+		animation = { id = "idle"	type = "JAP_heavy_03_idle_animation" }
+		animation = { id = "walk"	type = "JAP_heavy_03_walk_animation" }
+		animation = { id = "attack"	type = "JAP_heavy_03_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_heavy_04_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+		scale = 1.8
+		
+		animation = { id = "idle"	type = "asian_heavy_04_idle_animation" }
+		animation = { id = "walk"	type = "asian_heavy_04_walk_animation" }
+		animation = { id = "attack"	type = "asian_heavy_04_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_heavy_05_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+		scale = 1.8
+		
+		animation = { id = "idle"	type = "asian_heavy_05_idle_animation" }
+		animation = { id = "walk"	type = "asian_heavy_05_walk_animation" }
+		animation = { id = "attack"	type = "asian_heavy_05_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_heavy_06_mesh"
+		file = "gfx\models\ships\early_carrack.mesh"
+		scale = 1.8
+		
+		animation = { id = "idle"	type = "asian_heavy_06_idle_animation" }
+		animation = { id = "walk"	type = "asian_heavy_06_walk_animation" }
+		animation = { id = "attack"	type = "asian_heavy_06_attack_animation" }
+	}	
+#######################
+###		Light		###
+#######################
+	pdxmesh = {
+		name = "asian_light_01_mesh"
+		file = "gfx\models\ships\barque.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_light_01_idle_animation" }
+		animation = { id = "walk"	type = "asian_light_01_walk_animation" }
+		animation = { id = "attack"	type = "asian_light_01_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_light_02_mesh"
+		file = "gfx\models\ships\barque.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_light_02_idle_animation" }
+		animation = { id = "walk"	type = "asian_light_02_walk_animation" }
+		animation = { id = "attack"	type = "asian_light_02_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_light_03_mesh"
+		file = "gfx\models\ships\barque.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_light_03_idle_animation" }
+		animation = { id = "walk"	type = "asian_light_03_walk_animation" }
+		animation = { id = "attack"	type = "asian_light_03_attack_animation" }
+	}
+		pdxmesh = {
+		name = "KOR_light_03_mesh"
+		file = "gfx\models\ships\barque.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "KOR_light_03_idle_animation" }
+		animation = { id = "walk"	type = "KOR_light_03_walk_animation" }
+		animation = { id = "attack"	type = "KOR_light_03_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_light_04_mesh"
+		file = "gfx\models\ships\barque.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_light_04_idle_animation" }
+		animation = { id = "walk"	type = "asian_light_04_walk_animation" }
+		animation = { id = "attack"	type = "asian_light_04_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_light_05_mesh"
+		file = "gfx\models\ships\barque.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_light_05_idle_animation" }
+		animation = { id = "walk"	type = "asian_light_05_walk_animation" }
+		animation = { id = "attack"	type = "asian_light_05_attack_animation" }
+	}	
+		pdxmesh = {
+		name = "asian_light_06_mesh"
+		file = "gfx\models\ships\barque.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_light_06_idle_animation" }
+		animation = { id = "walk"	type = "asian_light_06_walk_animation" }
+		animation = { id = "attack"	type = "asian_light_06_attack_animation" }
+	}	
+
+#######################
+###		Galley		###
+#######################
+	pdxmesh = {
+		name = "asian_galley_01_mesh"
+		file = "gfx\models\ships\galley.mesh"
+		scale = 1.3
+		
+		animation = { id = "idle"	type = "asian_galley_01_idle_animation" }
+		animation = { id = "walk"	type = "asian_galley_01_walk_animation" }
+		animation = { id = "attack"	type = "asian_galley_01_attack_animation" }
+	}
+	pdxmesh = {
+		name = "asian_galley_02_mesh"
+		file = "gfx\models\ships\galley.mesh"
+		scale = 1.3
+		
+		animation = { id = "idle"	type = "asian_galley_01_idle_animation" }
+		animation = { id = "walk"	type = "asian_galley_01_walk_animation" }
+		animation = { id = "attack"	type = "asian_galley_01_attack_animation" }
+	}
+	pdxmesh = {
+		name = "asian_galley_03_mesh"
+		file = "gfx\models\ships\galley.mesh"
+		scale = 1.3
+		
+		animation = { id = "idle"	type = "asian_galley_02_idle_animation" }
+		animation = { id = "walk"	type = "asian_galley_02_walk_animation" }
+		animation = { id = "attack"	type = "asian_galley_02_attack_animation" }
+	}
+	pdxmesh = {
+		name = "asian_galley_04_mesh"
+		file = "gfx\models\ships\galley.mesh"
+		scale = 1.3
+		
+		animation = { id = "idle"	type = "asian_galley_02_idle_animation" }
+		animation = { id = "walk"	type = "asian_galley_02_walk_animation" }
+		animation = { id = "attack"	type = "asian_galley_02_attack_animation" }
+	}
+	pdxmesh = {
+		name = "KOR_galley_03_mesh"
+		file = "gfx\models\ships\galley.mesh"
+		scale = 1.3
+		
+		animation = { id = "idle"	type = "KOR_galley_03_idle_animation" }
+		animation = { id = "walk"	type = "KOR_galley_03_walk_animation" }
+		animation = { id = "attack"	type = "KOR_galley_03_attack_animation" }
+	}
+	pdxmesh = {
+		name = "JAP_galley_03_mesh"
+		file = "gfx\models\ships\galley.mesh"
+		scale = 1.3
+		
+		animation = { id = "idle"	type = "JAP_galley_03_idle_animation" }
+		animation = { id = "walk"	type = "JAP_galley_03_walk_animation" }
+		animation = { id = "attack"	type = "JAP_galley_03_attack_animation" }
+	}
+	pdxmesh = {
+		name = "asian_galley_05_mesh"
+		file = "gfx\models\ships\galley.mesh"
+		scale = 1.3
+		
+		animation = { id = "idle"	type = "asian_galley_04_idle_animation" }
+		animation = { id = "walk"	type = "asian_galley_04_walk_animation" }
+		animation = { id = "attack"	type = "asian_galley_04_attack_animation" }
+	}
+	pdxmesh = {
+		name = "asian_galley_06_mesh"
+		file = "gfx\models\ships\galley.mesh"
+		scale = 1.3
+		
+		animation = { id = "idle"	type = "asian_galley_04_idle_animation" }
+		animation = { id = "walk"	type = "asian_galley_04_walk_animation" }
+		animation = { id = "attack"	type = "asian_galley_04_attack_animation" }
+	}		
+#######################
+###		Transport		###
+#######################
+	pdxmesh = {
+		name = "asian_transport_01_mesh"
+		file = "gfx\models\ships\cog.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_transport_01_idle_animation" }
+		animation = { id = "walk"	type = "asian_transport_01_walk_animation" }
+		animation = { id = "attack"	type = "asian_transport_01_attack_animation" }
+	}
+	pdxmesh = {
+		name = "asian_transport_02_mesh"
+		file = "gfx\models\ships\cog.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_transport_02_idle_animation" }
+		animation = { id = "walk"	type = "asian_transport_02_walk_animation" }
+		animation = { id = "attack"	type = "asian_transport_02_attack_animation" }
+	}	
+	pdxmesh = {
+		name = "asian_transport_03_mesh"
+		file = "gfx\models\ships\cog.mesh"
+		scale = 1.1
+		
+		animation = { id = "idle"	type = "asian_transport_03_idle_animation" }
+		animation = { id = "walk"	type = "asian_transport_03_walk_animation" }
+		animation = { id = "attack"	type = "asian_transport_03_attack_animation" }
+	}	
+	
+
+
+###--End--###
+}

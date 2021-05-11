@@ -1,0 +1,866 @@
+creat_europa_union =  {
+		category = great_powers
+		require_acceptance = yes
+		alert_index = 15  
+		alert_tooltip = ICON_FEDERATIONINVITE
+		
+		is_visible = {
+			capital_scope = {
+						continent = europe
+			}
+			
+			any_neighbor_country = {
+				adm_tech = 3
+			}
+			NOT = { tag = RUS }
+			NOT = { tag = SOV }
+			FROM = { is_subject = no }
+	
+		}
+		is_allowed = {
+			
+			prestige = 70
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 1000 } } }
+					treasury = 30000
+					adm_power = 500
+					dip_power = 500
+					mil_power = 500
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					treasury = 45000
+					adm_power = 600
+					dip_power = 600
+					mil_power = 600
+					
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					treasury = 60000
+					adm_power = 700
+					dip_power = 700
+					mil_power = 700
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					treasury = 75000
+					adm_power = 800
+					dip_power = 800
+					mil_power = 800
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					treasury = 90000
+					adm_power = 900
+					dip_power = 900
+					mil_power = 900
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 6000 } } }
+					treasury = 105000
+					adm_power = 1000
+					dip_power = 1000
+					mil_power = 1000
+				}
+			if = {
+					limit = { FROM = { total_development = 6000 NOT = { total_development = 40000 } } }
+					treasury = 120000
+					adm_power = 1100
+					dip_power = 1100
+					mil_power = 1100
+				}
+			FROM = {
+				capital_scope = {
+						continent = europe
+				}
+			}
+			reverse_has_opinion = { who = FROM value = 200  }
+			ROOT = { is_great_power = yes  }
+			NOT = {	FROM = { is_at_war = yes  } }
+			NOT = {	ROOT = { is_at_war = yes  } }
+			}
+		on_accept = {
+		
+			FROM = {
+			add_truce_with = ROOT
+			}
+			ROOT = {
+			add_truce_with = FROM
+			}
+		
+			ROOT = {
+			create_subject = {
+				subject_type = eu_state
+				subject = FROM
+				}
+				
+				
+				
+				if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 1000 } } }
+					add_treasury = -30000
+					add_adm_power = -500
+					add_dip_power = -500
+					add_mil_power = -500
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_treasury = -45000
+					add_adm_power =	-600
+					add_dip_power = -600
+					add_mil_power = -600
+					
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_treasury = -60000
+					add_adm_power =	-700
+					add_dip_power = -700
+					add_mil_power = -700
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_treasury = -75000
+					add_adm_power =	-800
+					add_dip_power = -800
+					add_mil_power = -800
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_treasury = -90000
+					add_adm_power =	-900
+					add_dip_power = -900
+					add_mil_power = -900
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 6000 } } }
+					add_treasury = -105000
+					add_adm_power =	-1000
+					add_dip_power = -1000
+					add_mil_power = -1000
+				}
+			if = {
+					limit = { FROM = { total_development = 6000 NOT = { total_development = 40000 } } }
+					add_treasury = -120000
+					add_adm_power =	-1100
+					add_dip_power = -1100
+					add_mil_power = -1100
+				}
+				
+				
+			}
+		}
+		
+		ai_acceptance = {		
+
+				add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 190 }   } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 25
+				}
+	
+			}
+	
+				add_entry = {
+				name = TRUST
+				export_to_variable = {
+					variable_name = ai_value
+					value = trust
+					who = FROM
+					with = THIS
+				}
+				subtract_variable = { which = ai_value value = 50 }
+																	}
+					add_entry = {
+					name = OPINION
+					export_to_variable = {
+					variable_name = ai_value
+					value = opinion
+					who = FROM
+					with = THIS
+				}
+				divide_variable = { which = ai_value value = 15 }
+																}
+				add_entry = {
+				name = BASE_EMMBASY
+				limit = { always = yes }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 20
+									}
+				multiply_variable = { which = ai_value value = -1 }
+							}
+				add_entry = {
+				name = RIVAL_EMMBASY
+				limit = { FROM = { is_rival = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 100
+									}
+				multiply_variable = { which = ai_value value = -1 }
+							}
+										add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 40
+									}
+	
+							}
+																add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+									}
+	
+							}
+	
+		add_entry = {
+				name = ALLIANCE
+				limit = { FROM = { alliance_with = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 50
+				}
+			
+		}
+	
+	
+	
+	
+	
+	}
+		
+		ai_will_do = { 
+			ROOT = { is_great_power = yes  }
+			FROM = { is_great_power = no  }
+			reverse_has_opinion = { who = FROM value = 175  } 
+		}
+	
+	}
+	
+	
+	
+	
+############################################################ Cansel Europa Union #############################
+
+#cancel_europa_union_great_power =  {
+#		category = great_powers     
+#		require_acceptance = no
+#		is_visible = {
+#			ROOT = { total_development = 1000 }
+#			ROOT = {	
+#				NOT = {
+#					overlord_of = FROM
+#				}
+#			}
+#			FROM = {
+#				is_subject_of_type =  eu_state
+#			}
+#		}
+#		is_allowed = {
+#			
+#			reverse_has_opinion = { who = FROM value = 155  }
+#			ROOT = { is_great_power = yes  }
+#			FROM = { NOT = { is_at_war = yes } }
+#			if = {
+#					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+#					treasury = 10000
+#					adm_power = 100
+#					dip_power = 100
+#					mil_power = 100
+#				}
+#				if = {
+#					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+#					treasury = 20000
+#					adm_power = 200
+#					dip_power = 200
+#					mil_power = 200
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+#					treasury = 30000
+#					adm_power = 300
+#					dip_power = 300
+#					mil_power = 300
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+#					treasury = 40000
+#					adm_power = 400
+#					dip_power = 400
+#					mil_power = 400
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 3000 NOT = { total_development = 40000 } } }
+#					treasury = 50000
+#					adm_power = 500
+#					dip_power = 500
+#					mil_power = 500
+#				}
+#			
+#			
+#	
+#		}
+#		on_accept = {
+#			add_trust = {
+#				who = FROM
+#				value = -1
+#				mutual = yes
+#			}
+#			overlord = {
+#				add_truce_with =  ROOT
+#				add_truce_with =  FROM
+#			}
+#			FROM = {
+#			add_truce_with = ROOT
+#			}
+#			ROOT = {
+#			add_truce_with = FROM
+#			}
+#			
+#			if = {
+#					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+#					add_treasury = -10000
+#					add_adm_power = -100
+#					add_dip_power = -100
+#					add_mil_power = -100
+#				}
+#				if = {
+#					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+#					add_treasury = -20000
+#					add_adm_power = -200
+#					add_dip_power = -200
+#					add_mil_power = -200
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+#					add_treasury = -30000
+#					add_adm_power = -300
+#					add_dip_power = -300
+#					add_mil_power = -300
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+#					add_treasury = -40000
+#					add_adm_power = -400
+#					add_dip_power = -400
+#					add_mil_power = -400
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 3000 NOT = { total_development = 40000 } } }
+#					add_treasury = -50000
+#					add_adm_power = -500
+#					add_dip_power = -500
+#					add_mil_power = -500
+#				}
+#			
+#			FROM = {
+#				grant_independence = yes
+#			}
+#			
+#			FROM = { 
+#				if = {
+#					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+#					add_treasury = 10000
+#					add_adm_power = 100
+#					add_dip_power = 100
+#					add_mil_power = 100
+#				}
+#				if = {
+#					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+#					add_treasury = 20000
+#					add_adm_power = 200
+#					add_dip_power = 200
+#					add_mil_power = 200
+#				}                   
+#			if = {
+#					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+#					add_treasury = 30000
+#					add_adm_power = 300
+#					add_dip_power = 300
+#					add_mil_power = 300
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+#					add_treasury = 40000
+#					add_adm_power = 400
+#					add_dip_power = 400
+#					add_mil_power = 400
+#				}
+#			if = {
+#					limit = { FROM = { total_development = 3000 NOT = { total_development = 40000 } } }
+#					add_treasury = 50000
+#					add_adm_power = 500
+#					add_dip_power = 500
+#					add_mil_power = 500
+#				} 
+#			
+#			}
+#		}
+#		ai_will_do = {
+#			has_opinion = { 
+#					who = FROM 
+#					value = 145
+#				}
+#		}
+#	}
+	
+	
+	############################## Leave Limited Army #######################
+	
+	
+	leave_limited_army =  {
+		category = great_powers
+		require_acceptance = no
+		is_visible = {
+		FROM = { overlord_of = ROOT }
+			ROOT = {
+				is_subject_of_type = limited_army
+			}
+		}
+		is_allowed = {
+				reverse_has_opinion = { who = USA value = 50 }
+		
+		
+			if = {
+					limit = { ROOT = { total_development = 5 NOT = { total_development = 500 } } }
+					treasury = 10000
+					adm_power = 100
+					dip_power = 100
+					mil_power = 100
+				}
+				if = {
+					limit = { ROOT = { total_development = 500 NOT = { total_development = 1000 } } }
+					treasury = 30000
+					adm_power = 200
+					dip_power = 200
+					mil_power = 200
+				}
+			if = {
+					limit = { ROOT = { total_development = 1000 NOT = { total_development = 2000 } } }
+					treasury = 40000
+					adm_power = 300
+					dip_power = 300
+					mil_power = 300
+				}
+			if = {
+					limit = { ROOT = { total_development = 2000 NOT = { total_development = 3000 } } }
+					treasury = 50000
+					adm_power = 400
+					dip_power = 400
+					mil_power = 400
+				}
+			if = {
+					limit = { ROOT = { total_development = 3000 NOT = { total_development = 40000 } } }
+					treasury = 60000
+					adm_power = 500
+					dip_power = 500
+					mil_power = 500
+				}
+		}
+		on_accept = {
+		
+			FROM = {
+			add_truce_with = ROOT
+			}
+			ROOT = {
+			add_truce_with = FROM
+			}
+		
+			if = {
+					limit = { ROOT = { total_development = 5 NOT = { total_development = 500 } } }
+					add_treasury = -10000
+					add_adm_power = -100
+					add_dip_power = -100
+					add_mil_power = -100
+				}
+				if = {
+					limit = { ROOT = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_treasury = -30000
+					add_adm_power = -200
+					add_dip_power = -200
+					add_mil_power = -200
+				}
+			if = {
+					limit = { ROOT = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_treasury = -40000
+					add_adm_power = -300
+					add_dip_power = -300
+					add_mil_power = -300
+				}
+			if = {
+					limit = { ROOT = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_treasury = -50000
+					add_adm_power = -400
+					add_dip_power = -400
+					add_mil_power = -400
+				}
+			if = {
+					limit = { ROOT = { total_development = 3000 NOT = { total_development = 40000 } } }
+					add_treasury = -60000
+					add_adm_power = -500
+					add_dip_power = -500
+					add_mil_power = -500
+				}
+				
+			FROM = {
+				if = {
+						limit = { ROOT = { total_development = 5 NOT = { total_development = 500 } } }
+						add_treasury = 10000
+						add_adm_power = 100
+						add_dip_power = 100
+						add_mil_power = 100
+					}
+					if = {
+						limit = { ROOT = { total_development = 500 NOT = { total_development = 1000 } } }
+						add_treasury = 30000
+						add_adm_power = 200
+						add_dip_power = 200
+						add_mil_power = 200
+					}
+				if = {
+						limit = { ROOT = { total_development = 1000 NOT = { total_development = 2000 } } }
+						add_treasury = 40000
+						add_adm_power = 300
+						add_dip_power = 300
+						add_mil_power = 300
+					}
+				if = {
+						limit = { ROOT = { total_development = 2000 NOT = { total_development = 3000 } } }
+						add_treasury = 50000
+						add_adm_power = 400
+						add_dip_power = 400
+						add_mil_power = 400
+					}
+				if = {
+						limit = { ROOT = { total_development = 3000 NOT = { total_development = 40000 } } }
+						add_treasury = 60000
+						add_adm_power = 500
+						add_dip_power = 500
+						add_mil_power = 500
+					}
+				}
+			FROM = { add_prestige = -15 }
+			ROOT = { add_prestige = 30 }
+		
+			add_trust = {
+				who = FROM
+				value = -1
+				mutual = yes
+			}
+			ROOT = {
+				grant_independence = yes
+			}
+		}
+		ai_will_do = {
+	
+				liberty_desire = 55
+			
+			
+		}
+	}
+	
+	
+	
+	cancel_limited_army =  {
+		category = great_powers
+		require_acceptance = no
+		is_visible = {
+			overlord_of = FROM
+			FROM = {
+				is_subject_of_type = limited_army
+			}
+		}
+		is_allowed = {
+		
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					treasury = 5000
+					adm_power = 100
+					dip_power = 100
+					mil_power = 100
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					treasury = 10000
+					adm_power = 200
+					dip_power = 200
+					mil_power = 200
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					treasury = 15000
+					adm_power = 300
+					dip_power = 300
+					mil_power = 300
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					treasury = 20000
+					adm_power = 400
+					dip_power = 400
+					mil_power = 400
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 40000 } } }
+					treasury = 25000
+					adm_power = 500
+					dip_power = 500
+					mil_power = 500
+				}
+		}
+		on_accept = {
+		
+			FROM = {
+			add_truce_with = ROOT
+			}
+			ROOT = {
+			add_truce_with = FROM
+			}
+		
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_treasury = -5000
+					add_adm_power = -100
+					add_dip_power = -100
+					add_mil_power = -100
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_treasury = -10000
+					add_adm_power = -200
+					add_dip_power = -200
+					add_mil_power = -200
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_treasury = -15000
+					add_adm_power = -300
+					add_dip_power = -300
+					add_mil_power = -300
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_treasury = -20000
+					add_adm_power = -400
+					add_dip_power = -400
+					add_mil_power = -400
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 40000 } } }
+					add_treasury = -25000
+					add_adm_power = -500
+					add_dip_power = -500
+					add_mil_power = -500
+				}
+			add_trust = {
+				who = FROM
+				value = -20
+				mutual = yes
+			}
+				
+			FROM = {
+				grant_independence = yes
+			}
+			FROM = { 
+				every_owned_province = {
+					set_in_empire = no
+				}
+			}
+		}
+		ai_will_do = {
+			liberty_desire = 65
+		}
+	}
+
+
+
+
+
+	###########################################################################################################
+	                                     
+	############################################################################################################
+	
+	cancel_limited_army_great_power =  {
+		category = great_powers     
+		require_acceptance = no
+		is_visible = {
+			ROOT = { total_development = 1000 }
+			ROOT = {	
+				NOT = {
+					overlord_of = FROM
+				}
+			}
+			FROM = {
+				is_subject_of_type =  limited_army
+			}
+		}
+		is_allowed = {
+		
+			NOT = { is_at_war = yes }
+			reverse_has_opinion = { who = FROM value = 125  }
+			ROOT = { is_great_power = yes }
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					treasury = 10000
+					adm_power = 100
+					dip_power = 100
+					mil_power = 100
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					treasury = 25000
+					adm_power = 250
+					dip_power = 250
+					mil_power = 250
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					treasury = 50000
+					adm_power = 500
+					dip_power = 500
+					mil_power = 500
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					treasury = 70000
+					adm_power = 700
+					dip_power = 700
+					mil_power = 700
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 40000 } } }
+					treasury = 100000
+					adm_power = 1000
+					dip_power = 1000
+					mil_power = 1000
+				}
+			
+			
+	
+		}
+		on_accept = {
+			add_trust = {
+				who = FROM
+				value = -1
+				mutual = yes
+			}
+			
+			overlord = {
+			add_truce_with =  ROOT
+			add_truce_with =  FROM
+			}
+			FROM = {
+			add_truce_with = ROOT
+			}
+			ROOT = {
+			add_truce_with = FROM
+			}
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_treasury = -10000
+					add_adm_power = -100
+					add_dip_power = -100
+					add_mil_power = -100
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_treasury = -25000
+					add_adm_power = -250
+					add_dip_power = -250
+					add_mil_power = -250
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_treasury = -50000
+					add_adm_power = -500
+					add_dip_power = -500
+					add_mil_power = -500
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_treasury = -70000
+					add_adm_power = -700
+					add_dip_power = -700
+					add_mil_power = -700
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 40000 } } }
+					add_treasury = -100000
+					add_adm_power = -1000
+					add_dip_power = -1000
+					add_mil_power = -1000
+				}
+			
+			FROM = {
+				grant_independence = yes
+			}
+			
+			FROM = { 
+				if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 500 } } }
+					add_treasury = 10000
+					add_adm_power = 100
+					add_dip_power = 100
+					add_mil_power = 100
+				}
+				if = {
+					limit = { FROM = { total_development = 500 NOT = { total_development = 1000 } } }
+					add_treasury = 25000
+					add_adm_power = 250
+					add_dip_power = 250
+					add_mil_power = 250
+				}                   
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_treasury = 50000
+					add_adm_power = 500
+					add_dip_power = 500
+					add_mil_power = 500
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_treasury = 70000
+					add_adm_power = 700
+					add_dip_power = 700
+					add_mil_power = 700
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 40000 } } }
+					add_treasury = 100000
+					add_adm_power = 1000
+					add_dip_power = 1000
+					add_mil_power = 1000
+				} 
+			
+			}
+		}
+		ai_will_do = {
+			OR = {
+				has_opinion = { 
+					who = FROM 
+					value = 140
+				}
+				has_opinion = { 
+					who = ROOT 
+					value = 130
+				}
+				
+				
+			}
+		}
+	}
+	
+	

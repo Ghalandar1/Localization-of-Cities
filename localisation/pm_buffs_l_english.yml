@@ -1,0 +1,53 @@
+﻿l_english:
+ pm_rel:0 "Religious order"
+ pm_nav:0 "Naval March"
+ pm_adm:0 "Administrative state"
+ pm_col:0 "Coloniser"
+ pm_dev:0 "Prosperous republic"
+ pm_mil:0 "Militarist"
+
+ pm_ai_disable_buff_title:0 "AI disable buff"
+ pm_ai_disable_buff_desc:0 "If independend or revoked"
+
+ pm_ai_change_ideas_title:0 "Subject change ideas"
+ pm_ai_change_ideas_desc:0 "And get new one"
+
+ pm_tax_vhigh:0 "Very high taxes"
+ pm_tax_high:0 "High taxes"
+ pm_taxes_default:0 "Default"
+ pm_tax_low:0 "Low taxes"
+ pm_tax_vlow:0 "Very low taxes"
+ pm_auto_vcen:0 "Very centralised"
+ pm_auto_cen:0 "Centralised"
+ pm_auto_dcen:0 "Decentralised"
+ pm_auto_vdcen:0 "Very decentralised"
+
+ pm_extra_dypslot:0 "Extra dypslot"
+
+ pm_extra_LDreduce_title:0 "Extra liberty desire reduction"
+ pm_extra_LDreduce_desc:0 "Full influence ideas group gives us -10% Liberty desire from subject's development"
+ pm_influence_buff:0 "Full influence ideas group"
+ desc_pm_influence_buff:0 ""
+
+ pm_new_ideas_1:0 "New ideas"
+ pm_new_ideas_2:0 "New ideas"
+ pm_new_ideas_3:0 "New ideas"
+ pm_new_ideas_4:0 "New ideas"
+ pm_new_ideas_5:0 "New ideas"
+ desc_pm_new_ideas_1:0 ""
+ desc_pm_new_ideas_2:0 ""
+ desc_pm_new_ideas_3:0 ""
+ desc_pm_new_ideas_4:0 ""
+ desc_pm_new_ideas_5:0 ""
+
+ pm_influence_buff:0 "Influence ideas completed"
+ pm_colony_investment_1:0 "Ivestments"
+ pm_colony_investment_2:0 "Ivestments"
+ pm_colony_investment_3:0 "Ivestments"
+ pm_special_rel_1:0 "Religious mission"
+ pm_special_rel_2:0 "Religious mission"
+ pm_special_col:0 "Ivestments"
+ pm_special_dev:0 "Focus on development"
+ pm_special_adm:0 "Focus on administrating"
+
+ pm_vpu_op:0 "This is anexation!"

@@ -1,0 +1,25 @@
+government = republic
+
+government_rank = 1
+add_government_reform = oligarchy_reform
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 12798
+primary_culture = iberian_colombian
+religion = secularism
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Lenín Moreno"
+		birth_date = 1953.3.19
+		adm = 4
+		mil = 2
+		religion = catholic
+		dip = 3
+	}
+}

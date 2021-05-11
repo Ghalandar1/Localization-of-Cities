@@ -1,0 +1,8 @@
+#bookmark =
+#{
+#	name = "Custom"
+#	desc = "Custom"
+#	date = 2019.5.30
+#	
+#	center = 9833
+#}

@@ -1,0 +1,44 @@
+namespace = zi
+
+#Poland eats Lithuania
+
+country_event = {
+	id = zi.26
+	title = "zi_26EVTNAME"
+	desc = "zi_26EVTDESC"
+	picture = DIPLOMACY_eventPicture
+	mean_time_to_happen = { months = 180 }
+	trigger = {
+		tag = POL
+		LIT = { ai = yes }
+		LIT = { is_subject = yes }
+		has_country_modifier = unity_against_zombies
+	}
+	option = {
+		name = "zi_26EVTOPTION"
+		inherit = LIT
+		change_tag = PLC
+	}
+}
+
+country_event = {
+	id = zi.27
+	title = "zi_27EVTNAME"
+	desc = "zi_27EVTDESC"
+	picture = DIPLOMACY_eventPicture
+	mean_time_to_happen = { months = 180 }
+	trigger = {
+		tag = DAN
+		NOR = { ai = yes }
+		SWE = { ai = yes }
+		NOR = { is_subject = yes }
+		SWE = { is_subject = yes }
+		has_country_modifier = unity_against_zombies
+	}
+	option = {
+		name = "zi_27EVTOPTION"
+		inherit = SWE
+		inherit = NOR
+		change_tag = SCA
+	}
+}

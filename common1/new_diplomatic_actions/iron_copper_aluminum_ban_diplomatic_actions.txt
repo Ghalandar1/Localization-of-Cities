@@ -1,0 +1,131 @@
+	iron_ban_action =  {
+		category = emperor
+		require_acceptance = no
+		alert_index = 15  
+		alert_tooltip = ICON_FEDERATIONINVITE
+		
+		is_visible = {
+			production_leader = { trade_goods = iron }
+			FROM = { any_owned_province = { trade_goods = iron } }
+			NOT = { FROM = { has_country_modifier = iron_ban_modifire_from_100 } }
+		}
+		
+		is_allowed = {		
+			adm_power = 120
+			mil_power = 120
+			NOT = { inflation = 6 }
+			NOT = { 
+				FROM = { 
+					trading_bonus = {
+						trade_goods = iron
+						value = yes
+					}
+				}
+			}
+		}
+		
+		on_accept = {
+			
+			country_event = { id = iron_sanction.1x }
+			
+			FROM = { save_global_event_target_as = iron_embargo_temp }
+		}
+
+		ai_will_do = { 
+			OR = {
+				NOT = { FROM = { has_opinion = { who = ROOT value = -50 }	} }
+				NOT = {ROOT = { has_opinion = { who = FROM value = -50 }	}	}
+				}
+		}
+	
+		
+	}
+	
+	
+	aluminum_ban_action =  {
+		category = emperor
+		require_acceptance = no
+		alert_index = 15  
+		alert_tooltip = ICON_FEDERATIONINVITE
+		
+		is_visible = {
+			production_leader = { trade_goods = aluminum }
+			FROM = { any_owned_province = { trade_goods = aluminum } }
+			NOT = { FROM = { has_country_modifier = aluminum_ban_modifire_from_100 } }
+		}
+		
+		is_allowed = {			
+			adm_power = 120
+			mil_power = 120
+			NOT = { inflation = 6 }
+			NOT = { 
+				FROM = { 
+					trading_bonus = {
+						trade_goods = aluminum
+						value = yes
+					}
+				}
+			}
+		}
+		
+		on_accept = {
+			
+			country_event = { id = aluminum_sanction.1x }
+			
+			FROM = { save_global_event_target_as = aluminum_embargo_temp }
+		}
+
+		ai_will_do = { 
+			OR = {
+				NOT = { FROM = { has_opinion = { who = ROOT value = -50 }	} }
+				NOT = {ROOT = { has_opinion = { who = FROM value = -50 }	}	}
+				}
+		}
+	
+		
+	}
+	
+	copper_ban_action =  {
+		category = emperor
+		require_acceptance = no
+		alert_index = 15  
+		alert_tooltip = ICON_FEDERATIONINVITE
+		
+		is_visible = {
+			production_leader = { trade_goods = copper }
+			FROM = { any_owned_province = { trade_goods = copper } }
+			NOT = { FROM = { has_country_modifier = copper_ban_modifire_from_100 } }
+		}
+		
+		is_allowed = {			
+			adm_power = 120
+			mil_power = 120
+			NOT = { inflation = 6 }
+			NOT = { 
+				FROM = { 
+					trading_bonus = {
+						trade_goods = copper
+						value = yes
+					}
+				}
+			}
+		}
+		
+		on_accept = {
+			
+			country_event = { id = copper_sanction.1x }
+			
+			FROM = { save_global_event_target_as = copper_embargo_temp }
+		}
+
+		ai_will_do = { 
+			OR = {
+				NOT = { FROM = { has_opinion = { who = ROOT value = -50 }	} }
+				NOT = {ROOT = { has_opinion = { who = FROM value = -50 }	}	}
+				}
+		}
+	
+		
+	}
+	
+	

@@ -1,0 +1,26 @@
+government = republic
+
+government_rank = 2
+add_government_reform = parliamentary_reform
+add_government_reform = universal_suffrage_reform
+add_government_reform = reinforce_republican_values_reform
+add_government_reform = multi_party_system
+add_government_reform = democracy_reform
+add_government_reform = abolish_presidency
+set_legacy_government = parliamentary_republic
+add_accepted_culture = french_canadian
+
+capital = 3778
+
+primary_culture = british_canadian
+religion = secularism
+technology_group = western
+2019.5.30 = {
+	monarch = {
+		name = "Justin Trudeau"
+		adm = 3
+		dip = 5
+		mil = 3
+		religion = protestant
+	}
+}

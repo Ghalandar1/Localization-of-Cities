@@ -1,0 +1,2370 @@
+monarch_power = MIL
+
+# applied when a country is ahead of time in this technology
+# no bonus for MIL currently
+# ahead_of_time = {
+# }
+
+technology = {
+	# Tech 0
+	year = 2000
+
+
+	enable = native_clubmen
+	enable = mesoamerican_clubmen
+	enable = south_american_clubmen
+	enable = east_asian_ancient_infantry
+	enable = indian_ancient_infantry
+	enable = kanem-bornu_clubmen
+	enable = zombies_unit
+	enable = high_american_clubmen
+	enable = asian_arquebusier
+	enable = south_american_warfare
+	
+	
+	
+	
+}
+
+technology = {
+	# Tech 1
+	year = 2001
+
+	fort_15th = yes
+	armory = yes	
+	
+	regimental_camp = yes
+	barracks = yes
+	
+	
+	cavalry_fire		= 	0.6
+	
+	#Spear
+	fort_et = yes
+	
+	enable = germanic_spearman
+	enable = persian_spearmen_m
+	
+	enable = armenian_light_infantry
+	enable = roman_militia
+	enable = roman_auxilia
+	
+	
+}
+
+technology = {
+	# Tech 2
+	year = 2002
+
+	
+	weapons = yes
+	infantry_shock		= 	1.0
+	cavalry_shock  		= 	1.0
+	
+	maneuver_value 		= 	0.25
+	
+	fort_16th = yes	
+	#Archery
+	
+	
+	
+	supply_limit		=	1.0
+	
+		
+	enable = nomadic_bow
+	enable = nomadic_bow_en
+	enable = celtic_archers
+	enable = heriban
+	enable = hridriskara
+	land_morale		=	1.0
+	
+	
+	
+}
+
+technology = {
+	# Tech 3
+	year = 2003
+	fort_17th = yes
+	#Early Cavalry
+
+	supply_limit		=	1.0
+	
+	artillery_fire		=	1.0
+	artillery_shock 	=	1.0
+	
+	land_morale		=	1.0
+
+	enable = armenian_light_horsemen
+	enable = barbarian_horsemen
+	enable = nomadic_horsemen
+	enable = xiongnu_horsemen
+	enable = persian_light_cavalry
+	enable = roman_cavalry
+	
+	sprite_level = 1
+
+	
+}
+
+technology = {
+	# Tech 4
+	year = 2004
+	training_fields = yes
+	conscription_center = yes
+	fort_18th	= yes
+	#Chariot
+	land_morale		=	1.0
+	
+	infantry_fire		= 	0.5
+	
+	enable = indian_chariot
+	enable = east_asian_chariot
+	supply_limit		=	1.0
+	
+	sprite_level = 2
+	
+}
+
+technology = {
+	# Tech 5
+	year = 2005
+	
+	#Battle Axe
+	land_morale		=	1.0
+	
+	combat_width = 2
+	enable = frankish_axemen
+	sprite_level = 3
+	
+}
+
+technology = {
+	# Tech 6
+	year = 2006
+
+	#Broadsword
+	
+	
+	
+	
+	land_morale		=	1.0
+
+	supply_limit		=	1.0
+	
+	enable = gothic_swordsmen
+	enable = alemanne
+	combat_width = 2
+	
+	sprite_level = 4
+	
+}
+
+technology = {
+	# Tech 7
+	year = 2007
+	
+	land_morale		=	1.0
+	
+	#Japan Infantry
+	
+	
+	
+	
+	
+	
+	#Parthian
+	enable = parthian_shot
+	enable = roman_legionary
+	enable = armenian_heavy_infantry
+	enable = nomadic_infantry
+	enable = nomadic_infantry_en
+	
+	enable = early_war_elephant
+	enable = south_asian_war_elephant
+	combat_width = 2
+	
+	
+	
+}
+
+technology = {
+	# Tech 8
+	year = 2010
+	
+	#Parthian Tactics
+	land_morale		=	1.0
+	
+	enable = clibanarii_e
+	enable = clibanarii_m
+	enable = clibanarii_o
+	enable = clibanarii_r
+	enable = armenian_horsemen
+	combat_width = 2
+}
+
+technology = {
+	# Tech 9
+	year = 2015
+
+	#Standing Army
+	infantry_shock		= 	0.1
+	cavalry_shock  		= 	0.05
+	land_morale		=	0.2
+	
+	enable = barbarian_raiders
+	
+	enable = nomadic_raiders
+	enable = nomadic_raiders_en
+	enable = sub-saharan_clubmen
+	enable = jaguar_warriors
+	enable = comitatenses
+	enable = limitanei
+	enable = equites_promoti
+	enable = equites_scutarii
+	enable = ha_jaguar_warriors
+	
+	
+	#Asb
+	
+	enable = heavy_cataphract_me
+	enable = heavy_cataphract_r
+	
+	#Tank
+	enable = houfnice
+	
+	
+	enable = indian_footsoldier	
+	enable = indian_archers
+	enable = mongol_steppe
+	enable = hun_horde
+	
+	
+	#China - Infantry
+	enable = east_asian_raider
+	enable = east_asian_spearmen
+	enable = eastern_bow
+	
+	#Turkey - Infantry
+	enable = persian_spearmen_o
+	enable = heavy_cataphract_o
+	
+	
+	#Muslim - Infantry
+	enable = immortals
+	enable = heavy_cataphract_m
+	
+	#Africa
+	enable = african_mandelaku
+	
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 10
+	year = 2022
+	#War Elephants
+	military_tactics 	= 	0.05
+	
+	
+	maneuver_value 		= 	0.25
+	artillery_shock 	=	0.1
+	artillery_fire		=	0.1
+
+	
+	
+	
+	enable = composite_bowmen_r
+	enable = composite_bowmen_m
+	enable = indian_archer
+	
+	
+	#China - Infantry
+	enable = large_cast_bronze_mortar 
+	
+	#Rusian - Infantry
+	enable = composite_bowmen_e
+	enable = heavy_cataphract_e
+	
+	#Europa - Infantry
+	enable = western_ancient_infantry
+	enable = western_heavy_horsemen
+	combat_width = 2
+	
+	
+}
+
+technology = {
+	# Tech 11
+	year = 2027
+	military_tactics 	= 	0.05
+	cavalry_shock  		= 	0.5
+	artillery_shock 	=	0.1
+	artillery_fire		=	0.1
+	infantry_shock		= 	0.1
+	supply_limit		=	0.2
+
+	maneuver_value 		= 	0.25
+	enable = migration_period_axemen_b
+	enable = migration_period_spearmen_b
+	enable = jian_swordsmen
+	
+	
+	
+	#USA - Tank
+	enable = small_cast_iron_bombard
+	#USA
+	enable = roman_praetorian
+	#USA Cavalry
+	enable = stratioitai
+	
+	#China - Infantry
+	enable = chinese_longspear
+	
+	
+	#Rusian - Infantry
+	enable = bardiche_infantry
+	
+	#Europa - Infantry
+	enable = migration_period_axemen_w
+	
+	#Muslim - Infantry
+	enable = persian_footsoldier
+	
+	combat_width = 2
+}
+
+technology = {
+	# Tech 12
+	year = 2034
+	
+	#Raiding
+	cavalry_shock  		= 	0.2
+	
+	
+	military_tactics 	= 	0.05
+	
+	enable = hun_infantry
+	enable = nomadic_horde
+	enable = turkic_nomad_infantry
+	enable = bolas_warriors
+	enable = native_warriors
+		
+	enable = rajput_hill_fighters	
+	enable = mongol_swarm
+	enable = late_mongol_bow
+	
+	
+	supply_limit		=	0.2
+	
+	
+	
+	
+	
+	#China - Infantry
+	enable = japanese_archer
+	enable = chinese_steppe	
+	
+	#Turkey - Infantry
+	enable = ottoman_yaya
+	enable = ottoman_musellem	
+	
+	
+	#Rusian - Infantry
+	enable = eastern_medieval_infantry
+	enable = cataphract_e
+	
+	#Europa - Infantry
+	enable = migration_period_spearmen_w
+	enable = western_lancer
+	
+	#Muslim - Infantry
+	enable = mamluk_archer
+	enable = muslim_cavalry_archers
+	combat_width = 2
+}
+
+technology = {
+	# Tech 13
+	year = 2041
+	military_tactics 	= 	0.05
+	#Composite Bow
+	infantry_fire		= 	0.02
+	land_morale		=	0.2
+	infantry_shock		= 	0.1
+	
+	
+	enable = cataphract_m
+	
+	
+	enable = western_horsemen
+	enable = war_elephant
+	enable = east_asian_nomad_cavalry
+	enable = aztec_tribal_warfare	
+	enable = zapotec_tribal_warfare		
+	enable = songhai_tribal_warfare		
+	enable = niger_kongolese_tribal_warfare		
+	enable = bantu_tribal_warfare	
+	enable = mali_tribal_warfare	
+	enable = pueblo_ambush	
+	enable = native_indian_tribal_warfare
+	enable = algonkin_tomahawk_charge	
+	enable = indian_arquebusier	  
+	enable = inca_mountain_warfare	
+	enable = south_american_forest_warfare
+	enable = incan_slingshots
+	enable = incan_axemen	
+	enable = maya_tribal_warfare
+	enable = ha_reformed_xantican_warrior
+	
+	combat_width = 2
+	supply_limit		=	0.1
+	
+	
+	#USA - Cavalry
+	enable = cataphract_r	
+	
+	#China - Infantry
+	enable = chinese_footsoldier
+	enable = japanese_samurai
+	
+	#Rusian - Infantry
+	enable = eastern_militia
+	enable = bulgarian_horsemen
+	
+	#Europa - Infantry
+	enable = halberd_infantry
+	enable = early_knights
+	
+	#Muslim - Infantry
+	enable = mamluk_duel
+	enable = persian_cavalry_charge
+	
+}
+
+technology = {
+	# Tech 14
+	year = 2048
+
+	#Scale Armor
+	infantry_shock 		= 	0.1
+	land_morale		=	0.2
+	military_tactics 	= 	0.05
+	
+	enable = south_indian_musketeer	
+	enable = mughal_musketeer		
+	enable = steppe_raiders
+	enable = ha_xiuhtecuhtli_soldier
+	
+	#USA
+	enable = auxilia_palatina
+	enable = unnigardae
+	
+	
+	#China - Infantry
+	enable = japanese_footsoldier
+	enable = asian_charge_cavalry
+	
+	#Turkey - Infantry
+	enable = ottoman_azab
+	
+	#Rusian - Infantry
+	enable = byzantine_praetorian
+	enable = eastern_lancer
+	
+	#Europa  Infantry
+	enable = western_medieval_infantry
+	enable = crusade_knights
+	
+	#Muslim - Cavalry
+	enable = mamluk_cavalry_charge
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 15
+	year = 2055
+	
+	#Horde Tactics
+	cavalry_shock  		= 	0.05
+	land_morale		=	0.2
+	military_tactics 	= 	0.05
+	
+	artillery_shock 	=	0.1
+	artillery_fire		=	0.1
+	
+	
+	
+	enable = middle_eastern_spearmen
+	
+	maneuver_value 		= 	0.25
+	supply_limit		=	0.2	
+	
+	#USA - Cavalry
+	enable = bucellarii
+	enable = large_cast_iron_bombard
+	
+	#China - Infantry
+	enable = east_asian_horsemen
+	
+	#Turkey - 
+	enable = cataphract_o
+
+	#Rusian - Infantry
+	enable = germanized_pike
+	enable = hungarian_horse_archers
+	
+	#Europa - Infantry
+	enable = western_men_at_arms
+	enable = western_medieval_knights
+	
+	#Muslim - Infantry
+	enable = persian_shamshir
+	
+	#Muslim - Cavalry
+	enable = shaybani
+}
+
+technology = {
+	# Tech 16
+	year = 2062
+	land_morale		=	0.2
+	#Heavy Cavalry
+	cavalry_shock  		= 	0.1
+	military_tactics 	= 	0.05
+	artillery_shock 	=	0.1
+	artillery_fire		=	0.1
+	
+	
+
+	
+	
+	#USA
+	enable = foederati
+	
+	#China - Infantry
+	enable = qiang_spearmen_ec
+	
+	#Rusian - Infantry
+	enable = byzantine_heavy_praetorian
+	
+	#Muslim - Infantry
+	enable = middle_eastern_archers_m
+	combat_width = 2
+
+}
+
+technology = {
+	# Tech 17
+	year = 2069
+	
+	enable = armored_elephant_ei
+	enable = armored_elephant
+	
+	
+	enable = middle_eastern_archers
+	
+	#Fortifications
+	land_morale		=	0.2
+	military_tactics 	= 	0.05
+	infantry_shock		= 	0.1
+	supply_limit		=	0.2
+	
+	
+	#USA - Cavalry
+	enable = optimates
+	
+	
+	#China - Infantry
+	enable = dao_swordsmen
+	enable = khmer_elephant
+	
+	#Turkey - Infantry
+	enable = ottoman_janissary	
+	enable = ottoman_spahi
+	
+	#Rusian - Infantry
+	enable = slavic_archers
+	enable = early_eastern_knight
+	
+	#Europa - Infantry
+	enable = western_longbow
+	enable = late_western_knights
+	
+	#Muslim - Infantry
+	enable = middle_eastern_spearmen_m
+	
+	combat_width = 2
+	
+	
+}
+
+technology = {
+	# Tech 18
+	year = 2076
+
+	artillery_shock 	=	0.1
+	artillery_fire		=	0.1
+	
+	#Leadership
+	land_morale		=	0.2
+	
+	military_tactics 	= 	0.05
+	
+	
+	
+	combat_width = 2
+	
+	
+	enable = indian_longbow_ei
+	enable = indian_longbow
+	
+	enable = qiang_spearmen
+	enable = eagle_warriors
+	enable = barbarian_infantry
+	enable = ha_eagle_warriors
+	
+	#USA
+	enable = arithmoi
+	
+	#China - Infantry
+	enable = dadao_swordsmen
+	
+	#Rusian - Infantry
+	enable = byzantine_infantry
+	
+	#Europa - Infantry
+	enable = gaelic_galloglaigh	
+	
+	#Muslim - Infantry
+	enable = caliphate_infantry
+	enable = caliphate_cavalry
+	
+}
+
+technology = {
+	# Tech 19
+	year = 2083
+	land_morale		=	0.2
+	maneuver_value 		= 	0.25
+	
+	#Stirrup
+	cavalry_shock  		= 	0.1
+	artillery_shock 	=	0.1
+	artillery_fire		=	0.1
+	military_tactics 	= 	0.05
+	
+	
+	
+	supply_limit		=	0.2
+	
+	#USA - Cavalry
+	enable = hippo_akontistai
+	enable = culverin
+	
+	
+	#China - Cavalry
+	enable = yabusame
+	
+	#Turkey - Cavalry
+	enable = muslim_lance_cavalry_o
+	
+	#Rusian - Cavalry
+	enable = eastern_knights
+	
+	#Europa - Infantry
+	enable = italian_condotta
+	enable = chevauchee
+	
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 20
+	year = 2090
+	
+	#Military Training
+	land_morale		=	0.2
+
+	enable = native_indian_horsemen
+	enable = dao_swordsmen_ec
+	military_tactics 	= 	0.05
+	
+	#China - Infantry
+	enable = meteor_hammer
+	
+	
+	#Turkey - Infantry
+	enable = muslim_skirmishers_o
+	
+	#Rusian - Infantry
+	enable = bulgarian_man_at_arms
+	enable = late_eastern_knights
+	
+	#Europa - Infantry
+	enable = swiss_landsknechten
+	enable = schwarze_reiter
+	
+	#Muslim - Infantry
+	enable = muslim_skirmishers_m
+	enable = camel_riders_m
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 21
+	year = 2097
+
+	artillery_shock 	=	0.1
+	artillery_fire		=	0.1
+	#Ring Armor
+	infantry_shock 		= 	0.1
+	land_morale		=	0.2
+	
+	
+	enable = indian_elephant
+	
+	
+	enable = east_asian_horsemen_ec
+	
+	enable = nomadic_horse_archers
+	enable = nomadic_horse_archers_wn
+	enable = nomadic_horse_archers_en
+	
+	
+	
+	#USA
+	enable = akritai
+	enable = hippo_toxotai
+	
+	#China - Cavalry
+	enable = mounted_samurai
+	
+	#Turkey - Cavalry
+	enable = ottoman_reformed_spahi	
+	
+	#Rusian - Cavalry
+	enable = druzhina_cavalry
+	
+	#Europa - Infantry
+	enable = gaelic_mercenary
+	enable = french_caracolle 
+}
+
+technology = {
+	# Tech 22
+	year = 2104
+
+	#Improved Swords
+	infantry_shock 		= 	0.05
+	land_morale		=	0.2
+	
+	
+	
+	
+	enable = steppe_infantry
+	enable = steppe_infantry_wn
+	enable = steppe_infantry_en
+	enable = african_warriors
+	
+	military_tactics 	= 	0.05
+	supply_limit		=	0.3
+
+	
+	#USA - Infantry
+	enable = paramonai
+	
+	#China - Infantry
+	enable = chinese_polearm_infantry
+	
+	#Rusian - Infantry
+	enable = byzantine_tagmata
+	
+	#Europa - Infantry
+	enable = frankish_infantry
+	
+	#Muslim - Infantry
+	enable = seljuq_infantry_m
+	
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 23
+	year = 2111
+
+	
+	#Mounted Archery Tactics
+	cavalry_shock  		= 	0.1
+	land_morale		=	0.2
+	military_tactics 	= 	0.05
+		
+	#USA - Tank
+	enable = pedrero 
+	
+	#China - Cavalry
+	enable = chinese_horsemen
+	
+	#Rusian - Cavalry
+	enable = slavic_stradioti
+	
+	#Europa - Infantry
+	enable = germanic_infantry
+	enable = swedish_gallop	
+	
+	#Muslim - Cavalry
+	enable = camel_archers
+	
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 24
+	year = 2118
+	
+	#Military Organization
+	land_morale		=	0.2
+
+	military_tactics 	= 	0.05
+	
+	
+	enable = camel_riders_e
+	supply_limit		=	0.2
+	
+	#USA
+	enable = pugnarii
+	enable = skholai
+	
+	#Turkey - Infantry
+	enable = seljuq_infantry_o
+	enable = ottoman_toprakli_hit_and_run
+	
+	#Europa - Infantry
+	enable = western_swordsmen
+	combat_width = 2
+}
+
+technology = {
+	# Tech 25
+	year = 2125
+
+	
+	#Lance
+	cavalry_shock  		= 	0.1
+	land_morale		=	0.2
+	infantry_shock 		= 	0.05
+	enable = khanda
+	
+	#China - Infantry
+	enable = samurai
+	enable = east_mongolian_steppe
+	
+	#Rusian - Infantry
+	enable = slavic_infantry
+	enable = hungarian_hussar
+	
+	#Europa - Infantry
+	enable = housecarls
+	enable = swedish_arme_blanche	
+	
+	#Muslim - Infantry
+	enable = muslim_archers_m
+	enable = muslim_lance_cavalry_m
+	
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 26
+	year = 2132
+
+	#Camelry
+	land_morale		=	0.2
+	
+		
+	enable = muslim_skirmishers_e
+	enable = african_skirmishers
+	enable = steppe_archers
+	enable = atlatl
+	enable = spear_thrower
+	enable = slinger
+	enable = pecheneg_cavalry
+	enable = ha_atlatl
+	
+	
+	#Europa - Infantry
+	enable = crossbow
+	
+}
+
+technology = {
+	# Tech 27
+	year = 2139
+
+	#Tempered Steel
+	infantry_shock 		= 	0.05
+	land_morale		=	0.2
+	
+	
+	
+	enable = cuman_horde
+	enable = chambered_demi_cannon
+	
+	#Rusian - Cavalry
+	enable = polish_hussar
+	
+	#Europa - Infantry
+	enable = gothic_infantry
+	enable = french_dragoon		
+	
+	#Muslim - Cavalry
+	enable = qizilbash_cavalry
+	
+	
+	
+}
+
+technology = {
+	# Tech 28
+	year = 2146
+
+	#Skirmish Tactics
+	infantry_fire		= 	0.05
+	land_morale		=	0.2
+	supply_limit		=	0.35
+	
+	#USA
+	enable = skoutatoi
+	enable = ascensoreshun
+	
+	#China - Infantry
+	enable = chu-ko-nu
+	enable = manchu_banner	
+	
+	#Turkey - Infantry
+	enable = muslim_archers_o
+	enable = eastern_uhlan
+	
+	#Rusian - Infantry
+	enable = viking_axemen
+	enable = muscovite_caracolle
+	
+	#Europa - Infantry
+	enable = western_macemen
+	
+	#Muslim - Infantry
+	enable = mamluk_swordsmen
+	combat_width = 2
+}
+
+technology = {
+	# Tech 29
+	year = 2153
+
+	#Noble Soldiers
+	infantry_shock 		= 	0.02
+	land_morale		=	0.2	
+	enable = elephant_archers
+	
+	
+	#Rusian - Cavalry
+	enable = zaporoghian_cossack
+	
+	#Europa - Infantry
+	enable = longswordsmen
+	enable = austrian_hussar
+	
+}
+
+technology = {
+	# Tech 30
+	year = 2160
+	
+	#Bodkin Arrow
+	infantry_fire		= 	0.05
+	land_morale		=	0.2
+	
+	
+	enable = mongol_horde
+	enable = mongol_infantry
+	enable = african_tribal_warriors
+	
+	
+	#Rusian - Infantry
+	enable = russian_mass
+	
+	  
+	#Europa - Infantry
+	enable = western_pike
+	
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 31
+	year = 2167
+
+	#Royal Guard
+	land_morale		=	0.2
+	
+	enable = urumi
+	
+	
+	#USA
+	enable = novaetestudo
+	enable = archontopoulai
+	enable = leather_cannon	
+	
+	#China - Infantry
+	enable = chinese_bowmen
+	enable = chinese_dragoon
+	
+	#Turkey - Infantry
+	enable = turk_swordsmen
+	enable = eastern_skirmisher
+	
+	#Rusian - Infantry
+	enable = byzantine_immortals
+	enable = polish_winged_hussar	
+	
+	#Europa - Infantry
+	enable = gaelic_free_shooter
+	enable = prussian_uhlan
+	
+	#Muslim - Cavalry
+	enable = mamluk_musket_charge 
+	
+	
+	
+}
+
+technology = {
+	# Tech 32
+	year = 2174
+
+	#Chivalry
+	
+	land_morale		=	0.2
+	
+	enable = plumed_warriors_ma
+	enable = plumed_warriors_na
+	enable = plumed_warriors_sa
+	
+	
+	enable = ha_plumed_warriors
+	supply_limit		=	0.3
+	
+	
+	#Europa - Infantry
+	enable = irish_charge
+	
+	#Muslim - Infantry
+	enable = ghazi_warriors
+	combat_width = 2
+}
+
+technology = {
+	# Tech 33
+	year = 2181
+
+	#Hit and Run Tactics
+
+	land_morale		=	0.2
+	#Turkey - Cavalry
+	enable = ottoman_timariot
+	
+	#Rusian - Cavalry
+	enable = muscovite_cossack
+	
+	#Europa - Infantry
+	enable = dutch_maurician
+	enable = british_hussar	
+	
+	#Muslim - Cavalry
+	enable = afsharid_reformed
+	
+	
+	
+}
+
+technology = {
+	# Tech 34
+	year = 2188
+
+	#Shield Wall
+	infantry_shock 		= 	0.02
+	land_morale		=	0.2	
+	
+	
+	
+	
+	enable = indian_horsemen
+	enable = steppe_cavalry
+	
+
+	#Europa - Infantry
+	enable = austrian_tercio   
+	
+}
+
+technology = {
+	# Tech 35
+	year = 2195
+
+	#Crossbow
+	infantry_fire		= 	0.05
+	land_morale		=	0.2
+	enable = mongol_bow
+
+	supply_limit		=	0.2
+	
+	######Taghir yafte Iran
+	enable = reformed_mughal_mansabdar
+	
+	
+	#USA
+	enable = graeciprocur
+	enable = kavalarioi
+	enable = swivel_cannon	
+	
+	
+	#China - Infantry
+	enable = yumi_bowmen
+	enable = reformed_asian_cavalry	
+	
+	#Turkey - Infantry
+	enable = ottoman_sekban	
+	enable = ottoman_toprakli_dragoon
+	
+	#Rusian - Infantry
+	enable = hungarian_infantry
+	enable = russian_lancer	
+	
+	#Europa - Infantry
+	enable = swedish_gustavian	
+	enable = french_carabinier
+	
+	#Muslim - Cavalry
+	enable = muslim_dragoon
+	
+	
+	
+}
+
+technology = {
+	# Tech 36
+	year = 2202
+
+	#Crossguard
+	infantry_shock 		= 	0.02	
+	land_morale		=	0.2
+	
+	
+	
+	
+	enable = reformed_mughal_musketeer
+	enable = ha_xantican_warrior
+	
+	#Rusian - Cavalry
+	enable = tartar_cossack
+	
+	#Europa - Infantry
+	enable = spanish_tercio	
+	enable = open_order_cavalry
+	
+	#Muslim - Infantry
+	enable = tofongchis_musketeer
+	
+	#Muslim - Cavalry
+	enable = ali_bey_reformed_infantry
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 37
+	year = 2209
+
+	#Holy Warriors
+	land_morale		=	0.2
+	
+	enable = south_american_spearmen	
+	enable = mesoamerican_spearmen	
+	enable = native_indian_archer
+	enable = african_spearmen
+	enable = african_clubmen	
+	
+		
+	
+	#Europa - Infantry
+	enable = scottish_highlander
+	
+	#Muslim - Cavalry
+	enable = durrani_dragoon
+	
+	
+}
+
+technology = {
+	# Tech 38
+	year = 2216
+
+	#Mace
+	infantry_shock 		= 	0.02
+	land_morale		=	0.2	
+	
+	
+	#Rusian - Cavalry
+	enable = russian_cuirassier	
+	
+	#Europa - Infantry
+	enable = austrian_grenzer
+	enable = napoleonic_lancers	
+	
+    #Muslim - Cavalry
+	enable = topchis_artillery
+	
+}   
+
+technology = {
+	# Tech 39
+	year = 2223
+
+	#Advanced Cavalry
+	military_tactics 	= 	0.1
+	
+	land_morale		=	0.2
+		
+	#USA
+	enable = pronoiarioi
+	enable = skythikon
+	enable = coehorn_mortar	
+	
+	
+	#China - Infantry
+	enable = ashigaru
+	enable = reformed_manchu_rifle	
+	
+	#Turkey - Infantry
+	enable = ottoman_reformed_janissary
+	enable = ottoman_lancer 
+	
+	#Rusian - Infantry
+	enable = varangian
+	enable = russian_cossack
+	
+	#Europa - Infantry
+	enable = swedish_caroline
+	enable = french_cuirassier
+	
+	#Muslim -Cavalry
+	enable = durrani_swivel	
+	
+}
+
+technology = {
+	# Tech 40
+	year = 2230
+
+	#Longbow
+	infantry_fire		= 	0.05
+	land_morale		=	0.2
+	supply_limit		=	0.3
+
+	
+	
+	
+	enable = african_abyssinian_light_cavalry
+
+	
+	
+	#Europa - Infantry
+	enable = anglofrench_line
+	
+	
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 41
+	year = 2237
+
+	#Longsword
+	infantry_shock 		= 	0.02	
+	land_morale		=	0.2
+	
+	
+	#Late Medieval Military
+		
+		
+	
+	#Rusian - Infantry
+	enable = eastern_macemen
+	
+	#Muslim - Infantry
+	enable = afsharid_reformed_infantry
+		
+}
+
+technology = {
+	# Tech 42
+	year = 2244
+
+	#Brigandine
+	infantry_shock 		= 	0.02	
+	land_morale		=	0.2
+	
+	#Europa - Infantry
+	enable = austrian_white_coat
+
+	
+	
+	
+}
+
+technology = {
+	# Tech 43
+	year = 2251
+
+	#Pike
+	artillery_shock 	=	0.05
+	land_morale		=	0.2
+
+
+	
+	enable = african_somali_cavalry
+	enable = african_tuareg_cavalry
+		
+	
+	enable = central_american_horsemen
+	enable = south_american_horsemen	
+	enable = mughal_mansabdar	
+	 
+	
+	enable = high_american_horsemen
+	
+	
+	#USA
+	enable = mourtatoi
+	enable = modern_cavalry
+	enable = royal_mortar
+	
+	#China - Infantry
+	enable = guandao
+	
+	#Turkey - Infantry
+	enable = ottoman_nizami_cedid
+	
+	#Rusian - Infantry
+	enable = eastern_pike
+	
+	#Europa - Infantry
+	enable = french_bluecoat	
+	
+	
+}
+
+technology = {
+	# Tech 44
+	year = 2258
+
+	
+	
+	
+	# Plate Armor
+	military_tactics 	= 	0.10
+	land_morale		=	0.2
+	
+	
+	
+	
+}
+
+# Pre-era techs
+technology = {
+	# Tech 45
+	year = 2265
+	
+	#Cavalry Plate Armor
+	
+
+	cavalry_shock  		= 	0.1	
+	land_morale		=	0.2
+		
+			
+	
+	#Rusian - Infantry
+	enable = polish_musketeer 
+	
+	#Europa - Infantry
+	enable = british_redcoat	
+	combat_width = 2
+	
+	
+}
+
+technology = {
+	# Tech 46
+	year = 2272
+	
+	infantry_shock		= 	0.05
+	land_morale		=	0.2
+	#Late Medieval Military
+	
+	
+		
+	
+	enable = african_mossi_horsemen
+	enable = african_abyssinian_cavalry
+	enable = native_indian_mountain_warfare	
+	enable = aztec_hill_warfare	
+	enable = maya_forest_warfare	
+	enable = zapotec_plains_warfare
+	enable = south_american_gunpowder_warfare
+	enable = south_american_arquebusier	
+	enable = north_american_rifle_cavalry
+	enable = central_american_rifle_cavalry
+	enable = south_american_rifle_cavalry	
+		
+		
+		
+	enable = steppe_riders
+	enable = high_american_rifle_cavalry
+	
+	
+	supply_limit		=	0.3
+	
+	#USA
+	enable = allagion
+	enable = mark_heavy_tank
+	
+	#China - Infantry
+	enable = han_banner	
+	
+	#Turkey - Infantry
+	enable = eastern_carabinier	
+	
+	#Muslim - Infantry
+	enable = durrani_rifled_musketeer
+}
+
+technology = {
+	# Tech 47
+	year = 2279
+	
+	infantry_shock		= 	0.1
+	cavalry_shock		= 	0.2
+	
+	
+	enable = rajput_musketeer	
+	enable = bantu_plains_warfare	
+	enable = niger_kongolese_forest_warfare		
+	enable = african_hill_warfare	
+	enable = ethiopian_mountain_warfare		
+	enable = steppe_footmen
+	enable = ha_xiuhtecuhtlian_infantry
+	
+	#USA - Tank
+	enable = flying_battery
+	
+	#Rusian - Infantry
+	enable = muscovite_musketeer
+	
+	#Europa - Infantry
+	enable = prussian_frederickian
+}
+
+# The 30 big techs from here on
+
+technology = {
+	# Tech 48
+	year = 2286
+	
+	#Earth Rampart
+	land_morale		=	0.2
+	
+
+	enable = african_hussar
+	
+	enable = huron_arquebusier	 
+	enable = creek_arquebusier	
+	enable = aztec_gunpowder_warfare		
+	enable = maya_gunpowder_warfare	
+	enable = zapotec_gunpowder_warfare	
+	enable = south_american_reformed_gunpowder_warfare	
+	enable = north_american_hussar
+	enable = central_american_hussar
+	enable = south_american_hussar
+	enable = steppe_lancers
+	enable = high_american_hussar
+	enable = camel_riders_i	
+	
+	
+		
+	
+	
+	#Europa - Infantry
+	enable = french_impulse
+	
+}
+
+technology = {
+	# Tech 49
+	year = 2293
+	
+	#Pike Square
+	land_morale		=	0.2
+	military_tactics 	= 	0.10
+	enable = bantu_gunpowder_warfare	
+	enable = niger_kongolese_gunpowder_warfare	
+	enable = adal_gunpowder_warfare		
+	enable = ethiopian_gunpowder_warfare	
+	enable = steppe_musketeers	
+	
+	#Rusian - Infantry
+	enable = muscovite_soldaty	
+	
+	#Europa - Infantry
+	enable = british_square
+}
+
+technology = {
+	# Tech 50
+	year = 2300
+	
+	#Standardised Pikes
+	supply_limit		=	0.2
+	infantry_shock		= 	0.15
+	combat_width = 2
+	
+	#USA
+	enable = latinikon
+	enable = renault_light_tank
+	
+	
+	#China - Infantry
+	enable = asian_mass_infantry
+	
+	#Turkey - Infantry
+	enable = ottoman_new_model
+	
+	#Europa - Infantry
+	enable = mixed_order_infantry	
+	
+	#Muslim - Infantry
+	enable = muslim_mass_infantry
+}
+
+technology = {
+	# Tech 51
+	year = 2307
+	
+	
+	#Arquebu
+	military_tactics 	= 	0.2
+	infantry_shock		= 	0.30
+	
+	
+	enable = maharathan_cavalry	
+	
+	enable = african_swarm
+	
+	
+
+	
+	#USA - Tank
+	enable = field_howitzer
+	
+	
+	#Rusian - Infantry
+	enable = polish_tercio
+}
+
+technology = {
+	# Tech 52
+	year = 2314
+	
+	#The limber
+	infantry_fire		= 	0.10
+	artillery_fire 		= 	1
+	military_tactics 	= 	0.25
+	
+	
+	enable = sikh_hit_and_run
+	enable = bhonsle_infantry	
+		
+	
+	
+	enable = steppe_mounted_raiders
+	enable = ha_xoloti
+	
+	enable = asian_musketeer
+	
+	#Rusian - Infantry
+	enable = saxon_infantry	
+	
+	#Europa - Infantry
+	enable = prussian_drill		
+	
+	
+}
+
+technology = {
+	# Tech 53
+	year = 2321
+	
+	
+	#Pike and Shot
+	infantry_fire		= 	0.25
+	military_tactics 	= 	0.25
+	cavalry_shock		=	1.0
+	
+	
+	
+	#USA - Cavalry
+	enable = fiat3000
+	
+	#Rusian - Infantry
+	enable = russian_petrine
+	
+	#Europa - Infantry
+	enable = austrian_jaeger	
+	
+}
+
+technology = {
+	# Tech 54
+	
+	year = 2328
+	enable = talwar
+	#Ditch
+	
+	#China - Infantry
+	enable = reformed_asian_musketeer
+	
+	#Rusian - Infantry
+	enable = russian_green_coat	
+	
+	#Europa - Infantry
+	enable = napoleonic_square
+	
+	#Muslim - Infantry
+	enable = persian_rifle
+}
+
+technology = {
+	# Tech 55
+	year = 2335
+	
+	#Reiter
+	maneuver_value 		= 	0.25
+
+
+
+	
+		
+	
+		
+	combat_width = 2
+	enable = incan_guerilla_warfare	
+	enable = iroquois_rifle_scout
+	enable = peruvian_guerilla_warfare
+	enable = mexican_guerilla_warfare	
+	enable = maya_guerilla_warfare	
+	enable = commanche_swarm
+	enable = central_american_swarm
+	enable = south_american_swarm
+	enable = high_american_swarm
+	
+	
+	#USA
+	enable = assault_rifle
+	enable = armstrong_gun
+	
+}
+
+technology = {
+	# Tech 56
+	year = 2342
+	
+	#Matchlock Musket
+	infantry_shock		= 	0.20
+	cavalry_fire		= 	0.5
+	
+
+
+	#USA - Cavalry
+	enable = 89chiro
+	
+	
+	
+}
+	
+technology = {
+	# Tech 57
+	year = 2349
+	
+	#Spanish Square
+	supply_limit		=	0.2
+	military_tactics	=	0.25
+
+}
+
+technology = {
+	# Tech 58
+	year = 2356
+	
+	#Trunnions
+	artillery_shock 	= 	0.1
+	artillery_fire 		= 	0.4
+	
+	
+				
+	enable = sioux_dragoon
+	enable = central_american_dragoon
+	enable = south_american_dragoon
+	enable = african_dragoon
+	enable = maharathan_guerilla_warfare		
+		
+	 	
+		
+
+		
+	enable = niger_kongolese_guerilla_warfare	
+	enable = adal_guerilla_warfare	
+	enable = ethiopian_guerilla_warfare
+	
+	
+	enable = indian_shock_cavalry	
+		
+		
+	enable = ha_foreign_influenced_infantry
+	enable = high_american_dragoon
+	
+	#Turkey - Infantry
+	
+	
+	
+	
+	#Public
+	enable = percussion_cap_musket
+
+	
+}
+
+technology = {
+	# Tech 59
+	year = 2363
+	
+	#Star Bastions
+	
+
+	infantry_fire		=	0.5
+	
+	
+	#USA - Cavalry
+	enable = churchill
+	enable = french_75
+	
+}
+
+technology = {
+	# Tech 60
+	year = 2370
+	
+	#Maurician Infantry
+	land_morale		=	0.2
+	military_tactics	=	0.25
+
+	enable = indian_rifle
+		
+	enable = westernized_bantu	
+	enable = westernized_niger_kongolese	
+	enable = westernized_adal	
+	enable = westernized_ethiopian	
+	enable = apache_guerilla	
+	enable = westernized_south_american	
+	enable = westernized_aztec	
+	enable = westernized_zapotec	
+	enable = westernized_incan	
+		
+		
+	combat_width = 2
+	
+	
+	enable = steppe_rifles
+	enable = ha_reformed_influenced_infantry
+		
+}
+
+technology = {
+	# Tech 61
+	year = 2377
+	
+	#Standardisation of Calibre
+	artillery_shock 	= 	0.1
+	artillery_fire 		= 	1.0	
+
+	
+	
+	enable = african_cuirassier
+	
+			
+	
+	
+	
+	enable = sikh_rifle
+	enable = bhonsle_cavalry
+		
+	
+	enable = steppe_uhlans
+	
+	
+	
+	
+	
+	#Public - Infantry
+	enable = ak47
+}
+
+technology = {
+	# Tech 62
+	year = 2384
+	
+	cavalry_shock		=	1.0
+	supply_limit		=	0.2
+	
+	
+	#USA - Cavalry
+	enable = tiger
+	
+}
+
+technology = {
+	# Tech 63
+	year = 2391
+	
+	#Carbine
+	maneuver_value 		= 	0.25
+	
+	
+
+	
+	
+	
+	enable = tipu_sultan_rocket		
+	enable = american_western_franchise_warfare	
+	enable = african_western_franchise_warfare
+	enable = westernized_mayan
+	enable = reformed_westernized_incan		
+	enable = reformed_steppe_rifles
+	enable = ha_reformed_xoloti
+	
+	
+	
+	
+	#USA - Tank
+	enable = katyusha_rocket
+}
+
+technology = {
+	# Tech 64
+	year = 2398
+	
+	#Gustavian Infantry
+	military_tactics 	= 	0.05
+	supply_limit		=	0.05
+
+	
+	
+	
+	
+}
+
+technology = {
+	# Tech 65
+	year = 2405
+	
+	#Killing Grounds
+	
+	infantry_fire		= 	0.5
+
+	combat_width = 2
+
+	
+}
+
+technology = {
+	# Tech 66
+	year = 2412
+	
+	#Line Infantry
+	infantry_shock 		=	0.5
+
+
+	
+	
+	
+	
+	#Public - Infantry
+	enable = m16_rifle
+	enable = t38
+}
+
+technology = {
+	# Tech 67
+	year = 2419
+	
+	#Cartridge	(1620)?)
+	cavalry_fire		=	0.5
+	artillery_shock 	=	0.1
+	artillery_fire		=	2.0
+	
+	
+	
+
+	#USA - Tank
+	enable = land_mattress
+	
+}
+
+technology = {
+	# Tech 68
+	year = 2426
+	
+	#Light Cavalry
+	
+	cavalry_shock		=	1.0
+	military_tactics 	= 	0.05
+	maneuver_value 		= 	0.05
+	
+	
+
+	
+
+	
+}
+
+technology = {
+	# Tech 69
+	year = 2433
+	
+	#Covered Way
+	
+	
+	enable = m4_sherman
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 70
+	year = 2440
+	
+	#Metallurgy
+	artillery_shock 	=	0.1
+	artillery_fire		=	2.0
+	
+	
+	
+	
+	
+	#Public - Infantry
+	enable = needle_gun
+	
+	
+		
+}
+
+technology = {
+	# Tech 71
+	year = 2447
+
+	land_morale		=	0.2
+	
+	
+	
+	
+	
+	#USA - Cavalry
+	enable = carro_armato_p2640
+	enable = pzh_2000
+	
+}
+
+technology = {
+	# Tech 72
+	year = 2454
+	
+	#Bayonet
+	supply_limit		=	0.2
+	infantry_fire		= 	0.5
+	
+	
+	
+	
+	
+	
+}
+
+technology = {
+	# Tech 73
+	year = 2461
+	
+	#Cuirassier
+	maneuver_value 		= 	0.25
+	infantry_shock		=	0.5
+	military_tactics 	= 	0.05
+	
+	
+	
+	
+	
+	
+}
+
+technology = {
+	# Tech 74
+	year = 2469
+	
+	
+	combat_width = 2
+	
+	#Public - Infantry
+	enable = chassepot_rifle
+	
+	
+	#PUblic - Cavalry
+	enable = m1_abrams
+	
+	 
+}
+
+technology = {
+	# Tech 75
+	year = 2476
+	
+	#Impulse Warfare
+	
+	
+	military_tactics	=	0.5
+	land_morale		=	0.2
+	maneuver_value = 0.25
+	
+	
+	#USA - Tank
+	enable = a2s19_msta
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+technology = {
+	# Tech 76
+	year = 2483
+	
+	#Rifle
+	cavalry_shock		=	1.0
+	infantry_fire		=	1.0
+	supply_limit		=	0.2
+	
+	
+	
+	
+	
+	
+	#Public - Infantry
+	enable = lever_action_rifle
+	enable = leopard_2
+	
+}
+
+technology = {
+	# Tech 77
+	year = 2490
+	
+	#Field Howitzer
+	artillery_shock		=	0.1
+	artillery_fire		=	2.0	
+	
+	
+
+	
+
+	
+}
+
+technology = {
+	# Tech 78
+	year = 2497
+
+	#Percussion Cap
+	infantry_fire		=	0.5
+	land_morale		=	0.2
+	maneuver_value = 0.25
+	
+	
+	
+	
+
+	combat_width = 2
+
+}
+
+technology = {
+	# Tech 79
+	year = 2504
+	maneuver_value = 0.25
+	#Breech-Loading Rifled Guns
+	artillery_shock		=	0.5
+	artillery_fire		=	1.0
+	
+	
+	
+	#Public - Infantry
+	enable = bolt_action_rifle
+	enable = t64
+	enable = m270_mlrs
+}
+
+technology = {
+	# Tech 80
+	year = 2511
+
+	#Chassepot
+	infantry_fire		=	0.5
+
+
+	
+}
+
+technology = {
+	# Tech 81
+	year = 2519
+
+	#Bolt Action
+	infantry_fire		=	1.0
+	infantry_shock		=	1.0
+	maneuver_value = 0.25
+	
+	#Public - Infantry
+	enable = land_warrior
+	enable = type62
+	
+}
+
+technology = {
+	# Tech 82
+	year = 2526
+
+	#Artillery Recoil Mechanism
+	artillery_shock		=	0.5
+	artillery_fire		=	1.0
+
+
+	
+	
+}
+
+technology = {
+	# Tech 83
+	year = 2533
+	military_tactics 	= 	0.5
+	#Early Tanks
+	cavalry_shock		=	1.0
+	cavalry_fire		=	2.0
+	maneuver_value = 0.25
+	
+	
+	#Public - Cavalry
+	enable = type90
+	
+}
+
+technology = {
+	# Tech 84
+	year = 2540
+	
+	#Aerial Warfare
+	land_morale		=	0.2
+	
+	
+}
+
+technology = {
+	# Tech 85
+	year = 2547
+
+	#Gun Turret
+	cavalry_fire		=	1.0
+	cavalry_shock		=	1.0
+	
+	
+	#Public - Infantry
+	enable = machine_gun
+	enable = armata
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 86
+	year = 2554
+
+	#Rocket Artillery
+	artillery_fire		=	1.0
+	maneuver_value = 0.25
+	
+	
+}
+
+technology = {
+	# Tech 87
+	year = 2561
+
+	#Nuclear Bomb
+	land_morale		=	0.2
+	military_tactics 	= 	0.5
+	
+	#Public - Cavalry
+	enable = m1a3_abrams
+}
+
+technology = {
+	# Tech 88
+	year = 2568
+	maneuver_value = 0.25
+	#Modern Assault Rifle
+	infantry_fire		=	1.0
+	infantry_shock		=	1.0
+	
+	
+}
+
+technology = {
+	# Tech 89
+	year = 2575
+
+	#Main Battle Tanks
+	cavalry_fire		=	1.0
+	cavalry_shock		=	1.0
+
+	
+}
+
+technology = {
+	# Tech 90
+	year = 2590
+	maneuver_value = 0.25
+	#Missile Guidance System
+	cavalry_fire		=	1.0
+	artillery_fire		=	1.0
+	
+	
+
+}
+
+technology = {
+	# Tech 91
+	year = 2605
+	
+	#Exoskeletons
+	infantry_fire		=	1.0
+	infantry_shock		=	1.0
+
+
+}
+
+technology = {
+	# Tech 92
+	year = 2620
+
+	#Advanced Main Battle Tanks
+	cavalry_fire		=	1.0
+	cavalry_shock		=	1.0
+
+	combat_width = 2
+}
+
+technology = {
+	# Tech 93
+	year = 2635
+
+	#Future Military 2
+	land_morale		=	0.2
+}
+
+technology = {
+	# Tech 94
+	year = 2650
+	military_tactics 	= 	0.5
+	#Future Military 3
+	artillery_shock		=	1.0
+	infantry_shock		=	1.0
+	cavalry_shock		=	1.0
+	
+	
+}
+
+technology = {
+	# Tech 95
+	year = 2665
+	
+	#Future Military 4
+	supply_limit		=	0.2
+}
+
+technology = {
+	# Tech 96
+	year = 2680
+
+	#Future Military 5
+	maneuver_value 		= 	0.25
+	
+	
+}
+
+technology = {
+	# Tech 97
+	year = 2695
+
+	#Future Military 6
+	artillery_fire		=	1.0
+	infantry_fire		=	1.0
+	cavalry_fire		=	1.0
+}
+
+technology = {
+	# Tech 98
+	year = 2710
+	military_tactics 	= 	0.5
+	#Future Military 7
+	land_morale		=	0.2
+	
+}
+
+technology = {
+	# Tech 99
+	year = 2725
+
+	#Future Military 8
+	artillery_shock		=	1.0
+	infantry_shock		=	1.0
+	cavalry_shock		=	1.0
+	combat_width = 2
+}

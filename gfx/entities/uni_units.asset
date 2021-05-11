@@ -1,0 +1,394 @@
+########### WEAPONS ###########
+
+entity = {
+	name = "uni_halbard"
+	pdxmesh = "uni_halbard"
+}
+
+entity = {
+	name = "uni_musket_2"
+	pdxmesh = "uni_musket_2"
+
+	state = { name = "attack"
+		event = { time = 0.90	node = "muzzle"	particle = "musket_muzzle" }	  
+	}
+}
+
+entity = {
+	name = "uni_musket_3"
+	pdxmesh = "uni_musket_3"
+
+	state = { name = "attack"
+		event = { time = 0.90	node = "muzzle"	particle = "musket_muzzle" }	  
+	}
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 1                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 2                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "ITA_INFANTRY_2"
+	pdxmesh = "ITA_INFANTRY_02"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "uni_musket_2" 
+	}
+	
+	
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 3                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "GER_INFANTRY_3"
+	pdxmesh = "GER_INFANTRY_03"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+	
+	
+}
+
+entity = {
+	name = "ITA_INFANTRY_3"
+	pdxmesh = "ITA_INFANTRY_03"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+	
+	
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 4                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "GER_INFANTRY_4"
+	pdxmesh = "GER_INFANTRY_04"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+	
+	
+}
+
+entity = {
+	name = "ITA_INFANTRY_4"
+	pdxmesh = "ITA_INFANTRY_04"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Left_hand_node = "western_musket_2" 
+	}
+	
+	
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                          CAVALRY 			 LEVEL 1                                      #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                          CAVALRY 			 LEVEL 2                                      #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "ITA_CAVALRY_2"
+	pdxmesh = "cavalry_horse"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	#state = { name = "death" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "retreat" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = {
+		name = "rider"
+		Saddle_Node = "ITA_CAVALRY_2_rider" 
+	}
+	
+	
+}
+
+entity = {
+	name = "ITA_CAVALRY_2_rider"
+	pdxmesh = "ITA_INFANTRY_02"
+
+	state = { name = "idle" 		animation = "horse_idle" }
+	state = { name = "walk" 		animation = "horse_walk" }
+	state = { name = "attack"		animation = "horse_attack" }
+	state = { name = "retreat"		animation = "horse_retreat" }
+	#state = { name = "death"		animation = "horse_death" }
+	#state = { name = "extra_state_1"		animation = "horse_extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "horse_extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "horse_extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "cavalry_saber" 
+	}
+	
+	
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                          CAVALRY 			 LEVEL 3                                      #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = { 
+	clone = "ITA_CAVALRY_2"
+	name = "GER_CAVALRY_3"
+	attach = { 
+		name = "rider"
+		Saddle_Node = "GER_CAVALRY_3_rider" 
+	}
+	
+	
+}
+
+entity = {
+	clone = "ITA_CAVALRY_2_rider"
+	name = "GER_CAVALRY_3_rider"
+	pdxmesh = "GER_INFANTRY_03"
+	
+	
+}
+
+entity = { 
+	clone = "ITA_CAVALRY_2"
+	name = "ITA_CAVALRY_3"
+	attach = { 
+		name = "rider"
+		Saddle_Node = "ITA_CAVALRY_3_rider" 
+	}
+	
+	
+}
+
+entity = {
+	clone = "ITA_CAVALRY_2_rider"
+	name = "ITA_CAVALRY_3_rider"
+	pdxmesh = "ITA_INFANTRY_03"
+	
+	
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                          CAVALRY 			 LEVEL 4                                      #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = { 
+	clone = "ITA_CAVALRY_2"
+	name = "GER_CAVALRY_4"
+	#attach = { 
+	#	name = "rider"
+	#	Saddle_Node = "GER_CAVALRY_4_rider" 
+	#}
+	
+	
+}
+
+entity = {
+	clone = "ITA_CAVALRY_2_rider"
+	name = "GER_CAVALRY_4_rider"
+	#pdxmesh = "GER_INFANTRY_04"
+	
+	
+}
+
+entity = { 
+	clone = "ITA_CAVALRY_2"
+	name = "ITA_CAVALRY_4"
+	#attach = { 
+	#	name = "rider"
+	#	Saddle_Node = "ITA_CAVALRY_4_rider" 
+	#}
+	
+	
+}
+
+entity = {
+	clone = "ITA_CAVALRY_2_rider"
+	name = "ITA_CAVALRY_4_rider"
+	#pdxmesh = "ITA_INFANTRY_04"
+	
+	
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                          ARTILLERY 		   LEVEL 1                                    #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "uni_ARTILLERY_1_cannon"
+	pdxmesh = "artillery_mesh"
+
+	state = { name = "attack"		animation = "artillery_attack" 	event = { time = 0.0	node = "cannon_muzzle"	particle = "artillery_cannon" }	}
+	state = { name = "idle" 		animation = "artillery_idle" }
+	#state = { name = "death" 		animation = "artillery_idle" }
+	state = { name = "walk" 		animation = "artillery_moving" }
+	state = { name = "retreat" 		animation = "artillery_moving" }
+	
+}
+
+####################################################################################################################
+######                                                                                                         #####
+######                                          ARTILLERY 		  LEVEL 2                                      #####
+######                                                                                                         #####
+####################################################################################################################
+
+entity = {
+	name = "ITA_ARTILLERY_2"
+	pdxmesh = "artillery_base_mesh"
+
+	state = { name = "attack"		animation = "artillery_base_attack" }
+	state = { name = "idle" 		animation = "artillery_base_idle" }
+	#state = { name = "death" 		animation = "artillery_base_idle" }
+	state = { name = "walk" 		animation = "artillery_base_moving" }
+	state = { name = "retreat" 		animation = "artillery_base_moving" }
+	
+	#attach = { 
+	#	name = "gunman"
+	#	infantry_node = "ITA_INFANTRY_2" 
+	#	cannon_node = "uni_ARTILLERY_1_cannon" 
+	#}
+	
+	
+}
+
+####################################################################################################################
+######                                                                                                         #####
+######                                          ARTILLERY 		  LEVEL 3                                      #####
+######                                                                                                         #####
+####################################################################################################################
+
+entity = {
+	clone = "ITA_ARTILLERY_2"
+	name = "GER_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "GER_INFANTRY_3" 
+		cannon_node = "uni_ARTILLERY_1_cannon" 
+	}
+	
+	
+}
+
+entity = {
+	clone = "ITA_ARTILLERY_2"
+	name = "ITA_ARTILLERY_3" 
+	attach = {
+		name = "gunman"
+		infantry_node = "ITA_INFANTRY_3" 
+		cannon_node = "uni_ARTILLERY_1_cannon" 
+	}
+	
+	
+}
+
+####################################################################################################################
+######                                                                                                         #####
+######                                          ARTILLERY 		  LEVEL 4                                      #####
+######                                                                                                         #####
+####################################################################################################################
+
+entity = {
+	clone = "ITA_ARTILLERY_2"
+	name = "GER_ARTILLERY_4" 
+	#attach = {
+	#	name = "gunman"
+	#	infantry_node = "GER_INFANTRY_4" 
+	#	cannon_node = "uni_ARTILLERY_1_cannon" 
+	#}
+	
+	
+}
+
+entity = {
+	clone = "ITA_ARTILLERY_2"
+	name = "ITA_ARTILLERY_4" 
+	#attach = {
+	#	name = "gunman"
+	#	infantry_node = "ITA_INFANTRY_4" 
+	#	cannon_node = "uni_ARTILLERY_1_cannon" 
+	#}
+	
+	
+}

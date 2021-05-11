@@ -1,0 +1,101 @@
+namespace = timeru
+
+country_event = {
+
+	id = timeru.1
+	
+	title = "timeru.12.t"
+	desc = "timeru.12.d"
+	picture = MAIN_TIMER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "timeru.12.opt1"
+		
+			country_event = {
+					id = timeru.13
+			}
+		}
+	option = {
+		name = "timeru.12.opt2"
+		
+			country_event = {
+					id = timeru.30
+			}
+		}
+	option = {
+		name = "timeru.12.opt3"
+		
+			country_event = {
+					id = timeru.41
+			}
+		}
+	option = {
+		name = "timeru.12.opt13"
+		
+			country_event = {
+					id = timeru.244
+			}
+		}
+	option = {
+		name = "timeru.12.opt4"
+		
+			country_event = {
+					id = timeru.52
+			}
+		}
+	option = {
+		name = "timeru.12.opt5"
+		
+			country_event = {
+					id = timeru.63
+			}
+		}
+	option = {
+		name = "timeru.12.opt7"
+		
+			country_event = {
+					id = timeru.85
+			}
+		}
+	option = {
+		name = "timeru.12.opt6"
+		
+			country_event = {
+					id = timeru.74
+			}
+		}
+	option = {
+		name = "timeru.12.opt8"
+		
+			country_event = {
+					id = timeru.200
+			}
+		}
+	option = {
+		name = "timeru.12.opt9"
+		
+			country_event = {
+					id = timeru.211
+			}
+		}
+	option = {
+		name = "timeru.12.opt10"
+		
+			country_event = {
+					id = timeru.222
+			}
+		}
+	option = {
+		name = "timeru.12.opt11"
+		
+			country_event = {
+					id = timeru.233
+			}
+		}
+	option = {
+		name = "timeru.12.opt12"
+		
+		}
+}

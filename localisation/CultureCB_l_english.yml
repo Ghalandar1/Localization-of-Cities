@@ -1,0 +1,7 @@
+﻿l_english:
+ cb_culture: "Cultural differences"
+ cb_culture_desc: "Our countries are mutual culture rivals."
+ superiority_culture: "Show the world we are culturally superior."
+ superiority_culture_desc: "War goal is to show our cultural superiority."
+ ALL_CULTURE: "All Mutual culture Rivals"
+ CULTURE_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ Culture differences War"

@@ -1,0 +1,23 @@
+government = republic
+
+government_rank = 2
+add_government_reform = parliamentary_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = democracy_reform
+add_government_reform = powerful_head_of_state
+set_legacy_government = constitutional_republic
+
+capital = 1330
+primary_culture = burmese
+religion = buddhism
+technology_group = indian 
+2019.5.30 = {
+	monarch = {
+		name = "Win Myint"
+		birth_date = 1951.11.8
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

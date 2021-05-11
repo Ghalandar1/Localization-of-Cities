@@ -1,0 +1,37 @@
+government = republic
+add_government_reform = oligarchy_reform
+add_government_reform = presidential_reform
+add_government_reform = strengthen_executive_powers_reform
+add_government_reform = single_party_system
+add_government_reform = communist_government
+add_government_reform = powerful_head_of_state
+set_legacy_government = socialist_republic
+government_rank = 3
+historical_friend = NOK
+historical_friend = IRA
+historical_rival = IND
+historical_rival = USA
+
+
+
+capital = 9843
+primary_culture = chihan
+culture_group_union = east_asian
+religion = irreligious
+technology_group = chinese 
+
+
+
+
+
+
+2019.5.30 = {
+	monarch = {		
+		name = "Xi Jinping"
+		adm = 3
+		dip = 3
+		mil = 3
+		religion = confucianism
+		
+	}
+}

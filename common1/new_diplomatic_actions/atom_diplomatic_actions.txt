@@ -1,0 +1,38 @@
+
+# Create new diplomatic actions like this. AI will currently never send them.
+use_nuke = {
+	category = influence
+
+	alert_index = 40
+	alert_tooltip = demand_dummy_alert_tooltip
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+
+	is_visible = {
+		always = yes
+	}
+	is_allowed = {
+		war_with = FROM
+		army_size = 250
+		num_of_heavy_ship = 5
+		check_variable = {
+			which = num_of_nuclear_weapons
+			value = 1
+		}
+	}
+	on_accept = {
+		FROM = { save_global_event_target_as = nuke_target_country }
+		country_event = {
+			id = et_nuke.1
+		}
+	}
+	on_decline = {
+	}
+
+	ai_acceptance = {
+	}
+
+	ai_will_do = { # this is a trigger
+		always = yes
+	}
+}

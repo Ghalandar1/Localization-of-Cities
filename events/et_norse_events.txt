@@ -1,0 +1,176 @@
+#Start of an Expedition
+country_event = {
+
+	id = et.40
+	title = "et.EVTNAME40"
+	desc = "et.EVTDESC40"
+	picture = SHIP_SAILING_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes
+	}
+	
+	option = {
+		name = "et.EVTOPTA40"
+		add_prestige = 5
+		add_country_modifier = {
+			name = norse_exploration
+			duration = -1
+		}
+	}
+}
+
+#Successful Expedition
+country_event = {
+
+	id = et.41
+	title = "et.EVTNAME41"
+	desc = "et.EVTDESC41"
+	picture = SHIP_SAILING_eventPicture
+	
+	trigger = {
+		has_country_modifier = norse_exploration
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	immediate = {
+		remove_country_modifier = norse_exploration
+	}
+	
+	option = {
+		name = "et.EVTOPTA41"
+		add_prestige = 10
+		if = {
+			limit = { 
+				3017 = { NOT = { has_discovered = ROOT } }
+				982 = { has_discovered = ROOT }
+				980  = { has_discovered = ROOT }  
+				997  = { has_discovered = ROOT }  
+				1104  = { has_discovered = ROOT } 
+				370  = { has_discovered = ROOT } 
+				1979 = { has_discovered = ROOT } 
+				1978 = { has_discovered = ROOT } 
+			}
+			discover_province = 986
+			discover_province = 3017
+			discover_province = 1490
+		}
+		if = {
+			limit = { 
+				982 = { NOT = { has_discovered = ROOT } }
+				980  = { has_discovered = ROOT }  
+				997  = { has_discovered = ROOT }  
+				1104  = { has_discovered = ROOT } 
+				370  = { has_discovered = ROOT } 
+				1979 = { has_discovered = ROOT } 
+				1978 = { has_discovered = ROOT } 
+			}
+			discover_province = 982
+			discover_province = 983
+			discover_province = 1494
+			discover_province = 1491
+		}
+		if = {
+			limit = { 
+				980 = { NOT = { has_discovered = ROOT } }
+				997  = { has_discovered = ROOT }  
+				1104  = { has_discovered = ROOT } 
+				370  = { has_discovered = ROOT } 
+				1979 = { has_discovered = ROOT } 
+				1978 = { has_discovered = ROOT } 
+			}
+			discover_province = 980
+			discover_province = 981
+			discover_province = 3018
+			discover_province = 1493
+			discover_province = 1495
+		}
+		if = {
+			limit = { 
+				997 = { NOT = { has_discovered = ROOT } } 
+				1104  = { has_discovered = ROOT } 
+				370  = { has_discovered = ROOT } 
+				1979 = { has_discovered = ROOT } 
+				1978 = { has_discovered = ROOT } 
+			}
+			discover_province = 997
+			discover_province = 3019
+			discover_province = 3020
+			discover_province = 1483
+		}
+		if = {
+			limit = { 
+				1104 = { NOT = { has_discovered = ROOT } } 
+				370  = { has_discovered = ROOT } 
+				1979 = { has_discovered = ROOT } 
+				1978 = { has_discovered = ROOT } 
+			}
+			discover_province = 1104
+			discover_province = 1105
+			discover_province = 1804
+			discover_province = 1481
+			discover_province = 1924
+			discover_province = 1482
+		}
+		if = {
+			limit = { 
+				370 = { NOT = { has_discovered = ROOT } } 
+				1979 = { has_discovered = ROOT } 
+				1978 = { has_discovered = ROOT } 
+			}
+			discover_province = 370
+			discover_province = 371
+			discover_province = 1476
+			discover_province = 1477
+		}
+		if = {
+			limit = { 
+				1979 = { NOT = { has_discovered = ROOT } } 
+				1978 = { has_discovered = ROOT } 
+			}
+			discover_province = 1979
+			discover_province = 1476
+		}
+		if = {
+			limit = { 
+				1978 = { NOT = { has_discovered = ROOT } } 
+			}
+			discover_province = 1978
+			discover_province = 1281
+			discover_province = 1473
+			discover_province = 1975
+		}
+	}
+}
+
+#Failed Expedition
+country_event = {
+
+	id = et.42
+	title = "et.EVTNAME42"
+	desc = "et.EVTDESC42"
+	picture = SHIP_SAILING_eventPicture
+	
+	trigger = {
+		has_country_modifier = norse_exploration
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	immediate = {
+		remove_country_modifier = norse_exploration
+	}
+	
+	option = {
+		name = "et.EVTOPTA42"
+		remove_country_modifier = norse_exploration
+		add_prestige = -15
+	}
+}

@@ -1,0 +1,24 @@
+
+zombieg = {
+	graphical_culture = westerngfx
+
+	zombiec = {
+	
+		primary = ZOM
+		
+		male_names = {
+			Male
+		}
+		
+		female_names = {
+			Female
+		}
+		dynasty_names =  {
+		
+			Zombie
+			
+		}
+	
+	}
+}
+

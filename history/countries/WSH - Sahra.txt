@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+mercantilism = 0.1
+technology_group = muslim
+religion = sunni
+primary_culture = berber
+capital = 3017	# El-Aiun
+religious_school = maliki_school
+

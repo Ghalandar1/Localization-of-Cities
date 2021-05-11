@@ -1,0 +1,552 @@
+
+atomic_bomb_script_effect = {
+
+		if = { 
+			limit = { 
+				tag = USA
+			}
+			###############################################
+			set_variable = {
+				which = beginning_nuclear_research
+				value = 1
+				}
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			###############################################
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_75_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_90_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+					which = num_of_nuclear_weapons
+					value = 20
+			}
+			add_country_modifier = {
+						name = "nuclear_state"
+						duration = -1
+			}
+		}
+		
+		###########################################################################################################
+		
+		if = { 
+			limit = { 
+				tag = RUS
+			}
+			###############################################
+			set_variable = {
+				which = beginning_nuclear_research
+				value = 1
+				}
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			###############################################
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_75_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_90_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+					which = num_of_nuclear_weapons
+					value = 22
+			}
+			add_country_modifier = {
+						name = "nuclear_state"
+						duration = -1
+			}
+		}
+		
+		###########################################################################################################
+		
+		if = { 
+			limit = { 
+				tag = FR2
+			}
+			###############################################
+			set_variable = {
+				which = beginning_nuclear_research
+				value = 1
+				}
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			###############################################
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_75_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_90_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+					which = num_of_nuclear_weapons
+					value = 6
+			}
+			add_country_modifier = {
+						name = "nuclear_state"
+						duration = -1
+			}
+		}
+		
+		###########################################################################################################
+		
+		if = { 
+			limit = { 
+				tag = CHN
+			}
+			###############################################
+			set_variable = {
+				which = beginning_nuclear_research
+				value = 1
+				}
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			###############################################
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_75_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_90_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+					which = num_of_nuclear_weapons
+					value = 5
+			}
+			add_country_modifier = {
+						name = "nuclear_state"
+						duration = -1
+			}
+		}
+		
+		###########################################################################################################
+		
+		if = { 
+			limit = { 
+				tag = GBR
+			}
+			###############################################
+			set_variable = {
+				which = beginning_nuclear_research
+				value = 1
+				}
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			###############################################
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_75_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_90_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+					which = num_of_nuclear_weapons
+					value = 4
+			}
+			add_country_modifier = {
+						name = "nuclear_state"
+						duration = -1
+			}
+		}
+		
+		###########################################################################################################
+		
+		if = { 
+			limit = { 
+				OR = {
+					tag = PAK
+					tag = IND
+				}
+			}
+			###############################################
+			set_variable = {
+				which = beginning_nuclear_research
+				value = 1
+				}
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			###############################################
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_75_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_90_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+					which = num_of_nuclear_weapons
+					value = 3
+			}
+			add_country_modifier = {
+						name = "nuclear_state"
+						duration = -1
+			}
+		}
+		
+		###########################################################################################################
+		
+		if = { 
+			limit = { 
+				OR = {
+					tag = NOK
+					tag = ISR
+				}
+			}
+			###############################################
+			set_variable = {
+				which = beginning_nuclear_research
+				value = 1
+				}
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			###############################################
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_75
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_75_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_90
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_90_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+					which = num_of_nuclear_weapons
+					value = 2
+			}
+			add_country_modifier = {
+						name = "nuclear_state"
+						duration = -1
+			}
+		}
+		
+		###########################################################################################################
+		
+		if = { 
+			limit = { 
+				tag = IRA
+			}
+			###############################################
+			set_variable = {
+				which = beginning_nuclear_research
+				value = 1
+				}
+				add_country_modifier = {
+							name = "nuclear_research_modifire"
+							duration = -1
+				}
+			###############################################
+			set_variable = {
+				which = nuclear_research_10
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_10_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_20
+				value = 1
+				}
+				add_country_modifier = {
+						name = "research_nuclear_20_modifire"
+						duration = -1
+				}
+			##############################################
+			set_variable = {
+				which = nuclear_research_40
+				value = 1
+				}
+				add_country_modifier = {
+					name = "research_nuclear_40_modifire"
+					duration = -1
+				}
+			##############################################
+			
+		}
+
+	
+}

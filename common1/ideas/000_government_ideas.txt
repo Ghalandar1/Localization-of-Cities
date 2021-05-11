@@ -1,0 +1,597 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# ai_will do is only used to determine which idea group is picked if AI_USES_HISTORICAL_IDEA_GROUPS define is 0, OR start is custom/random
+# ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
+# ROOT = country picking the idea
+# groups set to colonial=yes will be higher prioritized by the AI when spending power
+
+
+
+
+####### Government  ###################
+
+monarchie0 = {
+	category = ADM
+
+	bonus = {
+		global_missionary_strength = 0.05
+	}
+		
+	trigger = {
+			government = monarchy
+	}
+	
+	monarchie1 = {
+		legitimacy = 0.5
+		# <<WIKI>> decision = monarchie_dec	
+		
+	}
+	
+	monarchie2 = {
+		heir_chance = 0.5
+	}
+	
+	monarchie3 = {
+		monthly_splendor = 2
+	}
+	
+	monarchie4 = {
+		monthly_fervor_increase = 1
+		# <<WIKI>> elective_monarchy_add_buff = yes
+	}
+	
+	monarchie5 = {
+		yearly_absolutism = 1.0
+	}
+	
+	monarchie6 = {
+		culture_conversion_cost = -0.25
+	}
+
+	monarchie7 = {
+		max_absolutism = 20
+		# <<WIKI>> stand_interaktion = Nobil_1
+	}
+	
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 100
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 100
+			government_rank = 2  # Kingdom
+		}
+		modifier = {
+			factor = 100
+			government_rank = 1  # Docky
+		}
+	}
+}
+
+
+republik0 = {
+	category = DIP
+
+	bonus = {
+		manpower_recovery_speed = 0.1
+	}
+		
+	trigger = {
+		government = republic
+	}	
+	
+	
+	republik1 = {
+		diplomatic_upkeep = 1
+	}
+	
+	republik2 = {
+		improve_relation_modifier = 0.1
+	}
+	republik3 = {
+		global_unrest = -1
+	}
+	
+	republik4 = {
+		promote_culture_cost = -0.25
+	}
+	
+	republik5 = {
+		republican_tradition = 0.25
+		# <<WIKI>> stand_interaktion = Burg_1
+	}
+	
+	
+	republik6 = {
+		trade_efficiency = 0.05
+	}
+	
+	republik7 = {
+		reform_progress_growth = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 100
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 100
+			government_rank = 2  # Kingdom
+		}
+		modifier = {
+			factor = 100
+			government_rank = 1  # Docky
+		}
+	
+	}
+}
+
+
+
+
+####################################################################
+
+
+
+theocracy_ideas = {
+	category = ADM
+
+	bonus = {
+		manpower_recovery_speed = 0.1
+	}
+
+	trigger = {
+		government = theocracy
+	}
+
+	aristo1 = {
+		devotion = 0.5
+	}
+	aristo2 = {
+		war_exhaustion = -0.05
+	}
+	aristo3 = {
+		missionaries = 5
+	}
+
+	aristo4 = {
+		papal_influence = 0.5
+		church_power_modifier = 0.15
+		# <<WIKI>> stand_interaktion = Chur_1
+	}
+
+	aristo5 = {
+		enforce_religion_cost = -0.25
+	}
+	aristo6 = {
+		warscore_cost_vs_other_religion = -0.25
+	}
+	aristo7 = {
+		global_manpower_modifier = 0.15
+	}
+
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 100
+			government_rank = 3  # Empire
+		}
+		
+		modifier = {
+			factor = 100
+			government_rank = 2  # Kingdom
+		}
+		modifier = {
+			factor = 100
+			government_rank = 1  # Docky
+		}
+	}
+}
+
+autocracy_ideas = {
+	category = MIL
+	important = yes
+	
+	
+	bonus = {
+		land_forcelimit_modifier = 0.075
+	}
+	
+	trigger = {
+	
+		OR = {
+			has_idea_group = monarchie0
+			has_idea_group = republik0
+			has_idea_group = theocracy_ideas
+		}
+		NOT = { has_idea_group = freedom_ideas }
+		NOT = { has_idea_group = order_ideas }
+		NOT = { has_idea_group = diktatur0 }
+		NOT = { has_idea_group = horde0 }
+	}
+	
+	glorious_leader = {
+		defensiveness = 0.15
+	}
+	police_state = {
+		recover_army_morale_speed = 0.15
+	}
+	elite_generals = {
+		embargo_efficiency = 0.1
+	}
+	military_industry = {
+		global_regiment_recruit_speed = -0.1
+	}
+	military_thinkers = {
+		naval_forcelimit_modifier = 0.1
+	}
+	resettlement = {
+		hostile_attrition = 1
+	}
+	total_war = {
+		war_exhaustion_cost = -0.1
+		
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+		
+		modifier = {			
+			factor = 50
+			any_neighbor_country = {
+				has_idea_group = freedom_ideas
+			}
+		}
+		
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = order_ideas
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = diktatur0
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = horde0
+			}
+		}
+	}
+}
+
+
+
+freedom_ideas = {
+	category = DIP
+	important = yes
+	
+	
+
+	bonus = {
+		advisor_pool = 1
+	}
+	
+	trigger = {
+		OR = {
+			has_idea_group = monarchie0
+			has_idea_group = republik0
+			has_idea_group = theocracy_ideas
+		}
+		NOT = { has_idea_group = order_ideas }
+		NOT = { has_idea_group = autocracy_ideas }
+		NOT = { has_idea_group = diktatur0 }
+		NOT = { has_idea_group = horde0 }
+		
+	}
+	
+	capitalist_economy = {
+		global_trade_power = 0.15
+	}
+	free_religion = {
+		trade_efficiency = 0.05
+	}
+	universal_suffrage = {
+		female_advisor_chance = 0.75
+	}
+	freedom_of_speech = {
+		diplomatic_upkeep = 1
+	}
+	equality_of_races = {
+		rebel_support_efficiency = 0.20
+	}
+	volunteer_army = {
+		may_recruit_female_generals = yes
+	}
+	sharing_of_ideas = {
+		advisor_cost = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+		modifier = {			
+			factor = 50
+			any_neighbor_country = {
+				has_idea_group = autocracy_ideas
+			}
+		}
+		
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = order_ideas
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = diktatur0
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = horde0
+			}
+		}
+	}
+}
+
+order_ideas = {
+	category = ADM
+	important = yes
+	
+
+	bonus = {
+		war_exhaustion = -0.05
+	}
+	
+	trigger = {
+		OR = {
+			has_idea_group = monarchie0
+			has_idea_group = republik0
+			has_idea_group = theocracy_ideas
+		}
+		NOT = { has_idea_group = freedom_ideas }
+		NOT = { has_idea_group = autocracy_ideas }
+		NOT = { has_idea_group = diktatur0 }
+		NOT = { has_idea_group = horde0 }
+	}
+	
+	state_controlled_economy = {
+		global_tax_modifier = 0.15
+	}
+	patriotism = {
+		governing_capacity_modifier = 0.15
+	}
+	state_police = {
+		spy_offence = 0.20
+	}
+	workers_utopia = {
+		production_efficiency = 0.05
+		
+	}
+	free_education = {
+		mercenary_cost = -0.25
+	}
+	military_service = {
+		land_maintenance_modifier = -0.05	
+	}
+	universal_healthcare = {
+		manpower_recovery_speed = 0.2
+		
+	}
+	
+	ai_will_do = {
+		factor = 100
+		
+		modifier = {			
+			factor = 50
+			any_neighbor_country = {
+				has_idea_group = autocracy_ideas
+			}
+		}
+		
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = freedom_ideas
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = diktatur0
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = horde0
+			}
+		}
+		
+		
+	}
+}
+
+######################################
+
+
+
+diktatur0 = {
+	category = ADM
+
+	bonus = {
+		mercenary_discipline = 0.05	
+	}
+	
+	trigger = {
+		OR = {
+			has_idea_group = monarchie0
+			has_idea_group = republik0
+			has_idea_group = theocracy_ideas
+		}
+		NOT = { has_idea_group = freedom_ideas }
+		NOT = { has_idea_group = order_ideas }
+		NOT = { has_idea_group = autocracy_ideas }
+		NOT = { has_idea_group = horde0 }
+	}	
+	
+	diktatur1 = {
+		global_tax_modifier = 0.1
+	}
+	diktatur2 = {
+		production_efficiency = 0.1
+	}
+	diktatur3 = {
+		merc_maintenance_modifier = -0.20
+	}
+
+	diktatur4 = {
+		build_cost = -0.10
+	}
+
+	diktatur5 = {
+		land_forcelimit_modifier = 0.075
+	}
+	diktatur6 = {
+		diplomatic_annexation_cost = -0.1
+		# <<WIKI>> decision = diktatur_dec
+	}
+	diktatur7 = {
+		build_time = -0.12
+	}
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {			
+			factor = 50
+			any_neighbor_country = {
+				has_idea_group = autocracy_ideas
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = freedom_ideas
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = order_ideas
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = horde0
+			}
+		}
+	}
+}
+
+horde0 = {
+	category = MIL
+
+	bonus = {
+		reinforce_speed = 0.1
+	}
+		
+	trigger = {
+		OR = {
+			has_idea_group = monarchie0
+			has_idea_group = republik0
+			has_idea_group = theocracy_ideas
+		}
+		NOT = { has_idea_group = freedom_ideas }
+		NOT = { has_idea_group = order_ideas }
+		NOT = { has_idea_group = autocracy_ideas }
+		NOT = { has_idea_group = diktatur0 }
+	}
+	
+	horde1 = {
+		raze_power_gain = 0.25
+	}
+	horde2 = {
+		global_autonomy = -0.1
+	}
+	horde3 = {
+		claim_duration = 0.25
+	}
+	horde4 = {
+		loot_amount = 0.5
+	}
+	horde5 = {
+		global_regiment_cost = -0.25
+	}
+	horde6 = {
+		governing_capacity_modifier = 0.15
+		# <<WIKI>> reduced_dev_malus = yes
+	}
+	horde7 = {
+		reduced_liberty_desire = 5
+	}
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {			
+			factor = 50
+			any_neighbor_country = {
+				has_idea_group = autocracy_ideas
+			}
+		}
+		
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = freedom_ideas
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = order_ideas
+			}
+		}
+		modifier = {			
+		factor = 50
+		any_neighbor_country = {
+				has_idea_group = diktatur0
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

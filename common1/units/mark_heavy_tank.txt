@@ -1,0 +1,12 @@
+# Mark Heavy Tank
+
+type = cavalry
+
+maneuver = 3
+offensive_morale = 4
+defensive_morale = 4
+offensive_fire = 3
+defensive_fire = 3
+offensive_shock = 6
+defensive_shock = 6
+

@@ -1,0 +1,304 @@
+	support_moral_navy_55 =  {
+		category = great_powers
+		require_acceptance = yes
+		alert_index = 15  
+		alert_tooltip = ICON_FEDERATIONINVITE
+		
+		is_visible = {
+			NOT = { 	
+					FROM = { 
+						has_country_modifier = support_moral_navy_5_1
+					}
+				}
+			OR = {
+			FROM = { alliance_with = ROOT }
+			reverse_has_opinion = { who = FROM value = 60  }
+			}
+			
+		}
+		is_allowed = {
+			
+			any_owned_province = { trade_goods = arms  }
+			NOT = { inflation = 6 }
+			
+			
+			FROM = { is_at_war = yes }
+			
+			if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 1000 } } }
+					years_of_income = 0.1
+					mil_power = 50
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					years_of_income = 0.15
+					mil_power = 60
+					
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					years_of_income = 0.2
+					mil_power = 70
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					years_of_income = 0.25
+					mil_power = 80
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					years_of_income = 0.3
+					mil_power = 90
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 6000 } } }
+					years_of_income = 0.35
+					mil_power = 100
+				}
+			if = {
+					limit = { FROM = { total_development = 6000 NOT = { total_development = 40000 } } }
+					years_of_income = 0.4
+					mil_power = 110
+				}
+			
+			
+			ROOT = { total_development = 1000  }
+			
+			}
+		on_accept = {
+		
+			FROM = {
+			add_truce_with = ROOT
+			}
+			ROOT = {
+			add_truce_with = FROM
+			}
+				
+				
+				
+				if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 1000 } } }
+					add_years_of_income = -0.1
+					add_mil_power = -50
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = -0.15
+					add_mil_power = -60
+					
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = -0.2
+					add_mil_power = -70
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = -0.25
+					add_mil_power = -80
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = -0.3
+					add_mil_power = -90
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 6000 } } }
+					add_years_of_income = -0.35
+					add_mil_power = -100
+				}
+			if = {
+					limit = { FROM = { total_development = 6000 NOT = { total_development = 40000 } } }
+					add_years_of_income = -0.4
+					add_mil_power = -110
+				}
+				
+				
+				
+				
+				FROM = { 
+					if = {
+					limit = { FROM = { total_development = 5 NOT = { total_development = 1000 } } }
+					add_years_of_income = 0.02
+					add_mil_power = 50
+				}
+			if = {
+					limit = { FROM = { total_development = 1000 NOT = { total_development = 2000 } } }
+					add_years_of_income = 0.04
+					add_mil_power = 60
+					
+				}
+			if = {
+					limit = { FROM = { total_development = 2000 NOT = { total_development = 3000 } } }
+					add_years_of_income = 0.06
+					add_mil_power = 70
+				}
+			if = {
+					limit = { FROM = { total_development = 3000 NOT = { total_development = 4000 } } }
+					add_years_of_income = 0.08
+					add_mil_power = 80
+				}
+			
+			if = {
+					limit = { FROM = { total_development = 4000 NOT = { total_development = 5000 } } }
+					add_years_of_income = 0.09
+					add_mil_power = 90
+				}
+			if = {
+					limit = { FROM = { total_development = 5000 NOT = { total_development = 6000 } } }
+					add_years_of_income = 0.1
+					add_mil_power = 100
+				}
+			if = {
+					limit = { FROM = { total_development = 6000 NOT = { total_development = 40000 } } }
+					add_years_of_income = 0.125
+					add_mil_power = 110
+				}
+
+
+				}
+				
+				FROM = { 
+					add_country_modifier = {
+						name = support_moral_navy_5
+						duration = 1825
+					}
+					add_country_modifier = {
+						name = support_moral_navy_5_1
+						duration = 1825
+					}
+				}
+				
+				every_known_country = { 
+				if =  { 
+					limit = { 
+						FROM = { ai = no }
+					}
+					country_event = { id = support_Military.6navalmorale }
+				}
+				}
+				
+		}
+		
+		ai_acceptance = {		
+		
+			add_entry = {
+				name = Overlord
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_overlord } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 25
+				}
+		
+			}
+			add_entry = {
+				name = Loyal
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 25
+				}
+		
+			}
+			add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 120 }   } }
+				export_to_variable = {
+						variable_name = ai_value 
+						value = 15
+				}
+		
+			}
+		
+				
+				
+				add_entry = {
+					name = BASE_FACTION
+					limit = { always = yes }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 20
+					}
+					multiply_variable = { which = ai_value value = -1 }
+				}
+
+				add_entry = {
+				name = WE_HAVE_GOOD_OPINON
+				limit = { FROM = { has_opinion = { who = ROOT value = 70 }   } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 10
+				}
+	
+			}
+	
+				add_entry = {
+					name = TRUST
+					export_to_variable = {
+						variable_name = ai_value
+						value = trust
+						who = FROM
+						with = THIS
+					}
+					subtract_variable = { which = ai_value value = 50 }
+				}
+				add_entry = {
+						name = OPINION
+					export_to_variable = {
+						variable_name = ai_value
+						value = opinion
+						who = FROM
+						with = THIS
+					}
+					divide_variable = { which = ai_value value = 15 }
+				}
+				add_entry = {
+					name = RIVAL_EMMBASY
+					limit = { FROM = { is_rival = ROOT } }
+					export_to_variable = {
+						variable_name = ai_value 
+						value = 100
+					}
+							multiply_variable = { which = ai_value value = -1 }
+				}
+										add_entry = {
+				name = FRIENDLY_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 5
+									}
+	
+							}
+																add_entry = {
+				name = NEUTRAL_ATTITUDE
+				limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 5
+									}
+	
+							}
+	
+			add_entry = {
+				name = ALLIANCE
+				limit = { FROM = { alliance_with = ROOT } }
+				export_to_variable = {
+					variable_name = ai_value 
+					value = 15
+				}
+			
+			}
+		}
+		
+			ai_will_do = { 
+				ROOT = { is_great_power = yes  }
+				reverse_has_opinion = { who = FROM value = 70  } 
+			}
+	
+		
+	}
+	
+	
